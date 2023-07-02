@@ -1,20 +1,10 @@
 import dataclasses
 import functools
 import typing
-import logging
-import os
 
 import requests
+import conf
 
-try:
-    with open(".env") as f:
-        env = dict(kv.strip().split('=') for kv in f.readlines())
-except FileNotFoundError:
-    env = os.environ
-
-JCDECAUX_API_KEY = env["JCDECAUX_API_KEY"]
-
-logging.basicConfig(level="INFO", format="%(levelname)s %(message)s")
 
 @dataclasses.dataclass
 class City:
@@ -31,7 +21,7 @@ cities = []
 ############
 
 def jcdecaux_scrape(city):
-    api_key = JCDECAUX_API_KEY
+    api_key = conf.env["JCDECAUX_API_KEY"]
     url = f"https://api.jcdecaux.com/vls/v1/stations?contract={city}&apiKey={api_key}"
     r = requests.get(url, timeout=10)
     r.raise_for_status()
