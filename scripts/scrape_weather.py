@@ -1,10 +1,21 @@
 import concurrent.futures
+import functools
 import json
 import logging
 import pathlib
 
+import requests
+
 from cities import cities
 
+
+def fetch_weather(lat, lon):
+    url = f"https://api.open-meteo.com/v1/forecast?latitude={lat}&longitude={lon}&hourly=temperature_2m,rain,windspeed_10m&forecast_days=1"
+    r = requests.get(url, timeout=10)
+    r.raise_for_status()
+    weather = r.json()
+    del weather["generationtime_ms"]
+    return weather
 
 def scrape_parse_save(scrape, save_to):
     raw_data = scrape()
@@ -16,8 +27,8 @@ def main():
         future_to_city = {
             executor.submit(
                 scrape_parse_save,
-                scrape=city.scrape,
-                save_to=pathlib.Path("data/stations") / f"{city.name}.json"
+                scrape=functools.partial(fetch_weather, city.latitude, city.longitude),
+                save_to=pathlib.Path("data/weather") / f"{city.name}.json"
             ): city.name
             for city in cities
         }

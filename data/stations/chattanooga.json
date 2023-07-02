@@ -1,8 +1,6 @@
 [
     {
         "information": {
-            "_bluetooth_id": "",
-            "_ride_code_support": true,
             "address": "301 N Holtzclaw Ave",
             "altitude": 212.0,
             "capacity": 11,
@@ -69,8 +67,6 @@
     },
     {
         "information": {
-            "_bluetooth_id": "",
-            "_ride_code_support": true,
             "address": "200 River St",
             "altitude": 20.0,
             "capacity": 25,
@@ -97,16 +93,16 @@
             "is_installed": true,
             "is_renting": true,
             "is_returning": true,
-            "num_bikes_available": 13,
+            "num_bikes_available": 10,
             "num_bikes_disabled": 0,
-            "num_docks_available": 12,
+            "num_docks_available": 15,
             "num_docks_disabled": 0,
             "station_id": "1299",
             "status": "IN_SERVICE",
             "traffic": null,
             "vehicle_docks_available": [
                 {
-                    "count": 12,
+                    "count": 15,
                     "vehicle_type_ids": [
                         "ICONIC",
                         "FIT",
@@ -125,7 +121,7 @@
                     "vehicle_type_id": "BOOST"
                 },
                 {
-                    "count": 13,
+                    "count": 10,
                     "vehicle_type_id": "ICONIC"
                 },
                 {
@@ -137,8 +133,6 @@
     },
     {
         "information": {
-            "_bluetooth_id": "",
-            "_ride_code_support": true,
             "address": "301 Manufacturers Rd",
             "altitude": 215.0,
             "capacity": 15,
@@ -164,80 +158,11 @@
             "is_installed": true,
             "is_renting": true,
             "is_returning": true,
-            "num_bikes_available": 4,
-            "num_bikes_disabled": 0,
-            "num_docks_available": 11,
-            "num_docks_disabled": 0,
-            "station_id": "1301",
-            "status": "IN_SERVICE",
-            "traffic": null,
-            "vehicle_docks_available": [
-                {
-                    "count": 11,
-                    "vehicle_type_ids": [
-                        "ICONIC",
-                        "FIT",
-                        "BOOST",
-                        "EFIT"
-                    ]
-                }
-            ],
-            "vehicle_types_available": [
-                {
-                    "count": 0,
-                    "vehicle_type_id": "FIT"
-                },
-                {
-                    "count": 0,
-                    "vehicle_type_id": "BOOST"
-                },
-                {
-                    "count": 4,
-                    "vehicle_type_id": "ICONIC"
-                },
-                {
-                    "count": 0,
-                    "vehicle_type_id": "EFIT"
-                }
-            ]
-        }
-    },
-    {
-        "information": {
-            "_bluetooth_id": "",
-            "_ride_code_support": true,
-            "address": "215 Broad St",
-            "altitude": 221.0,
-            "capacity": 19,
-            "groups": [],
-            "is_charging_station": true,
-            "is_virtual_station": false,
-            "lat": 35.053928,
-            "lon": -85.310925,
-            "name": "215 Broad St",
-            "nearby_distance": 8046.7,
-            "obcn": "",
-            "physical_configuration": "ELECTRICBIKESTATION",
-            "post_code": "37402",
-            "rental_methods": [
-                "KEY",
-                "TRANSITCARD",
-                "CREDITCARD",
-                "PHONE"
-            ],
-            "rental_uris": {},
-            "station_id": "1303"
-        },
-        "status": {
-            "is_charging_station": true,
-            "is_installed": true,
-            "is_renting": true,
-            "is_returning": true,
-            "num_bikes_available": 14,
+            "num_bikes_available": 10,
             "num_bikes_disabled": 0,
             "num_docks_available": 5,
             "num_docks_disabled": 0,
-            "station_id": "1303",
+            "station_id": "1301",
             "status": "IN_SERVICE",
             "traffic": null,
             "vehicle_docks_available": [
@@ -265,7 +190,7 @@
                     "vehicle_type_id": "ICONIC"
                 },
                 {
-                    "count": 4,
+                    "count": 0,
                     "vehicle_type_id": "EFIT"
                 }
             ]
@@ -273,8 +198,73 @@
     },
     {
         "information": {
-            "_bluetooth_id": "",
-            "_ride_code_support": true,
+            "address": "215 Broad St",
+            "altitude": 221.0,
+            "capacity": 19,
+            "groups": [],
+            "is_charging_station": true,
+            "is_virtual_station": false,
+            "lat": 35.053928,
+            "lon": -85.310925,
+            "name": "215 Broad St",
+            "nearby_distance": 8046.7,
+            "obcn": "",
+            "physical_configuration": "ELECTRICBIKESTATION",
+            "post_code": "37402",
+            "rental_methods": [
+                "KEY",
+                "TRANSITCARD",
+                "CREDITCARD",
+                "PHONE"
+            ],
+            "rental_uris": {},
+            "station_id": "1303"
+        },
+        "status": {
+            "is_charging_station": true,
+            "is_installed": true,
+            "is_renting": true,
+            "is_returning": true,
+            "num_bikes_available": 15,
+            "num_bikes_disabled": 0,
+            "num_docks_available": 4,
+            "num_docks_disabled": 0,
+            "station_id": "1303",
+            "status": "IN_SERVICE",
+            "traffic": null,
+            "vehicle_docks_available": [
+                {
+                    "count": 4,
+                    "vehicle_type_ids": [
+                        "ICONIC",
+                        "FIT",
+                        "BOOST",
+                        "EFIT"
+                    ]
+                }
+            ],
+            "vehicle_types_available": [
+                {
+                    "count": 0,
+                    "vehicle_type_id": "FIT"
+                },
+                {
+                    "count": 0,
+                    "vehicle_type_id": "BOOST"
+                },
+                {
+                    "count": 8,
+                    "vehicle_type_id": "ICONIC"
+                },
+                {
+                    "count": 7,
+                    "vehicle_type_id": "EFIT"
+                }
+            ]
+        }
+    },
+    {
+        "information": {
             "address": "Market St & E 14th St",
             "altitude": 228.0,
             "capacity": 19,
@@ -300,16 +290,16 @@
             "is_installed": true,
             "is_renting": true,
             "is_returning": true,
-            "num_bikes_available": 12,
+            "num_bikes_available": 7,
             "num_bikes_disabled": 0,
-            "num_docks_available": 7,
+            "num_docks_available": 12,
             "num_docks_disabled": 0,
             "station_id": "1305",
             "status": "IN_SERVICE",
             "traffic": null,
             "vehicle_docks_available": [
                 {
-                    "count": 7,
+                    "count": 12,
                     "vehicle_type_ids": [
                         "ICONIC",
                         "FIT",
@@ -320,7 +310,7 @@
             ],
             "vehicle_types_available": [
                 {
-                    "count": 1,
+                    "count": 0,
                     "vehicle_type_id": "FIT"
                 },
                 {
@@ -332,7 +322,7 @@
                     "vehicle_type_id": "ICONIC"
                 },
                 {
-                    "count": 4,
+                    "count": 0,
                     "vehicle_type_id": "EFIT"
                 }
             ]
@@ -340,8 +330,6 @@
     },
     {
         "information": {
-            "_bluetooth_id": "",
-            "_ride_code_support": true,
             "address": "Market and E 4th",
             "altitude": 220.0,
             "capacity": 19,
@@ -368,16 +356,16 @@
             "is_installed": true,
             "is_renting": true,
             "is_returning": true,
-            "num_bikes_available": 14,
+            "num_bikes_available": 10,
             "num_bikes_disabled": 0,
-            "num_docks_available": 5,
+            "num_docks_available": 9,
             "num_docks_disabled": 0,
             "station_id": "1307",
             "status": "IN_SERVICE",
             "traffic": null,
             "vehicle_docks_available": [
                 {
-                    "count": 5,
+                    "count": 9,
                     "vehicle_type_ids": [
                         "ICONIC",
                         "FIT",
@@ -392,15 +380,15 @@
                     "vehicle_type_id": "FIT"
                 },
                 {
-                    "count": 0,
+                    "count": 1,
                     "vehicle_type_id": "BOOST"
                 },
                 {
-                    "count": 9,
+                    "count": 6,
                     "vehicle_type_id": "ICONIC"
                 },
                 {
-                    "count": 5,
+                    "count": 3,
                     "vehicle_type_id": "EFIT"
                 }
             ]
@@ -408,8 +396,6 @@
     },
     {
         "information": {
-            "_bluetooth_id": "",
-            "_ride_code_support": true,
             "address": "Market St & W 12th St",
             "altitude": 212.0,
             "capacity": 15,
@@ -476,8 +462,6 @@
     },
     {
         "information": {
-            "_bluetooth_id": "",
-            "_ride_code_support": true,
             "address": "Market St & Cowart St",
             "altitude": 208.0,
             "capacity": 11,
@@ -544,8 +528,6 @@
     },
     {
         "information": {
-            "_bluetooth_id": "",
-            "_ride_code_support": true,
             "address": "100 Riverfront Parkway",
             "altitude": 198.0,
             "capacity": 19,
@@ -574,348 +556,10 @@
             "is_renting": true,
             "is_returning": true,
             "num_bikes_available": 7,
-            "num_bikes_disabled": 1,
-            "num_docks_available": 11,
-            "num_docks_disabled": 0,
-            "station_id": "1313",
-            "status": "IN_SERVICE",
-            "traffic": null,
-            "vehicle_docks_available": [
-                {
-                    "count": 11,
-                    "vehicle_type_ids": [
-                        "ICONIC",
-                        "FIT",
-                        "BOOST",
-                        "EFIT"
-                    ]
-                }
-            ],
-            "vehicle_types_available": [
-                {
-                    "count": 0,
-                    "vehicle_type_id": "FIT"
-                },
-                {
-                    "count": 0,
-                    "vehicle_type_id": "BOOST"
-                },
-                {
-                    "count": 7,
-                    "vehicle_type_id": "ICONIC"
-                },
-                {
-                    "count": 0,
-                    "vehicle_type_id": "EFIT"
-                }
-            ]
-        }
-    },
-    {
-        "information": {
-            "_bluetooth_id": "",
-            "_ride_code_support": true,
-            "address": "Carter St & W 12th St",
-            "altitude": 222.0,
-            "capacity": 15,
-            "groups": [],
-            "is_charging_station": false,
-            "is_virtual_station": false,
-            "lat": 35.043367,
-            "lon": -85.312762,
-            "name": "Carter St & W 12th St",
-            "nearby_distance": 600.0,
-            "physical_configuration": "REGULAR",
-            "rental_methods": [
-                "KEY",
-                "TRANSITCARD",
-                "CREDITCARD",
-                "PHONE"
-            ],
-            "rental_uris": {},
-            "station_id": "1315"
-        },
-        "status": {
-            "is_charging_station": false,
-            "is_installed": true,
-            "is_renting": true,
-            "is_returning": true,
-            "num_bikes_available": 11,
-            "num_bikes_disabled": 0,
-            "num_docks_available": 4,
-            "num_docks_disabled": 0,
-            "station_id": "1315",
-            "status": "IN_SERVICE",
-            "traffic": null,
-            "vehicle_docks_available": [
-                {
-                    "count": 4,
-                    "vehicle_type_ids": [
-                        "ICONIC",
-                        "FIT",
-                        "BOOST",
-                        "EFIT"
-                    ]
-                }
-            ],
-            "vehicle_types_available": [
-                {
-                    "count": 0,
-                    "vehicle_type_id": "FIT"
-                },
-                {
-                    "count": 0,
-                    "vehicle_type_id": "BOOST"
-                },
-                {
-                    "count": 9,
-                    "vehicle_type_id": "ICONIC"
-                },
-                {
-                    "count": 2,
-                    "vehicle_type_id": "EFIT"
-                }
-            ]
-        }
-    },
-    {
-        "information": {
-            "_bluetooth_id": "",
-            "_ride_code_support": true,
-            "address": "Broad St & W 6th St",
-            "altitude": 221.0,
-            "capacity": 15,
-            "groups": [],
-            "is_charging_station": false,
-            "is_virtual_station": false,
-            "lat": 35.049429,
-            "lon": -85.310399,
-            "name": "Broad St & W 6th St",
-            "nearby_distance": 500.0,
-            "obcn": "",
-            "physical_configuration": "REGULAR",
-            "rental_methods": [
-                "KEY",
-                "TRANSITCARD",
-                "CREDITCARD",
-                "PHONE"
-            ],
-            "rental_uris": {},
-            "station_id": "1317"
-        },
-        "status": {
-            "is_charging_station": false,
-            "is_installed": true,
-            "is_renting": true,
-            "is_returning": true,
-            "num_bikes_available": 4,
-            "num_bikes_disabled": 0,
-            "num_docks_available": 11,
-            "num_docks_disabled": 0,
-            "station_id": "1317",
-            "status": "IN_SERVICE",
-            "traffic": null,
-            "vehicle_docks_available": [
-                {
-                    "count": 11,
-                    "vehicle_type_ids": [
-                        "ICONIC",
-                        "FIT",
-                        "BOOST",
-                        "EFIT"
-                    ]
-                }
-            ],
-            "vehicle_types_available": [
-                {
-                    "count": 0,
-                    "vehicle_type_id": "FIT"
-                },
-                {
-                    "count": 0,
-                    "vehicle_type_id": "BOOST"
-                },
-                {
-                    "count": 3,
-                    "vehicle_type_id": "ICONIC"
-                },
-                {
-                    "count": 1,
-                    "vehicle_type_id": "EFIT"
-                }
-            ]
-        }
-    },
-    {
-        "information": {
-            "_bluetooth_id": "",
-            "_ride_code_support": true,
-            "address": "100 Walnut St",
-            "altitude": 231.0,
-            "capacity": 23,
-            "groups": [],
-            "is_charging_station": false,
-            "is_virtual_station": false,
-            "lat": 35.055687,
-            "lon": -85.307813,
-            "name": "100 Walnut St",
-            "nearby_distance": 1609.34,
-            "physical_configuration": "REGULAR",
-            "rental_methods": [
-                "KEY",
-                "TRANSITCARD",
-                "CREDITCARD",
-                "PHONE"
-            ],
-            "rental_uris": {},
-            "station_id": "1319"
-        },
-        "status": {
-            "is_charging_station": false,
-            "is_installed": true,
-            "is_renting": true,
-            "is_returning": true,
-            "num_bikes_available": 8,
-            "num_bikes_disabled": 0,
-            "num_docks_available": 15,
-            "num_docks_disabled": 0,
-            "station_id": "1319",
-            "status": "IN_SERVICE",
-            "traffic": null,
-            "vehicle_docks_available": [
-                {
-                    "count": 15,
-                    "vehicle_type_ids": [
-                        "ICONIC",
-                        "FIT",
-                        "BOOST",
-                        "EFIT"
-                    ]
-                }
-            ],
-            "vehicle_types_available": [
-                {
-                    "count": 0,
-                    "vehicle_type_id": "FIT"
-                },
-                {
-                    "count": 0,
-                    "vehicle_type_id": "BOOST"
-                },
-                {
-                    "count": 8,
-                    "vehicle_type_id": "ICONIC"
-                },
-                {
-                    "count": 0,
-                    "vehicle_type_id": "EFIT"
-                }
-            ]
-        }
-    },
-    {
-        "information": {
-            "_bluetooth_id": "",
-            "_ride_code_support": true,
-            "address": "High St & E 2nd St",
-            "altitude": 220.0,
-            "capacity": 15,
-            "groups": [],
-            "is_charging_station": false,
-            "is_virtual_station": false,
-            "lat": 35.054161,
-            "lon": -85.305448,
-            "name": "High St & E 2nd St",
-            "nearby_distance": 600.0,
-            "physical_configuration": "REGULAR",
-            "post_code": "37403",
-            "rental_methods": [
-                "KEY",
-                "TRANSITCARD",
-                "CREDITCARD",
-                "PHONE"
-            ],
-            "rental_uris": {},
-            "station_id": "1321"
-        },
-        "status": {
-            "is_charging_station": false,
-            "is_installed": true,
-            "is_renting": true,
-            "is_returning": true,
-            "num_bikes_available": 9,
-            "num_bikes_disabled": 0,
-            "num_docks_available": 6,
-            "num_docks_disabled": 0,
-            "station_id": "1321",
-            "status": "IN_SERVICE",
-            "traffic": null,
-            "vehicle_docks_available": [
-                {
-                    "count": 6,
-                    "vehicle_type_ids": [
-                        "ICONIC",
-                        "FIT",
-                        "BOOST",
-                        "EFIT"
-                    ]
-                }
-            ],
-            "vehicle_types_available": [
-                {
-                    "count": 0,
-                    "vehicle_type_id": "FIT"
-                },
-                {
-                    "count": 0,
-                    "vehicle_type_id": "BOOST"
-                },
-                {
-                    "count": 8,
-                    "vehicle_type_id": "ICONIC"
-                },
-                {
-                    "count": 1,
-                    "vehicle_type_id": "EFIT"
-                }
-            ]
-        }
-    },
-    {
-        "information": {
-            "_bluetooth_id": "",
-            "_ride_code_support": true,
-            "address": "Power Alley & Riverfront Pkwy",
-            "altitude": 198.0,
-            "capacity": 17,
-            "groups": [],
-            "is_charging_station": false,
-            "is_virtual_station": false,
-            "lat": 35.055582,
-            "lon": -85.312797,
-            "name": "Power Alley & Riverfront Pkwy",
-            "nearby_distance": 8046.7,
-            "obcn": "",
-            "physical_configuration": "REGULAR",
-            "rental_methods": [
-                "KEY",
-                "TRANSITCARD",
-                "CREDITCARD",
-                "PHONE"
-            ],
-            "rental_uris": {},
-            "station_id": "1323"
-        },
-        "status": {
-            "is_charging_station": false,
-            "is_installed": true,
-            "is_renting": true,
-            "is_returning": true,
-            "num_bikes_available": 7,
-            "num_bikes_disabled": 0,
+            "num_bikes_disabled": 2,
             "num_docks_available": 10,
             "num_docks_disabled": 0,
-            "station_id": "1323",
+            "station_id": "1313",
             "status": "IN_SERVICE",
             "traffic": null,
             "vehicle_docks_available": [
@@ -951,8 +595,334 @@
     },
     {
         "information": {
-            "_bluetooth_id": "",
-            "_ride_code_support": true,
+            "address": "Carter St & W 12th St",
+            "altitude": 222.0,
+            "capacity": 15,
+            "groups": [],
+            "is_charging_station": false,
+            "is_virtual_station": false,
+            "lat": 35.043367,
+            "lon": -85.312762,
+            "name": "Carter St & W 12th St",
+            "nearby_distance": 600.0,
+            "physical_configuration": "REGULAR",
+            "rental_methods": [
+                "KEY",
+                "TRANSITCARD",
+                "CREDITCARD",
+                "PHONE"
+            ],
+            "rental_uris": {},
+            "station_id": "1315"
+        },
+        "status": {
+            "is_charging_station": false,
+            "is_installed": true,
+            "is_renting": true,
+            "is_returning": true,
+            "num_bikes_available": 10,
+            "num_bikes_disabled": 0,
+            "num_docks_available": 5,
+            "num_docks_disabled": 0,
+            "station_id": "1315",
+            "status": "IN_SERVICE",
+            "traffic": null,
+            "vehicle_docks_available": [
+                {
+                    "count": 5,
+                    "vehicle_type_ids": [
+                        "ICONIC",
+                        "FIT",
+                        "BOOST",
+                        "EFIT"
+                    ]
+                }
+            ],
+            "vehicle_types_available": [
+                {
+                    "count": 0,
+                    "vehicle_type_id": "FIT"
+                },
+                {
+                    "count": 0,
+                    "vehicle_type_id": "BOOST"
+                },
+                {
+                    "count": 9,
+                    "vehicle_type_id": "ICONIC"
+                },
+                {
+                    "count": 1,
+                    "vehicle_type_id": "EFIT"
+                }
+            ]
+        }
+    },
+    {
+        "information": {
+            "address": "Broad St & W 6th St",
+            "altitude": 221.0,
+            "capacity": 15,
+            "groups": [],
+            "is_charging_station": false,
+            "is_virtual_station": false,
+            "lat": 35.049429,
+            "lon": -85.310399,
+            "name": "Broad St & W 6th St",
+            "nearby_distance": 500.0,
+            "obcn": "",
+            "physical_configuration": "REGULAR",
+            "rental_methods": [
+                "KEY",
+                "TRANSITCARD",
+                "CREDITCARD",
+                "PHONE"
+            ],
+            "rental_uris": {},
+            "station_id": "1317"
+        },
+        "status": {
+            "is_charging_station": false,
+            "is_installed": true,
+            "is_renting": true,
+            "is_returning": true,
+            "num_bikes_available": 5,
+            "num_bikes_disabled": 0,
+            "num_docks_available": 10,
+            "num_docks_disabled": 0,
+            "station_id": "1317",
+            "status": "IN_SERVICE",
+            "traffic": null,
+            "vehicle_docks_available": [
+                {
+                    "count": 10,
+                    "vehicle_type_ids": [
+                        "ICONIC",
+                        "FIT",
+                        "BOOST",
+                        "EFIT"
+                    ]
+                }
+            ],
+            "vehicle_types_available": [
+                {
+                    "count": 1,
+                    "vehicle_type_id": "FIT"
+                },
+                {
+                    "count": 0,
+                    "vehicle_type_id": "BOOST"
+                },
+                {
+                    "count": 1,
+                    "vehicle_type_id": "ICONIC"
+                },
+                {
+                    "count": 3,
+                    "vehicle_type_id": "EFIT"
+                }
+            ]
+        }
+    },
+    {
+        "information": {
+            "address": "100 Walnut St",
+            "altitude": 231.0,
+            "capacity": 23,
+            "groups": [],
+            "is_charging_station": false,
+            "is_virtual_station": false,
+            "lat": 35.055687,
+            "lon": -85.307813,
+            "name": "100 Walnut St",
+            "nearby_distance": 1609.34,
+            "physical_configuration": "REGULAR",
+            "rental_methods": [
+                "KEY",
+                "TRANSITCARD",
+                "CREDITCARD",
+                "PHONE"
+            ],
+            "rental_uris": {},
+            "station_id": "1319"
+        },
+        "status": {
+            "is_charging_station": false,
+            "is_installed": true,
+            "is_renting": true,
+            "is_returning": true,
+            "num_bikes_available": 6,
+            "num_bikes_disabled": 0,
+            "num_docks_available": 17,
+            "num_docks_disabled": 0,
+            "station_id": "1319",
+            "status": "IN_SERVICE",
+            "traffic": null,
+            "vehicle_docks_available": [
+                {
+                    "count": 17,
+                    "vehicle_type_ids": [
+                        "ICONIC",
+                        "FIT",
+                        "BOOST",
+                        "EFIT"
+                    ]
+                }
+            ],
+            "vehicle_types_available": [
+                {
+                    "count": 0,
+                    "vehicle_type_id": "FIT"
+                },
+                {
+                    "count": 0,
+                    "vehicle_type_id": "BOOST"
+                },
+                {
+                    "count": 6,
+                    "vehicle_type_id": "ICONIC"
+                },
+                {
+                    "count": 0,
+                    "vehicle_type_id": "EFIT"
+                }
+            ]
+        }
+    },
+    {
+        "information": {
+            "address": "High St & E 2nd St",
+            "altitude": 220.0,
+            "capacity": 15,
+            "groups": [],
+            "is_charging_station": false,
+            "is_virtual_station": false,
+            "lat": 35.054161,
+            "lon": -85.305448,
+            "name": "High St & E 2nd St",
+            "nearby_distance": 600.0,
+            "physical_configuration": "REGULAR",
+            "post_code": "37403",
+            "rental_methods": [
+                "KEY",
+                "TRANSITCARD",
+                "CREDITCARD",
+                "PHONE"
+            ],
+            "rental_uris": {},
+            "station_id": "1321"
+        },
+        "status": {
+            "is_charging_station": false,
+            "is_installed": true,
+            "is_renting": true,
+            "is_returning": true,
+            "num_bikes_available": 5,
+            "num_bikes_disabled": 0,
+            "num_docks_available": 10,
+            "num_docks_disabled": 0,
+            "station_id": "1321",
+            "status": "IN_SERVICE",
+            "traffic": null,
+            "vehicle_docks_available": [
+                {
+                    "count": 10,
+                    "vehicle_type_ids": [
+                        "ICONIC",
+                        "FIT",
+                        "BOOST",
+                        "EFIT"
+                    ]
+                }
+            ],
+            "vehicle_types_available": [
+                {
+                    "count": 0,
+                    "vehicle_type_id": "FIT"
+                },
+                {
+                    "count": 0,
+                    "vehicle_type_id": "BOOST"
+                },
+                {
+                    "count": 5,
+                    "vehicle_type_id": "ICONIC"
+                },
+                {
+                    "count": 0,
+                    "vehicle_type_id": "EFIT"
+                }
+            ]
+        }
+    },
+    {
+        "information": {
+            "address": "Power Alley & Riverfront Pkwy",
+            "altitude": 198.0,
+            "capacity": 17,
+            "groups": [],
+            "is_charging_station": false,
+            "is_virtual_station": false,
+            "lat": 35.055582,
+            "lon": -85.312797,
+            "name": "Power Alley & Riverfront Pkwy",
+            "nearby_distance": 8046.7,
+            "obcn": "",
+            "physical_configuration": "REGULAR",
+            "rental_methods": [
+                "KEY",
+                "TRANSITCARD",
+                "CREDITCARD",
+                "PHONE"
+            ],
+            "rental_uris": {},
+            "station_id": "1323"
+        },
+        "status": {
+            "is_charging_station": false,
+            "is_installed": true,
+            "is_renting": true,
+            "is_returning": true,
+            "num_bikes_available": 6,
+            "num_bikes_disabled": 0,
+            "num_docks_available": 11,
+            "num_docks_disabled": 0,
+            "station_id": "1323",
+            "status": "IN_SERVICE",
+            "traffic": null,
+            "vehicle_docks_available": [
+                {
+                    "count": 11,
+                    "vehicle_type_ids": [
+                        "ICONIC",
+                        "FIT",
+                        "BOOST",
+                        "EFIT"
+                    ]
+                }
+            ],
+            "vehicle_types_available": [
+                {
+                    "count": 0,
+                    "vehicle_type_id": "FIT"
+                },
+                {
+                    "count": 0,
+                    "vehicle_type_id": "BOOST"
+                },
+                {
+                    "count": 6,
+                    "vehicle_type_id": "ICONIC"
+                },
+                {
+                    "count": 0,
+                    "vehicle_type_id": "EFIT"
+                }
+            ]
+        }
+    },
+    {
+        "information": {
             "address": "928 Market Street",
             "altitude": 213.0,
             "capacity": 15,
@@ -980,16 +950,16 @@
             "is_installed": true,
             "is_renting": true,
             "is_returning": true,
-            "num_bikes_available": 5,
+            "num_bikes_available": 7,
             "num_bikes_disabled": 0,
-            "num_docks_available": 10,
+            "num_docks_available": 8,
             "num_docks_disabled": 0,
             "station_id": "1325",
             "status": "IN_SERVICE",
             "traffic": null,
             "vehicle_docks_available": [
                 {
-                    "count": 10,
+                    "count": 8,
                     "vehicle_type_ids": [
                         "ICONIC",
                         "FIT",
@@ -1012,7 +982,7 @@
                     "vehicle_type_id": "ICONIC"
                 },
                 {
-                    "count": 0,
+                    "count": 2,
                     "vehicle_type_id": "EFIT"
                 }
             ]
@@ -1020,8 +990,6 @@
     },
     {
         "information": {
-            "_bluetooth_id": "",
-            "_ride_code_support": true,
             "address": "M.L. King Blvd & Lindsay St",
             "altitude": 206.0,
             "capacity": 19,
@@ -1048,16 +1016,16 @@
             "is_installed": true,
             "is_renting": true,
             "is_returning": true,
-            "num_bikes_available": 9,
+            "num_bikes_available": 7,
             "num_bikes_disabled": 0,
-            "num_docks_available": 10,
+            "num_docks_available": 12,
             "num_docks_disabled": 0,
             "station_id": "1327",
             "status": "IN_SERVICE",
             "traffic": null,
             "vehicle_docks_available": [
                 {
-                    "count": 10,
+                    "count": 12,
                     "vehicle_type_ids": [
                         "ICONIC",
                         "FIT",
@@ -1080,7 +1048,7 @@
                     "vehicle_type_id": "ICONIC"
                 },
                 {
-                    "count": 2,
+                    "count": 0,
                     "vehicle_type_id": "EFIT"
                 }
             ]
@@ -1088,8 +1056,6 @@
     },
     {
         "information": {
-            "_bluetooth_id": "",
-            "_ride_code_support": true,
             "address": "McCallie Ave & Lindsay St",
             "altitude": 212.0,
             "capacity": 15,
@@ -1157,8 +1123,6 @@
     },
     {
         "information": {
-            "_bluetooth_id": "",
-            "_ride_code_support": true,
             "address": "400 East Main Street",
             "altitude": 224.0,
             "capacity": 15,
@@ -1215,11 +1179,11 @@
                     "vehicle_type_id": "BOOST"
                 },
                 {
-                    "count": 2,
+                    "count": 3,
                     "vehicle_type_id": "ICONIC"
                 },
                 {
-                    "count": 6,
+                    "count": 5,
                     "vehicle_type_id": "EFIT"
                 }
             ]
@@ -1227,8 +1191,6 @@
     },
     {
         "information": {
-            "_bluetooth_id": "",
-            "_ride_code_support": true,
             "address": "800 E 8th St",
             "altitude": 213.0,
             "capacity": 15,
@@ -1294,8 +1256,6 @@
     },
     {
         "information": {
-            "_bluetooth_id": "",
-            "_ride_code_support": true,
             "address": "Oak St & University Greenway",
             "altitude": 212.0,
             "capacity": 15,
@@ -1321,16 +1281,16 @@
             "is_installed": true,
             "is_renting": true,
             "is_returning": true,
-            "num_bikes_available": 3,
+            "num_bikes_available": 5,
             "num_bikes_disabled": 0,
-            "num_docks_available": 12,
+            "num_docks_available": 10,
             "num_docks_disabled": 0,
             "station_id": "1335",
             "status": "IN_SERVICE",
             "traffic": null,
             "vehicle_docks_available": [
                 {
-                    "count": 12,
+                    "count": 10,
                     "vehicle_type_ids": [
                         "ICONIC",
                         "FIT",
@@ -1349,7 +1309,7 @@
                     "vehicle_type_id": "BOOST"
                 },
                 {
-                    "count": 3,
+                    "count": 5,
                     "vehicle_type_id": "ICONIC"
                 },
                 {
@@ -1361,8 +1321,6 @@
     },
     {
         "information": {
-            "_bluetooth_id": "",
-            "_ride_code_support": true,
             "address": "Oak & Houston",
             "altitude": 223.0,
             "capacity": 15,
@@ -1428,8 +1386,6 @@
     },
     {
         "information": {
-            "_bluetooth_id": "",
-            "_ride_code_support": true,
             "address": "218 E Main St",
             "altitude": 210.0,
             "capacity": 15,
@@ -1456,16 +1412,16 @@
             "is_installed": true,
             "is_renting": true,
             "is_returning": true,
-            "num_bikes_available": 8,
+            "num_bikes_available": 4,
             "num_bikes_disabled": 0,
-            "num_docks_available": 7,
+            "num_docks_available": 11,
             "num_docks_disabled": 0,
             "station_id": "1341",
             "status": "IN_SERVICE",
             "traffic": null,
             "vehicle_docks_available": [
                 {
-                    "count": 7,
+                    "count": 11,
                     "vehicle_type_ids": [
                         "ICONIC",
                         "FIT",
@@ -1480,11 +1436,11 @@
                     "vehicle_type_id": "FIT"
                 },
                 {
-                    "count": 1,
+                    "count": 0,
                     "vehicle_type_id": "BOOST"
                 },
                 {
-                    "count": 7,
+                    "count": 4,
                     "vehicle_type_id": "ICONIC"
                 },
                 {
@@ -1496,8 +1452,6 @@
     },
     {
         "information": {
-            "_bluetooth_id": "",
-            "_ride_code_support": true,
             "address": "Chestnut & 3rd",
             "altitude": 199.0,
             "capacity": 10,
@@ -1525,16 +1479,16 @@
             "is_installed": true,
             "is_renting": true,
             "is_returning": true,
-            "num_bikes_available": 6,
-            "num_bikes_disabled": 0,
-            "num_docks_available": 4,
+            "num_bikes_available": 2,
+            "num_bikes_disabled": 1,
+            "num_docks_available": 7,
             "num_docks_disabled": 0,
             "station_id": "1343",
             "status": "IN_SERVICE",
             "traffic": null,
             "vehicle_docks_available": [
                 {
-                    "count": 4,
+                    "count": 7,
                     "vehicle_type_ids": [
                         "ICONIC",
                         "FIT",
@@ -1553,7 +1507,7 @@
                     "vehicle_type_id": "BOOST"
                 },
                 {
-                    "count": 6,
+                    "count": 2,
                     "vehicle_type_id": "ICONIC"
                 },
                 {
@@ -1565,8 +1519,6 @@
     },
     {
         "information": {
-            "_bluetooth_id": "",
-            "_ride_code_support": true,
             "address": "735 Broad St",
             "altitude": 251.0,
             "capacity": 15,
@@ -1595,16 +1547,16 @@
             "is_installed": true,
             "is_renting": true,
             "is_returning": true,
-            "num_bikes_available": 10,
+            "num_bikes_available": 6,
             "num_bikes_disabled": 0,
-            "num_docks_available": 5,
+            "num_docks_available": 9,
             "num_docks_disabled": 0,
             "station_id": "1345",
             "status": "IN_SERVICE",
             "traffic": null,
             "vehicle_docks_available": [
                 {
-                    "count": 5,
+                    "count": 9,
                     "vehicle_type_ids": [
                         "ICONIC",
                         "FIT",
@@ -1623,11 +1575,11 @@
                     "vehicle_type_id": "BOOST"
                 },
                 {
-                    "count": 9,
+                    "count": 4,
                     "vehicle_type_id": "ICONIC"
                 },
                 {
-                    "count": 0,
+                    "count": 1,
                     "vehicle_type_id": "EFIT"
                 }
             ]
@@ -1635,8 +1587,6 @@
     },
     {
         "information": {
-            "_bluetooth_id": "",
-            "_ride_code_support": true,
             "address": "343 W Main St",
             "altitude": 202.0,
             "capacity": 19,
@@ -1665,16 +1615,16 @@
             "is_installed": true,
             "is_renting": true,
             "is_returning": true,
-            "num_bikes_available": 11,
+            "num_bikes_available": 9,
             "num_bikes_disabled": 0,
-            "num_docks_available": 8,
+            "num_docks_available": 10,
             "num_docks_disabled": 0,
             "station_id": "1347",
             "status": "IN_SERVICE",
             "traffic": null,
             "vehicle_docks_available": [
                 {
-                    "count": 8,
+                    "count": 10,
                     "vehicle_type_ids": [
                         "ICONIC",
                         "FIT",
@@ -1693,11 +1643,11 @@
                     "vehicle_type_id": "BOOST"
                 },
                 {
-                    "count": 8,
+                    "count": 7,
                     "vehicle_type_id": "ICONIC"
                 },
                 {
-                    "count": 3,
+                    "count": 2,
                     "vehicle_type_id": "EFIT"
                 }
             ]
@@ -1705,8 +1655,6 @@
     },
     {
         "information": {
-            "_bluetooth_id": "",
-            "_ride_code_support": true,
             "address": "1216 Broad St",
             "altitude": 0.0,
             "capacity": 15,
@@ -1773,8 +1721,6 @@
     },
     {
         "information": {
-            "_bluetooth_id": "",
-            "_ride_code_support": true,
             "address": "1826 Carter St",
             "altitude": 0.0,
             "capacity": 15,
@@ -1802,16 +1748,16 @@
             "is_installed": true,
             "is_renting": true,
             "is_returning": true,
-            "num_bikes_available": 7,
+            "num_bikes_available": 8,
             "num_bikes_disabled": 0,
-            "num_docks_available": 8,
+            "num_docks_available": 7,
             "num_docks_disabled": 0,
             "station_id": "1351",
             "status": "IN_SERVICE",
             "traffic": null,
             "vehicle_docks_available": [
                 {
-                    "count": 8,
+                    "count": 7,
                     "vehicle_type_ids": [
                         "ICONIC",
                         "FIT",
@@ -1826,15 +1772,15 @@
                     "vehicle_type_id": "FIT"
                 },
                 {
-                    "count": 2,
+                    "count": 0,
                     "vehicle_type_id": "BOOST"
                 },
                 {
-                    "count": 5,
+                    "count": 4,
                     "vehicle_type_id": "ICONIC"
                 },
                 {
-                    "count": 0,
+                    "count": 4,
                     "vehicle_type_id": "EFIT"
                 }
             ]
@@ -1842,8 +1788,6 @@
     },
     {
         "information": {
-            "_bluetooth_id": "",
-            "_ride_code_support": true,
             "address": "500 Georgia Ave",
             "altitude": 0.0,
             "capacity": 15,
@@ -1870,78 +1814,11 @@
             "is_installed": true,
             "is_renting": true,
             "is_returning": true,
-            "num_bikes_available": 4,
-            "num_bikes_disabled": 0,
-            "num_docks_available": 11,
-            "num_docks_disabled": 0,
-            "station_id": "1353",
-            "status": "IN_SERVICE",
-            "traffic": null,
-            "vehicle_docks_available": [
-                {
-                    "count": 11,
-                    "vehicle_type_ids": [
-                        "ICONIC",
-                        "FIT",
-                        "BOOST",
-                        "EFIT"
-                    ]
-                }
-            ],
-            "vehicle_types_available": [
-                {
-                    "count": 0,
-                    "vehicle_type_id": "FIT"
-                },
-                {
-                    "count": 0,
-                    "vehicle_type_id": "BOOST"
-                },
-                {
-                    "count": 4,
-                    "vehicle_type_id": "ICONIC"
-                },
-                {
-                    "count": 0,
-                    "vehicle_type_id": "EFIT"
-                }
-            ]
-        }
-    },
-    {
-        "information": {
-            "_bluetooth_id": "",
-            "_ride_code_support": true,
-            "address": "Broad St & W 10th St",
-            "altitude": 0.0,
-            "capacity": 15,
-            "groups": [],
-            "is_charging_station": false,
-            "is_virtual_station": false,
-            "lat": 35.044458,
-            "lon": -85.310458,
-            "name": "Broad St & W 10th St",
-            "nearby_distance": 400.0,
-            "physical_configuration": "REGULAR",
-            "rental_methods": [
-                "KEY",
-                "TRANSITCARD",
-                "CREDITCARD",
-                "PHONE"
-            ],
-            "rental_uris": {},
-            "station_id": "1363"
-        },
-        "status": {
-            "is_charging_station": false,
-            "is_installed": true,
-            "is_renting": true,
-            "is_returning": true,
             "num_bikes_available": 6,
             "num_bikes_disabled": 0,
             "num_docks_available": 9,
             "num_docks_disabled": 0,
-            "station_id": "1363",
+            "station_id": "1353",
             "status": "IN_SERVICE",
             "traffic": null,
             "vehicle_docks_available": [
@@ -1977,8 +1854,71 @@
     },
     {
         "information": {
-            "_bluetooth_id": "",
-            "_ride_code_support": true,
+            "address": "Broad St & W 10th St",
+            "altitude": 0.0,
+            "capacity": 15,
+            "groups": [],
+            "is_charging_station": false,
+            "is_virtual_station": false,
+            "lat": 35.044458,
+            "lon": -85.310458,
+            "name": "Broad St & W 10th St",
+            "nearby_distance": 400.0,
+            "physical_configuration": "REGULAR",
+            "rental_methods": [
+                "KEY",
+                "TRANSITCARD",
+                "CREDITCARD",
+                "PHONE"
+            ],
+            "rental_uris": {},
+            "station_id": "1363"
+        },
+        "status": {
+            "is_charging_station": false,
+            "is_installed": true,
+            "is_renting": true,
+            "is_returning": true,
+            "num_bikes_available": 3,
+            "num_bikes_disabled": 0,
+            "num_docks_available": 12,
+            "num_docks_disabled": 0,
+            "station_id": "1363",
+            "status": "IN_SERVICE",
+            "traffic": null,
+            "vehicle_docks_available": [
+                {
+                    "count": 12,
+                    "vehicle_type_ids": [
+                        "ICONIC",
+                        "FIT",
+                        "BOOST",
+                        "EFIT"
+                    ]
+                }
+            ],
+            "vehicle_types_available": [
+                {
+                    "count": 0,
+                    "vehicle_type_id": "FIT"
+                },
+                {
+                    "count": 0,
+                    "vehicle_type_id": "BOOST"
+                },
+                {
+                    "count": 3,
+                    "vehicle_type_id": "ICONIC"
+                },
+                {
+                    "count": 0,
+                    "vehicle_type_id": "EFIT"
+                }
+            ]
+        }
+    },
+    {
+        "information": {
             "address": "Douglas St & Vine St",
             "altitude": 0.0,
             "capacity": 15,
@@ -2034,11 +1974,11 @@
                     "vehicle_type_id": "BOOST"
                 },
                 {
-                    "count": 7,
+                    "count": 6,
                     "vehicle_type_id": "ICONIC"
                 },
                 {
-                    "count": 0,
+                    "count": 1,
                     "vehicle_type_id": "EFIT"
                 }
             ]
@@ -2046,8 +1986,6 @@
     },
     {
         "information": {
-            "_bluetooth_id": "",
-            "_ride_code_support": true,
             "address": "4310 Amnicola Hwy",
             "altitude": 0.0,
             "capacity": 25,
@@ -2075,16 +2013,16 @@
             "is_installed": true,
             "is_renting": true,
             "is_returning": true,
-            "num_bikes_available": 8,
-            "num_bikes_disabled": 1,
-            "num_docks_available": 16,
+            "num_bikes_available": 11,
+            "num_bikes_disabled": 0,
+            "num_docks_available": 14,
             "num_docks_disabled": 0,
             "station_id": "1373",
             "status": "IN_SERVICE",
             "traffic": null,
             "vehicle_docks_available": [
                 {
-                    "count": 16,
+                    "count": 14,
                     "vehicle_type_ids": [
                         "ICONIC",
                         "FIT",
@@ -2103,7 +2041,7 @@
                     "vehicle_type_id": "BOOST"
                 },
                 {
-                    "count": 8,
+                    "count": 11,
                     "vehicle_type_id": "ICONIC"
                 },
                 {
@@ -2115,8 +2053,6 @@
     },
     {
         "information": {
-            "_bluetooth_id": "",
-            "_ride_code_support": true,
             "address": "495 Riverfront Pkwy",
             "altitude": 0.0,
             "capacity": 15,
@@ -2144,16 +2080,16 @@
             "is_installed": true,
             "is_renting": true,
             "is_returning": true,
-            "num_bikes_available": 7,
+            "num_bikes_available": 5,
             "num_bikes_disabled": 0,
-            "num_docks_available": 8,
+            "num_docks_available": 10,
             "num_docks_disabled": 0,
             "station_id": "1420",
             "status": "IN_SERVICE",
             "traffic": null,
             "vehicle_docks_available": [
                 {
-                    "count": 8,
+                    "count": 10,
                     "vehicle_type_ids": [
                         "ICONIC",
                         "FIT",
@@ -2172,7 +2108,7 @@
                     "vehicle_type_id": "BOOST"
                 },
                 {
-                    "count": 7,
+                    "count": 5,
                     "vehicle_type_id": "ICONIC"
                 },
                 {
@@ -2184,8 +2120,6 @@
     },
     {
         "information": {
-            "_bluetooth_id": "",
-            "_ride_code_support": true,
             "address": "Pine St. & W. 6th St.",
             "altitude": 0.0,
             "capacity": 15,
@@ -2241,11 +2175,11 @@
                     "vehicle_type_id": "BOOST"
                 },
                 {
-                    "count": 5,
+                    "count": 6,
                     "vehicle_type_id": "ICONIC"
                 },
                 {
-                    "count": 2,
+                    "count": 1,
                     "vehicle_type_id": "EFIT"
                 }
             ]
@@ -2253,8 +2187,6 @@
     },
     {
         "information": {
-            "_bluetooth_id": "",
-            "_ride_code_support": true,
             "address": "Blue Goose Hollow River Park Entrance",
             "altitude": 0.0,
             "capacity": 19,
@@ -2283,81 +2215,11 @@
             "is_installed": true,
             "is_renting": true,
             "is_returning": true,
-            "num_bikes_available": 9,
-            "num_bikes_disabled": 0,
-            "num_docks_available": 10,
-            "num_docks_disabled": 0,
-            "station_id": "1429",
-            "status": "IN_SERVICE",
-            "traffic": null,
-            "vehicle_docks_available": [
-                {
-                    "count": 10,
-                    "vehicle_type_ids": [
-                        "ICONIC",
-                        "FIT",
-                        "BOOST",
-                        "EFIT"
-                    ]
-                }
-            ],
-            "vehicle_types_available": [
-                {
-                    "count": 0,
-                    "vehicle_type_id": "FIT"
-                },
-                {
-                    "count": 0,
-                    "vehicle_type_id": "BOOST"
-                },
-                {
-                    "count": 9,
-                    "vehicle_type_id": "ICONIC"
-                },
-                {
-                    "count": 0,
-                    "vehicle_type_id": "EFIT"
-                }
-            ]
-        }
-    },
-    {
-        "information": {
-            "_bluetooth_id": "",
-            "_ride_code_support": true,
-            "address": "Curtain Pole River Park Entrance",
-            "altitude": 0.0,
-            "capacity": 19,
-            "cross_street": "Curtain Pole Rd",
-            "groups": [],
-            "is_charging_station": false,
-            "is_virtual_station": false,
-            "lat": 35.065416,
-            "lon": -85.274031,
-            "name": "Curtain Pole",
-            "nearby_distance": 10000.0,
-            "obcn": "",
-            "physical_configuration": "REGULAR",
-            "post_code": "37406",
-            "rental_methods": [
-                "KEY",
-                "TRANSITCARD",
-                "CREDITCARD",
-                "PHONE"
-            ],
-            "rental_uris": {},
-            "station_id": "1430"
-        },
-        "status": {
-            "is_charging_station": false,
-            "is_installed": true,
-            "is_renting": true,
-            "is_returning": true,
             "num_bikes_available": 6,
             "num_bikes_disabled": 0,
             "num_docks_available": 13,
             "num_docks_disabled": 0,
-            "station_id": "1430",
+            "station_id": "1429",
             "status": "IN_SERVICE",
             "traffic": null,
             "vehicle_docks_available": [
@@ -2393,8 +2255,74 @@
     },
     {
         "information": {
-            "_bluetooth_id": "",
-            "_ride_code_support": true,
+            "address": "Curtain Pole River Park Entrance",
+            "altitude": 0.0,
+            "capacity": 19,
+            "cross_street": "Curtain Pole Rd",
+            "groups": [],
+            "is_charging_station": false,
+            "is_virtual_station": false,
+            "lat": 35.065416,
+            "lon": -85.274031,
+            "name": "Curtain Pole",
+            "nearby_distance": 10000.0,
+            "obcn": "",
+            "physical_configuration": "REGULAR",
+            "post_code": "37406",
+            "rental_methods": [
+                "KEY",
+                "TRANSITCARD",
+                "CREDITCARD",
+                "PHONE"
+            ],
+            "rental_uris": {},
+            "station_id": "1430"
+        },
+        "status": {
+            "is_charging_station": false,
+            "is_installed": true,
+            "is_renting": true,
+            "is_returning": true,
+            "num_bikes_available": 10,
+            "num_bikes_disabled": 0,
+            "num_docks_available": 9,
+            "num_docks_disabled": 0,
+            "station_id": "1430",
+            "status": "IN_SERVICE",
+            "traffic": null,
+            "vehicle_docks_available": [
+                {
+                    "count": 9,
+                    "vehicle_type_ids": [
+                        "ICONIC",
+                        "FIT",
+                        "BOOST",
+                        "EFIT"
+                    ]
+                }
+            ],
+            "vehicle_types_available": [
+                {
+                    "count": 0,
+                    "vehicle_type_id": "FIT"
+                },
+                {
+                    "count": 0,
+                    "vehicle_type_id": "BOOST"
+                },
+                {
+                    "count": 10,
+                    "vehicle_type_id": "ICONIC"
+                },
+                {
+                    "count": 0,
+                    "vehicle_type_id": "EFIT"
+                }
+            ]
+        }
+    },
+    {
+        "information": {
             "address": "526 E MLK Blvd",
             "altitude": 0.0,
             "capacity": 15,
@@ -2423,16 +2351,16 @@
             "is_installed": true,
             "is_renting": true,
             "is_returning": true,
-            "num_bikes_available": 6,
+            "num_bikes_available": 7,
             "num_bikes_disabled": 0,
-            "num_docks_available": 9,
+            "num_docks_available": 8,
             "num_docks_disabled": 0,
             "station_id": "1431",
             "status": "IN_SERVICE",
             "traffic": null,
             "vehicle_docks_available": [
                 {
-                    "count": 9,
+                    "count": 8,
                     "vehicle_type_ids": [
                         "ICONIC",
                         "FIT",
@@ -2451,11 +2379,11 @@
                     "vehicle_type_id": "BOOST"
                 },
                 {
-                    "count": 3,
+                    "count": 5,
                     "vehicle_type_id": "ICONIC"
                 },
                 {
-                    "count": 3,
+                    "count": 2,
                     "vehicle_type_id": "EFIT"
                 }
             ]
@@ -2463,8 +2391,6 @@
     },
     {
         "information": {
-            "_bluetooth_id": "",
-            "_ride_code_support": true,
             "address": "Middle st",
             "altitude": 0.0,
             "capacity": 18,
@@ -2521,11 +2447,11 @@
                     "vehicle_type_id": "BOOST"
                 },
                 {
-                    "count": 10,
+                    "count": 9,
                     "vehicle_type_id": "ICONIC"
                 },
                 {
-                    "count": 0,
+                    "count": 1,
                     "vehicle_type_id": "EFIT"
                 }
             ]
@@ -2533,8 +2459,6 @@
     },
     {
         "information": {
-            "_bluetooth_id": "",
-            "_ride_code_support": true,
             "address": "801 Pine Street",
             "altitude": 0.0,
             "capacity": 11,
@@ -2563,16 +2487,16 @@
             "is_installed": true,
             "is_renting": true,
             "is_returning": true,
-            "num_bikes_available": 3,
+            "num_bikes_available": 7,
             "num_bikes_disabled": 0,
-            "num_docks_available": 8,
+            "num_docks_available": 4,
             "num_docks_disabled": 0,
             "station_id": "1433",
             "status": "IN_SERVICE",
             "traffic": null,
             "vehicle_docks_available": [
                 {
-                    "count": 8,
+                    "count": 4,
                     "vehicle_type_ids": [
                         "ICONIC",
                         "FIT",
@@ -2587,15 +2511,15 @@
                     "vehicle_type_id": "FIT"
                 },
                 {
-                    "count": 0,
+                    "count": 1,
                     "vehicle_type_id": "BOOST"
                 },
                 {
-                    "count": 1,
+                    "count": 3,
                     "vehicle_type_id": "ICONIC"
                 },
                 {
-                    "count": 2,
+                    "count": 3,
                     "vehicle_type_id": "EFIT"
                 }
             ]
@@ -2603,8 +2527,6 @@
     },
     {
         "information": {
-            "_bluetooth_id": "",
-            "_ride_code_support": true,
             "address": "20 Cherokee Blvd",
             "altitude": 0.0,
             "capacity": 19,
@@ -2632,16 +2554,16 @@
             "is_installed": true,
             "is_renting": true,
             "is_returning": true,
-            "num_bikes_available": 10,
+            "num_bikes_available": 7,
             "num_bikes_disabled": 0,
-            "num_docks_available": 9,
+            "num_docks_available": 12,
             "num_docks_disabled": 0,
             "station_id": "1435",
             "status": "IN_SERVICE",
             "traffic": null,
             "vehicle_docks_available": [
                 {
-                    "count": 9,
+                    "count": 12,
                     "vehicle_type_ids": [
                         "ICONIC",
                         "FIT",
@@ -2656,7 +2578,7 @@
                     "vehicle_type_id": "FIT"
                 },
                 {
-                    "count": 3,
+                    "count": 1,
                     "vehicle_type_id": "BOOST"
                 },
                 {
@@ -2664,7 +2586,7 @@
                     "vehicle_type_id": "ICONIC"
                 },
                 {
-                    "count": 1,
+                    "count": 0,
                     "vehicle_type_id": "EFIT"
                 }
             ]
@@ -2672,8 +2594,6 @@
     },
     {
         "information": {
-            "_bluetooth_id": "",
-            "_ride_code_support": true,
             "address": "415 N. Market St",
             "altitude": 0.0,
             "capacity": 11,
@@ -2700,8 +2620,8 @@
             "is_installed": true,
             "is_renting": true,
             "is_returning": true,
-            "num_bikes_available": 6,
-            "num_bikes_disabled": 2,
+            "num_bikes_available": 8,
+            "num_bikes_disabled": 0,
             "num_docks_available": 3,
             "num_docks_disabled": 0,
             "station_id": "1437",
@@ -2728,11 +2648,11 @@
                     "vehicle_type_id": "BOOST"
                 },
                 {
-                    "count": 4,
+                    "count": 7,
                     "vehicle_type_id": "ICONIC"
                 },
                 {
-                    "count": 2,
+                    "count": 1,
                     "vehicle_type_id": "EFIT"
                 }
             ]
@@ -2740,8 +2660,6 @@
     },
     {
         "information": {
-            "_bluetooth_id": "",
-            "_ride_code_support": true,
             "address": "3917 St Elmo Avenue",
             "altitude": 0.0,
             "capacity": 19,
@@ -2809,8 +2727,6 @@
     },
     {
         "information": {
-            "_bluetooth_id": "c0cc",
-            "_ride_code_support": true,
             "address": "1606 Bailey Ave",
             "altitude": 0.0,
             "capacity": 16,
@@ -2839,16 +2755,16 @@
             "is_installed": true,
             "is_renting": true,
             "is_returning": true,
-            "num_bikes_available": 8,
+            "num_bikes_available": 5,
             "num_bikes_disabled": 0,
-            "num_docks_available": 8,
+            "num_docks_available": 11,
             "num_docks_disabled": 0,
             "station_id": "1439",
             "status": "IN_SERVICE",
             "traffic": null,
             "vehicle_docks_available": [
                 {
-                    "count": 8,
+                    "count": 11,
                     "vehicle_type_ids": [
                         "ICONIC",
                         "FIT",
@@ -2871,7 +2787,7 @@
                     "vehicle_type_id": "ICONIC"
                 },
                 {
-                    "count": 8,
+                    "count": 5,
                     "vehicle_type_id": "EFIT"
                 }
             ]
