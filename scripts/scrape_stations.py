@@ -116,7 +116,7 @@ cities.extend(
             status_url=city["status_url"],
         )
     )
-    for city in gbfs_cities[:20]
+    for city in gbfs_cities[:30]
 )
 
 cities.extend([
