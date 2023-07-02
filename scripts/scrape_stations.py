@@ -17,7 +17,7 @@ def main():
             executor.submit(
                 scrape_parse_save,
                 scrape=city.scrape,
-                save_to=pathlib.Path("data/stations") / f"{city.name}.json"
+                save_to=pathlib.Path("data/stations") / f"{city.name}.geojson"
             ): city.name
             for city in cities
         }

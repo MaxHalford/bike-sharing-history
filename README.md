@@ -1,7 +1,7 @@
 # bike-sharing-history
 
-Tracking the status of bike stations from various providers. The weather forecast in each city is also collected. The data is updated every 15 minutes.
+This repo tracks the status of bike stations from various bike-sharing providers. The data is fetched every 15 minutes. The results are stored and versioned as GeoJSON files. This is done using the [git scraping](https://simonwillison.net/2020/Oct/9/git-scraping/) technique.
 
-Everyone is welcome to add new cities. You simply have to add the necessary details to `cities.py`, before sending a pull request.
+The weather forecast for the next 24 hours is also collected every 15 minutes, for each city.
 
-This project uses the [git scraping](https://simonwillison.net/2020/Oct/9/git-scraping/) technique.
+Everyone is welcome to add new cities. You simply have to contribute the necessary details to `cities.py`, before sending a pull request.

@@ -28,7 +28,26 @@ def jcdecaux_scrape(city):
     stations = r.json()
     for station in stations:
         del station["last_update"]
-    return sorted(stations, key=lambda x: x["number"])
+    stations = sorted(stations, key=lambda x: x["number"])
+    return {
+        "type": "FeatureCollection",
+        "features": [
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [station["position"]["lng"], station["position"]["lat"]]
+                },
+                "properties": {
+                    k: v
+                    for k, v in station.items()
+                    if k not in ["position", "number"]
+                }
+            }
+            for station in stations
+        ]
+    }
+
 
 def jcdecaux_city(**kwargs):
     return City(
@@ -200,26 +219,46 @@ cities.extend([
 ########
 
 def gbfs_scrape(info_url, status_url):
+
     r = requests.get(info_url)
     r.raise_for_status()
     information = {s["station_id"]: s for s in r.json()["data"]["stations"]}
+
     r = requests.get(status_url)
     r.raise_for_status()
     statuses = {s["station_id"]: s for s in r.json()["data"]["stations"]}
-    stations = [
-        {
-            "information": {
-                k: v
-                for k, v in information[station_id].items()
-                if not k.startswith("_")
-            },
-            "status": statuses[station_id],
-        }
-        for station_id in information
-    ]
-    for station in stations:
-        del station["status"]["last_reported"]
-    return stations
+
+    def get_coordinates(x):
+        pos = x.get("position", x)
+        return pos["lon"], pos["lat"]
+
+    return {
+        "type": "FeatureCollection",
+        "features": [
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": get_coordinates(information[station_id]),
+                },
+                "properties": {
+                    **{
+                        k: v
+                        for k, v in information[station_id].items()
+                        if not k.startswith("_")
+                        and k not in {"position", "lat", "lon"}
+                    },
+                    **{
+                        k: v
+                        for k, v in statuses[station_id].items()
+                        if not k.startswith("_")
+                    },
+                }
+            }
+            for station_id in sorted(information)
+        ]
+    }
+
 
 cities.extend([
     City(
