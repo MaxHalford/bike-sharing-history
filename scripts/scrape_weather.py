@@ -17,10 +17,12 @@ def fetch_weather(lat, lon):
     del weather["generationtime_ms"]
     return weather
 
+
 def scrape_parse_save(scrape, save_to):
     raw_data = scrape()
     with open(save_to, "w") as f:
         json.dump(raw_data, f, sort_keys=True, indent=4)
+
 
 def main():
     with concurrent.futures.ThreadPoolExecutor(max_workers=8) as executor:
@@ -28,7 +30,7 @@ def main():
             executor.submit(
                 scrape_parse_save,
                 scrape=functools.partial(fetch_weather, city.latitude, city.longitude),
-                save_to=pathlib.Path("data/weather") / f"{city.name}.json"
+                save_to=pathlib.Path("data/weather") / f"{city.name}.json",
             ): city.name
             for city in cities
         }
