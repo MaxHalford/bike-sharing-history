@@ -30,43 +30,40 @@ Everyone is welcome to add new cities. You simply have to contribute the necessa
 | 018 | 🇫🇷 | Châlons-en-Champagne | Bird | [`chalons-en-champagne/bird.geojson`](data/stations/chalons-en-champagne/bird.geojson) | [`chalons-en-champagne.json`](data/weather/chalons-en-champagne.json) |
 | 019 | 🇫🇷 | Clermont-Ferrand | C-Vélo | [`clermont-ferrand/c-velo.geojson`](data/stations/clermont-ferrand/c-velo.geojson) | [`clermont-ferrand.json`](data/weather/clermont-ferrand.json) |
 | 020 | 🇫🇷 | Créteil | JCDecaux | [`creteil/jcdecaux.geojson`](data/stations/creteil/jcdecaux.geojson) | [`creteil.json`](data/weather/creteil.json) |
-| 021 | 🇫🇷 | Créteil | CristoLib | [`creteil/cristolib.geojson`](data/stations/creteil/cristolib.geojson) | [`creteil.json`](data/weather/creteil.json) |
-| 022 | 🇫🇷 | Draguignan | Bird | [`draguignan/bird.geojson`](data/stations/draguignan/bird.geojson) | [`draguignan.json`](data/weather/draguignan.json) |
-| 023 | 🇫🇷 | La Roche-sur-Yon | Bird | [`la-roche-sur-yon/bird.geojson`](data/stations/la-roche-sur-yon/bird.geojson) | [`la-roche-sur-yon.json`](data/weather/la-roche-sur-yon.json) |
-| 024 | 🇫🇷 | Laval | Bird | [`laval/bird.geojson`](data/stations/laval/bird.geojson) | [`laval.json`](data/weather/laval.json) |
-| 025 | 🇫🇷 | Lille | V'lille | [`lille/v-lille.geojson`](data/stations/lille/v-lille.geojson) | [`lille.json`](data/weather/lille.json) |
-| 026 | 🇫🇷 | Lyon | JCDecaux | [`lyon/jcdecaux.geojson`](data/stations/lyon/jcdecaux.geojson) | [`lyon.json`](data/weather/lyon.json) |
-| 027 | 🇫🇷 | Marseille | JCDecaux | [`marseille/jcdecaux.geojson`](data/stations/marseille/jcdecaux.geojson) | [`marseille.json`](data/weather/marseille.json) |
-| 028 | 🇫🇷 | Marseille | Bird | [`marseille/bird.geojson`](data/stations/marseille/bird.geojson) | [`marseille.json`](data/weather/marseille.json) |
-| 029 | 🇫🇷 | Marseille | Lime | [`marseille/lime.geojson`](data/stations/marseille/lime.geojson) | [`marseille.json`](data/weather/marseille.json) |
-| 030 | 🇫🇷 | Millau | Bird | [`millau/bird.geojson`](data/stations/millau/bird.geojson) | [`millau.json`](data/weather/millau.json) |
-| 031 | 🇫🇷 | Montluçon | Bird | [`montlucon/bird.geojson`](data/stations/montlucon/bird.geojson) | [`montlucon.json`](data/weather/montlucon.json) |
-| 032 | 🇫🇷 | Montpellier | Vélomagg' | [`montpellier/velomagg.geojson`](data/stations/montpellier/velomagg.geojson) | [`montpellier.json`](data/weather/montpellier.json) |
-| 033 | 🇫🇷 | Mulhouse | JCDecaux | [`mulhouse/jcdecaux.geojson`](data/stations/mulhouse/jcdecaux.geojson) | [`mulhouse.json`](data/weather/mulhouse.json) |
-| 034 | 🇫🇷 | Nancy | JCDecaux | [`nancy/jcdecaux.geojson`](data/stations/nancy/jcdecaux.geojson) | [`nancy.json`](data/weather/nancy.json) |
-| 035 | 🇫🇷 | Nantes | JCDecaux | [`nantes/jcdecaux.geojson`](data/stations/nantes/jcdecaux.geojson) | [`nantes.json`](data/weather/nantes.json) |
-| 036 | 🇫🇷 | Nantes | Bicloo | [`nantes/bicloo.geojson`](data/stations/nantes/bicloo.geojson) | [`nantes.json`](data/weather/nantes.json) |
-| 037 | 🇫🇷 | Paris | Lime | [`paris/lime.geojson`](data/stations/paris/lime.geojson) | [`paris.json`](data/weather/paris.json) |
-| 038 | 🇫🇷 | Rouen | JCDecaux | [`rouen/jcdecaux.geojson`](data/stations/rouen/jcdecaux.geojson) | [`rouen.json`](data/weather/rouen.json) |
-| 039 | 🇫🇷 | Rouen | Cy'clic | [`rouen/cy-clic.geojson`](data/stations/rouen/cy-clic.geojson) | [`rouen.json`](data/weather/rouen.json) |
-| 040 | 🇫🇷 | Saint-Etienne | Vélivert | [`saint-etienne/velivert.geojson`](data/stations/saint-etienne/velivert.geojson) | [`saint-etienne.json`](data/weather/saint-etienne.json) |
-| 041 | 🇫🇷 | Sarreguemines | Bird | [`sarreguemines/bird.geojson`](data/stations/sarreguemines/bird.geojson) | [`sarreguemines.json`](data/weather/sarreguemines.json) |
-| 042 | 🇫🇷 | Toulouse | JCDecaux | [`toulouse/jcdecaux.geojson`](data/stations/toulouse/jcdecaux.geojson) | [`toulouse.json`](data/weather/toulouse.json) |
-| 043 | 🇫🇷 | Valenciennes | Donkey Republic | [`valenciennes/donkey-republic.geojson`](data/stations/valenciennes/donkey-republic.geojson) | [`valenciennes.json`](data/weather/valenciennes.json) |
-| 044 | 🇫🇷 | Vannes | Vélocéo | [`vannes/veloceo.geojson`](data/stations/vannes/veloceo.geojson) | [`vannes.json`](data/weather/vannes.json) |
-| 045 | 🇫🇷 | Vichy | Bird | [`vichy/bird.geojson`](data/stations/vichy/bird.geojson) | [`vichy.json`](data/weather/vichy.json) |
-| 046 | 🇮🇪 | Dublin | JCDecaux | [`dublin/jcdecaux.geojson`](data/stations/dublin/jcdecaux.geojson) | [`dublin.json`](data/weather/dublin.json) |
-| 047 | 🇯🇵 | Toyama | JCDecaux | [`toyama/jcdecaux.geojson`](data/stations/toyama/jcdecaux.geojson) | [`toyama.json`](data/weather/toyama.json) |
-| 048 | 🇱🇹 | Vilnius | JCDecaux | [`vilnius/jcdecaux.geojson`](data/stations/vilnius/jcdecaux.geojson) | [`vilnius.json`](data/weather/vilnius.json) |
-| 049 | 🇱🇺 | Luxembourg | JCDecaux | [`luxembourg/jcdecaux.geojson`](data/stations/luxembourg/jcdecaux.geojson) | [`luxembourg.json`](data/weather/luxembourg.json) |
-| 050 | 🇳🇴 | Lillestrøm | JCDecaux | [`lillestrom/jcdecaux.geojson`](data/stations/lillestrom/jcdecaux.geojson) | [`lillestrom.json`](data/weather/lillestrom.json) |
-| 051 | 🇸🇪 | Lund | JCDecaux | [`lund/jcdecaux.geojson`](data/stations/lund/jcdecaux.geojson) | [`lund.json`](data/weather/lund.json) |
-| 052 | 🇸🇪 | Stockholm | JCDecaux | [`stockholm/jcdecaux.geojson`](data/stations/stockholm/jcdecaux.geojson) | [`stockholm.json`](data/weather/stockholm.json) |
-| 053 | 🇸🇮 | Ljubljana | JCDecaux | [`ljubljana/jcdecaux.geojson`](data/stations/ljubljana/jcdecaux.geojson) | [`ljubljana.json`](data/weather/ljubljana.json) |
-| 054 | 🇸🇮 | Maribor | JCDecaux | [`maribor/jcdecaux.geojson`](data/stations/maribor/jcdecaux.geojson) | [`maribor.json`](data/weather/maribor.json) |
-| 055 | 🇺🇸 | Boulder | BCycle | [`boulder/bcycle.geojson`](data/stations/boulder/bcycle.geojson) | [`boulder.json`](data/weather/boulder.json) |
-| 056 | 🇺🇸 | Chattanooga | Bike Chattanooga | [`chattanooga/bike-chattanooga.geojson`](data/stations/chattanooga/bike-chattanooga.geojson) | [`chattanooga.json`](data/weather/chattanooga.json) |
-| 057 | 🇺🇸 | San Francisco Bay Area | Bay Wheels | [`san-francisco-bay-area/bay-wheels.geojson`](data/stations/san-francisco-bay-area/bay-wheels.geojson) | [`san-francisco-bay-area.json`](data/weather/san-francisco-bay-area.json) |
+| 021 | 🇫🇷 | Draguignan | Bird | [`draguignan/bird.geojson`](data/stations/draguignan/bird.geojson) | [`draguignan.json`](data/weather/draguignan.json) |
+| 022 | 🇫🇷 | La Roche-sur-Yon | Bird | [`la-roche-sur-yon/bird.geojson`](data/stations/la-roche-sur-yon/bird.geojson) | [`la-roche-sur-yon.json`](data/weather/la-roche-sur-yon.json) |
+| 023 | 🇫🇷 | Laval | Bird | [`laval/bird.geojson`](data/stations/laval/bird.geojson) | [`laval.json`](data/weather/laval.json) |
+| 024 | 🇫🇷 | Lille | V'lille | [`lille/v-lille.geojson`](data/stations/lille/v-lille.geojson) | [`lille.json`](data/weather/lille.json) |
+| 025 | 🇫🇷 | Lyon | JCDecaux | [`lyon/jcdecaux.geojson`](data/stations/lyon/jcdecaux.geojson) | [`lyon.json`](data/weather/lyon.json) |
+| 026 | 🇫🇷 | Marseille | JCDecaux | [`marseille/jcdecaux.geojson`](data/stations/marseille/jcdecaux.geojson) | [`marseille.json`](data/weather/marseille.json) |
+| 027 | 🇫🇷 | Marseille | Bird | [`marseille/bird.geojson`](data/stations/marseille/bird.geojson) | [`marseille.json`](data/weather/marseille.json) |
+| 028 | 🇫🇷 | Marseille | Lime | [`marseille/lime.geojson`](data/stations/marseille/lime.geojson) | [`marseille.json`](data/weather/marseille.json) |
+| 029 | 🇫🇷 | Millau | Bird | [`millau/bird.geojson`](data/stations/millau/bird.geojson) | [`millau.json`](data/weather/millau.json) |
+| 030 | 🇫🇷 | Montluçon | Bird | [`montlucon/bird.geojson`](data/stations/montlucon/bird.geojson) | [`montlucon.json`](data/weather/montlucon.json) |
+| 031 | 🇫🇷 | Montpellier | Vélomagg' | [`montpellier/velomagg.geojson`](data/stations/montpellier/velomagg.geojson) | [`montpellier.json`](data/weather/montpellier.json) |
+| 032 | 🇫🇷 | Mulhouse | JCDecaux | [`mulhouse/jcdecaux.geojson`](data/stations/mulhouse/jcdecaux.geojson) | [`mulhouse.json`](data/weather/mulhouse.json) |
+| 033 | 🇫🇷 | Nancy | JCDecaux | [`nancy/jcdecaux.geojson`](data/stations/nancy/jcdecaux.geojson) | [`nancy.json`](data/weather/nancy.json) |
+| 034 | 🇫🇷 | Nantes | JCDecaux | [`nantes/jcdecaux.geojson`](data/stations/nantes/jcdecaux.geojson) | [`nantes.json`](data/weather/nantes.json) |
+| 035 | 🇫🇷 | Paris | Lime | [`paris/lime.geojson`](data/stations/paris/lime.geojson) | [`paris.json`](data/weather/paris.json) |
+| 036 | 🇫🇷 | Rouen | JCDecaux | [`rouen/jcdecaux.geojson`](data/stations/rouen/jcdecaux.geojson) | [`rouen.json`](data/weather/rouen.json) |
+| 037 | 🇫🇷 | Saint-Etienne | Vélivert | [`saint-etienne/velivert.geojson`](data/stations/saint-etienne/velivert.geojson) | [`saint-etienne.json`](data/weather/saint-etienne.json) |
+| 038 | 🇫🇷 | Sarreguemines | Bird | [`sarreguemines/bird.geojson`](data/stations/sarreguemines/bird.geojson) | [`sarreguemines.json`](data/weather/sarreguemines.json) |
+| 039 | 🇫🇷 | Toulouse | JCDecaux | [`toulouse/jcdecaux.geojson`](data/stations/toulouse/jcdecaux.geojson) | [`toulouse.json`](data/weather/toulouse.json) |
+| 040 | 🇫🇷 | Valenciennes | Donkey Republic | [`valenciennes/donkey-republic.geojson`](data/stations/valenciennes/donkey-republic.geojson) | [`valenciennes.json`](data/weather/valenciennes.json) |
+| 041 | 🇫🇷 | Vannes | Vélocéo | [`vannes/veloceo.geojson`](data/stations/vannes/veloceo.geojson) | [`vannes.json`](data/weather/vannes.json) |
+| 042 | 🇫🇷 | Vichy | Bird | [`vichy/bird.geojson`](data/stations/vichy/bird.geojson) | [`vichy.json`](data/weather/vichy.json) |
+| 043 | 🇮🇪 | Dublin | JCDecaux | [`dublin/jcdecaux.geojson`](data/stations/dublin/jcdecaux.geojson) | [`dublin.json`](data/weather/dublin.json) |
+| 044 | 🇯🇵 | Toyama | JCDecaux | [`toyama/jcdecaux.geojson`](data/stations/toyama/jcdecaux.geojson) | [`toyama.json`](data/weather/toyama.json) |
+| 045 | 🇱🇹 | Vilnius | JCDecaux | [`vilnius/jcdecaux.geojson`](data/stations/vilnius/jcdecaux.geojson) | [`vilnius.json`](data/weather/vilnius.json) |
+| 046 | 🇱🇺 | Luxembourg | JCDecaux | [`luxembourg/jcdecaux.geojson`](data/stations/luxembourg/jcdecaux.geojson) | [`luxembourg.json`](data/weather/luxembourg.json) |
+| 047 | 🇳🇴 | Lillestrøm | JCDecaux | [`lillestrom/jcdecaux.geojson`](data/stations/lillestrom/jcdecaux.geojson) | [`lillestrom.json`](data/weather/lillestrom.json) |
+| 048 | 🇸🇪 | Lund | JCDecaux | [`lund/jcdecaux.geojson`](data/stations/lund/jcdecaux.geojson) | [`lund.json`](data/weather/lund.json) |
+| 049 | 🇸🇪 | Stockholm | JCDecaux | [`stockholm/jcdecaux.geojson`](data/stations/stockholm/jcdecaux.geojson) | [`stockholm.json`](data/weather/stockholm.json) |
+| 050 | 🇸🇮 | Ljubljana | JCDecaux | [`ljubljana/jcdecaux.geojson`](data/stations/ljubljana/jcdecaux.geojson) | [`ljubljana.json`](data/weather/ljubljana.json) |
+| 051 | 🇸🇮 | Maribor | JCDecaux | [`maribor/jcdecaux.geojson`](data/stations/maribor/jcdecaux.geojson) | [`maribor.json`](data/weather/maribor.json) |
+| 052 | 🇺🇸 | Boulder | BCycle | [`boulder/bcycle.geojson`](data/stations/boulder/bcycle.geojson) | [`boulder.json`](data/weather/boulder.json) |
+| 053 | 🇺🇸 | Chattanooga | Bike Chattanooga | [`chattanooga/bike-chattanooga.geojson`](data/stations/chattanooga/bike-chattanooga.geojson) | [`chattanooga.json`](data/weather/chattanooga.json) |
+| 054 | 🇺🇸 | San Francisco Bay Area | Bay Wheels | [`san-francisco-bay-area/bay-wheels.geojson`](data/stations/san-francisco-bay-area/bay-wheels.geojson) | [`san-francisco-bay-area.json`](data/weather/san-francisco-bay-area.json) |
 
 ## Archives
 
