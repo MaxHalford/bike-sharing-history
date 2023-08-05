@@ -20,9 +20,6 @@ jobs:
       - name: Scrape weather
         run: python scripts/scrape_weather.py
 
-      - name: Update summary
-        run: python scripts/update_summary.py
-
       - name: Commit and push if it changed
         run: |-
           git config user.name "Automated"
