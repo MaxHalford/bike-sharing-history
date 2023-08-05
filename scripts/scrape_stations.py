@@ -34,7 +34,7 @@ def main():
             logging.exception(f"❌ {provider} @ {city} {exc}")
             n_exceptions += 1
     if n_exceptions:
-        logging.warning(f"⚠️ {n_exceptions:,d} exceptions out of {len(systems):,d}")
+        raise RuntimeError(f"⚠️ {n_exceptions:,d} exceptions out of {len(systems):,d}")
 
 
 if __name__ == "__main__":

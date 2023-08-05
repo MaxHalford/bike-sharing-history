@@ -249,5 +249,17 @@ systems.extend(
                 status_url="https://riodejaneiro-br.publicbikesystem.net/customer/gbfs/v2/en/station_status",
             ),
         ),
+        System(
+            provider='Bicloo',
+            city='Nantes',
+            country='🇫🇷',
+            latitude=47.21346056536673,
+            longitude=-1.5545907831970511,
+            scrape=functools.partial(
+                gbfs_scrape,
+                info_url='https://transport.data.gouv.fr/gbfs/nantes/station_information.json',
+                status_url='https://transport.data.gouv.fr/gbfs/nantes/station_status.json'
+            )
+        )
     ]
 )
