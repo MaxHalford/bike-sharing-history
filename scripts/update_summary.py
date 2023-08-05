@@ -1,4 +1,5 @@
-from cities import cities
+import utils
+from systems import systems
 
 
 def main():
@@ -20,11 +21,13 @@ def main():
 
     # Generate the new table content
     new_table = []
-    new_table.append("| Country | Name | Stations (live) | Weather (live) |\n")
-    new_table.append("|---------|------|-----------------|----------------|\n")
-    for city in sorted(cities, key=lambda c: c.country + c.name):
+    new_table.append("| Country | City | Provider | Stations (live) | Weather (live) |\n")
+    new_table.append("|---------|------|----------|-----------------|----------------|\n")
+    for system in sorted(systems, key=lambda c: c.country + c.city):
+        city_slug = utils.slugify(system.city)
+        provider_slug = utils.slugify(system.provider)
         new_table.append(
-            f"| {city.country} | {city.name} | [`{city.name}.geojson`](data/stations/{city.name}.geojson) | [`{city.name}.json`](data/weather/{city.name}.json) |\n"
+            f"| {system.country} | {system.city} | {system.provider} | [{city_slug}/`{provider_slug}.geojson`](data/stations/{city_slug}/{provider_slug}.geojson) | [`{city_slug}.json`](data/weather/{city_slug}.json) |\n"
         )
 
     # Replace the existing table with the new table
