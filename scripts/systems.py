@@ -382,18 +382,6 @@ systems.extend(
             )
         ),
         System(
-            provider='CristoLib',
-            city='Créteil',
-            country='🇫🇷',
-            latitude=48.78332989181599,
-            longitude=2.4595942182430486,
-            scrape=functools.partial(
-                gbfs_scrape,
-                info_url='https://transport.data.gouv.fr/gbfs/creteil/station_information.json',
-                status_url='https://transport.data.gouv.fr/gbfs/creteil/station_status.json'
-            )
-        ),
-        System(
             provider='C-Vélo',
             city='Clermont-Ferrand',
             country='🇫🇷',
