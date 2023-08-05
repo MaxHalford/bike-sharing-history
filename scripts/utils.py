@@ -1,6 +1,7 @@
 import logging
 import os
 import re
+import time
 import unicodedata
 
 try:
@@ -61,3 +62,16 @@ def slugify(text, separator='-'):
     text = text.replace(2 * separator, separator)
 
     return text
+
+
+def exponential_backoff_retry(func, max_attempts):
+    for attempt in range(max_attempts):
+        try:
+            return func()
+        except Exception as exc:
+            if attempt < max_attempts - 1:
+                wait_time = 2 ** attempt  # Exponential wait time
+                logging.warning(f"Retrying in {wait_time} seconds...")
+                time.sleep(wait_time)
+            else:
+                raise exc

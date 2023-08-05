@@ -20,7 +20,7 @@ def fetch_weather(lat, lon):
 
 
 def scrape_parse_save(scrape, save_to):
-    raw_data = scrape()
+    raw_data = utils.exponential_backoff_retry(scrape, max_attempts=4)
     with open(save_to, "w") as f:
         json.dump(raw_data, f, sort_keys=True, indent=4)
 
