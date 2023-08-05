@@ -536,6 +536,18 @@ systems.extend(
                 info_url='https://vancouver-gbfs.smoove.pro/gbfs/2/en/station_information.json',
                 status_url='https://vancouver-gbfs.smoove.pro/gbfs/2/en/station_status.json'
             )
+        ),
+        System(
+            provider='Smovengo',
+            city='Paris',
+            country='🇫🇷',
+            latitude=43.653908,
+            longitude=-79.384293,
+            scrape=functools.partial(
+                gbfs_scrape,
+                info_url='https://velib-metropole-opendata.smoove.pro/opendata/Velib_Metropole/station_information.json',
+                status_url='https://velib-metropole-opendata.smoove.pro/opendata/Velib_Metropole/station_status.json'
+            )
         )
     ]
 )

@@ -25,17 +25,17 @@ def main():
             for system in systems
         }
 
-    n_exceptions = 0
-    for future in concurrent.futures.as_completed(future_to_city):
-        provider, city = future_to_city[future]
-        try:
-            future.result()
-            logging.info(f"✅ {provider} @ {city}")
-        except Exception as exc:
-            logging.exception(f"❌ {provider} @ {city} {exc}")
-            n_exceptions += 1
-    if n_exceptions:
-        raise RuntimeError(f"⚠️ {n_exceptions:,d} exceptions out of {len(systems):,d}")
+        n_exceptions = 0
+        for future in concurrent.futures.as_completed(future_to_city):
+            provider, city = future_to_city[future]
+            try:
+                future.result()
+                logging.info(f"✅ {provider} @ {city}")
+            except Exception as exc:
+                logging.exception(f"❌ {provider} @ {city} {exc}")
+                n_exceptions += 1
+        if n_exceptions:
+            raise RuntimeError(f"⚠️ {n_exceptions:,d} exceptions out of {len(systems):,d}")
 
 
 if __name__ == "__main__":
