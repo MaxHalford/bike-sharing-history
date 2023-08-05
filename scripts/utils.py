@@ -1,6 +1,7 @@
 import logging
 import os
 import re
+import unicodedata
 
 try:
     with open(".env") as f:
@@ -43,6 +44,7 @@ def slugify(text, separator='-'):
         ';': separator,
         '"': separator,
         "'": separator,
+        "ø": "o",
     }
 
     # Normalize Unicode characters to NFKD form and remove diacritics
@@ -54,5 +56,8 @@ def slugify(text, separator='-'):
 
     # Remove any remaining non-word characters and collapse consecutive separators
     text = re.sub(r'[^\w%s]+' % separator, separator, text).strip(separator).lower()
+
+    # Remove adjacent separators
+    text = text.replace(2 * separator, separator)
 
     return text
