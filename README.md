@@ -6,7 +6,9 @@ The weather forecast for the next 24 hours is also collected every 10 minutes, f
 
 Everyone is welcome to add new cities. You simply have to contribute the necessary details to `cities.py`, before sending a pull request.
 
-| # | Country | City | Provider | Stations (live) | Weather (live) |
+## Live data
+
+| # | Country | City | Provider | Stations | Weather |
 |---|---------|------|----------|-----------------|----------------|
 | 001 | 🇦🇪 | Dubai | Careem BIKE | [`dubai/careem-bike.geojson`](data/stations/dubai/careem-bike.geojson) | [`dubai.json`](data/weather/dubai.json) |
 | 002 | 🇦🇺 | Brisbane | JCDecaux | [`brisbane/jcdecaux.geojson`](data/stations/brisbane/jcdecaux.geojson) | [`brisbane.json`](data/weather/brisbane.json) |
@@ -65,3 +67,9 @@ Everyone is welcome to add new cities. You simply have to contribute the necessa
 | 055 | 🇺🇸 | Boulder | BCycle | [`boulder/bcycle.geojson`](data/stations/boulder/bcycle.geojson) | [`boulder.json`](data/weather/boulder.json) |
 | 056 | 🇺🇸 | Chattanooga | Bike Chattanooga | [`chattanooga/bike-chattanooga.geojson`](data/stations/chattanooga/bike-chattanooga.geojson) | [`chattanooga.json`](data/weather/chattanooga.json) |
 | 057 | 🇺🇸 | San Francisco Bay Area | Bay Wheels | [`san-francisco-bay-area/bay-wheels.geojson`](data/stations/san-francisco-bay-area/bay-wheels.geojson) | [`san-francisco-bay-area.json`](data/weather/san-francisco-bay-area.json) |
+
+## Archives
+
+🏗️
+
+The git history contains all the state of each stations and weather at each point in time. This git history can turned into Parquet files for easy consumption.

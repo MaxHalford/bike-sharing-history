@@ -10,7 +10,7 @@ def main():
     table_start = None
     table_end = None
     for i, line in enumerate(readme_contents):
-        if line.startswith("| Country"):
+        if line.startswith("| # "):
             table_start = i
         elif ".geojson" in line and table_start is not None:
             table_end = max(i, table_end or 0)
@@ -21,7 +21,7 @@ def main():
 
     # Generate the new table content
     new_table = []
-    new_table.append("| # | Country | City | Provider | Stations (live) | Weather (live) |\n")
+    new_table.append("| # | Country | City | Provider | Stations | Weather |\n")
     new_table.append("|---|---------|------|----------|-----------------|----------------|\n")
     for i, system in enumerate(sorted(systems, key=lambda c: c.country + c.city), start=1):
         city_slug = utils.slugify(system.city)
