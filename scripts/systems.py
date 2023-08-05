@@ -7,15 +7,16 @@ import conf
 
 
 @dataclasses.dataclass
-class City:
-    name: str
+class System:
+    provider: str
+    city: str
     country: str
     latitude: float
     longitude: float
     scrape: typing.Callable
 
 
-cities = []
+systems = []
 
 ############
 # JCDECAUX #
@@ -53,91 +54,102 @@ def jcdecaux_scrape(city):
 
 
 def jcdecaux_city(**kwargs):
-    return City(
-        scrape=functools.partial(jcdecaux_scrape, city=kwargs["name"]),
+
+    city_name = kwargs["city"]
+    jcdecaux_city_name = {
+        "Créteil": "creteil",
+        "Brussels": "bruxelles",
+        "Lillestrøm": "lillestrom",
+        "Besançon": "besancon",
+        "Sevilla": "seville",
+        "Valencia": "valence",
+    }.get(city_name, city_name.lower())
+
+    return System(
+        provider="JCDecaux",
+        scrape=functools.partial(jcdecaux_scrape, city=jcdecaux_city_name),
         **kwargs,
     )
 
-
-cities.extend(
+systems.extend(
     [
         jcdecaux_city(
-            name="brisbane", country="🇦🇺", latitude=-27.470125, longitude=153.021072
+            city="Brisbane", country="🇦🇺", latitude=-27.470125, longitude=153.021072
         ),
         jcdecaux_city(
-            name="bruxelles", country="🇧🇪", latitude=50.850346, longitude=4.351721
+            city="Brussels", country="🇧🇪", latitude=50.850346, longitude=4.351721
         ),
         jcdecaux_city(
-            name="namur", country="🇧🇪", latitude=50.466667, longitude=4.866667
+            city="Namur", country="🇧🇪", latitude=50.466667, longitude=4.866667
         ),
         jcdecaux_city(
-            name="santander", country="🇪🇸", latitude=43.462306, longitude=-3.809980
+            city="Santander", country="🇪🇸", latitude=43.462306, longitude=-3.809980
         ),
         jcdecaux_city(
-            name="amiens", country="🇫🇷", latitude=49.894171, longitude=2.295695
+            city="Amiens", country="🇫🇷", latitude=49.894171, longitude=2.295695
         ),
         jcdecaux_city(
-            name="cergy-pontoise", country="🇫🇷", latitude=49.036890, longitude=2.075053
+            city="Cergy-Pontoise", country="🇫🇷", latitude=49.036890, longitude=2.075053
         ),
         jcdecaux_city(
-            name="creteil", country="🇫🇷", latitude=48.783333, longitude=2.466667
+            city="Créteil", country="🇫🇷", latitude=48.783333, longitude=2.466667
         ),
         jcdecaux_city(
-            name="lyon", country="🇫🇷", latitude=45.764043, longitude=4.835659
+            city="Lyon", country="🇫🇷", latitude=45.764043, longitude=4.835659
         ),
         jcdecaux_city(
-            name="marseille", country="🇫🇷", latitude=43.296482, longitude=5.369780
+            city="Marseille", country="🇫🇷", latitude=43.296482, longitude=5.369780
         ),
         jcdecaux_city(
-            name="mulhouse", country="🇫🇷", latitude=47.750839, longitude=7.335888
+            city="Mulhouse", country="🇫🇷", latitude=47.750839, longitude=7.335888
         ),
         jcdecaux_city(
-            name="nancy", country="🇫🇷", latitude=48.692054, longitude=6.184417
+            city="Nancy", country="🇫🇷", latitude=48.692054, longitude=6.184417
         ),
         jcdecaux_city(
-            name="nantes", country="🇫🇷", latitude=47.218371, longitude=-1.553621
+            city="Nantes", country="🇫🇷", latitude=47.218371, longitude=-1.553621
         ),
         jcdecaux_city(
-            name="rouen", country="🇫🇷", latitude=49.443232, longitude=1.099971
+            city="Rouen", country="🇫🇷", latitude=49.443232, longitude=1.099971
         ),
         jcdecaux_city(
-            name="toulouse", country="🇫🇷", latitude=43.604652, longitude=1.444209
+            city="Toulouse", country="🇫🇷", latitude=43.604652, longitude=1.444209
         ),
         jcdecaux_city(
-            name="dublin", country="🇮🇪", latitude=53.349805, longitude=-6.260310
+            city="Dublin", country="🇮🇪", latitude=53.349805, longitude=-6.260310
         ),
         jcdecaux_city(
-            name="toyama", country="🇯🇵", latitude=36.695951, longitude=137.213676
+            city="Toyama", country="🇯🇵", latitude=36.695951, longitude=137.213676
         ),
         jcdecaux_city(
-            name="vilnius", country="🇱🇹", latitude=54.687157, longitude=25.279652
+            city="Vilnius", country="🇱🇹", latitude=54.687157, longitude=25.279652
         ),
         jcdecaux_city(
-            name="luxembourg", country="🇱🇺", latitude=49.611621, longitude=6.131935
+            city="Luxembourg", country="🇱🇺", latitude=49.611621, longitude=6.131935
         ),
         jcdecaux_city(
-            name="lillestrom", country="🇳🇴", latitude=59.955200, longitude=11.050600
+            city="Lillestrøm", country="🇳🇴", latitude=59.955200, longitude=11.050600
         ),
         jcdecaux_city(
-            name="besancon", country="🇫🇷", latitude=47.237829, longitude=6.024054
+            city="Besançon", country="🇫🇷", latitude=47.237829, longitude=6.024054
         ),
         jcdecaux_city(
-            name="maribor", country="🇸🇮", latitude=46.554650, longitude=15.645881
+            city="Maribor", country="🇸🇮", latitude=46.554650, longitude=15.645881
         ),
         jcdecaux_city(
-            name="seville", country="🇪🇸", latitude=37.389092, longitude=-5.984459
+            city="Sevilla", country="🇪🇸", latitude=37.389092, longitude=-5.984459
         ),
         jcdecaux_city(
-            name="valence", country="🇪🇸", latitude=39.469907, longitude=-0.376288
+            city="Valencia", country="🇪🇸", latitude=39.469907, longitude=-0.376288
         ),
         jcdecaux_city(
-            name="lund", country="🇸🇪", latitude=55.704660, longitude=13.191007
+            city="Lund", country="🇸🇪", latitude=55.704660, longitude=13.191007
         ),
         jcdecaux_city(
-            name="stockholm", country="🇸🇪", latitude=59.329323, longitude=18.068581
+            city="Stockholm", country="🇸🇪", latitude=59.329323, longitude=18.068581
         ),
         jcdecaux_city(
-            name="ljubljana", country="🇸🇮", latitude=46.056947, longitude=14.505751
+            city="Ljubljana", country="🇸🇮", latitude=46.056947, longitude=14.505751
         ),
     ]
 )
@@ -187,10 +199,11 @@ def gbfs_scrape(info_url, status_url):
     }
 
 
-cities.extend(
+systems.extend(
     [
-        City(
-            name="boulder",
+        System(
+            provider="BCycle",
+            city="Boulder",
             country="🇺🇸",
             latitude=40.014984,
             longitude=-105.270546,
@@ -200,8 +213,9 @@ cities.extend(
                 status_url="https://gbfs.bcycle.com/bcycle_boulder/station_status.json",
             ),
         ),
-        City(
-            name="chattanooga",
+        System(
+            provider="Bike Chattanooga",
+            city="Chattanooga",
             country="🇺🇸",
             latitude=35.045630,
             longitude=-85.309680,
@@ -211,8 +225,9 @@ cities.extend(
                 status_url="https://chattanooga.publicbikesystem.net/customer/gbfs/v2/en/station_status.json",
             ),
         ),
-        City(
-            name="dubai",
+        System(
+            provider="Careem BIKE",
+            city="Dubai",
             country="🇦🇪",
             latitude=25.204849,
             longitude=55.270783,
@@ -222,8 +237,9 @@ cities.extend(
                 status_url="https://dubai.publicbikesystem.net/customer/gbfs/v2/en/station_status.json",
             ),
         ),
-        City(
-            name="rio-de-janeiro",
+        System(
+            provider="Bike Itaú",
+            city="Rio de Janeiro",
             country="🇧🇷",
             latitude=-22.906847,
             longitude=-43.172896,

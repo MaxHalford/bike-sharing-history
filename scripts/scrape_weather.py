@@ -3,10 +3,17 @@ import functools
 import json
 import logging
 import pathlib
+import re
+import unicodedata
 
 import requests
 
-from cities import cities
+from systems import systems
+
+def slugify(text, separator='-'):
+    text = unicodedata.normalize('NFKD', text).encode('ascii', 'ignore').decode('utf-8')
+    text = re.sub(r'[^\w\s-]', '', text).strip().lower()
+    return re.sub(r'[%s\s]+' % separator, separator, text)
 
 
 def fetch_weather(lat, lon):
@@ -29,23 +36,23 @@ def main():
         future_to_city = {
             executor.submit(
                 scrape_parse_save,
-                scrape=functools.partial(fetch_weather, city.latitude, city.longitude),
-                save_to=pathlib.Path("data/weather") / f"{city.name}.json",
-            ): city.name
-            for city in cities
+                scrape=functools.partial(fetch_weather, system.latitude, system.longitude),
+                save_to=pathlib.Path("data/weather") / f"{slugify(system.city)}.json",
+            ): system.city
+            for system in systems
         }
 
     n_exceptions = 0
     for future in concurrent.futures.as_completed(future_to_city):
-        city_name = future_to_city[future]
+        city = future_to_city[future]
         try:
             future.result()
-            logging.info(f"✅ {city_name}")
+            logging.info(f"✅ {city}")
         except Exception as exc:
-            logging.exception(f"❌ {city_name} {exc}")
+            logging.exception(f"❌ {city} {exc}")
             n_exceptions += 1
     if n_exceptions:
-        logging.warning(f"⚠️ {n_exceptions:,d} exceptions out of {len(cities):,d}")
+        logging.warning(f"⚠️ {n_exceptions:,d} exceptions out of {len(systems):,d}")
 
 
 if __name__ == "__main__":
