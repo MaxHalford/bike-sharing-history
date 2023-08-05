@@ -502,18 +502,6 @@ systems.extend(
             )
         ),
         System(
-            provider="V'lille",
-            city='Lille',
-            country='🇫🇷',
-            latitude=50.650756572318365,
-            longitude=3.097370217301039,
-            scrape=functools.partial(
-                gbfs_scrape,
-                info_url='https://transport.data.gouv.fr/gbfs/vlille/station_information.json',
-                status_url='https://transport.data.gouv.fr/gbfs/vlille/station_status.json'
-            )
-        ),
-        System(
             provider='Bay Wheels',
             city='San Francisco Bay Area',
             country='🇺🇸',
