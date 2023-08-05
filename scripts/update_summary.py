@@ -27,7 +27,7 @@ def main():
         city_slug = utils.slugify(system.city)
         provider_slug = utils.slugify(system.provider)
         new_table.append(
-            f"| {system.country} | {system.city} | {system.provider} | [{city_slug}/`{provider_slug}.geojson`](data/stations/{city_slug}/{provider_slug}.geojson) | [`{city_slug}.json`](data/weather/{city_slug}.json) |\n"
+            f"| {system.country} | {system.city} | {system.provider} | [`{city_slug}/{provider_slug}.geojson`](data/stations/{city_slug}/{provider_slug}.geojson) | [`{city_slug}.json`](data/weather/{city_slug}.json) |\n"
         )
 
     # Replace the existing table with the new table
