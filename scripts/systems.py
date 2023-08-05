@@ -548,6 +548,30 @@ systems.extend(
                 info_url='https://transport.data.gouv.fr/gbfs/vlille/station_information.json',
                 status_url='https://transport.data.gouv.fr/gbfs/vlille/station_status.json'
             )
+        ),
+        System(
+            provider='Bay Wheels',
+            city='San Francisco Bay Area',
+            country='🇺🇸',
+            latitude=37.716962491434934,
+            longitude=-122.3003446524034,
+            scrape=functools.partial(
+                gbfs_scrape,
+                info_url='https://gbfs.lyft.com/gbfs/1.1/bay/en/station_information.json',
+                status_url='https://gbfs.lyft.com/gbfs/1.1/bay/en/station_status.json'
+            )
+        ),
+        System(
+            provider='Mobi Bike Share',
+            city='Vancouver',
+            country='🇨🇦',
+            latitude=49.07083961264891,
+            longitude=-122.61374698354875,
+            scrape=functools.partial(
+                gbfs_scrape,
+                info_url='https://vancouver-gbfs.smoove.pro/gbfs/2/en/station_information.json',
+                status_url='https://vancouver-gbfs.smoove.pro/gbfs/2/en/station_status.json'
+            )
         )
     ]
 )
