@@ -3,17 +3,11 @@ import functools
 import json
 import logging
 import pathlib
-import re
-import unicodedata
 
 import requests
 
 from systems import systems
-
-def slugify(text, separator='-'):
-    text = unicodedata.normalize('NFKD', text).encode('ascii', 'ignore').decode('utf-8')
-    text = re.sub(r'[^\w\s-]', '', text).strip().lower()
-    return re.sub(r'[%s\s]+' % separator, separator, text)
+import utils
 
 
 def fetch_weather(lat, lon):
@@ -37,7 +31,7 @@ def main():
             executor.submit(
                 scrape_parse_save,
                 scrape=functools.partial(fetch_weather, system.latitude, system.longitude),
-                save_to=pathlib.Path("data/weather") / f"{slugify(system.city)}.json",
+                save_to=pathlib.Path("data/weather") / f"{utils.slugify(system.city)}.json",
             ): system.city
             for system in systems
         }

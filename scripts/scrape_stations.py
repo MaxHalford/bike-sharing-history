@@ -2,16 +2,9 @@ import concurrent.futures
 import json
 import logging
 import pathlib
-import re
-import unicodedata
 
 from systems import systems
-
-
-def slugify(text, separator='-'):
-    text = unicodedata.normalize('NFKD', text).encode('ascii', 'ignore').decode('utf-8')
-    text = re.sub(r'[^\w\s-]', '', text).strip().lower()
-    return re.sub(r'[%s\s]+' % separator, separator, text)
+import utils
 
 
 def scrape_parse_save(scrape, save_to):
@@ -26,7 +19,7 @@ def main():
             executor.submit(
                 scrape_parse_save,
                 scrape=system.scrape,
-                save_to=pathlib.Path("data/stations") / slugify(system.city) / f"{slugify(system.provider)}.geojson",
+                save_to=pathlib.Path("data/stations") / utils.slugify(system.city) / f"{utils.slugify(system.provider)}.geojson",
             ): (system.provider, system.city)
             for system in systems
         }

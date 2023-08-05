@@ -3,7 +3,7 @@ import functools
 import typing
 
 import requests
-import conf
+import utils
 
 
 @dataclasses.dataclass
@@ -24,7 +24,7 @@ systems = []
 
 
 def jcdecaux_scrape(city):
-    api_key = conf.env["JCDECAUX_API_KEY"]
+    api_key = utils.env["JCDECAUX_API_KEY"]
     url = f"https://api.jcdecaux.com/vls/v1/stations?contract={city}&apiKey={api_key}"
     r = requests.get(url, timeout=10)
     r.raise_for_status()
