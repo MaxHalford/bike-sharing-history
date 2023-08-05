@@ -250,18 +250,6 @@ systems.extend(
             ),
         ),
         System(
-            provider='Bicloo',
-            city='Nantes',
-            country='🇫🇷',
-            latitude=47.21346056536673,
-            longitude=-1.5545907831970511,
-            scrape=functools.partial(
-                gbfs_scrape,
-                info_url='https://transport.data.gouv.fr/gbfs/nantes/station_information.json',
-                status_url='https://transport.data.gouv.fr/gbfs/nantes/station_status.json'
-            )
-        ),
-        System(
             provider='Bird',
             city='Bordeaux',
             country='🇫🇷',
@@ -391,18 +379,6 @@ systems.extend(
                 gbfs_scrape,
                 info_url='https://clermontferrand.publicbikesystem.net/customer/gbfs/v2/en/station_information',
                 status_url='https://clermontferrand.publicbikesystem.net/customer/gbfs/v2/en/station_status'
-            )
-        ),
-        System(
-            provider="Cy'clic",
-            city='Rouen',
-            country='🇫🇷',
-            latitude=49.43748200734228,
-            longitude=1.0890427789024197,
-            scrape=functools.partial(
-                gbfs_scrape,
-                info_url='https://gbfs.urbansharing.com/lovelolibreservice.fr/station_information.json',
-                status_url='https://gbfs.urbansharing.com/lovelolibreservice.fr/station_status.json'
             )
         ),
         System(
