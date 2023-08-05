@@ -21,13 +21,13 @@ def main():
 
     # Generate the new table content
     new_table = []
-    new_table.append("| Country | City | Provider | Stations (live) | Weather (live) |\n")
-    new_table.append("|---------|------|----------|-----------------|----------------|\n")
-    for system in sorted(systems, key=lambda c: c.country + c.city):
+    new_table.append("| # | Country | City | Provider | Stations (live) | Weather (live) |\n")
+    new_table.append("|---|---------|------|----------|-----------------|----------------|\n")
+    for i, system in enumerate(sorted(systems, key=lambda c: c.country + c.city), start=1):
         city_slug = utils.slugify(system.city)
         provider_slug = utils.slugify(system.provider)
         new_table.append(
-            f"| {system.country} | {system.city} | {system.provider} | [`{city_slug}/{provider_slug}.geojson`](data/stations/{city_slug}/{provider_slug}.geojson) | [`{city_slug}.json`](data/weather/{city_slug}.json) |\n"
+            f"| {i:>03} | {system.country} | {system.city} | {system.provider} | [`{city_slug}/{provider_slug}.geojson`](data/stations/{city_slug}/{provider_slug}.geojson) | [`{city_slug}.json`](data/weather/{city_slug}.json) |\n"
         )
 
     # Replace the existing table with the new table
