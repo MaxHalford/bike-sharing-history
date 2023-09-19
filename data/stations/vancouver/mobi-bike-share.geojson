@@ -14,15 +14,15 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138442,
+                "last_reported": 1695139372,
                 "name": "10th & Cambie",
-                "num_bikes_available": 19,
+                "num_bikes_available": 22,
                 "num_bikes_disabled": 2,
-                "num_docks_available": 15,
+                "num_docks_available": 12,
                 "station_id": "0001",
                 "vehicle_docks_available": [
                     {
-                        "count": 15,
+                        "count": 12,
                         "vehicle_type_ids": [
                             "1"
                         ]
@@ -40,11 +40,11 @@
                 },
                 "vehicle_types_available": [
                     {
-                        "count": 15,
+                        "count": 16,
                         "vehicle_type_id": "1"
                     },
                     {
-                        "count": 4,
+                        "count": 6,
                         "vehicle_type_id": "2"
                     }
                 ]
@@ -65,15 +65,15 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138434,
+                "last_reported": 1695139448,
                 "name": "Burrard Station (Melville & Dunsmuir)",
-                "num_bikes_available": 24,
+                "num_bikes_available": 27,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 4,
+                "num_docks_available": 1,
                 "station_id": "0002",
                 "vehicle_docks_available": [
                     {
-                        "count": 4,
+                        "count": 1,
                         "vehicle_type_ids": [
                             "1"
                         ]
@@ -91,11 +91,11 @@
                 },
                 "vehicle_types_available": [
                     {
-                        "count": 22,
+                        "count": 24,
                         "vehicle_type_id": "1"
                     },
                     {
-                        "count": 2,
+                        "count": 3,
                         "vehicle_type_id": "2"
                     }
                 ]
@@ -116,7 +116,7 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138485,
+                "last_reported": 1695139420,
                 "name": "Yaletown-Roundhouse Station",
                 "num_bikes_available": 15,
                 "num_bikes_disabled": 0,
@@ -167,15 +167,66 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138382,
+                "last_reported": 1695139361,
                 "name": "Dunsmuir & Beatty",
-                "num_bikes_available": 18,
+                "num_bikes_available": 17,
                 "num_bikes_disabled": 1,
-                "num_docks_available": 7,
+                "num_docks_available": 8,
                 "station_id": "0005",
                 "vehicle_docks_available": [
                     {
-                        "count": 7,
+                        "count": 8,
+                        "vehicle_type_ids": [
+                            "1"
+                        ]
+                    },
+                    {
+                        "count": 0,
+                        "vehicle_type_ids": [
+                            "2"
+                        ]
+                    }
+                ],
+                "vehicle_type_capacity": {
+                    "1": 26,
+                    "2": 0
+                },
+                "vehicle_types_available": [
+                    {
+                        "count": 17,
+                        "vehicle_type_id": "1"
+                    },
+                    {
+                        "count": 0,
+                        "vehicle_type_id": "2"
+                    }
+                ]
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -123.116011,
+                    49.266314
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "capacity": 26,
+                "is_charging_station": false,
+                "is_installed": true,
+                "is_renting": true,
+                "is_returning": true,
+                "last_reported": 1695139350,
+                "name": "Olympic Village Station",
+                "num_bikes_available": 18,
+                "num_bikes_disabled": 2,
+                "num_docks_available": 6,
+                "station_id": "0006",
+                "vehicle_docks_available": [
+                    {
+                        "count": 6,
                         "vehicle_type_ids": [
                             "1"
                         ]
@@ -207,57 +258,6 @@
         {
             "geometry": {
                 "coordinates": [
-                    -123.116011,
-                    49.266314
-                ],
-                "type": "Point"
-            },
-            "properties": {
-                "capacity": 26,
-                "is_charging_station": false,
-                "is_installed": true,
-                "is_renting": true,
-                "is_returning": true,
-                "last_reported": 1695138465,
-                "name": "Olympic Village Station",
-                "num_bikes_available": 16,
-                "num_bikes_disabled": 2,
-                "num_docks_available": 8,
-                "station_id": "0006",
-                "vehicle_docks_available": [
-                    {
-                        "count": 8,
-                        "vehicle_type_ids": [
-                            "1"
-                        ]
-                    },
-                    {
-                        "count": 0,
-                        "vehicle_type_ids": [
-                            "2"
-                        ]
-                    }
-                ],
-                "vehicle_type_capacity": {
-                    "1": 26,
-                    "2": 0
-                },
-                "vehicle_types_available": [
-                    {
-                        "count": 16,
-                        "vehicle_type_id": "1"
-                    },
-                    {
-                        "count": 0,
-                        "vehicle_type_id": "2"
-                    }
-                ]
-            },
-            "type": "Feature"
-        },
-        {
-            "geometry": {
-                "coordinates": [
                     -123.113504,
                     49.260599
                 ],
@@ -269,7 +269,7 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138286,
+                "last_reported": 1695139395,
                 "name": "12th & Yukon (City Hall)",
                 "num_bikes_available": 5,
                 "num_bikes_disabled": 0,
@@ -320,15 +320,15 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138254,
+                "last_reported": 1695138858,
                 "name": "8th & Ash",
-                "num_bikes_available": 10,
+                "num_bikes_available": 11,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 6,
+                "num_docks_available": 5,
                 "station_id": "0008",
                 "vehicle_docks_available": [
                     {
-                        "count": 6,
+                        "count": 5,
                         "vehicle_type_ids": [
                             "1"
                         ]
@@ -350,7 +350,7 @@
                         "vehicle_type_id": "1"
                     },
                     {
-                        "count": 2,
+                        "count": 3,
                         "vehicle_type_id": "2"
                     }
                 ]
@@ -371,15 +371,15 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138443,
+                "last_reported": 1695138946,
                 "name": "Spyglass & Seawall",
-                "num_bikes_available": 8,
+                "num_bikes_available": 7,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 6,
+                "num_docks_available": 7,
                 "station_id": "0009",
                 "vehicle_docks_available": [
                     {
-                        "count": 6,
+                        "count": 7,
                         "vehicle_type_ids": [
                             "1"
                         ]
@@ -401,7 +401,7 @@
                         "vehicle_type_id": "1"
                     },
                     {
-                        "count": 1,
+                        "count": 0,
                         "vehicle_type_id": "2"
                     }
                 ]
@@ -422,7 +422,7 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138509,
+                "last_reported": 1695139110,
                 "name": "Stamps Landing",
                 "num_bikes_available": 7,
                 "num_bikes_disabled": 1,
@@ -473,7 +473,7 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138304,
+                "last_reported": 1695139184,
                 "name": "Ontario & Seawall",
                 "num_bikes_available": 8,
                 "num_bikes_disabled": 0,
@@ -524,15 +524,15 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138331,
+                "last_reported": 1695139460,
                 "name": "Dunsmuir & Richards",
-                "num_bikes_available": 15,
+                "num_bikes_available": 16,
                 "num_bikes_disabled": 1,
-                "num_docks_available": 6,
+                "num_docks_available": 5,
                 "station_id": "0012",
                 "vehicle_docks_available": [
                     {
-                        "count": 6,
+                        "count": 5,
                         "vehicle_type_ids": [
                             "1"
                         ]
@@ -554,7 +554,7 @@
                         "vehicle_type_id": "1"
                     },
                     {
-                        "count": 2,
+                        "count": 3,
                         "vehicle_type_id": "2"
                     }
                 ]
@@ -575,7 +575,7 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138458,
+                "last_reported": 1695139188,
                 "name": "Canada Place",
                 "num_bikes_available": 27,
                 "num_bikes_disabled": 1,
@@ -626,7 +626,7 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138420,
+                "last_reported": 1695139026,
                 "name": "Granville & Georgia",
                 "num_bikes_available": 9,
                 "num_bikes_disabled": 2,
@@ -677,15 +677,15 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138257,
+                "last_reported": 1695139405,
                 "name": "Pender & Burrard",
-                "num_bikes_available": 18,
+                "num_bikes_available": 19,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 8,
+                "num_docks_available": 7,
                 "station_id": "0016",
                 "vehicle_docks_available": [
                     {
-                        "count": 8,
+                        "count": 7,
                         "vehicle_type_ids": [
                             "1"
                         ]
@@ -703,7 +703,7 @@
                 },
                 "vehicle_types_available": [
                     {
-                        "count": 16,
+                        "count": 17,
                         "vehicle_type_id": "1"
                     },
                     {
@@ -728,15 +728,15 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138338,
+                "last_reported": 1695139421,
                 "name": "Marinaside & Davie",
-                "num_bikes_available": 15,
+                "num_bikes_available": 14,
                 "num_bikes_disabled": 1,
-                "num_docks_available": 6,
+                "num_docks_available": 7,
                 "station_id": "0017",
                 "vehicle_docks_available": [
                     {
-                        "count": 6,
+                        "count": 7,
                         "vehicle_type_ids": [
                             "1"
                         ]
@@ -754,7 +754,7 @@
                 },
                 "vehicle_types_available": [
                     {
-                        "count": 14,
+                        "count": 13,
                         "vehicle_type_id": "1"
                     },
                     {
@@ -779,15 +779,15 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138428,
+                "last_reported": 1695139161,
                 "name": "Robson & Hornby",
-                "num_bikes_available": 6,
+                "num_bikes_available": 7,
                 "num_bikes_disabled": 4,
-                "num_docks_available": 20,
+                "num_docks_available": 19,
                 "station_id": "0019",
                 "vehicle_docks_available": [
                     {
-                        "count": 20,
+                        "count": 19,
                         "vehicle_type_ids": [
                             "1"
                         ]
@@ -809,7 +809,7 @@
                         "vehicle_type_id": "1"
                     },
                     {
-                        "count": 3,
+                        "count": 4,
                         "vehicle_type_id": "2"
                     }
                 ]
@@ -830,7 +830,7 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138422,
+                "last_reported": 1695139067,
                 "name": "Cordova & Granville",
                 "num_bikes_available": 14,
                 "num_bikes_disabled": 1,
@@ -881,15 +881,15 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138402,
+                "last_reported": 1695139223,
                 "name": "Hornby & Pender",
-                "num_bikes_available": 18,
+                "num_bikes_available": 20,
                 "num_bikes_disabled": 1,
-                "num_docks_available": 3,
+                "num_docks_available": 1,
                 "station_id": "0024",
                 "vehicle_docks_available": [
                     {
-                        "count": 3,
+                        "count": 1,
                         "vehicle_type_ids": [
                             "1"
                         ]
@@ -911,7 +911,7 @@
                         "vehicle_type_id": "1"
                     },
                     {
-                        "count": 9,
+                        "count": 11,
                         "vehicle_type_id": "2"
                     }
                 ]
@@ -932,7 +932,7 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138253,
+                "last_reported": 1695139441,
                 "name": "Homer & Robson (Vancouver Public Library)",
                 "num_bikes_available": 4,
                 "num_bikes_disabled": 0,
@@ -983,15 +983,15 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138479,
+                "last_reported": 1695139451,
                 "name": "Beatty & Robson",
-                "num_bikes_available": 2,
+                "num_bikes_available": 0,
                 "num_bikes_disabled": 1,
-                "num_docks_available": 17,
+                "num_docks_available": 19,
                 "station_id": "0026",
                 "vehicle_docks_available": [
                     {
-                        "count": 17,
+                        "count": 19,
                         "vehicle_type_ids": [
                             "1"
                         ]
@@ -1009,7 +1009,7 @@
                 },
                 "vehicle_types_available": [
                     {
-                        "count": 2,
+                        "count": 0,
                         "vehicle_type_id": "1"
                     },
                     {
@@ -1034,15 +1034,15 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138507,
+                "last_reported": 1695139321,
                 "name": "Beatty & Nelson",
-                "num_bikes_available": 2,
+                "num_bikes_available": 1,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 12,
+                "num_docks_available": 13,
                 "station_id": "0027",
                 "vehicle_docks_available": [
                     {
-                        "count": 12,
+                        "count": 13,
                         "vehicle_type_ids": [
                             "1"
                         ]
@@ -1060,7 +1060,7 @@
                 },
                 "vehicle_types_available": [
                     {
-                        "count": 2,
+                        "count": 1,
                         "vehicle_type_id": "1"
                     },
                     {
@@ -1085,7 +1085,7 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138456,
+                "last_reported": 1695139058,
                 "name": "Davie & Beach",
                 "num_bikes_available": 22,
                 "num_bikes_disabled": 0,
@@ -1136,15 +1136,15 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138421,
+                "last_reported": 1695139382,
                 "name": "Abbott & Cordova",
-                "num_bikes_available": 14,
+                "num_bikes_available": 15,
                 "num_bikes_disabled": 1,
-                "num_docks_available": 8,
+                "num_docks_available": 7,
                 "station_id": "0030",
                 "vehicle_docks_available": [
                     {
-                        "count": 8,
+                        "count": 7,
                         "vehicle_type_ids": [
                             "1"
                         ]
@@ -1162,7 +1162,7 @@
                 },
                 "vehicle_types_available": [
                     {
-                        "count": 12,
+                        "count": 13,
                         "vehicle_type_id": "1"
                     },
                     {
@@ -1187,7 +1187,7 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138476,
+                "last_reported": 1695139039,
                 "name": "Morton & Denman",
                 "num_bikes_available": 17,
                 "num_bikes_disabled": 0,
@@ -1238,7 +1238,7 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695137978,
+                "last_reported": 1695139163,
                 "name": "Comox & Denman",
                 "num_bikes_available": 15,
                 "num_bikes_disabled": 0,
@@ -1289,15 +1289,15 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695137947,
+                "last_reported": 1695139392,
                 "name": "Cordova & Bute",
-                "num_bikes_available": 5,
+                "num_bikes_available": 6,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 9,
+                "num_docks_available": 8,
                 "station_id": "0034",
                 "vehicle_docks_available": [
                     {
-                        "count": 9,
+                        "count": 8,
                         "vehicle_type_ids": [
                             "1"
                         ]
@@ -1315,7 +1315,7 @@
                 },
                 "vehicle_types_available": [
                     {
-                        "count": 5,
+                        "count": 6,
                         "vehicle_type_id": "1"
                     },
                     {
@@ -1340,7 +1340,7 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138089,
+                "last_reported": 1695139071,
                 "name": "Hastings & Broughton",
                 "num_bikes_available": 13,
                 "num_bikes_disabled": 3,
@@ -1391,15 +1391,15 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138253,
+                "last_reported": 1695139442,
                 "name": "Bute & Robson",
-                "num_bikes_available": 1,
+                "num_bikes_available": 0,
                 "num_bikes_disabled": 1,
-                "num_docks_available": 24,
+                "num_docks_available": 25,
                 "station_id": "0036",
                 "vehicle_docks_available": [
                     {
-                        "count": 24,
+                        "count": 25,
                         "vehicle_type_ids": [
                             "1"
                         ]
@@ -1417,7 +1417,7 @@
                 },
                 "vehicle_types_available": [
                     {
-                        "count": 1,
+                        "count": 0,
                         "vehicle_type_id": "1"
                     },
                     {
@@ -1442,7 +1442,7 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138339,
+                "last_reported": 1695139359,
                 "name": "Hornby & Nelson",
                 "num_bikes_available": 3,
                 "num_bikes_disabled": 3,
@@ -1493,15 +1493,15 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138216,
+                "last_reported": 1695138803,
                 "name": "Helmcken & Burrard",
-                "num_bikes_available": 6,
+                "num_bikes_available": 7,
                 "num_bikes_disabled": 1,
-                "num_docks_available": 8,
+                "num_docks_available": 7,
                 "station_id": "0039",
                 "vehicle_docks_available": [
                     {
-                        "count": 8,
+                        "count": 7,
                         "vehicle_type_ids": [
                             "1"
                         ]
@@ -1523,7 +1523,7 @@
                         "vehicle_type_id": "1"
                     },
                     {
-                        "count": 3,
+                        "count": 4,
                         "vehicle_type_id": "2"
                     }
                 ]
@@ -1544,10 +1544,10 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138400,
+                "last_reported": 1695139373,
                 "name": "Cardero & Davie",
-                "num_bikes_available": 6,
-                "num_bikes_disabled": 3,
+                "num_bikes_available": 7,
+                "num_bikes_disabled": 2,
                 "num_docks_available": 9,
                 "station_id": "0040",
                 "vehicle_docks_available": [
@@ -1574,7 +1574,7 @@
                         "vehicle_type_id": "1"
                     },
                     {
-                        "count": 3,
+                        "count": 4,
                         "vehicle_type_id": "2"
                     }
                 ]
@@ -1595,7 +1595,7 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138343,
+                "last_reported": 1695138909,
                 "name": "Cardero & Robson",
                 "num_bikes_available": 23,
                 "num_bikes_disabled": 1,
@@ -1646,7 +1646,7 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138511,
+                "last_reported": 1695139442,
                 "name": "Pacific & Richards",
                 "num_bikes_available": 9,
                 "num_bikes_disabled": 0,
@@ -1697,15 +1697,15 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138439,
+                "last_reported": 1695139458,
                 "name": "Beach & Hornby",
-                "num_bikes_available": 18,
+                "num_bikes_available": 17,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 4,
+                "num_docks_available": 5,
                 "station_id": "0045",
                 "vehicle_docks_available": [
                     {
-                        "count": 4,
+                        "count": 5,
                         "vehicle_type_ids": [
                             "1"
                         ]
@@ -1723,7 +1723,7 @@
                 },
                 "vehicle_types_available": [
                     {
-                        "count": 15,
+                        "count": 14,
                         "vehicle_type_id": "1"
                     },
                     {
@@ -1748,7 +1748,7 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138480,
+                "last_reported": 1695139410,
                 "name": "Chilco & Beach",
                 "num_bikes_available": 14,
                 "num_bikes_disabled": 1,
@@ -1799,7 +1799,7 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138419,
+                "last_reported": 1695139207,
                 "name": "Comox & Broughton",
                 "num_bikes_available": 4,
                 "num_bikes_disabled": 1,
@@ -1850,7 +1850,7 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138242,
+                "last_reported": 1695139429,
                 "name": "Bute & Comox",
                 "num_bikes_available": 0,
                 "num_bikes_disabled": 0,
@@ -1901,15 +1901,15 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138488,
+                "last_reported": 1695139398,
                 "name": "Cambie & Water",
-                "num_bikes_available": 20,
+                "num_bikes_available": 21,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 12,
+                "num_docks_available": 11,
                 "station_id": "0052",
                 "vehicle_docks_available": [
                     {
-                        "count": 12,
+                        "count": 11,
                         "vehicle_type_ids": [
                             "1"
                         ]
@@ -1927,7 +1927,7 @@
                 },
                 "vehicle_types_available": [
                     {
-                        "count": 16,
+                        "count": 17,
                         "vehicle_type_id": "1"
                     },
                     {
@@ -1952,15 +1952,15 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138396,
+                "last_reported": 1695139327,
                 "name": "Keefer & Abbott",
-                "num_bikes_available": 10,
+                "num_bikes_available": 11,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 18,
+                "num_docks_available": 17,
                 "station_id": "0053",
                 "vehicle_docks_available": [
                     {
-                        "count": 18,
+                        "count": 17,
                         "vehicle_type_ids": [
                             "1"
                         ]
@@ -1982,7 +1982,7 @@
                         "vehicle_type_id": "1"
                     },
                     {
-                        "count": 1,
+                        "count": 2,
                         "vehicle_type_id": "2"
                     }
                 ]
@@ -2003,7 +2003,7 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138195,
+                "last_reported": 1695139263,
                 "name": "Expo & Carrall",
                 "num_bikes_available": 12,
                 "num_bikes_disabled": 1,
@@ -2054,15 +2054,15 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138403,
+                "last_reported": 1695139441,
                 "name": "Keefer & Columbia",
-                "num_bikes_available": 12,
+                "num_bikes_available": 14,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 2,
+                "num_docks_available": 0,
                 "station_id": "0055",
                 "vehicle_docks_available": [
                     {
-                        "count": 2,
+                        "count": 0,
                         "vehicle_type_ids": [
                             "1"
                         ]
@@ -2080,11 +2080,11 @@
                 },
                 "vehicle_types_available": [
                     {
-                        "count": 9,
+                        "count": 10,
                         "vehicle_type_id": "1"
                     },
                     {
-                        "count": 3,
+                        "count": 4,
                         "vehicle_type_id": "2"
                     }
                 ]
@@ -2105,15 +2105,15 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138477,
+                "last_reported": 1695139068,
                 "name": "Marinaside & Cooperage",
-                "num_bikes_available": 19,
+                "num_bikes_available": 20,
                 "num_bikes_disabled": 1,
-                "num_docks_available": 6,
+                "num_docks_available": 5,
                 "station_id": "0057",
                 "vehicle_docks_available": [
                     {
-                        "count": 6,
+                        "count": 5,
                         "vehicle_type_ids": [
                             "1"
                         ]
@@ -2131,7 +2131,7 @@
                 },
                 "vehicle_types_available": [
                     {
-                        "count": 17,
+                        "count": 18,
                         "vehicle_type_id": "1"
                     },
                     {
@@ -2156,7 +2156,7 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138229,
+                "last_reported": 1695139415,
                 "name": "Richards & Smithe",
                 "num_bikes_available": 1,
                 "num_bikes_disabled": 0,
@@ -2207,7 +2207,7 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138238,
+                "last_reported": 1695138823,
                 "name": "Bidwell & Burnaby",
                 "num_bikes_available": 1,
                 "num_bikes_disabled": 0,
@@ -2258,7 +2258,7 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138207,
+                "last_reported": 1695139423,
                 "name": "Robson & Granville",
                 "num_bikes_available": 5,
                 "num_bikes_disabled": 2,
@@ -2309,7 +2309,7 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138403,
+                "last_reported": 1695139005,
                 "name": "Expo & Smithe",
                 "num_bikes_available": 14,
                 "num_bikes_disabled": 0,
@@ -2360,15 +2360,15 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138440,
+                "last_reported": 1695139420,
                 "name": "Cypress & Cornwall",
-                "num_bikes_available": 18,
+                "num_bikes_available": 10,
                 "num_bikes_disabled": 1,
-                "num_docks_available": 3,
+                "num_docks_available": 11,
                 "station_id": "0065",
                 "vehicle_docks_available": [
                     {
-                        "count": 3,
+                        "count": 11,
                         "vehicle_type_ids": [
                             "1"
                         ]
@@ -2386,7 +2386,7 @@
                 },
                 "vehicle_types_available": [
                     {
-                        "count": 18,
+                        "count": 10,
                         "vehicle_type_id": "1"
                     },
                     {
@@ -2411,15 +2411,15 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138459,
+                "last_reported": 1695139375,
                 "name": "Anderson & 2nd",
-                "num_bikes_available": 10,
+                "num_bikes_available": 11,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 18,
+                "num_docks_available": 17,
                 "station_id": "0066",
                 "vehicle_docks_available": [
                     {
-                        "count": 18,
+                        "count": 17,
                         "vehicle_type_ids": [
                             "1"
                         ]
@@ -2437,7 +2437,7 @@
                 },
                 "vehicle_types_available": [
                     {
-                        "count": 10,
+                        "count": 11,
                         "vehicle_type_id": "1"
                     },
                     {
@@ -2462,15 +2462,15 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138334,
+                "last_reported": 1695139178,
                 "name": "Cypress & 10th",
-                "num_bikes_available": 0,
+                "num_bikes_available": 2,
                 "num_bikes_disabled": 2,
-                "num_docks_available": 12,
+                "num_docks_available": 10,
                 "station_id": "0068",
                 "vehicle_docks_available": [
                     {
-                        "count": 12,
+                        "count": 10,
                         "vehicle_type_ids": [
                             "1"
                         ]
@@ -2488,7 +2488,7 @@
                 },
                 "vehicle_types_available": [
                     {
-                        "count": 0,
+                        "count": 2,
                         "vehicle_type_id": "1"
                     },
                     {
@@ -2513,15 +2513,15 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138477,
+                "last_reported": 1695139078,
                 "name": "7th & Granville",
-                "num_bikes_available": 3,
+                "num_bikes_available": 4,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 11,
+                "num_docks_available": 10,
                 "station_id": "0069",
                 "vehicle_docks_available": [
                     {
-                        "count": 11,
+                        "count": 10,
                         "vehicle_type_ids": [
                             "1"
                         ]
@@ -2539,7 +2539,7 @@
                 },
                 "vehicle_types_available": [
                     {
-                        "count": 3,
+                        "count": 4,
                         "vehicle_type_id": "1"
                     },
                     {
@@ -2564,15 +2564,15 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138036,
+                "last_reported": 1695139225,
                 "name": "10th & Granville",
-                "num_bikes_available": 6,
+                "num_bikes_available": 8,
                 "num_bikes_disabled": 1,
-                "num_docks_available": 7,
+                "num_docks_available": 5,
                 "station_id": "0070",
                 "vehicle_docks_available": [
                     {
-                        "count": 7,
+                        "count": 5,
                         "vehicle_type_ids": [
                             "1"
                         ]
@@ -2590,7 +2590,7 @@
                 },
                 "vehicle_types_available": [
                     {
-                        "count": 0,
+                        "count": 2,
                         "vehicle_type_id": "1"
                     },
                     {
@@ -2615,15 +2615,15 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138360,
+                "last_reported": 1695139453,
                 "name": "14th & Granville",
-                "num_bikes_available": 3,
+                "num_bikes_available": 4,
                 "num_bikes_disabled": 1,
-                "num_docks_available": 10,
+                "num_docks_available": 9,
                 "station_id": "0071",
                 "vehicle_docks_available": [
                     {
-                        "count": 10,
+                        "count": 9,
                         "vehicle_type_ids": [
                             "1"
                         ]
@@ -2641,11 +2641,11 @@
                 },
                 "vehicle_types_available": [
                     {
-                        "count": 3,
+                        "count": 1,
                         "vehicle_type_id": "1"
                     },
                     {
-                        "count": 0,
+                        "count": 3,
                         "vehicle_type_id": "2"
                     }
                 ]
@@ -2666,15 +2666,15 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138477,
+                "last_reported": 1695139301,
                 "name": "14th & Cambie",
-                "num_bikes_available": 2,
+                "num_bikes_available": 1,
                 "num_bikes_disabled": 1,
-                "num_docks_available": 12,
+                "num_docks_available": 13,
                 "station_id": "0072",
                 "vehicle_docks_available": [
                     {
-                        "count": 12,
+                        "count": 13,
                         "vehicle_type_ids": [
                             "1"
                         ]
@@ -2696,7 +2696,7 @@
                         "vehicle_type_id": "1"
                     },
                     {
-                        "count": 2,
+                        "count": 1,
                         "vehicle_type_id": "2"
                     }
                 ]
@@ -2717,15 +2717,15 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138330,
+                "last_reported": 1695139364,
                 "name": "Ontario & 5th",
-                "num_bikes_available": 15,
+                "num_bikes_available": 17,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 5,
+                "num_docks_available": 3,
                 "station_id": "0073",
                 "vehicle_docks_available": [
                     {
-                        "count": 5,
+                        "count": 3,
                         "vehicle_type_ids": [
                             "1"
                         ]
@@ -2743,11 +2743,11 @@
                 },
                 "vehicle_types_available": [
                     {
-                        "count": 14,
+                        "count": 17,
                         "vehicle_type_id": "1"
                     },
                     {
-                        "count": 1,
+                        "count": 0,
                         "vehicle_type_id": "2"
                     }
                 ]
@@ -2768,7 +2768,7 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138347,
+                "last_reported": 1695139280,
                 "name": "10th & Main",
                 "num_bikes_available": 13,
                 "num_bikes_disabled": 0,
@@ -2819,15 +2819,15 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138506,
+                "last_reported": 1695139260,
                 "name": "Arbutus & 10th",
-                "num_bikes_available": 7,
+                "num_bikes_available": 8,
                 "num_bikes_disabled": 1,
-                "num_docks_available": 10,
+                "num_docks_available": 9,
                 "station_id": "0075",
                 "vehicle_docks_available": [
                     {
-                        "count": 10,
+                        "count": 9,
                         "vehicle_type_ids": [
                             "1"
                         ]
@@ -2845,7 +2845,7 @@
                 },
                 "vehicle_types_available": [
                     {
-                        "count": 7,
+                        "count": 8,
                         "vehicle_type_id": "1"
                     },
                     {
@@ -2870,7 +2870,7 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138215,
+                "last_reported": 1695138965,
                 "name": "Cypress & 4th",
                 "num_bikes_available": 9,
                 "num_bikes_disabled": 1,
@@ -2921,7 +2921,7 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138364,
+                "last_reported": 1695139276,
                 "name": "Vanier Park",
                 "num_bikes_available": 15,
                 "num_bikes_disabled": 1,
@@ -2972,15 +2972,15 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138317,
+                "last_reported": 1695139338,
                 "name": "Nelson & Mainland",
-                "num_bikes_available": 3,
+                "num_bikes_available": 5,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 17,
+                "num_docks_available": 15,
                 "station_id": "0078",
                 "vehicle_docks_available": [
                     {
-                        "count": 17,
+                        "count": 15,
                         "vehicle_type_ids": [
                             "1"
                         ]
@@ -2998,7 +2998,7 @@
                 },
                 "vehicle_types_available": [
                     {
-                        "count": 3,
+                        "count": 5,
                         "vehicle_type_id": "1"
                     },
                     {
@@ -3023,7 +3023,7 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138295,
+                "last_reported": 1695139405,
                 "name": "Nelson & Richards",
                 "num_bikes_available": 1,
                 "num_bikes_disabled": 1,
@@ -3074,7 +3074,7 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138053,
+                "last_reported": 1695139240,
                 "name": "7th & Heather",
                 "num_bikes_available": 11,
                 "num_bikes_disabled": 0,
@@ -3125,15 +3125,15 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138509,
+                "last_reported": 1695139209,
                 "name": "Richards & Davie",
-                "num_bikes_available": 3,
+                "num_bikes_available": 2,
                 "num_bikes_disabled": 3,
-                "num_docks_available": 8,
+                "num_docks_available": 9,
                 "station_id": "0082",
                 "vehicle_docks_available": [
                     {
-                        "count": 8,
+                        "count": 9,
                         "vehicle_type_ids": [
                             "1"
                         ]
@@ -3151,7 +3151,7 @@
                 },
                 "vehicle_types_available": [
                     {
-                        "count": 3,
+                        "count": 2,
                         "vehicle_type_id": "1"
                     },
                     {
@@ -3176,7 +3176,7 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138192,
+                "last_reported": 1695139378,
                 "name": "Aquatic Centre",
                 "num_bikes_available": 18,
                 "num_bikes_disabled": 0,
@@ -3227,7 +3227,7 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138454,
+                "last_reported": 1695139053,
                 "name": "Beach & Broughton",
                 "num_bikes_available": 9,
                 "num_bikes_disabled": 1,
@@ -3278,11 +3278,11 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138318,
+                "last_reported": 1695138937,
                 "name": "Broughton & Davie",
-                "num_bikes_available": 1,
+                "num_bikes_available": 0,
                 "num_bikes_disabled": 1,
-                "num_docks_available": 20,
+                "num_docks_available": 21,
                 "station_id": "0087",
                 "vehicle_docks_available": [
                     {
@@ -3292,7 +3292,7 @@
                         ]
                     },
                     {
-                        "count": 20,
+                        "count": 21,
                         "vehicle_type_ids": [
                             "2"
                         ]
@@ -3308,7 +3308,7 @@
                         "vehicle_type_id": "1"
                     },
                     {
-                        "count": 1,
+                        "count": 0,
                         "vehicle_type_id": "2"
                     }
                 ]
@@ -3329,15 +3329,15 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138513,
+                "last_reported": 1695139170,
                 "name": "Harwood & Bute",
-                "num_bikes_available": 1,
+                "num_bikes_available": 0,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 19,
+                "num_docks_available": 20,
                 "station_id": "0088",
                 "vehicle_docks_available": [
                     {
-                        "count": 19,
+                        "count": 20,
                         "vehicle_type_ids": [
                             "1"
                         ]
@@ -3359,7 +3359,7 @@
                         "vehicle_type_id": "1"
                     },
                     {
-                        "count": 1,
+                        "count": 0,
                         "vehicle_type_id": "2"
                     }
                 ]
@@ -3380,10 +3380,10 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138444,
+                "last_reported": 1695139244,
                 "name": "Burrard & Drake",
-                "num_bikes_available": 3,
-                "num_bikes_disabled": 2,
+                "num_bikes_available": 5,
+                "num_bikes_disabled": 1,
                 "num_docks_available": 19,
                 "station_id": "0089",
                 "vehicle_docks_available": [
@@ -3406,11 +3406,11 @@
                 },
                 "vehicle_types_available": [
                     {
-                        "count": 1,
+                        "count": 2,
                         "vehicle_type_id": "1"
                     },
                     {
-                        "count": 2,
+                        "count": 3,
                         "vehicle_type_id": "2"
                     }
                 ]
@@ -3431,15 +3431,15 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138428,
+                "last_reported": 1695139424,
                 "name": "Chilco & Barclay",
-                "num_bikes_available": 13,
+                "num_bikes_available": 11,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 5,
+                "num_docks_available": 7,
                 "station_id": "0092",
                 "vehicle_docks_available": [
                     {
-                        "count": 5,
+                        "count": 7,
                         "vehicle_type_ids": [
                             "1"
                         ]
@@ -3457,11 +3457,11 @@
                 },
                 "vehicle_types_available": [
                     {
-                        "count": 12,
+                        "count": 11,
                         "vehicle_type_id": "1"
                     },
                     {
-                        "count": 1,
+                        "count": 0,
                         "vehicle_type_id": "2"
                     }
                 ]
@@ -3482,15 +3482,15 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138391,
+                "last_reported": 1695138996,
                 "name": "Chilco & Robson",
-                "num_bikes_available": 8,
+                "num_bikes_available": 7,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 8,
+                "num_docks_available": 9,
                 "station_id": "0093",
                 "vehicle_docks_available": [
                     {
-                        "count": 8,
+                        "count": 9,
                         "vehicle_type_ids": [
                             "1"
                         ]
@@ -3512,7 +3512,7 @@
                         "vehicle_type_id": "1"
                     },
                     {
-                        "count": 2,
+                        "count": 1,
                         "vehicle_type_id": "2"
                     }
                 ]
@@ -3533,7 +3533,7 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138419,
+                "last_reported": 1695138957,
                 "name": "Nicola & Robson",
                 "num_bikes_available": 10,
                 "num_bikes_disabled": 0,
@@ -3584,15 +3584,15 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138266,
+                "last_reported": 1695139450,
                 "name": "Carrall & Hastings",
                 "num_bikes_available": 3,
-                "num_bikes_disabled": 0,
-                "num_docks_available": 15,
+                "num_bikes_disabled": 1,
+                "num_docks_available": 14,
                 "station_id": "0098",
                 "vehicle_docks_available": [
                     {
-                        "count": 15,
+                        "count": 14,
                         "vehicle_type_ids": [
                             "1"
                         ]
@@ -3635,7 +3635,7 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138458,
+                "last_reported": 1695139071,
                 "name": "\u0161x\u02b7\u019b\u0313\u0259n\u0259q Xwtl'e7\u00e9n\u1e35 Square - Vancouver Art Gallery",
                 "num_bikes_available": 20,
                 "num_bikes_disabled": 0,
@@ -3686,7 +3686,7 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138280,
+                "last_reported": 1695138865,
                 "name": "Stanley Park - Vancouver Aquarium",
                 "num_bikes_available": 7,
                 "num_bikes_disabled": 0,
@@ -3737,7 +3737,7 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138418,
+                "last_reported": 1695139018,
                 "name": "Stanley Park - Second Beach North",
                 "num_bikes_available": 6,
                 "num_bikes_disabled": 0,
@@ -3788,7 +3788,7 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138467,
+                "last_reported": 1695139068,
                 "name": "Stanley Park - Third Beach Parking Lot",
                 "num_bikes_available": 10,
                 "num_bikes_disabled": 0,
@@ -3839,7 +3839,7 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138174,
+                "last_reported": 1695139345,
                 "name": "Stanley Park - Second Beach South",
                 "num_bikes_available": 7,
                 "num_bikes_disabled": 0,
@@ -3890,15 +3890,15 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138073,
+                "last_reported": 1695139259,
                 "name": "Stanley Park - Totem Poles",
-                "num_bikes_available": 15,
+                "num_bikes_available": 13,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 5,
+                "num_docks_available": 7,
                 "station_id": "0105",
                 "vehicle_docks_available": [
                     {
-                        "count": 5,
+                        "count": 7,
                         "vehicle_type_ids": [
                             "1"
                         ]
@@ -3916,7 +3916,7 @@
                 },
                 "vehicle_types_available": [
                     {
-                        "count": 14,
+                        "count": 12,
                         "vehicle_type_id": "1"
                     },
                     {
@@ -3941,10 +3941,10 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695137940,
+                "last_reported": 1695139125,
                 "name": "Heather & 14th",
-                "num_bikes_available": 1,
-                "num_bikes_disabled": 1,
+                "num_bikes_available": 2,
+                "num_bikes_disabled": 0,
                 "num_docks_available": 14,
                 "station_id": "0106",
                 "vehicle_docks_available": [
@@ -3971,7 +3971,7 @@
                         "vehicle_type_id": "1"
                     },
                     {
-                        "count": 0,
+                        "count": 1,
                         "vehicle_type_id": "2"
                     }
                 ]
@@ -3992,7 +3992,7 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138209,
+                "last_reported": 1695139397,
                 "name": "8th & Ontario",
                 "num_bikes_available": 1,
                 "num_bikes_disabled": 1,
@@ -4018,11 +4018,11 @@
                 },
                 "vehicle_types_available": [
                     {
-                        "count": 0,
+                        "count": 1,
                         "vehicle_type_id": "1"
                     },
                     {
-                        "count": 1,
+                        "count": 0,
                         "vehicle_type_id": "2"
                     }
                 ]
@@ -4043,15 +4043,15 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138305,
+                "last_reported": 1695139274,
                 "name": "1st & Chestnut",
-                "num_bikes_available": 12,
+                "num_bikes_available": 13,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 14,
+                "num_docks_available": 13,
                 "station_id": "0108",
                 "vehicle_docks_available": [
                     {
-                        "count": 14,
+                        "count": 13,
                         "vehicle_type_ids": [
                             "1"
                         ]
@@ -4073,7 +4073,7 @@
                         "vehicle_type_id": "1"
                     },
                     {
-                        "count": 0,
+                        "count": 1,
                         "vehicle_type_id": "2"
                     }
                 ]
@@ -4094,15 +4094,15 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138074,
+                "last_reported": 1695138844,
                 "name": "7th & Arbutus",
-                "num_bikes_available": 6,
+                "num_bikes_available": 7,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 10,
+                "num_docks_available": 9,
                 "station_id": "0109",
                 "vehicle_docks_available": [
                     {
-                        "count": 10,
+                        "count": 9,
                         "vehicle_type_ids": [
                             "1"
                         ]
@@ -4120,7 +4120,7 @@
                 },
                 "vehicle_types_available": [
                     {
-                        "count": 6,
+                        "count": 7,
                         "vehicle_type_id": "1"
                     },
                     {
@@ -4145,7 +4145,7 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695137977,
+                "last_reported": 1695139162,
                 "name": "5th & Arbutus",
                 "num_bikes_available": 1,
                 "num_bikes_disabled": 0,
@@ -4196,7 +4196,7 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138471,
+                "last_reported": 1695139357,
                 "name": "10th & Oak",
                 "num_bikes_available": 21,
                 "num_bikes_disabled": 7,
@@ -4247,7 +4247,7 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138197,
+                "last_reported": 1695139382,
                 "name": "Arbutus & 16th",
                 "num_bikes_available": 1,
                 "num_bikes_disabled": 1,
@@ -4298,7 +4298,7 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695137946,
+                "last_reported": 1695139132,
                 "name": "Cypress & 14th",
                 "num_bikes_available": 10,
                 "num_bikes_disabled": 0,
@@ -4349,7 +4349,7 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138188,
+                "last_reported": 1695139375,
                 "name": "Cypress & 16th",
                 "num_bikes_available": 0,
                 "num_bikes_disabled": 1,
@@ -4400,15 +4400,15 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138128,
+                "last_reported": 1695139315,
                 "name": "3rd & Quebec",
-                "num_bikes_available": 6,
+                "num_bikes_available": 7,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 14,
+                "num_docks_available": 13,
                 "station_id": "0119",
                 "vehicle_docks_available": [
                     {
-                        "count": 14,
+                        "count": 13,
                         "vehicle_type_ids": [
                             "1"
                         ]
@@ -4426,7 +4426,7 @@
                 },
                 "vehicle_types_available": [
                     {
-                        "count": 5,
+                        "count": 6,
                         "vehicle_type_id": "1"
                     },
                     {
@@ -4451,7 +4451,7 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138175,
+                "last_reported": 1695139422,
                 "name": "Haro & Denman",
                 "num_bikes_available": 18,
                 "num_bikes_disabled": 0,
@@ -4502,15 +4502,15 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138254,
+                "last_reported": 1695139442,
                 "name": "Georgia & Thurlow",
-                "num_bikes_available": 8,
+                "num_bikes_available": 9,
                 "num_bikes_disabled": 1,
-                "num_docks_available": 3,
+                "num_docks_available": 2,
                 "station_id": "0123",
                 "vehicle_docks_available": [
                     {
-                        "count": 3,
+                        "count": 2,
                         "vehicle_type_ids": [
                             "1"
                         ]
@@ -4532,7 +4532,7 @@
                         "vehicle_type_id": "1"
                     },
                     {
-                        "count": 4,
+                        "count": 5,
                         "vehicle_type_id": "2"
                     }
                 ]
@@ -4553,7 +4553,7 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138003,
+                "last_reported": 1695139189,
                 "name": "Richards & Cordova",
                 "num_bikes_available": 16,
                 "num_bikes_disabled": 0,
@@ -4604,7 +4604,7 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138381,
+                "last_reported": 1695139373,
                 "name": "Thurlow & Pendrell",
                 "num_bikes_available": 4,
                 "num_bikes_disabled": 1,
@@ -4655,7 +4655,7 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138449,
+                "last_reported": 1695139442,
                 "name": "Richards & Robson",
                 "num_bikes_available": 12,
                 "num_bikes_disabled": 1,
@@ -4706,7 +4706,7 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138436,
+                "last_reported": 1695139037,
                 "name": "Heather & 16th",
                 "num_bikes_available": 7,
                 "num_bikes_disabled": 1,
@@ -4757,15 +4757,15 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138429,
+                "last_reported": 1695139032,
                 "name": "14th & Ontario",
-                "num_bikes_available": 11,
+                "num_bikes_available": 12,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 5,
+                "num_docks_available": 4,
                 "station_id": "0132",
                 "vehicle_docks_available": [
                     {
-                        "count": 5,
+                        "count": 4,
                         "vehicle_type_ids": [
                             "1"
                         ]
@@ -4783,7 +4783,7 @@
                 },
                 "vehicle_types_available": [
                     {
-                        "count": 11,
+                        "count": 12,
                         "vehicle_type_id": "1"
                     },
                     {
@@ -4808,7 +4808,7 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138434,
+                "last_reported": 1695139175,
                 "name": "Ontario & 16th",
                 "num_bikes_available": 5,
                 "num_bikes_disabled": 0,
@@ -4859,7 +4859,7 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138368,
+                "last_reported": 1695139061,
                 "name": "14th & Main",
                 "num_bikes_available": 3,
                 "num_bikes_disabled": 1,
@@ -4910,7 +4910,7 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138502,
+                "last_reported": 1695139332,
                 "name": "David Lam Park - West",
                 "num_bikes_available": 11,
                 "num_bikes_disabled": 0,
@@ -4961,7 +4961,7 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138437,
+                "last_reported": 1695139446,
                 "name": "Beach & Seymour",
                 "num_bikes_available": 15,
                 "num_bikes_disabled": 0,
@@ -5012,11 +5012,11 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138489,
+                "last_reported": 1695139441,
                 "name": "Richards & Helmcken",
-                "num_bikes_available": 9,
+                "num_bikes_available": 8,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 9,
+                "num_docks_available": 10,
                 "station_id": "0138",
                 "vehicle_docks_available": [
                     {
@@ -5026,7 +5026,7 @@
                         ]
                     },
                     {
-                        "count": 9,
+                        "count": 10,
                         "vehicle_type_ids": [
                             "2"
                         ]
@@ -5042,7 +5042,7 @@
                         "vehicle_type_id": "1"
                     },
                     {
-                        "count": 4,
+                        "count": 3,
                         "vehicle_type_id": "2"
                     }
                 ]
@@ -5063,7 +5063,7 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138243,
+                "last_reported": 1695139208,
                 "name": "Burrard & 4th",
                 "num_bikes_available": 8,
                 "num_bikes_disabled": 0,
@@ -5114,7 +5114,7 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138506,
+                "last_reported": 1695139088,
                 "name": "Burrard & 7th",
                 "num_bikes_available": 2,
                 "num_bikes_disabled": 0,
@@ -5165,15 +5165,15 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138504,
+                "last_reported": 1695138891,
                 "name": "Beach & Cardero",
-                "num_bikes_available": 3,
+                "num_bikes_available": 2,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 19,
+                "num_docks_available": 20,
                 "station_id": "0142",
                 "vehicle_docks_available": [
                     {
-                        "count": 19,
+                        "count": 20,
                         "vehicle_type_ids": [
                             "1"
                         ]
@@ -5191,7 +5191,7 @@
                 },
                 "vehicle_types_available": [
                     {
-                        "count": 2,
+                        "count": 1,
                         "vehicle_type_id": "1"
                     },
                     {
@@ -5216,15 +5216,15 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138355,
+                "last_reported": 1695139403,
                 "name": "South False Creek Seawall",
-                "num_bikes_available": 3,
+                "num_bikes_available": 2,
                 "num_bikes_disabled": 1,
-                "num_docks_available": 10,
+                "num_docks_available": 11,
                 "station_id": "0143",
                 "vehicle_docks_available": [
                     {
-                        "count": 10,
+                        "count": 11,
                         "vehicle_type_ids": [
                             "1"
                         ]
@@ -5242,7 +5242,7 @@
                 },
                 "vehicle_types_available": [
                     {
-                        "count": 3,
+                        "count": 2,
                         "vehicle_type_id": "1"
                     },
                     {
@@ -5267,11 +5267,11 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138484,
+                "last_reported": 1695139119,
                 "name": "Wylie & 2nd",
-                "num_bikes_available": 6,
+                "num_bikes_available": 7,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 12,
+                "num_docks_available": 11,
                 "station_id": "0144",
                 "vehicle_docks_available": [
                     {
@@ -5281,7 +5281,7 @@
                         ]
                     },
                     {
-                        "count": 12,
+                        "count": 11,
                         "vehicle_type_ids": [
                             "2"
                         ]
@@ -5293,7 +5293,7 @@
                 },
                 "vehicle_types_available": [
                     {
-                        "count": 6,
+                        "count": 7,
                         "vehicle_type_id": "1"
                     },
                     {
@@ -5318,15 +5318,15 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138508,
+                "last_reported": 1695139431,
                 "name": "Chestnut & McNicoll",
-                "num_bikes_available": 9,
+                "num_bikes_available": 8,
                 "num_bikes_disabled": 1,
-                "num_docks_available": 6,
+                "num_docks_available": 7,
                 "station_id": "0147",
                 "vehicle_docks_available": [
                     {
-                        "count": 6,
+                        "count": 7,
                         "vehicle_type_ids": [
                             "1"
                         ]
@@ -5344,7 +5344,7 @@
                 },
                 "vehicle_types_available": [
                     {
-                        "count": 9,
+                        "count": 8,
                         "vehicle_type_id": "1"
                     },
                     {
@@ -5369,15 +5369,15 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138398,
+                "last_reported": 1695139392,
                 "name": "Creekside Park North",
-                "num_bikes_available": 18,
+                "num_bikes_available": 17,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 1,
+                "num_docks_available": 2,
                 "station_id": "0148",
                 "vehicle_docks_available": [
                     {
-                        "count": 1,
+                        "count": 2,
                         "vehicle_type_ids": [
                             "1"
                         ]
@@ -5395,7 +5395,7 @@
                 },
                 "vehicle_types_available": [
                     {
-                        "count": 16,
+                        "count": 15,
                         "vehicle_type_id": "1"
                     },
                     {
@@ -5420,7 +5420,7 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138418,
+                "last_reported": 1695139183,
                 "name": "Alexander & Main",
                 "num_bikes_available": 18,
                 "num_bikes_disabled": 0,
@@ -5471,7 +5471,7 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138371,
+                "last_reported": 1695139318,
                 "name": "Arbutus Greenway & 14th",
                 "num_bikes_available": 7,
                 "num_bikes_disabled": 2,
@@ -5522,15 +5522,15 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138506,
+                "last_reported": 1695139453,
                 "name": "Arbutus Greenway & Fir",
-                "num_bikes_available": 9,
+                "num_bikes_available": 7,
                 "num_bikes_disabled": 2,
-                "num_docks_available": 5,
+                "num_docks_available": 7,
                 "station_id": "0153",
                 "vehicle_docks_available": [
                     {
-                        "count": 5,
+                        "count": 7,
                         "vehicle_type_ids": [
                             "1"
                         ]
@@ -5548,7 +5548,7 @@
                 },
                 "vehicle_types_available": [
                     {
-                        "count": 9,
+                        "count": 7,
                         "vehicle_type_id": "1"
                     },
                     {
@@ -5573,7 +5573,7 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138172,
+                "last_reported": 1695139153,
                 "name": "Kitsilano Beach Park",
                 "num_bikes_available": 14,
                 "num_bikes_disabled": 0,
@@ -5624,7 +5624,7 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138500,
+                "last_reported": 1695139420,
                 "name": "Arbutus & McNicoll",
                 "num_bikes_available": 11,
                 "num_bikes_disabled": 1,
@@ -5675,7 +5675,7 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138123,
+                "last_reported": 1695139125,
                 "name": "Vine & 4th",
                 "num_bikes_available": 4,
                 "num_bikes_disabled": 0,
@@ -5726,15 +5726,15 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138470,
+                "last_reported": 1695139441,
                 "name": "Alexander & Dunlevy",
-                "num_bikes_available": 4,
+                "num_bikes_available": 5,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 10,
+                "num_docks_available": 9,
                 "station_id": "0161",
                 "vehicle_docks_available": [
                     {
-                        "count": 10,
+                        "count": 9,
                         "vehicle_type_ids": [
                             "1"
                         ]
@@ -5752,7 +5752,7 @@
                 },
                 "vehicle_types_available": [
                     {
-                        "count": 2,
+                        "count": 3,
                         "vehicle_type_id": "1"
                     },
                     {
@@ -5777,15 +5777,15 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138277,
+                "last_reported": 1695139457,
                 "name": "Columbia & 5th",
-                "num_bikes_available": 6,
+                "num_bikes_available": 7,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 12,
+                "num_docks_available": 11,
                 "station_id": "0165",
                 "vehicle_docks_available": [
                     {
-                        "count": 12,
+                        "count": 11,
                         "vehicle_type_ids": [
                             "1"
                         ]
@@ -5803,7 +5803,7 @@
                 },
                 "vehicle_types_available": [
                     {
-                        "count": 5,
+                        "count": 6,
                         "vehicle_type_id": "1"
                     },
                     {
@@ -5828,7 +5828,7 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138279,
+                "last_reported": 1695139369,
                 "name": "Alder & 11th",
                 "num_bikes_available": 4,
                 "num_bikes_disabled": 0,
@@ -5879,15 +5879,15 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138294,
+                "last_reported": 1695139221,
                 "name": "8th & Yukon",
-                "num_bikes_available": 7,
+                "num_bikes_available": 9,
                 "num_bikes_disabled": 1,
-                "num_docks_available": 14,
+                "num_docks_available": 12,
                 "station_id": "0170",
                 "vehicle_docks_available": [
                     {
-                        "count": 14,
+                        "count": 12,
                         "vehicle_type_ids": [
                             "1"
                         ]
@@ -5905,11 +5905,11 @@
                 },
                 "vehicle_types_available": [
                     {
-                        "count": 3,
+                        "count": 4,
                         "vehicle_type_id": "1"
                     },
                     {
-                        "count": 4,
+                        "count": 5,
                         "vehicle_type_id": "2"
                     }
                 ]
@@ -5930,7 +5930,7 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138312,
+                "last_reported": 1695139019,
                 "name": "Yukon & 6th",
                 "num_bikes_available": 9,
                 "num_bikes_disabled": 0,
@@ -5981,7 +5981,7 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138344,
+                "last_reported": 1695139393,
                 "name": "10th & Columbia",
                 "num_bikes_available": 3,
                 "num_bikes_disabled": 2,
@@ -6032,11 +6032,11 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138476,
+                "last_reported": 1695139459,
                 "name": "Columbia & 1st",
-                "num_bikes_available": 14,
+                "num_bikes_available": 17,
                 "num_bikes_disabled": 1,
-                "num_docks_available": 9,
+                "num_docks_available": 6,
                 "station_id": "0173",
                 "vehicle_docks_available": [
                     {
@@ -6046,7 +6046,7 @@
                         ]
                     },
                     {
-                        "count": 9,
+                        "count": 6,
                         "vehicle_type_ids": [
                             "2"
                         ]
@@ -6058,11 +6058,11 @@
                 },
                 "vehicle_types_available": [
                     {
-                        "count": 1,
+                        "count": 3,
                         "vehicle_type_id": "1"
                     },
                     {
-                        "count": 13,
+                        "count": 14,
                         "vehicle_type_id": "2"
                     }
                 ]
@@ -6083,7 +6083,7 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138507,
+                "last_reported": 1695139274,
                 "name": "1st & Manitoba",
                 "num_bikes_available": 20,
                 "num_bikes_disabled": 1,
@@ -6134,15 +6134,15 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138298,
+                "last_reported": 1695139120,
                 "name": "10th & Ontario",
-                "num_bikes_available": 2,
+                "num_bikes_available": 1,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 18,
+                "num_docks_available": 19,
                 "station_id": "0176",
                 "vehicle_docks_available": [
                     {
-                        "count": 18,
+                        "count": 19,
                         "vehicle_type_ids": [
                             "1"
                         ]
@@ -6160,7 +6160,7 @@
                 },
                 "vehicle_types_available": [
                     {
-                        "count": 2,
+                        "count": 1,
                         "vehicle_type_id": "1"
                     },
                     {
@@ -6236,7 +6236,7 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138211,
+                "last_reported": 1695139276,
                 "name": "11th & Kingsway",
                 "num_bikes_available": 9,
                 "num_bikes_disabled": 0,
@@ -6287,7 +6287,7 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138464,
+                "last_reported": 1695139334,
                 "name": "Columbia & 14th",
                 "num_bikes_available": 3,
                 "num_bikes_disabled": 1,
@@ -6338,15 +6338,15 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138510,
+                "last_reported": 1695139110,
                 "name": "10th & Kingsway",
-                "num_bikes_available": 3,
+                "num_bikes_available": 2,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 17,
+                "num_docks_available": 18,
                 "station_id": "0186",
                 "vehicle_docks_available": [
                     {
-                        "count": 17,
+                        "count": 18,
                         "vehicle_type_ids": [
                             "1"
                         ]
@@ -6364,7 +6364,7 @@
                 },
                 "vehicle_types_available": [
                     {
-                        "count": 1,
+                        "count": 0,
                         "vehicle_type_id": "1"
                     },
                     {
@@ -6389,15 +6389,15 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138351,
+                "last_reported": 1695139304,
                 "name": "Bute & Davie",
-                "num_bikes_available": 4,
-                "num_bikes_disabled": 4,
-                "num_docks_available": 12,
+                "num_bikes_available": 5,
+                "num_bikes_disabled": 2,
+                "num_docks_available": 13,
                 "station_id": "0187",
                 "vehicle_docks_available": [
                     {
-                        "count": 12,
+                        "count": 13,
                         "vehicle_type_ids": [
                             "1"
                         ]
@@ -6419,7 +6419,7 @@
                         "vehicle_type_id": "1"
                     },
                     {
-                        "count": 4,
+                        "count": 5,
                         "vehicle_type_id": "2"
                     }
                 ]
@@ -6440,15 +6440,15 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138478,
+                "last_reported": 1695139451,
                 "name": "Granville Island",
-                "num_bikes_available": 16,
+                "num_bikes_available": 19,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 16,
+                "num_docks_available": 13,
                 "station_id": "0189",
                 "vehicle_docks_available": [
                     {
-                        "count": 16,
+                        "count": 13,
                         "vehicle_type_ids": [
                             "1"
                         ]
@@ -6466,7 +6466,7 @@
                 },
                 "vehicle_types_available": [
                     {
-                        "count": 13,
+                        "count": 16,
                         "vehicle_type_id": "1"
                     },
                     {
@@ -6491,7 +6491,7 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138299,
+                "last_reported": 1695139109,
                 "name": "Melville & Bute",
                 "num_bikes_available": 14,
                 "num_bikes_disabled": 0,
@@ -6542,15 +6542,15 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138487,
+                "last_reported": 1695139353,
                 "name": "7th & Laurel",
-                "num_bikes_available": 2,
+                "num_bikes_available": 0,
                 "num_bikes_disabled": 1,
-                "num_docks_available": 11,
+                "num_docks_available": 13,
                 "station_id": "0191",
                 "vehicle_docks_available": [
                     {
-                        "count": 11,
+                        "count": 13,
                         "vehicle_type_ids": [
                             "1"
                         ]
@@ -6568,7 +6568,7 @@
                 },
                 "vehicle_types_available": [
                     {
-                        "count": 2,
+                        "count": 0,
                         "vehicle_type_id": "1"
                     },
                     {
@@ -6593,15 +6593,15 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138110,
+                "last_reported": 1695139171,
                 "name": "7th &  Alder",
-                "num_bikes_available": 5,
+                "num_bikes_available": 4,
                 "num_bikes_disabled": 2,
-                "num_docks_available": 9,
+                "num_docks_available": 10,
                 "station_id": "0192",
                 "vehicle_docks_available": [
                     {
-                        "count": 9,
+                        "count": 10,
                         "vehicle_type_ids": [
                             "1"
                         ]
@@ -6619,7 +6619,7 @@
                 },
                 "vehicle_types_available": [
                     {
-                        "count": 3,
+                        "count": 2,
                         "vehicle_type_id": "1"
                     },
                     {
@@ -6644,15 +6644,15 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138445,
+                "last_reported": 1695139187,
                 "name": "Science World",
-                "num_bikes_available": 15,
+                "num_bikes_available": 14,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 1,
+                "num_docks_available": 2,
                 "station_id": "0193",
                 "vehicle_docks_available": [
                     {
-                        "count": 1,
+                        "count": 2,
                         "vehicle_type_ids": [
                             "1"
                         ]
@@ -6670,7 +6670,7 @@
                 },
                 "vehicle_types_available": [
                     {
-                        "count": 15,
+                        "count": 14,
                         "vehicle_type_id": "1"
                     },
                     {
@@ -6695,15 +6695,15 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138366,
+                "last_reported": 1695139155,
                 "name": "Hornby & Drake",
-                "num_bikes_available": 5,
+                "num_bikes_available": 2,
                 "num_bikes_disabled": 2,
-                "num_docks_available": 17,
+                "num_docks_available": 20,
                 "station_id": "0196",
                 "vehicle_docks_available": [
                     {
-                        "count": 17,
+                        "count": 20,
                         "vehicle_type_ids": [
                             "1"
                         ]
@@ -6725,7 +6725,7 @@
                         "vehicle_type_id": "1"
                     },
                     {
-                        "count": 5,
+                        "count": 2,
                         "vehicle_type_id": "2"
                     }
                 ]
@@ -6746,7 +6746,7 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138434,
+                "last_reported": 1695139035,
                 "name": "1st & Scotia",
                 "num_bikes_available": 10,
                 "num_bikes_disabled": 0,
@@ -6797,7 +6797,7 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138138,
+                "last_reported": 1695138723,
                 "name": "5th & Main",
                 "num_bikes_available": 6,
                 "num_bikes_disabled": 0,
@@ -6899,7 +6899,7 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138388,
+                "last_reported": 1695138959,
                 "name": "Cardero & Bayshore",
                 "num_bikes_available": 9,
                 "num_bikes_disabled": 2,
@@ -6950,11 +6950,11 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138084,
+                "last_reported": 1695139243,
                 "name": "Shaw Tower",
-                "num_bikes_available": 13,
+                "num_bikes_available": 14,
                 "num_bikes_disabled": 3,
-                "num_docks_available": 2,
+                "num_docks_available": 1,
                 "station_id": "0201",
                 "vehicle_docks_available": [
                     {
@@ -6964,7 +6964,7 @@
                         ]
                     },
                     {
-                        "count": 2,
+                        "count": 1,
                         "vehicle_type_ids": [
                             "2"
                         ]
@@ -6976,7 +6976,7 @@
                 },
                 "vehicle_types_available": [
                     {
-                        "count": 6,
+                        "count": 7,
                         "vehicle_type_id": "1"
                     },
                     {
@@ -7001,15 +7001,15 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138369,
+                "last_reported": 1695139260,
                 "name": "14th & Oak",
-                "num_bikes_available": 1,
+                "num_bikes_available": 2,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 13,
+                "num_docks_available": 12,
                 "station_id": "0202",
                 "vehicle_docks_available": [
                     {
-                        "count": 13,
+                        "count": 12,
                         "vehicle_type_ids": [
                             "1"
                         ]
@@ -7027,7 +7027,7 @@
                 },
                 "vehicle_types_available": [
                     {
-                        "count": 0,
+                        "count": 1,
                         "vehicle_type_id": "1"
                     },
                     {
@@ -7052,7 +7052,7 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138378,
+                "last_reported": 1695139093,
                 "name": "York & Yew",
                 "num_bikes_available": 12,
                 "num_bikes_disabled": 1,
@@ -7103,10 +7103,10 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138186,
+                "last_reported": 1695139195,
                 "name": "Pine & 10th",
-                "num_bikes_available": 5,
-                "num_bikes_disabled": 0,
+                "num_bikes_available": 4,
+                "num_bikes_disabled": 1,
                 "num_docks_available": 15,
                 "station_id": "0205",
                 "vehicle_docks_available": [
@@ -7129,7 +7129,7 @@
                 },
                 "vehicle_types_available": [
                     {
-                        "count": 4,
+                        "count": 3,
                         "vehicle_type_id": "1"
                     },
                     {
@@ -7154,15 +7154,15 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138315,
+                "last_reported": 1695139068,
                 "name": "8th & Scotia",
-                "num_bikes_available": 10,
+                "num_bikes_available": 9,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 2,
+                "num_docks_available": 3,
                 "station_id": "0206",
                 "vehicle_docks_available": [
                     {
-                        "count": 2,
+                        "count": 3,
                         "vehicle_type_ids": [
                             "1"
                         ]
@@ -7180,7 +7180,7 @@
                 },
                 "vehicle_types_available": [
                     {
-                        "count": 10,
+                        "count": 9,
                         "vehicle_type_id": "1"
                     },
                     {
@@ -7205,15 +7205,15 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138427,
+                "last_reported": 1695139313,
                 "name": "Alberni & Jervis",
-                "num_bikes_available": 6,
+                "num_bikes_available": 5,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 14,
+                "num_docks_available": 15,
                 "station_id": "0207",
                 "vehicle_docks_available": [
                     {
-                        "count": 14,
+                        "count": 15,
                         "vehicle_type_ids": [
                             "1"
                         ]
@@ -7231,7 +7231,7 @@
                 },
                 "vehicle_types_available": [
                     {
-                        "count": 4,
+                        "count": 3,
                         "vehicle_type_id": "1"
                     },
                     {
@@ -7256,7 +7256,7 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138181,
+                "last_reported": 1695139429,
                 "name": "Stanley Park - Information Booth",
                 "num_bikes_available": 14,
                 "num_bikes_disabled": 0,
@@ -7307,7 +7307,7 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138453,
+                "last_reported": 1695139408,
                 "name": "Burrard & 14th",
                 "num_bikes_available": 16,
                 "num_bikes_disabled": 1,
@@ -7358,15 +7358,15 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138073,
+                "last_reported": 1695139264,
                 "name": "14th & Alder",
-                "num_bikes_available": 5,
+                "num_bikes_available": 4,
                 "num_bikes_disabled": 1,
-                "num_docks_available": 8,
+                "num_docks_available": 9,
                 "station_id": "0211",
                 "vehicle_docks_available": [
                     {
-                        "count": 8,
+                        "count": 9,
                         "vehicle_type_ids": [
                             "1"
                         ]
@@ -7388,7 +7388,7 @@
                         "vehicle_type_id": "1"
                     },
                     {
-                        "count": 4,
+                        "count": 3,
                         "vehicle_type_id": "2"
                     }
                 ]
@@ -7409,7 +7409,7 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138316,
+                "last_reported": 1695139451,
                 "name": "Union & Dunlevy",
                 "num_bikes_available": 4,
                 "num_bikes_disabled": 2,
@@ -7460,15 +7460,15 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138152,
+                "last_reported": 1695139337,
                 "name": "Pender & Gore",
-                "num_bikes_available": 7,
+                "num_bikes_available": 5,
                 "num_bikes_disabled": 2,
-                "num_docks_available": 5,
+                "num_docks_available": 7,
                 "station_id": "0213",
                 "vehicle_docks_available": [
                     {
-                        "count": 5,
+                        "count": 7,
                         "vehicle_type_ids": [
                             "1"
                         ]
@@ -7486,11 +7486,11 @@
                 },
                 "vehicle_types_available": [
                     {
-                        "count": 2,
+                        "count": 1,
                         "vehicle_type_id": "1"
                     },
                     {
-                        "count": 5,
+                        "count": 4,
                         "vehicle_type_id": "2"
                     }
                 ]
@@ -7511,7 +7511,7 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138223,
+                "last_reported": 1695139407,
                 "name": "Princess & Union",
                 "num_bikes_available": 4,
                 "num_bikes_disabled": 1,
@@ -7562,15 +7562,15 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138309,
+                "last_reported": 1695139197,
                 "name": "Smithe & Burrard",
-                "num_bikes_available": 0,
+                "num_bikes_available": 6,
                 "num_bikes_disabled": 2,
-                "num_docks_available": 16,
+                "num_docks_available": 10,
                 "station_id": "0217",
                 "vehicle_docks_available": [
                     {
-                        "count": 16,
+                        "count": 10,
                         "vehicle_type_ids": [
                             "1"
                         ]
@@ -7588,11 +7588,11 @@
                 },
                 "vehicle_types_available": [
                     {
-                        "count": 0,
+                        "count": 2,
                         "vehicle_type_id": "1"
                     },
                     {
-                        "count": 0,
+                        "count": 4,
                         "vehicle_type_id": "2"
                     }
                 ]
@@ -7613,7 +7613,7 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138333,
+                "last_reported": 1695139252,
                 "name": "Carrall & Seawall",
                 "num_bikes_available": 5,
                 "num_bikes_disabled": 0,
@@ -7664,7 +7664,7 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138459,
+                "last_reported": 1695139275,
                 "name": "Hawks & Union",
                 "num_bikes_available": 9,
                 "num_bikes_disabled": 0,
@@ -7715,7 +7715,7 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138100,
+                "last_reported": 1695139108,
                 "name": "Glen & Union",
                 "num_bikes_available": 7,
                 "num_bikes_disabled": 0,
@@ -7766,15 +7766,15 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138497,
+                "last_reported": 1695139374,
                 "name": "Adanac & McLean",
-                "num_bikes_available": 10,
+                "num_bikes_available": 11,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 12,
+                "num_docks_available": 11,
                 "station_id": "0222",
                 "vehicle_docks_available": [
                     {
-                        "count": 12,
+                        "count": 11,
                         "vehicle_type_ids": [
                             "1"
                         ]
@@ -7792,7 +7792,7 @@
                 },
                 "vehicle_types_available": [
                     {
-                        "count": 10,
+                        "count": 11,
                         "vehicle_type_id": "1"
                     },
                     {
@@ -7817,7 +7817,7 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138429,
+                "last_reported": 1695139030,
                 "name": "Commercial & Adanac",
                 "num_bikes_available": 1,
                 "num_bikes_disabled": 0,
@@ -7868,7 +7868,7 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138424,
+                "last_reported": 1695139425,
                 "name": "Pender & Commercial",
                 "num_bikes_available": 6,
                 "num_bikes_disabled": 0,
@@ -7919,7 +7919,7 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138410,
+                "last_reported": 1695139118,
                 "name": "McLean & Pender",
                 "num_bikes_available": 15,
                 "num_bikes_disabled": 0,
@@ -7970,7 +7970,7 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138377,
+                "last_reported": 1695138978,
                 "name": "Campbell & Hastings",
                 "num_bikes_available": 9,
                 "num_bikes_disabled": 0,
@@ -8021,7 +8021,7 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695137546,
+                "last_reported": 1695139441,
                 "name": "Keefer & Hawks",
                 "num_bikes_available": 1,
                 "num_bikes_disabled": 0,
@@ -8072,15 +8072,15 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138053,
+                "last_reported": 1695139420,
                 "name": "Keefer & Princess",
-                "num_bikes_available": 3,
+                "num_bikes_available": 2,
                 "num_bikes_disabled": 1,
-                "num_docks_available": 10,
+                "num_docks_available": 11,
                 "station_id": "0229",
                 "vehicle_docks_available": [
                     {
-                        "count": 10,
+                        "count": 11,
                         "vehicle_type_ids": [
                             "1"
                         ]
@@ -8098,7 +8098,7 @@
                 },
                 "vehicle_types_available": [
                     {
-                        "count": 3,
+                        "count": 2,
                         "vehicle_type_id": "1"
                     },
                     {
@@ -8123,15 +8123,15 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138354,
+                "last_reported": 1695139371,
                 "name": "Alexander & Railway",
-                "num_bikes_available": 8,
+                "num_bikes_available": 12,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 12,
+                "num_docks_available": 8,
                 "station_id": "0230",
                 "vehicle_docks_available": [
                     {
-                        "count": 12,
+                        "count": 8,
                         "vehicle_type_ids": [
                             "1"
                         ]
@@ -8149,11 +8149,11 @@
                 },
                 "vehicle_types_available": [
                     {
-                        "count": 5,
+                        "count": 7,
                         "vehicle_type_id": "1"
                     },
                     {
-                        "count": 3,
+                        "count": 5,
                         "vehicle_type_id": "2"
                     }
                 ]
@@ -8174,7 +8174,7 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138342,
+                "last_reported": 1695139294,
                 "name": "Napier & Commercial",
                 "num_bikes_available": 0,
                 "num_bikes_disabled": 7,
@@ -8225,7 +8225,7 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138493,
+                "last_reported": 1695138940,
                 "name": "Britannia Parking Lot",
                 "num_bikes_available": 7,
                 "num_bikes_disabled": 1,
@@ -8276,7 +8276,7 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138201,
+                "last_reported": 1695139387,
                 "name": "Thornton & National",
                 "num_bikes_available": 7,
                 "num_bikes_disabled": 0,
@@ -8327,7 +8327,7 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138434,
+                "last_reported": 1695139324,
                 "name": "Charles & Commercial",
                 "num_bikes_available": 9,
                 "num_bikes_disabled": 0,
@@ -8378,7 +8378,7 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138378,
+                "last_reported": 1695138594,
                 "name": "Keith & 6th",
                 "num_bikes_available": 22,
                 "num_bikes_disabled": 0,
@@ -8429,15 +8429,15 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138470,
+                "last_reported": 1695139450,
                 "name": "Grant & Commercial",
-                "num_bikes_available": 1,
+                "num_bikes_available": 0,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 13,
+                "num_docks_available": 14,
                 "station_id": "0239",
                 "vehicle_docks_available": [
                     {
-                        "count": 13,
+                        "count": 14,
                         "vehicle_type_ids": [
                             "1"
                         ]
@@ -8455,7 +8455,7 @@
                 },
                 "vehicle_types_available": [
                     {
-                        "count": 1,
+                        "count": 0,
                         "vehicle_type_id": "1"
                     },
                     {
@@ -8480,7 +8480,7 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138368,
+                "last_reported": 1695139222,
                 "name": "2nd & Commercial",
                 "num_bikes_available": 4,
                 "num_bikes_disabled": 0,
@@ -8531,7 +8531,7 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138099,
+                "last_reported": 1695139284,
                 "name": "4th & Commercial",
                 "num_bikes_available": 0,
                 "num_bikes_disabled": 0,
@@ -8582,7 +8582,7 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138416,
+                "last_reported": 1695139016,
                 "name": "8th & Commercial",
                 "num_bikes_available": 1,
                 "num_bikes_disabled": 0,
@@ -8633,7 +8633,7 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138399,
+                "last_reported": 1695139004,
                 "name": "10th & Commercial",
                 "num_bikes_available": 3,
                 "num_bikes_disabled": 0,
@@ -8684,7 +8684,7 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138327,
+                "last_reported": 1695139256,
                 "name": "Woodland & 10th",
                 "num_bikes_available": 10,
                 "num_bikes_disabled": 0,
@@ -8735,15 +8735,15 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138305,
+                "last_reported": 1695139285,
                 "name": "Glen & Broadway",
-                "num_bikes_available": 1,
+                "num_bikes_available": 2,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 17,
+                "num_docks_available": 16,
                 "station_id": "0246",
                 "vehicle_docks_available": [
                     {
-                        "count": 17,
+                        "count": 16,
                         "vehicle_type_ids": [
                             "1"
                         ]
@@ -8761,7 +8761,7 @@
                 },
                 "vehicle_types_available": [
                     {
-                        "count": 1,
+                        "count": 2,
                         "vehicle_type_id": "1"
                     },
                     {
@@ -8786,7 +8786,7 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138356,
+                "last_reported": 1695138644,
                 "name": "St George & Broadway",
                 "num_bikes_available": 8,
                 "num_bikes_disabled": 2,
@@ -8837,7 +8837,7 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138510,
+                "last_reported": 1695139187,
                 "name": "7th & Woodland",
                 "num_bikes_available": 6,
                 "num_bikes_disabled": 0,
@@ -8888,15 +8888,15 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138186,
+                "last_reported": 1695139373,
                 "name": "Woodland & 4th",
-                "num_bikes_available": 4,
+                "num_bikes_available": 3,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 10,
+                "num_docks_available": 11,
                 "station_id": "0250",
                 "vehicle_docks_available": [
                     {
-                        "count": 10,
+                        "count": 11,
                         "vehicle_type_ids": [
                             "1"
                         ]
@@ -8914,7 +8914,7 @@
                 },
                 "vehicle_types_available": [
                     {
-                        "count": 3,
+                        "count": 2,
                         "vehicle_type_id": "1"
                     },
                     {
@@ -8939,7 +8939,7 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138347,
+                "last_reported": 1695138965,
                 "name": "Woodland & Graveley",
                 "num_bikes_available": 4,
                 "num_bikes_disabled": 0,
@@ -8990,15 +8990,15 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138468,
+                "last_reported": 1695139364,
                 "name": "Charles & Woodland",
-                "num_bikes_available": 9,
+                "num_bikes_available": 10,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 5,
+                "num_docks_available": 4,
                 "station_id": "0253",
                 "vehicle_docks_available": [
                     {
-                        "count": 5,
+                        "count": 4,
                         "vehicle_type_ids": [
                             "1"
                         ]
@@ -9016,7 +9016,7 @@
                 },
                 "vehicle_types_available": [
                     {
-                        "count": 8,
+                        "count": 9,
                         "vehicle_type_id": "1"
                     },
                     {
@@ -9041,7 +9041,7 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138353,
+                "last_reported": 1695139243,
                 "name": "Grandview & Commercial",
                 "num_bikes_available": 3,
                 "num_bikes_disabled": 1,
@@ -9092,7 +9092,7 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138070,
+                "last_reported": 1695139257,
                 "name": "18th & Main",
                 "num_bikes_available": 0,
                 "num_bikes_disabled": 0,
@@ -9143,15 +9143,15 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138375,
+                "last_reported": 1695139422,
                 "name": "Prince Edward & 16th",
-                "num_bikes_available": 2,
+                "num_bikes_available": 1,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 12,
+                "num_docks_available": 13,
                 "station_id": "0256",
                 "vehicle_docks_available": [
                     {
-                        "count": 12,
+                        "count": 13,
                         "vehicle_type_ids": [
                             "1"
                         ]
@@ -9169,7 +9169,7 @@
                 },
                 "vehicle_types_available": [
                     {
-                        "count": 2,
+                        "count": 1,
                         "vehicle_type_id": "1"
                     },
                     {
@@ -9194,7 +9194,7 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138360,
+                "last_reported": 1695138961,
                 "name": "Prince Edward & 14th",
                 "num_bikes_available": 7,
                 "num_bikes_disabled": 1,
@@ -9245,7 +9245,7 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138112,
+                "last_reported": 1695139298,
                 "name": "13th & St George",
                 "num_bikes_available": 6,
                 "num_bikes_disabled": 0,
@@ -9296,7 +9296,7 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138383,
+                "last_reported": 1695138988,
                 "name": "10th & Fraser",
                 "num_bikes_available": 1,
                 "num_bikes_disabled": 0,
@@ -9347,7 +9347,7 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695137950,
+                "last_reported": 1695139136,
                 "name": "8th & Fraser",
                 "num_bikes_available": 2,
                 "num_bikes_disabled": 0,
@@ -9398,7 +9398,7 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138398,
+                "last_reported": 1695139003,
                 "name": "8th & Prince Edward",
                 "num_bikes_available": 6,
                 "num_bikes_disabled": 1,
@@ -9449,7 +9449,7 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138471,
+                "last_reported": 1695139072,
                 "name": "St Catherines & 10th",
                 "num_bikes_available": 1,
                 "num_bikes_disabled": 0,
@@ -9500,7 +9500,7 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138475,
+                "last_reported": 1695139076,
                 "name": "St Catherines & 7th",
                 "num_bikes_available": 4,
                 "num_bikes_disabled": 0,
@@ -9551,7 +9551,7 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138512,
+                "last_reported": 1695139209,
                 "name": "Pender & Victoria",
                 "num_bikes_available": 3,
                 "num_bikes_disabled": 1,
@@ -9602,7 +9602,7 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138092,
+                "last_reported": 1695139274,
                 "name": "Victoria & 4th",
                 "num_bikes_available": 0,
                 "num_bikes_disabled": 0,
@@ -9653,7 +9653,7 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138468,
+                "last_reported": 1695139253,
                 "name": "Victoria & 10th",
                 "num_bikes_available": 6,
                 "num_bikes_disabled": 0,
@@ -9704,7 +9704,7 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695137976,
+                "last_reported": 1695139161,
                 "name": "15th & Victoria (Trout Lake)",
                 "num_bikes_available": 4,
                 "num_bikes_disabled": 1,
@@ -9755,7 +9755,7 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138066,
+                "last_reported": 1695139256,
                 "name": "Triumph & Victoria",
                 "num_bikes_available": 10,
                 "num_bikes_disabled": 0,
@@ -9806,7 +9806,7 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138442,
+                "last_reported": 1695139043,
                 "name": "Windsor & 14th",
                 "num_bikes_available": 8,
                 "num_bikes_disabled": 0,
@@ -9857,7 +9857,7 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138112,
+                "last_reported": 1695139457,
                 "name": "14th & Fraser",
                 "num_bikes_available": 0,
                 "num_bikes_disabled": 1,
@@ -9908,7 +9908,7 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138449,
+                "last_reported": 1695139222,
                 "name": "15th & Knight",
                 "num_bikes_available": 11,
                 "num_bikes_disabled": 0,
@@ -9959,7 +9959,7 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138422,
+                "last_reported": 1695139429,
                 "name": "Commercial & Pandora",
                 "num_bikes_available": 10,
                 "num_bikes_disabled": 0,
@@ -10010,15 +10010,15 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138383,
+                "last_reported": 1695139420,
                 "name": "Carolina & Great Northern Way",
-                "num_bikes_available": 7,
+                "num_bikes_available": 8,
                 "num_bikes_disabled": 2,
-                "num_docks_available": 7,
+                "num_docks_available": 6,
                 "station_id": "0287",
                 "vehicle_docks_available": [
                     {
-                        "count": 7,
+                        "count": 6,
                         "vehicle_type_ids": [
                             "1"
                         ]
@@ -10036,7 +10036,7 @@
                 },
                 "vehicle_types_available": [
                     {
-                        "count": 5,
+                        "count": 6,
                         "vehicle_type_id": "1"
                     },
                     {
@@ -10061,15 +10061,15 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138204,
+                "last_reported": 1695139391,
                 "name": "6th & Prince Edward",
-                "num_bikes_available": 4,
+                "num_bikes_available": 3,
                 "num_bikes_disabled": 2,
-                "num_docks_available": 10,
+                "num_docks_available": 11,
                 "station_id": "0297",
                 "vehicle_docks_available": [
                     {
-                        "count": 10,
+                        "count": 11,
                         "vehicle_type_ids": [
                             "1"
                         ]
@@ -10087,7 +10087,7 @@
                 },
                 "vehicle_types_available": [
                     {
-                        "count": 4,
+                        "count": 3,
                         "vehicle_type_id": "1"
                     },
                     {
@@ -10112,7 +10112,7 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138014,
+                "last_reported": 1695139186,
                 "name": "6th & Carolina",
                 "num_bikes_available": 7,
                 "num_bikes_disabled": 1,
@@ -10163,7 +10163,7 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138205,
+                "last_reported": 1695139392,
                 "name": "Bute & Barclay",
                 "num_bikes_available": 0,
                 "num_bikes_disabled": 0,
@@ -10214,15 +10214,15 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138412,
+                "last_reported": 1695139294,
                 "name": "Georgia & Homer",
-                "num_bikes_available": 6,
+                "num_bikes_available": 8,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 12,
+                "num_docks_available": 10,
                 "station_id": "0305",
                 "vehicle_docks_available": [
                     {
-                        "count": 12,
+                        "count": 10,
                         "vehicle_type_ids": [
                             "1"
                         ]
@@ -10244,7 +10244,7 @@
                         "vehicle_type_id": "1"
                     },
                     {
-                        "count": 2,
+                        "count": 4,
                         "vehicle_type_id": "2"
                     }
                 ]
@@ -10265,15 +10265,15 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138200,
+                "last_reported": 1695139388,
                 "name": "Seymour & Cordova",
-                "num_bikes_available": 16,
+                "num_bikes_available": 19,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 3,
+                "num_docks_available": 0,
                 "station_id": "0308",
                 "vehicle_docks_available": [
                     {
-                        "count": 3,
+                        "count": 0,
                         "vehicle_type_ids": [
                             "1"
                         ]
@@ -10295,7 +10295,7 @@
                         "vehicle_type_id": "1"
                     },
                     {
-                        "count": 3,
+                        "count": 6,
                         "vehicle_type_id": "2"
                     }
                 ]
@@ -10316,7 +10316,7 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138250,
+                "last_reported": 1695139442,
                 "name": "Jervis & Robson",
                 "num_bikes_available": 1,
                 "num_bikes_disabled": 0,
@@ -10367,7 +10367,7 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138276,
+                "last_reported": 1695139461,
                 "name": "13th & Cambie",
                 "num_bikes_available": 7,
                 "num_bikes_disabled": 2,
@@ -10418,11 +10418,11 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138330,
+                "last_reported": 1695139285,
                 "name": "Nelson & Denman",
-                "num_bikes_available": 10,
+                "num_bikes_available": 8,
                 "num_bikes_disabled": 2,
-                "num_docks_available": 6,
+                "num_docks_available": 8,
                 "station_id": "0313",
                 "vehicle_docks_available": [
                     {
@@ -10432,7 +10432,7 @@
                         ]
                     },
                     {
-                        "count": 6,
+                        "count": 8,
                         "vehicle_type_ids": [
                             "2"
                         ]
@@ -10444,11 +10444,11 @@
                 },
                 "vehicle_types_available": [
                     {
-                        "count": 2,
+                        "count": 1,
                         "vehicle_type_id": "1"
                     },
                     {
-                        "count": 8,
+                        "count": 7,
                         "vehicle_type_id": "2"
                     }
                 ]
@@ -10469,9 +10469,9 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138320,
+                "last_reported": 1695138531,
                 "name": "Rolston & Granville",
-                "num_bikes_available": 5,
+                "num_bikes_available": 4,
                 "num_bikes_disabled": 0,
                 "num_docks_available": 15,
                 "station_id": "0314",
@@ -10495,7 +10495,7 @@
                 },
                 "vehicle_types_available": [
                     {
-                        "count": 3,
+                        "count": 2,
                         "vehicle_type_id": "1"
                     },
                     {
@@ -10520,7 +10520,7 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138433,
+                "last_reported": 1695139446,
                 "name": "1st & Fir",
                 "num_bikes_available": 10,
                 "num_bikes_disabled": 1,
@@ -10571,15 +10571,15 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138361,
+                "last_reported": 1695138963,
                 "name": "Commercial & 20th",
-                "num_bikes_available": 7,
+                "num_bikes_available": 6,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 13,
+                "num_docks_available": 14,
                 "station_id": "0352",
                 "vehicle_docks_available": [
                     {
-                        "count": 13,
+                        "count": 14,
                         "vehicle_type_ids": [
                             "1"
                         ]
@@ -10597,7 +10597,7 @@
                 },
                 "vehicle_types_available": [
                     {
-                        "count": 7,
+                        "count": 6,
                         "vehicle_type_id": "1"
                     },
                     {
@@ -10622,7 +10622,7 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138297,
+                "last_reported": 1695138882,
                 "name": "Station & Terminal",
                 "num_bikes_available": 18,
                 "num_bikes_disabled": 0,
@@ -10673,7 +10673,7 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138483,
+                "last_reported": 1695139163,
                 "name": "Jericho Beach",
                 "num_bikes_available": 4,
                 "num_bikes_disabled": 0,
@@ -10724,7 +10724,7 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138408,
+                "last_reported": 1695139015,
                 "name": "Wallace & 4th",
                 "num_bikes_available": 7,
                 "num_bikes_disabled": 0,
@@ -10775,7 +10775,7 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138280,
+                "last_reported": 1695139334,
                 "name": "Highbury & 8th",
                 "num_bikes_available": 1,
                 "num_bikes_disabled": 1,
@@ -10826,7 +10826,7 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138426,
+                "last_reported": 1695139096,
                 "name": "Alma & Point Grey",
                 "num_bikes_available": 8,
                 "num_bikes_disabled": 1,
@@ -10877,7 +10877,7 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138495,
+                "last_reported": 1695139096,
                 "name": "Dunbar & 6th",
                 "num_bikes_available": 11,
                 "num_bikes_disabled": 0,
@@ -10928,7 +10928,7 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138488,
+                "last_reported": 1695139406,
                 "name": "Dunbar & Broadway",
                 "num_bikes_available": 9,
                 "num_bikes_disabled": 0,
@@ -10979,7 +10979,7 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138398,
+                "last_reported": 1695139003,
                 "name": "Blenheim & 4th",
                 "num_bikes_available": 9,
                 "num_bikes_disabled": 0,
@@ -11030,7 +11030,7 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138073,
+                "last_reported": 1695139259,
                 "name": "Point Grey & Blenheim",
                 "num_bikes_available": 6,
                 "num_bikes_disabled": 0,
@@ -11081,7 +11081,7 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138420,
+                "last_reported": 1695138974,
                 "name": "Balaclava & 6th",
                 "num_bikes_available": 8,
                 "num_bikes_disabled": 0,
@@ -11132,15 +11132,15 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138493,
+                "last_reported": 1695139058,
                 "name": "Balaclava & Broadway",
-                "num_bikes_available": 12,
+                "num_bikes_available": 13,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 6,
+                "num_docks_available": 5,
                 "station_id": "0444",
                 "vehicle_docks_available": [
                     {
-                        "count": 6,
+                        "count": 5,
                         "vehicle_type_ids": [
                             "1"
                         ]
@@ -11158,7 +11158,7 @@
                 },
                 "vehicle_types_available": [
                     {
-                        "count": 9,
+                        "count": 10,
                         "vehicle_type_id": "1"
                     },
                     {
@@ -11183,7 +11183,7 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138099,
+                "last_reported": 1695138961,
                 "name": "Point Grey & Bayswater",
                 "num_bikes_available": 13,
                 "num_bikes_disabled": 1,
@@ -11234,7 +11234,7 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138253,
+                "last_reported": 1695138834,
                 "name": "8th & Macdonald",
                 "num_bikes_available": 8,
                 "num_bikes_disabled": 1,
@@ -11285,7 +11285,7 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138412,
+                "last_reported": 1695139428,
                 "name": "Trafalgar & Cornwall",
                 "num_bikes_available": 10,
                 "num_bikes_disabled": 1,
@@ -11336,7 +11336,7 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138235,
+                "last_reported": 1695138822,
                 "name": "Trafalgar & Broadway",
                 "num_bikes_available": 7,
                 "num_bikes_disabled": 0,
@@ -11387,7 +11387,7 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138364,
+                "last_reported": 1695139093,
                 "name": "Balsam & Cornwall",
                 "num_bikes_available": 11,
                 "num_bikes_disabled": 0,
@@ -11438,7 +11438,7 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138342,
+                "last_reported": 1695138652,
                 "name": "Arbutus & Nanton",
                 "num_bikes_available": 6,
                 "num_bikes_disabled": 1,
@@ -11489,7 +11489,7 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138368,
+                "last_reported": 1695138952,
                 "name": "East Blvd & 37th",
                 "num_bikes_available": 7,
                 "num_bikes_disabled": 0,
@@ -11540,15 +11540,15 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138383,
+                "last_reported": 1695139128,
                 "name": "Yew & Broadway",
-                "num_bikes_available": 4,
+                "num_bikes_available": 5,
                 "num_bikes_disabled": 1,
-                "num_docks_available": 13,
+                "num_docks_available": 12,
                 "station_id": "0484",
                 "vehicle_docks_available": [
                     {
-                        "count": 13,
+                        "count": 12,
                         "vehicle_type_ids": [
                             "1"
                         ]
@@ -11570,7 +11570,7 @@
                         "vehicle_type_id": "1"
                     },
                     {
-                        "count": 1,
+                        "count": 2,
                         "vehicle_type_id": "2"
                     }
                 ]
@@ -11591,15 +11591,15 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138433,
+                "last_reported": 1695139461,
                 "name": "28th & Willow",
-                "num_bikes_available": 16,
+                "num_bikes_available": 17,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 4,
+                "num_docks_available": 3,
                 "station_id": "0505",
                 "vehicle_docks_available": [
                     {
-                        "count": 4,
+                        "count": 3,
                         "vehicle_type_ids": [
                             "1"
                         ]
@@ -11621,7 +11621,7 @@
                         "vehicle_type_id": "1"
                     },
                     {
-                        "count": 8,
+                        "count": 9,
                         "vehicle_type_id": "2"
                     }
                 ]
@@ -11642,7 +11642,7 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138451,
+                "last_reported": 1695139053,
                 "name": "18th & Heather",
                 "num_bikes_available": 2,
                 "num_bikes_disabled": 0,
@@ -11693,7 +11693,7 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138336,
+                "last_reported": 1695139070,
                 "name": "Heather & 29th",
                 "num_bikes_available": 1,
                 "num_bikes_disabled": 2,
@@ -11744,7 +11744,7 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138315,
+                "last_reported": 1695138932,
                 "name": "King Edward & Cambie",
                 "num_bikes_available": 10,
                 "num_bikes_disabled": 0,
@@ -11795,7 +11795,7 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138349,
+                "last_reported": 1695139252,
                 "name": "29th & Cambie",
                 "num_bikes_available": 2,
                 "num_bikes_disabled": 1,
@@ -11846,7 +11846,7 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138467,
+                "last_reported": 1695139069,
                 "name": "18th & Cambie",
                 "num_bikes_available": 4,
                 "num_bikes_disabled": 0,
@@ -11897,7 +11897,7 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138096,
+                "last_reported": 1695139262,
                 "name": "22nd & Cambie",
                 "num_bikes_available": 1,
                 "num_bikes_disabled": 1,
@@ -11948,7 +11948,7 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695137988,
+                "last_reported": 1695139175,
                 "name": "Ontario & 23rd",
                 "num_bikes_available": 5,
                 "num_bikes_disabled": 1,
@@ -11999,7 +11999,7 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138309,
+                "last_reported": 1695139059,
                 "name": "30th & Ontario",
                 "num_bikes_available": 18,
                 "num_bikes_disabled": 0,
@@ -12050,7 +12050,7 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138118,
+                "last_reported": 1695139304,
                 "name": "20th & Main",
                 "num_bikes_available": 0,
                 "num_bikes_disabled": 0,
@@ -12101,7 +12101,7 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138378,
+                "last_reported": 1695139055,
                 "name": "22nd & Main",
                 "num_bikes_available": 6,
                 "num_bikes_disabled": 0,
@@ -12152,7 +12152,7 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138223,
+                "last_reported": 1695139336,
                 "name": "27th & Main",
                 "num_bikes_available": 4,
                 "num_bikes_disabled": 0,
@@ -12203,15 +12203,15 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138198,
+                "last_reported": 1695139381,
                 "name": "Wall & Eton",
-                "num_bikes_available": 2,
+                "num_bikes_available": 1,
                 "num_bikes_disabled": 1,
-                "num_docks_available": 15,
+                "num_docks_available": 16,
                 "station_id": "0611",
                 "vehicle_docks_available": [
                     {
-                        "count": 15,
+                        "count": 16,
                         "vehicle_type_ids": [
                             "1"
                         ]
@@ -12229,7 +12229,7 @@
                 },
                 "vehicle_types_available": [
                     {
-                        "count": 2,
+                        "count": 1,
                         "vehicle_type_id": "1"
                     },
                     {
@@ -12254,15 +12254,15 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138455,
+                "last_reported": 1695139089,
                 "name": "Lakewood & Oxford",
-                "num_bikes_available": 9,
+                "num_bikes_available": 10,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 9,
+                "num_docks_available": 8,
                 "station_id": "0621",
                 "vehicle_docks_available": [
                     {
-                        "count": 9,
+                        "count": 8,
                         "vehicle_type_ids": [
                             "1"
                         ]
@@ -12284,7 +12284,7 @@
                         "vehicle_type_id": "1"
                     },
                     {
-                        "count": 0,
+                        "count": 1,
                         "vehicle_type_id": "2"
                     }
                 ]
@@ -12305,7 +12305,7 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138382,
+                "last_reported": 1695138987,
                 "name": "Lakewood & Triumph",
                 "num_bikes_available": 9,
                 "num_bikes_disabled": 0,
@@ -12356,7 +12356,7 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138439,
+                "last_reported": 1695139041,
                 "name": "Franklin & Nanaimo",
                 "num_bikes_available": 6,
                 "num_bikes_disabled": 1,
@@ -12382,11 +12382,11 @@
                 },
                 "vehicle_types_available": [
                     {
-                        "count": 3,
+                        "count": 4,
                         "vehicle_type_id": "1"
                     },
                     {
-                        "count": 3,
+                        "count": 2,
                         "vehicle_type_id": "2"
                     }
                 ]
@@ -12407,7 +12407,7 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138433,
+                "last_reported": 1695139034,
                 "name": "Trimble & 8th",
                 "num_bikes_available": 2,
                 "num_bikes_disabled": 0,
@@ -12458,7 +12458,7 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138135,
+                "last_reported": 1695139305,
                 "name": "Sasamat & 10th",
                 "num_bikes_available": 8,
                 "num_bikes_disabled": 0,
@@ -12509,7 +12509,7 @@
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
-                "last_reported": 1695138177,
+                "last_reported": 1695139364,
                 "name": "PNE - Hastings & Windermere",
                 "num_bikes_available": 8,
                 "num_bikes_disabled": 0,
