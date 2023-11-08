@@ -18,7 +18,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1699475593,
+                "last_reported": 1699476368,
                 "name": "Chattanooga Zoo",
                 "nearby_distance": 16093.4,
                 "num_bikes_available": 5,
@@ -87,7 +87,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1699475621,
+                "last_reported": 1699476398,
                 "name": "200 River St Outdoor Chattanooga",
                 "nearby_distance": 8046.7,
                 "num_bikes_available": 15,
@@ -127,11 +127,11 @@
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 7,
+                        "count": 8,
                         "vehicle_type_id": "ICONIC"
                     },
                     {
-                        "count": 6,
+                        "count": 5,
                         "vehicle_type_id": "EFIT"
                     }
                 ]
@@ -156,7 +156,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1699475415,
+                "last_reported": 1699476446,
                 "name": "301 Manufacturers Rd",
                 "nearby_distance": 974.0,
                 "num_bikes_available": 5,
@@ -224,12 +224,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1699475443,
+                "last_reported": 1699476478,
                 "name": "215 Broad St",
                 "nearby_distance": 8046.7,
-                "num_bikes_available": 11,
+                "num_bikes_available": 10,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 8,
+                "num_docks_available": 9,
                 "num_docks_disabled": 0,
                 "obcn": "",
                 "physical_configuration": "ELECTRICBIKESTATION",
@@ -242,6 +242,74 @@
                 ],
                 "rental_uris": {},
                 "station_id": "1303",
+                "status": "IN_SERVICE",
+                "traffic": null,
+                "vehicle_docks_available": [
+                    {
+                        "count": 9,
+                        "vehicle_type_ids": [
+                            "ICONIC",
+                            "FIT",
+                            "BOOST",
+                            "EFIT"
+                        ]
+                    }
+                ],
+                "vehicle_types_available": [
+                    {
+                        "count": 0,
+                        "vehicle_type_id": "FIT"
+                    },
+                    {
+                        "count": 0,
+                        "vehicle_type_id": "BOOST"
+                    },
+                    {
+                        "count": 10,
+                        "vehicle_type_id": "ICONIC"
+                    },
+                    {
+                        "count": 0,
+                        "vehicle_type_id": "EFIT"
+                    }
+                ]
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -85.307269,
+                    35.036904
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "address": "Market St & E 14th St",
+                "altitude": 228.0,
+                "capacity": 19,
+                "groups": [],
+                "is_charging_station": false,
+                "is_installed": true,
+                "is_renting": true,
+                "is_returning": true,
+                "is_virtual_station": false,
+                "last_reported": 1699476367,
+                "name": "Market St & E 14th St",
+                "nearby_distance": 600.0,
+                "num_bikes_available": 11,
+                "num_bikes_disabled": 0,
+                "num_docks_available": 8,
+                "num_docks_disabled": 0,
+                "physical_configuration": "REGULAR",
+                "rental_methods": [
+                    "KEY",
+                    "TRANSITCARD",
+                    "CREDITCARD",
+                    "PHONE"
+                ],
+                "rental_uris": {},
+                "station_id": "1305",
                 "status": "IN_SERVICE",
                 "traffic": null,
                 "vehicle_docks_available": [
@@ -279,74 +347,6 @@
         {
             "geometry": {
                 "coordinates": [
-                    -85.307269,
-                    35.036904
-                ],
-                "type": "Point"
-            },
-            "properties": {
-                "address": "Market St & E 14th St",
-                "altitude": 228.0,
-                "capacity": 19,
-                "groups": [],
-                "is_charging_station": false,
-                "is_installed": true,
-                "is_renting": true,
-                "is_returning": true,
-                "is_virtual_station": false,
-                "last_reported": 1699475591,
-                "name": "Market St & E 14th St",
-                "nearby_distance": 600.0,
-                "num_bikes_available": 12,
-                "num_bikes_disabled": 1,
-                "num_docks_available": 6,
-                "num_docks_disabled": 0,
-                "physical_configuration": "REGULAR",
-                "rental_methods": [
-                    "KEY",
-                    "TRANSITCARD",
-                    "CREDITCARD",
-                    "PHONE"
-                ],
-                "rental_uris": {},
-                "station_id": "1305",
-                "status": "IN_SERVICE",
-                "traffic": null,
-                "vehicle_docks_available": [
-                    {
-                        "count": 6,
-                        "vehicle_type_ids": [
-                            "ICONIC",
-                            "FIT",
-                            "BOOST",
-                            "EFIT"
-                        ]
-                    }
-                ],
-                "vehicle_types_available": [
-                    {
-                        "count": 0,
-                        "vehicle_type_id": "FIT"
-                    },
-                    {
-                        "count": 1,
-                        "vehicle_type_id": "BOOST"
-                    },
-                    {
-                        "count": 10,
-                        "vehicle_type_id": "ICONIC"
-                    },
-                    {
-                        "count": 1,
-                        "vehicle_type_id": "EFIT"
-                    }
-                ]
-            },
-            "type": "Feature"
-        },
-        {
-            "geometry": {
-                "coordinates": [
                     -85.309483,
                     35.052701
                 ],
@@ -362,7 +362,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1699475543,
+                "last_reported": 1699476318,
                 "name": "Market & E 4th Street",
                 "nearby_distance": 600.0,
                 "num_bikes_available": 8,
@@ -431,7 +431,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1699475387,
+                "last_reported": 1699476417,
                 "name": "Market St & W 12th St",
                 "nearby_distance": 8046.7,
                 "num_bikes_available": 6,
@@ -500,7 +500,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1699475586,
+                "last_reported": 1699476363,
                 "name": "Market St & Cowart St",
                 "nearby_distance": 8046.7,
                 "num_bikes_available": 6,
@@ -569,7 +569,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1699475583,
+                "last_reported": 1699476358,
                 "name": "Chestnut St & Riverfront Pkwy",
                 "nearby_distance": 8046.7,
                 "num_bikes_available": 5,
@@ -639,12 +639,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1699475530,
+                "last_reported": 1699476305,
                 "name": "Carter St & W 12th St",
                 "nearby_distance": 600.0,
-                "num_bikes_available": 7,
+                "num_bikes_available": 6,
                 "num_bikes_disabled": 1,
-                "num_docks_available": 7,
+                "num_docks_available": 8,
                 "num_docks_disabled": 0,
                 "physical_configuration": "REGULAR",
                 "rental_methods": [
@@ -659,7 +659,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 7,
+                        "count": 8,
                         "vehicle_type_ids": [
                             "ICONIC",
                             "FIT",
@@ -678,7 +678,7 @@
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 7,
+                        "count": 6,
                         "vehicle_type_id": "ICONIC"
                     },
                     {
@@ -707,7 +707,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1699475567,
+                "last_reported": 1699476343,
                 "name": "Broad St & W 6th St",
                 "nearby_distance": 500.0,
                 "num_bikes_available": 5,
@@ -776,7 +776,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1699475402,
+                "last_reported": 1699476435,
                 "name": "799 North Market St",
                 "nearby_distance": 1609.34,
                 "num_bikes_available": 3,
@@ -845,7 +845,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1699475458,
+                "last_reported": 1699476505,
                 "name": "High St & E 2nd St",
                 "nearby_distance": 600.0,
                 "num_bikes_available": 4,
@@ -914,7 +914,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1699475407,
+                "last_reported": 1699476438,
                 "name": "Power Alley & Riverfront Pkwy",
                 "nearby_distance": 8046.7,
                 "num_bikes_available": 7,
@@ -984,7 +984,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1699475405,
+                "last_reported": 1699476437,
                 "name": "Miller Park",
                 "nearby_distance": 600.0,
                 "num_bikes_available": 6,
@@ -1053,7 +1053,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1699475618,
+                "last_reported": 1699476394,
                 "name": "ML King Blvd & Lindsay St",
                 "nearby_distance": 500.0,
                 "num_bikes_available": 6,
@@ -1123,7 +1123,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1699475594,
+                "last_reported": 1699476370,
                 "name": "McCallie Ave & Lindsay St",
                 "nearby_distance": 500.0,
                 "num_bikes_available": 5,
@@ -1193,7 +1193,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1699475469,
+                "last_reported": 1699476503,
                 "name": "400 East Main Street",
                 "nearby_distance": 4828.0199999999995,
                 "num_bikes_available": 9,
@@ -1263,7 +1263,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1699475402,
+                "last_reported": 1699476435,
                 "name": "800 E 8th St",
                 "nearby_distance": 8046.7,
                 "num_bikes_available": 3,
@@ -1331,7 +1331,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1699475619,
+                "last_reported": 1699476393,
                 "name": "Oak St & Greenway",
                 "nearby_distance": 700.0,
                 "num_bikes_available": 7,
@@ -1399,7 +1399,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1699475464,
+                "last_reported": 1699476498,
                 "name": "Oak & Houston",
                 "nearby_distance": 600.0,
                 "num_bikes_available": 4,
@@ -1467,7 +1467,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1699475375,
+                "last_reported": 1699476410,
                 "name": "E Main St & Rossville Ave",
                 "nearby_distance": 700.0,
                 "num_bikes_available": 5,
@@ -1507,11 +1507,11 @@
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 5,
+                        "count": 4,
                         "vehicle_type_id": "ICONIC"
                     },
                     {
-                        "count": 0,
+                        "count": 1,
                         "vehicle_type_id": "EFIT"
                     }
                 ]
@@ -1537,7 +1537,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1699475561,
+                "last_reported": 1699476335,
                 "name": "Chestnut St & 3rd St",
                 "nearby_distance": 600.0,
                 "num_bikes_available": 4,
@@ -1607,7 +1607,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1699475395,
+                "last_reported": 1699476428,
                 "name": "Broad St & W 8th St",
                 "nearby_distance": 8046.7,
                 "num_bikes_available": 7,
@@ -1678,12 +1678,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1699475508,
+                "last_reported": 1699476285,
                 "name": "W Main St & Cowart St",
                 "nearby_distance": 600.0,
-                "num_bikes_available": 8,
+                "num_bikes_available": 7,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 4,
+                "num_docks_available": 5,
                 "num_docks_disabled": 1,
                 "obcn": "",
                 "physical_configuration": "REGULAR",
@@ -1700,7 +1700,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 4,
+                        "count": 5,
                         "vehicle_type_ids": [
                             "ICONIC",
                             "FIT",
@@ -1723,7 +1723,7 @@
                         "vehicle_type_id": "ICONIC"
                     },
                     {
-                        "count": 3,
+                        "count": 2,
                         "vehicle_type_id": "EFIT"
                     }
                 ]
@@ -1748,7 +1748,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1699475470,
+                "last_reported": 1699476503,
                 "name": "1216 Broad St",
                 "nearby_distance": 8046.7,
                 "num_bikes_available": 7,
@@ -1817,7 +1817,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1699475473,
+                "last_reported": 1699476250,
                 "name": "1826 Carter St",
                 "nearby_distance": 800.0,
                 "num_bikes_available": 8,
@@ -1887,7 +1887,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1699475415,
+                "last_reported": 1699476452,
                 "name": "500 Georgia Ave",
                 "nearby_distance": 8046.7,
                 "num_bikes_available": 6,
@@ -1956,7 +1956,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1699475483,
+                "last_reported": 1699476258,
                 "name": "Broad St & W 10th St",
                 "nearby_distance": 400.0,
                 "num_bikes_available": 9,
@@ -2025,7 +2025,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1699475581,
+                "last_reported": 1699476357,
                 "name": "Douglas St",
                 "nearby_distance": 16093.4,
                 "num_bikes_available": 4,
@@ -2094,7 +2094,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1699475460,
+                "last_reported": 1699476493,
                 "name": "Hubert Fry Center Tennessee Riverpark",
                 "nearby_distance": 25000.0,
                 "num_bikes_available": 9,
@@ -2164,7 +2164,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1699475425,
+                "last_reported": 1699476460,
                 "name": "SpringHill Suites",
                 "nearby_distance": 8046.7,
                 "num_bikes_available": 11,
@@ -2234,7 +2234,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1699475389,
+                "last_reported": 1699476423,
                 "name": "Pine St. & W. 6th St.",
                 "nearby_distance": 10000.0,
                 "num_bikes_available": 6,
@@ -2305,7 +2305,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1699475588,
+                "last_reported": 1699476364,
                 "name": "Blue Goose Hollow",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 9,
@@ -2376,7 +2376,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1699475524,
+                "last_reported": 1699476299,
                 "name": "Curtain Pole",
                 "nearby_distance": 10000.0,
                 "num_bikes_available": 9,
@@ -2447,12 +2447,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1699475474,
+                "last_reported": 1699476250,
                 "name": "MLK and University St",
                 "nearby_distance": 4000.0,
-                "num_bikes_available": 11,
+                "num_bikes_available": 10,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 4,
+                "num_docks_available": 5,
                 "num_docks_disabled": 0,
                 "obcn": "",
                 "physical_configuration": "REGULAR",
@@ -2469,7 +2469,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 4,
+                        "count": 5,
                         "vehicle_type_ids": [
                             "ICONIC",
                             "FIT",
@@ -2492,7 +2492,7 @@
                         "vehicle_type_id": "ICONIC"
                     },
                     {
-                        "count": 2,
+                        "count": 1,
                         "vehicle_type_id": "EFIT"
                     }
                 ]
@@ -2518,7 +2518,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1699475529,
+                "last_reported": 1699476306,
                 "name": "Middle St",
                 "nearby_distance": 7000.0,
                 "num_bikes_available": 0,
@@ -2589,7 +2589,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1699475429,
+                "last_reported": 1699476464,
                 "name": "Westin Chattanooga",
                 "nearby_distance": 8046.7,
                 "num_bikes_available": 6,
@@ -2659,12 +2659,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1699475529,
+                "last_reported": 1699476303,
                 "name": "Renaissance Park",
                 "nearby_distance": 16093.4,
-                "num_bikes_available": 10,
+                "num_bikes_available": 9,
                 "num_bikes_disabled": 1,
-                "num_docks_available": 7,
+                "num_docks_available": 8,
                 "num_docks_disabled": 0,
                 "obcn": "",
                 "physical_configuration": "REGULAR",
@@ -2681,7 +2681,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 7,
+                        "count": 8,
                         "vehicle_type_ids": [
                             "ICONIC",
                             "FIT",
@@ -2700,7 +2700,7 @@
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 10,
+                        "count": 9,
                         "vehicle_type_id": "ICONIC"
                     },
                     {
@@ -2729,7 +2729,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1699475602,
+                "last_reported": 1699476377,
                 "name": "North Market",
                 "nearby_distance": 2000.0,
                 "num_bikes_available": 6,
@@ -2798,12 +2798,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1699475393,
+                "last_reported": 1699476429,
                 "name": "St Elmo",
                 "nearby_distance": 16093.4,
-                "num_bikes_available": 9,
+                "num_bikes_available": 8,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 6,
+                "num_docks_available": 7,
                 "num_docks_disabled": 0,
                 "obcn": "",
                 "physical_configuration": "ELECTRICBIKESTATION",
@@ -2820,7 +2820,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 6,
+                        "count": 7,
                         "vehicle_type_ids": [
                             "ICONIC",
                             "FIT",
@@ -2843,7 +2843,7 @@
                         "vehicle_type_id": "ICONIC"
                     },
                     {
-                        "count": 7,
+                        "count": 6,
                         "vehicle_type_id": "EFIT"
                     }
                 ]
@@ -2869,7 +2869,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1699475524,
+                "last_reported": 1699476298,
                 "name": "Tatum Park",
                 "nearby_distance": 16093.4,
                 "num_bikes_available": 8,
@@ -2940,12 +2940,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1699475525,
+                "last_reported": 1699476301,
                 "name": "100 Walnut",
                 "nearby_distance": 8046.7,
-                "num_bikes_available": 12,
+                "num_bikes_available": 10,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 11,
+                "num_docks_available": 13,
                 "num_docks_disabled": 0,
                 "obcn": "",
                 "physical_configuration": "ELECTRICBIKESTATION",
@@ -2962,7 +2962,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 11,
+                        "count": 13,
                         "vehicle_type_ids": [
                             "ICONIC",
                             "FIT",
@@ -2981,7 +2981,7 @@
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 12,
+                        "count": 10,
                         "vehicle_type_id": "ICONIC"
                     },
                     {
