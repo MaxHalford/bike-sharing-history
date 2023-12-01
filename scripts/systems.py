@@ -455,18 +455,6 @@ systems.extend(
             )
         ),
         System(
-            provider='VCub',
-            city='Bordeaux',
-            country='🇫🇷',
-            latitude=44.83924727544909,
-            longitude=-0.5802706646706589,
-            scrape=functools.partial(
-                gbfs_scrape,
-                info_url='https://transport.data.gouv.fr/gbfs/vcub/station_information.json',
-                status_url='https://transport.data.gouv.fr/gbfs/vcub/station_status.json'
-            )
-        ),
-        System(
             provider='Vélivert',
             city='Saint-Etienne',
             country='🇫🇷',
@@ -524,18 +512,6 @@ systems.extend(
                 gbfs_scrape,
                 info_url='https://vancouver-gbfs.smoove.pro/gbfs/2/en/station_information.json',
                 status_url='https://vancouver-gbfs.smoove.pro/gbfs/2/en/station_status.json'
-            )
-        ),
-        System(
-            provider='Smovengo',
-            city='Paris',
-            country='🇫🇷',
-            latitude=43.653908,
-            longitude=-79.384293,
-            scrape=functools.partial(
-                gbfs_scrape,
-                info_url='https://velib-metropole-opendata.smoove.pro/opendata/Velib_Metropole/station_information.json',
-                status_url='https://velib-metropole-opendata.smoove.pro/opendata/Velib_Metropole/station_status.json'
             )
         )
     ]
