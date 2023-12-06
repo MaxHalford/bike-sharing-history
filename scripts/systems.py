@@ -381,19 +381,6 @@ systems.extend(
                 status_url='https://clermontferrand.publicbikesystem.net/customer/gbfs/v2/en/station_status'
             )
         ),
-        # 404 as of 2023-08-31
-        #System(
-        #    provider='Cyclolib',
-        #    city='Carcassonne',
-        #    country='🇫🇷',
-        #    latitude=43.21189073256431,
-        #    longitude=2.3528304903481114,
-        #    scrape=functools.partial(
-        #        gbfs_scrape,
-        #        info_url='http://gbfs.urbansharing.com/cyclolib.fr/station_information.json',
-        #        status_url='http://gbfs.urbansharing.com/cyclolib.fr/station_status.json'
-        #    )
-        #),
         System(
             provider='Donkey Republic',
             city='Brest',
