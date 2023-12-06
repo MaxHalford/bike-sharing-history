@@ -68,6 +68,30 @@ Everyone is welcome to add new cities. You simply have to contribute the necessa
 
 ## Archives
 
-🏗️
+The git history contains the state of each station and weather at several points in time. This git history can be turned into Parquet files for easy consumption. This is done by `archive.py` script. The latter generates Parquet files. These files are stored in a GCP bucket, [here](https://console.cloud.google.com/storage/browser?forceOnBucketsSortingFiltering=true&project=bike-sharing-407017&prefix=&forceOnObjectsSortingFiltering=false).
 
-The git history contains all the state of each stations and weather at each point in time. This git history can turned into Parquet files for easy consumption.
+An easy way to query these files is to use [DuckDB](https://duckdb.org/). The following Python snippet shows how to fetch the all bike station updates for the city of Toulouse:
+
+```py
+import duckdb
+
+with duckdb.connect(":memory:") as con:
+    con.execute("SET s3_endpoint='storage.googleapis.com'")
+    updates = con.execute(f"""
+    SELECT *
+    FROM READ_PARQUET('s3://bike-sharing-history/toulouse/jcdecaux/*/*.parquet');
+    """).fetch_df()
+```
+
+And here's a snippet to fetch the 24 hour weather forecast at different points in time for the city of Toulouse:
+
+```py
+with duckdb.connect(":memory:") as con:
+    con.execute("SET s3_endpoint='storage.googleapis.com'")
+    weather = con.execute(f"""
+    SELECT *
+    FROM READ_PARQUET('s3://weather-forecast-history/toulouse/*/*.parquet');
+    """).fetch_df()
+```
+
+If these exports are not adapted to your needs, feel welcome to reach out. The exports can be easily adapted to different needs, because the source of truth is the git history.
