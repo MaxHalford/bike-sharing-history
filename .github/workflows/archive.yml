@@ -23,7 +23,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install python-dotenv duckdb GitPython google-cloud-storage
 
-      - name: Scrape stations
+      - name: Archive
         run: python scripts/archive.py
         env:
           GCP_SERVICE_ACCOUNT_JSON: ${{ secrets.GCP_SERVICE_ACCOUNT_JSON }}
