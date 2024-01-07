@@ -429,54 +429,54 @@ systems.extend(
                 status_url='https://data.lime.bike/api/partners/v2/gbfs/paris/station_status'
             )
         ),
-        System(
-            provider='Optymo',
-            city='Belfort',
-            country='🇫🇷',
-            latitude=47.63146551428573,
-            longitude=6.859593971428572,
-            scrape=functools.partial(
-                gbfs_scrape,
-                info_url='https://belfort-gbfs.klervi.net/gbfs/en/station_information.json',
-                status_url='https://belfort-gbfs.klervi.net/gbfs/en/station_status.json'
-            )
-        ),
-        System(
-            provider='Vélivert',
-            city='Saint-Etienne',
-            country='🇫🇷',
-            latitude=45.441481028125,
-            longitude=4.389507587500001,
-            scrape=functools.partial(
-                gbfs_scrape,
-                info_url='https://saint-etienne-gbfs.klervi.net/gbfs/en/station_information.json',
-                status_url='https://saint-etienne-gbfs.klervi.net/gbfs/en/station_status.json'
-            )
-        ),
-        System(
-            provider='Vélocéo',
-            city='Vannes',
-            country='🇫🇷',
-            latitude=47.65592616666665,
-            longitude=-2.7642901666666666,
-            scrape=functools.partial(
-                gbfs_scrape,
-                info_url='https://vannes-gbfs.klervi.net/gbfs/en/station_information.json',
-                status_url='https://vannes-gbfs.klervi.net/gbfs/en/station_status.json'
-            )
-        ),
-        System(
-            provider="Vélomagg'",
-            city='Montpellier',
-            country='🇫🇷',
-            latitude=43.609848249603445,
-            longitude=3.87712589659722,
-            scrape=functools.partial(
-                gbfs_scrape,
-                info_url='https://montpellier-fr-smoove.klervi.net/gbfs/en/station_information.json',
-                status_url='https://montpellier-fr-smoove.klervi.net/gbfs/en/station_status.json'
-            )
-        ),
+        # System(
+        #     provider='Optymo',
+        #     city='Belfort',
+        #     country='🇫🇷',
+        #     latitude=47.63146551428573,
+        #     longitude=6.859593971428572,
+        #     scrape=functools.partial(
+        #         gbfs_scrape,
+        #         info_url='https://belfort-gbfs.klervi.net/gbfs/en/station_information.json',
+        #         status_url='https://belfort-gbfs.klervi.net/gbfs/en/station_status.json'
+        #     )
+        # ),
+        # System(
+        #     provider='Vélivert',
+        #     city='Saint-Etienne',
+        #     country='🇫🇷',
+        #     latitude=45.441481028125,
+        #     longitude=4.389507587500001,
+        #     scrape=functools.partial(
+        #         gbfs_scrape,
+        #         info_url='https://saint-etienne-gbfs.klervi.net/gbfs/en/station_information.json',
+        #         status_url='https://saint-etienne-gbfs.klervi.net/gbfs/en/station_status.json'
+        #     )
+        # ),
+        # System(
+        #     provider='Vélocéo',
+        #     city='Vannes',
+        #     country='🇫🇷',
+        #     latitude=47.65592616666665,
+        #     longitude=-2.7642901666666666,
+        #     scrape=functools.partial(
+        #         gbfs_scrape,
+        #         info_url='https://vannes-gbfs.klervi.net/gbfs/en/station_information.json',
+        #         status_url='https://vannes-gbfs.klervi.net/gbfs/en/station_status.json'
+        #     )
+        # ),
+        # System(
+        #     provider="Vélomagg'",
+        #     city='Montpellier',
+        #     country='🇫🇷',
+        #     latitude=43.609848249603445,
+        #     longitude=3.87712589659722,
+        #     scrape=functools.partial(
+        #         gbfs_scrape,
+        #         info_url='https://montpellier-fr-smoove.klervi.net/gbfs/en/station_information.json',
+        #         status_url='https://montpellier-fr-smoove.klervi.net/gbfs/en/station_status.json'
+        #     )
+        # ),
         System(
             provider='Bay Wheels',
             city='San Francisco Bay Area',
