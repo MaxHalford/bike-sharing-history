@@ -145,7 +145,7 @@ for i, commit in enumerate(commits):
                     and latest_update["bikes"] == update["bikes"]
                     and latest_update["stands"] == update["stands"]
                 ):
-                    skipped_updates_by_station[key] += 1
+                    skipped_updates_by_station[station_key] += 1
                     continue
 
                 update['commit_at'] = commit_at.isoformat()
