@@ -202,7 +202,14 @@ for i, commit in enumerate(commits):
 # Part 3: uploading the CSV files to GCS after converting them to Parquet
 
 for csv_file in archive_dir.rglob('stations/**/*.csv'):
-    parquet_file = csv_file.with_suffix('.parquet')
+
+    # Let's skip the files which are empty, ignoring the header
+    with open(csv_file) as f:
+        for i, _ in enumerate(f):
+            if i > 0:
+                break
+        else:
+            continue
 
     # Skip if the data has already been stored
     key = ('bike-sharing', *re.match(r'archive/stations/([\w\-]+)/([\w\-]+)/(\d+)/(\w+).csv', str(csv_file)).groups())
@@ -210,6 +217,7 @@ for csv_file in archive_dir.rglob('stations/**/*.csv'):
         print('Skipping', '/'.join(key))
         continue
 
+    parquet_file = csv_file.with_suffix('.parquet')
     duckdb.connect(':memory:').execute(f"""
     COPY (
         SELECT *
