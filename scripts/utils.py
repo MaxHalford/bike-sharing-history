@@ -6,7 +6,20 @@ import unicodedata
 
 try:
     with open(".env") as f:
-        env = dict(kv.strip().split("=") for kv in f.readlines())
+        env = dict()
+        for line in f:
+            # Strip whitespace and skip comments and empty lines
+            line = line.strip()
+            if line.startswith('#') or not line:
+                continue
+
+            # Split the line into key/value pair if possible
+            try:
+                key, value = line.split('=', 1)
+                env[key.strip()] = value.strip()
+            except ValueError:
+                # Handle cases where the line can't be split into key/value
+                print(f"Skipping invalid line: {line}")
 except FileNotFoundError:
     env = os.environ
 
