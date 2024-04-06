@@ -22,7 +22,7 @@ def main():
     # Generate the new table content
     new_table = []
     new_table.append("| # | Country | City | Provider | Stations | Weather |\n")
-    new_table.append("|---|---------|------|----------|-----------------|----------------|\n")
+    new_table.append("|---|---------|------|----------|----------|---------|\n")
     for i, system in enumerate(sorted(systems, key=lambda c: c.country + c.city), start=1):
         city_slug = utils.slugify(system.city)
         provider_slug = utils.slugify(system.provider)
