@@ -202,6 +202,18 @@ def gbfs_scrape(info_url, status_url):
 systems.extend(
     [
         System(
+            provider="BIXI",
+            city="Montréal",
+            country='🇨🇦',
+            latitude=45.5019,
+            longitude=73.5674,
+            scrape=functools.partial(
+                gbfs_scrape,
+                info_url="https://gbfs.velobixi.com/gbfs/fr/station_information.json",
+                status_url="https://gbfs.velobixi.com/gbfs/fr/station_status.json",
+            ),
+        ),
+        System(
             provider="BCycle",
             city="Boulder",
             country="🇺🇸",
