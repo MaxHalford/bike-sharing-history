@@ -1,5 +1,7 @@
 # bike-sharing-history
 
+***📝 [See blog post](https://maxhalford.github.io/blog/bike-sharing-forecasting-training-set/)***
+
 This repo tracks the status of bike stations from various bike-sharing providers. The data is fetched every 15 minutes. The results are stored and versioned as [GeoJSON](https://www.wikiwand.com/en/GeoJSON) files. This is done using the [git scraping](https://simonwillison.net/2020/Oct/9/git-scraping/) technique.
 
 The weather forecast for the next 24 hours is also collected every 15 minutes, for each city.
