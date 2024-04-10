@@ -1,3 +1,4 @@
+import argparse
 import concurrent.futures
 import json
 import logging
@@ -14,7 +15,7 @@ def scrape_parse_save(scrape, save_to):
         json.dump(raw_data, f, sort_keys=True, indent=4)
 
 
-def main():
+def main(city: str = None):
     with concurrent.futures.ThreadPoolExecutor(max_workers=8) as executor:
         future_to_city = {
             executor.submit(
@@ -23,6 +24,7 @@ def main():
                 save_to=pathlib.Path("data/stations") / utils.slugify(system.city) / f"{utils.slugify(system.provider)}.geojson",
             ): (system.provider, system.city)
             for system in systems
+            if city is None or system.city == city
         }
 
         n_exceptions = 0
@@ -39,4 +41,7 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--city", help="City to scrape (optional)")
+    args = parser.parse_args()
+    main(args.city)
