@@ -74,9 +74,6 @@ def jcdecaux_city(**kwargs):
 systems.extend(
     [
         jcdecaux_city(
-            city="Brisbane", country="🇦🇺", latitude=-27.470125, longitude=153.021072
-        ),
-        jcdecaux_city(
             city="Brussels", country="🇧🇪", latitude=50.850346, longitude=4.351721
         ),
         jcdecaux_city(
@@ -110,9 +107,6 @@ systems.extend(
             city="Nantes", country="🇫🇷", latitude=47.218371, longitude=-1.553621
         ),
         jcdecaux_city(
-            city="Rouen", country="🇫🇷", latitude=49.443232, longitude=1.099971
-        ),
-        jcdecaux_city(
             city="Toulouse", country="🇫🇷", latitude=43.604652, longitude=1.444209
         ),
         jcdecaux_city(
@@ -144,9 +138,6 @@ systems.extend(
         ),
         jcdecaux_city(
             city="Lund", country="🇸🇪", latitude=55.704660, longitude=13.191007
-        ),
-        jcdecaux_city(
-            city="Stockholm", country="🇸🇪", latitude=59.329323, longitude=18.068581
         ),
         jcdecaux_city(
             city="Ljubljana", country="🇸🇮", latitude=46.056947, longitude=14.505751
@@ -262,126 +253,6 @@ systems.extend(
             ),
         ),
         System(
-            provider='Bird',
-            city='Bordeaux',
-            country='🇫🇷',
-            latitude=44.84377499845755,
-            longitude=-0.5843216203476395,
-            scrape=functools.partial(
-                gbfs_scrape,
-                info_url='https://mds.bird.co/gbfs/v2/public/bordeaux/station_information.json',
-                status_url='https://mds.bird.co/gbfs/v2/public/bordeaux/station_status.json'
-            )
-        ),
-        System(
-            provider='Bird',
-            city='Châlons-en-Champagne',
-            country='🇫🇷',
-            latitude=48.95389565865669,
-            longitude=4.364512797796962,
-            scrape=functools.partial(
-                gbfs_scrape,
-                info_url='https://mds.bird.co/gbfs/v2/public/chalonsenchampagne/station_information.json',
-                status_url='https://mds.bird.co/gbfs/v2/public/chalonsenchampagne/station_status.json'
-            )
-        ),
-        System(
-            provider='Bird',
-            city='Draguignan',
-            country='🇫🇷',
-            latitude=43.53293289391363,
-            longitude=6.466050043868904,
-            scrape=functools.partial(
-                gbfs_scrape,
-                info_url='https://mds.bird.co/gbfs/v2/public/draguignan/station_information.json',
-                status_url='https://mds.bird.co/gbfs/v2/public/draguignan/station_status.json'
-            )
-        ),
-        System(
-            provider='Bird',
-            city='La Roche-sur-Yon',
-            country='🇫🇷',
-            latitude=46.66938416018546,
-            longitude=-1.4284853789022371,
-            scrape=functools.partial(
-                gbfs_scrape,
-                info_url='https://mds.bird.co/gbfs/v2/public/larochesuryon/station_information.json',
-                status_url='https://mds.bird.co/gbfs/v2/public/larochesuryon/station_status.json'
-            )
-        ),
-        System(
-            provider='Bird',
-            city='Laval',
-            country='🇫🇷',
-            latitude=48.07000010472725,
-            longitude=-0.7707006983860001,
-            scrape=functools.partial(
-                gbfs_scrape,
-                info_url='https://mds.bird.co/gbfs/v2/public/laval/station_information.json',
-                status_url='https://mds.bird.co/gbfs/v2/public/laval/station_status.json'
-            )
-        ),
-        System(
-            provider='Bird',
-            city='Marseille',
-            country='🇫🇷',
-            latitude=43.291472383388545,
-            longitude=5.3886846196188625,
-            scrape=functools.partial(
-                gbfs_scrape,
-                info_url='https://mds.bird.co/gbfs/v2/public/marseille/station_information.json',
-                status_url='https://mds.bird.co/gbfs/v2/public/marseille/station_status.json'
-            )
-        ),
-        System(
-            provider='Bird',
-            city='Millau',
-            country='🇫🇷',
-            latitude=44.10274359594474,
-            longitude=3.072323394253621,
-            scrape=functools.partial(
-                gbfs_scrape,
-                info_url='https://mds.bird.co/gbfs/v2/public/millau/station_information.json',
-                status_url='https://mds.bird.co/gbfs/v2/public/millau/station_status.json'
-            )
-        ),
-        System(
-            provider='Bird',
-            city='Montluçon',
-            country='🇫🇷',
-            latitude=46.34088949353921,
-            longitude=2.600538760958011,
-            scrape=functools.partial(
-                gbfs_scrape,
-                info_url='https://mds.bird.co/gbfs/v2/public/montlucon/station_information.json',
-                status_url='https://mds.bird.co/gbfs/v2/public/montlucon/station_status.json'
-            )
-        ),
-        System(
-            provider='Bird',
-            city='Sarreguemines',
-            country='🇫🇷',
-            latitude=49.11062577893537,
-            longitude=7.070520369681416,
-            scrape=functools.partial(
-                gbfs_scrape,
-                info_url='https://mds.bird.co/gbfs/v2/public/sarreguemines/station_information.json',
-                status_url='https://mds.bird.co/gbfs/v2/public/sarreguemines/station_status.json'
-            )
-        ),
-        System(
-            provider='Bird',
-            city='Vichy',
-            country='🇫🇷',
-            latitude=46.12709559264645,
-            longitude=3.4254834051107093,
-            scrape=functools.partial(
-                gbfs_scrape,
-                info_url='https://mds.bird.co/gbfs/v2/public/vichy/station_information.json',
-                status_url='https://mds.bird.co/gbfs/v2/public/vichy/station_status.json'
-            )
-        ),
-        System(
             provider='C-Vélo',
             city='Clermont-Ferrand',
             country='🇫🇷',
@@ -393,102 +264,6 @@ systems.extend(
                 status_url='https://clermontferrand.publicbikesystem.net/customer/gbfs/v2/en/station_status'
             )
         ),
-        System(
-            provider='Donkey Republic',
-            city='Brest',
-            country='🇫🇷',
-            latitude=48.39133502000002,
-            longitude=-4.486644220000002,
-            scrape=functools.partial(
-                gbfs_scrape,
-                info_url='https://stables.donkey.bike/api/public/gbfs/2/donkey_brest/en/station_information.json',
-                status_url='https://stables.donkey.bike/api/public/gbfs/2/donkey_brest/en/station_status.json'
-            )
-        ),
-        System(
-            provider='Donkey Republic',
-            city='Valenciennes',
-            country='🇫🇷',
-            latitude=50.34180905945946,
-            longitude=3.5188289567567566,
-            scrape=functools.partial(
-                gbfs_scrape,
-                info_url='https://stables.donkey.bike/api/public/gbfs/2/donkey_valenciennes/en/station_information.json',
-                status_url='https://stables.donkey.bike/api/public/gbfs/2/donkey_valenciennes/en/station_status.json'
-            )
-        ),
-        System(
-            provider='Lime',
-            city='Marseille',
-            country='🇫🇷',
-            latitude=43.3909,
-            longitude=5.4266,
-            scrape=functools.partial(
-                gbfs_scrape,
-                info_url='https://data.lime.bike/api/partners/v2/gbfs/marseille/station_information',
-                status_url='https://data.lime.bike/api/partners/v2/gbfs/marseille/station_status'
-            )
-        ),
-        System(
-            provider='Lime',
-            city='Paris',
-            country='🇫🇷',
-            latitude=48.829,
-            longitude=2.3898,
-            scrape=functools.partial(
-                gbfs_scrape,
-                info_url='https://data.lime.bike/api/partners/v2/gbfs/paris/station_information',
-                status_url='https://data.lime.bike/api/partners/v2/gbfs/paris/station_status'
-            )
-        ),
-        # System(
-        #     provider='Optymo',
-        #     city='Belfort',
-        #     country='🇫🇷',
-        #     latitude=47.63146551428573,
-        #     longitude=6.859593971428572,
-        #     scrape=functools.partial(
-        #         gbfs_scrape,
-        #         info_url='https://belfort-gbfs.klervi.net/gbfs/en/station_information.json',
-        #         status_url='https://belfort-gbfs.klervi.net/gbfs/en/station_status.json'
-        #     )
-        # ),
-        # System(
-        #     provider='Vélivert',
-        #     city='Saint-Etienne',
-        #     country='🇫🇷',
-        #     latitude=45.441481028125,
-        #     longitude=4.389507587500001,
-        #     scrape=functools.partial(
-        #         gbfs_scrape,
-        #         info_url='https://saint-etienne-gbfs.klervi.net/gbfs/en/station_information.json',
-        #         status_url='https://saint-etienne-gbfs.klervi.net/gbfs/en/station_status.json'
-        #     )
-        # ),
-        # System(
-        #     provider='Vélocéo',
-        #     city='Vannes',
-        #     country='🇫🇷',
-        #     latitude=47.65592616666665,
-        #     longitude=-2.7642901666666666,
-        #     scrape=functools.partial(
-        #         gbfs_scrape,
-        #         info_url='https://vannes-gbfs.klervi.net/gbfs/en/station_information.json',
-        #         status_url='https://vannes-gbfs.klervi.net/gbfs/en/station_status.json'
-        #     )
-        # ),
-        # System(
-        #     provider="Vélomagg'",
-        #     city='Montpellier',
-        #     country='🇫🇷',
-        #     latitude=43.609848249603445,
-        #     longitude=3.87712589659722,
-        #     scrape=functools.partial(
-        #         gbfs_scrape,
-        #         info_url='https://montpellier-fr-smoove.klervi.net/gbfs/en/station_information.json',
-        #         status_url='https://montpellier-fr-smoove.klervi.net/gbfs/en/station_status.json'
-        #     )
-        # ),
         System(
             provider='Smovengo',
             city='Paris',
