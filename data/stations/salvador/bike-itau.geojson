@@ -21,7 +21,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930508,
+                "last_reported": 1731931803,
                 "name": "P08 - Metro Col\u00f3n",
                 "nearby_distance": 1.0,
                 "num_bikes_available": 0,
@@ -95,12 +95,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930433,
+                "last_reported": 1731931711,
                 "name": "I04 - Molino",
                 "nearby_distance": 1000.0,
-                "num_bikes_available": 13,
+                "num_bikes_available": 14,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 2,
+                "num_docks_available": 1,
                 "num_docks_disabled": 0,
                 "obcn": "I04",
                 "physical_configuration": "VAULT",
@@ -117,7 +117,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 2,
+                        "count": 1,
                         "vehicle_type_ids": [
                             "FIT",
                             "CC",
@@ -132,7 +132,7 @@
                         "vehicle_type_id": "CC"
                     },
                     {
-                        "count": 12,
+                        "count": 13,
                         "vehicle_type_id": "FIT"
                     },
                     {
@@ -168,7 +168,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930380,
+                "last_reported": 1731931656,
                 "name": "I06 - Mall Independencia",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 2,
@@ -242,7 +242,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930448,
+                "last_reported": 1731931727,
                 "name": "V40 - Paul Claudel",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 3,
@@ -316,12 +316,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930506,
+                "last_reported": 1731931785,
                 "name": "V02 - Alonso de Cordova",
                 "nearby_distance": 1.0,
-                "num_bikes_available": 3,
+                "num_bikes_available": 4,
                 "num_bikes_disabled": 1,
-                "num_docks_available": 7,
+                "num_docks_available": 6,
                 "num_docks_disabled": 0,
                 "obcn": "V02",
                 "physical_configuration": "REGULAR",
@@ -339,7 +339,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 7,
+                        "count": 6,
                         "vehicle_type_ids": [
                             "FIT",
                             "CC",
@@ -354,7 +354,7 @@
                         "vehicle_type_id": "CC"
                     },
                     {
-                        "count": 3,
+                        "count": 4,
                         "vehicle_type_id": "FIT"
                     },
                     {
@@ -390,7 +390,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930434,
+                "last_reported": 1731931725,
                 "name": "V43 - Plaza Lo Castillo",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 1,
@@ -464,7 +464,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930508,
+                "last_reported": 1731931636,
                 "name": "P09 - Metro Francisco Bilbao",
                 "nearby_distance": 1.0,
                 "num_bikes_available": 1,
@@ -538,12 +538,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930511,
+                "last_reported": 1731931789,
                 "name": "V06 - Vespucio / Vitacura",
                 "nearby_distance": 1000.0,
-                "num_bikes_available": 2,
+                "num_bikes_available": 1,
                 "num_bikes_disabled": 1,
-                "num_docks_available": 12,
+                "num_docks_available": 13,
                 "num_docks_disabled": 0,
                 "obcn": "V06",
                 "physical_configuration": "REGULAR",
@@ -557,6 +557,80 @@
                 "rental_uris": {},
                 "short_name": "V06",
                 "station_id": "110",
+                "status": "IN_SERVICE",
+                "traffic": null,
+                "vehicle_docks_available": [
+                    {
+                        "count": 13,
+                        "vehicle_type_ids": [
+                            "FIT",
+                            "CC",
+                            "BOOST",
+                            "BATTLE_MEC"
+                        ]
+                    }
+                ],
+                "vehicle_types_available": [
+                    {
+                        "count": 0,
+                        "vehicle_type_id": "CC"
+                    },
+                    {
+                        "count": 1,
+                        "vehicle_type_id": "FIT"
+                    },
+                    {
+                        "count": 0,
+                        "vehicle_type_id": "BATTLE_MEC"
+                    },
+                    {
+                        "count": 0,
+                        "vehicle_type_id": "BOOST"
+                    }
+                ]
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -70.5861602,
+                    -33.4039829
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "address": "Am\u00e9rico Vespucio 1165",
+                "altitude": null,
+                "capacity": 15,
+                "geofenced_capacity": 0,
+                "groups": [
+                    "Vitacura"
+                ],
+                "is_charging_station": false,
+                "is_installed": true,
+                "is_renting": true,
+                "is_returning": true,
+                "is_virtual_station": false,
+                "last_reported": 1731931717,
+                "name": "V05 - Americo Vespucio / Las Hualtatas",
+                "nearby_distance": 1.0,
+                "num_bikes_available": 2,
+                "num_bikes_disabled": 1,
+                "num_docks_available": 12,
+                "num_docks_disabled": 0,
+                "obcn": "V05",
+                "physical_configuration": "REGULAR",
+                "post_code": "123",
+                "rental_methods": [
+                    "KEY",
+                    "TRANSITCARD",
+                    "CREDITCARD",
+                    "PHONE"
+                ],
+                "rental_uris": {},
+                "short_name": "V05",
+                "station_id": "112",
                 "status": "IN_SERVICE",
                 "traffic": null,
                 "vehicle_docks_available": [
@@ -594,80 +668,6 @@
         {
             "geometry": {
                 "coordinates": [
-                    -70.5861602,
-                    -33.4039829
-                ],
-                "type": "Point"
-            },
-            "properties": {
-                "address": "Am\u00e9rico Vespucio 1165",
-                "altitude": null,
-                "capacity": 15,
-                "geofenced_capacity": 0,
-                "groups": [
-                    "Vitacura"
-                ],
-                "is_charging_station": false,
-                "is_installed": true,
-                "is_renting": true,
-                "is_returning": true,
-                "is_virtual_station": false,
-                "last_reported": 1731930439,
-                "name": "V05 - Americo Vespucio / Las Hualtatas",
-                "nearby_distance": 1.0,
-                "num_bikes_available": 4,
-                "num_bikes_disabled": 0,
-                "num_docks_available": 11,
-                "num_docks_disabled": 0,
-                "obcn": "V05",
-                "physical_configuration": "REGULAR",
-                "post_code": "123",
-                "rental_methods": [
-                    "KEY",
-                    "TRANSITCARD",
-                    "CREDITCARD",
-                    "PHONE"
-                ],
-                "rental_uris": {},
-                "short_name": "V05",
-                "station_id": "112",
-                "status": "IN_SERVICE",
-                "traffic": null,
-                "vehicle_docks_available": [
-                    {
-                        "count": 11,
-                        "vehicle_type_ids": [
-                            "FIT",
-                            "CC",
-                            "BOOST",
-                            "BATTLE_MEC"
-                        ]
-                    }
-                ],
-                "vehicle_types_available": [
-                    {
-                        "count": 0,
-                        "vehicle_type_id": "CC"
-                    },
-                    {
-                        "count": 4,
-                        "vehicle_type_id": "FIT"
-                    },
-                    {
-                        "count": 0,
-                        "vehicle_type_id": "BATTLE_MEC"
-                    },
-                    {
-                        "count": 0,
-                        "vehicle_type_id": "BOOST"
-                    }
-                ]
-            },
-            "type": "Feature"
-        },
-        {
-            "geometry": {
-                "coordinates": [
                     -70.58984846,
                     -33.40310719
                 ],
@@ -686,7 +686,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930368,
+                "last_reported": 1731931650,
                 "name": "V30 - Los Laureles",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 2,
@@ -760,12 +760,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930481,
+                "last_reported": 1731931748,
                 "name": "P10 - Metro Manuel Montt",
                 "nearby_distance": 1.0,
-                "num_bikes_available": 3,
+                "num_bikes_available": 5,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 14,
+                "num_docks_available": 12,
                 "num_docks_disabled": 0,
                 "obcn": "P10",
                 "physical_configuration": "REGULAR",
@@ -783,7 +783,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 14,
+                        "count": 12,
                         "vehicle_type_ids": [
                             "FIT",
                             "CC",
@@ -798,7 +798,7 @@
                         "vehicle_type_id": "CC"
                     },
                     {
-                        "count": 3,
+                        "count": 5,
                         "vehicle_type_id": "FIT"
                     },
                     {
@@ -834,7 +834,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930413,
+                "last_reported": 1731931687,
                 "name": "P11 - Metro Parque Bustamante",
                 "nearby_distance": 1.0,
                 "num_bikes_available": 14,
@@ -908,7 +908,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930121,
+                "last_reported": 1731931774,
                 "name": "P12 - Puente Pedro de Valdivia",
                 "nearby_distance": 1.0,
                 "num_bikes_available": 5,
@@ -982,12 +982,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930409,
+                "last_reported": 1731931686,
                 "name": "S39 - Metro Parque Almagro",
                 "nearby_distance": 1000.0,
-                "num_bikes_available": 10,
-                "num_bikes_disabled": 25,
-                "num_docks_available": 0,
+                "num_bikes_available": 7,
+                "num_bikes_disabled": 17,
+                "num_docks_available": 11,
                 "num_docks_disabled": 0,
                 "obcn": "S39",
                 "physical_configuration": "REGULAR",
@@ -1005,7 +1005,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 0,
+                        "count": 11,
                         "vehicle_type_ids": [
                             "FIT",
                             "CC",
@@ -1020,7 +1020,7 @@
                         "vehicle_type_id": "CC"
                     },
                     {
-                        "count": 7,
+                        "count": 4,
                         "vehicle_type_id": "FIT"
                     },
                     {
@@ -1056,12 +1056,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930401,
+                "last_reported": 1731931673,
                 "name": "S46 - Metro ULA",
                 "nearby_distance": 1.0,
-                "num_bikes_available": 12,
+                "num_bikes_available": 13,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 3,
+                "num_docks_available": 2,
                 "num_docks_disabled": 0,
                 "obcn": "S46",
                 "physical_configuration": "VAULT",
@@ -1078,7 +1078,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 3,
+                        "count": 2,
                         "vehicle_type_ids": [
                             "FIT",
                             "CC",
@@ -1097,7 +1097,7 @@
                         "vehicle_type_id": "FIT"
                     },
                     {
-                        "count": 6,
+                        "count": 7,
                         "vehicle_type_id": "BATTLE_MEC"
                     },
                     {
@@ -1129,12 +1129,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930385,
+                "last_reported": 1731931661,
                 "name": "P15 - Manuel Montt / Andr\u00e9s Bello",
                 "nearby_distance": 1.0,
-                "num_bikes_available": 6,
+                "num_bikes_available": 7,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 9,
+                "num_docks_available": 8,
                 "num_docks_disabled": 0,
                 "obcn": "P15",
                 "physical_configuration": "REGULAR",
@@ -1152,7 +1152,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 9,
+                        "count": 8,
                         "vehicle_type_ids": [
                             "FIT",
                             "CC",
@@ -1167,7 +1167,7 @@
                         "vehicle_type_id": "CC"
                     },
                     {
-                        "count": 2,
+                        "count": 3,
                         "vehicle_type_id": "FIT"
                     },
                     {
@@ -1203,7 +1203,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930361,
+                "last_reported": 1731931640,
                 "name": "P16 - Metro Salvador",
                 "nearby_distance": 1.0,
                 "num_bikes_available": 25,
@@ -1277,7 +1277,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930415,
+                "last_reported": 1731931694,
                 "name": "N10 - Metro Plaza Ega\u00f1a",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 13,
@@ -1351,12 +1351,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930425,
+                "last_reported": 1731931709,
                 "name": "N05 - Irarrazaval / Hamburgo",
                 "nearby_distance": 1000.0,
-                "num_bikes_available": 12,
+                "num_bikes_available": 11,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 7,
+                "num_docks_available": 8,
                 "num_docks_disabled": 0,
                 "obcn": "N05",
                 "physical_configuration": "REGULAR",
@@ -1374,7 +1374,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 7,
+                        "count": 8,
                         "vehicle_type_ids": [
                             "FIT",
                             "CC",
@@ -1389,7 +1389,7 @@
                         "vehicle_type_id": "CC"
                     },
                     {
-                        "count": 5,
+                        "count": 4,
                         "vehicle_type_id": "FIT"
                     },
                     {
@@ -1425,12 +1425,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930363,
+                "last_reported": 1731931630,
                 "name": "P18 - Metro Tobalaba",
                 "nearby_distance": 1.0,
-                "num_bikes_available": 2,
+                "num_bikes_available": 5,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 27,
+                "num_docks_available": 24,
                 "num_docks_disabled": 0,
                 "obcn": "P18",
                 "physical_configuration": "REGULAR",
@@ -1448,7 +1448,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 27,
+                        "count": 24,
                         "vehicle_type_ids": [
                             "FIT",
                             "CC",
@@ -1463,11 +1463,11 @@
                         "vehicle_type_id": "CC"
                     },
                     {
-                        "count": 1,
+                        "count": 2,
                         "vehicle_type_id": "FIT"
                     },
                     {
-                        "count": 1,
+                        "count": 3,
                         "vehicle_type_id": "BATTLE_MEC"
                     },
                     {
@@ -1499,12 +1499,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930400,
+                "last_reported": 1731931676,
                 "name": "N01 - Irarrazaval / Agustin Vigorena",
                 "nearby_distance": 1000.0,
-                "num_bikes_available": 14,
+                "num_bikes_available": 13,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 1,
+                "num_docks_available": 2,
                 "num_docks_disabled": 0,
                 "obcn": "N01",
                 "physical_configuration": "REGULAR",
@@ -1522,7 +1522,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 1,
+                        "count": 2,
                         "vehicle_type_ids": [
                             "FIT",
                             "CC",
@@ -1541,7 +1541,7 @@
                         "vehicle_type_id": "FIT"
                     },
                     {
-                        "count": 6,
+                        "count": 5,
                         "vehicle_type_id": "BATTLE_MEC"
                     },
                     {
@@ -1573,7 +1573,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930402,
+                "last_reported": 1731931689,
                 "name": "N12 - Plaza Nunoa",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 23,
@@ -1647,7 +1647,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930355,
+                "last_reported": 1731931630,
                 "name": "N07 - Jose Luis Araneda / Capitan Orella",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 10,
@@ -1721,12 +1721,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930448,
+                "last_reported": 1731931727,
                 "name": "N13 - Ricardo Lyon / Hernan Cortes",
                 "nearby_distance": 1000.0,
-                "num_bikes_available": 8,
+                "num_bikes_available": 5,
                 "num_bikes_disabled": 1,
-                "num_docks_available": 6,
+                "num_docks_available": 9,
                 "num_docks_disabled": 0,
                 "obcn": "N13",
                 "physical_configuration": "REGULAR",
@@ -1744,7 +1744,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 6,
+                        "count": 9,
                         "vehicle_type_ids": [
                             "FIT",
                             "CC",
@@ -1759,7 +1759,7 @@
                         "vehicle_type_id": "CC"
                     },
                     {
-                        "count": 6,
+                        "count": 3,
                         "vehicle_type_id": "FIT"
                     },
                     {
@@ -1795,12 +1795,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930371,
+                "last_reported": 1731931647,
                 "name": "P19 - Municipalidad Providencia",
                 "nearby_distance": 1.0,
-                "num_bikes_available": 6,
+                "num_bikes_available": 9,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 13,
+                "num_docks_available": 10,
                 "num_docks_disabled": 0,
                 "obcn": "P19",
                 "physical_configuration": "REGULAR",
@@ -1818,7 +1818,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 13,
+                        "count": 10,
                         "vehicle_type_ids": [
                             "FIT",
                             "CC",
@@ -1833,11 +1833,11 @@
                         "vehicle_type_id": "CC"
                     },
                     {
-                        "count": 6,
+                        "count": 8,
                         "vehicle_type_id": "FIT"
                     },
                     {
-                        "count": 0,
+                        "count": 1,
                         "vehicle_type_id": "BATTLE_MEC"
                     },
                     {
@@ -1869,7 +1869,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930386,
+                "last_reported": 1731931667,
                 "name": "N11 - Metro Simon Bolivar",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 9,
@@ -1943,12 +1943,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930392,
+                "last_reported": 1731931667,
                 "name": "N06 - Metro Nunoa",
                 "nearby_distance": 1000.0,
-                "num_bikes_available": 12,
+                "num_bikes_available": 14,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 5,
+                "num_docks_available": 3,
                 "num_docks_disabled": 0,
                 "obcn": "N06",
                 "physical_configuration": "REGULAR",
@@ -1966,7 +1966,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 5,
+                        "count": 3,
                         "vehicle_type_ids": [
                             "FIT",
                             "CC",
@@ -1981,7 +1981,7 @@
                         "vehicle_type_id": "CC"
                     },
                     {
-                        "count": 7,
+                        "count": 9,
                         "vehicle_type_id": "FIT"
                     },
                     {
@@ -2017,7 +2017,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930507,
+                "last_reported": 1731931778,
                 "name": "N19 - Antonio Varas / Irarr\u00e1zaval",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 8,
@@ -2091,12 +2091,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930449,
+                "last_reported": 1731931730,
                 "name": "N08 - Manuel Montt / Union Literaria",
                 "nearby_distance": 1000.0,
-                "num_bikes_available": 10,
+                "num_bikes_available": 9,
                 "num_bikes_disabled": 1,
-                "num_docks_available": 4,
+                "num_docks_available": 5,
                 "num_docks_disabled": 0,
                 "obcn": "N08",
                 "physical_configuration": "REGULAR",
@@ -2114,7 +2114,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 4,
+                        "count": 5,
                         "vehicle_type_ids": [
                             "FIT",
                             "CC",
@@ -2129,7 +2129,7 @@
                         "vehicle_type_id": "CC"
                     },
                     {
-                        "count": 4,
+                        "count": 3,
                         "vehicle_type_id": "FIT"
                     },
                     {
@@ -2165,7 +2165,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930367,
+                "last_reported": 1731931643,
                 "name": "N04 - Hospital Carabineros",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 13,
@@ -2239,12 +2239,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930368,
+                "last_reported": 1731931645,
                 "name": "N03 - Club Nunoa",
                 "nearby_distance": 1000.0,
-                "num_bikes_available": 3,
+                "num_bikes_available": 2,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 8,
+                "num_docks_available": 9,
                 "num_docks_disabled": 0,
                 "obcn": "N03",
                 "physical_configuration": "REGULAR",
@@ -2262,7 +2262,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 8,
+                        "count": 9,
                         "vehicle_type_ids": [
                             "FIT",
                             "CC",
@@ -2277,7 +2277,7 @@
                         "vehicle_type_id": "CC"
                     },
                     {
-                        "count": 2,
+                        "count": 1,
                         "vehicle_type_id": "FIT"
                     },
                     {
@@ -2313,12 +2313,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930447,
+                "last_reported": 1731931714,
                 "name": "P20 - Nueva Los Leones",
                 "nearby_distance": 1.0,
-                "num_bikes_available": 4,
+                "num_bikes_available": 5,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 19,
+                "num_docks_available": 18,
                 "num_docks_disabled": 0,
                 "obcn": "P20",
                 "physical_configuration": "REGULAR",
@@ -2336,7 +2336,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 19,
+                        "count": 18,
                         "vehicle_type_ids": [
                             "FIT",
                             "CC",
@@ -2351,7 +2351,7 @@
                         "vehicle_type_id": "CC"
                     },
                     {
-                        "count": 3,
+                        "count": 4,
                         "vehicle_type_id": "FIT"
                     },
                     {
@@ -2387,12 +2387,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930521,
+                "last_reported": 1731931799,
                 "name": "P21 - Patio Bellavista",
                 "nearby_distance": 1000.0,
-                "num_bikes_available": 8,
+                "num_bikes_available": 9,
                 "num_bikes_disabled": 1,
-                "num_docks_available": 14,
+                "num_docks_available": 13,
                 "num_docks_disabled": 0,
                 "obcn": "P21",
                 "physical_configuration": "REGULAR",
@@ -2410,7 +2410,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 14,
+                        "count": 13,
                         "vehicle_type_ids": [
                             "FIT",
                             "CC",
@@ -2425,7 +2425,7 @@
                         "vehicle_type_id": "CC"
                     },
                     {
-                        "count": 7,
+                        "count": 8,
                         "vehicle_type_id": "FIT"
                     },
                     {
@@ -2461,12 +2461,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930451,
+                "last_reported": 1731931731,
                 "name": "P31 - Estaci\u00f3n Canal 13",
                 "nearby_distance": 1.0,
-                "num_bikes_available": 14,
+                "num_bikes_available": 13,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 1,
+                "num_docks_available": 2,
                 "num_docks_disabled": 0,
                 "obcn": "P31",
                 "physical_configuration": "REGULAR",
@@ -2484,7 +2484,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 1,
+                        "count": 2,
                         "vehicle_type_ids": [
                             "FIT",
                             "CC",
@@ -2499,7 +2499,7 @@
                         "vehicle_type_id": "CC"
                     },
                     {
-                        "count": 9,
+                        "count": 8,
                         "vehicle_type_id": "FIT"
                     },
                     {
@@ -2535,7 +2535,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930518,
+                "last_reported": 1731931791,
                 "name": "N14 - Plaza Augusto D'Halmar",
                 "nearby_distance": 1.0,
                 "num_bikes_available": 9,
@@ -2610,7 +2610,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930349,
+                "last_reported": 1731931808,
                 "name": "P22 - Plaza Loreto Cousi\u00f1o",
                 "nearby_distance": 1.0,
                 "num_bikes_available": 3,
@@ -2685,12 +2685,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930385,
+                "last_reported": 1731931666,
                 "name": "P23 - Metro In\u00e9s de Suarez",
                 "nearby_distance": 1.0,
-                "num_bikes_available": 10,
+                "num_bikes_available": 7,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 5,
+                "num_docks_available": 8,
                 "num_docks_disabled": 0,
                 "obcn": "P23",
                 "physical_configuration": "REGULAR",
@@ -2708,7 +2708,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 5,
+                        "count": 8,
                         "vehicle_type_ids": [
                             "FIT",
                             "CC",
@@ -2723,11 +2723,11 @@
                         "vehicle_type_id": "CC"
                     },
                     {
-                        "count": 1,
+                        "count": 0,
                         "vehicle_type_id": "FIT"
                     },
                     {
-                        "count": 9,
+                        "count": 7,
                         "vehicle_type_id": "BATTLE_MEC"
                     },
                     {
@@ -2759,12 +2759,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930418,
+                "last_reported": 1731931691,
                 "name": "P24 - Plaza R\u00edo De Janeiro",
                 "nearby_distance": 1.0,
-                "num_bikes_available": 7,
+                "num_bikes_available": 6,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 8,
+                "num_docks_available": 9,
                 "num_docks_disabled": 0,
                 "obcn": "P24",
                 "physical_configuration": "REGULAR",
@@ -2782,7 +2782,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 8,
+                        "count": 9,
                         "vehicle_type_ids": [
                             "FIT",
                             "CC",
@@ -2797,7 +2797,7 @@
                         "vehicle_type_id": "CC"
                     },
                     {
-                        "count": 2,
+                        "count": 1,
                         "vehicle_type_id": "FIT"
                     },
                     {
@@ -2833,7 +2833,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930463,
+                "last_reported": 1731931737,
                 "name": "V39 - Pedro Canisio",
                 "nearby_distance": 1.0,
                 "num_bikes_available": 1,
@@ -2871,11 +2871,11 @@
                         "vehicle_type_id": "CC"
                     },
                     {
-                        "count": 0,
+                        "count": 1,
                         "vehicle_type_id": "FIT"
                     },
                     {
-                        "count": 1,
+                        "count": 0,
                         "vehicle_type_id": "BATTLE_MEC"
                     },
                     {
@@ -2907,7 +2907,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930351,
+                "last_reported": 1731931810,
                 "name": "P25 - Bilbao / Ricardo Lyon",
                 "nearby_distance": 1.0,
                 "num_bikes_available": 12,
@@ -3068,7 +3068,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930373,
+                "last_reported": 1731931649,
                 "name": "P26 - Mar del Plata / Ricardo Lyon",
                 "nearby_distance": 1.0,
                 "num_bikes_available": 1,
@@ -3142,12 +3142,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930516,
+                "last_reported": 1731931797,
                 "name": "P46 - Rom\u00e1n D\u00edaz",
                 "nearby_distance": 1000.0,
-                "num_bikes_available": 2,
+                "num_bikes_available": 1,
                 "num_bikes_disabled": 1,
-                "num_docks_available": 8,
+                "num_docks_available": 9,
                 "num_docks_disabled": 0,
                 "obcn": "P46",
                 "physical_configuration": "REGULAR",
@@ -3165,7 +3165,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 8,
+                        "count": 9,
                         "vehicle_type_ids": [
                             "FIT",
                             "CC",
@@ -3180,11 +3180,11 @@
                         "vehicle_type_id": "CC"
                     },
                     {
-                        "count": 2,
+                        "count": 0,
                         "vehicle_type_id": "FIT"
                     },
                     {
-                        "count": 0,
+                        "count": 1,
                         "vehicle_type_id": "BATTLE_MEC"
                     },
                     {
@@ -3216,7 +3216,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930381,
+                "last_reported": 1731931670,
                 "name": "N02 - Jos\u00e9 Pedro Alessandri / Irarr\u00e1zaval",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 20,
@@ -3289,7 +3289,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930437,
+                "last_reported": 1731931713,
                 "name": "S13 - Universidad Cat\u00f3lica",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 22,
@@ -3363,7 +3363,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930517,
+                "last_reported": 1731931792,
                 "name": "S044 - Plaza Manuel Rodr\u00edguez",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 7,
@@ -3437,12 +3437,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930517,
+                "last_reported": 1731931787,
                 "name": "P27 - Ricardo Lyon / Lota",
                 "nearby_distance": 1.0,
-                "num_bikes_available": 21,
+                "num_bikes_available": 24,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 8,
+                "num_docks_available": 5,
                 "num_docks_disabled": 0,
                 "obcn": "P27",
                 "physical_configuration": "REGULAR",
@@ -3460,7 +3460,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 8,
+                        "count": 5,
                         "vehicle_type_ids": [
                             "FIT",
                             "CC",
@@ -3479,7 +3479,7 @@
                         "vehicle_type_id": "FIT"
                     },
                     {
-                        "count": 7,
+                        "count": 10,
                         "vehicle_type_id": "BATTLE_MEC"
                     },
                     {
@@ -3511,7 +3511,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930459,
+                "last_reported": 1731931734,
                 "name": "P39 - Parque Balmaceda",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 15,
@@ -3585,7 +3585,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930395,
+                "last_reported": 1731931672,
                 "name": "P38 - Qu\u00e9bec",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 14,
@@ -3659,12 +3659,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930346,
+                "last_reported": 1731931799,
                 "name": "P43 - Los Espa\u00f1oles",
                 "nearby_distance": 1000.0,
-                "num_bikes_available": 6,
+                "num_bikes_available": 7,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 5,
+                "num_docks_available": 4,
                 "num_docks_disabled": 0,
                 "obcn": "P43",
                 "physical_configuration": "REGULAR",
@@ -3682,7 +3682,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 5,
+                        "count": 4,
                         "vehicle_type_ids": [
                             "FIT",
                             "CC",
@@ -3697,7 +3697,7 @@
                         "vehicle_type_id": "CC"
                     },
                     {
-                        "count": 5,
+                        "count": 6,
                         "vehicle_type_id": "FIT"
                     },
                     {
@@ -3733,12 +3733,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930492,
+                "last_reported": 1731931770,
                 "name": "P47 - Ibis Providencia",
                 "nearby_distance": 1000.0,
-                "num_bikes_available": 9,
+                "num_bikes_available": 10,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 6,
+                "num_docks_available": 5,
                 "num_docks_disabled": 0,
                 "obcn": "P47",
                 "physical_configuration": "REGULAR",
@@ -3756,7 +3756,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 6,
+                        "count": 5,
                         "vehicle_type_ids": [
                             "FIT",
                             "CC",
@@ -3771,7 +3771,7 @@
                         "vehicle_type_id": "CC"
                     },
                     {
-                        "count": 6,
+                        "count": 7,
                         "vehicle_type_id": "FIT"
                     },
                     {
@@ -3807,12 +3807,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930433,
+                "last_reported": 1731931704,
                 "name": "P50 - Las Esculturas Oriente",
                 "nearby_distance": 1000.0,
-                "num_bikes_available": 0,
+                "num_bikes_available": 1,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 17,
+                "num_docks_available": 16,
                 "num_docks_disabled": 0,
                 "obcn": "P50",
                 "physical_configuration": "REGULAR",
@@ -3830,7 +3830,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 17,
+                        "count": 16,
                         "vehicle_type_ids": [
                             "FIT",
                             "CC",
@@ -3845,7 +3845,7 @@
                         "vehicle_type_id": "CC"
                     },
                     {
-                        "count": 0,
+                        "count": 1,
                         "vehicle_type_id": "FIT"
                     },
                     {
@@ -3881,12 +3881,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930403,
+                "last_reported": 1731931685,
                 "name": "P56 - Ambasciata",
                 "nearby_distance": 1000.0,
-                "num_bikes_available": 9,
+                "num_bikes_available": 8,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 6,
+                "num_docks_available": 7,
                 "num_docks_disabled": 0,
                 "obcn": "P56",
                 "physical_configuration": "REGULAR",
@@ -3904,7 +3904,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 6,
+                        "count": 7,
                         "vehicle_type_ids": [
                             "FIT",
                             "CC",
@@ -3919,7 +3919,7 @@
                         "vehicle_type_id": "CC"
                     },
                     {
-                        "count": 4,
+                        "count": 3,
                         "vehicle_type_id": "FIT"
                     },
                     {
@@ -3955,7 +3955,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930356,
+                "last_reported": 1731931636,
                 "name": "S34 - Parque de los Reyes",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 14,
@@ -4028,7 +4028,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930418,
+                "last_reported": 1731931693,
                 "name": "P59 - Los Estanques",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 22,
@@ -4102,12 +4102,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930345,
+                "last_reported": 1731931806,
                 "name": "P42 - Lota / Tobalaba",
                 "nearby_distance": 1000.0,
-                "num_bikes_available": 7,
+                "num_bikes_available": 9,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 8,
+                "num_docks_available": 6,
                 "num_docks_disabled": 0,
                 "obcn": "P42",
                 "physical_configuration": "REGULAR",
@@ -4125,7 +4125,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 8,
+                        "count": 6,
                         "vehicle_type_ids": [
                             "FIT",
                             "CC",
@@ -4140,7 +4140,7 @@
                         "vehicle_type_id": "CC"
                     },
                     {
-                        "count": 5,
+                        "count": 7,
                         "vehicle_type_id": "FIT"
                     },
                     {
@@ -4176,12 +4176,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930444,
+                "last_reported": 1731931720,
                 "name": "P01 - Andr\u00e9s Bello / Gral. Holley",
                 "nearby_distance": 1.0,
-                "num_bikes_available": 4,
+                "num_bikes_available": 5,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 25,
+                "num_docks_available": 24,
                 "num_docks_disabled": 0,
                 "obcn": "P01",
                 "physical_configuration": "REGULAR",
@@ -4199,7 +4199,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 25,
+                        "count": 24,
                         "vehicle_type_ids": [
                             "FIT",
                             "CC",
@@ -4214,7 +4214,7 @@
                         "vehicle_type_id": "CC"
                     },
                     {
-                        "count": 1,
+                        "count": 2,
                         "vehicle_type_id": "FIT"
                     },
                     {
@@ -4250,12 +4250,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930385,
+                "last_reported": 1731931659,
                 "name": "P28 - Ricardo Lyon / Pocuro",
                 "nearby_distance": 1.0,
-                "num_bikes_available": 7,
+                "num_bikes_available": 5,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 16,
+                "num_docks_available": 18,
                 "num_docks_disabled": 0,
                 "obcn": "P28",
                 "physical_configuration": "REGULAR",
@@ -4273,7 +4273,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 16,
+                        "count": 18,
                         "vehicle_type_ids": [
                             "FIT",
                             "CC",
@@ -4288,11 +4288,11 @@
                         "vehicle_type_id": "CC"
                     },
                     {
-                        "count": 3,
+                        "count": 2,
                         "vehicle_type_id": "FIT"
                     },
                     {
-                        "count": 4,
+                        "count": 3,
                         "vehicle_type_id": "BATTLE_MEC"
                     },
                     {
@@ -4324,7 +4324,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731929474,
+                "last_reported": 1731931727,
                 "name": "S32 - Gorbea",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 11,
@@ -4398,7 +4398,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930461,
+                "last_reported": 1731931658,
                 "name": "S37 - FAU",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 15,
@@ -4472,12 +4472,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930371,
+                "last_reported": 1731931645,
                 "name": "S40 - Erasmo Escala",
                 "nearby_distance": 1000.0,
-                "num_bikes_available": 5,
+                "num_bikes_available": 4,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 14,
+                "num_docks_available": 15,
                 "num_docks_disabled": 0,
                 "obcn": "S40",
                 "physical_configuration": "VAULT",
@@ -4494,7 +4494,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 14,
+                        "count": 15,
                         "vehicle_type_ids": [
                             "FIT",
                             "CC",
@@ -4509,7 +4509,7 @@
                         "vehicle_type_id": "CC"
                     },
                     {
-                        "count": 1,
+                        "count": 0,
                         "vehicle_type_id": "FIT"
                     },
                     {
@@ -4545,7 +4545,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930378,
+                "last_reported": 1731931655,
                 "name": "S41 - Fanor Velasco",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 10,
@@ -4618,12 +4618,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930407,
+                "last_reported": 1731931685,
                 "name": "S45 - Cueto",
                 "nearby_distance": 1000.0,
-                "num_bikes_available": 6,
+                "num_bikes_available": 5,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 5,
+                "num_docks_available": 6,
                 "num_docks_disabled": 0,
                 "obcn": "S45",
                 "physical_configuration": "REGULAR",
@@ -4641,7 +4641,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 5,
+                        "count": 6,
                         "vehicle_type_ids": [
                             "FIT",
                             "CC",
@@ -4656,7 +4656,7 @@
                         "vehicle_type_id": "CC"
                     },
                     {
-                        "count": 3,
+                        "count": 2,
                         "vehicle_type_id": "FIT"
                     },
                     {
@@ -4692,12 +4692,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930407,
+                "last_reported": 1731931685,
                 "name": "P29 - Santa Isabel /Ana Luisa Prats",
                 "nearby_distance": 1.0,
-                "num_bikes_available": 8,
+                "num_bikes_available": 6,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 7,
+                "num_docks_available": 9,
                 "num_docks_disabled": 0,
                 "obcn": "P29",
                 "physical_configuration": "REGULAR",
@@ -4715,7 +4715,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 7,
+                        "count": 9,
                         "vehicle_type_ids": [
                             "FIT",
                             "CC",
@@ -4730,7 +4730,7 @@
                         "vehicle_type_id": "CC"
                     },
                     {
-                        "count": 5,
+                        "count": 3,
                         "vehicle_type_id": "FIT"
                     },
                     {
@@ -4766,12 +4766,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930483,
+                "last_reported": 1731931757,
                 "name": "S50 - Gral. Jofr\u00e9",
                 "nearby_distance": 1000.0,
-                "num_bikes_available": 14,
+                "num_bikes_available": 13,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 1,
+                "num_docks_available": 2,
                 "num_docks_disabled": 0,
                 "obcn": "S50",
                 "physical_configuration": "REGULAR",
@@ -4789,7 +4789,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 1,
+                        "count": 2,
                         "vehicle_type_ids": [
                             "FIT",
                             "CC",
@@ -4804,7 +4804,7 @@
                         "vehicle_type_id": "CC"
                     },
                     {
-                        "count": 6,
+                        "count": 5,
                         "vehicle_type_id": "FIT"
                     },
                     {
@@ -4840,7 +4840,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930485,
+                "last_reported": 1731931763,
                 "name": "S54 - Plaza Ercilla",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 23,
@@ -4914,12 +4914,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930413,
+                "last_reported": 1731931685,
                 "name": "P58 - Unidad Vecinal Providencia",
                 "nearby_distance": 1000.0,
-                "num_bikes_available": 5,
+                "num_bikes_available": 6,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 6,
+                "num_docks_available": 5,
                 "num_docks_disabled": 0,
                 "obcn": "P58",
                 "physical_configuration": "REGULAR",
@@ -4937,7 +4937,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 6,
+                        "count": 5,
                         "vehicle_type_ids": [
                             "FIT",
                             "CC",
@@ -4952,7 +4952,7 @@
                         "vehicle_type_id": "CC"
                     },
                     {
-                        "count": 3,
+                        "count": 4,
                         "vehicle_type_id": "FIT"
                     },
                     {
@@ -4988,7 +4988,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930355,
+                "last_reported": 1731931632,
                 "name": "P45 - Eliodoro Ya\u00f1ez / Holanda",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 2,
@@ -5026,11 +5026,11 @@
                         "vehicle_type_id": "CC"
                     },
                     {
-                        "count": 0,
+                        "count": 1,
                         "vehicle_type_id": "FIT"
                     },
                     {
-                        "count": 2,
+                        "count": 1,
                         "vehicle_type_id": "BATTLE_MEC"
                     },
                     {
@@ -5062,7 +5062,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930432,
+                "last_reported": 1731931712,
                 "name": "N15 - Dubl\u00e9 Almeyda",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 5,
@@ -5136,7 +5136,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930379,
+                "last_reported": 1731931655,
                 "name": "P30 - Lo Contador",
                 "nearby_distance": 1.0,
                 "num_bikes_available": 3,
@@ -5210,12 +5210,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930369,
+                "last_reported": 1731931647,
                 "name": "P57 - Galvarino Gallardo",
                 "nearby_distance": 1000.0,
-                "num_bikes_available": 0,
+                "num_bikes_available": 1,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 11,
+                "num_docks_available": 10,
                 "num_docks_disabled": 0,
                 "obcn": "P57",
                 "physical_configuration": "REGULAR",
@@ -5233,7 +5233,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 11,
+                        "count": 10,
                         "vehicle_type_ids": [
                             "FIT",
                             "CC",
@@ -5248,7 +5248,7 @@
                         "vehicle_type_id": "CC"
                     },
                     {
-                        "count": 0,
+                        "count": 1,
                         "vehicle_type_id": "FIT"
                     },
                     {
@@ -5284,12 +5284,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930483,
+                "last_reported": 1731931761,
                 "name": "P60 - Suecia / Carmen Sylva",
                 "nearby_distance": 1000.0,
-                "num_bikes_available": 1,
+                "num_bikes_available": 2,
                 "num_bikes_disabled": 1,
-                "num_docks_available": 9,
+                "num_docks_available": 8,
                 "num_docks_disabled": 0,
                 "obcn": "P60",
                 "physical_configuration": "REGULAR",
@@ -5307,7 +5307,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 9,
+                        "count": 8,
                         "vehicle_type_ids": [
                             "FIT",
                             "CC",
@@ -5322,7 +5322,7 @@
                         "vehicle_type_id": "CC"
                     },
                     {
-                        "count": 1,
+                        "count": 2,
                         "vehicle_type_id": "FIT"
                     },
                     {
@@ -5358,12 +5358,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930518,
+                "last_reported": 1731931606,
                 "name": "S31- Argomedo / Portugal",
                 "nearby_distance": 1000.0,
-                "num_bikes_available": 20,
+                "num_bikes_available": 19,
                 "num_bikes_disabled": 2,
-                "num_docks_available": 1,
+                "num_docks_available": 2,
                 "num_docks_disabled": 0,
                 "obcn": "S31",
                 "physical_configuration": "REGULAR",
@@ -5381,7 +5381,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 1,
+                        "count": 2,
                         "vehicle_type_ids": [
                             "FIT",
                             "CC",
@@ -5396,7 +5396,7 @@
                         "vehicle_type_id": "CC"
                     },
                     {
-                        "count": 5,
+                        "count": 4,
                         "vehicle_type_id": "FIT"
                     },
                     {
@@ -5432,12 +5432,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930496,
+                "last_reported": 1731931781,
                 "name": "S35 - Jos\u00e9 Miguel Carrera",
                 "nearby_distance": 400.0,
-                "num_bikes_available": 10,
+                "num_bikes_available": 9,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 1,
+                "num_docks_available": 2,
                 "num_docks_disabled": 1,
                 "obcn": "S35",
                 "physical_configuration": "REGULAR",
@@ -5455,7 +5455,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 1,
+                        "count": 2,
                         "vehicle_type_ids": [
                             "FIT",
                             "CC",
@@ -5470,7 +5470,7 @@
                         "vehicle_type_id": "CC"
                     },
                     {
-                        "count": 7,
+                        "count": 6,
                         "vehicle_type_id": "FIT"
                     },
                     {
@@ -5506,7 +5506,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930411,
+                "last_reported": 1731931692,
                 "name": "LC001 - Barrio El Golf",
                 "nearby_distance": 1607730.66,
                 "num_bikes_available": 6,
@@ -5580,12 +5580,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930407,
+                "last_reported": 1731931683,
                 "name": "P32 - Valenzuela Castillo / Miguel Claro",
                 "nearby_distance": 1.0,
-                "num_bikes_available": 6,
+                "num_bikes_available": 5,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 9,
+                "num_docks_available": 10,
                 "num_docks_disabled": 0,
                 "obcn": "P32",
                 "physical_configuration": "VAULT",
@@ -5602,7 +5602,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 9,
+                        "count": 10,
                         "vehicle_type_ids": [
                             "FIT",
                             "CC",
@@ -5617,7 +5617,7 @@
                         "vehicle_type_id": "CC"
                     },
                     {
-                        "count": 5,
+                        "count": 4,
                         "vehicle_type_id": "FIT"
                     },
                     {
@@ -5653,12 +5653,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930358,
+                "last_reported": 1731931634,
                 "name": "LC002 - Hendaya",
                 "nearby_distance": 1607730.66,
-                "num_bikes_available": 2,
+                "num_bikes_available": 5,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 9,
+                "num_docks_available": 6,
                 "num_docks_disabled": 0,
                 "obcn": "002",
                 "physical_configuration": "REGULAR",
@@ -5676,7 +5676,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 9,
+                        "count": 6,
                         "vehicle_type_ids": [
                             "FIT",
                             "CC",
@@ -5691,7 +5691,7 @@
                         "vehicle_type_id": "CC"
                     },
                     {
-                        "count": 2,
+                        "count": 5,
                         "vehicle_type_id": "FIT"
                     },
                     {
@@ -5727,7 +5727,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930424,
+                "last_reported": 1731931728,
                 "name": "LC003 - \u00d3mnium",
                 "nearby_distance": 1607730.66,
                 "num_bikes_available": 2,
@@ -5800,7 +5800,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930521,
+                "last_reported": 1731931636,
                 "name": "LC004 - Plaza Valenzuela Llanos",
                 "nearby_distance": 1607730.66,
                 "num_bikes_available": 2,
@@ -5873,7 +5873,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930354,
+                "last_reported": 1731931633,
                 "name": "LC005 - Corporaci\u00f3n Cultural De Las Condes",
                 "nearby_distance": 1607730.66,
                 "num_bikes_available": 1,
@@ -5947,12 +5947,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930493,
+                "last_reported": 1731931773,
                 "name": "LC006 - Parque Titanium",
                 "nearby_distance": 1607730.66,
-                "num_bikes_available": 10,
+                "num_bikes_available": 11,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 1,
+                "num_docks_available": 0,
                 "num_docks_disabled": 0,
                 "obcn": "LC006",
                 "physical_configuration": "REGULAR",
@@ -5970,7 +5970,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 1,
+                        "count": 0,
                         "vehicle_type_ids": [
                             "FIT",
                             "CC",
@@ -5989,7 +5989,7 @@
                         "vehicle_type_id": "FIT"
                     },
                     {
-                        "count": 4,
+                        "count": 5,
                         "vehicle_type_id": "BATTLE_MEC"
                     },
                     {
@@ -6021,7 +6021,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930506,
+                "last_reported": 1731931784,
                 "name": "LC007 - Centro C\u00edvico De Las Condes",
                 "nearby_distance": 1607730.66,
                 "num_bikes_available": 4,
@@ -6095,12 +6095,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930419,
+                "last_reported": 1731931690,
                 "name": "LC008 - San Crescente",
                 "nearby_distance": 1607730.66,
-                "num_bikes_available": 5,
+                "num_bikes_available": 7,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 6,
+                "num_docks_available": 4,
                 "num_docks_disabled": 0,
                 "obcn": "LC008",
                 "physical_configuration": "REGULAR",
@@ -6118,7 +6118,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 6,
+                        "count": 4,
                         "vehicle_type_ids": [
                             "FIT",
                             "CC",
@@ -6133,7 +6133,7 @@
                         "vehicle_type_id": "CC"
                     },
                     {
-                        "count": 4,
+                        "count": 6,
                         "vehicle_type_id": "FIT"
                     },
                     {
@@ -6169,12 +6169,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930485,
+                "last_reported": 1731931578,
                 "name": "LC009 - Municipalidad De Las Condes",
                 "nearby_distance": 400.0,
-                "num_bikes_available": 3,
+                "num_bikes_available": 5,
                 "num_bikes_disabled": 2,
-                "num_docks_available": 10,
+                "num_docks_available": 8,
                 "num_docks_disabled": 0,
                 "obcn": "LC009",
                 "physical_configuration": "VAULT",
@@ -6191,7 +6191,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 10,
+                        "count": 8,
                         "vehicle_type_ids": [
                             "FIT",
                             "CC",
@@ -6206,11 +6206,11 @@
                         "vehicle_type_id": "CC"
                     },
                     {
-                        "count": 3,
+                        "count": 4,
                         "vehicle_type_id": "FIT"
                     },
                     {
-                        "count": 0,
+                        "count": 1,
                         "vehicle_type_id": "BATTLE_MEC"
                     },
                     {
@@ -6242,12 +6242,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930487,
+                "last_reported": 1731931764,
                 "name": "LC010 - Metro Manquehue - Norte",
                 "nearby_distance": 1607730.66,
-                "num_bikes_available": 2,
+                "num_bikes_available": 4,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 13,
+                "num_docks_available": 11,
                 "num_docks_disabled": 0,
                 "obcn": "LC010",
                 "physical_configuration": "REGULAR",
@@ -6265,7 +6265,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 13,
+                        "count": 11,
                         "vehicle_type_ids": [
                             "FIT",
                             "CC",
@@ -6280,11 +6280,11 @@
                         "vehicle_type_id": "CC"
                     },
                     {
-                        "count": 2,
+                        "count": 3,
                         "vehicle_type_id": "FIT"
                     },
                     {
-                        "count": 0,
+                        "count": 1,
                         "vehicle_type_id": "BATTLE_MEC"
                     },
                     {
@@ -6316,7 +6316,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930516,
+                "last_reported": 1731931794,
                 "name": "LC011 - Metro Hernando De Magallanes",
                 "nearby_distance": 1607730.66,
                 "num_bikes_available": 5,
@@ -6390,12 +6390,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930371,
+                "last_reported": 1731931650,
                 "name": "LC012 - Metro Los Dominicos",
                 "nearby_distance": 400.0,
-                "num_bikes_available": 2,
+                "num_bikes_available": 3,
                 "num_bikes_disabled": 1,
-                "num_docks_available": 12,
+                "num_docks_available": 11,
                 "num_docks_disabled": 0,
                 "obcn": "LC012",
                 "physical_configuration": "REGULAR",
@@ -6413,7 +6413,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 12,
+                        "count": 11,
                         "vehicle_type_ids": [
                             "FIT",
                             "CC",
@@ -6428,7 +6428,7 @@
                         "vehicle_type_id": "CC"
                     },
                     {
-                        "count": 1,
+                        "count": 2,
                         "vehicle_type_id": "FIT"
                     },
                     {
@@ -6464,7 +6464,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930469,
+                "last_reported": 1731931766,
                 "name": "LC013 - Rotonda Atenas",
                 "nearby_distance": 400.0,
                 "num_bikes_available": 4,
@@ -6537,12 +6537,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930467,
+                "last_reported": 1731931745,
                 "name": "LC014 - Parque Araucano",
                 "nearby_distance": 1607730.66,
-                "num_bikes_available": 0,
+                "num_bikes_available": 1,
                 "num_bikes_disabled": 3,
-                "num_docks_available": 14,
+                "num_docks_available": 13,
                 "num_docks_disabled": 0,
                 "obcn": "LC014",
                 "physical_configuration": "REGULAR",
@@ -6560,7 +6560,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 14,
+                        "count": 13,
                         "vehicle_type_ids": [
                             "FIT",
                             "CC",
@@ -6575,7 +6575,7 @@
                         "vehicle_type_id": "CC"
                     },
                     {
-                        "count": 0,
+                        "count": 1,
                         "vehicle_type_id": "FIT"
                     },
                     {
@@ -6611,12 +6611,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930407,
+                "last_reported": 1731931685,
                 "name": "LC015 - Isidora Goyenechea / El Bosque Norte",
                 "nearby_distance": 400.0,
-                "num_bikes_available": 4,
+                "num_bikes_available": 7,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 7,
+                "num_docks_available": 4,
                 "num_docks_disabled": 0,
                 "obcn": "LC015",
                 "physical_configuration": "REGULAR",
@@ -6634,7 +6634,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 7,
+                        "count": 4,
                         "vehicle_type_ids": [
                             "FIT",
                             "CC",
@@ -6649,11 +6649,11 @@
                         "vehicle_type_id": "CC"
                     },
                     {
-                        "count": 1,
+                        "count": 3,
                         "vehicle_type_id": "FIT"
                     },
                     {
-                        "count": 3,
+                        "count": 4,
                         "vehicle_type_id": "BATTLE_MEC"
                     },
                     {
@@ -6685,7 +6685,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930413,
+                "last_reported": 1731931693,
                 "name": "LC016 - Plaza Juan Pablo II",
                 "nearby_distance": 400.0,
                 "num_bikes_available": 7,
@@ -6759,7 +6759,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930359,
+                "last_reported": 1731931639,
                 "name": "LC017 - S\u00e1nchez Fontecilla / Crist\u00f3bal Col\u00f3n",
                 "nearby_distance": 400.0,
                 "num_bikes_available": 0,
@@ -6833,7 +6833,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930506,
+                "last_reported": 1731931805,
                 "name": "LC018 - Fiscal\u00eda Local De Las Condes",
                 "nearby_distance": 400.0,
                 "num_bikes_available": 1,
@@ -6906,12 +6906,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930385,
+                "last_reported": 1731931665,
                 "name": "LC019 - Metro Alc\u00e1ntara",
                 "nearby_distance": 400.0,
-                "num_bikes_available": 14,
+                "num_bikes_available": 15,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 1,
+                "num_docks_available": 0,
                 "num_docks_disabled": 0,
                 "obcn": "LC019",
                 "physical_configuration": "REGULAR",
@@ -6929,7 +6929,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 1,
+                        "count": 0,
                         "vehicle_type_ids": [
                             "FIT",
                             "CC",
@@ -6944,7 +6944,7 @@
                         "vehicle_type_id": "CC"
                     },
                     {
-                        "count": 9,
+                        "count": 10,
                         "vehicle_type_id": "FIT"
                     },
                     {
@@ -6980,7 +6980,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930429,
+                "last_reported": 1731931708,
                 "name": "LC020 - Manquehue Sur / Crist\u00f3bal Col\u00f3n",
                 "nearby_distance": 400.0,
                 "num_bikes_available": 1,
@@ -7054,7 +7054,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930522,
+                "last_reported": 1731931799,
                 "name": "LC022 - Tobalaba / Apoquindo",
                 "nearby_distance": 400.0,
                 "num_bikes_available": 2,
@@ -7091,11 +7091,11 @@
                         "vehicle_type_id": "CC"
                     },
                     {
-                        "count": 1,
+                        "count": 0,
                         "vehicle_type_id": "FIT"
                     },
                     {
-                        "count": 1,
+                        "count": 2,
                         "vehicle_type_id": "BATTLE_MEC"
                     },
                     {
@@ -7127,12 +7127,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930350,
+                "last_reported": 1731931652,
                 "name": "LC023 - Plaza Don Ra\u00fal Sim\u00f3n Bernal",
                 "nearby_distance": 400.0,
-                "num_bikes_available": 9,
-                "num_bikes_disabled": 0,
-                "num_docks_available": 2,
+                "num_bikes_available": 7,
+                "num_bikes_disabled": 1,
+                "num_docks_available": 3,
                 "num_docks_disabled": 0,
                 "obcn": "LC023",
                 "physical_configuration": "REGULAR",
@@ -7150,7 +7150,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 2,
+                        "count": 3,
                         "vehicle_type_ids": [
                             "FIT",
                             "CC",
@@ -7165,7 +7165,7 @@
                         "vehicle_type_id": "CC"
                     },
                     {
-                        "count": 5,
+                        "count": 3,
                         "vehicle_type_id": "FIT"
                     },
                     {
@@ -7201,7 +7201,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930376,
+                "last_reported": 1731931654,
                 "name": "LC024 - Am\u00e9rico Vespucio / Pdte Kennedy",
                 "nearby_distance": 400.0,
                 "num_bikes_available": 5,
@@ -7274,12 +7274,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930471,
+                "last_reported": 1731931764,
                 "name": "LC025 - Noruega",
                 "nearby_distance": 400.0,
-                "num_bikes_available": 1,
+                "num_bikes_available": 0,
                 "num_bikes_disabled": 1,
-                "num_docks_available": 9,
+                "num_docks_available": 10,
                 "num_docks_disabled": 0,
                 "obcn": "LC025",
                 "physical_configuration": "VAULT",
@@ -7296,7 +7296,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 9,
+                        "count": 10,
                         "vehicle_type_ids": [
                             "FIT",
                             "CC",
@@ -7311,7 +7311,7 @@
                         "vehicle_type_id": "CC"
                     },
                     {
-                        "count": 1,
+                        "count": 0,
                         "vehicle_type_id": "FIT"
                     },
                     {
@@ -7347,7 +7347,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930405,
+                "last_reported": 1731931682,
                 "name": "LC026 - Alc\u00e1ntara / Vaticano",
                 "nearby_distance": 400.0,
                 "num_bikes_available": 3,
@@ -7420,7 +7420,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930442,
+                "last_reported": 1731931720,
                 "name": "LC027 - IV Centenario / El Gale\u00f3n",
                 "nearby_distance": 400.0,
                 "num_bikes_available": 6,
@@ -7494,7 +7494,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930418,
+                "last_reported": 1731931696,
                 "name": "LC028 - Mar De Coral",
                 "nearby_distance": 400.0,
                 "num_bikes_available": 1,
@@ -7568,7 +7568,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930470,
+                "last_reported": 1731931749,
                 "name": "LC029 - M\u00e1laga / Rapallo",
                 "nearby_distance": 400.0,
                 "num_bikes_available": 1,
@@ -7642,7 +7642,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930414,
+                "last_reported": 1731931693,
                 "name": "LC030 - Mart\u00edn de Zamora / Algeciras",
                 "nearby_distance": 400.0,
                 "num_bikes_available": 3,
@@ -7716,7 +7716,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930478,
+                "last_reported": 1731931758,
                 "name": "LC031 - Presidente Err\u00e1zuriz / Enrique Foster",
                 "nearby_distance": 400.0,
                 "num_bikes_available": 4,
@@ -7790,7 +7790,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930490,
+                "last_reported": 1731931766,
                 "name": "P37 - Obispo Salas",
                 "nearby_distance": 1.0,
                 "num_bikes_available": 15,
@@ -7864,7 +7864,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930467,
+                "last_reported": 1731931749,
                 "name": "LC032 - Padre Hurtado / Pdte Kennedy Lateral",
                 "nearby_distance": 400.0,
                 "num_bikes_available": 6,
@@ -7938,12 +7938,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930525,
+                "last_reported": 1731931806,
                 "name": "LC033 - Vitacura / San Patricio",
                 "nearby_distance": 400.0,
-                "num_bikes_available": 10,
+                "num_bikes_available": 12,
                 "num_bikes_disabled": 2,
-                "num_docks_available": 3,
+                "num_docks_available": 1,
                 "num_docks_disabled": 0,
                 "obcn": "LC033",
                 "physical_configuration": "REGULAR",
@@ -7961,7 +7961,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 3,
+                        "count": 1,
                         "vehicle_type_ids": [
                             "FIT",
                             "CC",
@@ -7976,7 +7976,7 @@
                         "vehicle_type_id": "CC"
                     },
                     {
-                        "count": 7,
+                        "count": 9,
                         "vehicle_type_id": "FIT"
                     },
                     {
@@ -8012,12 +8012,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930493,
+                "last_reported": 1731931772,
                 "name": "LC034 - Zurich",
                 "nearby_distance": 400.0,
-                "num_bikes_available": 8,
+                "num_bikes_available": 7,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 7,
+                "num_docks_available": 8,
                 "num_docks_disabled": 0,
                 "obcn": "LC034",
                 "physical_configuration": "REGULAR",
@@ -8035,7 +8035,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 7,
+                        "count": 8,
                         "vehicle_type_ids": [
                             "FIT",
                             "CC",
@@ -8050,7 +8050,7 @@
                         "vehicle_type_id": "CC"
                     },
                     {
-                        "count": 5,
+                        "count": 4,
                         "vehicle_type_id": "FIT"
                     },
                     {
@@ -8086,7 +8086,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930356,
+                "last_reported": 1731931634,
                 "name": "LC035 - Escuela Militar",
                 "nearby_distance": 400.0,
                 "num_bikes_available": 5,
@@ -8160,7 +8160,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930376,
+                "last_reported": 1731931653,
                 "name": "LC036 - Las Condes / Valle Alegre",
                 "nearby_distance": 400.0,
                 "num_bikes_available": 4,
@@ -8234,7 +8234,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930373,
+                "last_reported": 1731931655,
                 "name": "LC037 - Manquehue Sur / Isabel La Cat\u00f3lica",
                 "nearby_distance": 400.0,
                 "num_bikes_available": 16,
@@ -8308,7 +8308,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930372,
+                "last_reported": 1731931670,
                 "name": "LC038 - Plaza Brasilia",
                 "nearby_distance": 400.0,
                 "num_bikes_available": 3,
@@ -8382,7 +8382,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930387,
+                "last_reported": 1731931669,
                 "name": "LC039 Tom\u00e1s Moro / Apoquindo",
                 "nearby_distance": 400.0,
                 "num_bikes_available": 5,
@@ -8456,12 +8456,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930348,
+                "last_reported": 1731931636,
                 "name": "LC040 - Manquehue Sur / Alonso de Camargo",
                 "nearby_distance": 400.0,
-                "num_bikes_available": 11,
+                "num_bikes_available": 12,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 4,
+                "num_docks_available": 3,
                 "num_docks_disabled": 0,
                 "obcn": "LC040",
                 "physical_configuration": "VAULT",
@@ -8478,7 +8478,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 4,
+                        "count": 3,
                         "vehicle_type_ids": [
                             "FIT",
                             "CC",
@@ -8493,7 +8493,7 @@
                         "vehicle_type_id": "CC"
                     },
                     {
-                        "count": 9,
+                        "count": 10,
                         "vehicle_type_id": "FIT"
                     },
                     {
@@ -8529,12 +8529,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930387,
+                "last_reported": 1731931659,
                 "name": "LC041 - Gertrudis Eche\u00f1\u00edque / Callao",
                 "nearby_distance": 400.0,
-                "num_bikes_available": 8,
+                "num_bikes_available": 9,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 3,
+                "num_docks_available": 2,
                 "num_docks_disabled": 0,
                 "obcn": "LC041",
                 "physical_configuration": "VAULT",
@@ -8551,7 +8551,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 3,
+                        "count": 2,
                         "vehicle_type_ids": [
                             "FIT",
                             "CC",
@@ -8566,7 +8566,7 @@
                         "vehicle_type_id": "CC"
                     },
                     {
-                        "count": 4,
+                        "count": 5,
                         "vehicle_type_id": "FIT"
                     },
                     {
@@ -8602,7 +8602,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930523,
+                "last_reported": 1731931800,
                 "name": "P44 - Andres Bello / Padre Mariano",
                 "nearby_distance": 1.0,
                 "num_bikes_available": 6,
@@ -8675,7 +8675,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930465,
+                "last_reported": 1731931759,
                 "name": "LC042 - Padre Hurtado / Las Condes",
                 "nearby_distance": 400.0,
                 "num_bikes_available": 3,
@@ -8748,7 +8748,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930433,
+                "last_reported": 1731931713,
                 "name": "LC044 - Lat. Kennedy / Ger\u00f3nimo de Alderete",
                 "nearby_distance": 400.0,
                 "num_bikes_available": 2,
@@ -8822,7 +8822,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930371,
+                "last_reported": 1731931648,
                 "name": "LC045 - Crist\u00f3bal Col\u00f3n / Padre Hurtado",
                 "nearby_distance": 400.0,
                 "num_bikes_available": 1,
@@ -8895,7 +8895,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930353,
+                "last_reported": 1731931631,
                 "name": "LC046 - Padre Hurtado / Gral. Blanche",
                 "nearby_distance": 400.0,
                 "num_bikes_available": 9,
@@ -8969,7 +8969,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930418,
+                "last_reported": 1731931724,
                 "name": "LC047 - Apoquindo / Luiz Zegers",
                 "nearby_distance": 400.0,
                 "num_bikes_available": 4,
@@ -9042,12 +9042,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930517,
+                "last_reported": 1731931796,
                 "name": "LC048 - Latadia / Am\u00e9rico Vespucio",
                 "nearby_distance": 400.0,
-                "num_bikes_available": 16,
+                "num_bikes_available": 15,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 13,
+                "num_docks_available": 14,
                 "num_docks_disabled": 0,
                 "obcn": "LC048",
                 "physical_configuration": "REGULAR",
@@ -9065,7 +9065,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 13,
+                        "count": 14,
                         "vehicle_type_ids": [
                             "FIT",
                             "CC",
@@ -9080,7 +9080,7 @@
                         "vehicle_type_id": "CC"
                     },
                     {
-                        "count": 12,
+                        "count": 11,
                         "vehicle_type_id": "FIT"
                     },
                     {
@@ -9116,7 +9116,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930345,
+                "last_reported": 1731931807,
                 "name": "LC049 - Presidente Riesco / Am\u00e9rico Vespucio",
                 "nearby_distance": 400.0,
                 "num_bikes_available": 5,
@@ -9190,7 +9190,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930483,
+                "last_reported": 1731931760,
                 "name": "LC050 - IV Centenario / Apoquindo",
                 "nearby_distance": 400.0,
                 "num_bikes_available": 5,
@@ -9264,7 +9264,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930460,
+                "last_reported": 1731931752,
                 "name": "LC051 - IV Centenario / Manuel Claro Vial",
                 "nearby_distance": 400.0,
                 "num_bikes_available": 1,
@@ -9337,7 +9337,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930447,
+                "last_reported": 1731931725,
                 "name": "LC052 - IV Centenario / Alejandro Fleming",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 4,
@@ -9411,7 +9411,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930361,
+                "last_reported": 1731931639,
                 "name": "LC053 - Sebasti\u00e1n Elcano / Victor Rae",
                 "nearby_distance": 400.0,
                 "num_bikes_available": 11,
@@ -9485,7 +9485,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930362,
+                "last_reported": 1731931654,
                 "name": "LC054 - Padre Hurtado / Bocaccio",
                 "nearby_distance": 400.0,
                 "num_bikes_available": 3,
@@ -9558,7 +9558,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930386,
+                "last_reported": 1731931680,
                 "name": "LC055 - Mall Los Dominicos",
                 "nearby_distance": 400.0,
                 "num_bikes_available": 3,
@@ -9632,7 +9632,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930373,
+                "last_reported": 1731931651,
                 "name": "LC056 - Imperial",
                 "nearby_distance": 400.0,
                 "num_bikes_available": 3,
@@ -9705,7 +9705,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930366,
+                "last_reported": 1731931645,
                 "name": "LC057 - Paul Harris / Crist\u00f3bal Col\u00f3n",
                 "nearby_distance": 400.0,
                 "num_bikes_available": 7,
@@ -9778,7 +9778,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930481,
+                "last_reported": 1731931758,
                 "name": "LC058 - Plaza Horacio Rivarola",
                 "nearby_distance": 400.0,
                 "num_bikes_available": 0,
@@ -9852,7 +9852,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930471,
+                "last_reported": 1731931752,
                 "name": "LC059 - S\u00e1nchez Fontecilla / I. La Cat\u00f3lica",
                 "nearby_distance": 400.0,
                 "num_bikes_available": 7,
@@ -9926,7 +9926,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930448,
+                "last_reported": 1731931728,
                 "name": "LC060 - Rotonda La Capitan\u00eda",
                 "nearby_distance": 400.0,
                 "num_bikes_available": 4,
@@ -9999,7 +9999,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930490,
+                "last_reported": 1731931768,
                 "name": "LC061 - Apoquindo / Hans C Andersen",
                 "nearby_distance": 400.0,
                 "num_bikes_available": 5,
@@ -10073,7 +10073,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930455,
+                "last_reported": 1731931735,
                 "name": "P49 - Fco Bilbao / Rom\u00e1n D\u00edaz",
                 "nearby_distance": 1.0,
                 "num_bikes_available": 12,
@@ -10147,7 +10147,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930419,
+                "last_reported": 1731931695,
                 "name": "LC062 - Visviri",
                 "nearby_distance": 400.0,
                 "num_bikes_available": 10,
@@ -10221,12 +10221,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930434,
+                "last_reported": 1731931724,
                 "name": "LC063 - Isabel La Cat\u00f3lica / El Pill\u00e1n",
                 "nearby_distance": 400.0,
-                "num_bikes_available": 7,
+                "num_bikes_available": 6,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 4,
+                "num_docks_available": 5,
                 "num_docks_disabled": 0,
                 "obcn": "LC063",
                 "physical_configuration": "VAULT",
@@ -10243,7 +10243,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 4,
+                        "count": 5,
                         "vehicle_type_ids": [
                             "FIT",
                             "CC",
@@ -10258,7 +10258,7 @@
                         "vehicle_type_id": "CC"
                     },
                     {
-                        "count": 3,
+                        "count": 2,
                         "vehicle_type_id": "FIT"
                     },
                     {
@@ -10294,7 +10294,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930403,
+                "last_reported": 1731931684,
                 "name": "LC064 - Luis Rodr\u00edguez Velasco - Cnel Pereira",
                 "nearby_distance": 400.0,
                 "num_bikes_available": 3,
@@ -10368,7 +10368,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930458,
+                "last_reported": 1731931742,
                 "name": "LC065 - Alsacia / Apoquindo",
                 "nearby_distance": 400.0,
                 "num_bikes_available": 10,
@@ -10442,12 +10442,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930417,
+                "last_reported": 1731931718,
                 "name": "LC066 - Cerro Colorado / Rosario Norte",
                 "nearby_distance": 400.0,
-                "num_bikes_available": 4,
+                "num_bikes_available": 3,
                 "num_bikes_disabled": 1,
-                "num_docks_available": 14,
+                "num_docks_available": 15,
                 "num_docks_disabled": 0,
                 "obcn": "LC066",
                 "physical_configuration": "VAULT",
@@ -10464,7 +10464,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 14,
+                        "count": 15,
                         "vehicle_type_ids": [
                             "FIT",
                             "CC",
@@ -10479,7 +10479,7 @@
                         "vehicle_type_id": "CC"
                     },
                     {
-                        "count": 4,
+                        "count": 3,
                         "vehicle_type_id": "FIT"
                     },
                     {
@@ -10515,12 +10515,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930433,
+                "last_reported": 1731931714,
                 "name": "LC067 - Isidora Goyenechea / Carmencita",
                 "nearby_distance": 400.0,
-                "num_bikes_available": 9,
+                "num_bikes_available": 11,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 6,
+                "num_docks_available": 4,
                 "num_docks_disabled": 0,
                 "obcn": "LC067",
                 "physical_configuration": "REGULAR",
@@ -10538,7 +10538,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 6,
+                        "count": 4,
                         "vehicle_type_ids": [
                             "FIT",
                             "CC",
@@ -10553,11 +10553,11 @@
                         "vehicle_type_id": "CC"
                     },
                     {
-                        "count": 9,
+                        "count": 10,
                         "vehicle_type_id": "FIT"
                     },
                     {
-                        "count": 0,
+                        "count": 1,
                         "vehicle_type_id": "BATTLE_MEC"
                     },
                     {
@@ -10589,12 +10589,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930407,
+                "last_reported": 1731931689,
                 "name": "LC068 - Metro Manquehue - Sur",
                 "nearby_distance": 400.0,
-                "num_bikes_available": 4,
+                "num_bikes_available": 3,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 11,
+                "num_docks_available": 12,
                 "num_docks_disabled": 0,
                 "obcn": "LC068",
                 "physical_configuration": "REGULAR",
@@ -10612,7 +10612,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 11,
+                        "count": 12,
                         "vehicle_type_ids": [
                             "FIT",
                             "CC",
@@ -10627,7 +10627,7 @@
                         "vehicle_type_id": "CC"
                     },
                     {
-                        "count": 3,
+                        "count": 2,
                         "vehicle_type_id": "FIT"
                     },
                     {
@@ -10663,7 +10663,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930430,
+                "last_reported": 1731931709,
                 "name": "LC069 - Crist\u00f3bal Col\u00f3n / Fuenteovejuna",
                 "nearby_distance": 400.0,
                 "num_bikes_available": 0,
@@ -10737,7 +10737,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930494,
+                "last_reported": 1731931785,
                 "name": "LC070 - Alonso De C\u00f3rdova Interior",
                 "nearby_distance": 400.0,
                 "num_bikes_available": 0,
@@ -10811,7 +10811,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930430,
+                "last_reported": 1731931708,
                 "name": "LC071 - Burgos / Apoquindo",
                 "nearby_distance": 400.0,
                 "num_bikes_available": 11,
@@ -10885,12 +10885,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930443,
+                "last_reported": 1731931724,
                 "name": "P02 - Italia / Mar\u00edn",
                 "nearby_distance": 1000.0,
-                "num_bikes_available": 10,
+                "num_bikes_available": 11,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 1,
+                "num_docks_available": 0,
                 "num_docks_disabled": 0,
                 "obcn": "P02",
                 "physical_configuration": "REGULAR",
@@ -10908,7 +10908,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 1,
+                        "count": 0,
                         "vehicle_type_ids": [
                             "FIT",
                             "CC",
@@ -10927,7 +10927,7 @@
                         "vehicle_type_id": "FIT"
                     },
                     {
-                        "count": 2,
+                        "count": 3,
                         "vehicle_type_id": "BATTLE_MEC"
                     },
                     {
@@ -10960,7 +10960,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930419,
+                "last_reported": 1731931700,
                 "name": "P52 - Holanda / Pocuro",
                 "nearby_distance": 1.0,
                 "num_bikes_available": 1,
@@ -11034,7 +11034,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930366,
+                "last_reported": 1731931644,
                 "name": "LC072 - Estadio Israelita",
                 "nearby_distance": 400.0,
                 "num_bikes_available": 4,
@@ -11108,7 +11108,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930405,
+                "last_reported": 1731931683,
                 "name": "LC073 - Padre Hurtado / Camino El Alba",
                 "nearby_distance": 400.0,
                 "num_bikes_available": 8,
@@ -11182,7 +11182,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930372,
+                "last_reported": 1731931649,
                 "name": "LC074 - Del Inca / Antonia Salas",
                 "nearby_distance": 400.0,
                 "num_bikes_available": 0,
@@ -11256,12 +11256,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930473,
+                "last_reported": 1731931749,
                 "name": "LC075 - La Oraci\u00f3n / Ger\u00f3nimo De Alderete",
                 "nearby_distance": 400.0,
-                "num_bikes_available": 5,
+                "num_bikes_available": 4,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 2,
+                "num_docks_available": 3,
                 "num_docks_disabled": 0,
                 "obcn": "LC075",
                 "physical_configuration": "REGULAR",
@@ -11279,7 +11279,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 2,
+                        "count": 3,
                         "vehicle_type_ids": [
                             "FIT",
                             "CC",
@@ -11294,7 +11294,7 @@
                         "vehicle_type_id": "CC"
                     },
                     {
-                        "count": 4,
+                        "count": 3,
                         "vehicle_type_id": "FIT"
                     },
                     {
@@ -11330,7 +11330,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930405,
+                "last_reported": 1731931683,
                 "name": "LC076 - La Posada / San Antonio",
                 "nearby_distance": 400.0,
                 "num_bikes_available": 4,
@@ -11403,7 +11403,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930509,
+                "last_reported": 1731931806,
                 "name": "LC077 - Mall Sport",
                 "nearby_distance": 400.0,
                 "num_bikes_available": 0,
@@ -11477,7 +11477,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930454,
+                "last_reported": 1731931740,
                 "name": "LC078 - Libia / Av Las Condes",
                 "nearby_distance": 400.0,
                 "num_bikes_available": 5,
@@ -11551,7 +11551,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930442,
+                "last_reported": 1731931721,
                 "name": "LC079 - Mallalil",
                 "nearby_distance": 400.0,
                 "num_bikes_available": 1,
@@ -11625,7 +11625,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930404,
+                "last_reported": 1731931670,
                 "name": "LC080 - Manquehue Sur / Carlos Alvarado",
                 "nearby_distance": 400.0,
                 "num_bikes_available": 10,
@@ -11699,7 +11699,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930473,
+                "last_reported": 1731931751,
                 "name": "LC081 - Padre Hurtado / Alejandro Fleming",
                 "nearby_distance": 400.0,
                 "num_bikes_available": 6,
@@ -11774,7 +11774,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930433,
+                "last_reported": 1731931705,
                 "name": "P53 - Plaza In\u00e9s de Suarez",
                 "nearby_distance": 1.0,
                 "num_bikes_available": 15,
@@ -11847,7 +11847,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930393,
+                "last_reported": 1731931671,
                 "name": "LC082 - Plaza Domingo Bondi",
                 "nearby_distance": 400.0,
                 "num_bikes_available": 0,
@@ -11921,7 +11921,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930403,
+                "last_reported": 1731931705,
                 "name": "LC083 - Padre Hurtado / Nueva Bilbao",
                 "nearby_distance": 400.0,
                 "num_bikes_available": 3,
@@ -11995,7 +11995,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930492,
+                "last_reported": 1731931769,
                 "name": "LC084 - Presidente Err\u00e1zuriz / Alc\u00e1ntara",
                 "nearby_distance": 400.0,
                 "num_bikes_available": 6,
@@ -12069,7 +12069,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930448,
+                "last_reported": 1731931742,
                 "name": "LC085 - Plaza La Condordia",
                 "nearby_distance": 400.0,
                 "num_bikes_available": 4,
@@ -12142,7 +12142,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930350,
+                "last_reported": 1731931646,
                 "name": "LC086 - Tom\u00e1s Moro / Alejandro Fleming",
                 "nearby_distance": 400.0,
                 "num_bikes_available": 2,
@@ -12216,7 +12216,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930447,
+                "last_reported": 1731931576,
                 "name": "LC087 - Hospital DIPRECA",
                 "nearby_distance": 400.0,
                 "num_bikes_available": 7,
@@ -12290,12 +12290,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930477,
+                "last_reported": 1731931768,
                 "name": "LC088 - Cerro Colorado / Manquehue Norte",
                 "nearby_distance": 400.0,
-                "num_bikes_available": 0,
+                "num_bikes_available": 1,
                 "num_bikes_disabled": 1,
-                "num_docks_available": 18,
+                "num_docks_available": 17,
                 "num_docks_disabled": 0,
                 "obcn": "LC088",
                 "physical_configuration": "VAULT",
@@ -12312,7 +12312,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 18,
+                        "count": 17,
                         "vehicle_type_ids": [
                             "FIT",
                             "CC",
@@ -12327,7 +12327,7 @@
                         "vehicle_type_id": "CC"
                     },
                     {
-                        "count": 0,
+                        "count": 1,
                         "vehicle_type_id": "FIT"
                     },
                     {
@@ -12363,7 +12363,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930343,
+                "last_reported": 1731931807,
                 "name": "LC089 - Chesterton / Bocaccio",
                 "nearby_distance": 400.0,
                 "num_bikes_available": 2,
@@ -12437,7 +12437,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930511,
+                "last_reported": 1731931790,
                 "name": "LC090 - Plaza Rep\u00fablica de Paraguay",
                 "nearby_distance": 400.0,
                 "num_bikes_available": 1,
@@ -12511,7 +12511,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930476,
+                "last_reported": 1731931768,
                 "name": "LC091 - Las Tranqueras / Pinares",
                 "nearby_distance": 400.0,
                 "num_bikes_available": 0,
@@ -12584,12 +12584,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930419,
+                "last_reported": 1731931706,
                 "name": "P55 - P\u00e9rez Valenzuela",
                 "nearby_distance": 1.0,
-                "num_bikes_available": 3,
+                "num_bikes_available": 4,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 8,
+                "num_docks_available": 7,
                 "num_docks_disabled": 0,
                 "obcn": "P55",
                 "physical_configuration": "REGULAR",
@@ -12607,7 +12607,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 8,
+                        "count": 7,
                         "vehicle_type_ids": [
                             "FIT",
                             "CC",
@@ -12622,7 +12622,7 @@
                         "vehicle_type_id": "CC"
                     },
                     {
-                        "count": 3,
+                        "count": 4,
                         "vehicle_type_id": "FIT"
                     },
                     {
@@ -12658,7 +12658,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930458,
+                "last_reported": 1731931736,
                 "name": "LC092 - Manquehue Sur / El Director",
                 "nearby_distance": 400.0,
                 "num_bikes_available": 4,
@@ -12731,7 +12731,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930428,
+                "last_reported": 1731931728,
                 "name": "LC093 - Los Estandartes",
                 "nearby_distance": 400.0,
                 "num_bikes_available": 6,
@@ -12805,7 +12805,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930379,
+                "last_reported": 1731931664,
                 "name": "LC094 - S\u00e1nchez Fontecilla / Mart\u00edn De Zamora",
                 "nearby_distance": 400.0,
                 "num_bikes_available": 1,
@@ -12879,7 +12879,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930413,
+                "last_reported": 1731931692,
                 "name": "LC096 - La Casona",
                 "nearby_distance": 400.0,
                 "num_bikes_available": 1,
@@ -12953,12 +12953,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930203,
+                "last_reported": 1731931739,
                 "name": "IT001 - ITAU",
                 "nearby_distance": 400.0,
-                "num_bikes_available": 1,
+                "num_bikes_available": 2,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 10,
+                "num_docks_available": 9,
                 "num_docks_disabled": 0,
                 "obcn": "IT001 - ITAU",
                 "physical_configuration": "REGULAR",
@@ -12976,7 +12976,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 10,
+                        "count": 9,
                         "vehicle_type_ids": [
                             "FIT",
                             "CC",
@@ -12991,7 +12991,7 @@
                         "vehicle_type_id": "CC"
                     },
                     {
-                        "count": 1,
+                        "count": 2,
                         "vehicle_type_id": "FIT"
                     },
                     {
@@ -13027,7 +13027,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930347,
+                "last_reported": 1731931805,
                 "name": "P62 - El Cerro",
                 "nearby_distance": 400.0,
                 "num_bikes_available": 2,
@@ -13100,7 +13100,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930415,
+                "last_reported": 1731931687,
                 "name": "P64 - Seminario / Ricardo Matte P\u00e9rez",
                 "nearby_distance": 400.0,
                 "num_bikes_available": 15,
@@ -13173,12 +13173,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930415,
+                "last_reported": 1731931686,
                 "name": "P70 - Metro Santa isabel II",
                 "nearby_distance": 1000.0,
-                "num_bikes_available": 4,
+                "num_bikes_available": 3,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 7,
+                "num_docks_available": 8,
                 "num_docks_disabled": 0,
                 "obcn": "P70",
                 "physical_configuration": "REGULAR",
@@ -13196,7 +13196,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 7,
+                        "count": 8,
                         "vehicle_type_ids": [
                             "FIT",
                             "CC",
@@ -13215,7 +13215,7 @@
                         "vehicle_type_id": "FIT"
                     },
                     {
-                        "count": 3,
+                        "count": 2,
                         "vehicle_type_id": "BATTLE_MEC"
                     },
                     {
@@ -13247,12 +13247,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930444,
+                "last_reported": 1731931718,
                 "name": "S11 - Metro Toesca",
                 "nearby_distance": 1000.0,
-                "num_bikes_available": 25,
+                "num_bikes_available": 27,
                 "num_bikes_disabled": 1,
-                "num_docks_available": 5,
+                "num_docks_available": 3,
                 "num_docks_disabled": 0,
                 "obcn": "S11",
                 "physical_configuration": "REGULAR",
@@ -13270,7 +13270,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 5,
+                        "count": 3,
                         "vehicle_type_ids": [
                             "FIT",
                             "CC",
@@ -13285,7 +13285,7 @@
                         "vehicle_type_id": "CC"
                     },
                     {
-                        "count": 13,
+                        "count": 15,
                         "vehicle_type_id": "FIT"
                     },
                     {
@@ -13321,7 +13321,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930518,
+                "last_reported": 1731931795,
                 "name": "S57 - Beauchef",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 19,
@@ -13394,7 +13394,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930451,
+                "last_reported": 1731931729,
                 "name": "S58 - Domeyko / Av. Espa\u00f1a",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 13,
@@ -13468,7 +13468,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930462,
+                "last_reported": 1731931734,
                 "name": "P67 - Nva. Providencia",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 1,
@@ -13542,12 +13542,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930441,
+                "last_reported": 1731931717,
                 "name": "S02 - Metro Rep\u00fablica",
                 "nearby_distance": 1.0,
-                "num_bikes_available": 11,
+                "num_bikes_available": 12,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 4,
+                "num_docks_available": 3,
                 "num_docks_disabled": 0,
                 "obcn": "S02",
                 "physical_configuration": "REGULAR",
@@ -13565,7 +13565,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 4,
+                        "count": 3,
                         "vehicle_type_ids": [
                             "FIT",
                             "CC",
@@ -13584,7 +13584,7 @@
                         "vehicle_type_id": "FIT"
                     },
                     {
-                        "count": 4,
+                        "count": 5,
                         "vehicle_type_id": "BATTLE_MEC"
                     },
                     {
@@ -13617,12 +13617,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930519,
+                "last_reported": 1731931798,
                 "name": "S80 - Nataniel cox / Miguel Olivares",
                 "nearby_distance": 1000.0,
-                "num_bikes_available": 12,
+                "num_bikes_available": 13,
                 "num_bikes_disabled": 1,
-                "num_docks_available": 2,
+                "num_docks_available": 1,
                 "num_docks_disabled": 0,
                 "obcn": "S80",
                 "physical_configuration": "REGULAR",
@@ -13640,7 +13640,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 2,
+                        "count": 1,
                         "vehicle_type_ids": [
                             "FIT",
                             "CC",
@@ -13655,7 +13655,7 @@
                         "vehicle_type_id": "CC"
                     },
                     {
-                        "count": 10,
+                        "count": 11,
                         "vehicle_type_id": "FIT"
                     },
                     {
@@ -13691,7 +13691,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930520,
+                "last_reported": 1731931797,
                 "name": "P35 - Seminario / Mar\u00edn",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 15,
@@ -13765,7 +13765,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930505,
+                "last_reported": 1731931773,
                 "name": "P41 - Pedro Le\u00f3n Gallo / Julio Prado",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 9,
@@ -13839,7 +13839,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930156,
+                "last_reported": 1731931314,
                 "name": "P14 - Metro Baquedano 2",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 17,
@@ -13877,11 +13877,11 @@
                         "vehicle_type_id": "CC"
                     },
                     {
-                        "count": 9,
+                        "count": 8,
                         "vehicle_type_id": "FIT"
                     },
                     {
-                        "count": 8,
+                        "count": 9,
                         "vehicle_type_id": "BATTLE_MEC"
                     },
                     {
@@ -13913,12 +13913,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930355,
+                "last_reported": 1731931634,
                 "name": "LC097 - Roger de Flor",
                 "nearby_distance": 998.0,
-                "num_bikes_available": 2,
+                "num_bikes_available": 1,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 15,
+                "num_docks_available": 16,
                 "num_docks_disabled": 0,
                 "obcn": "LC097",
                 "physical_configuration": "REGULAR",
@@ -13936,7 +13936,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 15,
+                        "count": 16,
                         "vehicle_type_ids": [
                             "FIT",
                             "CC",
@@ -13955,7 +13955,7 @@
                         "vehicle_type_id": "FIT"
                     },
                     {
-                        "count": 2,
+                        "count": 1,
                         "vehicle_type_id": "BATTLE_MEC"
                     },
                     {
@@ -13987,7 +13987,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930419,
+                "last_reported": 1731931699,
                 "name": "N16 - Polideportivo de \u00d1u\u00f1oa",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 12,
@@ -14061,7 +14061,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930378,
+                "last_reported": 1731931652,
                 "name": "N17 - EMPART",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 11,
@@ -14135,7 +14135,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930399,
+                "last_reported": 1731931678,
                 "name": "LC098 - Cantagallo",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 6,
@@ -14209,7 +14209,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930512,
+                "last_reported": 1731931790,
                 "name": "S16 - Teatro Municipal",
                 "nearby_distance": 1.0,
                 "num_bikes_available": 10,
@@ -14283,12 +14283,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930372,
+                "last_reported": 1731931646,
                 "name": "P34 - Santa Victoria / Bustamante",
                 "nearby_distance": 1000.0,
-                "num_bikes_available": 9,
+                "num_bikes_available": 8,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 6,
+                "num_docks_available": 7,
                 "num_docks_disabled": 0,
                 "obcn": "P034",
                 "physical_configuration": "REGULAR",
@@ -14306,7 +14306,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 6,
+                        "count": 7,
                         "vehicle_type_ids": [
                             "FIT",
                             "CC",
@@ -14321,7 +14321,7 @@
                         "vehicle_type_id": "CC"
                     },
                     {
-                        "count": 6,
+                        "count": 5,
                         "vehicle_type_id": "FIT"
                     },
                     {
@@ -14357,7 +14357,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930396,
+                "last_reported": 1731931676,
                 "name": "N09 - Irarr\u00e1zaval / Brown Sur",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 15,
@@ -14430,7 +14430,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930407,
+                "last_reported": 1731931682,
                 "name": "P51 - El Vergel / Luis Thayer Ojeda",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 1,
@@ -14503,7 +14503,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930356,
+                "last_reported": 1731931809,
                 "name": "N46 - Av. Irarr\u00e1zaval / Suecia",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 15,
@@ -14577,7 +14577,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930484,
+                "last_reported": 1731931760,
                 "name": "P13 - Fidel Oteiza",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 13,
@@ -14651,12 +14651,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930524,
+                "last_reported": 1731931797,
                 "name": "N47 - Unimarc",
                 "nearby_distance": 1000.0,
-                "num_bikes_available": 4,
+                "num_bikes_available": 3,
                 "num_bikes_disabled": 1,
-                "num_docks_available": 10,
+                "num_docks_available": 11,
                 "num_docks_disabled": 0,
                 "obcn": "N47",
                 "physical_configuration": "REGULAR",
@@ -14674,7 +14674,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 10,
+                        "count": 11,
                         "vehicle_type_ids": [
                             "FIT",
                             "CC",
@@ -14689,7 +14689,7 @@
                         "vehicle_type_id": "CC"
                     },
                     {
-                        "count": 1,
+                        "count": 0,
                         "vehicle_type_id": "FIT"
                     },
                     {
@@ -14725,7 +14725,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930473,
+                "last_reported": 1731931758,
                 "name": "LC100 - Estocolmo / Los Militares",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 0,
@@ -14798,12 +14798,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930478,
+                "last_reported": 1731931757,
                 "name": "S17 - San Isidro / Santa Isabel",
                 "nearby_distance": 1.0,
-                "num_bikes_available": 27,
+                "num_bikes_available": 26,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 0,
+                "num_docks_available": 1,
                 "num_docks_disabled": 0,
                 "obcn": "S17",
                 "physical_configuration": "VAULT",
@@ -14820,7 +14820,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 0,
+                        "count": 1,
                         "vehicle_type_ids": [
                             "FIT",
                             "CC",
@@ -14835,7 +14835,7 @@
                         "vehicle_type_id": "CC"
                     },
                     {
-                        "count": 14,
+                        "count": 13,
                         "vehicle_type_id": "FIT"
                     },
                     {
@@ -14871,12 +14871,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930362,
+                "last_reported": 1731931639,
                 "name": "S14 - Santa Isabel / Carmen",
                 "nearby_distance": 1.0,
-                "num_bikes_available": 15,
+                "num_bikes_available": 14,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 2,
+                "num_docks_available": 3,
                 "num_docks_disabled": 0,
                 "obcn": "S14",
                 "physical_configuration": "VAULT",
@@ -14893,7 +14893,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 2,
+                        "count": 3,
                         "vehicle_type_ids": [
                             "FIT",
                             "CC",
@@ -14912,7 +14912,7 @@
                         "vehicle_type_id": "FIT"
                     },
                     {
-                        "count": 3,
+                        "count": 2,
                         "vehicle_type_id": "BATTLE_MEC"
                     },
                     {
@@ -14944,12 +14944,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930371,
+                "last_reported": 1731931643,
                 "name": "S12 - Barrio Lastarria",
                 "nearby_distance": 1.0,
-                "num_bikes_available": 10,
+                "num_bikes_available": 9,
                 "num_bikes_disabled": 1,
-                "num_docks_available": 0,
+                "num_docks_available": 1,
                 "num_docks_disabled": 0,
                 "obcn": "S12",
                 "physical_configuration": "VAULT",
@@ -14966,7 +14966,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 0,
+                        "count": 1,
                         "vehicle_type_ids": [
                             "FIT",
                             "CC",
@@ -14981,7 +14981,7 @@
                         "vehicle_type_id": "CC"
                     },
                     {
-                        "count": 10,
+                        "count": 9,
                         "vehicle_type_id": "FIT"
                     },
                     {
@@ -15017,12 +15017,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930356,
+                "last_reported": 1731931633,
                 "name": "P03 - Suecia / El Vergel",
                 "nearby_distance": 1.0,
-                "num_bikes_available": 3,
+                "num_bikes_available": 1,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 8,
+                "num_docks_available": 10,
                 "num_docks_disabled": 0,
                 "obcn": "P03",
                 "physical_configuration": "VAULT",
@@ -15039,7 +15039,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 8,
+                        "count": 10,
                         "vehicle_type_ids": [
                             "FIT",
                             "CC",
@@ -15058,7 +15058,7 @@
                         "vehicle_type_id": "FIT"
                     },
                     {
-                        "count": 3,
+                        "count": 1,
                         "vehicle_type_id": "BATTLE_MEC"
                     },
                     {
@@ -15090,7 +15090,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930224,
+                "last_reported": 1731931747,
                 "name": "S23 - Portugal / Santa Victoria",
                 "nearby_distance": 1.0,
                 "num_bikes_available": 16,
@@ -15162,12 +15162,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930347,
+                "last_reported": 1731931808,
                 "name": "V07 - Bicentenario",
                 "nearby_distance": 1.0,
-                "num_bikes_available": 1,
+                "num_bikes_available": 2,
                 "num_bikes_disabled": 1,
-                "num_docks_available": 15,
+                "num_docks_available": 14,
                 "num_docks_disabled": 0,
                 "obcn": "V07",
                 "physical_configuration": "VAULT",
@@ -15183,7 +15183,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 15,
+                        "count": 14,
                         "vehicle_type_ids": [
                             "FIT",
                             "CC",
@@ -15198,7 +15198,7 @@
                         "vehicle_type_id": "CC"
                     },
                     {
-                        "count": 0,
+                        "count": 1,
                         "vehicle_type_id": "FIT"
                     },
                     {
@@ -15234,12 +15234,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930476,
+                "last_reported": 1731931761,
                 "name": "V34 - Mestizo",
                 "nearby_distance": 1.0,
-                "num_bikes_available": 14,
+                "num_bikes_available": 15,
                 "num_bikes_disabled": 1,
-                "num_docks_available": 8,
+                "num_docks_available": 7,
                 "num_docks_disabled": 0,
                 "obcn": "V34",
                 "physical_configuration": "VAULT",
@@ -15255,7 +15255,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 8,
+                        "count": 7,
                         "vehicle_type_ids": [
                             "FIT",
                             "CC",
@@ -15270,7 +15270,7 @@
                         "vehicle_type_id": "CC"
                     },
                     {
-                        "count": 9,
+                        "count": 10,
                         "vehicle_type_id": "FIT"
                     },
                     {
@@ -15306,12 +15306,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930469,
+                "last_reported": 1731931749,
                 "name": "V35 - Municipalidad de Vitacura",
                 "nearby_distance": 1.0,
-                "num_bikes_available": 6,
+                "num_bikes_available": 7,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 9,
+                "num_docks_available": 8,
                 "num_docks_disabled": 0,
                 "obcn": "V35",
                 "physical_configuration": "VAULT",
@@ -15327,7 +15327,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 9,
+                        "count": 8,
                         "vehicle_type_ids": [
                             "FIT",
                             "CC",
@@ -15342,7 +15342,7 @@
                         "vehicle_type_id": "CC"
                     },
                     {
-                        "count": 4,
+                        "count": 5,
                         "vehicle_type_id": "FIT"
                     },
                     {
@@ -15378,12 +15378,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930489,
+                "last_reported": 1731931769,
                 "name": "V10 - Casa Costanera",
                 "nearby_distance": 1.0,
-                "num_bikes_available": 1,
+                "num_bikes_available": 8,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 10,
+                "num_docks_available": 3,
                 "num_docks_disabled": 0,
                 "obcn": "V10",
                 "physical_configuration": "VAULT",
@@ -15399,7 +15399,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 10,
+                        "count": 3,
                         "vehicle_type_ids": [
                             "FIT",
                             "CC",
@@ -15414,7 +15414,7 @@
                         "vehicle_type_id": "CC"
                     },
                     {
-                        "count": 1,
+                        "count": 8,
                         "vehicle_type_id": "FIT"
                     },
                     {
@@ -15450,12 +15450,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930367,
+                "last_reported": 1731931642,
                 "name": "V37 - Naciones Unidas",
                 "nearby_distance": 1000.0,
-                "num_bikes_available": 2,
+                "num_bikes_available": 7,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 33,
+                "num_docks_available": 28,
                 "num_docks_disabled": 0,
                 "obcn": "V37",
                 "physical_configuration": "VAULT",
@@ -15472,7 +15472,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 33,
+                        "count": 28,
                         "vehicle_type_ids": [
                             "FIT",
                             "CC",
@@ -15487,11 +15487,11 @@
                         "vehicle_type_id": "CC"
                     },
                     {
-                        "count": 2,
+                        "count": 4,
                         "vehicle_type_id": "FIT"
                     },
                     {
-                        "count": 0,
+                        "count": 3,
                         "vehicle_type_id": "BATTLE_MEC"
                     },
                     {
@@ -15523,12 +15523,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930350,
+                "last_reported": 1731931640,
                 "name": "P04 - Costanera Center 1",
                 "nearby_distance": 1.0,
-                "num_bikes_available": 6,
+                "num_bikes_available": 11,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 35,
+                "num_docks_available": 30,
                 "num_docks_disabled": 0,
                 "obcn": "P04",
                 "physical_configuration": "REGULAR",
@@ -15546,7 +15546,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 35,
+                        "count": 30,
                         "vehicle_type_ids": [
                             "FIT",
                             "CC",
@@ -15561,7 +15561,7 @@
                         "vehicle_type_id": "CC"
                     },
                     {
-                        "count": 2,
+                        "count": 7,
                         "vehicle_type_id": "FIT"
                     },
                     {
@@ -15597,7 +15597,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930433,
+                "last_reported": 1731931709,
                 "name": "S09 - Santo Domingo / Morand\u00e9",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 15,
@@ -15671,7 +15671,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930473,
+                "last_reported": 1731931745,
                 "name": "S27 - Teatinos / Hu\u00e9rfanos",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 16,
@@ -15747,9 +15747,9 @@
                 "last_reported": 1731929659,
                 "name": "S19 - Palacio de La Moneda",
                 "nearby_distance": 1000.0,
-                "num_bikes_available": 27,
-                "num_bikes_disabled": 1,
-                "num_docks_available": 7,
+                "num_bikes_available": 30,
+                "num_bikes_disabled": 2,
+                "num_docks_available": 3,
                 "num_docks_disabled": 0,
                 "obcn": "S19",
                 "physical_configuration": "VAULT",
@@ -15766,7 +15766,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 7,
+                        "count": 3,
                         "vehicle_type_ids": [
                             "FIT",
                             "CC",
@@ -15785,7 +15785,7 @@
                         "vehicle_type_id": "FIT"
                     },
                     {
-                        "count": 23,
+                        "count": 26,
                         "vehicle_type_id": "BATTLE_MEC"
                     },
                     {
@@ -15817,7 +15817,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930505,
+                "last_reported": 1731931780,
                 "name": "S20 - Metro Santa Luc\u00eda",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 14,
@@ -15890,12 +15890,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930477,
+                "last_reported": 1731931752,
                 "name": "S01 - Agustinas / Manuel Rodr\u00edguez Norte",
                 "nearby_distance": 1000.0,
-                "num_bikes_available": 14,
+                "num_bikes_available": 13,
                 "num_bikes_disabled": 2,
-                "num_docks_available": 1,
+                "num_docks_available": 2,
                 "num_docks_disabled": 0,
                 "obcn": "S01",
                 "physical_configuration": "VAULT",
@@ -15912,7 +15912,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 1,
+                        "count": 2,
                         "vehicle_type_ids": [
                             "FIT",
                             "CC",
@@ -15927,7 +15927,7 @@
                         "vehicle_type_id": "CC"
                     },
                     {
-                        "count": 9,
+                        "count": 8,
                         "vehicle_type_id": "FIT"
                     },
                     {
@@ -15963,7 +15963,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930497,
+                "last_reported": 1731931775,
                 "name": "P05 - Costanera Center 2",
                 "nearby_distance": 1.0,
                 "num_bikes_available": 1,
@@ -16037,12 +16037,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930507,
+                "last_reported": 1731931780,
                 "name": "S03 - Teatinos / General Mackenna",
                 "nearby_distance": 1000.0,
-                "num_bikes_available": 11,
+                "num_bikes_available": 13,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 5,
+                "num_docks_available": 3,
                 "num_docks_disabled": 0,
                 "obcn": "S03",
                 "physical_configuration": "VAULT",
@@ -16059,7 +16059,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 5,
+                        "count": 3,
                         "vehicle_type_ids": [
                             "FIT",
                             "CC",
@@ -16074,7 +16074,7 @@
                         "vehicle_type_id": "CC"
                     },
                     {
-                        "count": 6,
+                        "count": 8,
                         "vehicle_type_id": "FIT"
                     },
                     {
@@ -16110,7 +16110,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930454,
+                "last_reported": 1731931726,
                 "name": "S25 - Plaza de Armas",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 9,
@@ -16183,7 +16183,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930491,
+                "last_reported": 1731931768,
                 "name": "S05 - Metro Bellas Artes",
                 "nearby_distance": 1.0,
                 "num_bikes_available": 14,
@@ -16221,11 +16221,11 @@
                         "vehicle_type_id": "CC"
                     },
                     {
-                        "count": 5,
+                        "count": 4,
                         "vehicle_type_id": "FIT"
                     },
                     {
-                        "count": 9,
+                        "count": 10,
                         "vehicle_type_id": "BATTLE_MEC"
                     },
                     {
@@ -16257,12 +16257,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930495,
+                "last_reported": 1731931773,
                 "name": "P06 - Duoc (Antonio Varas)",
                 "nearby_distance": 1.0,
-                "num_bikes_available": 11,
+                "num_bikes_available": 12,
                 "num_bikes_disabled": 2,
-                "num_docks_available": 2,
+                "num_docks_available": 1,
                 "num_docks_disabled": 0,
                 "obcn": "P06",
                 "physical_configuration": "REGULAR",
@@ -16280,7 +16280,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 2,
+                        "count": 1,
                         "vehicle_type_ids": [
                             "FIT",
                             "CC",
@@ -16295,7 +16295,7 @@
                         "vehicle_type_id": "CC"
                     },
                     {
-                        "count": 7,
+                        "count": 8,
                         "vehicle_type_id": "FIT"
                     },
                     {
@@ -16331,12 +16331,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930489,
+                "last_reported": 1731931761,
                 "name": "S18 - Metro Santa Ana",
                 "nearby_distance": 1000.0,
-                "num_bikes_available": 11,
+                "num_bikes_available": 14,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 12,
+                "num_docks_available": 9,
                 "num_docks_disabled": 0,
                 "obcn": "S18",
                 "physical_configuration": "VAULT",
@@ -16353,7 +16353,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 12,
+                        "count": 9,
                         "vehicle_type_ids": [
                             "FIT",
                             "CC",
@@ -16368,11 +16368,11 @@
                         "vehicle_type_id": "CC"
                     },
                     {
-                        "count": 7,
+                        "count": 8,
                         "vehicle_type_id": "FIT"
                     },
                     {
-                        "count": 4,
+                        "count": 6,
                         "vehicle_type_id": "BATTLE_MEC"
                     },
                     {
@@ -16404,7 +16404,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930362,
+                "last_reported": 1731931640,
                 "name": "S21 - Metro Quinta Normal",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 9,
@@ -16477,7 +16477,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930417,
+                "last_reported": 1731931691,
                 "name": "S24 - Plaza Yungay",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 11,
@@ -16549,7 +16549,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930359,
+                "last_reported": 1731931637,
                 "name": "S07 - Metro Los H\u00e9roes",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 9,
@@ -16623,12 +16623,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930438,
+                "last_reported": 1731931715,
                 "name": "S64 - Rep\u00fablica / Gorbea",
                 "nearby_distance": 1000.0,
-                "num_bikes_available": 13,
+                "num_bikes_available": 14,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 2,
+                "num_docks_available": 1,
                 "num_docks_disabled": 0,
                 "obcn": "S64",
                 "physical_configuration": "VAULT",
@@ -16645,7 +16645,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 2,
+                        "count": 1,
                         "vehicle_type_ids": [
                             "FIT",
                             "CC",
@@ -16660,7 +16660,7 @@
                         "vehicle_type_id": "CC"
                     },
                     {
-                        "count": 6,
+                        "count": 7,
                         "vehicle_type_id": "FIT"
                     },
                     {
@@ -16696,12 +16696,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930362,
+                "last_reported": 1731931644,
                 "name": "S30 - San Pablo",
                 "nearby_distance": 1000.0,
-                "num_bikes_available": 12,
+                "num_bikes_available": 3,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 3,
+                "num_docks_available": 12,
                 "num_docks_disabled": 0,
                 "obcn": "S30",
                 "physical_configuration": "VAULT",
@@ -16718,7 +16718,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 3,
+                        "count": 12,
                         "vehicle_type_ids": [
                             "FIT",
                             "CC",
@@ -16733,11 +16733,11 @@
                         "vehicle_type_id": "CC"
                     },
                     {
-                        "count": 10,
+                        "count": 2,
                         "vehicle_type_id": "FIT"
                     },
                     {
-                        "count": 2,
+                        "count": 1,
                         "vehicle_type_id": "BATTLE_MEC"
                     },
                     {
@@ -16769,12 +16769,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1731930386,
+                "last_reported": 1731931670,
                 "name": "I01 - Metro Hospitales",
                 "nearby_distance": 400.0,
-                "num_bikes_available": 11,
+                "num_bikes_available": 4,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 4,
+                "num_docks_available": 11,
                 "num_docks_disabled": 0,
                 "obcn": "I01",
                 "physical_configuration": "REGULAR",
@@ -16792,7 +16792,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 4,
+                        "count": 11,
                         "vehicle_type_ids": [
                             "FIT",
                             "CC",
@@ -16807,11 +16807,11 @@
                         "vehicle_type_id": "CC"
                     },
                     {
-                        "count": 6,
+                        "count": 1,
                         "vehicle_type_id": "FIT"
                     },
                     {
-                        "count": 5,
+                        "count": 3,
                         "vehicle_type_id": "BATTLE_MEC"
                     },
                     {
