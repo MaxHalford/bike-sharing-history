@@ -21,7 +21,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1733099129,
+                "last_reported": 1733100582,
                 "name": "1 - Mercado",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 5,
@@ -104,7 +104,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1733099123,
+                "last_reported": 1733100578,
                 "name": "10 - UFRGS Administra\u00e7\u00e3o",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 15,
@@ -184,7 +184,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1733099075,
+                "last_reported": 1733100532,
                 "name": "94 - Pra\u00e7a Jaime Telles",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 0,
@@ -266,7 +266,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1733099081,
+                "last_reported": 1733100537,
                 "name": "95 - Monsenhor Veras",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 1,
@@ -348,7 +348,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1733099158,
+                "last_reported": 1733100614,
                 "name": "96 - Mata Bacelar - Mariland",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 2,
@@ -430,7 +430,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1733099159,
+                "last_reported": 1733100611,
                 "name": "99 - Marcelo Gama",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 3,
@@ -512,12 +512,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1733099135,
+                "last_reported": 1733100590,
                 "name": "62 - Rua Dona Eug\u00eania",
                 "nearby_distance": 1000.0,
-                "num_bikes_available": 2,
+                "num_bikes_available": 3,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 9,
+                "num_docks_available": 8,
                 "num_docks_disabled": 1,
                 "obcn": "",
                 "physical_configuration": "REGULAR",
@@ -535,7 +535,89 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 9,
+                        "count": 8,
+                        "vehicle_type_ids": [
+                            "FIT",
+                            "PEDALLA",
+                            "Pedalla2",
+                            "Battle2",
+                            "BATTLE",
+                            "OKAI"
+                        ]
+                    }
+                ],
+                "vehicle_types_available": [
+                    {
+                        "count": 0,
+                        "vehicle_type_id": "Battle2"
+                    },
+                    {
+                        "count": 3,
+                        "vehicle_type_id": "FIT"
+                    },
+                    {
+                        "count": 0,
+                        "vehicle_type_id": "OKAI"
+                    },
+                    {
+                        "count": 0,
+                        "vehicle_type_id": "Pedalla2"
+                    },
+                    {
+                        "count": 0,
+                        "vehicle_type_id": "PEDALLA"
+                    },
+                    {
+                        "count": 0,
+                        "vehicle_type_id": "BATTLE"
+                    }
+                ]
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -51.19697944047547,
+                    -30.039472074962816
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "address": "Av. Neusa Goulart Brizola, em frente ao n\u00famero 70 / esquina com R. Santa Cec\u00edlia",
+                "altitude": 0.0,
+                "capacity": 15,
+                "geofenced_capacity": 0,
+                "groups": [],
+                "is_charging_station": false,
+                "is_installed": true,
+                "is_renting": true,
+                "is_returning": true,
+                "is_virtual_station": false,
+                "last_reported": 1733100663,
+                "name": "63 -  Av. Neusa Goulart Brizola",
+                "nearby_distance": 1000.0,
+                "num_bikes_available": 2,
+                "num_bikes_disabled": 0,
+                "num_docks_available": 13,
+                "num_docks_disabled": 0,
+                "obcn": "",
+                "physical_configuration": "REGULAR",
+                "post_code": "90420-228",
+                "rental_methods": [
+                    "KEY",
+                    "TRANSITCARD",
+                    "CREDITCARD",
+                    "PHONE"
+                ],
+                "rental_uris": {},
+                "short_name": "",
+                "station_id": "107",
+                "status": "IN_SERVICE",
+                "traffic": null,
+                "vehicle_docks_available": [
+                    {
+                        "count": 13,
                         "vehicle_type_ids": [
                             "FIT",
                             "PEDALLA",
@@ -578,88 +660,6 @@
         {
             "geometry": {
                 "coordinates": [
-                    -51.19697944047547,
-                    -30.039472074962816
-                ],
-                "type": "Point"
-            },
-            "properties": {
-                "address": "Av. Neusa Goulart Brizola, em frente ao n\u00famero 70 / esquina com R. Santa Cec\u00edlia",
-                "altitude": 0.0,
-                "capacity": 15,
-                "geofenced_capacity": 0,
-                "groups": [],
-                "is_charging_station": false,
-                "is_installed": true,
-                "is_renting": true,
-                "is_returning": true,
-                "is_virtual_station": false,
-                "last_reported": 1733099206,
-                "name": "63 -  Av. Neusa Goulart Brizola",
-                "nearby_distance": 1000.0,
-                "num_bikes_available": 1,
-                "num_bikes_disabled": 0,
-                "num_docks_available": 14,
-                "num_docks_disabled": 0,
-                "obcn": "",
-                "physical_configuration": "REGULAR",
-                "post_code": "90420-228",
-                "rental_methods": [
-                    "KEY",
-                    "TRANSITCARD",
-                    "CREDITCARD",
-                    "PHONE"
-                ],
-                "rental_uris": {},
-                "short_name": "",
-                "station_id": "107",
-                "status": "IN_SERVICE",
-                "traffic": null,
-                "vehicle_docks_available": [
-                    {
-                        "count": 14,
-                        "vehicle_type_ids": [
-                            "FIT",
-                            "PEDALLA",
-                            "Pedalla2",
-                            "Battle2",
-                            "BATTLE",
-                            "OKAI"
-                        ]
-                    }
-                ],
-                "vehicle_types_available": [
-                    {
-                        "count": 0,
-                        "vehicle_type_id": "Battle2"
-                    },
-                    {
-                        "count": 1,
-                        "vehicle_type_id": "FIT"
-                    },
-                    {
-                        "count": 0,
-                        "vehicle_type_id": "OKAI"
-                    },
-                    {
-                        "count": 0,
-                        "vehicle_type_id": "Pedalla2"
-                    },
-                    {
-                        "count": 0,
-                        "vehicle_type_id": "PEDALLA"
-                    },
-                    {
-                        "count": 0,
-                        "vehicle_type_id": "BATTLE"
-                    }
-                ]
-            },
-            "type": "Feature"
-        },
-        {
-            "geometry": {
-                "coordinates": [
                     -51.19192803439332,
                     -30.038829524387808
                 ],
@@ -676,7 +676,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1733099155,
+                "last_reported": 1733100631,
                 "name": "64 - Pra\u00e7a Andr\u00e9 Forster",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 1,
@@ -758,7 +758,7 @@
                 "is_renting": false,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1733099150,
+                "last_reported": 1733100606,
                 "name": "69 - Dea Coufal",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 9,
@@ -842,12 +842,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1733099136,
+                "last_reported": 1733100585,
                 "name": "11 - Caminho dos Antiqu\u00e1rios",
                 "nearby_distance": 1000.0,
-                "num_bikes_available": 8,
+                "num_bikes_available": 10,
                 "num_bikes_disabled": 1,
-                "num_docks_available": 6,
+                "num_docks_available": 4,
                 "num_docks_disabled": 0,
                 "obcn": "11",
                 "physical_configuration": "VAULT",
@@ -863,7 +863,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 6,
+                        "count": 4,
                         "vehicle_type_ids": [
                             "FIT",
                             "PEDALLA",
@@ -880,7 +880,7 @@
                         "vehicle_type_id": "Battle2"
                     },
                     {
-                        "count": 8,
+                        "count": 10,
                         "vehicle_type_id": "FIT"
                     },
                     {
@@ -922,7 +922,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1733099127,
+                "last_reported": 1733100586,
                 "name": "72 - Avenida Tramanda\u00ed",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 3,
@@ -1004,7 +1004,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1733099045,
+                "last_reported": 1733100498,
                 "name": "73 - Parque Germ\u00e2nia",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 2,
@@ -1086,7 +1086,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1733099046,
+                "last_reported": 1733100495,
                 "name": "74 - Shopping Iguatemi / Bourbon",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 4,
@@ -1168,7 +1168,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1733099144,
+                "last_reported": 1733100604,
                 "name": "75 - PUC Acesso Bento Gon\u00e7alves",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 0,
@@ -1250,7 +1250,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1733099196,
+                "last_reported": 1733100651,
                 "name": "76 - PUC Parque Esportivo",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 1,
@@ -1332,7 +1332,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1733099067,
+                "last_reported": 1733100521,
                 "name": "77 - PUC Acesso Ipiranga",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 1,
@@ -1414,7 +1414,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1733099081,
+                "last_reported": 1733100534,
                 "name": "78 - Bourbon Shopping Ipiranga",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 3,
@@ -1496,7 +1496,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1733099102,
+                "last_reported": 1733100557,
                 "name": "82 - Metr\u00f4 S\u00e3o Pedro",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 11,
@@ -1580,12 +1580,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1733099099,
+                "last_reported": 1733100551,
                 "name": "12 - UFRGS Arquitetura",
                 "nearby_distance": 1000.0,
-                "num_bikes_available": 2,
+                "num_bikes_available": 3,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 21,
+                "num_docks_available": 20,
                 "num_docks_disabled": 0,
                 "obcn": "12",
                 "physical_configuration": "VAULT",
@@ -1601,7 +1601,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 21,
+                        "count": 20,
                         "vehicle_type_ids": [
                             "FIT",
                             "PEDALLA",
@@ -1618,7 +1618,7 @@
                         "vehicle_type_id": "Battle2"
                     },
                     {
-                        "count": 2,
+                        "count": 3,
                         "vehicle_type_id": "FIT"
                     },
                     {
@@ -1660,7 +1660,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1733099107,
+                "last_reported": 1733100566,
                 "name": "84 - Avenida S\u00e3o Pedro 645",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 11,
@@ -1742,7 +1742,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1733099196,
+                "last_reported": 1733100652,
                 "name": "45 - Pra\u00e7a Marselhesa",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 4,
@@ -1824,7 +1824,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1733099151,
+                "last_reported": 1733100611,
                 "name": "65 - Pra\u00e7a da Encol",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 5,
@@ -1908,13 +1908,13 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1733099041,
+                "last_reported": 1733100672,
                 "name": "13 - FARSUL",
                 "nearby_distance": 1000.0,
-                "num_bikes_available": 4,
+                "num_bikes_available": 3,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 11,
-                "num_docks_disabled": 0,
+                "num_docks_available": 12,
+                "num_docks_disabled": 1,
                 "obcn": "13",
                 "physical_configuration": "VAULT",
                 "rental_methods": [
@@ -1929,7 +1929,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 11,
+                        "count": 12,
                         "vehicle_type_ids": [
                             "FIT",
                             "PEDALLA",
@@ -1946,7 +1946,7 @@
                         "vehicle_type_id": "Battle2"
                     },
                     {
-                        "count": 4,
+                        "count": 3,
                         "vehicle_type_id": "FIT"
                     },
                     {
@@ -1990,12 +1990,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1733099093,
+                "last_reported": 1733100544,
                 "name": "14 - Lima e Silva",
                 "nearby_distance": 1000.0,
-                "num_bikes_available": 5,
+                "num_bikes_available": 3,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 14,
+                "num_docks_available": 16,
                 "num_docks_disabled": 1,
                 "obcn": "14",
                 "physical_configuration": "VAULT",
@@ -2011,7 +2011,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 14,
+                        "count": 16,
                         "vehicle_type_ids": [
                             "FIT",
                             "PEDALLA",
@@ -2028,7 +2028,7 @@
                         "vehicle_type_id": "Battle2"
                     },
                     {
-                        "count": 5,
+                        "count": 3,
                         "vehicle_type_id": "FIT"
                     },
                     {
@@ -2072,12 +2072,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1733099202,
+                "last_reported": 1733100648,
                 "name": "15 - Rua Alberto T\u00f4rres",
                 "nearby_distance": 1000.0,
-                "num_bikes_available": 2,
+                "num_bikes_available": 3,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 9,
+                "num_docks_available": 8,
                 "num_docks_disabled": 2,
                 "obcn": "15",
                 "physical_configuration": "VAULT",
@@ -2093,7 +2093,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 9,
+                        "count": 8,
                         "vehicle_type_ids": [
                             "FIT",
                             "PEDALLA",
@@ -2110,7 +2110,7 @@
                         "vehicle_type_id": "Battle2"
                     },
                     {
-                        "count": 2,
+                        "count": 3,
                         "vehicle_type_id": "FIT"
                     },
                     {
@@ -2154,7 +2154,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1733099067,
+                "last_reported": 1733100522,
                 "name": "16 - Rep\u00fablica",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 15,
@@ -2236,12 +2236,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1733099114,
+                "last_reported": 1733100564,
                 "name": "17 - Pra\u00e7a Isabel",
                 "nearby_distance": 1000.0,
-                "num_bikes_available": 6,
+                "num_bikes_available": 5,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 9,
+                "num_docks_available": 10,
                 "num_docks_disabled": 0,
                 "obcn": "17",
                 "physical_configuration": "REGULAR",
@@ -2258,7 +2258,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 9,
+                        "count": 10,
                         "vehicle_type_ids": [
                             "FIT",
                             "PEDALLA",
@@ -2275,7 +2275,7 @@
                         "vehicle_type_id": "Battle2"
                     },
                     {
-                        "count": 6,
+                        "count": 5,
                         "vehicle_type_id": "FIT"
                     },
                     {
@@ -2319,13 +2319,13 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1733099045,
+                "last_reported": 1733100501,
                 "name": "19 - R\u00f3tula do Gas\u00f4metro",
                 "nearby_distance": 1000.0,
-                "num_bikes_available": 26,
+                "num_bikes_available": 29,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 5,
-                "num_docks_disabled": 1,
+                "num_docks_available": 2,
+                "num_docks_disabled": 0,
                 "obcn": "19",
                 "physical_configuration": "VAULT",
                 "rental_methods": [
@@ -2340,7 +2340,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 5,
+                        "count": 2,
                         "vehicle_type_ids": [
                             "FIT",
                             "PEDALLA",
@@ -2357,7 +2357,7 @@
                         "vehicle_type_id": "Battle2"
                     },
                     {
-                        "count": 26,
+                        "count": 29,
                         "vehicle_type_id": "FIT"
                     },
                     {
@@ -2401,12 +2401,12 @@
                 "is_renting": false,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1733099189,
+                "last_reported": 1733100643,
                 "name": "20 - Praia de Belas",
                 "nearby_distance": 1000.0,
-                "num_bikes_available": 1,
+                "num_bikes_available": 2,
                 "num_bikes_disabled": 2,
-                "num_docks_available": 12,
+                "num_docks_available": 11,
                 "num_docks_disabled": 0,
                 "obcn": "20",
                 "physical_configuration": "VAULT",
@@ -2422,7 +2422,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 12,
+                        "count": 11,
                         "vehicle_type_ids": [
                             "FIT",
                             "PEDALLA",
@@ -2439,7 +2439,7 @@
                         "vehicle_type_id": "Battle2"
                     },
                     {
-                        "count": 1,
+                        "count": 2,
                         "vehicle_type_id": "FIT"
                     },
                     {
@@ -2483,12 +2483,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1733099166,
+                "last_reported": 1733100623,
                 "name": "21 - Pra\u00e7a It\u00e1lia",
                 "nearby_distance": 1000.0,
-                "num_bikes_available": 11,
+                "num_bikes_available": 10,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 12,
+                "num_docks_available": 13,
                 "num_docks_disabled": 1,
                 "obcn": "21",
                 "physical_configuration": "VAULT",
@@ -2504,7 +2504,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 12,
+                        "count": 13,
                         "vehicle_type_ids": [
                             "FIT",
                             "PEDALLA",
@@ -2521,7 +2521,7 @@
                         "vehicle_type_id": "Battle2"
                     },
                     {
-                        "count": 11,
+                        "count": 10,
                         "vehicle_type_id": "FIT"
                     },
                     {
@@ -2565,7 +2565,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1733099158,
+                "last_reported": 1733100610,
                 "name": "22 - Av. Bastian",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 7,
@@ -2648,7 +2648,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1733099166,
+                "last_reported": 1733100618,
                 "name": "24 - Cascatinha",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 0,
@@ -2731,7 +2731,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1733099204,
+                "last_reported": 1733100473,
                 "name": "26 - Pra\u00e7a Garibaldi",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 4,
@@ -2813,12 +2813,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1733099056,
+                "last_reported": 1733100507,
                 "name": "27 - Esta\u00e7\u00e3o Jo\u00e3o Pessoa",
                 "nearby_distance": 1000.0,
-                "num_bikes_available": 3,
+                "num_bikes_available": 2,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 12,
+                "num_docks_available": 13,
                 "num_docks_disabled": 0,
                 "obcn": "27",
                 "physical_configuration": "VAULT",
@@ -2834,7 +2834,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 12,
+                        "count": 13,
                         "vehicle_type_ids": [
                             "FIT",
                             "PEDALLA",
@@ -2851,7 +2851,7 @@
                         "vehicle_type_id": "Battle2"
                     },
                     {
-                        "count": 3,
+                        "count": 2,
                         "vehicle_type_id": "FIT"
                     },
                     {
@@ -2895,7 +2895,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1733099204,
+                "last_reported": 1733100656,
                 "name": "28 - Av. Ven\u00e2ncio Aires",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 6,
@@ -2977,7 +2977,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1733099071,
+                "last_reported": 1733100521,
                 "name": "29 - Pra\u00e7a Maj. Joaquim de Queir\u00f3s",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 3,
@@ -3059,7 +3059,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1733099064,
+                "last_reported": 1733100521,
                 "name": "3 - Casa de Cultura M\u00e1rio Quintana",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 5,
@@ -3142,7 +3142,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1733099162,
+                "last_reported": 1733100613,
                 "name": "38 - UFRGS Campus Sa\u00fade",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 0,
@@ -3225,7 +3225,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1733099086,
+                "last_reported": 1733100536,
                 "name": "32 - Hospital de Cl\u00ednicas",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 3,
@@ -3308,12 +3308,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1733099117,
+                "last_reported": 1733100564,
                 "name": "33 - Reden\u00e7\u00e3o Mercadinho",
                 "nearby_distance": 1000.0,
-                "num_bikes_available": 2,
+                "num_bikes_available": 6,
                 "num_bikes_disabled": 1,
-                "num_docks_available": 20,
+                "num_docks_available": 16,
                 "num_docks_disabled": 0,
                 "obcn": "33",
                 "physical_configuration": "REGULAR",
@@ -3330,7 +3330,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 20,
+                        "count": 16,
                         "vehicle_type_ids": [
                             "FIT",
                             "PEDALLA",
@@ -3347,7 +3347,7 @@
                         "vehicle_type_id": "Battle2"
                     },
                     {
-                        "count": 2,
+                        "count": 6,
                         "vehicle_type_id": "FIT"
                     },
                     {
@@ -3391,7 +3391,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1733099177,
+                "last_reported": 1733100624,
                 "name": "34 - Barros Cassal",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 0,
@@ -3473,7 +3473,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1733099045,
+                "last_reported": 1733100674,
                 "name": "35 - Irm\u00e3o Jos\u00e9 Otao",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 1,
@@ -3556,7 +3556,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1733099059,
+                "last_reported": 1733100510,
                 "name": "36 - Fernandes Vieira",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 1,
@@ -3639,7 +3639,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1733099141,
+                "last_reported": 1733100600,
                 "name": "37 - Rua Miguel Tostes",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 1,
@@ -3722,7 +3722,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1733099114,
+                "last_reported": 1733100571,
                 "name": "39 - Goethe",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 0,
@@ -3805,7 +3805,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1733099130,
+                "last_reported": 1733100577,
                 "name": "4 - Museu J\u00falio de Castilhos",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 0,
@@ -3887,7 +3887,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1733099063,
+                "last_reported": 1733100511,
                 "name": "40 - Parc\u00e3o",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 0,
@@ -3970,7 +3970,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1733099057,
+                "last_reported": 1733100512,
                 "name": "41 - Iber\u00ea",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 13,
@@ -4053,12 +4053,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1733099075,
+                "last_reported": 1733100527,
                 "name": "5 - Rua Fernando Machado",
                 "nearby_distance": 1000.0,
-                "num_bikes_available": 3,
+                "num_bikes_available": 7,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 8,
+                "num_docks_available": 4,
                 "num_docks_disabled": 0,
                 "obcn": "5",
                 "physical_configuration": "VAULT",
@@ -4074,7 +4074,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 8,
+                        "count": 4,
                         "vehicle_type_ids": [
                             "FIT",
                             "PEDALLA",
@@ -4091,7 +4091,7 @@
                         "vehicle_type_id": "Battle2"
                     },
                     {
-                        "count": 3,
+                        "count": 7,
                         "vehicle_type_id": "FIT"
                     },
                     {
@@ -4135,7 +4135,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1733099152,
+                "last_reported": 1733100600,
                 "name": "09 - Barra Shopping",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 8,
@@ -4219,7 +4219,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1733099148,
+                "last_reported": 1733100600,
                 "name": "6 - Skate Park",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 21,
@@ -4302,12 +4302,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1733099188,
+                "last_reported": 1733100635,
                 "name": "23 - Parque Farroupilha",
                 "nearby_distance": 1000.0,
-                "num_bikes_available": 2,
+                "num_bikes_available": 3,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 17,
+                "num_docks_available": 16,
                 "num_docks_disabled": 0,
                 "obcn": "023",
                 "physical_configuration": "REGULAR",
@@ -4325,7 +4325,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 17,
+                        "count": 16,
                         "vehicle_type_ids": [
                             "FIT",
                             "PEDALLA",
@@ -4342,7 +4342,7 @@
                         "vehicle_type_id": "Battle2"
                     },
                     {
-                        "count": 2,
+                        "count": 3,
                         "vehicle_type_id": "FIT"
                     },
                     {
@@ -4386,7 +4386,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1733099141,
+                "last_reported": 1733100589,
                 "name": "30 -  Vieira de Castro",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 1,
@@ -4470,7 +4470,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1733099088,
+                "last_reported": 1733100537,
                 "name": "31 - Rua Botafogo",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 5,
@@ -4552,7 +4552,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1733099148,
+                "last_reported": 1733100606,
                 "name": "60 - PARC\u00c3O 2",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 2,
@@ -4636,7 +4636,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1733099140,
+                "last_reported": 1733100587,
                 "name": "42 - Mariante",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 3,
@@ -4719,7 +4719,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1733099057,
+                "last_reported": 1733100509,
                 "name": "43 - UFRGS Psicologia",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 1,
@@ -4802,7 +4802,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1733099213,
+                "last_reported": 1733100671,
                 "name": "44 - McDonald's Ipiranga",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 1,
@@ -4885,7 +4885,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1733099117,
+                "last_reported": 1733100575,
                 "name": "49 - Gr\u00eamio N\u00e1utico Ga\u00facho",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 6,
@@ -4968,12 +4968,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1733099142,
+                "last_reported": 1733100412,
                 "name": "50 - Rua Barbedo",
                 "nearby_distance": 1000.0,
-                "num_bikes_available": 3,
+                "num_bikes_available": 4,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 12,
+                "num_docks_available": 11,
                 "num_docks_disabled": 0,
                 "obcn": "",
                 "physical_configuration": "REGULAR",
@@ -4990,7 +4990,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 12,
+                        "count": 11,
                         "vehicle_type_ids": [
                             "FIT",
                             "PEDALLA",
@@ -5007,7 +5007,7 @@
                         "vehicle_type_id": "Battle2"
                     },
                     {
-                        "count": 3,
+                        "count": 4,
                         "vehicle_type_id": "FIT"
                     },
                     {
@@ -5051,12 +5051,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1733099071,
+                "last_reported": 1733100520,
                 "name": "7 - Usina do Gas\u00f4metro",
                 "nearby_distance": 1000.0,
-                "num_bikes_available": 20,
+                "num_bikes_available": 19,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 7,
+                "num_docks_available": 8,
                 "num_docks_disabled": 0,
                 "obcn": "7",
                 "physical_configuration": "REGULAR",
@@ -5073,7 +5073,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 7,
+                        "count": 8,
                         "vehicle_type_ids": [
                             "FIT",
                             "PEDALLA",
@@ -5090,7 +5090,7 @@
                         "vehicle_type_id": "Battle2"
                     },
                     {
-                        "count": 20,
+                        "count": 19,
                         "vehicle_type_id": "FIT"
                     },
                     {
@@ -5134,7 +5134,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1733099179,
+                "last_reported": 1733100642,
                 "name": "51 - Rua Jos\u00e9 de Alencar",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 13,
@@ -5217,7 +5217,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1733099108,
+                "last_reported": 1733100555,
                 "name": "52 - Pra\u00e7a Menino Deus",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 11,
@@ -5300,7 +5300,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1733099061,
+                "last_reported": 1733100509,
                 "name": "53 - Rua Saldanha Marinho",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 5,
@@ -5383,12 +5383,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1733099145,
+                "last_reported": 1733100594,
                 "name": "54 - Rua Visconde do Herval",
                 "nearby_distance": 1000.0,
-                "num_bikes_available": 0,
+                "num_bikes_available": 1,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 11,
+                "num_docks_available": 10,
                 "num_docks_disabled": 0,
                 "obcn": "",
                 "physical_configuration": "REGULAR",
@@ -5405,7 +5405,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 11,
+                        "count": 10,
                         "vehicle_type_ids": [
                             "FIT",
                             "PEDALLA",
@@ -5422,7 +5422,7 @@
                         "vehicle_type_id": "Battle2"
                     },
                     {
-                        "count": 0,
+                        "count": 1,
                         "vehicle_type_id": "FIT"
                     },
                     {
@@ -5466,7 +5466,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1733099111,
+                "last_reported": 1733100560,
                 "name": "58 - Avenida Di\u00e1rio de Not\u00edcias",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 20,
@@ -5549,7 +5549,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1733099200,
+                "last_reported": 1733100653,
                 "name": "59 - Lima e Silva 1324",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 1,
@@ -5632,7 +5632,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1733099172,
+                "last_reported": 1733100619,
                 "name": "61 - Pra\u00e7a Maur\u00edcio Cardoso",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 0,
@@ -5715,7 +5715,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1733099197,
+                "last_reported": 1733100646,
                 "name": "66 - Rua Fernando Gomes",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 0,
@@ -5798,7 +5798,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1733099042,
+                "last_reported": 1733100496,
                 "name": "67 - Rua Padre Chagas",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 0,
@@ -5881,7 +5881,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1733099100,
+                "last_reported": 1733100551,
                 "name": "85 - Largo dos A\u00e7orianos",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 10,
@@ -5964,12 +5964,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1733099123,
+                "last_reported": 1733100578,
                 "name": "8 - C\u00e2mara dos Vereadores",
                 "nearby_distance": 1000.0,
-                "num_bikes_available": 6,
+                "num_bikes_available": 7,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 13,
+                "num_docks_available": 12,
                 "num_docks_disabled": 0,
                 "obcn": "8",
                 "physical_configuration": "VAULT",
@@ -5985,7 +5985,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 13,
+                        "count": 12,
                         "vehicle_type_ids": [
                             "FIT",
                             "PEDALLA",
@@ -6002,7 +6002,7 @@
                         "vehicle_type_id": "Battle2"
                     },
                     {
-                        "count": 6,
+                        "count": 7,
                         "vehicle_type_id": "FIT"
                     },
                     {
@@ -6046,7 +6046,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1733099144,
+                "last_reported": 1733100593,
                 "name": "91 - Av. Wenceslau Escobar",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 18,
@@ -6129,12 +6129,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1733099111,
+                "last_reported": 1733100566,
                 "name": "92 - Avenida da Azenha",
                 "nearby_distance": 1000.0,
-                "num_bikes_available": 3,
+                "num_bikes_available": 7,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 16,
+                "num_docks_available": 12,
                 "num_docks_disabled": 1,
                 "obcn": "",
                 "physical_configuration": "REGULAR",
@@ -6151,7 +6151,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 16,
+                        "count": 12,
                         "vehicle_type_ids": [
                             "FIT",
                             "PEDALLA",
@@ -6168,7 +6168,7 @@
                         "vehicle_type_id": "Battle2"
                     },
                     {
-                        "count": 3,
+                        "count": 7,
                         "vehicle_type_id": "FIT"
                     },
                     {
@@ -6212,12 +6212,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1733099091,
+                "last_reported": 1733100546,
                 "name": "97 - Par\u00f3quia S\u00e3o Jos\u00e9",
                 "nearby_distance": 1000.0,
-                "num_bikes_available": 2,
+                "num_bikes_available": 4,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 13,
+                "num_docks_available": 11,
                 "num_docks_disabled": 0,
                 "obcn": "",
                 "physical_configuration": "REGULAR",
@@ -6234,7 +6234,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 13,
+                        "count": 11,
                         "vehicle_type_ids": [
                             "FIT",
                             "PEDALLA",
@@ -6251,7 +6251,7 @@
                         "vehicle_type_id": "Battle2"
                     },
                     {
-                        "count": 2,
+                        "count": 4,
                         "vehicle_type_id": "FIT"
                     },
                     {
@@ -6293,7 +6293,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1733099167,
+                "last_reported": 1733100630,
                 "name": "46 - Parque Marinha - Av. Ipiranga",
                 "nearby_distance": 100.0,
                 "num_bikes_available": 10,
@@ -6375,7 +6375,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1733099146,
+                "last_reported": 1733100602,
                 "name": "48 - Parque Jaime Lerner",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 19,
@@ -6457,7 +6457,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1733099101,
+                "last_reported": 1733100556,
                 "name": "55 - Avenida Padre Cacique",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 10,
@@ -6539,12 +6539,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1733099144,
+                "last_reported": 1733100591,
                 "name": "57 - Escola T\u00e9cnica Irm\u00e3o Pedro",
                 "nearby_distance": 1000.0,
-                "num_bikes_available": 4,
+                "num_bikes_available": 5,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 7,
+                "num_docks_available": 6,
                 "num_docks_disabled": 0,
                 "obcn": "",
                 "physical_configuration": "REGULAR",
@@ -6562,7 +6562,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 7,
+                        "count": 6,
                         "vehicle_type_ids": [
                             "FIT",
                             "PEDALLA",
@@ -6579,7 +6579,7 @@
                         "vehicle_type_id": "Battle2"
                     },
                     {
-                        "count": 4,
+                        "count": 5,
                         "vehicle_type_id": "FIT"
                     },
                     {
@@ -6621,7 +6621,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1733099154,
+                "last_reported": 1733100607,
                 "name": "68 - Rua Bordini",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 4,
@@ -6703,7 +6703,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1733099163,
+                "last_reported": 1733100616,
                 "name": "79 - Pra\u00e7a Ruy Teixeira",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 4,
@@ -6785,12 +6785,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1733099139,
+                "last_reported": 1733100601,
                 "name": "80 - Shopping Total",
                 "nearby_distance": 1000.0,
-                "num_bikes_available": 4,
+                "num_bikes_available": 6,
                 "num_bikes_disabled": 1,
-                "num_docks_available": 14,
+                "num_docks_available": 12,
                 "num_docks_disabled": 0,
                 "obcn": "",
                 "physical_configuration": "REGULAR",
@@ -6807,7 +6807,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 14,
+                        "count": 12,
                         "vehicle_type_ids": [
                             "FIT",
                             "PEDALLA",
@@ -6824,7 +6824,7 @@
                         "vehicle_type_id": "Battle2"
                     },
                     {
-                        "count": 4,
+                        "count": 6,
                         "vehicle_type_id": "FIT"
                     },
                     {
@@ -6866,7 +6866,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1733099050,
+                "last_reported": 1733100512,
                 "name": "81 - Rua Santana",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 4,
@@ -6948,7 +6948,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1733099207,
+                "last_reported": 1733100659,
                 "name": "86 - Anfiteatro P\u00f4r-do-Sol",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 6,
@@ -7029,7 +7029,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1733099095,
+                "last_reported": 1733100547,
                 "name": "87 - Terminal Azenha",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 0,
@@ -7111,7 +7111,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1733099187,
+                "last_reported": 1733100643,
                 "name": "88 - Rua Marqu\u00eas do Pombal",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 0,
@@ -7193,7 +7193,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1733099080,
+                "last_reported": 1733100537,
                 "name": "89 - Pra\u00e7a Atos Damaceno Ferreira",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 9,
@@ -7275,7 +7275,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1733099161,
+                "last_reported": 1733100610,
                 "name": "90 - Rua Fabricio Pillar",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 0,
@@ -7357,7 +7357,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1733099209,
+                "last_reported": 1733100666,
                 "name": "93 - Rua S\u00e3o Lu\u00eds",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 3,
