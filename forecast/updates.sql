@@ -1,2 +1,2 @@
-SELECT *
-FROM READ_PARQUET('https://storage.googleapis.com/bike-sharing-history/antwerp/blue-bike/2024/Apr.parquet')
+SELECT filename, *
+FROM READ_PARQUET('gs://bike-sharing-history/toulouse/jcdecaux/*/*.parquet')
