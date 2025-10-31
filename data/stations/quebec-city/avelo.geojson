@@ -22,7 +22,7 @@
                 "is_returning": true,
                 "is_valet_station": false,
                 "is_virtual_station": false,
-                "last_reported": 1761939114,
+                "last_reported": 1761940017,
                 "name": "Parc de la Francophonie",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 12,
@@ -96,12 +96,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1761939185,
+                "last_reported": 1761940088,
                 "name": "Mus\u00e9e des plaines d'Abraham",
                 "nearby_distance": 1000.0,
-                "num_bikes_available": 1,
+                "num_bikes_available": 0,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 16,
+                "num_docks_available": 17,
                 "num_docks_disabled": 0,
                 "obcn": "",
                 "physical_configuration": "REGULAR",
@@ -118,7 +118,154 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 16,
+                        "count": 17,
+                        "vehicle_type_ids": [
+                            "EFIT",
+                            "BOOST",
+                            "ICONIC",
+                            "FIT"
+                        ]
+                    }
+                ],
+                "vehicle_types_available": [
+                    {
+                        "count": 0,
+                        "vehicle_type_id": "FIT"
+                    },
+                    {
+                        "count": 0,
+                        "vehicle_type_id": "ICONIC"
+                    },
+                    {
+                        "count": 0,
+                        "vehicle_type_id": "BOOST"
+                    },
+                    {
+                        "count": 0,
+                        "vehicle_type_id": "EFIT"
+                    }
+                ]
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -71.30060636888116,
+                    46.77241980350945
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "address": "Parc Roland-Beaudin",
+                "altitude": null,
+                "capacity": 20,
+                "geofenced_capacity": 0,
+                "groups": [
+                    "Stations ferm\u00e9es 31 oct."
+                ],
+                "is_charging_station": false,
+                "is_installed": true,
+                "is_renting": true,
+                "is_returning": true,
+                "is_virtual_station": false,
+                "last_reported": 1761939951,
+                "name": "Parc Roland-Beaudin",
+                "nearby_distance": 1000.0,
+                "num_bikes_available": 12,
+                "num_bikes_disabled": 2,
+                "num_docks_available": 6,
+                "num_docks_disabled": 0,
+                "obcn": "",
+                "physical_configuration": "REGULAR",
+                "rental_methods": [
+                    "KEY",
+                    "TRANSITCARD",
+                    "CREDITCARD",
+                    "PHONE"
+                ],
+                "rental_uris": {},
+                "short_name": "",
+                "station_id": "101",
+                "status": "IN_SERVICE",
+                "traffic": null,
+                "vehicle_docks_available": [
+                    {
+                        "count": 6,
+                        "vehicle_type_ids": [
+                            "EFIT",
+                            "BOOST",
+                            "ICONIC",
+                            "FIT"
+                        ]
+                    }
+                ],
+                "vehicle_types_available": [
+                    {
+                        "count": 0,
+                        "vehicle_type_id": "FIT"
+                    },
+                    {
+                        "count": 0,
+                        "vehicle_type_id": "ICONIC"
+                    },
+                    {
+                        "count": 0,
+                        "vehicle_type_id": "BOOST"
+                    },
+                    {
+                        "count": 12,
+                        "vehicle_type_id": "EFIT"
+                    }
+                ]
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -71.22080572536477,
+                    46.82214759734603
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "address": "1re Rue / 6e Avenue",
+                "altitude": 0.0,
+                "capacity": 20,
+                "geofenced_capacity": 0,
+                "groups": [
+                    "Stations \u00e9lectrifi\u00e9es 2025",
+                    "Stations ferm\u00e9es 31 oct."
+                ],
+                "is_charging_station": true,
+                "is_installed": true,
+                "is_renting": true,
+                "is_returning": true,
+                "is_virtual_station": false,
+                "last_reported": 1761939951,
+                "name": "1re Rue / 6e Avenue",
+                "nearby_distance": 1000.0,
+                "num_bikes_available": 1,
+                "num_bikes_disabled": 2,
+                "num_docks_available": 17,
+                "num_docks_disabled": 0,
+                "obcn": "",
+                "physical_configuration": "ELECTRICBIKESTATION",
+                "rental_methods": [
+                    "KEY",
+                    "TRANSITCARD",
+                    "CREDITCARD",
+                    "PHONE"
+                ],
+                "rental_uris": {},
+                "short_name": "",
+                "station_id": "102",
+                "status": "IN_SERVICE",
+                "traffic": null,
+                "vehicle_docks_available": [
+                    {
+                        "count": 17,
                         "vehicle_type_ids": [
                             "EFIT",
                             "BOOST",
@@ -151,153 +298,6 @@
         {
             "geometry": {
                 "coordinates": [
-                    -71.30060636888116,
-                    46.77241980350945
-                ],
-                "type": "Point"
-            },
-            "properties": {
-                "address": "Parc Roland-Beaudin",
-                "altitude": null,
-                "capacity": 20,
-                "geofenced_capacity": 0,
-                "groups": [
-                    "Stations ferm\u00e9es 31 oct."
-                ],
-                "is_charging_station": false,
-                "is_installed": true,
-                "is_renting": true,
-                "is_returning": true,
-                "is_virtual_station": false,
-                "last_reported": 1761939048,
-                "name": "Parc Roland-Beaudin",
-                "nearby_distance": 1000.0,
-                "num_bikes_available": 11,
-                "num_bikes_disabled": 2,
-                "num_docks_available": 7,
-                "num_docks_disabled": 0,
-                "obcn": "",
-                "physical_configuration": "REGULAR",
-                "rental_methods": [
-                    "KEY",
-                    "TRANSITCARD",
-                    "CREDITCARD",
-                    "PHONE"
-                ],
-                "rental_uris": {},
-                "short_name": "",
-                "station_id": "101",
-                "status": "IN_SERVICE",
-                "traffic": null,
-                "vehicle_docks_available": [
-                    {
-                        "count": 7,
-                        "vehicle_type_ids": [
-                            "EFIT",
-                            "BOOST",
-                            "ICONIC",
-                            "FIT"
-                        ]
-                    }
-                ],
-                "vehicle_types_available": [
-                    {
-                        "count": 0,
-                        "vehicle_type_id": "FIT"
-                    },
-                    {
-                        "count": 0,
-                        "vehicle_type_id": "ICONIC"
-                    },
-                    {
-                        "count": 0,
-                        "vehicle_type_id": "BOOST"
-                    },
-                    {
-                        "count": 11,
-                        "vehicle_type_id": "EFIT"
-                    }
-                ]
-            },
-            "type": "Feature"
-        },
-        {
-            "geometry": {
-                "coordinates": [
-                    -71.22080572536477,
-                    46.82214759734603
-                ],
-                "type": "Point"
-            },
-            "properties": {
-                "address": "1re Rue / 6e Avenue",
-                "altitude": 0.0,
-                "capacity": 20,
-                "geofenced_capacity": 0,
-                "groups": [
-                    "Stations \u00e9lectrifi\u00e9es 2025",
-                    "Stations ferm\u00e9es 31 oct."
-                ],
-                "is_charging_station": true,
-                "is_installed": true,
-                "is_renting": true,
-                "is_returning": true,
-                "is_virtual_station": false,
-                "last_reported": 1761939048,
-                "name": "1re Rue / 6e Avenue",
-                "nearby_distance": 1000.0,
-                "num_bikes_available": 2,
-                "num_bikes_disabled": 2,
-                "num_docks_available": 16,
-                "num_docks_disabled": 0,
-                "obcn": "",
-                "physical_configuration": "ELECTRICBIKESTATION",
-                "rental_methods": [
-                    "KEY",
-                    "TRANSITCARD",
-                    "CREDITCARD",
-                    "PHONE"
-                ],
-                "rental_uris": {},
-                "short_name": "",
-                "station_id": "102",
-                "status": "IN_SERVICE",
-                "traffic": null,
-                "vehicle_docks_available": [
-                    {
-                        "count": 16,
-                        "vehicle_type_ids": [
-                            "EFIT",
-                            "BOOST",
-                            "ICONIC",
-                            "FIT"
-                        ]
-                    }
-                ],
-                "vehicle_types_available": [
-                    {
-                        "count": 0,
-                        "vehicle_type_id": "FIT"
-                    },
-                    {
-                        "count": 0,
-                        "vehicle_type_id": "ICONIC"
-                    },
-                    {
-                        "count": 0,
-                        "vehicle_type_id": "BOOST"
-                    },
-                    {
-                        "count": 2,
-                        "vehicle_type_id": "EFIT"
-                    }
-                ]
-            },
-            "type": "Feature"
-        },
-        {
-            "geometry": {
-                "coordinates": [
                     -71.23406555757677,
                     46.82999344468069
                 ],
@@ -317,12 +317,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1761939089,
+                "last_reported": 1761939992,
                 "name": "Beno\u00eet-XV / 16e Rue",
                 "nearby_distance": 1000.0,
-                "num_bikes_available": 6,
+                "num_bikes_available": 5,
                 "num_bikes_disabled": 2,
-                "num_docks_available": 12,
+                "num_docks_available": 13,
                 "num_docks_disabled": 0,
                 "obcn": "",
                 "physical_configuration": "ELECTRICBIKESTATION",
@@ -339,7 +339,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 12,
+                        "count": 13,
                         "vehicle_type_ids": [
                             "EFIT",
                             "BOOST",
@@ -362,7 +362,7 @@
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 6,
+                        "count": 5,
                         "vehicle_type_id": "EFIT"
                     }
                 ]
@@ -391,12 +391,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1761939145,
+                "last_reported": 1761940048,
                 "name": "26e Rue / 25e Rue",
                 "nearby_distance": 1000.0,
-                "num_bikes_available": 6,
+                "num_bikes_available": 5,
                 "num_bikes_disabled": 2,
-                "num_docks_available": 8,
+                "num_docks_available": 9,
                 "num_docks_disabled": 0,
                 "obcn": "",
                 "physical_configuration": "ELECTRICBIKESTATION",
@@ -413,7 +413,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 8,
+                        "count": 9,
                         "vehicle_type_ids": [
                             "EFIT",
                             "BOOST",
@@ -436,7 +436,7 @@
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 6,
+                        "count": 5,
                         "vehicle_type_id": "EFIT"
                     }
                 ]
@@ -465,7 +465,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1761939111,
+                "last_reported": 1761940013,
                 "name": "\u00c9glise de Saint-Pascal-de-Maizerets",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 12,
@@ -539,12 +539,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1761939188,
+                "last_reported": 1761940091,
                 "name": "Parc Dollard-Des Ormeaux",
                 "nearby_distance": 1000.0,
-                "num_bikes_available": 15,
+                "num_bikes_available": 14,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 1,
+                "num_docks_available": 2,
                 "num_docks_disabled": 0,
                 "obcn": "",
                 "physical_configuration": "ELECTRICBIKESTATION",
@@ -561,7 +561,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 1,
+                        "count": 2,
                         "vehicle_type_ids": [
                             "EFIT",
                             "BOOST",
@@ -584,7 +584,7 @@
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 15,
+                        "count": 14,
                         "vehicle_type_id": "EFIT"
                     }
                 ]
@@ -612,12 +612,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1761939212,
+                "last_reported": 1761939934,
                 "name": "Parc-O-Bus 41e Rue E. / 1re Avenue",
                 "nearby_distance": 1000.0,
-                "num_bikes_available": 18,
+                "num_bikes_available": 17,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 8,
+                "num_docks_available": 9,
                 "num_docks_disabled": 0,
                 "obcn": "",
                 "physical_configuration": "REGULAR",
@@ -634,7 +634,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 8,
+                        "count": 9,
                         "vehicle_type_ids": [
                             "EFIT",
                             "BOOST",
@@ -657,7 +657,7 @@
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 18,
+                        "count": 17,
                         "vehicle_type_id": "EFIT"
                     }
                 ]
@@ -685,7 +685,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1761939150,
+                "last_reported": 1761940053,
                 "name": "Espace Quatre Cents",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 8,
@@ -759,12 +759,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1761939082,
+                "last_reported": 1761939984,
                 "name": "Parc du G\u00e9n\u00e9ral-Vanier",
                 "nearby_distance": 1000.0,
-                "num_bikes_available": 9,
+                "num_bikes_available": 8,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 7,
+                "num_docks_available": 8,
                 "num_docks_disabled": 0,
                 "obcn": "",
                 "physical_configuration": "ELECTRICBIKESTATION",
@@ -781,7 +781,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 7,
+                        "count": 8,
                         "vehicle_type_ids": [
                             "EFIT",
                             "BOOST",
@@ -804,7 +804,7 @@
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 9,
+                        "count": 8,
                         "vehicle_type_id": "EFIT"
                     }
                 ]
@@ -833,12 +833,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1761939203,
+                "last_reported": 1761939925,
                 "name": "Fraser / Cartier",
                 "nearby_distance": 1000.0,
-                "num_bikes_available": 20,
+                "num_bikes_available": 19,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 8,
+                "num_docks_available": 9,
                 "num_docks_disabled": 0,
                 "obcn": "",
                 "physical_configuration": "ELECTRICBIKESTATION",
@@ -856,7 +856,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 8,
+                        "count": 9,
                         "vehicle_type_ids": [
                             "EFIT",
                             "BOOST",
@@ -879,7 +879,7 @@
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 20,
+                        "count": 19,
                         "vehicle_type_id": "EFIT"
                     }
                 ]
@@ -907,12 +907,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1761939088,
+                "last_reported": 1761939991,
                 "name": "Du Pont / De La Salle",
                 "nearby_distance": 1000.0,
-                "num_bikes_available": 18,
+                "num_bikes_available": 19,
                 "num_bikes_disabled": 4,
-                "num_docks_available": 2,
+                "num_docks_available": 1,
                 "num_docks_disabled": 0,
                 "obcn": "",
                 "physical_configuration": "ELECTRICBIKESTATION",
@@ -929,7 +929,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 2,
+                        "count": 1,
                         "vehicle_type_ids": [
                             "EFIT",
                             "BOOST",
@@ -952,7 +952,7 @@
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 18,
+                        "count": 19,
                         "vehicle_type_id": "EFIT"
                     }
                 ]
@@ -981,7 +981,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1761939078,
+                "last_reported": 1761939981,
                 "name": "Sainte-Foy / N\u00e9r\u00e9e-Tremblay",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 0,
@@ -1054,7 +1054,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1761939136,
+                "last_reported": 1761940039,
                 "name": "Parc Richelieu",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 11,
@@ -1127,12 +1127,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1761939150,
+                "last_reported": 1761940052,
                 "name": "Hochelaga / De Soulanges",
                 "nearby_distance": 1000.0,
-                "num_bikes_available": 4,
+                "num_bikes_available": 5,
                 "num_bikes_disabled": 2,
-                "num_docks_available": 10,
+                "num_docks_available": 9,
                 "num_docks_disabled": 0,
                 "obcn": "",
                 "physical_configuration": "REGULAR",
@@ -1149,7 +1149,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 10,
+                        "count": 9,
                         "vehicle_type_ids": [
                             "EFIT",
                             "BOOST",
@@ -1172,7 +1172,7 @@
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 4,
+                        "count": 5,
                         "vehicle_type_id": "EFIT"
                     }
                 ]
@@ -1201,12 +1201,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1761939206,
+                "last_reported": 1761939929,
                 "name": "Place Ste-Foy",
                 "nearby_distance": 1000.0,
-                "num_bikes_available": 12,
+                "num_bikes_available": 14,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 10,
+                "num_docks_available": 8,
                 "num_docks_disabled": 0,
                 "obcn": "",
                 "physical_configuration": "ELECTRICBIKESTATION",
@@ -1223,7 +1223,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 10,
+                        "count": 8,
                         "vehicle_type_ids": [
                             "EFIT",
                             "BOOST",
@@ -1246,7 +1246,7 @@
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 12,
+                        "count": 14,
                         "vehicle_type_id": "EFIT"
                     }
                 ]
@@ -1275,12 +1275,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1761939131,
+                "last_reported": 1761940033,
                 "name": "Laurier Qu\u00e9bec",
                 "nearby_distance": 1000.0,
-                "num_bikes_available": 13,
+                "num_bikes_available": 10,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 9,
+                "num_docks_available": 12,
                 "num_docks_disabled": 0,
                 "obcn": "",
                 "physical_configuration": "ELECTRICBIKESTATION",
@@ -1297,7 +1297,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 9,
+                        "count": 12,
                         "vehicle_type_ids": [
                             "EFIT",
                             "BOOST",
@@ -1320,7 +1320,7 @@
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 13,
+                        "count": 10,
                         "vehicle_type_id": "EFIT"
                     }
                 ]
@@ -1349,7 +1349,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1761939138,
+                "last_reported": 1761940040,
                 "name": "Station de la Voile",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 2,
@@ -1423,7 +1423,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1761939056,
+                "last_reported": 1761939959,
                 "name": "Station de la Plage",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 0,
@@ -1497,7 +1497,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1761939130,
+                "last_reported": 1761940032,
                 "name": "H\u00f4pital Chauveau",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 0,
@@ -1571,7 +1571,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1761939088,
+                "last_reported": 1761939990,
                 "name": "Racine / Wilfrid-Caron",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 4,
@@ -1645,7 +1645,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1761939126,
+                "last_reported": 1761940028,
                 "name": "Des Dames-Ursulines / Racine",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 4,
@@ -1719,7 +1719,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1761939110,
+                "last_reported": 1761940012,
                 "name": "Des Saules E. / 1re Avenue",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 8,
@@ -1793,7 +1793,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1761939058,
+                "last_reported": 1761939961,
                 "name": "2e Avenue O. / 50e Rue O.",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 8,
@@ -1867,7 +1867,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1761939189,
+                "last_reported": 1761940092,
                 "name": "Parc Henri-Casault",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 9,
@@ -1940,7 +1940,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1761939193,
+                "last_reported": 1761940097,
                 "name": "Sasseville / De l'\u00c9glise",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 9,
@@ -2013,7 +2013,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1761939075,
+                "last_reported": 1761939978,
                 "name": "De La Forest / Lavigerie",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 8,
@@ -2086,12 +2086,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1761939145,
+                "last_reported": 1761940047,
                 "name": "Marie-Victorin / Des Gouverneurs",
                 "nearby_distance": 1000.0,
-                "num_bikes_available": 12,
+                "num_bikes_available": 13,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 4,
+                "num_docks_available": 3,
                 "num_docks_disabled": 0,
                 "obcn": "",
                 "physical_configuration": "REGULAR",
@@ -2108,7 +2108,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 4,
+                        "count": 3,
                         "vehicle_type_ids": [
                             "EFIT",
                             "BOOST",
@@ -2131,7 +2131,7 @@
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 12,
+                        "count": 13,
                         "vehicle_type_id": "EFIT"
                     }
                 ]
@@ -2159,13 +2159,13 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1761939180,
+                "last_reported": 1761940083,
                 "name": "Des Lilas O. / Du Colis\u00e9e",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 7,
                 "num_bikes_disabled": 1,
                 "num_docks_available": 8,
-                "num_docks_disabled": 1,
+                "num_docks_disabled": 0,
                 "obcn": "",
                 "physical_configuration": "REGULAR",
                 "rental_methods": [
@@ -2232,7 +2232,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1761939078,
+                "last_reported": 1761939981,
                 "name": "42e Rue E. / 4e Avenue E.",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 11,
@@ -2305,7 +2305,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1761939165,
+                "last_reported": 1761940069,
                 "name": "C\u00e9gep Garneau",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 0,
@@ -2379,7 +2379,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1761939143,
+                "last_reported": 1761940045,
                 "name": "Cath\u00e9drale Holy Trinity",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 2,
@@ -2453,12 +2453,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1761939222,
+                "last_reported": 1761939944,
                 "name": "Parc G\u00e9rard-Marchand ",
                 "nearby_distance": 1000.0,
-                "num_bikes_available": 5,
+                "num_bikes_available": 6,
                 "num_bikes_disabled": 1,
-                "num_docks_available": 14,
+                "num_docks_available": 13,
                 "num_docks_disabled": 0,
                 "obcn": "",
                 "physical_configuration": "ELECTRICBIKESTATION",
@@ -2475,7 +2475,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 14,
+                        "count": 13,
                         "vehicle_type_ids": [
                             "EFIT",
                             "BOOST",
@@ -2498,7 +2498,7 @@
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 5,
+                        "count": 6,
                         "vehicle_type_id": "EFIT"
                     }
                 ]
@@ -2526,7 +2526,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1761939163,
+                "last_reported": 1761940065,
                 "name": "Des Ch\u00eanes O. / Du Cur\u00e9-Couture",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 5,
@@ -2600,12 +2600,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1761939113,
+                "last_reported": 1761940016,
                 "name": "Fleur-de-Lys / Wilfrid-Hamel",
                 "nearby_distance": 1000.0,
-                "num_bikes_available": 23,
+                "num_bikes_available": 24,
                 "num_bikes_disabled": 1,
-                "num_docks_available": 32,
+                "num_docks_available": 31,
                 "num_docks_disabled": 0,
                 "obcn": "",
                 "physical_configuration": "ELECTRICBIKESTATION",
@@ -2622,7 +2622,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 32,
+                        "count": 31,
                         "vehicle_type_ids": [
                             "EFIT",
                             "BOOST",
@@ -2645,7 +2645,7 @@
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 23,
+                        "count": 24,
                         "vehicle_type_id": "EFIT"
                     }
                 ]
@@ -2673,7 +2673,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1761939185,
+                "last_reported": 1761940088,
                 "name": "Chabot / Ducharme",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 9,
@@ -2747,7 +2747,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1761939169,
+                "last_reported": 1761940072,
                 "name": "Parc Maurice-Lortie",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 8,
@@ -2821,12 +2821,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1761939126,
+                "last_reported": 1761940029,
                 "name": "D'Assise / Ozanam",
                 "nearby_distance": 1000.0,
-                "num_bikes_available": 12,
+                "num_bikes_available": 13,
                 "num_bikes_disabled": 2,
-                "num_docks_available": 6,
+                "num_docks_available": 5,
                 "num_docks_disabled": 0,
                 "obcn": "",
                 "physical_configuration": "ELECTRICBIKESTATION",
@@ -2843,7 +2843,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 6,
+                        "count": 5,
                         "vehicle_type_ids": [
                             "EFIT",
                             "BOOST",
@@ -2866,7 +2866,7 @@
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 12,
+                        "count": 13,
                         "vehicle_type_id": "EFIT"
                     }
                 ]
@@ -2894,12 +2894,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1761939217,
+                "last_reported": 1761939939,
                 "name": "\u00c9glise Saint-Fid\u00e8le",
                 "nearby_distance": 1000.0,
-                "num_bikes_available": 16,
+                "num_bikes_available": 14,
                 "num_bikes_disabled": 1,
-                "num_docks_available": 3,
+                "num_docks_available": 5,
                 "num_docks_disabled": 0,
                 "obcn": "",
                 "physical_configuration": "ELECTRICBIKESTATION",
@@ -2916,7 +2916,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 3,
+                        "count": 5,
                         "vehicle_type_ids": [
                             "EFIT",
                             "BOOST",
@@ -2939,7 +2939,7 @@
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 16,
+                        "count": 14,
                         "vehicle_type_id": "EFIT"
                     }
                 ]
@@ -2967,7 +2967,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1761939222,
+                "last_reported": 1761939944,
                 "name": "6e Rue / 1re Avenue",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 5,
@@ -3040,12 +3040,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1761939062,
+                "last_reported": 1761939965,
                 "name": "Biblioth\u00e8que Saint-Charles",
                 "nearby_distance": 1000.0,
-                "num_bikes_available": 4,
+                "num_bikes_available": 3,
                 "num_bikes_disabled": 1,
-                "num_docks_available": 15,
+                "num_docks_available": 16,
                 "num_docks_disabled": 0,
                 "obcn": "",
                 "physical_configuration": "ELECTRICBIKESTATION",
@@ -3062,7 +3062,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 15,
+                        "count": 16,
                         "vehicle_type_ids": [
                             "EFIT",
                             "BOOST",
@@ -3085,7 +3085,7 @@
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 4,
+                        "count": 3,
                         "vehicle_type_id": "EFIT"
                     }
                 ]
@@ -3114,7 +3114,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1761939155,
+                "last_reported": 1761940058,
                 "name": "Eymard / Sainte-Foy",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 3,
@@ -3189,12 +3189,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1761939088,
+                "last_reported": 1761939991,
                 "name": "De Belmont / Sainte-Foy",
                 "nearby_distance": 1000.0,
-                "num_bikes_available": 13,
+                "num_bikes_available": 12,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 7,
+                "num_docks_available": 8,
                 "num_docks_disabled": 0,
                 "obcn": "",
                 "physical_configuration": "ELECTRICBIKESTATION",
@@ -3211,7 +3211,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 7,
+                        "count": 8,
                         "vehicle_type_ids": [
                             "EFIT",
                             "BOOST",
@@ -3234,7 +3234,7 @@
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 13,
+                        "count": 12,
                         "vehicle_type_id": "EFIT"
                     }
                 ]
@@ -3262,12 +3262,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1761939136,
+                "last_reported": 1761940039,
                 "name": "Chevremont / Monseigneur-Lafl\u00e8che",
                 "nearby_distance": 1000.0,
-                "num_bikes_available": 6,
+                "num_bikes_available": 8,
                 "num_bikes_disabled": 1,
-                "num_docks_available": 9,
+                "num_docks_available": 7,
                 "num_docks_disabled": 0,
                 "obcn": "",
                 "physical_configuration": "REGULAR",
@@ -3285,7 +3285,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 9,
+                        "count": 7,
                         "vehicle_type_ids": [
                             "EFIT",
                             "BOOST",
@@ -3308,7 +3308,7 @@
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 6,
+                        "count": 8,
                         "vehicle_type_id": "EFIT"
                     }
                 ]
@@ -3336,7 +3336,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1761939203,
+                "last_reported": 1761939925,
                 "name": "Du Sieur-D'Argenteuil / Saint-Louis",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 6,
@@ -3410,7 +3410,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1761939070,
+                "last_reported": 1761939973,
                 "name": "Du Chanoine-Martin / Sainte-Foy",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 4,
@@ -3484,7 +3484,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1761939185,
+                "last_reported": 1761940088,
                 "name": "Sainte-Foy / Arthur-Rousseau",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 7,
@@ -3558,12 +3558,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1761939128,
+                "last_reported": 1761940031,
                 "name": "Des Ch\u00e2telets / Lavigerie",
                 "nearby_distance": 1000.0,
-                "num_bikes_available": 9,
+                "num_bikes_available": 8,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 11,
+                "num_docks_available": 12,
                 "num_docks_disabled": 0,
                 "obcn": "",
                 "physical_configuration": "REGULAR",
@@ -3581,7 +3581,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 11,
+                        "count": 12,
                         "vehicle_type_ids": [
                             "EFIT",
                             "BOOST",
@@ -3604,7 +3604,7 @@
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 9,
+                        "count": 8,
                         "vehicle_type_id": "EFIT"
                     }
                 ]
@@ -3632,7 +3632,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1761939136,
+                "last_reported": 1761940038,
                 "name": "Moncton / Fraser",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 13,
@@ -3706,12 +3706,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1761939203,
+                "last_reported": 1761939925,
                 "name": "Quatre-Bourgeois / Wilfrid-Pelletier",
                 "nearby_distance": 1000.0,
-                "num_bikes_available": 9,
+                "num_bikes_available": 11,
                 "num_bikes_disabled": 4,
-                "num_docks_available": 7,
+                "num_docks_available": 5,
                 "num_docks_disabled": 0,
                 "obcn": "",
                 "physical_configuration": "REGULAR",
@@ -3728,7 +3728,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 7,
+                        "count": 5,
                         "vehicle_type_ids": [
                             "EFIT",
                             "BOOST",
@@ -3751,7 +3751,7 @@
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 9,
+                        "count": 11,
                         "vehicle_type_id": "EFIT"
                     }
                 ]
@@ -3780,7 +3780,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1761939202,
+                "last_reported": 1761939924,
                 "name": "Nolin / Pruneau",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 6,
@@ -3853,7 +3853,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1761939174,
+                "last_reported": 1761940077,
                 "name": "De Bourgogne / Du Viaduc",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 4,
@@ -3927,12 +3927,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1761939083,
+                "last_reported": 1761939986,
                 "name": "De Calli\u00e8res / Marguerite-Bourgeoys",
                 "nearby_distance": 1000.0,
-                "num_bikes_available": 13,
+                "num_bikes_available": 12,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 3,
+                "num_docks_available": 4,
                 "num_docks_disabled": 0,
                 "obcn": "",
                 "physical_configuration": "ELECTRICBIKESTATION",
@@ -3950,7 +3950,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 3,
+                        "count": 4,
                         "vehicle_type_ids": [
                             "EFIT",
                             "BOOST",
@@ -3973,7 +3973,7 @@
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 13,
+                        "count": 12,
                         "vehicle_type_id": "EFIT"
                     }
                 ]
@@ -4001,7 +4001,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1761939087,
+                "last_reported": 1761939989,
                 "name": "France-Prime / Duchesneau",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 9,
@@ -4074,7 +4074,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1761939213,
+                "last_reported": 1761939935,
                 "name": "Henri-Bourassa / Des Cheminots",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 15,
@@ -4148,7 +4148,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1761939155,
+                "last_reported": 1761940058,
                 "name": "Parc Saint-J\u00e9r\u00f4me",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 10,
@@ -4221,7 +4221,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1761939077,
+                "last_reported": 1761939980,
                 "name": "70e Rue E. / Henri-Bourassa",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 5,
@@ -4295,7 +4295,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1761939208,
+                "last_reported": 1761939930,
                 "name": "C\u00e9gep Limoilou - Charlesbourg",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 17,
@@ -4368,12 +4368,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1761939135,
+                "last_reported": 1761940038,
                 "name": "De Courtemanche / Montmorency",
                 "nearby_distance": 1000.0,
-                "num_bikes_available": 13,
+                "num_bikes_available": 12,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 7,
+                "num_docks_available": 8,
                 "num_docks_disabled": 0,
                 "obcn": "",
                 "physical_configuration": "REGULAR",
@@ -4390,7 +4390,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 7,
+                        "count": 8,
                         "vehicle_type_ids": [
                             "EFIT",
                             "BOOST",
@@ -4413,7 +4413,7 @@
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 13,
+                        "count": 12,
                         "vehicle_type_id": "EFIT"
                     }
                 ]
@@ -4441,7 +4441,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1761939097,
+                "last_reported": 1761939999,
                 "name": "CLSC Orl\u00e9ans - Maizerets",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 10,
@@ -4514,7 +4514,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1761939196,
+                "last_reported": 1761940098,
                 "name": "Parc des Gazouillis",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 17,
@@ -4587,12 +4587,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1761939075,
+                "last_reported": 1761939978,
                 "name": "IUSMQ",
                 "nearby_distance": 1000.0,
-                "num_bikes_available": 12,
+                "num_bikes_available": 10,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 12,
+                "num_docks_available": 14,
                 "num_docks_disabled": 0,
                 "obcn": "",
                 "physical_configuration": "ELECTRICBIKESTATION",
@@ -4609,7 +4609,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 12,
+                        "count": 14,
                         "vehicle_type_ids": [
                             "EFIT",
                             "BOOST",
@@ -4632,7 +4632,7 @@
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 12,
+                        "count": 10,
                         "vehicle_type_id": "EFIT"
                     }
                 ]
@@ -4660,12 +4660,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1761939220,
+                "last_reported": 1761939942,
                 "name": "Parc Lortie",
                 "nearby_distance": 1000.0,
-                "num_bikes_available": 8,
+                "num_bikes_available": 7,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 12,
+                "num_docks_available": 13,
                 "num_docks_disabled": 0,
                 "obcn": "",
                 "physical_configuration": "REGULAR",
@@ -4682,7 +4682,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 12,
+                        "count": 13,
                         "vehicle_type_ids": [
                             "EFIT",
                             "BOOST",
@@ -4705,7 +4705,7 @@
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 8,
+                        "count": 7,
                         "vehicle_type_id": "EFIT"
                     }
                 ]
@@ -4733,7 +4733,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1761939085,
+                "last_reported": 1761939987,
                 "name": "Marie-Rollet / Marguerite-Bourgeoys",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 9,
@@ -4807,7 +4807,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1761939183,
+                "last_reported": 1761940086,
                 "name": "Parc de Notre-Dame-de-la-Garde",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 6,
@@ -4879,7 +4879,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1761939128,
+                "last_reported": 1761940030,
                 "name": "Borne / Saint-Sacrement",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 5,
@@ -4953,7 +4953,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1761939208,
+                "last_reported": 1761939930,
                 "name": "Wilfrid-Laurier / Galipeault",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 6,
@@ -5026,7 +5026,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1761939161,
+                "last_reported": 1761940064,
                 "name": "Kirouac / Durocher",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 10,
@@ -5099,7 +5099,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1761939118,
+                "last_reported": 1761940021,
                 "name": "P\u00e8re-Marquette / Calixa-Lavall\u00e9e",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 8,
@@ -5172,7 +5172,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1761939192,
+                "last_reported": 1761940095,
                 "name": "Saint-Sauveur / Saint-Bonaventure",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 4,
@@ -5245,7 +5245,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1761939198,
+                "last_reported": 1761940101,
                 "name": "Du Parvis / De Sainte-H\u00e9l\u00e8ne",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 9,
@@ -5319,7 +5319,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1761939160,
+                "last_reported": 1761940063,
                 "name": "G\u00e9rard-Morisset / Ren\u00e9-L\u00e9vesque O.",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 5,
@@ -5392,7 +5392,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1761939068,
+                "last_reported": 1761939971,
                 "name": "Cyrille-Duquet / Charest O.",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 9,
@@ -5465,12 +5465,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1761939216,
+                "last_reported": 1761939939,
                 "name": "Victoria / Napol\u00e9on",
                 "nearby_distance": 1000.0,
-                "num_bikes_available": 5,
+                "num_bikes_available": 7,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 11,
+                "num_docks_available": 9,
                 "num_docks_disabled": 0,
                 "obcn": "",
                 "physical_configuration": "REGULAR",
@@ -5487,7 +5487,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 11,
+                        "count": 9,
                         "vehicle_type_ids": [
                             "EFIT",
                             "BOOST",
@@ -5510,7 +5510,7 @@
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 5,
+                        "count": 7,
                         "vehicle_type_id": "EFIT"
                     }
                 ]
@@ -5539,7 +5539,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1761939208,
+                "last_reported": 1761939931,
                 "name": "SAAQ - \u00c9difice Jean-Lesage",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 15,
@@ -5612,7 +5612,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1761939168,
+                "last_reported": 1761940070,
                 "name": "F\u00e9lix-Gabriel-Marchand / Saint-Olivier",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 15,
@@ -5686,7 +5686,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1761939171,
+                "last_reported": 1761940073,
                 "name": "Racine / De l'Ormi\u00e8re",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 4,
@@ -5760,7 +5760,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1761939067,
+                "last_reported": 1761939970,
                 "name": "Biblioth\u00e8que Neufch\u00e2tel",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 7,
@@ -5834,7 +5834,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1761939191,
+                "last_reported": 1761940094,
                 "name": "Chauveau / De l'Ormi\u00e8re",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 4,
@@ -5908,12 +5908,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1761939102,
+                "last_reported": 1761940004,
                 "name": "Patro Laval",
                 "nearby_distance": 1000.0,
-                "num_bikes_available": 13,
+                "num_bikes_available": 17,
                 "num_bikes_disabled": 1,
-                "num_docks_available": 6,
+                "num_docks_available": 2,
                 "num_docks_disabled": 0,
                 "obcn": "",
                 "physical_configuration": "ELECTRICBIKESTATION",
@@ -5931,7 +5931,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 6,
+                        "count": 2,
                         "vehicle_type_ids": [
                             "EFIT",
                             "BOOST",
@@ -5954,7 +5954,7 @@
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 13,
+                        "count": 17,
                         "vehicle_type_id": "EFIT"
                     }
                 ]
@@ -5982,7 +5982,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1761939130,
+                "last_reported": 1761940033,
                 "name": "Parc du Bois-de-Coulonge",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 8,
@@ -6057,7 +6057,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1761939098,
+                "last_reported": 1761940001,
                 "name": "3e Avenue / 8e Rue",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 22,
@@ -6132,12 +6132,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1761939118,
+                "last_reported": 1761940021,
                 "name": "Biblioth\u00e8que Coll\u00e8ge-des-J\u00e9suites",
                 "nearby_distance": 1000.0,
-                "num_bikes_available": 13,
+                "num_bikes_available": 12,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 3,
+                "num_docks_available": 4,
                 "num_docks_disabled": 0,
                 "obcn": "",
                 "physical_configuration": "ELECTRICBIKESTATION",
@@ -6155,7 +6155,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 3,
+                        "count": 4,
                         "vehicle_type_ids": [
                             "EFIT",
                             "BOOST",
@@ -6178,7 +6178,7 @@
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 13,
+                        "count": 12,
                         "vehicle_type_id": "EFIT"
                     }
                 ]
@@ -6207,12 +6207,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1761939069,
+                "last_reported": 1761939972,
                 "name": "P\u00e8re-Marquette / Des Braves",
                 "nearby_distance": 1000.0,
-                "num_bikes_available": 13,
+                "num_bikes_available": 11,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 11,
+                "num_docks_available": 13,
                 "num_docks_disabled": 0,
                 "obcn": "",
                 "physical_configuration": "ELECTRICBIKESTATION",
@@ -6230,7 +6230,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 11,
+                        "count": 13,
                         "vehicle_type_ids": [
                             "EFIT",
                             "BOOST",
@@ -6253,7 +6253,7 @@
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 13,
+                        "count": 11,
                         "vehicle_type_id": "EFIT"
                     }
                 ]
@@ -6281,7 +6281,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1761939185,
+                "last_reported": 1761940087,
                 "name": "Parc des Braves",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 8,
@@ -6356,12 +6356,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1761939194,
+                "last_reported": 1761940096,
                 "name": "P\u00e8re-Marquette / De Manr\u00e8se",
                 "nearby_distance": 1000.0,
-                "num_bikes_available": 12,
+                "num_bikes_available": 13,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 12,
+                "num_docks_available": 11,
                 "num_docks_disabled": 0,
                 "obcn": "",
                 "physical_configuration": "ELECTRICBIKESTATION",
@@ -6379,7 +6379,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 12,
+                        "count": 11,
                         "vehicle_type_ids": [
                             "EFIT",
                             "BOOST",
@@ -6402,7 +6402,7 @@
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 12,
+                        "count": 13,
                         "vehicle_type_id": "EFIT"
                     }
                 ]
@@ -6431,12 +6431,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1761939224,
+                "last_reported": 1761939946,
                 "name": "Parc Lockwell",
                 "nearby_distance": 1000.0,
-                "num_bikes_available": 20,
+                "num_bikes_available": 10,
                 "num_bikes_disabled": 1,
-                "num_docks_available": 3,
+                "num_docks_available": 13,
                 "num_docks_disabled": 0,
                 "obcn": "",
                 "physical_configuration": "ELECTRICBIKESTATION",
@@ -6454,7 +6454,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 3,
+                        "count": 13,
                         "vehicle_type_ids": [
                             "EFIT",
                             "BOOST",
@@ -6477,7 +6477,7 @@
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 20,
+                        "count": 10,
                         "vehicle_type_id": "EFIT"
                     }
                 ]
@@ -6506,12 +6506,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1761939082,
+                "last_reported": 1761939984,
                 "name": "Mus\u00e9e national des beaux-arts",
                 "nearby_distance": 1000.0,
-                "num_bikes_available": 11,
+                "num_bikes_available": 12,
                 "num_bikes_disabled": 1,
-                "num_docks_available": 6,
+                "num_docks_available": 5,
                 "num_docks_disabled": 0,
                 "obcn": "",
                 "physical_configuration": "ELECTRICBIKESTATION",
@@ -6529,7 +6529,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 6,
+                        "count": 5,
                         "vehicle_type_ids": [
                             "EFIT",
                             "BOOST",
@@ -6552,7 +6552,7 @@
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 11,
+                        "count": 12,
                         "vehicle_type_id": "EFIT"
                     }
                 ]
@@ -6581,12 +6581,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1761939090,
+                "last_reported": 1761939993,
                 "name": "Grand Th\u00e9\u00e2tre de Qu\u00e9bec",
                 "nearby_distance": 1000.0,
-                "num_bikes_available": 20,
+                "num_bikes_available": 26,
                 "num_bikes_disabled": 1,
-                "num_docks_available": 13,
+                "num_docks_available": 7,
                 "num_docks_disabled": 0,
                 "obcn": "",
                 "physical_configuration": "ELECTRICBIKESTATION",
@@ -6604,7 +6604,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 13,
+                        "count": 7,
                         "vehicle_type_ids": [
                             "EFIT",
                             "BOOST",
@@ -6627,7 +6627,7 @@
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 20,
+                        "count": 26,
                         "vehicle_type_id": "EFIT"
                     }
                 ]
@@ -6655,12 +6655,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1761939054,
+                "last_reported": 1761939958,
                 "name": "Parc de l'Esplanade",
                 "nearby_distance": 1000.0,
-                "num_bikes_available": 11,
+                "num_bikes_available": 10,
                 "num_bikes_disabled": 5,
-                "num_docks_available": 16,
+                "num_docks_available": 17,
                 "num_docks_disabled": 0,
                 "obcn": "",
                 "physical_configuration": "ELECTRICBIKESTATION",
@@ -6678,7 +6678,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 16,
+                        "count": 17,
                         "vehicle_type_ids": [
                             "EFIT",
                             "BOOST",
@@ -6701,7 +6701,7 @@
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 11,
+                        "count": 10,
                         "vehicle_type_id": "EFIT"
                     }
                 ]
@@ -6729,12 +6729,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1761939126,
+                "last_reported": 1761940029,
                 "name": "Parc Montmorency",
                 "nearby_distance": 1000.0,
-                "num_bikes_available": 8,
+                "num_bikes_available": 6,
                 "num_bikes_disabled": 2,
-                "num_docks_available": 14,
+                "num_docks_available": 16,
                 "num_docks_disabled": 0,
                 "obcn": "",
                 "physical_configuration": "REGULAR",
@@ -6752,7 +6752,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 14,
+                        "count": 16,
                         "vehicle_type_ids": [
                             "EFIT",
                             "BOOST",
@@ -6775,7 +6775,7 @@
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 8,
+                        "count": 6,
                         "vehicle_type_id": "EFIT"
                     }
                 ]
@@ -6803,12 +6803,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1761939109,
+                "last_reported": 1761940011,
                 "name": "Place des Canotiers",
                 "nearby_distance": 1000.0,
-                "num_bikes_available": 20,
+                "num_bikes_available": 21,
                 "num_bikes_disabled": 1,
-                "num_docks_available": 11,
+                "num_docks_available": 10,
                 "num_docks_disabled": 0,
                 "obcn": "",
                 "physical_configuration": "ELECTRICBIKESTATION",
@@ -6826,7 +6826,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 11,
+                        "count": 10,
                         "vehicle_type_ids": [
                             "EFIT",
                             "BOOST",
@@ -6849,7 +6849,7 @@
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 20,
+                        "count": 21,
                         "vehicle_type_id": "EFIT"
                     }
                 ]
@@ -6877,7 +6877,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1761939184,
+                "last_reported": 1761940092,
                 "name": "Gare du Palais",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 5,
@@ -6951,12 +6951,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1761939109,
+                "last_reported": 1761940012,
                 "name": "Bassin Louise",
                 "nearby_distance": 1000.0,
-                "num_bikes_available": 5,
+                "num_bikes_available": 4,
                 "num_bikes_disabled": 1,
-                "num_docks_available": 18,
+                "num_docks_available": 19,
                 "num_docks_disabled": 0,
                 "obcn": "",
                 "physical_configuration": "ELECTRICBIKESTATION",
@@ -6974,7 +6974,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 18,
+                        "count": 19,
                         "vehicle_type_ids": [
                             "EFIT",
                             "BOOST",
@@ -6997,7 +6997,7 @@
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 5,
+                        "count": 4,
                         "vehicle_type_id": "EFIT"
                     }
                 ]
@@ -7025,7 +7025,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1761939216,
+                "last_reported": 1761939938,
                 "name": "Parc Saint-Matthew",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 0,
@@ -7100,7 +7100,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1761939184,
+                "last_reported": 1761940087,
                 "name": "Parc John-Munn",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 22,
@@ -7174,12 +7174,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1761939194,
+                "last_reported": 1761940097,
                 "name": "Saint-Vallier E. / Caron",
                 "nearby_distance": 1000.0,
-                "num_bikes_available": 7,
+                "num_bikes_available": 4,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 17,
+                "num_docks_available": 20,
                 "num_docks_disabled": 0,
                 "obcn": "",
                 "physical_configuration": "ELECTRICBIKESTATION",
@@ -7197,7 +7197,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 17,
+                        "count": 20,
                         "vehicle_type_ids": [
                             "EFIT",
                             "BOOST",
@@ -7220,7 +7220,7 @@
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 7,
+                        "count": 4,
                         "vehicle_type_id": "EFIT"
                     }
                 ]
@@ -7249,12 +7249,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1761939073,
+                "last_reported": 1761939977,
                 "name": "Saint-Joseph E. / Caron",
                 "nearby_distance": 1000.0,
-                "num_bikes_available": 17,
+                "num_bikes_available": 16,
                 "num_bikes_disabled": 2,
-                "num_docks_available": 1,
+                "num_docks_available": 2,
                 "num_docks_disabled": 0,
                 "obcn": "",
                 "physical_configuration": "ELECTRICBIKESTATION",
@@ -7272,7 +7272,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 1,
+                        "count": 2,
                         "vehicle_type_ids": [
                             "EFIT",
                             "BOOST",
@@ -7295,7 +7295,7 @@
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 17,
+                        "count": 16,
                         "vehicle_type_id": "EFIT"
                     }
                 ]
@@ -7324,7 +7324,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1761939126,
+                "last_reported": 1761940029,
                 "name": "Place Roger-Lemelin",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 16,
@@ -7399,12 +7399,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1761939159,
+                "last_reported": 1761940063,
                 "name": "Parc Victoria - S.-Napol\u00e9on-Parent",
                 "nearby_distance": 1000.0,
-                "num_bikes_available": 15,
+                "num_bikes_available": 14,
                 "num_bikes_disabled": 3,
-                "num_docks_available": 6,
+                "num_docks_available": 7,
                 "num_docks_disabled": 0,
                 "obcn": "",
                 "physical_configuration": "ELECTRICBIKESTATION",
@@ -7422,7 +7422,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 6,
+                        "count": 7,
                         "vehicle_type_ids": [
                             "EFIT",
                             "BOOST",
@@ -7445,7 +7445,7 @@
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 15,
+                        "count": 14,
                         "vehicle_type_id": "EFIT"
                     }
                 ]
@@ -7473,7 +7473,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1761939221,
+                "last_reported": 1761939943,
                 "name": "Parc de la Pointe-aux-Li\u00e8vres",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 13,
@@ -7548,12 +7548,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1761939104,
+                "last_reported": 1761940007,
                 "name": "3e Rue / 3e Avenue",
                 "nearby_distance": 1000.0,
-                "num_bikes_available": 8,
+                "num_bikes_available": 9,
                 "num_bikes_disabled": 1,
-                "num_docks_available": 15,
+                "num_docks_available": 14,
                 "num_docks_disabled": 0,
                 "obcn": "",
                 "physical_configuration": "ELECTRICBIKESTATION",
@@ -7571,7 +7571,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 15,
+                        "count": 14,
                         "vehicle_type_ids": [
                             "EFIT",
                             "BOOST",
@@ -7594,7 +7594,7 @@
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 8,
+                        "count": 9,
                         "vehicle_type_id": "EFIT"
                     }
                 ]
@@ -7623,12 +7623,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1761939106,
+                "last_reported": 1761940009,
                 "name": "13e Rue / 1re Avenue",
                 "nearby_distance": 1000.0,
-                "num_bikes_available": 8,
+                "num_bikes_available": 7,
                 "num_bikes_disabled": 1,
-                "num_docks_available": 11,
+                "num_docks_available": 12,
                 "num_docks_disabled": 0,
                 "obcn": "",
                 "physical_configuration": "ELECTRICBIKESTATION",
@@ -7646,7 +7646,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 11,
+                        "count": 12,
                         "vehicle_type_ids": [
                             "EFIT",
                             "BOOST",
@@ -7669,7 +7669,7 @@
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 8,
+                        "count": 7,
                         "vehicle_type_id": "EFIT"
                     }
                 ]
@@ -7697,7 +7697,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1761939214,
+                "last_reported": 1761939937,
                 "name": "Traverse",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 8,
@@ -7772,12 +7772,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1761939080,
+                "last_reported": 1761939983,
                 "name": "C\u00e9gep Limoilou - Limoilou",
                 "nearby_distance": 1000.0,
-                "num_bikes_available": 1,
-                "num_bikes_disabled": 4,
-                "num_docks_available": 15,
+                "num_bikes_available": 0,
+                "num_bikes_disabled": 3,
+                "num_docks_available": 17,
                 "num_docks_disabled": 0,
                 "obcn": "",
                 "physical_configuration": "ELECTRICBIKESTATION",
@@ -7795,7 +7795,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 15,
+                        "count": 17,
                         "vehicle_type_ids": [
                             "EFIT",
                             "BOOST",
@@ -7818,7 +7818,7 @@
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 1,
+                        "count": 0,
                         "vehicle_type_id": "EFIT"
                     }
                 ]
@@ -7847,7 +7847,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1761939072,
+                "last_reported": 1761939975,
                 "name": "Parc de l'Anse-\u00e0-Cartier",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 19,
@@ -7922,7 +7922,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1761939111,
+                "last_reported": 1761940013,
                 "name": "ExpoCit\u00e9 - Grand March\u00e9",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 5,
@@ -7996,12 +7996,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1761939220,
+                "last_reported": 1761939942,
                 "name": "ExpoCit\u00e9 - Place Jean-B\u00e9liveau",
                 "nearby_distance": 1000.0,
-                "num_bikes_available": 14,
+                "num_bikes_available": 13,
                 "num_bikes_disabled": 1,
-                "num_docks_available": 1,
+                "num_docks_available": 2,
                 "num_docks_disabled": 0,
                 "obcn": "ExpoCit\u00e9 - Place Jean-B\u00e9liveau",
                 "physical_configuration": "ELECTRICBIKESTATION",
@@ -8019,7 +8019,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 1,
+                        "count": 2,
                         "vehicle_type_ids": [
                             "EFIT",
                             "BOOST",
@@ -8042,7 +8042,7 @@
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 14,
+                        "count": 13,
                         "vehicle_type_id": "EFIT"
                     }
                 ]
@@ -8070,7 +8070,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1761939154,
+                "last_reported": 1761940057,
                 "name": "Saint-Vallier E. / L\u00e9pine",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 11,
@@ -8143,12 +8143,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1761939112,
+                "last_reported": 1761940014,
                 "name": "Ch\u00e2teau Frontenac",
                 "nearby_distance": 1000.0,
-                "num_bikes_available": 5,
+                "num_bikes_available": 4,
                 "num_bikes_disabled": 1,
-                "num_docks_available": 9,
+                "num_docks_available": 10,
                 "num_docks_disabled": 0,
                 "obcn": "Ch\u00e2teau Frontenac",
                 "physical_configuration": "REGULAR",
@@ -8166,7 +8166,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 9,
+                        "count": 10,
                         "vehicle_type_ids": [
                             "EFIT",
                             "BOOST",
@@ -8189,7 +8189,7 @@
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 5,
+                        "count": 4,
                         "vehicle_type_id": "EFIT"
                     }
                 ]
@@ -8218,7 +8218,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1761939165,
+                "last_reported": 1761940067,
                 "name": "Lavigueur / Sainte-Genevi\u00e8ve",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 7,
@@ -8291,7 +8291,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1761939185,
+                "last_reported": 1761940088,
                 "name": "Coll\u00e8ge M\u00e9rici",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 15,
@@ -8364,12 +8364,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1761939139,
+                "last_reported": 1761940042,
                 "name": "H\u00f4tel de ville",
                 "nearby_distance": 1000.0,
-                "num_bikes_available": 11,
+                "num_bikes_available": 8,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 13,
+                "num_docks_available": 16,
                 "num_docks_disabled": 0,
                 "obcn": "",
                 "physical_configuration": "REGULAR",
@@ -8387,7 +8387,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 13,
+                        "count": 16,
                         "vehicle_type_ids": [
                             "EFIT",
                             "BOOST",
@@ -8410,7 +8410,7 @@
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 11,
+                        "count": 8,
                         "vehicle_type_id": "EFIT"
                     }
                 ]
@@ -8439,12 +8439,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1761939130,
+                "last_reported": 1761940033,
                 "name": "Brown / P\u00e8re-Marquette",
                 "nearby_distance": 1000.0,
-                "num_bikes_available": 17,
+                "num_bikes_available": 16,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 7,
+                "num_docks_available": 8,
                 "num_docks_disabled": 0,
                 "obcn": "",
                 "physical_configuration": "ELECTRICBIKESTATION",
@@ -8461,7 +8461,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 7,
+                        "count": 8,
                         "vehicle_type_ids": [
                             "EFIT",
                             "BOOST",
@@ -8484,7 +8484,7 @@
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 17,
+                        "count": 16,
                         "vehicle_type_id": "EFIT"
                     }
                 ]
@@ -8513,12 +8513,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1761939200,
+                "last_reported": 1761939922,
                 "name": "Raymond-Casgrain / Cardinal-Rouleau",
                 "nearby_distance": 1000.0,
-                "num_bikes_available": 12,
+                "num_bikes_available": 13,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 8,
+                "num_docks_available": 7,
                 "num_docks_disabled": 0,
                 "obcn": "",
                 "physical_configuration": "ELECTRICBIKESTATION",
@@ -8535,7 +8535,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 8,
+                        "count": 7,
                         "vehicle_type_ids": [
                             "EFIT",
                             "BOOST",
@@ -8558,7 +8558,7 @@
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 12,
+                        "count": 13,
                         "vehicle_type_id": "EFIT"
                     }
                 ]
@@ -8586,7 +8586,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1761939095,
+                "last_reported": 1761939998,
                 "name": "La Cit\u00e9 Verte",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 13,
@@ -8659,7 +8659,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1761939078,
+                "last_reported": 1761939980,
                 "name": "Sheppard / William",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 12,
@@ -8732,12 +8732,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1761939148,
+                "last_reported": 1761940051,
                 "name": "Maguire / Sheppard",
                 "nearby_distance": 1000.0,
-                "num_bikes_available": 7,
+                "num_bikes_available": 8,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 8,
+                "num_docks_available": 7,
                 "num_docks_disabled": 0,
                 "obcn": "",
                 "physical_configuration": "REGULAR",
@@ -8754,7 +8754,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 8,
+                        "count": 7,
                         "vehicle_type_ids": [
                             "EFIT",
                             "BOOST",
@@ -8777,7 +8777,7 @@
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 7,
+                        "count": 8,
                         "vehicle_type_id": "EFIT"
                     }
                 ]
@@ -8806,12 +8806,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1761939209,
+                "last_reported": 1761939931,
                 "name": "Parc Anet-Gomin",
                 "nearby_distance": 1000.0,
-                "num_bikes_available": 7,
+                "num_bikes_available": 8,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 9,
+                "num_docks_available": 8,
                 "num_docks_disabled": 0,
                 "obcn": "",
                 "physical_configuration": "ELECTRICBIKESTATION",
@@ -8828,7 +8828,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 9,
+                        "count": 8,
                         "vehicle_type_ids": [
                             "EFIT",
                             "BOOST",
@@ -8851,7 +8851,7 @@
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 7,
+                        "count": 8,
                         "vehicle_type_id": "EFIT"
                     }
                 ]
@@ -8880,12 +8880,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1761939075,
+                "last_reported": 1761939978,
                 "name": "H\u00e9l\u00e8ne-Boull\u00e9 / Du Bon-Air",
                 "nearby_distance": 1000.0,
-                "num_bikes_available": 12,
+                "num_bikes_available": 10,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 8,
+                "num_docks_available": 10,
                 "num_docks_disabled": 0,
                 "obcn": "",
                 "physical_configuration": "ELECTRICBIKESTATION",
@@ -8902,7 +8902,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 8,
+                        "count": 10,
                         "vehicle_type_ids": [
                             "EFIT",
                             "BOOST",
@@ -8925,7 +8925,7 @@
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 12,
+                        "count": 10,
                         "vehicle_type_id": "EFIT"
                     }
                 ]
@@ -8954,7 +8954,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1761939140,
+                "last_reported": 1761940043,
                 "name": "Parc Myrand",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 18,
@@ -9027,12 +9027,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1761939132,
+                "last_reported": 1761940035,
                 "name": "Myrand / G\u00e9ronce-Gari\u00e9py",
                 "nearby_distance": 1000.0,
-                "num_bikes_available": 7,
+                "num_bikes_available": 8,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 9,
+                "num_docks_available": 8,
                 "num_docks_disabled": 0,
                 "obcn": "",
                 "physical_configuration": "REGULAR",
@@ -9049,7 +9049,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 9,
+                        "count": 8,
                         "vehicle_type_ids": [
                             "EFIT",
                             "BOOST",
@@ -9072,7 +9072,7 @@
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 7,
+                        "count": 8,
                         "vehicle_type_id": "EFIT"
                     }
                 ]
@@ -9100,12 +9100,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1761939057,
+                "last_reported": 1761939959,
                 "name": "Place Jacques-Cartier",
                 "nearby_distance": 1000.0,
-                "num_bikes_available": 25,
+                "num_bikes_available": 28,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 9,
+                "num_docks_available": 6,
                 "num_docks_disabled": 0,
                 "obcn": "",
                 "physical_configuration": "ELECTRICBIKESTATION",
@@ -9123,7 +9123,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 9,
+                        "count": 6,
                         "vehicle_type_ids": [
                             "EFIT",
                             "BOOST",
@@ -9146,7 +9146,7 @@
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 25,
+                        "count": 28,
                         "vehicle_type_id": "EFIT"
                     }
                 ]
@@ -9174,7 +9174,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1761939130,
+                "last_reported": 1761940033,
                 "name": "ULaval - Charles-De Koninck",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 1,
@@ -9248,12 +9248,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1761939093,
+                "last_reported": 1761939996,
                 "name": "ULaval - Alphonse-Desjardins",
                 "nearby_distance": 1000.0,
-                "num_bikes_available": 11,
+                "num_bikes_available": 13,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 13,
+                "num_docks_available": 11,
                 "num_docks_disabled": 0,
                 "obcn": "",
                 "physical_configuration": "ELECTRICBIKESTATION",
@@ -9270,7 +9270,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 13,
+                        "count": 11,
                         "vehicle_type_ids": [
                             "EFIT",
                             "BOOST",
@@ -9293,7 +9293,7 @@
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 11,
+                        "count": 13,
                         "vehicle_type_id": "EFIT"
                     }
                 ]
@@ -9323,12 +9323,12 @@
                 "is_returning": true,
                 "is_valet_station": false,
                 "is_virtual_station": false,
-                "last_reported": 1761939098,
+                "last_reported": 1761940001,
                 "name": "ULaval - PEPS",
                 "nearby_distance": 1000.0,
-                "num_bikes_available": 18,
+                "num_bikes_available": 17,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 14,
+                "num_docks_available": 15,
                 "num_docks_disabled": 0,
                 "obcn": "",
                 "physical_configuration": "ELECTRICBIKESTATION",
@@ -9345,7 +9345,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 14,
+                        "count": 15,
                         "vehicle_type_ids": [
                             "EFIT",
                             "BOOST",
@@ -9368,7 +9368,7 @@
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 18,
+                        "count": 17,
                         "vehicle_type_id": "EFIT"
                     }
                 ]
@@ -9396,13 +9396,13 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1761939211,
+                "last_reported": 1761939933,
                 "name": "ULaval - Adrien-Pouliot",
                 "nearby_distance": 1000.0,
-                "num_bikes_available": 6,
+                "num_bikes_available": 5,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 26,
-                "num_docks_disabled": 3,
+                "num_docks_available": 27,
+                "num_docks_disabled": 0,
                 "obcn": "",
                 "physical_configuration": "ELECTRICBIKESTATION",
                 "rental_methods": [
@@ -9418,7 +9418,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 26,
+                        "count": 27,
                         "vehicle_type_ids": [
                             "EFIT",
                             "BOOST",
@@ -9441,7 +9441,7 @@
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 6,
+                        "count": 5,
                         "vehicle_type_id": "EFIT"
                     }
                 ]
@@ -9470,12 +9470,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1761939055,
+                "last_reported": 1761939958,
                 "name": "C\u00e9gep de Sainte-Foy",
                 "nearby_distance": 1000.0,
-                "num_bikes_available": 0,
+                "num_bikes_available": 1,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 24,
+                "num_docks_available": 23,
                 "num_docks_disabled": 0,
                 "obcn": "",
                 "physical_configuration": "ELECTRICBIKESTATION",
@@ -9492,7 +9492,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 24,
+                        "count": 23,
                         "vehicle_type_ids": [
                             "EFIT",
                             "BOOST",
@@ -9515,7 +9515,7 @@
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 0,
+                        "count": 1,
                         "vehicle_type_id": "EFIT"
                     }
                 ]
@@ -9543,12 +9543,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1761939092,
+                "last_reported": 1761939995,
                 "name": "De Pr\u00e9vel / Quatre-Bourgeois",
                 "nearby_distance": 1000.0,
-                "num_bikes_available": 4,
+                "num_bikes_available": 2,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 12,
+                "num_docks_available": 14,
                 "num_docks_disabled": 0,
                 "obcn": "",
                 "physical_configuration": "REGULAR",
@@ -9565,7 +9565,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 12,
+                        "count": 14,
                         "vehicle_type_ids": [
                             "EFIT",
                             "BOOST",
@@ -9588,7 +9588,7 @@
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 4,
+                        "count": 2,
                         "vehicle_type_id": "EFIT"
                     }
                 ]
@@ -9616,7 +9616,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1761939213,
+                "last_reported": 1761939935,
                 "name": "Pente-Douce / Montmagny",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 14,
@@ -9690,12 +9690,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1761939071,
+                "last_reported": 1761939974,
                 "name": "Raoul-Jobin / Marie-de-l'Incarnation",
                 "nearby_distance": 1000.0,
-                "num_bikes_available": 16,
+                "num_bikes_available": 19,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 4,
+                "num_docks_available": 1,
                 "num_docks_disabled": 0,
                 "obcn": "",
                 "physical_configuration": "ELECTRICBIKESTATION",
@@ -9712,7 +9712,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 4,
+                        "count": 1,
                         "vehicle_type_ids": [
                             "EFIT",
                             "BOOST",
@@ -9735,7 +9735,7 @@
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 16,
+                        "count": 19,
                         "vehicle_type_id": "EFIT"
                     }
                 ]
@@ -9763,7 +9763,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1761939131,
+                "last_reported": 1761940033,
                 "name": "Bayard / Boisseau",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 13,
@@ -9837,12 +9837,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1761939145,
+                "last_reported": 1761940047,
                 "name": "Signa\u00ef / Christophe-Colomb",
                 "nearby_distance": 1000.0,
-                "num_bikes_available": 15,
+                "num_bikes_available": 14,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 9,
+                "num_docks_available": 10,
                 "num_docks_disabled": 0,
                 "obcn": "",
                 "physical_configuration": "ELECTRICBIKESTATION",
@@ -9859,7 +9859,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 9,
+                        "count": 10,
                         "vehicle_type_ids": [
                             "EFIT",
                             "BOOST",
@@ -9882,7 +9882,7 @@
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 15,
+                        "count": 14,
                         "vehicle_type_id": "EFIT"
                     }
                 ]
@@ -9910,7 +9910,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1761939132,
+                "last_reported": 1761940035,
                 "name": "Du Cardinal-Taschereau / Renaud",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 10,
@@ -9985,12 +9985,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1761939174,
+                "last_reported": 1761940077,
                 "name": "Bourdages / Monseigneur-Plessis",
                 "nearby_distance": 1000.0,
-                "num_bikes_available": 6,
+                "num_bikes_available": 5,
                 "num_bikes_disabled": 2,
-                "num_docks_available": 12,
+                "num_docks_available": 13,
                 "num_docks_disabled": 0,
                 "obcn": "",
                 "physical_configuration": "ELECTRICBIKESTATION",
@@ -10007,7 +10007,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 12,
+                        "count": 13,
                         "vehicle_type_ids": [
                             "EFIT",
                             "BOOST",
@@ -10030,7 +10030,7 @@
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 6,
+                        "count": 5,
                         "vehicle_type_id": "EFIT"
                     }
                 ]
@@ -10058,12 +10058,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1761939075,
+                "last_reported": 1761939978,
                 "name": "7e Rue / 6e Avenue",
                 "nearby_distance": 1000.0,
-                "num_bikes_available": 11,
+                "num_bikes_available": 12,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 9,
+                "num_docks_available": 8,
                 "num_docks_disabled": 0,
                 "obcn": "",
                 "physical_configuration": "REGULAR",
@@ -10080,7 +10080,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 9,
+                        "count": 8,
                         "vehicle_type_ids": [
                             "EFIT",
                             "BOOST",
@@ -10103,7 +10103,7 @@
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 11,
+                        "count": 12,
                         "vehicle_type_id": "EFIT"
                     }
                 ]
@@ -10132,7 +10132,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1761939087,
+                "last_reported": 1761939990,
                 "name": "11e Rue / 3e Avenue",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 12,
@@ -10205,7 +10205,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1761939222,
+                "last_reported": 1761939945,
                 "name": "Bourdon / 1re Avenue",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 9,
@@ -10278,7 +10278,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1761939170,
+                "last_reported": 1761940072,
                 "name": "Patro Roc-Amadour",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 4,
@@ -10352,12 +10352,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1761939077,
+                "last_reported": 1761939980,
                 "name": "Perrault / 24e Rue",
                 "nearby_distance": 1000.0,
-                "num_bikes_available": 10,
+                "num_bikes_available": 9,
                 "num_bikes_disabled": 2,
-                "num_docks_available": 8,
+                "num_docks_available": 9,
                 "num_docks_disabled": 0,
                 "obcn": "",
                 "physical_configuration": "ELECTRICBIKESTATION",
@@ -10374,7 +10374,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 8,
+                        "count": 9,
                         "vehicle_type_ids": [
                             "EFIT",
                             "BOOST",
@@ -10397,7 +10397,7 @@
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 10,
+                        "count": 9,
                         "vehicle_type_id": "EFIT"
                     }
                 ]
@@ -10425,12 +10425,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1761939113,
+                "last_reported": 1761940016,
                 "name": "De Fondville / De La Ronde",
                 "nearby_distance": 1000.0,
-                "num_bikes_available": 12,
+                "num_bikes_available": 11,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 4,
+                "num_docks_available": 5,
                 "num_docks_disabled": 0,
                 "obcn": "",
                 "physical_configuration": "REGULAR",
@@ -10447,7 +10447,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 4,
+                        "count": 5,
                         "vehicle_type_ids": [
                             "EFIT",
                             "BOOST",
@@ -10470,7 +10470,7 @@
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 12,
+                        "count": 11,
                         "vehicle_type_id": "EFIT"
                     }
                 ]
@@ -10499,12 +10499,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1761939218,
+                "last_reported": 1761939940,
                 "name": "Parc Bardy",
                 "nearby_distance": 1000.0,
-                "num_bikes_available": 21,
+                "num_bikes_available": 22,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 3,
+                "num_docks_available": 2,
                 "num_docks_disabled": 0,
                 "obcn": "",
                 "physical_configuration": "ELECTRICBIKESTATION",
@@ -10521,7 +10521,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 3,
+                        "count": 2,
                         "vehicle_type_ids": [
                             "EFIT",
                             "BOOST",
@@ -10544,7 +10544,7 @@
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 21,
+                        "count": 22,
                         "vehicle_type_id": "EFIT"
                     }
                 ]
@@ -10573,12 +10573,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1761939190,
+                "last_reported": 1761940093,
                 "name": "De la Trinit\u00e9 / De Villebon",
                 "nearby_distance": 1000.0,
-                "num_bikes_available": 5,
+                "num_bikes_available": 6,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 11,
+                "num_docks_available": 10,
                 "num_docks_disabled": 0,
                 "obcn": "",
                 "physical_configuration": "ELECTRICBIKESTATION",
@@ -10595,7 +10595,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 11,
+                        "count": 10,
                         "vehicle_type_ids": [
                             "EFIT",
                             "BOOST",
@@ -10618,7 +10618,7 @@
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 5,
+                        "count": 6,
                         "vehicle_type_id": "EFIT"
                     }
                 ]
@@ -10647,12 +10647,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1761939221,
+                "last_reported": 1761939943,
                 "name": "Domaine de Maizerets",
                 "nearby_distance": 1000.0,
-                "num_bikes_available": 14,
+                "num_bikes_available": 13,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 6,
+                "num_docks_available": 7,
                 "num_docks_disabled": 0,
                 "obcn": "",
                 "physical_configuration": "ELECTRICBIKESTATION",
@@ -10669,7 +10669,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 6,
+                        "count": 7,
                         "vehicle_type_ids": [
                             "EFIT",
                             "BOOST",
@@ -10692,81 +10692,7 @@
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 14,
-                        "vehicle_type_id": "EFIT"
-                    }
-                ]
-            },
-            "type": "Feature"
-        },
-        {
-            "geometry": {
-                "coordinates": [
-                    -71.21437238651318,
-                    46.81230646289787
-                ],
-                "type": "Point"
-            },
-            "properties": {
-                "address": "800 Rue D'Youville",
-                "altitude": 0.0,
-                "capacity": 32,
-                "geofenced_capacity": 0,
-                "groups": [
-                    "Stations ferm\u00e9es 31 oct."
-                ],
-                "is_charging_station": true,
-                "is_installed": true,
-                "is_renting": false,
-                "is_returning": false,
-                "is_virtual_station": false,
-                "last_reported": 1761920357,
-                "name": "Place D\u2019Youville",
-                "nearby_distance": 1000.0,
-                "num_bikes_available": 0,
-                "num_bikes_disabled": 0,
-                "num_docks_available": 32,
-                "num_docks_disabled": 0,
-                "obcn": "",
-                "physical_configuration": "ELECTRICBIKESTATION",
-                "post_code": "G1R 5T3",
-                "rental_methods": [
-                    "KEY",
-                    "TRANSITCARD",
-                    "CREDITCARD",
-                    "PHONE"
-                ],
-                "rental_uris": {},
-                "short_name": "",
-                "station_id": "8",
-                "status": "MAINTENANCE",
-                "traffic": null,
-                "vehicle_docks_available": [
-                    {
-                        "count": 32,
-                        "vehicle_type_ids": [
-                            "EFIT",
-                            "BOOST",
-                            "ICONIC",
-                            "FIT"
-                        ]
-                    }
-                ],
-                "vehicle_types_available": [
-                    {
-                        "count": 0,
-                        "vehicle_type_id": "FIT"
-                    },
-                    {
-                        "count": 0,
-                        "vehicle_type_id": "ICONIC"
-                    },
-                    {
-                        "count": 0,
-                        "vehicle_type_id": "BOOST"
-                    },
-                    {
-                        "count": 0,
+                        "count": 13,
                         "vehicle_type_id": "EFIT"
                     }
                 ]
@@ -10794,7 +10720,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1761939108,
+                "last_reported": 1761940010,
                 "name": "Parc du Buisson",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 8,
@@ -10867,12 +10793,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1761939195,
+                "last_reported": 1761940097,
                 "name": "Samuel-King / Quatre-Bourgeois",
                 "nearby_distance": 1000.0,
-                "num_bikes_available": 11,
+                "num_bikes_available": 10,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 9,
+                "num_docks_available": 10,
                 "num_docks_disabled": 0,
                 "obcn": "",
                 "physical_configuration": "REGULAR",
@@ -10889,7 +10815,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 9,
+                        "count": 10,
                         "vehicle_type_ids": [
                             "EFIT",
                             "BOOST",
@@ -10912,7 +10838,7 @@
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 11,
+                        "count": 10,
                         "vehicle_type_id": "EFIT"
                     }
                 ]
@@ -10941,7 +10867,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1761939130,
+                "last_reported": 1761940032,
                 "name": "Arthur-Gagn\u00e9 / Gauvin",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 13,
@@ -11014,7 +10940,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1761939053,
+                "last_reported": 1761939956,
                 "name": "Wolfe / Quatre-Bourgeois",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 2,
@@ -11088,12 +11014,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1761939165,
+                "last_reported": 1761940068,
                 "name": "IUCPQ",
                 "nearby_distance": 1000.0,
-                "num_bikes_available": 16,
+                "num_bikes_available": 15,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 8,
+                "num_docks_available": 9,
                 "num_docks_disabled": 0,
                 "obcn": "",
                 "physical_configuration": "ELECTRICBIKESTATION",
@@ -11110,7 +11036,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 8,
+                        "count": 9,
                         "vehicle_type_ids": [
                             "EFIT",
                             "BOOST",
@@ -11133,7 +11059,7 @@
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 16,
+                        "count": 15,
                         "vehicle_type_id": "EFIT"
                     }
                 ]
@@ -11162,7 +11088,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1761939128,
+                "last_reported": 1761940031,
                 "name": "Bernatchez / Beaucage",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 6,
@@ -11236,12 +11162,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1761939107,
+                "last_reported": 1761940009,
                 "name": "Des Bouleaux O. / Du Colis\u00e9e",
                 "nearby_distance": 1000.0,
-                "num_bikes_available": 6,
+                "num_bikes_available": 5,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 10,
+                "num_docks_available": 11,
                 "num_docks_disabled": 0,
                 "obcn": "",
                 "physical_configuration": "ELECTRICBIKESTATION",
@@ -11258,7 +11184,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 10,
+                        "count": 11,
                         "vehicle_type_ids": [
                             "EFIT",
                             "BOOST",
@@ -11281,7 +11207,7 @@
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 6,
+                        "count": 5,
                         "vehicle_type_id": "EFIT"
                     }
                 ]
@@ -11310,12 +11236,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1761939136,
+                "last_reported": 1761940039,
                 "name": "De la Place Philippe / Richer",
                 "nearby_distance": 1000.0,
-                "num_bikes_available": 4,
+                "num_bikes_available": 3,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 16,
+                "num_docks_available": 17,
                 "num_docks_disabled": 0,
                 "obcn": "",
                 "physical_configuration": "ELECTRICBIKESTATION",
@@ -11332,7 +11258,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 16,
+                        "count": 17,
                         "vehicle_type_ids": [
                             "EFIT",
                             "BOOST",
@@ -11355,7 +11281,7 @@
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 4,
+                        "count": 3,
                         "vehicle_type_id": "EFIT"
                     }
                 ]
@@ -11384,12 +11310,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1761939190,
+                "last_reported": 1761940093,
                 "name": "\u00c9glise Saint-Jean-Baptiste",
                 "nearby_distance": 1000.0,
-                "num_bikes_available": 23,
+                "num_bikes_available": 24,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 5,
+                "num_docks_available": 4,
                 "num_docks_disabled": 0,
                 "obcn": "",
                 "physical_configuration": "ELECTRICBIKESTATION",
@@ -11407,7 +11333,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 5,
+                        "count": 4,
                         "vehicle_type_ids": [
                             "EFIT",
                             "BOOST",
@@ -11430,7 +11356,7 @@
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 23,
+                        "count": 24,
                         "vehicle_type_id": "EFIT"
                     }
                 ]
@@ -11457,12 +11383,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1761939139,
+                "last_reported": 1761940041,
                 "name": "ULaval - Abitibi-Price",
                 "nearby_distance": 1000.0,
-                "num_bikes_available": 9,
+                "num_bikes_available": 10,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 11,
+                "num_docks_available": 10,
                 "num_docks_disabled": 0,
                 "obcn": "",
                 "physical_configuration": "ELECTRICBIKESTATION",
@@ -11479,7 +11405,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 11,
+                        "count": 10,
                         "vehicle_type_ids": [
                             "EFIT",
                             "BOOST",
@@ -11502,7 +11428,7 @@
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 9,
+                        "count": 10,
                         "vehicle_type_id": "EFIT"
                     }
                 ]
@@ -11529,7 +11455,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1761939209,
+                "last_reported": 1761939931,
                 "name": "Parc Victoria - De la Mar\u00e9chauss\u00e9e",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 4,
@@ -11601,7 +11527,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1761939135,
+                "last_reported": 1761940038,
                 "name": "Cartier-Br\u00e9beuf",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 9,
@@ -11675,7 +11601,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1761939095,
+                "last_reported": 1761939998,
                 "name": "Du Chanoine-C\u00f4t\u00e9 / Beaucage",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 7,
@@ -11749,12 +11675,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1761939193,
+                "last_reported": 1761940096,
                 "name": "CFP de Limoilou",
                 "nearby_distance": 1000.0,
-                "num_bikes_available": 12,
+                "num_bikes_available": 14,
                 "num_bikes_disabled": 2,
-                "num_docks_available": 2,
+                "num_docks_available": 0,
                 "num_docks_disabled": 0,
                 "obcn": "",
                 "physical_configuration": "ELECTRICBIKESTATION",
@@ -11771,7 +11697,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 2,
+                        "count": 0,
                         "vehicle_type_ids": [
                             "EFIT",
                             "BOOST",
@@ -11794,7 +11720,7 @@
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 12,
+                        "count": 14,
                         "vehicle_type_id": "EFIT"
                     }
                 ]
@@ -11823,12 +11749,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1761939130,
+                "last_reported": 1761940035,
                 "name": "Biblioth\u00e8que Monique-Corriveau",
                 "nearby_distance": 1000.0,
-                "num_bikes_available": 3,
+                "num_bikes_available": 1,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 15,
+                "num_docks_available": 17,
                 "num_docks_disabled": 0,
                 "obcn": "",
                 "physical_configuration": "ELECTRICBIKESTATION",
@@ -11845,7 +11771,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 15,
+                        "count": 17,
                         "vehicle_type_ids": [
                             "EFIT",
                             "BOOST",
@@ -11868,7 +11794,7 @@
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 3,
+                        "count": 1,
                         "vehicle_type_id": "EFIT"
                     }
                 ]
@@ -11897,7 +11823,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1761939185,
+                "last_reported": 1761940087,
                 "name": "Des Peupliers E. / 4e Avenue",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 7,
@@ -11970,7 +11896,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1761939171,
+                "last_reported": 1761940074,
                 "name": "Laurier / Robert-Bourassa",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 11,
@@ -12044,12 +11970,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1761939084,
+                "last_reported": 1761939987,
                 "name": "Chapdelaine / De Belmont",
                 "nearby_distance": 16.0,
-                "num_bikes_available": 6,
+                "num_bikes_available": 7,
                 "num_bikes_disabled": 1,
-                "num_docks_available": 13,
+                "num_docks_available": 12,
                 "num_docks_disabled": 0,
                 "obcn": "",
                 "physical_configuration": "ELECTRICBIKESTATION",
@@ -12066,7 +11992,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 13,
+                        "count": 12,
                         "vehicle_type_ids": [
                             "EFIT",
                             "BOOST",
@@ -12089,7 +12015,7 @@
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 6,
+                        "count": 7,
                         "vehicle_type_id": "EFIT"
                     }
                 ]
