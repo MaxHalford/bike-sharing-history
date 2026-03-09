@@ -6,6 +6,7 @@ import json
 import os
 import pathlib
 import re
+import time
 
 import dotenv
 import duckdb
@@ -38,7 +39,7 @@ existing_parquet_keys = {
     )
     for blob in client.get_bucket("weather-forecast-history").list_blobs()
 }
-print(f"{len(existing_parquet_keys):,d} existing parquet files")
+print(f"[1/3] Found {len(existing_parquet_keys):,d} existing parquet files in GCS")
 
 # Deepen the shallow clone to only fetch the history we need.
 # We find the latest archived month and fetch from one month before that,
@@ -60,11 +61,13 @@ repo = git.Repo(".")
 if latest_archived:
     # One month buffer before the latest archived month for deduplication state
     buffer_date = (latest_archived.replace(day=1) - dt.timedelta(days=1)).replace(day=1)
-    print(f"Deepening clone to {buffer_date.isoformat()}...")
+    print(f"[1/3] Deepening clone to {buffer_date.isoformat()}...")
     repo.git.fetch("--shallow-since", buffer_date.isoformat())
 else:
-    print("No existing archives found, fetching full history...")
+    print("[1/3] No existing archives found, fetching full history...")
     repo.git.fetch("--unshallow")
+
+print(f"[1/3] Done")
 
 # Part 2: archiving the data into local CSV files
 
@@ -107,8 +110,11 @@ systems = [
 end_of_last_month = dt.datetime.now(dt.timezone.utc).replace(
     day=1, hour=23, minute=59, second=59
 ) - dt.timedelta(days=1)
+print(f"[2/3] Archiving commits up to {end_of_last_month.strftime('%Y-%m-%d')}")
+print(f"[2/3] {len(systems)} city/provider pairs, {len({c for c, _ in systems})} cities for weather")
 commits = repo.iter_commits("--all", reverse=True, until=end_of_last_month)
 archive_dir = pathlib.Path("archive")
+t0 = time.monotonic()
 
 # We keep track of the latest update for each station, so that we can skip updates which don't
 # change anything. We also keep track of the number of skipped updates, so that we can record
@@ -143,7 +149,9 @@ for i, commit in enumerate(commits):
     month = commit_at.strftime("%h")
 
     if i % 1_000 == 0:
-        print(f"Processing commit {i} ({commit_at.isoformat()})")
+        elapsed = time.monotonic() - t0
+        rate = i / elapsed if elapsed > 0 else 0
+        print(f"[2/3] Commit {i:,d} ({commit_at.strftime('%Y-%m-%d')}) — {rate:.0f} commits/s, {len(csv_writers)} CSV files open")
 
     # This loop is responsible for archiving the bike station updates. The next loop will archive
     # the weather updates.
@@ -231,7 +239,12 @@ for i, commit in enumerate(commits):
 for f in open_files.values():
     f.close()
 
+elapsed = time.monotonic() - t0
+print(f"[2/3] Done — processed {i + 1:,d} commits in {elapsed:.0f}s, wrote {len(csv_writers)} CSV files")
+
 # Part 3: uploading the CSV files to GCS after converting them to Parquet
+print("[3/3] Converting to Parquet and uploading to GCS...")
+n_uploaded = 0
 
 for csv_file in archive_dir.rglob("stations/**/*.csv"):
     # Let's skip the files which are empty, ignoring the header
@@ -265,7 +278,8 @@ for csv_file in archive_dir.rglob("stations/**/*.csv"):
     bucket = client.get_bucket("bike-sharing-history")
     blob = bucket.blob(str(parquet_file.relative_to(archive_dir / "stations")))
     blob.upload_from_filename(str(parquet_file), timeout=60 * 10)
-    print(f"Uploaded {parquet_file} to {blob.name}")
+    n_uploaded += 1
+    print(f"[3/3] Uploaded {blob.name}")
 
 for csv_file in archive_dir.rglob("weather/**/*.csv"):
     parquet_file = csv_file.with_suffix(".parquet")
@@ -290,4 +304,7 @@ for csv_file in archive_dir.rglob("weather/**/*.csv"):
     bucket = client.get_bucket("weather-forecast-history")
     blob = bucket.blob(str(parquet_file.relative_to(archive_dir / "weather")))
     blob.upload_from_filename(str(parquet_file), timeout=60 * 10)
-    print(f"Uploaded {parquet_file} to {blob.name}")
+    n_uploaded += 1
+    print(f"[3/3] Uploaded {blob.name}")
+
+print(f"[3/3] Done — uploaded {n_uploaded} parquet files")
