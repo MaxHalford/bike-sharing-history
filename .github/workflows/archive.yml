@@ -12,7 +12,7 @@ jobs:
       - name: Check out this repo
         uses: actions/checkout@v3
         with:
-          fetch-depth: 10000
+          fetch-depth: 1
 
       - name: Set up python
         id: set-up-python

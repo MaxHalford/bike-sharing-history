@@ -1,3 +1,4 @@
+import calendar
 import collections
 import csv
 import datetime as dt
@@ -38,6 +39,32 @@ existing_parquet_keys = {
     for blob in client.get_bucket("weather-forecast-history").list_blobs()
 }
 print(f"{len(existing_parquet_keys):,d} existing parquet files")
+
+# Deepen the shallow clone to only fetch the history we need.
+# We find the latest archived month and fetch from one month before that,
+# so we have enough history for deduplication without cloning the entire repo.
+month_abbrevs = {m: i for i, m in enumerate(calendar.month_abbr) if m}
+latest_archived = None
+for key in existing_parquet_keys:
+    try:
+        year, month = key[-2], key[-1]
+        month_num = month_abbrevs.get(month)
+        if month_num and year.isdigit():
+            d = dt.date(int(year), month_num, 1)
+            if latest_archived is None or d > latest_archived:
+                latest_archived = d
+    except (ValueError, IndexError):
+        continue
+
+repo = git.Repo(".")
+if latest_archived:
+    # One month buffer before the latest archived month for deduplication state
+    buffer_date = (latest_archived.replace(day=1) - dt.timedelta(days=1)).replace(day=1)
+    print(f"Deepening clone to {buffer_date.isoformat()}...")
+    repo.git.fetch("--shallow-since", buffer_date.isoformat())
+else:
+    print("No existing archives found, fetching full history...")
+    repo.git.fetch("--unshallow")
 
 # Part 2: archiving the data into local CSV files
 
@@ -80,7 +107,7 @@ systems = [
 end_of_last_month = dt.datetime.now(dt.timezone.utc).replace(
     day=1, hour=23, minute=59, second=59
 ) - dt.timedelta(days=1)
-commits = git.Repo(".").iter_commits("--all", reverse=True, until=end_of_last_month)
+commits = repo.iter_commits("--all", reverse=True, until=end_of_last_month)
 archive_dir = pathlib.Path("archive")
 
 # We keep track of the latest update for each station, so that we can skip updates which don't
