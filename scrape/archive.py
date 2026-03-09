@@ -115,6 +115,27 @@ archive_dir = pathlib.Path("archive")
 # this information in the CSV file.
 latest_update_by_station = collections.defaultdict()
 skipped_updates_by_station = collections.defaultdict(int)
+last_written_month_by_station = {}
+
+# Keep file handles and writers open to avoid opening/closing per commit
+open_files = {}
+csv_writers = {}
+
+STATION_FIELDS = ["station", "longitude", "latitude", "commit_at", "skipped_updates", "bikes", "stands"]
+WEATHER_FIELDS = ["commit_at", "forecast_at", "temperature", "rain", "wind_speed"]
+
+
+def get_writer(csv_file, fieldnames):
+    if csv_file not in csv_writers:
+        csv_file.parent.mkdir(parents=True, exist_ok=True)
+        f = open(csv_file, "a")
+        open_files[csv_file] = f
+        writer = csv.DictWriter(f, fieldnames=fieldnames)
+        if csv_file.stat().st_size == 0:
+            writer.writeheader()
+        csv_writers[csv_file] = writer
+    return csv_writers[csv_file]
+
 
 for i, commit in enumerate(commits):
     commit_at = commit.committed_datetime.astimezone(dt.timezone.utc)
@@ -142,45 +163,33 @@ for i, commit in enumerate(commits):
             "jcdecaux": jcdecaux_scrub,
         }.get(provider, gbfs_scrub)
 
-        # We store the data in a CSV file per month
         csv_file = archive_dir / "stations" / city / provider / year / f"{month}.csv"
-        csv_file.parent.mkdir(parents=True, exist_ok=True)
+        writer = get_writer(csv_file, STATION_FIELDS)
 
-        with open(csv_file, "a") as f:
-            writer = csv.DictWriter(
-                f,
-                fieldnames=[
-                    "station",
-                    "longitude",
-                    "latitude",
-                    "commit_at",
-                    "skipped_updates",
-                    "bikes",
-                    "stands",
-                ],
-            )
+        for update in scrub(geojson=json.load(blob.data_stream)):
+            station_key = (city, provider, update["station"])
 
-            # Write the header if the file is empty
-            if csv_file.stat().st_size == 0:
-                writer.writeheader()
+            # We don't write anything if the data hasn't changed
+            if (
+                (latest_update := latest_update_by_station.get(station_key))
+                and latest_update["bikes"] == update["bikes"]
+                and latest_update["stands"] == update["stands"]
+            ):
+                skipped_updates_by_station[station_key] += 1
+                continue
 
-            for update in scrub(geojson=json.load(blob.data_stream)):
-                station_key = (city, provider, update["station"])
-
-                # We don't write anything if the data hasn't changed
-                if (
-                    (latest_update := latest_update_by_station.get(station_key))
-                    and latest_update["bikes"] == update["bikes"]
-                    and latest_update["stands"] == update["stands"]
-                ):
-                    skipped_updates_by_station[station_key] += 1
-                    continue
-
-                update["commit_at"] = commit_at.isoformat()
-                update["skipped_updates"] = skipped_updates_by_station[station_key]
-                writer.writerow(update)
-                latest_update_by_station[station_key] = update
+            # Reset skip counter at month boundaries so we don't carry over
+            # counts from the previous month into the new CSV file
+            current_month = (year, month)
+            if last_written_month_by_station.get(station_key) != current_month:
                 skipped_updates_by_station[station_key] = 0
+                last_written_month_by_station[station_key] = current_month
+
+            update["commit_at"] = commit_at.isoformat()
+            update["skipped_updates"] = skipped_updates_by_station[station_key]
+            writer.writerow(update)
+            latest_update_by_station[station_key] = update
+            skipped_updates_by_station[station_key] = 0
 
     # This loop is responsible for archiving the weather updates.
     for city in {city for city, _ in systems}:
@@ -193,47 +202,34 @@ for i, commit in enumerate(commits):
         except KeyError:
             continue
 
-        # We store the data in a CSV file per month
         csv_file = archive_dir / "weather" / city / year / f"{month}.csv"
-        csv_file.parent.mkdir(parents=True, exist_ok=True)
+        writer = get_writer(csv_file, WEATHER_FIELDS)
 
-        with open(csv_file, "a") as f:
-            writer = csv.DictWriter(
-                f,
-                fieldnames=[
-                    "commit_at",
-                    "forecast_at",
-                    "temperature",
-                    "rain",
-                    "wind_speed",
-                ],
+        # There is one row per forecast time step to write
+        try:
+            forecast = json.load(blob.data_stream)
+        except json.JSONDecodeError:
+            print(f"Error decoding {blob}")
+            continue
+        for forecast_at, temperature, rain, wind_speed in zip(
+            forecast["hourly"]["time"],
+            forecast["hourly"]["temperature_2m"],
+            forecast["hourly"]["rain"],
+            forecast["hourly"]["windspeed_10m"],
+        ):
+            writer.writerow(
+                {
+                    "commit_at": commit_at.isoformat(),
+                    "forecast_at": forecast_at,
+                    "temperature": temperature,
+                    "rain": rain,
+                    "wind_speed": wind_speed,
+                }
             )
 
-            # Write the header if the file is empty
-            if csv_file.stat().st_size == 0:
-                writer.writeheader()
-
-            # There is one row per forecast time step to write
-            try:
-                forecast = json.load(blob.data_stream)
-            except json.JSONDecodeError:
-                print(f"Error decoding {blob}")
-                continue
-            for forecast_at, temperature, rain, wind_speed in zip(
-                forecast["hourly"]["time"],
-                forecast["hourly"]["temperature_2m"],
-                forecast["hourly"]["rain"],
-                forecast["hourly"]["windspeed_10m"],
-            ):
-                writer.writerow(
-                    {
-                        "commit_at": commit_at.isoformat(),
-                        "forecast_at": forecast_at,
-                        "temperature": temperature,
-                        "rain": rain,
-                        "wind_speed": wind_speed,
-                    }
-                )
+# Close all open file handles
+for f in open_files.values():
+    f.close()
 
 # Part 3: uploading the CSV files to GCS after converting them to Parquet
 

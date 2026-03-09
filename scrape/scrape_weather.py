@@ -26,14 +26,21 @@ def scrape_parse_save(scrape, save_to):
 
 
 def main():
+    # Deduplicate by city so we don't fetch weather twice for cities with multiple providers
+    seen_cities = {}
+    for system in systems:
+        city_slug = utils.slugify(system.city)
+        if city_slug not in seen_cities:
+            seen_cities[city_slug] = system
+
     with concurrent.futures.ThreadPoolExecutor(max_workers=8) as executor:
         future_to_city = {
             executor.submit(
                 scrape_parse_save,
                 scrape=functools.partial(fetch_weather, system.latitude, system.longitude),
-                save_to=pathlib.Path("data/weather") / f"{utils.slugify(system.city)}.json",
+                save_to=pathlib.Path("data/weather") / f"{city_slug}.json",
             ): system.city
-            for system in systems
+            for city_slug, system in seen_cities.items()
         }
 
         n_exceptions = 0

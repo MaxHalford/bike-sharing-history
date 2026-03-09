@@ -151,11 +151,11 @@ systems.extend(
 
 
 def gbfs_scrape(info_url, status_url):
-    r = requests.get(info_url)
+    r = requests.get(info_url, timeout=10)
     r.raise_for_status()
     information = {s["station_id"]: s for s in r.json()["data"]["stations"]}
 
-    r = requests.get(status_url)
+    r = requests.get(status_url, timeout=10)
     r.raise_for_status()
     statuses = {s["station_id"]: s for s in r.json()["data"]["stations"]}
 
@@ -268,8 +268,8 @@ systems.extend(
             provider='Smovengo',
             city='Paris',
             country='🇫🇷',
-            latitude=43.653908,
-            longitude=-79.384293,
+            latitude=48.856614,
+            longitude=2.352222,
             scrape=functools.partial(
                 gbfs_scrape,
                 info_url='https://velib-metropole-opendata.smovengo.cloud/opendata/Velib_Metropole/station_information.json',
@@ -408,18 +408,8 @@ systems.extend(
                 status_url='https://quebec.publicbikesystem.net/customer/gbfs/v2/en/station_status'
             )
         ),
-        System(
-            provider="Bike Itaú",
-            city="Salvador",
-            country="🇧🇷",
-            latitude=-12.971599,
-            longitude=-38.501705,
-            scrape=functools.partial(
-                gbfs_scrape,
-                info_url='https://santiago.publicbikesystem.net/customer/gbfs/v2/en/station_information',
-                status_url='https://santiago.publicbikesystem.net/customer/gbfs/v2/en/station_status'
-            )
-        ),
+        # NOTE: Salvador (Brazil) was removed — it was incorrectly pointing to Santiago's API.
+        # Re-add when the correct GBFS endpoint is found.
         System(
             provider="Tembici",
             city="Bogotá",
