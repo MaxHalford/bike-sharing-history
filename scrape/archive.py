@@ -106,17 +106,19 @@ systems = [
     if provider.stem not in {"lime"}
 ]
 
-# We're going to loop over all the commits since the start of time. It's ok to do this, because
-# most commits will be skipped. Indeed, we can skip all commits which pertain to a month which
-# has already been archived.
-# We do however limit ourselves to the latest full month, because we don't want to archive partial
-# months.
+# We limit ourselves to the latest full month, because we don't want to archive partial months.
+# We also start from buffer_date (if we have existing archives) to avoid re-processing the
+# entire history — the existing_parquet_keys check would skip them anyway, but iterating
+# through thousands of old commits is slow.
 end_of_last_month = dt.datetime.now(dt.timezone.utc).replace(
     day=1, hour=23, minute=59, second=59
 ) - dt.timedelta(days=1)
-print(f"[2/3] Archiving commits up to {end_of_last_month.strftime('%Y-%m-%d')}")
+commit_kwargs = {"reverse": True, "until": end_of_last_month}
+if latest_archived:
+    commit_kwargs["since"] = buffer_date.isoformat()
+print(f"[2/3] Archiving commits {'since ' + buffer_date.isoformat() + ' ' if latest_archived else ''}up to {end_of_last_month.strftime('%Y-%m-%d')}")
 print(f"[2/3] {len(systems)} city/provider pairs, {len({c for c, _ in systems})} cities for weather")
-commits = repo.iter_commits("--all", reverse=True, until=end_of_last_month)
+commits = repo.iter_commits("--all", **commit_kwargs)
 archive_dir = pathlib.Path("archive")
 t0 = time.monotonic()
 
@@ -274,7 +276,7 @@ for csv_file in archive_dir.rglob("stations/**/*.csv"):
     duckdb.connect(":memory:").execute(f"""
     COPY (
         SELECT *
-        FROM read_csv('{csv_file}', AUTO_DETECT=TRUE)
+        FROM read_csv('{csv_file}', header=true, quote='"')
     )
     TO '{parquet_file}' (FORMAT 'PARQUET', CODEC 'ZSTD');
     """)
@@ -300,7 +302,7 @@ for csv_file in archive_dir.rglob("weather/**/*.csv"):
     duckdb.connect(":memory:").execute(f"""
     COPY (
         SELECT *
-        FROM read_csv('{csv_file}', AUTO_DETECT=TRUE)
+        FROM read_csv('{csv_file}', header=true, quote='"')
     )
     TO '{parquet_file}' (FORMAT 'PARQUET', CODEC 'ZSTD');
     """)
