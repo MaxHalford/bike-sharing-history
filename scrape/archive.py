@@ -117,7 +117,8 @@ commit_kwargs = {"reverse": True, "until": end_of_last_month}
 if latest_archived:
     commit_kwargs["since"] = buffer_date.isoformat()
 print(f"[2/3] Archiving commits {'since ' + buffer_date.isoformat() + ' ' if latest_archived else ''}up to {end_of_last_month.strftime('%Y-%m-%d')}")
-print(f"[2/3] {len(systems)} city/provider pairs, {len({c for c, _ in systems})} cities for weather")
+weather_cities = {city for city, _ in systems}
+print(f"[2/3] {len(systems)} city/provider pairs, {len(weather_cities)} cities for weather")
 commits = repo.iter_commits("--all", **commit_kwargs)
 archive_dir = pathlib.Path("archive")
 t0 = time.monotonic()
@@ -128,6 +129,11 @@ t0 = time.monotonic()
 latest_update_by_station = collections.defaultdict()
 skipped_updates_by_station = collections.defaultdict(int)
 last_written_month_by_station = {}
+
+# Track blob SHAs to skip JSON parsing when a file hasn't changed between commits.
+# Reset at month boundaries so the first commit of a new month always writes.
+prev_blob_shas = {}
+prev_commit_month = None
 
 # Keep file handles and writers open to avoid opening/closing per commit
 open_files = {}
@@ -154,22 +160,52 @@ for i, commit in enumerate(commits):
     year = commit_at.strftime("%Y")
     month = commit_at.strftime("%h")
 
+    # Reset blob SHA cache at month boundaries so the first commit of a new month
+    # always processes all files (needed to start new CSV files).
+    current_month = (year, month)
+    if current_month != prev_commit_month:
+        prev_blob_shas.clear()
+        prev_commit_month = current_month
+
     if i % 1_000 == 0:
         elapsed = time.monotonic() - t0
         rate = i / elapsed if elapsed > 0 else 0
         print(f"[2/3] Commit {i:,d} ({commit_at.strftime('%Y-%m-%d')}) — {rate:.0f} commits/s, {len(csv_writers)} CSV files open")
 
+    # Cache shared tree lookups for this commit
+    try:
+        data_tree = commit.tree / "data"
+        stations_tree = data_tree / "stations"
+    except KeyError:
+        continue
+
     # This loop is responsible for archiving the bike station updates. The next loop will archive
     # the weather updates.
+    city_trees = {}
     for city, provider in systems:
         # Skip if the data has already been stored
         if ("bike-sharing", city, provider, str(year), month) in existing_parquet_keys:
             continue
 
+        # Cache city-level tree lookups within this commit
+        if city not in city_trees:
+            try:
+                city_trees[city] = stations_tree / city
+            except KeyError:
+                city_trees[city] = None
+        if city_trees[city] is None:
+            continue
+
         try:
-            blob = commit.tree / "data" / "stations" / city / f"{provider}.geojson"
+            blob = city_trees[city] / f"{provider}.geojson"
         except KeyError:
             continue
+
+        # Skip JSON parsing if blob unchanged since last commit
+        blob_key = (city, provider)
+        if blob.hexsha == prev_blob_shas.get(blob_key):
+            continue
+        prev_blob_shas[blob_key] = blob.hexsha
 
         # The data has been scrapped and stored as is. This is where we normalize it to a single
         # format.
@@ -194,7 +230,6 @@ for i, commit in enumerate(commits):
 
             # Reset skip counter at month boundaries so we don't carry over
             # counts from the previous month into the new CSV file
-            current_month = (year, month)
             if last_written_month_by_station.get(station_key) != current_month:
                 skipped_updates_by_station[station_key] = 0
                 last_written_month_by_station[station_key] = current_month
@@ -206,15 +241,26 @@ for i, commit in enumerate(commits):
             skipped_updates_by_station[station_key] = 0
 
     # This loop is responsible for archiving the weather updates.
-    for city in {city for city, _ in systems}:
+    try:
+        weather_tree = data_tree / "weather"
+    except KeyError:
+        continue
+
+    for city in weather_cities:
         # Skip if the data has already been stored
         if ("weather-forecast", city, str(year), month) in existing_parquet_keys:
             continue
 
         try:
-            blob = commit.tree / "data" / "weather" / f"{city}.json"
+            blob = weather_tree / f"{city}.json"
         except KeyError:
             continue
+
+        # Skip JSON parsing if blob unchanged since last commit
+        blob_key = ("w", city)
+        if blob.hexsha == prev_blob_shas.get(blob_key):
+            continue
+        prev_blob_shas[blob_key] = blob.hexsha
 
         csv_file = archive_dir / "weather" / city / year / f"{month}.csv"
         writer = get_writer(csv_file, WEATHER_FIELDS)
