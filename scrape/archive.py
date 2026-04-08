@@ -61,15 +61,12 @@ repo = git.Repo(".")
 if latest_archived:
     # One month buffer before the latest archived month for deduplication state
     buffer_date = (latest_archived.replace(day=1) - dt.timedelta(days=1)).replace(day=1)
-    print(f"[1/3] Deepening clone to {buffer_date.isoformat()}...")
-    try:
-        repo.git.fetch("--shallow-since", buffer_date.isoformat())
-    except git.exc.GitCommandError as e:
-        # --shallow-since on an already-shallow clone can fail with
-        # "error processing shallow info" in some git versions (e.g. 2.53+).
-        # Fall back to a full unshallow.
-        print(f"[1/3] --shallow-since failed ({e.stderr.strip()}), falling back to --unshallow...")
-        repo.git.fetch("--unshallow")
+    # Use --deepen=N instead of --shallow-since, which breaks on shallow clones
+    # in git 2.53+. The scrape job runs 4x/hour = 96 commits/day.
+    days_needed = (dt.date.today() - buffer_date).days
+    depth = days_needed * 96 + 500  # generous buffer
+    print(f"[1/3] Deepening clone by {depth} commits (back to ~{buffer_date.isoformat()})...")
+    repo.git.fetch(f"--deepen={depth}")
 else:
     print("[1/3] No existing archives found, fetching full history...")
     repo.git.fetch("--unshallow")
