@@ -198,13 +198,10 @@ for i, commit in enumerate(commits):
     # the weather updates.
     city_trees = {}
     for city, provider in systems:
-        # Skip if the data has already been stored. In backfill mode we keep processing
-        # already-archived months so the per-station dedup state warms up correctly, but
-        # we don't write their rows (`already_archived` guards the writer below).
-        already_archived = (
-            "bike-sharing", city, provider, str(year), month
-        ) in existing_parquet_keys
-        if already_archived and not BACKFILL:
+        # Skip if the data has already been stored. This cheap skip (no blob parsing) is
+        # what keeps both normal and backfill runs fast: backfill only differs in that it
+        # iterates the full history with no `since` bound, so it reaches old gap months.
+        if ("bike-sharing", city, provider, str(year), month) in existing_parquet_keys:
             continue
 
         # Cache city-level tree lookups within this commit
@@ -234,6 +231,7 @@ for i, commit in enumerate(commits):
         }.get(provider, gbfs_scrub)
 
         csv_file = archive_dir / "stations" / city / provider / year / f"{month}.csv"
+        writer = get_writer(csv_file, STATION_FIELDS)
 
         for update in scrub(geojson=json.load(blob.data_stream)):
             station_key = (city, provider, update["station"])
@@ -255,10 +253,7 @@ for i, commit in enumerate(commits):
 
             update["commit_at"] = commit_at.isoformat()
             update["skipped_updates"] = skipped_updates_by_station[station_key]
-            # In backfill mode we still update the dedup state for already-archived
-            # months, but only write rows for months we actually intend to upload.
-            if not already_archived:
-                get_writer(csv_file, STATION_FIELDS).writerow(update)
+            writer.writerow(update)
             latest_update_by_station[station_key] = update
             skipped_updates_by_station[station_key] = 0
 
