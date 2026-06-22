@@ -15,6 +15,11 @@ from google.cloud import storage
 
 dotenv.load_dotenv()
 
+# When BACKFILL=1, the script reprocesses the entire git history instead of only the
+# recent window. It still skips uploading months that are already in GCS, so it can be
+# used to fill in gaps left by past failed runs without touching existing archives.
+BACKFILL = os.environ.get("BACKFILL") == "1"
+
 # Part 1: listing existing archives
 
 # The first thing we do is list the blobs in the bucket. This way, we know which data has already
@@ -58,7 +63,16 @@ for key in existing_parquet_keys:
         continue
 
 repo = git.Repo(".")
-if latest_archived:
+if BACKFILL:
+    # The backfill workflow checks out with fetch-depth: 0, so the full history is
+    # already present. If run on a shallow clone, unshallow it; ignore the error raised
+    # when the clone is already complete.
+    print("[1/3] Backfill mode: ensuring full git history is available...")
+    try:
+        repo.git.fetch("--unshallow")
+    except git.GitCommandError:
+        pass
+elif latest_archived:
     # One month buffer before the latest archived month for deduplication state
     buffer_date = (latest_archived.replace(day=1) - dt.timedelta(days=1)).replace(day=1)
     # Use --deepen=N instead of --shallow-since, which breaks on shallow clones
@@ -114,9 +128,10 @@ end_of_last_month = dt.datetime.now(dt.timezone.utc).replace(
     day=1, hour=23, minute=59, second=59
 ) - dt.timedelta(days=1)
 commit_kwargs = {"reverse": True, "until": end_of_last_month}
-if latest_archived:
+if latest_archived and not BACKFILL:
     commit_kwargs["since"] = buffer_date.isoformat()
-print(f"[2/3] Archiving commits {'since ' + buffer_date.isoformat() + ' ' if latest_archived else ''}up to {end_of_last_month.strftime('%Y-%m-%d')}")
+since_label = "since " + buffer_date.isoformat() + " " if (latest_archived and not BACKFILL) else ""
+print(f"[2/3] Archiving commits {since_label}up to {end_of_last_month.strftime('%Y-%m-%d')}")
 weather_cities = {city for city, _ in systems}
 print(f"[2/3] {len(systems)} city/provider pairs, {len(weather_cities)} cities for weather")
 commits = repo.iter_commits("--all", **commit_kwargs)
@@ -183,8 +198,13 @@ for i, commit in enumerate(commits):
     # the weather updates.
     city_trees = {}
     for city, provider in systems:
-        # Skip if the data has already been stored
-        if ("bike-sharing", city, provider, str(year), month) in existing_parquet_keys:
+        # Skip if the data has already been stored. In backfill mode we keep processing
+        # already-archived months so the per-station dedup state warms up correctly, but
+        # we don't write their rows (`already_archived` guards the writer below).
+        already_archived = (
+            "bike-sharing", city, provider, str(year), month
+        ) in existing_parquet_keys
+        if already_archived and not BACKFILL:
             continue
 
         # Cache city-level tree lookups within this commit
@@ -214,7 +234,6 @@ for i, commit in enumerate(commits):
         }.get(provider, gbfs_scrub)
 
         csv_file = archive_dir / "stations" / city / provider / year / f"{month}.csv"
-        writer = get_writer(csv_file, STATION_FIELDS)
 
         for update in scrub(geojson=json.load(blob.data_stream)):
             station_key = (city, provider, update["station"])
@@ -236,7 +255,10 @@ for i, commit in enumerate(commits):
 
             update["commit_at"] = commit_at.isoformat()
             update["skipped_updates"] = skipped_updates_by_station[station_key]
-            writer.writerow(update)
+            # In backfill mode we still update the dedup state for already-archived
+            # months, but only write rows for months we actually intend to upload.
+            if not already_archived:
+                get_writer(csv_file, STATION_FIELDS).writerow(update)
             latest_update_by_station[station_key] = update
             skipped_updates_by_station[station_key] = 0
 

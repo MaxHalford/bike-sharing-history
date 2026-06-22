@@ -1,0 +1,35 @@
+name: Backfill
+
+# One-off / on-demand workflow to fill in archive gaps left by past failed Archive runs.
+# It reprocesses the FULL git history (fetch-depth: 0) with BACKFILL=1, which writes only
+# the months that are missing from GCS and skips uploading anything already archived.
+
+on:
+  workflow_dispatch:
+
+jobs:
+  backfill:
+    runs-on: ubuntu-latest
+    timeout-minutes: 350
+    steps:
+      - name: Check out this repo
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Set up python
+        id: set-up-python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.11"
+
+      - name: Install Python dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install python-dotenv duckdb GitPython google-cloud-storage
+
+      - name: Backfill
+        run: python scrape/archive.py
+        env:
+          BACKFILL: "1"
+          GCP_SERVICE_ACCOUNT_JSON: ${{ secrets.GCP_SERVICE_ACCOUNT_JSON }}
