@@ -118,3 +118,15 @@ with duckdb.connect(":memory:") as con:
 ```
 
 If these exports are not adapted to your needs, feel welcome to reach out. The exports can be easily adapted to different needs, because the source of truth is the git history.
+
+## Citation
+
+If you use this data as part of a scientific publication, please cite it. A [`CITATION.cff`](CITATION.cff) file is provided, so you can grab a ready-made APA or BibTeX citation from the "Cite this repository" button in the sidebar of the [GitHub repository](https://github.com/MaxHalford/bike-sharing-history). The BibTeX entry looks like this:
+
+```bibtex
+@misc{Halford_bike_sharing_history,
+    author = {Halford, Max},
+    title = {{bike-sharing-history}},
+    url = {https://github.com/MaxHalford/bike-sharing-history}
+}
+```
