@@ -205,6 +205,18 @@ systems.extend(
             ),
         ),
         System(
+            provider="Bluebikes",
+            city="Boston",
+            country="🇺🇸",
+            latitude=42.3601,
+            longitude=-71.0589,
+            scrape=functools.partial(
+                gbfs_scrape,
+                info_url="https://gbfs.lyft.com/gbfs/1.1/bos/en/station_information.json",
+                status_url="https://gbfs.lyft.com/gbfs/1.1/bos/en/station_status.json",
+            ),
+        ),
+        System(
             provider="BCycle",
             city="Boulder",
             country="🇺🇸",
