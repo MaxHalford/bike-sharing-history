@@ -1,0 +1,9 @@
+[build]
+builder = "DOCKERFILE"
+dockerfilePath = "Dockerfile"
+
+[deploy]
+# The first deployment is deliberately inert. The migration switches this to
+# scripts/railway-scrape.sh when the GitHub schedule is removed.
+startCommand = "python scrape/scrape_city_branches.py --list-cities"
+restartPolicyType = "NEVER"
