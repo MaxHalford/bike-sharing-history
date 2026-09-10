@@ -13,4 +13,4 @@ COPY scrape ./scrape
 COPY deploy ./deploy
 COPY scripts ./scripts
 
-CMD ["python", "scrape/scrape_city_branches.py", "--list-cities"]
+CMD ["sh", "scripts/railway-scrape.sh"]
