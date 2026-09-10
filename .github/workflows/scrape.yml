@@ -1,0 +1,27 @@
+name: Scrape
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "1,16,31,46 * * * *"
+
+concurrency:
+  group: scrape-city-branches
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  scheduled:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out scraper code
+        uses: actions/checkout@v7
+        with:
+          fetch-depth: 1
+
+      - name: Scrape and publish city branches
+        run: python scrape/scrape_city_branches.py
+        env:
+          JCDECAUX_API_KEY: ${{ secrets.JCDECAUX_API_KEY }}

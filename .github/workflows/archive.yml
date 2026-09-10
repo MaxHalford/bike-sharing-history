@@ -1,0 +1,156 @@
+name: Archive
+
+on:
+  workflow_dispatch:
+    inputs:
+      city:
+        description: Optional city slug (default is every current city)
+        required: false
+        type: string
+      all_history:
+        description: Rebuild every month for all historical city branches
+        required: false
+        default: false
+        type: boolean
+      force:
+        description: Replace existing archive files
+        required: false
+        default: false
+        type: boolean
+  schedule:
+    - cron: "30 5 5 * *" # 5:30am UTC on the 5th of every month
+
+permissions:
+  actions: read
+  contents: write
+
+jobs:
+  cities:
+    runs-on: ubuntu-latest
+    outputs:
+      matrix: ${{ steps.matrix.outputs.cities }}
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          fetch-depth: 1
+
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.11"
+
+      - run: python -m pip install requests
+
+      - name: Select cities
+        id: matrix
+        env:
+          ALL_HISTORY: ${{ inputs.all_history }}
+          CITY: ${{ inputs.city }}
+        run: |
+          if [[ -n "${CITY}" ]]; then
+            cities=$(jq -cn --arg city "${CITY}" '[ $city ]')
+          elif [[ "${ALL_HISTORY}" == "true" ]]; then
+            cities=$(
+              git ls-remote --heads origin 'refs/heads/city/*' \
+                | sed 's#.*refs/heads/city/##' \
+                | jq -R -s -c '
+                    split("\n")
+                    | map(select(
+                        length > 0
+                        and . != "bruxelles"
+                        and . != "seville"
+                        and . != "valence"
+                    ))
+                  '
+            )
+          else
+            cities=$(python scrape/scrape_city_branches.py --list-cities)
+          fi
+          echo "cities=${cities}" >> "${GITHUB_OUTPUT}"
+
+  archive:
+    needs: cities
+    strategy:
+      fail-fast: false
+      max-parallel: 8
+      matrix:
+        city: ${{ fromJSON(needs.cities.outputs.matrix) }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 350
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          path: app
+          fetch-depth: 1
+
+      - name: Clone city history
+        env:
+          ALL_HISTORY: ${{ inputs.all_history }}
+          CITY: ${{ matrix.city }}
+        run: |
+          until=$(date -u +%Y-%m-01)
+          # Revisit two months so one missed scheduled run heals automatically.
+          since=$(date -u --date="${until} -2 months" +%Y-%m-01)
+          args=(--single-branch --no-tags --branch "city/${CITY}")
+          if [[ "${ALL_HISTORY}" != "true" ]]; then
+            args+=(--shallow-since "${since}")
+          fi
+          git clone "${args[@]}" "https://github.com/${GITHUB_REPOSITORY}.git" history
+          echo "SINCE=${since}" >> "${GITHUB_ENV}"
+          echo "UNTIL=${until}" >> "${GITHUB_ENV}"
+
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.11"
+
+      - run: python -m pip install duckdb google-cloud-storage
+
+      - name: Build and upload
+        env:
+          ALL_HISTORY: ${{ inputs.all_history }}
+          FORCE: ${{ inputs.force }}
+          GCP_SERVICE_ACCOUNT_JSON: ${{ secrets.GCP_SERVICE_ACCOUNT_JSON }}
+        run: |
+          args=(
+            --repo history
+            --output-dir "${RUNNER_TEMP}/archive"
+            --until "${UNTIL}"
+            --upload
+            --delete-after-upload
+          )
+          if [[ "${ALL_HISTORY}" != "true" ]]; then
+            args+=(--since "${SINCE}")
+          fi
+          if [[ "${FORCE}" == "true" ]]; then
+            args+=(--force)
+          fi
+          python app/scrape/rebuild_archives.py "${args[@]}"
+
+  summary:
+    if: ${{ always() && needs.archive.result == 'success' }}
+    needs: archive
+    runs-on: ubuntu-latest
+    concurrency:
+      group: archive-readme-summary
+      cancel-in-progress: false
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          fetch-depth: 1
+
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.11"
+
+      - run: python -m pip install "duckdb>=1.4" requests
+
+      - name: Update archive summary
+        run: python scrape/update_archive_summary.py
+
+      - name: Commit summary if changed
+        run: |
+          git config user.name "Automated"
+          git config user.email "actions@users.noreply.github.com"
+          git add README.md
+          git diff --cached --quiet && exit 0
+          git commit -m "Update archive summary"
+          git push
