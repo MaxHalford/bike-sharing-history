@@ -2,8 +2,6 @@ name: Scrape
 
 on:
   workflow_dispatch:
-  schedule:
-    - cron: "1,16,31,46 * * * *"
 
 concurrency:
   group: scrape-city-branches
