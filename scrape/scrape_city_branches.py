@@ -23,9 +23,8 @@ import utils
 from systems import systems
 
 
-# Keep each transaction comfortably below hosted-git ref limits. A failure in
-# one batch must not prevent unrelated city branches from being published.
-PUSH_BATCH_SIZE = 50
+# Keep fetches and pushes comfortably below hosted-git ref limits.
+REF_BATCH_SIZE = 50
 
 
 def run(
@@ -57,7 +56,15 @@ def expected_station_files(city_slug: str) -> set[str]:
     }
 
 
-def fetch_city_tips(repo: pathlib.Path, remote: str, cities: list[str]) -> None:
+def fetch_city_tips(
+    repo: pathlib.Path,
+    remote: str,
+    cities: list[str],
+    batch_size: int = REF_BATCH_SIZE,
+) -> None:
+    if batch_size < 1:
+        raise ValueError("batch_size must be at least 1")
+
     remote_heads = run(
         "git",
         "ls-remote",
@@ -78,17 +85,25 @@ def fetch_city_tips(repo: pathlib.Path, remote: str, cities: list[str]) -> None:
         f"+refs/heads/city/{city}:refs/remotes/{remote}/city/{city}"
         for city in existing_cities
     ]
-    result = run(
-        "git",
-        "fetch",
-        "--depth=1",
-        remote,
-        *refspecs,
-        cwd=repo,
-        check=False,
-    )
-    if result.returncode:
-        raise RuntimeError(f"Could not fetch all city branches:\n{result.stdout}")
+    batches = [
+        refspecs[start : start + batch_size]
+        for start in range(0, len(refspecs), batch_size)
+    ]
+    for batch_number, batch in enumerate(batches, start=1):
+        result = run(
+            "git",
+            "fetch",
+            "--depth=1",
+            remote,
+            *batch,
+            cwd=repo,
+            check=False,
+        )
+        if result.returncode:
+            raise RuntimeError(
+                f"Could not fetch city branch batch "
+                f"{batch_number}/{len(batches)}:\n{result.stdout}"
+            )
 
 
 def scrape_all(data_root: pathlib.Path, include_weather: bool = True) -> None:
@@ -248,7 +263,7 @@ def push_city_updates(
     remote: str,
     updates: dict[str, str],
     attempts: int = 5,
-    batch_size: int = PUSH_BATCH_SIZE,
+    batch_size: int = REF_BATCH_SIZE,
 ) -> None:
     if attempts < 1:
         raise ValueError("attempts must be at least 1")
