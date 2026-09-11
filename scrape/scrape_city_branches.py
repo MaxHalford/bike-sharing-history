@@ -23,8 +23,9 @@ import utils
 from systems import systems
 
 
-# Keep fetches and pushes comfortably below hosted-git ref limits.
-REF_BATCH_SIZE = 50
+# Keep each push transaction comfortably below hosted-git ref limits. A
+# wildcard refspec fetches the complete city namespace in one operation.
+PUSH_BATCH_SIZE = 50
 
 
 def run(
@@ -59,12 +60,7 @@ def expected_station_files(city_slug: str) -> set[str]:
 def fetch_city_tips(
     repo: pathlib.Path,
     remote: str,
-    cities: list[str],
-    batch_size: int = REF_BATCH_SIZE,
 ) -> None:
-    if batch_size < 1:
-        raise ValueError("batch_size must be at least 1")
-
     remote_heads = run(
         "git",
         "ls-remote",
@@ -73,37 +69,19 @@ def fetch_city_tips(
         "refs/heads/city/*",
         cwd=repo,
     ).stdout.splitlines()
-    available = {
-        line.split("refs/heads/city/", 1)[1]
-        for line in remote_heads
-        if "refs/heads/city/" in line
-    }
-    existing_cities = sorted(set(cities) & available)
-    if not existing_cities:
+    if not any("refs/heads/city/" in line for line in remote_heads):
         return
-    refspecs = [
-        f"+refs/heads/city/{city}:refs/remotes/{remote}/city/{city}"
-        for city in existing_cities
-    ]
-    batches = [
-        refspecs[start : start + batch_size]
-        for start in range(0, len(refspecs), batch_size)
-    ]
-    for batch_number, batch in enumerate(batches, start=1):
-        result = run(
-            "git",
-            "fetch",
-            "--depth=1",
-            remote,
-            *batch,
-            cwd=repo,
-            check=False,
-        )
-        if result.returncode:
-            raise RuntimeError(
-                f"Could not fetch city branch batch "
-                f"{batch_number}/{len(batches)}:\n{result.stdout}"
-            )
+    result = run(
+        "git",
+        "fetch",
+        "--depth=1",
+        remote,
+        f"+refs/heads/city/*:refs/remotes/{remote}/city/*",
+        cwd=repo,
+        check=False,
+    )
+    if result.returncode:
+        raise RuntimeError(f"Could not fetch city branches:\n{result.stdout}")
 
 
 def scrape_all(data_root: pathlib.Path, include_weather: bool = True) -> None:
@@ -263,7 +241,7 @@ def push_city_updates(
     remote: str,
     updates: dict[str, str],
     attempts: int = 5,
-    batch_size: int = REF_BATCH_SIZE,
+    batch_size: int = PUSH_BATCH_SIZE,
 ) -> None:
     if attempts < 1:
         raise ValueError("attempts must be at least 1")
@@ -342,7 +320,7 @@ def main() -> int:
         print(json.dumps(cities))
         return 0
 
-    fetch_city_tips(repo, args.remote, cities)
+    fetch_city_tips(repo, args.remote)
     run("git", "config", "user.name", "Automated", cwd=repo)
     run(
         "git",

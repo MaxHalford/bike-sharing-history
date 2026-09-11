@@ -89,8 +89,7 @@ class ScopedScrapeTest(unittest.TestCase):
 
 
 class PublishCityTest(unittest.TestCase):
-    def test_city_tips_are_fetched_in_bounded_batches(self) -> None:
-        cities = [f"city-{index:03d}" for index in range(105)]
+    def test_city_tips_are_fetched_with_one_wildcard_refspec(self) -> None:
         remote_heads = "\n".join(
             f"commit-{index:03d}\trefs/heads/city/city-{index:03d}"
             for index in range(105)
@@ -103,28 +102,22 @@ class PublishCityTest(unittest.TestCase):
             side_effect=[
                 subprocess.CompletedProcess([], returncode=0, stdout=remote_heads),
                 success,
-                success,
-                success,
             ],
         ) as run:
-            scrape_city_branches.fetch_city_tips(
-                pathlib.Path("/repo"), "origin", cities, batch_size=50
-            )
+            scrape_city_branches.fetch_city_tips(pathlib.Path("/repo"), "origin")
 
-        self.assertEqual(run.call_count, 4)
-        fetched_refspecs = []
-        for call in run.call_args_list[1:]:
-            self.assertEqual(call.args[:4], ("git", "fetch", "--depth=1", "origin"))
-            self.assertLessEqual(len(call.args[4:]), 50)
-            self.assertEqual(call.kwargs, {"cwd": pathlib.Path("/repo"), "check": False})
-            fetched_refspecs.extend(call.args[4:])
+        self.assertEqual(run.call_count, 2)
         self.assertEqual(
-            fetched_refspecs,
-            [
-                f"+refs/heads/city/city-{index:03d}:"
-                f"refs/remotes/origin/city/city-{index:03d}"
-                for index in range(105)
-            ],
+            run.call_args_list[1],
+            mock.call(
+                "git",
+                "fetch",
+                "--depth=1",
+                "origin",
+                "+refs/heads/city/*:refs/remotes/origin/city/*",
+                cwd=pathlib.Path("/repo"),
+                check=False,
+            ),
         )
 
     def test_city_updates_are_pushed_in_bounded_atomic_batches(self) -> None:
@@ -239,7 +232,7 @@ class PublishCityTest(unittest.TestCase):
                 scraped / "data/scrapes/weather/mexico-city.json", {"status": "ok"}
             )
 
-            scrape_city_branches.fetch_city_tips(runner, "origin", ["mexico-city"])
+            scrape_city_branches.fetch_city_tips(runner, "origin")
             git("config", "user.name", "Test", cwd=runner)
             git("config", "user.email", "test@example.com", cwd=runner)
             commit = scrape_city_branches.prepare_city(
@@ -327,7 +320,7 @@ class PublishCityTest(unittest.TestCase):
                 scraped / "data/scrapes/stations/rosario.json", {"status": "ok"}
             )
 
-            scrape_city_branches.fetch_city_tips(runner, "origin", ["rosario"])
+            scrape_city_branches.fetch_city_tips(runner, "origin")
             git("config", "user.name", "Test", cwd=runner)
             git("config", "user.email", "test@example.com", cwd=runner)
             commit = scrape_city_branches.prepare_city(
