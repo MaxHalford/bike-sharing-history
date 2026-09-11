@@ -1,8 +1,15 @@
-# bike-sharing-history
+<h1>bike-sharing-history</h1>
+
+- [Live data](#live-data)
+- [Archives](#archives)
+  - [Current systems](#current-systems)
+  - [Historical systems](#historical-systems)
+  - [Example: build a custom archive from Git](#example-build-a-custom-archive-from-git)
+- [Citation](#citation)
 
 ***📝 [See blog post](https://maxhalford.github.io/blog/bike-sharing-forecasting-training-set/)***
 
-This repo tracks the status of bike stations from various bike-sharing providers. The data is fetched every 15 minutes. The results are stored and versioned as [GeoJSON](https://www.wikiwand.com/en/GeoJSON) files. This is done using the [git scraping](https://simonwillison.net/2020/Oct/9/git-scraping/) technique.
+This repo tracks the status of bike stations from various bike-sharing providers. Most of them follow the [GBFS](https://github.com/MobilityData/gbfs) standard. The data is fetched every 15 minutes. The results are stored and versioned as [GeoJSON](https://www.wikiwand.com/en/GeoJSON) files. This is done using the [git scraping](https://simonwillison.net/2020/Oct/9/git-scraping/) technique.
 
 The weather forecast for the next 24 hours is collected hourly for each city.
 
@@ -98,10 +105,10 @@ Each city has an independent `city/<slug>` branch containing its current files a
 
 ## Archives
 
-The Git history contains station snapshots collected approximately every 15 minutes and weather snapshots collected approximately hourly. Monthly Parquet exports are stored in public GCP buckets. Archives are rebuilt from actual file changes on every city branch and use one fixed, provider-neutral schema across all cities. Provider-specific fields are nullable when they have no meaningful equivalent.
+The git history contains station snapshots collected approximately every 15 minutes and weather snapshots collected approximately hourly. Monthly Parquet exports are stored in public GCP buckets. Archives are rebuilt from actual file changes on every city branch and use one fixed, provider-neutral schema across all cities. Provider-specific fields are nullable when they have no meaningful equivalent.
 
 > [!WARNING]
-> Collection and archive generation are best-effort, so missing observations should not be interpreted as proof that a system was unavailable. In particular, the ECOBICI source history has no observations between 2024-04-12 14:48 UTC and 2024-08-22 14:48 UTC. Its old October 2025 Parquet archive contained only 2025-10-28 16:08 UTC through 2025-10-31 23:49 UTC, although the source Git history contains observations throughout October 1–31. The rebuilt archive includes the complete Git history.
+> Collection and archive generation are best-effort, so missing observations should not be interpreted as proof that a system was unavailable.
 
 An easy way to query the station files is to use [DuckDB](https://duckdb.org/):
 
@@ -131,17 +138,11 @@ with duckdb.connect(":memory:") as con:
     """).fetch_df()
 ```
 
-The canonical station columns are `city`, `provider`, `station_id`, `name`, `short_name`, `external_id`, coordinates, capacity, available/disabled bike and dock counts, installation/renting/returning flags, provider `status`, `committed_at_utc`, `git_commit`, and `source_path`. `committed_at_utc` is the deliberately opinionated observation time: it exists consistently across providers and throughout the legacy history. Provider timestamps such as `last_reported`, `last_update`, and feed-level `last_updated` differ in meaning and coverage, so they are not collapsed into a falsely comparable canonical field. This is a presentation choice rather than a data-loss choice: provider timestamps remain verbatim in the lossless Git snapshots and raw custom exports.
-
-Weather rows also have `forecast_at_utc`, which identifies the hour being forecast rather than another observation time. `committed_at_utc` is still the sole timestamp used to historize each weather snapshot.
-
-### Archive coverage
-
 Each linked value below is the number of station rows in that monthly Parquet archive and opens the object in the GCS browser. Columns run from newest to oldest; `—` means that system has no archive for that month. Historical systems naturally have empty cells after they ceased collection. Historical city spellings are folded into their current slug (for example, `bruxelles` is stored under `brussels`). This table is regenerated after a successful archive run.
 
 <!-- archive-summary-start -->
 
-#### Current systems
+### Current systems
 
 | System | 2026-08 | 2026-07 | 2026-06 | 2026-05 | 2026-04 | 2026-03 | 2026-02 | 2026-01 | 2025-12 | 2025-11 | 2025-10 | 2025-09 | 2025-08 | 2025-07 | 2025-06 | 2025-05 | 2025-04 | 2025-03 | 2025-02 | 2025-01 | 2024-12 | 2024-11 | 2024-10 | 2024-09 | 2024-08 | 2024-04 | 2024-03 | 2024-02 | 2024-01 | 2023-12 | 2023-11 | 2023-10 | 2023-09 | 2023-08 |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
@@ -219,7 +220,9 @@ Each linked value below is the number of station rows in that monthly Parquet ar
 | Vilnius — JCDecaux | [23,832](https://console.cloud.google.com/storage/browser/_details/bike-sharing-history/vilnius/jcdecaux/2026/Aug.parquet) | [14,436](https://console.cloud.google.com/storage/browser/_details/bike-sharing-history/vilnius/jcdecaux/2026/Jul.parquet) | [22,644](https://console.cloud.google.com/storage/browser/_details/bike-sharing-history/vilnius/jcdecaux/2026/Jun.parquet) | [30,312](https://console.cloud.google.com/storage/browser/_details/bike-sharing-history/vilnius/jcdecaux/2026/May.parquet) | [37,584](https://console.cloud.google.com/storage/browser/_details/bike-sharing-history/vilnius/jcdecaux/2026/Apr.parquet) | [4,521](https://console.cloud.google.com/storage/browser/_details/bike-sharing-history/vilnius/jcdecaux/2026/Mar.parquet) | [212](https://console.cloud.google.com/storage/browser/_details/bike-sharing-history/vilnius/jcdecaux/2026/Feb.parquet) | — | — | [5,292](https://console.cloud.google.com/storage/browser/_details/bike-sharing-history/vilnius/jcdecaux/2025/Nov.parquet) | [68,796](https://console.cloud.google.com/storage/browser/_details/bike-sharing-history/vilnius/jcdecaux/2025/Oct.parquet) | [77,213](https://console.cloud.google.com/storage/browser/_details/bike-sharing-history/vilnius/jcdecaux/2025/Sep.parquet) | [77,908](https://console.cloud.google.com/storage/browser/_details/bike-sharing-history/vilnius/jcdecaux/2025/Aug.parquet) | [37,314](https://console.cloud.google.com/storage/browser/_details/bike-sharing-history/vilnius/jcdecaux/2025/Jul.parquet) | [72,232](https://console.cloud.google.com/storage/browser/_details/bike-sharing-history/vilnius/jcdecaux/2025/Jun.parquet) | [74,188](https://console.cloud.google.com/storage/browser/_details/bike-sharing-history/vilnius/jcdecaux/2025/May.parquet) | [74,270](https://console.cloud.google.com/storage/browser/_details/bike-sharing-history/vilnius/jcdecaux/2025/Apr.parquet) | [10,325](https://console.cloud.google.com/storage/browser/_details/bike-sharing-history/vilnius/jcdecaux/2025/Mar.parquet) | [35](https://console.cloud.google.com/storage/browser/_details/bike-sharing-history/vilnius/jcdecaux/2025/Feb.parquet) | — | — | [25,270](https://console.cloud.google.com/storage/browser/_details/bike-sharing-history/vilnius/jcdecaux/2024/Nov.parquet) | [74,375](https://console.cloud.google.com/storage/browser/_details/bike-sharing-history/vilnius/jcdecaux/2024/Oct.parquet) | [78,540](https://console.cloud.google.com/storage/browser/_details/bike-sharing-history/vilnius/jcdecaux/2024/Sep.parquet) | [27,265](https://console.cloud.google.com/storage/browser/_details/bike-sharing-history/vilnius/jcdecaux/2024/Aug.parquet) | [21,726](https://console.cloud.google.com/storage/browser/_details/bike-sharing-history/vilnius/jcdecaux/2024/Apr.parquet) | [5,667](https://console.cloud.google.com/storage/browser/_details/bike-sharing-history/vilnius/jcdecaux/2024/Mar.parquet) | — | [442](https://console.cloud.google.com/storage/browser/_details/bike-sharing-history/vilnius/jcdecaux/2024/Jan.parquet) | [170](https://console.cloud.google.com/storage/browser/_details/bike-sharing-history/vilnius/jcdecaux/2023/Dec.parquet) | [2,550](https://console.cloud.google.com/storage/browser/_details/bike-sharing-history/vilnius/jcdecaux/2023/Nov.parquet) | [64,974](https://console.cloud.google.com/storage/browser/_details/bike-sharing-history/vilnius/jcdecaux/2023/Oct.parquet) | [75,888](https://console.cloud.google.com/storage/browser/_details/bike-sharing-history/vilnius/jcdecaux/2023/Sep.parquet) | [63,342](https://console.cloud.google.com/storage/browser/_details/bike-sharing-history/vilnius/jcdecaux/2023/Aug.parquet) |
 | Washington D.C. — Capital Bikeshare | [627,005](https://console.cloud.google.com/storage/browser/_details/bike-sharing-history/washington-d-c/capital-bikeshare/2026/Aug.parquet) | [361,830](https://console.cloud.google.com/storage/browser/_details/bike-sharing-history/washington-d-c/capital-bikeshare/2026/Jul.parquet) | [593,813](https://console.cloud.google.com/storage/browser/_details/bike-sharing-history/washington-d-c/capital-bikeshare/2026/Jun.parquet) | [769,329](https://console.cloud.google.com/storage/browser/_details/bike-sharing-history/washington-d-c/capital-bikeshare/2026/May.parquet) | [1,032,423](https://console.cloud.google.com/storage/browser/_details/bike-sharing-history/washington-d-c/capital-bikeshare/2026/Apr.parquet) | [1,426,412](https://console.cloud.google.com/storage/browser/_details/bike-sharing-history/washington-d-c/capital-bikeshare/2026/Mar.parquet) | [1,304,578](https://console.cloud.google.com/storage/browser/_details/bike-sharing-history/washington-d-c/capital-bikeshare/2026/Feb.parquet) | [1,999,179](https://console.cloud.google.com/storage/browser/_details/bike-sharing-history/washington-d-c/capital-bikeshare/2026/Jan.parquet) | [2,125,549](https://console.cloud.google.com/storage/browser/_details/bike-sharing-history/washington-d-c/capital-bikeshare/2025/Dec.parquet) | [2,096,692](https://console.cloud.google.com/storage/browser/_details/bike-sharing-history/washington-d-c/capital-bikeshare/2025/Nov.parquet) | [2,163,221](https://console.cloud.google.com/storage/browser/_details/bike-sharing-history/washington-d-c/capital-bikeshare/2025/Oct.parquet) | [2,144,104](https://console.cloud.google.com/storage/browser/_details/bike-sharing-history/washington-d-c/capital-bikeshare/2025/Sep.parquet) | [2,117,435](https://console.cloud.google.com/storage/browser/_details/bike-sharing-history/washington-d-c/capital-bikeshare/2025/Aug.parquet) | [956,263](https://console.cloud.google.com/storage/browser/_details/bike-sharing-history/washington-d-c/capital-bikeshare/2025/Jul.parquet) | [2,027,036](https://console.cloud.google.com/storage/browser/_details/bike-sharing-history/washington-d-c/capital-bikeshare/2025/Jun.parquet) | [2,124,382](https://console.cloud.google.com/storage/browser/_details/bike-sharing-history/washington-d-c/capital-bikeshare/2025/May.parquet) | [2,059,546](https://console.cloud.google.com/storage/browser/_details/bike-sharing-history/washington-d-c/capital-bikeshare/2025/Apr.parquet) | [2,158,173](https://console.cloud.google.com/storage/browser/_details/bike-sharing-history/washington-d-c/capital-bikeshare/2025/Mar.parquet) | [1,972,034](https://console.cloud.google.com/storage/browser/_details/bike-sharing-history/washington-d-c/capital-bikeshare/2025/Feb.parquet) | [2,151,263](https://console.cloud.google.com/storage/browser/_details/bike-sharing-history/washington-d-c/capital-bikeshare/2025/Jan.parquet) | [2,144,898](https://console.cloud.google.com/storage/browser/_details/bike-sharing-history/washington-d-c/capital-bikeshare/2024/Dec.parquet) | [2,076,588](https://console.cloud.google.com/storage/browser/_details/bike-sharing-history/washington-d-c/capital-bikeshare/2024/Nov.parquet) | [2,154,983](https://console.cloud.google.com/storage/browser/_details/bike-sharing-history/washington-d-c/capital-bikeshare/2024/Oct.parquet) | [2,079,663](https://console.cloud.google.com/storage/browser/_details/bike-sharing-history/washington-d-c/capital-bikeshare/2024/Sep.parquet) | [658,674](https://console.cloud.google.com/storage/browser/_details/bike-sharing-history/washington-d-c/capital-bikeshare/2024/Aug.parquet) | [122,521](https://console.cloud.google.com/storage/browser/_details/bike-sharing-history/washington-d-c/capital-bikeshare/2024/Apr.parquet) | — | — | — | — | — | — | — | — |
 
-#### Historical systems
+### Historical systems
+
+These are systems that have become inactive, and for which data collection is thus turned off.
 
 | System | 2026-08 | 2026-07 | 2026-06 | 2026-05 | 2026-04 | 2026-03 | 2026-02 | 2026-01 | 2025-12 | 2025-11 | 2025-10 | 2025-09 | 2025-08 | 2025-07 | 2025-06 | 2025-05 | 2025-04 | 2025-03 | 2025-02 | 2025-01 | 2024-12 | 2024-11 | 2024-10 | 2024-09 | 2024-08 | 2024-04 | 2024-03 | 2024-02 | 2024-01 | 2023-12 | 2023-11 | 2023-10 | 2023-09 | 2023-08 |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
@@ -263,7 +266,7 @@ Each linked value below is the number of station rows in that monthly Parquet ar
 
 ### Example: build a custom archive from Git
 
-Clone only the city you need:
+It might be that the schema of the archives doesn't fully suit your application. The good news is that the git history is the source of truth. Indeed, you can build your own exports by looping through the git history of a particular city, and processing it however you want. Start by cloning only the city you need:
 
 ```sh
 git clone \
@@ -390,15 +393,14 @@ with tempfile.TemporaryDirectory() as temporary:
 print(f"Wrote {rows:,} rows to {OUTPUT}")
 ```
 
-Run it with `uv run --with 'duckdb>=1.4' export.py`. The only synthetic observation timestamp is `committed_at_utc`; all provider timestamps selected in `FIELDS` remain untouched.
+Run it with `uv run --with 'duckdb>=1.4' export.py`.
 
-Station names are descriptive labels, not stable identifiers. Prefer the provider's `station_id` (or JCDecaux `number`) within each snapshot, while retaining `external_id`, `short_name`, `name`, and coordinates as time-varying attributes. Providers can still reassign identifiers, so long-running identity resolution should preserve the effective time of every mapping rather than assuming that any one field is permanent.
+Some details are important when interpreting the history:
 
-Three details are important when interpreting the history:
-
+- Station names are descriptive labels, not stable identifiers. Prefer the provider's `station_id` (or JCDecaux `number`) within each snapshot, while retaining `external_id`, `short_name`, `name`, and coordinates as time-varying attributes. Providers can still reassign identifiers, so long-running identity resolution should preserve the effective time of every mapping rather than assuming that any one field is permanent.
 - In the legacy history, a missing file change is ambiguous: Git cannot distinguish a failed fetch from a successful fetch whose output was identical. New scrapes record each system's result, retry count, and UTC request window under `data/scrapes/`; exports include successful unchanged polls and exclude recorded failures.
 - New branch-native scrapes timestamp each city commit using that city's latest request-completion time. This avoids assigning every city the timestamp of one later, workflow-wide commit.
-- GBFS `last_updated` cannot be recovered from the legacy history because the scraper stored the station arrays but discarded the feed-level metadata. Station-level `last_reported` was retained. New snapshots preserve feed metadata too. For legacy data, `committed_at_utc` is the best available observation timestamp.
+- GBFS `last_updated` cannot be recovered from the legacy history because the scraper stored the station arrays but discarded the feed-level metadata -- sorry for that. Station-level `last_reported` was retained. New snapshots preserve feed metadata too. For legacy data, `committed_at_utc` is the best available observation timestamp.
 
 ## Citation
 
