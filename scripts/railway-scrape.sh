@@ -28,7 +28,7 @@ git clone \
 cd "$job_root/repo"
 minute="$(date -u +%M)"
 case "$minute" in
-    0[0-9]|1[0-4]) set -- ;;
+    01) set -- ;;
     *) set -- --skip-weather ;;
 esac
 timeout --signal=TERM 10m python scrape/scrape_city_branches.py "$@"
