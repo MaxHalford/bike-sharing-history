@@ -4,7 +4,7 @@
 
 This repo tracks the status of bike stations from various bike-sharing providers. The data is fetched every 15 minutes. The results are stored and versioned as [GeoJSON](https://www.wikiwand.com/en/GeoJSON) files. This is done using the [git scraping](https://simonwillison.net/2020/Oct/9/git-scraping/) technique.
 
-The weather forecast for the next 24 hours is also collected every 15 minutes, for each city.
+The weather forecast for the next 24 hours is collected hourly for each city.
 
 Everyone is welcome to add new cities. You simply have to contribute the necessary details to [`scrape/systems.py`](scrape/systems.py), and then send out a pull request.
 
@@ -98,7 +98,7 @@ Each city has an independent `city/<slug>` branch containing its current files a
 
 ## Archives
 
-The Git history contains station and weather snapshots collected approximately every 15 minutes. Monthly Parquet exports are stored in public GCP buckets. Archives are rebuilt from actual file changes on every city branch and use one fixed, provider-neutral schema across all cities. Provider-specific fields are nullable when they have no meaningful equivalent.
+The Git history contains station snapshots collected approximately every 15 minutes and weather snapshots collected approximately hourly. Monthly Parquet exports are stored in public GCP buckets. Archives are rebuilt from actual file changes on every city branch and use one fixed, provider-neutral schema across all cities. Provider-specific fields are nullable when they have no meaningful equivalent.
 
 > [!WARNING]
 > Collection and archive generation are best-effort, so missing observations should not be interpreted as proof that a system was unavailable. In particular, the ECOBICI source history has no observations between 2024-04-12 14:48 UTC and 2024-08-22 14:48 UTC. Its old October 2025 Parquet archive contained only 2025-10-28 16:08 UTC through 2025-10-31 23:49 UTC, although the source Git history contains observations throughout October 1–31. The rebuilt archive includes the complete Git history.

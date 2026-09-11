@@ -56,7 +56,7 @@ def main(
 
     run_started_at = dt.datetime.now(dt.timezone.utc)
     with concurrent.futures.ThreadPoolExecutor(max_workers=8) as executor:
-        future_to_city = {
+        future_to_system = {
             executor.submit(
                 scrape_parse_save,
                 scrape=system.scrape,
@@ -64,22 +64,25 @@ def main(
                 / "data/stations"
                 / utils.slugify(system.city)
                 / f"{utils.slugify(system.provider)}.geojson",
-            ): (system.provider, system.city)
+            ): system
             for system in selected_systems
         }
 
         results_by_city = {}
         n_exceptions = 0
-        for future in concurrent.futures.as_completed(future_to_city):
-            provider, city = future_to_city[future]
+        for future in concurrent.futures.as_completed(future_to_system):
+            system = future_to_system[future]
             result, exc = future.result()
-            result["provider"] = provider
-            result["provider_slug"] = utils.slugify(provider)
-            results_by_city.setdefault(utils.slugify(city), []).append(result)
+            result["provider"] = system.provider
+            result["provider_slug"] = utils.slugify(system.provider)
+            result["gbfs_system_id"] = system.gbfs_system_id
+            results_by_city.setdefault(utils.slugify(system.city), []).append(result)
             if exc is None:
-                logger.info(f"✅ {provider} @ {city}")
+                logger.info(f"✅ {system.provider} @ {system.city}")
             else:
-                logger.error(f"❌ {provider} @ {city} {type(exc).__name__}")
+                logger.error(
+                    f"❌ {system.provider} @ {system.city} {type(exc).__name__}"
+                )
                 n_exceptions += 1
 
         run_finished_at = dt.datetime.now(dt.timezone.utc)

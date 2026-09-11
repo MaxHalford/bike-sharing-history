@@ -67,6 +67,25 @@ class ScopedScrapeTest(unittest.TestCase):
             )
             self.assertTrue((root / "data/scrapes/stations/mexico-city.json").exists())
             self.assertTrue((root / "data/scrapes/weather/mexico-city.json").exists())
+            station_metadata = json.loads(
+                (root / "data/scrapes/stations/mexico-city.json").read_text()
+            )
+            self.assertEqual(
+                {result["gbfs_system_id"] for result in station_metadata["systems"]},
+                {system.gbfs_system_id for system in city_systems},
+            )
+
+    def test_station_only_scrape_skips_weather(self) -> None:
+        with (
+            mock.patch.object(scrape_city_branches.scrape_stations, "main") as stations,
+            mock.patch.object(scrape_city_branches.scrape_weather, "main") as weather,
+        ):
+            scrape_city_branches.scrape_all(
+                pathlib.Path("/tmp/scraped"), include_weather=False
+            )
+
+        stations.assert_called_once_with(data_root=pathlib.Path("/tmp/scraped"))
+        weather.assert_not_called()
 
 
 class PublishCityTest(unittest.TestCase):
@@ -175,6 +194,68 @@ class PublishCityTest(unittest.TestCase):
             self.assertEqual(
                 git("show", "-s", "--format=%cI", cwd=check),
                 "2026-09-09T12:00:00Z",
+            )
+
+    def test_missing_city_branch_is_created_from_main(self) -> None:
+        with tempfile.TemporaryDirectory() as temporary:
+            root = pathlib.Path(temporary)
+            remote = root / "remote.git"
+            seed = root / "seed"
+            runner = root / "runner"
+            scraped = root / "scraped"
+            worktrees = root / "worktrees"
+
+            remote.mkdir()
+            git("init", "--bare", cwd=remote)
+            seed.mkdir()
+            git("init", cwd=seed)
+            git("config", "user.name", "Test", cwd=seed)
+            git("config", "user.email", "test@example.com", cwd=seed)
+            (seed / "README.md").write_text("main\n")
+            git("add", "README.md", cwd=seed)
+            git("commit", "-m", "seed main", cwd=seed)
+            git("branch", "-M", "main", cwd=seed)
+            git("remote", "add", "origin", str(remote), cwd=seed)
+            git("push", "origin", "main", cwd=seed)
+
+            git("clone", "--branch", "main", str(remote), str(runner), cwd=root)
+            write_json(
+                scraped / "data/stations/rosario/mibicitubici.geojson",
+                {"fresh": True},
+            )
+            write_json(
+                scraped / "data/scrapes/stations/rosario.json", {"status": "ok"}
+            )
+
+            scrape_city_branches.fetch_city_tips(runner, "origin", ["rosario"])
+            git("config", "user.name", "Test", cwd=runner)
+            git("config", "user.email", "test@example.com", cwd=runner)
+            commit = scrape_city_branches.prepare_city(
+                repo=runner,
+                remote="origin",
+                scraped_root=scraped,
+                worktrees_root=worktrees,
+                city_slug="rosario",
+                timestamp="2026-09-10T12:00:00+00:00",
+            )
+            self.assertIsNotNone(commit)
+            scrape_city_branches.push_city_updates(runner, "origin", {"rosario": commit})
+
+            check = root / "check"
+            git(
+                "clone",
+                "--single-branch",
+                "--branch",
+                "city/rosario",
+                str(remote),
+                str(check),
+                cwd=root,
+            )
+            self.assertEqual(
+                json.loads(
+                    (check / "data/stations/rosario/mibicitubici.geojson").read_text()
+                ),
+                {"fresh": True},
             )
 
 

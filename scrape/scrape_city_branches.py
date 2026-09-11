@@ -53,8 +53,25 @@ def expected_station_files(city_slug: str) -> set[str]:
 
 
 def fetch_city_tips(repo: pathlib.Path, remote: str, cities: list[str]) -> None:
+    remote_heads = run(
+        "git",
+        "ls-remote",
+        "--heads",
+        remote,
+        "refs/heads/city/*",
+        cwd=repo,
+    ).stdout.splitlines()
+    available = {
+        line.split("refs/heads/city/", 1)[1]
+        for line in remote_heads
+        if "refs/heads/city/" in line
+    }
+    existing_cities = sorted(set(cities) & available)
+    if not existing_cities:
+        return
     refspecs = [
-        f"+refs/heads/city/{city}:refs/remotes/{remote}/city/{city}" for city in cities
+        f"+refs/heads/city/{city}:refs/remotes/{remote}/city/{city}"
+        for city in existing_cities
     ]
     result = run(
         "git",
@@ -68,31 +85,15 @@ def fetch_city_tips(repo: pathlib.Path, remote: str, cities: list[str]) -> None:
     if result.returncode:
         raise RuntimeError(f"Could not fetch all city branches:\n{result.stdout}")
 
-    missing = [
-        city
-        for city in cities
-        if run(
-            "git",
-            "rev-parse",
-            "--verify",
-            f"refs/remotes/{remote}/city/{city}",
-            cwd=repo,
-            check=False,
-        ).returncode
-    ]
-    if missing:
-        raise RuntimeError(f"Missing city branches: {', '.join(missing)}")
 
-
-def scrape_all(data_root: pathlib.Path) -> None:
+def scrape_all(data_root: pathlib.Path, include_weather: bool = True) -> None:
     # The station and weather collectors have their own bounded thread pools.
     # Running the two collectors together reduces wall time without creating a
     # thread per city.
     with concurrent.futures.ThreadPoolExecutor(max_workers=2) as executor:
-        futures = [
-            executor.submit(scrape_stations.main, data_root=data_root),
-            executor.submit(scrape_weather.main, data_root=data_root),
-        ]
+        futures = [executor.submit(scrape_stations.main, data_root=data_root)]
+        if include_weather:
+            futures.append(executor.submit(scrape_weather.main, data_root=data_root))
         for future in futures:
             future.result()
 
@@ -164,13 +165,30 @@ def prepare_city(
 ) -> str | None:
     worktree = worktrees_root / city_slug
     branch = f"city/{city_slug}"
+    remote_branch = f"refs/remotes/{remote}/{branch}"
+    remote_branch_exists = (
+        run(
+            "git",
+            "rev-parse",
+            "--verify",
+            remote_branch,
+            cwd=repo,
+            check=False,
+        ).returncode
+        == 0
+    )
+    base = (
+        remote_branch
+        if remote_branch_exists
+        else "HEAD"
+    )
     run(
         "git",
         "worktree",
         "add",
         "--detach",
         str(worktree),
-        f"refs/remotes/{remote}/{branch}",
+        base,
         cwd=repo,
     )
     try:
@@ -185,7 +203,8 @@ def prepare_city(
             f"data/scrapes/stations/{city_slug}.json",
             f"data/scrapes/weather/{city_slug}.json",
         ]
-        run("git", "add", "--all", "--", *paths, cwd=worktree)
+        present_paths = [path for path in paths if (worktree / path).exists()]
+        run("git", "add", "--all", "--", *present_paths, cwd=worktree)
         unchanged = (
             run(
                 "git", "diff", "--cached", "--quiet", cwd=worktree, check=False
@@ -262,6 +281,11 @@ def main() -> int:
         action="store_true",
         help="Print the selected city slugs as JSON and exit",
     )
+    parser.add_argument(
+        "--skip-weather",
+        action="store_true",
+        help="Scrape stations without refreshing weather (used for quarter-hour runs)",
+    )
     args = parser.parse_args()
 
     repo = args.repo.resolve()
@@ -291,7 +315,7 @@ def main() -> int:
         temporary_root = pathlib.Path(temporary)
         scraped_root = temporary_root / "scraped"
         worktrees_root = temporary_root / "worktrees"
-        scrape_all(scraped_root)
+        scrape_all(scraped_root, include_weather=not args.skip_weather)
 
         for city in cities:
             try:
