@@ -89,6 +89,68 @@ class ScopedScrapeTest(unittest.TestCase):
 
 
 class PublishCityTest(unittest.TestCase):
+    def test_city_updates_are_pushed_in_bounded_atomic_batches(self) -> None:
+        updates = {
+            f"city-{index:03d}": f"commit-{index:03d}" for index in range(105)
+        }
+        success = subprocess.CompletedProcess([], returncode=0, stdout="")
+
+        with mock.patch.object(
+            scrape_city_branches, "run", return_value=success
+        ) as run:
+            scrape_city_branches.push_city_updates(
+                pathlib.Path("/repo"), "origin", updates, batch_size=50
+            )
+
+        self.assertEqual(run.call_count, 3)
+        pushed_refspecs = []
+        for call in run.call_args_list:
+            self.assertEqual(call.args[:4], ("git", "push", "--atomic", "origin"))
+            self.assertLessEqual(len(call.args[4:]), 50)
+            self.assertEqual(call.kwargs, {"cwd": pathlib.Path("/repo"), "check": False})
+            pushed_refspecs.extend(call.args[4:])
+        self.assertEqual(
+            pushed_refspecs,
+            [
+                f"commit-{index:03d}:refs/heads/city/city-{index:03d}"
+                for index in range(105)
+            ],
+        )
+
+    def test_failed_batch_does_not_prevent_later_batches(self) -> None:
+        failure = subprocess.CompletedProcess([], returncode=1, stdout="rejected")
+        success = subprocess.CompletedProcess([], returncode=0, stdout="")
+
+        with (
+            mock.patch.object(
+                scrape_city_branches,
+                "run",
+                side_effect=[failure, success],
+            ) as run,
+            self.assertRaisesRegex(RuntimeError, "Batch 1/2"),
+        ):
+            scrape_city_branches.push_city_updates(
+                pathlib.Path("/repo"),
+                "origin",
+                {"a": "commit-a", "b": "commit-b"},
+                attempts=1,
+                batch_size=1,
+            )
+
+        self.assertEqual(run.call_count, 2)
+
+    def test_push_batch_size_must_be_positive(self) -> None:
+        with self.assertRaisesRegex(ValueError, "batch_size must be at least 1"):
+            scrape_city_branches.push_city_updates(
+                pathlib.Path("/repo"), "origin", {"a": "commit-a"}, batch_size=0
+            )
+
+    def test_push_attempts_must_be_positive(self) -> None:
+        with self.assertRaisesRegex(ValueError, "attempts must be at least 1"):
+            scrape_city_branches.push_city_updates(
+                pathlib.Path("/repo"), "origin", {"a": "commit-a"}, attempts=0
+            )
+
     def test_station_weather_and_metadata_are_committed_together(self) -> None:
         with tempfile.TemporaryDirectory() as temporary:
             root = pathlib.Path(temporary)

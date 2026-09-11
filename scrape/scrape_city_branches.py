@@ -23,6 +23,11 @@ import utils
 from systems import systems
 
 
+# Keep each transaction comfortably below hosted-git ref limits. A failure in
+# one batch must not prevent unrelated city branches from being published.
+PUSH_BATCH_SIZE = 50
+
+
 def run(
     *args: str,
     cwd: pathlib.Path,
@@ -243,28 +248,51 @@ def push_city_updates(
     remote: str,
     updates: dict[str, str],
     attempts: int = 5,
+    batch_size: int = PUSH_BATCH_SIZE,
 ) -> None:
-    refspecs = [
-        f"{commit}:refs/heads/city/{city}" for city, commit in sorted(updates.items())
+    if attempts < 1:
+        raise ValueError("attempts must be at least 1")
+    if batch_size < 1:
+        raise ValueError("batch_size must be at least 1")
+
+    update_items = sorted(updates.items())
+    batches = [
+        update_items[start : start + batch_size]
+        for start in range(0, len(update_items), batch_size)
     ]
-    for attempt in range(1, attempts + 1):
-        result = run(
-            "git",
-            "push",
-            "--atomic",
-            remote,
-            *refspecs,
-            cwd=repo,
-            check=False,
+    failures = []
+    for batch_number, batch in enumerate(batches, start=1):
+        refspecs = [
+            f"{commit}:refs/heads/city/{city}" for city, commit in batch
+        ]
+        for attempt in range(1, attempts + 1):
+            result = run(
+                "git",
+                "push",
+                "--atomic",
+                remote,
+                *refspecs,
+                cwd=repo,
+                check=False,
+            )
+            if result.returncode == 0:
+                break
+            if attempt == attempts:
+                failures.append((batch_number, result.stdout))
+                break
+            delay = 5 * 2 ** (attempt - 1)
+            print(result.stdout.rstrip())
+            print(
+                f"Atomic push batch {batch_number}/{len(batches)} failed; "
+                f"retrying in {delay} seconds ({attempt}/{attempts})"
+            )
+            time.sleep(delay)
+    if failures:
+        details = "\n\n".join(
+            f"Batch {batch_number}/{len(batches)}:\n{output.rstrip()}"
+            for batch_number, output in failures
         )
-        if result.returncode == 0:
-            return
-        if attempt == attempts:
-            raise RuntimeError(f"Could not publish city branches:\n{result.stdout}")
-        delay = 5 * 2 ** (attempt - 1)
-        print(result.stdout.rstrip())
-        print(f"Atomic push failed; retrying in {delay} seconds ({attempt}/{attempts})")
-        time.sleep(delay)
+        raise RuntimeError(f"Could not publish all city branch batches:\n{details}")
 
 
 def main() -> int:
