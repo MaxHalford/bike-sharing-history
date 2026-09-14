@@ -24,12 +24,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364102,
+                "last_reported": 1789364827,
                 "name": "DMCC METRO STATION",
                 "nearby_distance": 1000.0,
-                "num_bikes_available": 17,
+                "num_bikes_available": 15,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 22,
+                "num_docks_available": 24,
                 "num_docks_disabled": 0,
                 "obcn": "obcn_35",
                 "physical_configuration": "ELECTRICBIKESTATION",
@@ -50,7 +50,7 @@
                 "traffic": 0.0,
                 "vehicle_docks_available": [
                     {
-                        "count": 22,
+                        "count": 24,
                         "vehicle_type_ids": [
                             "EFIT",
                             "BOOST",
@@ -69,11 +69,11 @@
                         "vehicle_type_id": "ICONIC"
                     },
                     {
-                        "count": 0,
+                        "count": 1,
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 17,
+                        "count": 14,
                         "vehicle_type_id": "EFIT"
                     }
                 ]
@@ -104,7 +104,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364261,
+                "last_reported": 1789364818,
                 "name": "Jlt Cluster D",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 4,
@@ -183,7 +183,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364157,
+                "last_reported": 1789364881,
                 "name": "Jlt Cluster G",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 9,
@@ -260,7 +260,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364218,
+                "last_reported": 1789364944,
                 "name": "Abu Hail Metro ",
                 "nearby_distance": 500.0,
                 "num_bikes_available": 5,
@@ -340,12 +340,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364169,
+                "last_reported": 1789364894,
                 "name": "Jlt Cluster H",
                 "nearby_distance": 1000.0,
-                "num_bikes_available": 7,
+                "num_bikes_available": 8,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 14,
+                "num_docks_available": 13,
                 "num_docks_disabled": 0,
                 "obcn": "obcn_38",
                 "physical_configuration": "ELECTRICBIKESTATION",
@@ -366,7 +366,85 @@
                 "traffic": -1.9,
                 "vehicle_docks_available": [
                     {
-                        "count": 14,
+                        "count": 13,
+                        "vehicle_type_ids": [
+                            "EFIT",
+                            "BOOST",
+                            "ICONIC",
+                            "AUH Bike"
+                        ]
+                    }
+                ],
+                "vehicle_types_available": [
+                    {
+                        "count": 0,
+                        "vehicle_type_id": "AUH Bike"
+                    },
+                    {
+                        "count": 0,
+                        "vehicle_type_id": "ICONIC"
+                    },
+                    {
+                        "count": 0,
+                        "vehicle_type_id": "BOOST"
+                    },
+                    {
+                        "count": 8,
+                        "vehicle_type_id": "EFIT"
+                    }
+                ]
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    55.140965357433075,
+                    25.079243668495067
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "address": "MARINA PROMENADE",
+                "altitude": 1.0,
+                "capacity": 16,
+                "external_id": "9c1fccd6-ddb2-11ef-bcd6-06e885c9ce31",
+                "geofenced_capacity": 0,
+                "groups": [
+                    "MARINA-PROMENADE"
+                ],
+                "is_charging_station": true,
+                "is_installed": true,
+                "is_renting": true,
+                "is_returning": true,
+                "is_virtual_station": false,
+                "last_reported": 1789364778,
+                "name": "Orra Harbour Tower Promenade",
+                "nearby_distance": 1000.0,
+                "num_bikes_available": 7,
+                "num_bikes_disabled": 0,
+                "num_docks_available": 9,
+                "num_docks_disabled": 0,
+                "obcn": "obcn_112",
+                "physical_configuration": "ELECTRICBIKESTATION",
+                "post_code": "DXB",
+                "rental_methods": [
+                    "key",
+                    "transitcard",
+                    "creditcard",
+                    "phone"
+                ],
+                "rental_uris": {
+                    "android": "careem://bike.careem.com/station?id=130",
+                    "ios": "careem://bike.careem.com/station?id=130"
+                },
+                "short_name": "obcn_112",
+                "station_id": "130",
+                "status": "IN_SERVICE",
+                "traffic": -0.5,
+                "vehicle_docks_available": [
+                    {
+                        "count": 9,
                         "vehicle_type_ids": [
                             "EFIT",
                             "BOOST",
@@ -399,84 +477,6 @@
         {
             "geometry": {
                 "coordinates": [
-                    55.140965357433075,
-                    25.079243668495067
-                ],
-                "type": "Point"
-            },
-            "properties": {
-                "address": "MARINA PROMENADE",
-                "altitude": 1.0,
-                "capacity": 16,
-                "external_id": "9c1fccd6-ddb2-11ef-bcd6-06e885c9ce31",
-                "geofenced_capacity": 0,
-                "groups": [
-                    "MARINA-PROMENADE"
-                ],
-                "is_charging_station": true,
-                "is_installed": true,
-                "is_renting": true,
-                "is_returning": true,
-                "is_virtual_station": false,
-                "last_reported": 1789364234,
-                "name": "Orra Harbour Tower Promenade",
-                "nearby_distance": 1000.0,
-                "num_bikes_available": 5,
-                "num_bikes_disabled": 0,
-                "num_docks_available": 11,
-                "num_docks_disabled": 0,
-                "obcn": "obcn_112",
-                "physical_configuration": "ELECTRICBIKESTATION",
-                "post_code": "DXB",
-                "rental_methods": [
-                    "key",
-                    "transitcard",
-                    "creditcard",
-                    "phone"
-                ],
-                "rental_uris": {
-                    "android": "careem://bike.careem.com/station?id=130",
-                    "ios": "careem://bike.careem.com/station?id=130"
-                },
-                "short_name": "obcn_112",
-                "station_id": "130",
-                "status": "IN_SERVICE",
-                "traffic": -0.5,
-                "vehicle_docks_available": [
-                    {
-                        "count": 11,
-                        "vehicle_type_ids": [
-                            "EFIT",
-                            "BOOST",
-                            "ICONIC",
-                            "AUH Bike"
-                        ]
-                    }
-                ],
-                "vehicle_types_available": [
-                    {
-                        "count": 0,
-                        "vehicle_type_id": "AUH Bike"
-                    },
-                    {
-                        "count": 0,
-                        "vehicle_type_id": "ICONIC"
-                    },
-                    {
-                        "count": 0,
-                        "vehicle_type_id": "BOOST"
-                    },
-                    {
-                        "count": 5,
-                        "vehicle_type_id": "EFIT"
-                    }
-                ]
-            },
-            "type": "Feature"
-        },
-        {
-            "geometry": {
-                "coordinates": [
                     55.137361,
                     25.073083
                 ],
@@ -496,7 +496,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364219,
+                "last_reported": 1789364943,
                 "name": "Azure Residences",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 5,
@@ -574,7 +574,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364146,
+                "last_reported": 1789364870,
                 "name": "Marina Diamond 5",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 8,
@@ -649,11 +649,11 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364082,
+                "last_reported": 1789364806,
                 "name": "Al Barsha 2 Park 1",
                 "nearby_distance": 1000.0,
-                "num_bikes_available": 10,
-                "num_bikes_disabled": 0,
+                "num_bikes_available": 9,
+                "num_bikes_disabled": 1,
                 "num_docks_available": 10,
                 "num_docks_disabled": 0,
                 "obcn": "",
@@ -697,7 +697,7 @@
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 9,
+                        "count": 8,
                         "vehicle_type_id": "EFIT"
                     }
                 ]
@@ -728,7 +728,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364085,
+                "last_reported": 1789364809,
                 "name": "Jlt Cluster J",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 6,
@@ -805,7 +805,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364093,
+                "last_reported": 1789364817,
                 "name": "School Of Research Science 1",
                 "nearby_distance": 500.0,
                 "num_bikes_available": 4,
@@ -884,7 +884,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364082,
+                "last_reported": 1789364806,
                 "name": "Jlt Cluster M",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 8,
@@ -964,12 +964,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364164,
+                "last_reported": 1789364888,
                 "name": "Jlt Cluster A",
                 "nearby_distance": 1000.0,
-                "num_bikes_available": 10,
+                "num_bikes_available": 9,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 6,
+                "num_docks_available": 7,
                 "num_docks_disabled": 0,
                 "obcn": "obcn_41",
                 "physical_configuration": "SMARTLITMAPFRAME",
@@ -989,7 +989,7 @@
                 "traffic": 0.8,
                 "vehicle_docks_available": [
                     {
-                        "count": 6,
+                        "count": 7,
                         "vehicle_type_ids": [
                             "EFIT",
                             "BOOST",
@@ -1012,7 +1012,7 @@
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 9,
+                        "count": 8,
                         "vehicle_type_id": "EFIT"
                     }
                 ]
@@ -1041,7 +1041,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364084,
+                "last_reported": 1789364808,
                 "name": "Al Mamzar Beach 1",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 11,
@@ -1119,7 +1119,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364124,
+                "last_reported": 1789364848,
                 "name": "Al Mamzar Beach 2",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 10,
@@ -1197,7 +1197,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364118,
+                "last_reported": 1789364842,
                 "name": "Al Jaffiliya  Metro Station",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 10,
@@ -1275,7 +1275,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364241,
+                "last_reported": 1789364784,
                 "name": "Satwa Roundabout",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 15,
@@ -1352,7 +1352,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364188,
+                "last_reported": 1789364914,
                 "name": "Union Coop Hypermarket",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 17,
@@ -1430,7 +1430,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364188,
+                "last_reported": 1789364912,
                 "name": "Khawaneej Pond Park",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 8,
@@ -1508,7 +1508,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364101,
+                "last_reported": 1789364848,
                 "name": "Quranic Park Gate 2",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 10,
@@ -1586,7 +1586,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364140,
+                "last_reported": 1789364864,
                 "name": "Last Exit Al Khawaneej",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 4,
@@ -1663,7 +1663,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364140,
+                "last_reported": 1789364864,
                 "name": "Tolerance Bridge",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 7,
@@ -1742,12 +1742,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364226,
+                "last_reported": 1789364783,
                 "name": "Jlt Cluster I",
                 "nearby_distance": 1000.0,
-                "num_bikes_available": 5,
+                "num_bikes_available": 4,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 7,
+                "num_docks_available": 8,
                 "num_docks_disabled": 0,
                 "obcn": "obcn_42",
                 "physical_configuration": "SMARTLITMAPFRAME",
@@ -1767,7 +1767,7 @@
                 "traffic": 1.7,
                 "vehicle_docks_available": [
                     {
-                        "count": 7,
+                        "count": 8,
                         "vehicle_type_ids": [
                             "EFIT",
                             "BOOST",
@@ -1786,7 +1786,7 @@
                         "vehicle_type_id": "ICONIC"
                     },
                     {
-                        "count": 3,
+                        "count": 2,
                         "vehicle_type_id": "BOOST"
                     },
                     {
@@ -1819,7 +1819,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364255,
+                "last_reported": 1789364798,
                 "name": "Sahab Tower",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 4,
@@ -1897,7 +1897,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364125,
+                "last_reported": 1789364849,
                 "name": "Al Hudaiba",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 8,
@@ -1975,7 +1975,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364198,
+                "last_reported": 1789364922,
                 "name": "Four Seasons Jumeirah Road",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 10,
@@ -2053,7 +2053,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364248,
+                "last_reported": 1789364792,
                 "name": "Samsung Corporate Office",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 9,
@@ -2131,7 +2131,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364082,
+                "last_reported": 1789364806,
                 "name": "Innovation Hub",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 16,
@@ -2208,12 +2208,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364187,
+                "last_reported": 1789364911,
                 "name": "VISA HQ",
                 "nearby_distance": 1000.0,
-                "num_bikes_available": 13,
+                "num_bikes_available": 14,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 2,
+                "num_docks_available": 1,
                 "num_docks_disabled": 1,
                 "obcn": "",
                 "physical_configuration": "ELECTRICBIKESTATION",
@@ -2234,7 +2234,7 @@
                 "traffic": 0.6,
                 "vehicle_docks_available": [
                     {
-                        "count": 2,
+                        "count": 1,
                         "vehicle_type_ids": [
                             "EFIT",
                             "BOOST",
@@ -2253,7 +2253,7 @@
                         "vehicle_type_id": "ICONIC"
                     },
                     {
-                        "count": 2,
+                        "count": 3,
                         "vehicle_type_id": "BOOST"
                     },
                     {
@@ -2288,7 +2288,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364161,
+                "last_reported": 1789364885,
                 "name": "DMCC Station - Marina Side",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 9,
@@ -2366,12 +2366,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364219,
+                "last_reported": 1789364944,
                 "name": "Sukoon Tower",
                 "nearby_distance": 1000.0,
-                "num_bikes_available": 8,
+                "num_bikes_available": 7,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 11,
+                "num_docks_available": 12,
                 "num_docks_disabled": 1,
                 "obcn": "",
                 "physical_configuration": "ELECTRICBIKESTATION",
@@ -2392,7 +2392,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 11,
+                        "count": 12,
                         "vehicle_type_ids": [
                             "EFIT",
                             "BOOST",
@@ -2415,7 +2415,7 @@
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 5,
+                        "count": 4,
                         "vehicle_type_id": "EFIT"
                     }
                 ]
@@ -2444,7 +2444,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364223,
+                "last_reported": 1789364947,
                 "name": "Emerald Residences",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 8,
@@ -2522,12 +2522,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364260,
+                "last_reported": 1789364804,
                 "name": "Marina Heights 2",
                 "nearby_distance": 1000.0,
-                "num_bikes_available": 7,
+                "num_bikes_available": 8,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 9,
+                "num_docks_available": 8,
                 "num_docks_disabled": 0,
                 "obcn": "",
                 "physical_configuration": "SMARTLITMAPFRAME",
@@ -2547,7 +2547,7 @@
                 "traffic": 0.5,
                 "vehicle_docks_available": [
                     {
-                        "count": 9,
+                        "count": 8,
                         "vehicle_type_ids": [
                             "EFIT",
                             "BOOST",
@@ -2570,7 +2570,7 @@
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 7,
+                        "count": 8,
                         "vehicle_type_id": "EFIT"
                     }
                 ]
@@ -2601,12 +2601,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364142,
+                "last_reported": 1789364879,
                 "name": "Damac The Waves",
                 "nearby_distance": 1000.0,
-                "num_bikes_available": 8,
+                "num_bikes_available": 9,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 12,
+                "num_docks_available": 11,
                 "num_docks_disabled": 0,
                 "obcn": "obcn_44",
                 "physical_configuration": "SMARTLITMAPFRAME",
@@ -2626,7 +2626,7 @@
                 "traffic": -3.2,
                 "vehicle_docks_available": [
                     {
-                        "count": 12,
+                        "count": 11,
                         "vehicle_type_ids": [
                             "EFIT",
                             "BOOST",
@@ -2649,7 +2649,7 @@
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 4,
+                        "count": 5,
                         "vehicle_type_id": "EFIT"
                     }
                 ]
@@ -2678,7 +2678,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364086,
+                "last_reported": 1789364810,
                 "name": "Al Tarres Street",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 12,
@@ -2755,7 +2755,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364142,
+                "last_reported": 1789364867,
                 "name": "Palm Strip Mall",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 6,
@@ -2832,7 +2832,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364144,
+                "last_reported": 1789364868,
                 "name": "Miraj Islamic art center",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 9,
@@ -2909,12 +2909,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364220,
+                "last_reported": 1789364945,
                 "name": "JLT Cluster U",
                 "nearby_distance": 1000.0,
-                "num_bikes_available": 4,
+                "num_bikes_available": 9,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 12,
+                "num_docks_available": 7,
                 "num_docks_disabled": 0,
                 "obcn": "",
                 "physical_configuration": "SMARTLITMAPFRAME",
@@ -2934,7 +2934,7 @@
                 "traffic": 0.0,
                 "vehicle_docks_available": [
                     {
-                        "count": 12,
+                        "count": 7,
                         "vehicle_type_ids": [
                             "EFIT",
                             "BOOST",
@@ -2957,7 +2957,7 @@
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 4,
+                        "count": 9,
                         "vehicle_type_id": "EFIT"
                     }
                 ]
@@ -2986,7 +2986,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364228,
+                "last_reported": 1789364771,
                 "name": "Golden Villas",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 20,
@@ -3064,7 +3064,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364152,
+                "last_reported": 1789364877,
                 "name": "Burj Khalifa Metro station 2",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 2,
@@ -3142,7 +3142,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364117,
+                "last_reported": 1789364842,
                 "name": "Business Bay Metro Station",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 7,
@@ -3220,11 +3220,11 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364181,
+                "last_reported": 1789364905,
                 "name": "Quranic Park",
                 "nearby_distance": 1000.0,
-                "num_bikes_available": 13,
-                "num_bikes_disabled": 3,
+                "num_bikes_available": 14,
+                "num_bikes_disabled": 2,
                 "num_docks_available": 12,
                 "num_docks_disabled": 0,
                 "obcn": "obcn_2",
@@ -3269,7 +3269,7 @@
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 13,
+                        "count": 14,
                         "vehicle_type_id": "EFIT"
                     }
                 ]
@@ -3299,7 +3299,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364235,
+                "last_reported": 1789364778,
                 "name": "Jumeirah Beach Residences 2",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 7,
@@ -3377,7 +3377,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364091,
+                "last_reported": 1789364815,
                 "name": "Wasl Port Views Residence 5",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 10,
@@ -3454,7 +3454,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364193,
+                "last_reported": 1789364918,
                 "name": "Jumeirah Beach Parking",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 18,
@@ -3531,7 +3531,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364092,
+                "last_reported": 1789364831,
                 "name": "Dubai College 2",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 15,
@@ -3608,7 +3608,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364229,
+                "last_reported": 1789364772,
                 "name": "Tent Jumeirah",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 9,
@@ -3685,7 +3685,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364105,
+                "last_reported": 1789364830,
                 "name": "Ahmad Al Attar Mosque",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 25,
@@ -3763,7 +3763,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364192,
+                "last_reported": 1789364916,
                 "name": "Jumeirah Beach Hotel",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 12,
@@ -3840,7 +3840,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364211,
+                "last_reported": 1789364935,
                 "name": "Jumeirah Road 2",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 9,
@@ -3917,7 +3917,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364248,
+                "last_reported": 1789364791,
                 "name": "Al Saud Street 2-2",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 13,
@@ -3997,7 +3997,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364184,
+                "last_reported": 1789364909,
                 "name": "Dubai Marina Mall",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 9,
@@ -4075,7 +4075,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364093,
+                "last_reported": 1789364818,
                 "name": "Gold Souq Metro Station 2",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 3,
@@ -4153,7 +4153,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364110,
+                "last_reported": 1789364835,
                 "name": "Al Murar 1",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 2,
@@ -4230,7 +4230,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364199,
+                "last_reported": 1789364923,
                 "name": "MANARA ENOC 1",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 8,
@@ -4308,7 +4308,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364121,
+                "last_reported": 1789364846,
                 "name": "Al Fahidi St",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 14,
@@ -4386,7 +4386,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364172,
+                "last_reported": 1789364896,
                 "name": "Sikka 1",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 8,
@@ -4463,7 +4463,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364225,
+                "last_reported": 1789364781,
                 "name": "Creek Metro Station",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 4,
@@ -4540,7 +4540,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364171,
+                "last_reported": 1789364895,
                 "name": "Sikka 2",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 6,
@@ -4617,7 +4617,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364232,
+                "last_reported": 1789364775,
                 "name": "Al MAMZAR BEACH 3",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 13,
@@ -4696,12 +4696,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364230,
+                "last_reported": 1789364773,
                 "name": "Dubai Marina Tram",
                 "nearby_distance": 1000.0,
-                "num_bikes_available": 12,
+                "num_bikes_available": 13,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 10,
+                "num_docks_available": 9,
                 "num_docks_disabled": 0,
                 "obcn": "obcn_47",
                 "physical_configuration": "ELECTRICBIKESTATION",
@@ -4722,7 +4722,7 @@
                 "traffic": 2.1,
                 "vehicle_docks_available": [
                     {
-                        "count": 10,
+                        "count": 9,
                         "vehicle_type_ids": [
                             "EFIT",
                             "BOOST",
@@ -4745,7 +4745,7 @@
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 12,
+                        "count": 13,
                         "vehicle_type_id": "EFIT"
                     }
                 ]
@@ -4774,7 +4774,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364146,
+                "last_reported": 1789364870,
                 "name": "JW Marriott",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 13,
@@ -4852,7 +4852,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364155,
+                "last_reported": 1789364881,
                 "name": "RTA H.Q",
                 "nearby_distance": 500.0,
                 "num_bikes_available": 5,
@@ -4930,12 +4930,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364185,
+                "last_reported": 1789364909,
                 "name": "JLT CLUSTER N",
                 "nearby_distance": 1000.0,
-                "num_bikes_available": 9,
+                "num_bikes_available": 12,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 11,
+                "num_docks_available": 8,
                 "num_docks_disabled": 0,
                 "obcn": "",
                 "physical_configuration": "SMARTLITMAPFRAME",
@@ -4955,7 +4955,7 @@
                 "traffic": 0.6,
                 "vehicle_docks_available": [
                     {
-                        "count": 11,
+                        "count": 8,
                         "vehicle_type_ids": [
                             "EFIT",
                             "BOOST",
@@ -4978,7 +4978,7 @@
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 4,
+                        "count": 7,
                         "vehicle_type_id": "EFIT"
                     }
                 ]
@@ -5007,7 +5007,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364150,
+                "last_reported": 1789364874,
                 "name": "Sikka 3",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 10,
@@ -5085,7 +5085,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364223,
+                "last_reported": 1789364948,
                 "name": "Mohammed bin Rashid Library",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 5,
@@ -5162,7 +5162,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364206,
+                "last_reported": 1789364931,
                 "name": "Al Marjan Building",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 15,
@@ -5239,7 +5239,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364090,
+                "last_reported": 1789364827,
                 "name": "Al Daheri Building",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 5,
@@ -5318,12 +5318,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364168,
+                "last_reported": 1789364893,
                 "name": "Marina Crown",
                 "nearby_distance": 1000.0,
-                "num_bikes_available": 10,
+                "num_bikes_available": 9,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 10,
+                "num_docks_available": 11,
                 "num_docks_disabled": 0,
                 "obcn": "10",
                 "physical_configuration": "SMARTLITMAPFRAME",
@@ -5343,7 +5343,7 @@
                 "traffic": -2.3,
                 "vehicle_docks_available": [
                     {
-                        "count": 10,
+                        "count": 11,
                         "vehicle_type_ids": [
                             "EFIT",
                             "BOOST",
@@ -5366,7 +5366,7 @@
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 10,
+                        "count": 9,
                         "vehicle_type_id": "EFIT"
                     }
                 ]
@@ -5395,7 +5395,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364199,
+                "last_reported": 1789364924,
                 "name": "Four Points Mankhool",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 3,
@@ -5473,7 +5473,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364188,
+                "last_reported": 1789364912,
                 "name": "Al Soufoh Tram",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 15,
@@ -5550,7 +5550,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364239,
+                "last_reported": 1789364783,
                 "name": "Al Ghubaiba Metro Station",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 4,
@@ -5628,12 +5628,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364144,
+                "last_reported": 1789364868,
                 "name": "Stadium Metro Station",
                 "nearby_distance": 1000.0,
-                "num_bikes_available": 6,
+                "num_bikes_available": 7,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 2,
+                "num_docks_available": 1,
                 "num_docks_disabled": 0,
                 "obcn": "",
                 "physical_configuration": "SMARTLITMAPFRAME",
@@ -5653,7 +5653,7 @@
                 "traffic": 1.0,
                 "vehicle_docks_available": [
                     {
-                        "count": 2,
+                        "count": 1,
                         "vehicle_type_ids": [
                             "EFIT",
                             "BOOST",
@@ -5676,7 +5676,7 @@
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 5,
+                        "count": 6,
                         "vehicle_type_id": "EFIT"
                     }
                 ]
@@ -5705,12 +5705,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364124,
+                "last_reported": 1789364848,
                 "name": "Al Islah Mosque",
                 "nearby_distance": 1000.0,
-                "num_bikes_available": 4,
+                "num_bikes_available": 3,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 4,
+                "num_docks_available": 5,
                 "num_docks_disabled": 0,
                 "obcn": "",
                 "physical_configuration": "ELECTRICBIKESTATION",
@@ -5731,7 +5731,7 @@
                 "traffic": -1.0,
                 "vehicle_docks_available": [
                     {
-                        "count": 4,
+                        "count": 5,
                         "vehicle_type_ids": [
                             "EFIT",
                             "BOOST",
@@ -5754,7 +5754,7 @@
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 4,
+                        "count": 3,
                         "vehicle_type_id": "EFIT"
                     }
                 ]
@@ -5783,7 +5783,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364218,
+                "last_reported": 1789364943,
                 "name": "Al Nahda Metro Station",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 4,
@@ -5860,7 +5860,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364240,
+                "last_reported": 1789364785,
                 "name": "Al Bustan Residence",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 5,
@@ -5938,7 +5938,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364161,
+                "last_reported": 1789364885,
                 "name": "Dubai Jewel Tower",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 2,
@@ -6015,7 +6015,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364095,
+                "last_reported": 1789364820,
                 "name": "UoW Bus Stop",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 13,
@@ -6094,7 +6094,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364198,
+                "last_reported": 1789364922,
                 "name": "Marina Heights Marina Tower",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 8,
@@ -6172,7 +6172,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364216,
+                "last_reported": 1789364941,
                 "name": "The Bayswater Tower",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 11,
@@ -6249,7 +6249,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364162,
+                "last_reported": 1789364887,
                 "name": "Tolerance Bridge 2",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 11,
@@ -6327,7 +6327,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364162,
+                "last_reported": 1789364887,
                 "name": "Safa Park Marine Transport",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 11,
@@ -6404,7 +6404,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364213,
+                "last_reported": 1789364937,
                 "name": "D-Marin Canal",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 4,
@@ -6482,7 +6482,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364113,
+                "last_reported": 1789364837,
                 "name": "Sobha Saphire Building",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 8,
@@ -6560,7 +6560,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364204,
+                "last_reported": 1789364928,
                 "name": "LULU SUPERMARKET",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 10,
@@ -6637,7 +6637,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364152,
+                "last_reported": 1789364876,
                 "name": "Al Ghubaiba Marine Station",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 3,
@@ -6714,7 +6714,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364154,
+                "last_reported": 1789364878,
                 "name": "Al Shindagha  Museum 2",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 3,
@@ -6792,12 +6792,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364201,
+                "last_reported": 1789364925,
                 "name": "Radisson Blu Dubai Marina",
                 "nearby_distance": 1000.0,
-                "num_bikes_available": 10,
+                "num_bikes_available": 9,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 6,
+                "num_docks_available": 7,
                 "num_docks_disabled": 0,
                 "obcn": "obcn_50",
                 "physical_configuration": "ELECTRICBIKESTATION",
@@ -6818,7 +6818,7 @@
                 "traffic": 0.4,
                 "vehicle_docks_available": [
                     {
-                        "count": 6,
+                        "count": 7,
                         "vehicle_type_ids": [
                             "EFIT",
                             "BOOST",
@@ -6841,7 +6841,7 @@
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 9,
+                        "count": 8,
                         "vehicle_type_id": "EFIT"
                     }
                 ]
@@ -6870,12 +6870,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364174,
+                "last_reported": 1789364912,
                 "name": "NOORA TOWER STATION",
                 "nearby_distance": 500.0,
-                "num_bikes_available": 13,
+                "num_bikes_available": 12,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 7,
+                "num_docks_available": 8,
                 "num_docks_disabled": 0,
                 "obcn": "",
                 "physical_configuration": "SMARTLITMAPFRAME",
@@ -6895,7 +6895,7 @@
                 "traffic": -0.9,
                 "vehicle_docks_available": [
                     {
-                        "count": 7,
+                        "count": 8,
                         "vehicle_type_ids": [
                             "EFIT",
                             "BOOST",
@@ -6914,7 +6914,7 @@
                         "vehicle_type_id": "ICONIC"
                     },
                     {
-                        "count": 9,
+                        "count": 8,
                         "vehicle_type_id": "BOOST"
                     },
                     {
@@ -6947,7 +6947,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364189,
+                "last_reported": 1789364913,
                 "name": "Satwa Roundabout 2",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 4,
@@ -7025,7 +7025,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364224,
+                "last_reported": 1789364948,
                 "name": "Dune Center",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 8,
@@ -7103,7 +7103,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364106,
+                "last_reported": 1789364830,
                 "name": "Canal Bridge",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 9,
@@ -7181,7 +7181,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364120,
+                "last_reported": 1789364844,
                 "name": "Umm Suqeim Mall ",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 10,
@@ -7258,7 +7258,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364261,
+                "last_reported": 1789364804,
                 "name": "Bastakia Bus Shelter",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 7,
@@ -7336,7 +7336,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364112,
+                "last_reported": 1789364836,
                 "name": "Al Fahidi Historical District",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 4,
@@ -7413,7 +7413,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364256,
+                "last_reported": 1789364799,
                 "name": "The Apple Community School\t",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 8,
@@ -7490,7 +7490,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364155,
+                "last_reported": 1789364879,
                 "name": "Karama Center",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 12,
@@ -7570,12 +7570,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364165,
+                "last_reported": 1789364889,
                 "name": "Silverene Tower",
                 "nearby_distance": 1000.0,
-                "num_bikes_available": 5,
+                "num_bikes_available": 6,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 19,
+                "num_docks_available": 18,
                 "num_docks_disabled": 0,
                 "obcn": "obcn_51",
                 "physical_configuration": "ELECTRICBIKESTATION",
@@ -7596,7 +7596,7 @@
                 "traffic": 0.3,
                 "vehicle_docks_available": [
                     {
-                        "count": 19,
+                        "count": 18,
                         "vehicle_type_ids": [
                             "EFIT",
                             "BOOST",
@@ -7619,7 +7619,7 @@
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 5,
+                        "count": 6,
                         "vehicle_type_id": "EFIT"
                     }
                 ]
@@ -7648,7 +7648,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364175,
+                "last_reported": 1789364899,
                 "name": "Frame Bridge",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 6,
@@ -7726,7 +7726,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364178,
+                "last_reported": 1789364902,
                 "name": "Centrepoint Burjuman",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 9,
@@ -7804,7 +7804,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364184,
+                "last_reported": 1789364909,
                 "name": "Hyatt Regency",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 4,
@@ -7882,13 +7882,13 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364138,
+                "last_reported": 1789364863,
                 "name": "Wasl Port Views Residences 1",
                 "nearby_distance": 1000.0,
-                "num_bikes_available": 8,
+                "num_bikes_available": 9,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 7,
-                "num_docks_disabled": 0,
+                "num_docks_available": 5,
+                "num_docks_disabled": 1,
                 "obcn": "",
                 "physical_configuration": "SMARTLITMAPFRAME",
                 "post_code": "DXB",
@@ -7907,7 +7907,7 @@
                 "traffic": 0.6,
                 "vehicle_docks_available": [
                     {
-                        "count": 7,
+                        "count": 5,
                         "vehicle_type_ids": [
                             "EFIT",
                             "BOOST",
@@ -7926,7 +7926,7 @@
                         "vehicle_type_id": "ICONIC"
                     },
                     {
-                        "count": 3,
+                        "count": 4,
                         "vehicle_type_id": "BOOST"
                     },
                     {
@@ -7959,7 +7959,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364193,
+                "last_reported": 1789364917,
                 "name": "Al Shindagha Museum 1",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 3,
@@ -8037,7 +8037,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364246,
+                "last_reported": 1789364789,
                 "name": "Moza Plaza",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 4,
@@ -8115,7 +8115,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364135,
+                "last_reported": 1789364860,
                 "name": "West Zone Burjuman",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 5,
@@ -8192,12 +8192,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364165,
+                "last_reported": 1789364890,
                 "name": "Karama Park",
                 "nearby_distance": 1000.0,
-                "num_bikes_available": 8,
+                "num_bikes_available": 9,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 4,
+                "num_docks_available": 3,
                 "num_docks_disabled": 0,
                 "obcn": "",
                 "physical_configuration": "ELECTRICBIKESTATION",
@@ -8218,7 +8218,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 4,
+                        "count": 3,
                         "vehicle_type_ids": [
                             "EFIT",
                             "BOOST",
@@ -8241,7 +8241,7 @@
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 7,
+                        "count": 8,
                         "vehicle_type_id": "EFIT"
                     }
                 ]
@@ -8272,12 +8272,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364103,
+                "last_reported": 1789364841,
                 "name": "Al Rahim Mosque Promenade",
                 "nearby_distance": 1000.0,
-                "num_bikes_available": 5,
+                "num_bikes_available": 3,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 7,
+                "num_docks_available": 9,
                 "num_docks_disabled": 0,
                 "obcn": "obcn_52",
                 "physical_configuration": "SMARTLITMAPFRAME",
@@ -8297,7 +8297,7 @@
                 "traffic": -1.8,
                 "vehicle_docks_available": [
                     {
-                        "count": 7,
+                        "count": 9,
                         "vehicle_type_ids": [
                             "EFIT",
                             "BOOST",
@@ -8320,7 +8320,7 @@
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 5,
+                        "count": 3,
                         "vehicle_type_id": "EFIT"
                     }
                 ]
@@ -8349,7 +8349,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364145,
+                "last_reported": 1789364870,
                 "name": "Wyndham Hotel",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 8,
@@ -8427,7 +8427,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364199,
+                "last_reported": 1789364924,
                 "name": "Al Jaddaf Marine Transport",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 6,
@@ -8505,7 +8505,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364218,
+                "last_reported": 1789364943,
                 "name": "Al Saud Street 1-2",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 11,
@@ -8583,7 +8583,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364121,
+                "last_reported": 1789364845,
                 "name": "Canada University Dubai",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 11,
@@ -8661,7 +8661,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364202,
+                "last_reported": 1789364927,
                 "name": "DEWA Al Wasl Bus Stop",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 9,
@@ -8739,7 +8739,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364177,
+                "last_reported": 1789364915,
                 "name": "Citywalk Building 21a",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 10,
@@ -8816,12 +8816,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364108,
+                "last_reported": 1789364832,
                 "name": "Citywalk Building 3A",
                 "nearby_distance": 1000.0,
-                "num_bikes_available": 6,
+                "num_bikes_available": 7,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 9,
+                "num_docks_available": 8,
                 "num_docks_disabled": 0,
                 "obcn": "",
                 "physical_configuration": "SMARTLITMAPFRAME",
@@ -8841,7 +8841,7 @@
                 "traffic": null,
                 "vehicle_docks_available": [
                     {
-                        "count": 9,
+                        "count": 8,
                         "vehicle_type_ids": [
                             "EFIT",
                             "BOOST",
@@ -8864,7 +8864,7 @@
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 5,
+                        "count": 6,
                         "vehicle_type_id": "EFIT"
                     }
                 ]
@@ -8893,7 +8893,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364199,
+                "last_reported": 1789364924,
                 "name": "Coca Cola Stadium",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 9,
@@ -8971,7 +8971,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364112,
+                "last_reported": 1789364837,
                 "name": "The Mall",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 14,
@@ -9049,7 +9049,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364221,
+                "last_reported": 1789364945,
                 "name": "Al Warqa Station",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 7,
@@ -9129,7 +9129,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364084,
+                "last_reported": 1789364808,
                 "name": "Durrat Al Marsa Tower Promenade",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 5,
@@ -9206,7 +9206,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364248,
+                "last_reported": 1789364791,
                 "name": "Design District Marine Transport Station",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 14,
@@ -9284,7 +9284,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364247,
+                "last_reported": 1789364791,
                 "name": "Bay Walk Canal 2",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 10,
@@ -9361,7 +9361,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364164,
+                "last_reported": 1789364888,
                 "name": "Ras Al Khor Wildlife Sanctuary ",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 3,
@@ -9441,7 +9441,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364127,
+                "last_reported": 1789364851,
                 "name": "Intercontinental Promenade",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 6,
@@ -9519,7 +9519,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364249,
+                "last_reported": 1789364792,
                 "name": "Convention Center",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 7,
@@ -9597,7 +9597,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364151,
+                "last_reported": 1789364876,
                 "name": "Za'Abeel Hall Entrance ",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 13,
@@ -9675,7 +9675,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364149,
+                "last_reported": 1789364873,
                 "name": "Al safa Metro station 2 ",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 10,
@@ -9752,7 +9752,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364168,
+                "last_reported": 1789364892,
                 "name": "Jumeriah Creekside Hotel",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 3,
@@ -9829,7 +9829,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364194,
+                "last_reported": 1789364920,
                 "name": "GGICO Metro station ",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 4,
@@ -9906,7 +9906,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364153,
+                "last_reported": 1789364877,
                 "name": "Mirdif Hills",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 4,
@@ -9983,7 +9983,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364133,
+                "last_reported": 1789364857,
                 "name": "Dragon Mart Station ",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 3,
@@ -10060,7 +10060,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364142,
+                "last_reported": 1789364866,
                 "name": "Al Safa 2 Park ",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 9,
@@ -10140,12 +10140,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364096,
+                "last_reported": 1789364820,
                 "name": "The Point Tower Promenade",
                 "nearby_distance": 1000.0,
-                "num_bikes_available": 7,
+                "num_bikes_available": 6,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 5,
+                "num_docks_available": 6,
                 "num_docks_disabled": 0,
                 "obcn": "obcn_55",
                 "physical_configuration": "SMARTLITMAPFRAME",
@@ -10165,7 +10165,7 @@
                 "traffic": 1.4,
                 "vehicle_docks_available": [
                     {
-                        "count": 5,
+                        "count": 6,
                         "vehicle_type_ids": [
                             "EFIT",
                             "BOOST",
@@ -10188,7 +10188,7 @@
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 7,
+                        "count": 6,
                         "vehicle_type_id": "EFIT"
                     }
                 ]
@@ -10217,7 +10217,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364083,
+                "last_reported": 1789364807,
                 "name": "Umm Al Sheif Waitrose",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 3,
@@ -10295,7 +10295,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364163,
+                "last_reported": 1789364888,
                 "name": "Emirates Metro Station",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 5,
@@ -10373,11 +10373,11 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364249,
+                "last_reported": 1789364793,
                 "name": "Mushrif Park Gate North",
                 "nearby_distance": 1000.0,
-                "num_bikes_available": 11,
-                "num_bikes_disabled": 1,
+                "num_bikes_available": 12,
+                "num_bikes_disabled": 0,
                 "num_docks_available": 4,
                 "num_docks_disabled": 0,
                 "obcn": "",
@@ -10422,7 +10422,7 @@
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 11,
+                        "count": 12,
                         "vehicle_type_id": "EFIT"
                     }
                 ]
@@ -10451,7 +10451,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364155,
+                "last_reported": 1789364880,
                 "name": "Al Muraqqabat Road 2",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 4,
@@ -10528,7 +10528,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364110,
+                "last_reported": 1789364835,
                 "name": "KnowledgeFund Parking",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 5,
@@ -10605,7 +10605,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364155,
+                "last_reported": 1789364880,
                 "name": "Amity University ",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 4,
@@ -10682,7 +10682,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364235,
+                "last_reported": 1789364779,
                 "name": "Academic City Park 1",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 10,
@@ -10760,7 +10760,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364085,
+                "last_reported": 1789364810,
                 "name": "Academic City Accommodation",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 6,
@@ -10838,7 +10838,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364095,
+                "last_reported": 1789364819,
                 "name": "Union Metro Station",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 7,
@@ -10918,12 +10918,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364143,
+                "last_reported": 1789364880,
                 "name": "Park Island Promenade",
                 "nearby_distance": 1000.0,
-                "num_bikes_available": 6,
+                "num_bikes_available": 5,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 6,
+                "num_docks_available": 7,
                 "num_docks_disabled": 0,
                 "obcn": "obcn_56",
                 "physical_configuration": "SMARTLITMAPFRAME",
@@ -10943,7 +10943,7 @@
                 "traffic": -2.3,
                 "vehicle_docks_available": [
                     {
-                        "count": 6,
+                        "count": 7,
                         "vehicle_type_ids": [
                             "EFIT",
                             "BOOST",
@@ -10966,7 +10966,7 @@
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 6,
+                        "count": 5,
                         "vehicle_type_id": "EFIT"
                     }
                 ]
@@ -11068,7 +11068,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364217,
+                "last_reported": 1789364942,
                 "name": "Marina Diamond 6",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 9,
@@ -11147,12 +11147,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364116,
+                "last_reported": 1789364840,
                 "name": "Umm Hassan Promenade",
                 "nearby_distance": 1000.0,
-                "num_bikes_available": 6,
+                "num_bikes_available": 5,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 6,
+                "num_docks_available": 7,
                 "num_docks_disabled": 0,
                 "obcn": "obcn_59",
                 "physical_configuration": "SMARTLITMAPFRAME",
@@ -11172,7 +11172,7 @@
                 "traffic": 0.4,
                 "vehicle_docks_available": [
                     {
-                        "count": 6,
+                        "count": 7,
                         "vehicle_type_ids": [
                             "EFIT",
                             "BOOST",
@@ -11195,7 +11195,7 @@
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 6,
+                        "count": 5,
                         "vehicle_type_id": "EFIT"
                     }
                 ]
@@ -11368,7 +11368,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364233,
+                "last_reported": 1789364789,
                 "name": "Grosvenor Hotel Promenade",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 4,
@@ -11445,7 +11445,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364151,
+                "last_reported": 1789364875,
                 "name": "Residences 4c Expo Village",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 5,
@@ -11667,12 +11667,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364180,
+                "last_reported": 1789364904,
                 "name": "Careem HQ",
                 "nearby_distance": 1000.0,
-                "num_bikes_available": 16,
+                "num_bikes_available": 11,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 8,
+                "num_docks_available": 13,
                 "num_docks_disabled": 0,
                 "obcn": "obcn_61",
                 "physical_configuration": "ELECTRICBIKESTATION",
@@ -11693,7 +11693,7 @@
                 "traffic": 4.1,
                 "vehicle_docks_available": [
                     {
-                        "count": 8,
+                        "count": 13,
                         "vehicle_type_ids": [
                             "EFIT",
                             "BOOST",
@@ -11716,7 +11716,7 @@
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 11,
+                        "count": 6,
                         "vehicle_type_id": "EFIT"
                     }
                 ]
@@ -11745,7 +11745,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364204,
+                "last_reported": 1789364928,
                 "name": "Residences 1A Expo Village",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 6,
@@ -11895,12 +11895,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364102,
+                "last_reported": 1789364826,
                 "name": "Nakheel Station",
                 "nearby_distance": 1000.0,
-                "num_bikes_available": 11,
+                "num_bikes_available": 10,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 5,
+                "num_docks_available": 6,
                 "num_docks_disabled": 0,
                 "obcn": "obcn_62",
                 "physical_configuration": "SMARTLITMAPFRAME",
@@ -11920,7 +11920,7 @@
                 "traffic": -2.4,
                 "vehicle_docks_available": [
                     {
-                        "count": 5,
+                        "count": 6,
                         "vehicle_type_ids": [
                             "EFIT",
                             "BOOST",
@@ -11939,7 +11939,7 @@
                         "vehicle_type_id": "ICONIC"
                     },
                     {
-                        "count": 3,
+                        "count": 2,
                         "vehicle_type_id": "BOOST"
                     },
                     {
@@ -11972,7 +11972,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364253,
+                "last_reported": 1789364796,
                 "name": "Wasl Onyx Karama",
                 "nearby_distance": 500.0,
                 "num_bikes_available": 10,
@@ -12127,7 +12127,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364178,
+                "last_reported": 1789364903,
                 "name": "One Central DTWC",
                 "nearby_distance": 500.0,
                 "num_bikes_available": 5,
@@ -12204,7 +12204,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364126,
+                "last_reported": 1789364851,
                 "name": "Al Barsha Park 3",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 6,
@@ -12282,7 +12282,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364083,
+                "last_reported": 1789364807,
                 "name": "LULU HYPERMARKET AL WARQA",
                 "nearby_distance": 500.0,
                 "num_bikes_available": 5,
@@ -12361,12 +12361,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364095,
+                "last_reported": 1789364820,
                 "name": "Burj khalifa",
                 "nearby_distance": 1000.0,
-                "num_bikes_available": 11,
+                "num_bikes_available": 8,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 9,
+                "num_docks_available": 12,
                 "num_docks_disabled": 0,
                 "obcn": "obcn_64",
                 "physical_configuration": "ELECTRICBIKESTATION",
@@ -12387,7 +12387,7 @@
                 "traffic": 0.6,
                 "vehicle_docks_available": [
                     {
-                        "count": 9,
+                        "count": 12,
                         "vehicle_type_ids": [
                             "EFIT",
                             "BOOST",
@@ -12410,7 +12410,7 @@
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 7,
+                        "count": 4,
                         "vehicle_type_id": "EFIT"
                     }
                 ]
@@ -12439,7 +12439,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364086,
+                "last_reported": 1789364825,
                 "name": "Kite Surf and Beach ",
                 "nearby_distance": 500.0,
                 "num_bikes_available": 16,
@@ -12518,7 +12518,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364171,
+                "last_reported": 1789364896,
                 "name": "Damac Metro Station",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 31,
@@ -12563,11 +12563,11 @@
                         "vehicle_type_id": "ICONIC"
                     },
                     {
-                        "count": 1,
+                        "count": 2,
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 30,
+                        "count": 29,
                         "vehicle_type_id": "EFIT"
                     }
                 ]
@@ -12596,7 +12596,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364108,
+                "last_reported": 1789364832,
                 "name": "KHADRI MOSQUE",
                 "nearby_distance": 500.0,
                 "num_bikes_available": 10,
@@ -12673,7 +12673,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364248,
+                "last_reported": 1789364791,
                 "name": "Al Barsha Mall",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 12,
@@ -12751,7 +12751,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364139,
+                "last_reported": 1789364863,
                 "name": "Filli Cafe Kite Beach",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 10,
@@ -12829,7 +12829,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364097,
+                "last_reported": 1789364822,
                 "name": "Abu Bakar Al siddiq Metro",
                 "nearby_distance": 500.0,
                 "num_bikes_available": 7,
@@ -12907,7 +12907,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364120,
+                "last_reported": 1789364844,
                 "name": "LA MER BEACH",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 10,
@@ -12985,7 +12985,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364253,
+                "last_reported": 1789364796,
                 "name": "EMERALD BARSHA 1",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 10,
@@ -13063,7 +13063,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364232,
+                "last_reported": 1789364775,
                 "name": "Hor Al Anz Turnoff 1",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 6,
@@ -13140,7 +13140,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364093,
+                "last_reported": 1789364818,
                 "name": "NXN Dubai Central",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 6,
@@ -13219,7 +13219,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364123,
+                "last_reported": 1789364848,
                 "name": "Thuraya Tower",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 6,
@@ -13297,7 +13297,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364103,
+                "last_reported": 1789364827,
                 "name": "Marsa Al Arab Jumeirah",
                 "nearby_distance": 500.0,
                 "num_bikes_available": 8,
@@ -13375,12 +13375,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364082,
+                "last_reported": 1789364806,
                 "name": "Night Beach Jumeirah",
                 "nearby_distance": 500.0,
-                "num_bikes_available": 6,
+                "num_bikes_available": 4,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 1,
+                "num_docks_available": 3,
                 "num_docks_disabled": 0,
                 "obcn": "",
                 "physical_configuration": "REGULAR",
@@ -13401,7 +13401,7 @@
                 "traffic": -0.3,
                 "vehicle_docks_available": [
                     {
-                        "count": 1,
+                        "count": 3,
                         "vehicle_type_ids": [
                             "EFIT",
                             "BOOST",
@@ -13420,7 +13420,7 @@
                         "vehicle_type_id": "ICONIC"
                     },
                     {
-                        "count": 5,
+                        "count": 3,
                         "vehicle_type_id": "BOOST"
                     },
                     {
@@ -13453,7 +13453,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364210,
+                "last_reported": 1789364935,
                 "name": "Kite Beach Parking 2",
                 "nearby_distance": 500.0,
                 "num_bikes_available": 6,
@@ -13531,7 +13531,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364095,
+                "last_reported": 1789364820,
                 "name": "Movenpick Al Mamzar",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 7,
@@ -13611,7 +13611,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364157,
+                "last_reported": 1789364881,
                 "name": "Palm Jumeirah Tram",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 9,
@@ -13691,7 +13691,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364084,
+                "last_reported": 1789364808,
                 "name": "Media City Tram",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 16,
@@ -13768,7 +13768,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364220,
+                "last_reported": 1789364945,
                 "name": "Dubai Internet City Parking",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 4,
@@ -13846,12 +13846,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364124,
+                "last_reported": 1789364849,
                 "name": "Knowledge Village Parking",
                 "nearby_distance": 1000.0,
-                "num_bikes_available": 9,
+                "num_bikes_available": 10,
                 "num_bikes_disabled": 1,
-                "num_docks_available": 6,
+                "num_docks_available": 5,
                 "num_docks_disabled": 0,
                 "obcn": "obcn_70",
                 "physical_configuration": "SMARTLITMAPFRAME",
@@ -13871,7 +13871,7 @@
                 "traffic": 0.6,
                 "vehicle_docks_available": [
                     {
-                        "count": 6,
+                        "count": 5,
                         "vehicle_type_ids": [
                             "EFIT",
                             "BOOST",
@@ -13894,7 +13894,7 @@
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 9,
+                        "count": 10,
                         "vehicle_type_id": "EFIT"
                     }
                 ]
@@ -13923,7 +13923,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364093,
+                "last_reported": 1789364817,
                 "name": "Office Park Building",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 15,
@@ -14003,12 +14003,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364225,
+                "last_reported": 1789364950,
                 "name": "Street 3A, The Greens",
                 "nearby_distance": 1000.0,
-                "num_bikes_available": 5,
+                "num_bikes_available": 4,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 6,
+                "num_docks_available": 7,
                 "num_docks_disabled": 0,
                 "obcn": "obcn_72",
                 "physical_configuration": "REGULAR",
@@ -14029,7 +14029,7 @@
                 "traffic": -0.2,
                 "vehicle_docks_available": [
                     {
-                        "count": 6,
+                        "count": 7,
                         "vehicle_type_ids": [
                             "EFIT",
                             "BOOST",
@@ -14048,7 +14048,7 @@
                         "vehicle_type_id": "ICONIC"
                     },
                     {
-                        "count": 5,
+                        "count": 4,
                         "vehicle_type_id": "BOOST"
                     },
                     {
@@ -14083,7 +14083,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364152,
+                "last_reported": 1789364877,
                 "name": "Street 5, The Greens",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 5,
@@ -14162,7 +14162,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364218,
+                "last_reported": 1789364942,
                 "name": "Greens Village Mall",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 11,
@@ -14242,12 +14242,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364137,
+                "last_reported": 1789364861,
                 "name": "Jlt Cluster X",
                 "nearby_distance": 1000.0,
-                "num_bikes_available": 21,
+                "num_bikes_available": 19,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 11,
+                "num_docks_available": 13,
                 "num_docks_disabled": 0,
                 "obcn": "obcn_30",
                 "physical_configuration": "ELECTRICBIKESTATION",
@@ -14268,7 +14268,7 @@
                 "traffic": 0.1,
                 "vehicle_docks_available": [
                     {
-                        "count": 11,
+                        "count": 13,
                         "vehicle_type_ids": [
                             "EFIT",
                             "BOOST",
@@ -14291,7 +14291,7 @@
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 17,
+                        "count": 15,
                         "vehicle_type_id": "EFIT"
                     }
                 ]
@@ -14322,7 +14322,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364087,
+                "last_reported": 1789364812,
                 "name": "Onyx Tower",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 13,
@@ -14401,7 +14401,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364197,
+                "last_reported": 1789364922,
                 "name": "Dubai Internet City Metro Station 2",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 17,
@@ -14481,7 +14481,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364096,
+                "last_reported": 1789364820,
                 "name": "Jumeirah Public Beach",
                 "nearby_distance": 500.0,
                 "num_bikes_available": 29,
@@ -14526,11 +14526,11 @@
                         "vehicle_type_id": "ICONIC"
                     },
                     {
-                        "count": 4,
+                        "count": 3,
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 25,
+                        "count": 26,
                         "vehicle_type_id": "EFIT"
                     }
                 ]
@@ -14561,7 +14561,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364243,
+                "last_reported": 1789364786,
                 "name": "Kite Beach",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 19,
@@ -14641,7 +14641,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364237,
+                "last_reported": 1789364780,
                 "name": "Sunset Mall",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 8,
@@ -14721,7 +14721,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364135,
+                "last_reported": 1789364859,
                 "name": "Safa Park",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 9,
@@ -14801,7 +14801,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364076,
+                "last_reported": 1789364811,
                 "name": "Ubora Tower",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 16,
@@ -14880,12 +14880,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364191,
+                "last_reported": 1789364915,
                 "name": "Jlt Cluster V",
                 "nearby_distance": 1000.0,
-                "num_bikes_available": 16,
+                "num_bikes_available": 13,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 7,
+                "num_docks_available": 10,
                 "num_docks_disabled": 0,
                 "obcn": "obcn_31",
                 "physical_configuration": "SMARTLITMAPFRAME",
@@ -14905,7 +14905,7 @@
                 "traffic": 1.5,
                 "vehicle_docks_available": [
                     {
-                        "count": 7,
+                        "count": 10,
                         "vehicle_type_ids": [
                             "EFIT",
                             "BOOST",
@@ -14924,11 +14924,11 @@
                         "vehicle_type_id": "ICONIC"
                     },
                     {
-                        "count": 1,
+                        "count": 0,
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 15,
+                        "count": 13,
                         "vehicle_type_id": "EFIT"
                     }
                 ]
@@ -14959,12 +14959,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364125,
+                "last_reported": 1789364850,
                 "name": "Atria Tower",
                 "nearby_distance": 1000.0,
-                "num_bikes_available": 16,
+                "num_bikes_available": 17,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 8,
+                "num_docks_available": 7,
                 "num_docks_disabled": 0,
                 "obcn": "obcn_85",
                 "physical_configuration": "SMARTLITMAPFRAME",
@@ -14984,7 +14984,7 @@
                 "traffic": 0.4,
                 "vehicle_docks_available": [
                     {
-                        "count": 8,
+                        "count": 7,
                         "vehicle_type_ids": [
                             "EFIT",
                             "BOOST",
@@ -15007,7 +15007,7 @@
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 2,
+                        "count": 3,
                         "vehicle_type_id": "EFIT"
                     }
                 ]
@@ -15038,11 +15038,11 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364111,
+                "last_reported": 1789364835,
                 "name": "Al Habtoor City",
                 "nearby_distance": 1000.0,
-                "num_bikes_available": 24,
-                "num_bikes_disabled": 5,
+                "num_bikes_available": 25,
+                "num_bikes_disabled": 4,
                 "num_docks_available": 7,
                 "num_docks_disabled": 0,
                 "obcn": "obcn_86",
@@ -15087,7 +15087,7 @@
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 12,
+                        "count": 13,
                         "vehicle_type_id": "EFIT"
                     }
                 ]
@@ -15118,7 +15118,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364230,
+                "last_reported": 1789364773,
                 "name": "The Old Town Community",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 6,
@@ -15197,12 +15197,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364180,
+                "last_reported": 1789364904,
                 "name": "Vida Residences",
                 "nearby_distance": 1000.0,
-                "num_bikes_available": 7,
+                "num_bikes_available": 6,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 9,
+                "num_docks_available": 10,
                 "num_docks_disabled": 0,
                 "obcn": "obcn_90",
                 "physical_configuration": "ELECTRICBIKESTATION",
@@ -15223,7 +15223,7 @@
                 "traffic": -0.5,
                 "vehicle_docks_available": [
                     {
-                        "count": 9,
+                        "count": 10,
                         "vehicle_type_ids": [
                             "EFIT",
                             "BOOST",
@@ -15242,7 +15242,7 @@
                         "vehicle_type_id": "ICONIC"
                     },
                     {
-                        "count": 1,
+                        "count": 0,
                         "vehicle_type_id": "BOOST"
                     },
                     {
@@ -15277,7 +15277,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364093,
+                "last_reported": 1789364818,
                 "name": "SOUTH RIDGE",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 6,
@@ -15357,12 +15357,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364188,
+                "last_reported": 1789364912,
                 "name": "Burj Views",
                 "nearby_distance": 1000.0,
-                "num_bikes_available": 8,
+                "num_bikes_available": 7,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 8,
+                "num_docks_available": 9,
                 "num_docks_disabled": 0,
                 "obcn": "obcn_93",
                 "physical_configuration": "SMARTLITMAPFRAME",
@@ -15380,85 +15380,6 @@
                 "station_id": "68",
                 "status": "IN_SERVICE",
                 "traffic": -1.0,
-                "vehicle_docks_available": [
-                    {
-                        "count": 8,
-                        "vehicle_type_ids": [
-                            "EFIT",
-                            "BOOST",
-                            "ICONIC",
-                            "AUH Bike"
-                        ]
-                    }
-                ],
-                "vehicle_types_available": [
-                    {
-                        "count": 0,
-                        "vehicle_type_id": "AUH Bike"
-                    },
-                    {
-                        "count": 0,
-                        "vehicle_type_id": "ICONIC"
-                    },
-                    {
-                        "count": 2,
-                        "vehicle_type_id": "BOOST"
-                    },
-                    {
-                        "count": 6,
-                        "vehicle_type_id": "EFIT"
-                    }
-                ]
-            },
-            "type": "Feature"
-        },
-        {
-            "geometry": {
-                "coordinates": [
-                    55.147944,
-                    25.077049
-                ],
-                "type": "Point"
-            },
-            "properties": {
-                "address": "JLT",
-                "altitude": 1.0,
-                "capacity": 16,
-                "external_id": "9c1ec336-ddb2-11ef-bcd6-06e885c9ce31",
-                "geofenced_capacity": 0,
-                "groups": [
-                    "JLT",
-                    "Solar",
-                    "Deployed"
-                ],
-                "is_charging_station": false,
-                "is_installed": true,
-                "is_renting": true,
-                "is_returning": true,
-                "is_virtual_station": false,
-                "last_reported": 1789364147,
-                "name": "JLT Cluster R",
-                "nearby_distance": 1000.0,
-                "num_bikes_available": 7,
-                "num_bikes_disabled": 0,
-                "num_docks_available": 9,
-                "num_docks_disabled": 0,
-                "obcn": "obcn_32",
-                "physical_configuration": "SMARTLITMAPFRAME",
-                "post_code": "DXB",
-                "rental_methods": [
-                    "key",
-                    "transitcard",
-                    "phone"
-                ],
-                "rental_uris": {
-                    "android": "careem://bike.careem.com/station?id=7",
-                    "ios": "careem://bike.careem.com/station?id=7"
-                },
-                "short_name": "obcn_32",
-                "station_id": "7",
-                "status": "IN_SERVICE",
-                "traffic": -0.7,
                 "vehicle_docks_available": [
                     {
                         "count": 9,
@@ -15494,6 +15415,85 @@
         {
             "geometry": {
                 "coordinates": [
+                    55.147944,
+                    25.077049
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "address": "JLT",
+                "altitude": 1.0,
+                "capacity": 16,
+                "external_id": "9c1ec336-ddb2-11ef-bcd6-06e885c9ce31",
+                "geofenced_capacity": 0,
+                "groups": [
+                    "JLT",
+                    "Solar",
+                    "Deployed"
+                ],
+                "is_charging_station": false,
+                "is_installed": true,
+                "is_renting": true,
+                "is_returning": true,
+                "is_virtual_station": false,
+                "last_reported": 1789364871,
+                "name": "JLT Cluster R",
+                "nearby_distance": 1000.0,
+                "num_bikes_available": 8,
+                "num_bikes_disabled": 0,
+                "num_docks_available": 8,
+                "num_docks_disabled": 0,
+                "obcn": "obcn_32",
+                "physical_configuration": "SMARTLITMAPFRAME",
+                "post_code": "DXB",
+                "rental_methods": [
+                    "key",
+                    "transitcard",
+                    "phone"
+                ],
+                "rental_uris": {
+                    "android": "careem://bike.careem.com/station?id=7",
+                    "ios": "careem://bike.careem.com/station?id=7"
+                },
+                "short_name": "obcn_32",
+                "station_id": "7",
+                "status": "IN_SERVICE",
+                "traffic": -0.7,
+                "vehicle_docks_available": [
+                    {
+                        "count": 8,
+                        "vehicle_type_ids": [
+                            "EFIT",
+                            "BOOST",
+                            "ICONIC",
+                            "AUH Bike"
+                        ]
+                    }
+                ],
+                "vehicle_types_available": [
+                    {
+                        "count": 0,
+                        "vehicle_type_id": "AUH Bike"
+                    },
+                    {
+                        "count": 0,
+                        "vehicle_type_id": "ICONIC"
+                    },
+                    {
+                        "count": 1,
+                        "vehicle_type_id": "BOOST"
+                    },
+                    {
+                        "count": 7,
+                        "vehicle_type_id": "EFIT"
+                    }
+                ]
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
                     55.292858,
                     25.246722
                 ],
@@ -15515,7 +15515,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364087,
+                "last_reported": 1789364811,
                 "name": "Mankhool Park",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 10,
@@ -15595,7 +15595,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364115,
+                "last_reported": 1789364840,
                 "name": "Al Fahidi",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 13,
@@ -15675,7 +15675,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364210,
+                "last_reported": 1789364935,
                 "name": "Al Baha Building",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 4,
@@ -15755,7 +15755,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364195,
+                "last_reported": 1789364919,
                 "name": "Princess Tower",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 11,
@@ -15834,7 +15834,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364193,
+                "last_reported": 1789364918,
                 "name": "Burjuman Station",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 9,
@@ -15914,12 +15914,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364180,
+                "last_reported": 1789364904,
                 "name": "The Address Fountain View",
                 "nearby_distance": 1000.0,
-                "num_bikes_available": 11,
+                "num_bikes_available": 13,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 5,
+                "num_docks_available": 3,
                 "num_docks_disabled": 0,
                 "obcn": "obcn_102",
                 "physical_configuration": "SMARTLITMAPFRAME",
@@ -15939,7 +15939,7 @@
                 "traffic": 1.2,
                 "vehicle_docks_available": [
                     {
-                        "count": 5,
+                        "count": 3,
                         "vehicle_type_ids": [
                             "EFIT",
                             "BOOST",
@@ -15958,7 +15958,7 @@
                         "vehicle_type_id": "ICONIC"
                     },
                     {
-                        "count": 2,
+                        "count": 4,
                         "vehicle_type_id": "BOOST"
                     },
                     {
@@ -15993,7 +15993,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364238,
+                "last_reported": 1789364781,
                 "name": "Adcb Metro 1 South",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 8,
@@ -16073,7 +16073,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364211,
+                "last_reported": 1789364936,
                 "name": "Marina Quays",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 5,
@@ -16152,12 +16152,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364157,
+                "last_reported": 1789364881,
                 "name": "JLT Cluster O",
                 "nearby_distance": 1000.0,
-                "num_bikes_available": 5,
+                "num_bikes_available": 4,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 10,
+                "num_docks_available": 11,
                 "num_docks_disabled": 0,
                 "obcn": "obcn_33",
                 "physical_configuration": "ELECTRICBIKESTATION",
@@ -16178,7 +16178,7 @@
                 "traffic": -0.5,
                 "vehicle_docks_available": [
                     {
-                        "count": 10,
+                        "count": 11,
                         "vehicle_type_ids": [
                             "EFIT",
                             "BOOST",
@@ -16197,11 +16197,11 @@
                         "vehicle_type_id": "ICONIC"
                     },
                     {
-                        "count": 2,
+                        "count": 0,
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 3,
+                        "count": 4,
                         "vehicle_type_id": "EFIT"
                     }
                 ]
@@ -16232,7 +16232,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364220,
+                "last_reported": 1789364945,
                 "name": "Al Karama Bus Station",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 11,
@@ -16312,12 +16312,12 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364183,
+                "last_reported": 1789364908,
                 "name": "Emaar Square",
                 "nearby_distance": 1000.0,
-                "num_bikes_available": 12,
+                "num_bikes_available": 11,
                 "num_bikes_disabled": 0,
-                "num_docks_available": 8,
+                "num_docks_available": 9,
                 "num_docks_disabled": 0,
                 "obcn": "obcn_106",
                 "physical_configuration": "SMARTLITMAPFRAME",
@@ -16337,7 +16337,7 @@
                 "traffic": 3.1,
                 "vehicle_docks_available": [
                     {
-                        "count": 8,
+                        "count": 9,
                         "vehicle_type_ids": [
                             "EFIT",
                             "BOOST",
@@ -16360,7 +16360,7 @@
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 8,
+                        "count": 7,
                         "vehicle_type_id": "EFIT"
                     }
                 ]
@@ -16391,7 +16391,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364247,
+                "last_reported": 1789364790,
                 "name": "Karama Shopping Complex",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 12,
@@ -16471,7 +16471,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364130,
+                "last_reported": 1789364854,
                 "name": "Al Qudra",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 6,
@@ -16550,7 +16550,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364261,
+                "last_reported": 1789364804,
                 "name": "Dubai Mall / Blvd Point",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 7,
@@ -16629,7 +16629,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364218,
+                "last_reported": 1789364943,
                 "name": "Marriott Harbour",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 15,
@@ -16708,7 +16708,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364189,
+                "last_reported": 1789364914,
                 "name": "Jlt Cluster P",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 13,
@@ -16786,7 +16786,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364120,
+                "last_reported": 1789364844,
                 "name": "Burj Vista residences",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 11,
@@ -16864,7 +16864,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": 1789364222,
+                "last_reported": 1789364947,
                 "name": "Dubai  opera",
                 "nearby_distance": 1000.0,
                 "num_bikes_available": 11,
@@ -16922,13 +16922,13 @@
     ],
     "gbfs": {
         "station_information": {
-            "last_updated": 1789364258,
-            "ttl": 5,
+            "last_updated": 1789364954,
+            "ttl": 22,
             "version": "2.3"
         },
         "station_status": {
-            "last_updated": 1789364262,
-            "ttl": 8,
+            "last_updated": 1789364952,
+            "ttl": 20,
             "version": "2.3"
         }
     },
