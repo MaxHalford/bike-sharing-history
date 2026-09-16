@@ -16,7 +16,7 @@
                 "is_returning": true,
                 "is_valet_station": false,
                 "is_virtual_station": false,
-                "last_reported": 1789557940,
+                "last_reported": 1789558677,
                 "name": "Place Duguesclin",
                 "num_bikes_available": 9,
                 "num_docks_available": 6,
@@ -39,6 +39,10 @@
                 "vehicle_types_available": [
                     {
                         "count": 0,
+                        "vehicle_type_id": "7"
+                    },
+                    {
+                        "count": 0,
                         "vehicle_type_id": "1"
                     },
                     {
@@ -48,10 +52,6 @@
                     {
                         "count": 9,
                         "vehicle_type_id": "4"
-                    },
-                    {
-                        "count": 0,
-                        "vehicle_type_id": "7"
                     }
                 ]
             },
@@ -73,9 +73,9 @@
                 "is_returning": true,
                 "is_valet_station": false,
                 "is_virtual_station": false,
-                "last_reported": 1789557940,
+                "last_reported": 1789558677,
                 "name": "Port du L\u00e9gu\u00e9",
-                "num_bikes_available": 3,
+                "num_bikes_available": 2,
                 "num_docks_available": 15,
                 "rental_uris": {
                     "android": "velobaie://app?sid=c89sj4fui9nq2a60v110",
@@ -103,7 +103,7 @@
                         "vehicle_type_id": "2"
                     },
                     {
-                        "count": 3,
+                        "count": 2,
                         "vehicle_type_id": "4"
                     },
                     {
@@ -130,7 +130,7 @@
                 "is_returning": true,
                 "is_valet_station": false,
                 "is_virtual_station": false,
-                "last_reported": 1789557940,
+                "last_reported": 1789558677,
                 "name": "Gare",
                 "num_bikes_available": 12,
                 "num_docks_available": 3,
@@ -187,7 +187,7 @@
                 "is_returning": true,
                 "is_valet_station": false,
                 "is_virtual_station": false,
-                "last_reported": 1789557940,
+                "last_reported": 1789558677,
                 "name": "Campus Universitaire",
                 "num_bikes_available": 10,
                 "num_docks_available": 5,
@@ -244,7 +244,7 @@
                 "is_returning": true,
                 "is_valet_station": false,
                 "is_virtual_station": false,
-                "last_reported": 1789557940,
+                "last_reported": 1789558677,
                 "name": "La Grille",
                 "num_bikes_available": 3,
                 "num_docks_available": 7,
@@ -266,6 +266,14 @@
                 },
                 "vehicle_types_available": [
                     {
+                        "count": 3,
+                        "vehicle_type_id": "4"
+                    },
+                    {
+                        "count": 0,
+                        "vehicle_type_id": "7"
+                    },
+                    {
                         "count": 0,
                         "vehicle_type_id": "1"
                     },
@@ -276,14 +284,6 @@
                     {
                         "count": 0,
                         "vehicle_type_id": "2"
-                    },
-                    {
-                        "count": 3,
-                        "vehicle_type_id": "4"
-                    },
-                    {
-                        "count": 0,
-                        "vehicle_type_id": "7"
                     }
                 ]
             },
@@ -305,27 +305,35 @@
                 "is_returning": true,
                 "is_valet_station": false,
                 "is_virtual_station": false,
-                "last_reported": 1789557940,
+                "last_reported": 1789558677,
                 "name": "Gare Routi\u00e8re Robien",
-                "num_bikes_available": 5,
-                "num_docks_available": 5,
+                "num_bikes_available": 6,
+                "num_docks_available": 4,
                 "rental_uris": {
                     "android": "velobaie://app?sid=st_d40t7niq22rs738m3su0",
                     "ios": "velobaie://app?sid=st_d40t7niq22rs738m3su0"
                 },
                 "station_id": "st_d40t7niq22rs738m3su0",
                 "vehicle_type_capacity": {
-                    "1": 5,
+                    "1": 4,
                     "10": 0,
                     "14": 0,
                     "15": 0,
-                    "2": 5,
-                    "4": 5,
+                    "2": 4,
+                    "4": 4,
                     "5": 0,
                     "6": 0,
-                    "7": 5
+                    "7": 4
                 },
                 "vehicle_types_available": [
+                    {
+                        "count": 6,
+                        "vehicle_type_id": "4"
+                    },
+                    {
+                        "count": 0,
+                        "vehicle_type_id": "7"
+                    },
                     {
                         "count": 0,
                         "vehicle_type_id": "1"
@@ -333,14 +341,6 @@
                     {
                         "count": 0,
                         "vehicle_type_id": "2"
-                    },
-                    {
-                        "count": 5,
-                        "vehicle_type_id": "4"
-                    },
-                    {
-                        "count": 0,
-                        "vehicle_type_id": "7"
                     }
                 ]
             },
@@ -362,7 +362,7 @@
                 "is_returning": true,
                 "is_valet_station": false,
                 "is_virtual_station": false,
-                "last_reported": 1789557940,
+                "last_reported": 1789558677,
                 "name": "H\u00f4pital Yves Le Foll",
                 "num_bikes_available": 6,
                 "num_docks_available": 4,
@@ -419,7 +419,7 @@
                 "is_returning": true,
                 "is_valet_station": false,
                 "is_virtual_station": false,
-                "last_reported": 1789557940,
+                "last_reported": 1789558677,
                 "name": "Palais des Congr\u00e8s",
                 "num_bikes_available": 5,
                 "num_docks_available": 5,
@@ -476,129 +476,15 @@
                 "is_returning": true,
                 "is_valet_station": false,
                 "is_virtual_station": false,
-                "last_reported": 1789557940,
+                "last_reported": 1789558677,
                 "name": "Les Villages",
-                "num_bikes_available": 3,
-                "num_docks_available": 7,
+                "num_bikes_available": 5,
+                "num_docks_available": 5,
                 "rental_uris": {
                     "android": "velobaie://app?sid=st_d40tbeiq22rs73f14uu0",
                     "ios": "velobaie://app?sid=st_d40tbeiq22rs73f14uu0"
                 },
                 "station_id": "st_d40tbeiq22rs73f14uu0",
-                "vehicle_type_capacity": {
-                    "1": 7,
-                    "10": 0,
-                    "14": 0,
-                    "15": 0,
-                    "2": 7,
-                    "4": 7,
-                    "5": 0,
-                    "6": 0,
-                    "7": 7
-                },
-                "vehicle_types_available": [
-                    {
-                        "count": 3,
-                        "vehicle_type_id": "4"
-                    },
-                    {
-                        "count": 0,
-                        "vehicle_type_id": "7"
-                    },
-                    {
-                        "count": 0,
-                        "vehicle_type_id": "1"
-                    },
-                    {
-                        "count": 0,
-                        "vehicle_type_id": "2"
-                    }
-                ]
-            },
-            "type": "Feature"
-        },
-        {
-            "geometry": {
-                "coordinates": [
-                    -2.74319,
-                    48.50508
-                ],
-                "type": "Point"
-            },
-            "properties": {
-                "capacity": 10,
-                "is_charging_station": true,
-                "is_installed": true,
-                "is_renting": true,
-                "is_returning": true,
-                "is_valet_station": false,
-                "is_virtual_station": false,
-                "last_reported": 1789557940,
-                "name": "Rabelais",
-                "num_bikes_available": 11,
-                "num_docks_available": 0,
-                "rental_uris": {
-                    "android": "velobaie://app?sid=st_d40tca1ju2ac73ej8450",
-                    "ios": "velobaie://app?sid=st_d40tca1ju2ac73ej8450"
-                },
-                "station_id": "st_d40tca1ju2ac73ej8450",
-                "vehicle_type_capacity": {
-                    "1": 0,
-                    "10": 0,
-                    "14": 0,
-                    "15": 0,
-                    "2": 0,
-                    "4": 0,
-                    "5": 0,
-                    "6": 0,
-                    "7": 0
-                },
-                "vehicle_types_available": [
-                    {
-                        "count": 11,
-                        "vehicle_type_id": "4"
-                    },
-                    {
-                        "count": 0,
-                        "vehicle_type_id": "7"
-                    },
-                    {
-                        "count": 0,
-                        "vehicle_type_id": "1"
-                    },
-                    {
-                        "count": 0,
-                        "vehicle_type_id": "2"
-                    }
-                ]
-            },
-            "type": "Feature"
-        },
-        {
-            "geometry": {
-                "coordinates": [
-                    -2.73739,
-                    48.49007
-                ],
-                "type": "Point"
-            },
-            "properties": {
-                "capacity": 10,
-                "is_charging_station": true,
-                "is_installed": true,
-                "is_renting": true,
-                "is_returning": true,
-                "is_valet_station": false,
-                "is_virtual_station": false,
-                "last_reported": 1789557940,
-                "name": "Tr\u00e9gueux Centre",
-                "num_bikes_available": 5,
-                "num_docks_available": 5,
-                "rental_uris": {
-                    "android": "velobaie://app?sid=st_d4imjn64mi3s73dbh740",
-                    "ios": "velobaie://app?sid=st_d4imjn64mi3s73dbh740"
-                },
-                "station_id": "st_d4imjn64mi3s73dbh740",
                 "vehicle_type_capacity": {
                     "1": 5,
                     "10": 0,
@@ -634,6 +520,120 @@
         {
             "geometry": {
                 "coordinates": [
+                    -2.74319,
+                    48.50508
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "capacity": 10,
+                "is_charging_station": true,
+                "is_installed": true,
+                "is_renting": true,
+                "is_returning": true,
+                "is_valet_station": false,
+                "is_virtual_station": false,
+                "last_reported": 1789558677,
+                "name": "Rabelais",
+                "num_bikes_available": 11,
+                "num_docks_available": 0,
+                "rental_uris": {
+                    "android": "velobaie://app?sid=st_d40tca1ju2ac73ej8450",
+                    "ios": "velobaie://app?sid=st_d40tca1ju2ac73ej8450"
+                },
+                "station_id": "st_d40tca1ju2ac73ej8450",
+                "vehicle_type_capacity": {
+                    "1": 0,
+                    "10": 0,
+                    "14": 0,
+                    "15": 0,
+                    "2": 0,
+                    "4": 0,
+                    "5": 0,
+                    "6": 0,
+                    "7": 0
+                },
+                "vehicle_types_available": [
+                    {
+                        "count": 0,
+                        "vehicle_type_id": "1"
+                    },
+                    {
+                        "count": 0,
+                        "vehicle_type_id": "2"
+                    },
+                    {
+                        "count": 11,
+                        "vehicle_type_id": "4"
+                    },
+                    {
+                        "count": 0,
+                        "vehicle_type_id": "7"
+                    }
+                ]
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -2.73739,
+                    48.49007
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "capacity": 10,
+                "is_charging_station": true,
+                "is_installed": true,
+                "is_renting": true,
+                "is_returning": true,
+                "is_valet_station": false,
+                "is_virtual_station": false,
+                "last_reported": 1789558677,
+                "name": "Tr\u00e9gueux Centre",
+                "num_bikes_available": 5,
+                "num_docks_available": 5,
+                "rental_uris": {
+                    "android": "velobaie://app?sid=st_d4imjn64mi3s73dbh740",
+                    "ios": "velobaie://app?sid=st_d4imjn64mi3s73dbh740"
+                },
+                "station_id": "st_d4imjn64mi3s73dbh740",
+                "vehicle_type_capacity": {
+                    "1": 5,
+                    "10": 0,
+                    "14": 0,
+                    "15": 0,
+                    "2": 5,
+                    "4": 5,
+                    "5": 0,
+                    "6": 0,
+                    "7": 5
+                },
+                "vehicle_types_available": [
+                    {
+                        "count": 0,
+                        "vehicle_type_id": "2"
+                    },
+                    {
+                        "count": 5,
+                        "vehicle_type_id": "4"
+                    },
+                    {
+                        "count": 0,
+                        "vehicle_type_id": "7"
+                    },
+                    {
+                        "count": 0,
+                        "vehicle_type_id": "1"
+                    }
+                ]
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
                     -2.731588,
                     48.49773
                 ],
@@ -647,7 +647,7 @@
                 "is_returning": true,
                 "is_valet_station": false,
                 "is_virtual_station": false,
-                "last_reported": 1789557940,
+                "last_reported": 1789558677,
                 "name": "Langueux Espace Commercial",
                 "num_bikes_available": 8,
                 "num_docks_available": 2,
@@ -670,6 +670,10 @@
                 "vehicle_types_available": [
                     {
                         "count": 0,
+                        "vehicle_type_id": "1"
+                    },
+                    {
+                        "count": 0,
                         "vehicle_type_id": "2"
                     },
                     {
@@ -679,10 +683,6 @@
                     {
                         "count": 0,
                         "vehicle_type_id": "7"
-                    },
-                    {
-                        "count": 0,
-                        "vehicle_type_id": "1"
                     }
                 ]
             },
@@ -691,12 +691,12 @@
     ],
     "gbfs": {
         "station_information": {
-            "last_updated": 1789557971,
+            "last_updated": 1789558646,
             "ttl": 60,
             "version": "2.2"
         },
         "station_status": {
-            "last_updated": 1789557940,
+            "last_updated": 1789558677,
             "ttl": 60,
             "version": "2.2"
         }
