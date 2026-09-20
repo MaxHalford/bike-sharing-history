@@ -16,7 +16,7 @@
                 "is_returning": true,
                 "is_valet_station": false,
                 "is_virtual_station": false,
-                "last_reported": 1789938054,
+                "last_reported": 1789938783,
                 "name": "Paron - Chauvot de Beauch\u00eane",
                 "num_bikes_available": 1,
                 "num_docks_available": 9,
@@ -38,8 +38,16 @@
                 },
                 "vehicle_types_available": [
                     {
+                        "count": 1,
+                        "vehicle_type_id": "4"
+                    },
+                    {
                         "count": 0,
                         "vehicle_type_id": "7"
+                    },
+                    {
+                        "count": 0,
+                        "vehicle_type_id": "2"
                     },
                     {
                         "count": 0,
@@ -48,14 +56,6 @@
                     {
                         "count": 0,
                         "vehicle_type_id": "10"
-                    },
-                    {
-                        "count": 0,
-                        "vehicle_type_id": "2"
-                    },
-                    {
-                        "count": 1,
-                        "vehicle_type_id": "4"
                     }
                 ]
             },
@@ -77,7 +77,7 @@
                 "is_returning": true,
                 "is_valet_station": false,
                 "is_virtual_station": false,
-                "last_reported": 1789938054,
+                "last_reported": 1789938783,
                 "name": "Saint-Cl\u00e9ment - Mairie",
                 "num_bikes_available": 1,
                 "num_docks_available": 9,
@@ -104,19 +104,19 @@
                     },
                     {
                         "count": 0,
-                        "vehicle_type_id": "10"
+                        "vehicle_type_id": "7"
                     },
                     {
                         "count": 0,
                         "vehicle_type_id": "2"
                     },
                     {
-                        "count": 1,
-                        "vehicle_type_id": "4"
+                        "count": 0,
+                        "vehicle_type_id": "10"
                     },
                     {
-                        "count": 0,
-                        "vehicle_type_id": "7"
+                        "count": 1,
+                        "vehicle_type_id": "4"
                     }
                 ]
             },
@@ -138,7 +138,7 @@
                 "is_returning": true,
                 "is_valet_station": false,
                 "is_virtual_station": false,
-                "last_reported": 1789938054,
+                "last_reported": 1789938783,
                 "name": "Paron - M\u00e9diath\u00e8que",
                 "num_bikes_available": 0,
                 "num_docks_available": 10,
@@ -161,15 +161,15 @@
                 "vehicle_types_available": [
                     {
                         "count": 0,
-                        "vehicle_type_id": "10"
-                    },
-                    {
-                        "count": 0,
                         "vehicle_type_id": "2"
                     },
                     {
                         "count": 0,
-                        "vehicle_type_id": "4"
+                        "vehicle_type_id": "1"
+                    },
+                    {
+                        "count": 0,
+                        "vehicle_type_id": "10"
                     },
                     {
                         "count": 0,
@@ -177,7 +177,7 @@
                     },
                     {
                         "count": 0,
-                        "vehicle_type_id": "1"
+                        "vehicle_type_id": "4"
                     }
                 ]
             },
@@ -199,10 +199,10 @@
                 "is_returning": true,
                 "is_valet_station": false,
                 "is_virtual_station": false,
-                "last_reported": 1789938054,
+                "last_reported": 1789938783,
                 "name": "Saint Denis L\u00e8s Sens - Centre commercial",
                 "num_bikes_available": 1,
-                "num_docks_available": 8,
+                "num_docks_available": 7,
                 "rental_uris": {
                     "android": "%!(EXTRA string=cu7rvkov4li37iql0g9g)",
                     "ios": "%!(EXTRA string=cu7rvkov4li37iql0g9g)"
@@ -225,12 +225,12 @@
                         "vehicle_type_id": "10"
                     },
                     {
-                        "count": 0,
-                        "vehicle_type_id": "2"
-                    },
-                    {
                         "count": 1,
                         "vehicle_type_id": "4"
+                    },
+                    {
+                        "count": 0,
+                        "vehicle_type_id": "1"
                     },
                     {
                         "count": 0,
@@ -238,7 +238,7 @@
                     },
                     {
                         "count": 0,
-                        "vehicle_type_id": "1"
+                        "vehicle_type_id": "2"
                     }
                 ]
             },
@@ -260,7 +260,7 @@
                 "is_returning": true,
                 "is_valet_station": false,
                 "is_virtual_station": false,
-                "last_reported": 1789938054,
+                "last_reported": 1789938783,
                 "name": "Sens - L'amphi - Ballasti\u00e8re - CTM",
                 "num_bikes_available": 0,
                 "num_docks_available": 10,
@@ -283,11 +283,7 @@
                 "vehicle_types_available": [
                     {
                         "count": 0,
-                        "vehicle_type_id": "1"
-                    },
-                    {
-                        "count": 0,
-                        "vehicle_type_id": "10"
+                        "vehicle_type_id": "7"
                     },
                     {
                         "count": 0,
@@ -295,11 +291,15 @@
                     },
                     {
                         "count": 0,
+                        "vehicle_type_id": "1"
+                    },
+                    {
+                        "count": 0,
                         "vehicle_type_id": "4"
                     },
                     {
                         "count": 0,
-                        "vehicle_type_id": "7"
+                        "vehicle_type_id": "10"
                     }
                 ]
             },
@@ -321,38 +321,30 @@
                 "is_returning": true,
                 "is_valet_station": false,
                 "is_virtual_station": false,
-                "last_reported": 1789938054,
+                "last_reported": 1789938783,
                 "name": "Sens - Clinique",
-                "num_bikes_available": 1,
-                "num_docks_available": 9,
+                "num_bikes_available": 2,
+                "num_docks_available": 8,
                 "rental_uris": {
                     "android": "%!(EXTRA string=cu7rvkov4li37iql0gcg)",
                     "ios": "%!(EXTRA string=cu7rvkov4li37iql0gcg)"
                 },
                 "station_id": "cu7rvkov4li37iql0gcg",
                 "vehicle_type_capacity": {
-                    "1": 9,
+                    "1": 8,
                     "10": 0,
                     "14": 0,
                     "15": 0,
-                    "2": 9,
-                    "4": 9,
+                    "2": 8,
+                    "4": 8,
                     "5": 0,
                     "6": 0,
-                    "7": 9
+                    "7": 8
                 },
                 "vehicle_types_available": [
                     {
                         "count": 0,
-                        "vehicle_type_id": "10"
-                    },
-                    {
-                        "count": 0,
-                        "vehicle_type_id": "2"
-                    },
-                    {
-                        "count": 1,
-                        "vehicle_type_id": "4"
+                        "vehicle_type_id": "1"
                     },
                     {
                         "count": 0,
@@ -360,7 +352,15 @@
                     },
                     {
                         "count": 0,
-                        "vehicle_type_id": "1"
+                        "vehicle_type_id": "2"
+                    },
+                    {
+                        "count": 0,
+                        "vehicle_type_id": "10"
+                    },
+                    {
+                        "count": 2,
+                        "vehicle_type_id": "4"
                     }
                 ]
             },
@@ -382,7 +382,7 @@
                 "is_returning": true,
                 "is_valet_station": false,
                 "is_virtual_station": false,
-                "last_reported": 1789938054,
+                "last_reported": 1789938783,
                 "name": "Sens - H\u00f4pital - centre nautique - Complexe Roger Breton",
                 "num_bikes_available": 0,
                 "num_docks_available": 10,
@@ -405,15 +405,7 @@
                 "vehicle_types_available": [
                     {
                         "count": 0,
-                        "vehicle_type_id": "1"
-                    },
-                    {
-                        "count": 0,
-                        "vehicle_type_id": "10"
-                    },
-                    {
-                        "count": 0,
-                        "vehicle_type_id": "2"
+                        "vehicle_type_id": "7"
                     },
                     {
                         "count": 0,
@@ -421,7 +413,15 @@
                     },
                     {
                         "count": 0,
-                        "vehicle_type_id": "7"
+                        "vehicle_type_id": "2"
+                    },
+                    {
+                        "count": 0,
+                        "vehicle_type_id": "10"
+                    },
+                    {
+                        "count": 0,
+                        "vehicle_type_id": "1"
                     }
                 ]
             },
@@ -443,7 +443,7 @@
                 "is_returning": true,
                 "is_valet_station": false,
                 "is_virtual_station": false,
-                "last_reported": 1789938054,
+                "last_reported": 1789938783,
                 "name": "Sens - Parc du Moulin \u00e0 Tan",
                 "num_bikes_available": 2,
                 "num_docks_available": 7,
@@ -465,24 +465,24 @@
                 },
                 "vehicle_types_available": [
                     {
-                        "count": 2,
-                        "vehicle_type_id": "4"
-                    },
-                    {
                         "count": 0,
                         "vehicle_type_id": "7"
                     },
                     {
                         "count": 0,
-                        "vehicle_type_id": "1"
+                        "vehicle_type_id": "2"
                     },
                     {
                         "count": 0,
                         "vehicle_type_id": "10"
                     },
                     {
+                        "count": 2,
+                        "vehicle_type_id": "4"
+                    },
+                    {
                         "count": 0,
-                        "vehicle_type_id": "2"
+                        "vehicle_type_id": "1"
                     }
                 ]
             },
@@ -504,7 +504,7 @@
                 "is_returning": true,
                 "is_valet_station": false,
                 "is_virtual_station": false,
-                "last_reported": 1789938054,
+                "last_reported": 1789938783,
                 "name": "Sens - Centre-ville",
                 "num_bikes_available": 0,
                 "num_docks_available": 9,
@@ -527,15 +527,7 @@
                 "vehicle_types_available": [
                     {
                         "count": 0,
-                        "vehicle_type_id": "1"
-                    },
-                    {
-                        "count": 0,
                         "vehicle_type_id": "10"
-                    },
-                    {
-                        "count": 0,
-                        "vehicle_type_id": "2"
                     },
                     {
                         "count": 0,
@@ -544,6 +536,14 @@
                     {
                         "count": 0,
                         "vehicle_type_id": "7"
+                    },
+                    {
+                        "count": 0,
+                        "vehicle_type_id": "2"
+                    },
+                    {
+                        "count": 0,
+                        "vehicle_type_id": "1"
                     }
                 ]
             },
@@ -565,10 +565,10 @@
                 "is_returning": true,
                 "is_valet_station": false,
                 "is_virtual_station": false,
-                "last_reported": 1789938054,
+                "last_reported": 1789938783,
                 "name": "Sens - Champs-Plaisants",
                 "num_bikes_available": 1,
-                "num_docks_available": 7,
+                "num_docks_available": 6,
                 "rental_uris": {
                     "android": "%!(EXTRA string=cu7rvkptevjuuv68ngr0)",
                     "ios": "%!(EXTRA string=cu7rvkptevjuuv68ngr0)"
@@ -588,11 +588,7 @@
                 "vehicle_types_available": [
                     {
                         "count": 0,
-                        "vehicle_type_id": "2"
-                    },
-                    {
-                        "count": 1,
-                        "vehicle_type_id": "4"
+                        "vehicle_type_id": "1"
                     },
                     {
                         "count": 0,
@@ -600,11 +596,15 @@
                     },
                     {
                         "count": 0,
-                        "vehicle_type_id": "1"
+                        "vehicle_type_id": "10"
                     },
                     {
                         "count": 0,
-                        "vehicle_type_id": "10"
+                        "vehicle_type_id": "2"
+                    },
+                    {
+                        "count": 1,
+                        "vehicle_type_id": "4"
                     }
                 ]
             },
@@ -626,7 +626,7 @@
                 "is_returning": true,
                 "is_valet_station": false,
                 "is_virtual_station": false,
-                "last_reported": 1789938054,
+                "last_reported": 1789938783,
                 "name": "Sens - Clos le Roi",
                 "num_bikes_available": 0,
                 "num_docks_available": 10,
@@ -649,6 +649,14 @@
                 "vehicle_types_available": [
                     {
                         "count": 0,
+                        "vehicle_type_id": "7"
+                    },
+                    {
+                        "count": 0,
+                        "vehicle_type_id": "2"
+                    },
+                    {
+                        "count": 0,
                         "vehicle_type_id": "1"
                     },
                     {
@@ -657,15 +665,7 @@
                     },
                     {
                         "count": 0,
-                        "vehicle_type_id": "2"
-                    },
-                    {
-                        "count": 0,
                         "vehicle_type_id": "4"
-                    },
-                    {
-                        "count": 0,
-                        "vehicle_type_id": "7"
                     }
                 ]
             },
@@ -687,7 +687,7 @@
                 "is_returning": true,
                 "is_valet_station": false,
                 "is_virtual_station": false,
-                "last_reported": 1789938054,
+                "last_reported": 1789938783,
                 "name": "Sens - Gare SNCF",
                 "num_bikes_available": 1,
                 "num_docks_available": 9,
@@ -714,11 +714,11 @@
                     },
                     {
                         "count": 0,
-                        "vehicle_type_id": "7"
+                        "vehicle_type_id": "1"
                     },
                     {
                         "count": 0,
-                        "vehicle_type_id": "1"
+                        "vehicle_type_id": "7"
                     },
                     {
                         "count": 0,
@@ -748,7 +748,7 @@
                 "is_returning": true,
                 "is_valet_station": false,
                 "is_virtual_station": false,
-                "last_reported": 1789938054,
+                "last_reported": 1789938783,
                 "name": "Sens - Lyc\u00e9es",
                 "num_bikes_available": 1,
                 "num_docks_available": 9,
@@ -771,23 +771,23 @@
                 "vehicle_types_available": [
                     {
                         "count": 0,
-                        "vehicle_type_id": "7"
-                    },
-                    {
-                        "count": 0,
-                        "vehicle_type_id": "1"
-                    },
-                    {
-                        "count": 0,
                         "vehicle_type_id": "10"
+                    },
+                    {
+                        "count": 1,
+                        "vehicle_type_id": "4"
+                    },
+                    {
+                        "count": 0,
+                        "vehicle_type_id": "7"
                     },
                     {
                         "count": 0,
                         "vehicle_type_id": "2"
                     },
                     {
-                        "count": 1,
-                        "vehicle_type_id": "4"
+                        "count": 0,
+                        "vehicle_type_id": "1"
                     }
                 ]
             },
@@ -809,10 +809,10 @@
                 "is_returning": true,
                 "is_valet_station": false,
                 "is_virtual_station": false,
-                "last_reported": 1789938054,
+                "last_reported": 1789938783,
                 "name": "Sens - Place des H\u00e9ros",
-                "num_bikes_available": 0,
-                "num_docks_available": 9,
+                "num_bikes_available": 1,
+                "num_docks_available": 8,
                 "rental_uris": {
                     "android": "%!(EXTRA string=cu7rvkptevjuuv68nh10)",
                     "ios": "%!(EXTRA string=cu7rvkptevjuuv68nh10)"
@@ -832,15 +832,15 @@
                 "vehicle_types_available": [
                     {
                         "count": 0,
-                        "vehicle_type_id": "7"
-                    },
-                    {
-                        "count": 0,
-                        "vehicle_type_id": "1"
-                    },
-                    {
-                        "count": 0,
                         "vehicle_type_id": "10"
+                    },
+                    {
+                        "count": 1,
+                        "vehicle_type_id": "4"
+                    },
+                    {
+                        "count": 0,
+                        "vehicle_type_id": "7"
                     },
                     {
                         "count": 0,
@@ -848,7 +848,7 @@
                     },
                     {
                         "count": 0,
-                        "vehicle_type_id": "4"
+                        "vehicle_type_id": "1"
                     }
                 ]
             },
@@ -870,10 +870,10 @@
                 "is_returning": true,
                 "is_valet_station": false,
                 "is_virtual_station": false,
-                "last_reported": 1789938054,
+                "last_reported": 1789938783,
                 "name": "Sens - Zone commerciale Portes de Bourgogne",
                 "num_bikes_available": 4,
-                "num_docks_available": 5,
+                "num_docks_available": 6,
                 "rental_uris": {
                     "android": "%!(EXTRA string=cu7rvkptevjuuv68nh2g)",
                     "ios": "%!(EXTRA string=cu7rvkptevjuuv68nh2g)"
@@ -892,6 +892,10 @@
                 },
                 "vehicle_types_available": [
                     {
+                        "count": 0,
+                        "vehicle_type_id": "10"
+                    },
+                    {
                         "count": 4,
                         "vehicle_type_id": "4"
                     },
@@ -901,15 +905,11 @@
                     },
                     {
                         "count": 0,
-                        "vehicle_type_id": "1"
-                    },
-                    {
-                        "count": 0,
-                        "vehicle_type_id": "10"
-                    },
-                    {
-                        "count": 0,
                         "vehicle_type_id": "2"
+                    },
+                    {
+                        "count": 0,
+                        "vehicle_type_id": "1"
                     }
                 ]
             },
@@ -931,7 +931,7 @@
                 "is_returning": true,
                 "is_valet_station": false,
                 "is_virtual_station": false,
-                "last_reported": 1789938054,
+                "last_reported": 1789938783,
                 "name": "Villeneuve sur Yonne - Gare SNCF",
                 "num_bikes_available": 4,
                 "num_docks_available": 6,
@@ -954,7 +954,11 @@
                 "vehicle_types_available": [
                     {
                         "count": 0,
-                        "vehicle_type_id": "2"
+                        "vehicle_type_id": "1"
+                    },
+                    {
+                        "count": 0,
+                        "vehicle_type_id": "10"
                     },
                     {
                         "count": 4,
@@ -966,11 +970,7 @@
                     },
                     {
                         "count": 0,
-                        "vehicle_type_id": "1"
-                    },
-                    {
-                        "count": 0,
-                        "vehicle_type_id": "10"
+                        "vehicle_type_id": "2"
                     }
                 ]
             },
@@ -992,10 +992,10 @@
                 "is_returning": true,
                 "is_valet_station": false,
                 "is_virtual_station": false,
-                "last_reported": 1789938054,
+                "last_reported": 1789938783,
                 "name": "Villeneuve sur Yonne - Quai place Andr\u00e9 Verly",
-                "num_bikes_available": 3,
-                "num_docks_available": 6,
+                "num_bikes_available": 4,
+                "num_docks_available": 5,
                 "rental_uris": {
                     "android": "%!(EXTRA string=cu7rvkptevjuuv68nh5g)",
                     "ios": "%!(EXTRA string=cu7rvkptevjuuv68nh5g)"
@@ -1014,24 +1014,24 @@
                 },
                 "vehicle_types_available": [
                     {
-                        "count": 3,
-                        "vehicle_type_id": "4"
-                    },
-                    {
                         "count": 0,
                         "vehicle_type_id": "7"
                     },
                     {
                         "count": 0,
-                        "vehicle_type_id": "1"
+                        "vehicle_type_id": "2"
                     },
                     {
                         "count": 0,
                         "vehicle_type_id": "10"
                     },
                     {
+                        "count": 4,
+                        "vehicle_type_id": "4"
+                    },
+                    {
                         "count": 0,
-                        "vehicle_type_id": "2"
+                        "vehicle_type_id": "1"
                     }
                 ]
             },
@@ -1053,7 +1053,7 @@
                 "is_returning": true,
                 "is_valet_station": false,
                 "is_virtual_station": false,
-                "last_reported": 1789938054,
+                "last_reported": 1789938783,
                 "name": "Gron - ZI de Salcy",
                 "num_bikes_available": 2,
                 "num_docks_available": 8,
@@ -1076,10 +1076,6 @@
                 "vehicle_types_available": [
                     {
                         "count": 0,
-                        "vehicle_type_id": "7"
-                    },
-                    {
-                        "count": 0,
                         "vehicle_type_id": "1"
                     },
                     {
@@ -1087,12 +1083,16 @@
                         "vehicle_type_id": "10"
                     },
                     {
-                        "count": 0,
-                        "vehicle_type_id": "2"
-                    },
-                    {
                         "count": 2,
                         "vehicle_type_id": "4"
+                    },
+                    {
+                        "count": 0,
+                        "vehicle_type_id": "7"
+                    },
+                    {
+                        "count": 0,
+                        "vehicle_type_id": "2"
                     }
                 ]
             },
@@ -1101,12 +1101,12 @@
     ],
     "gbfs": {
         "station_information": {
-            "last_updated": 1789938054,
+            "last_updated": 1789938783,
             "ttl": 60,
             "version": "2.2"
         },
         "station_status": {
-            "last_updated": 1789938054,
+            "last_updated": 1789938783,
             "ttl": 60,
             "version": "2.2"
         }
