@@ -16,30 +16,34 @@
                 "is_returning": true,
                 "is_valet_station": false,
                 "is_virtual_station": false,
-                "last_reported": 1790583232,
+                "last_reported": 1790583963,
                 "name": "Abbaye-aux-Hommes ",
-                "num_bikes_available": 1,
-                "num_docks_available": 5,
+                "num_bikes_available": 0,
+                "num_docks_available": 7,
                 "rental_uris": {
                     "android": "-%!(EXTRA string=ctbhn681snvdkble5qe0)",
                     "ios": "-%!(EXTRA string=ctbhn681snvdkble5qe0)"
                 },
                 "station_id": "ctbhn681snvdkble5qe0",
                 "vehicle_type_capacity": {
-                    "1": 7,
+                    "1": 10,
                     "10": 0,
                     "14": 0,
                     "15": 0,
-                    "2": 7,
-                    "4": 7,
+                    "2": 10,
+                    "4": 10,
                     "5": 0,
                     "6": 0,
-                    "7": 7
+                    "7": 10
                 },
                 "vehicle_types_available": [
                     {
                         "count": 0,
-                        "vehicle_type_id": "2"
+                        "vehicle_type_id": "10"
+                    },
+                    {
+                        "count": 0,
+                        "vehicle_type_id": "4"
                     },
                     {
                         "count": 0,
@@ -51,11 +55,7 @@
                     },
                     {
                         "count": 0,
-                        "vehicle_type_id": "10"
-                    },
-                    {
-                        "count": 1,
-                        "vehicle_type_id": "4"
+                        "vehicle_type_id": "2"
                     }
                 ]
             },
@@ -77,7 +77,7 @@
                 "is_returning": true,
                 "is_valet_station": false,
                 "is_virtual_station": false,
-                "last_reported": 1790583232,
+                "last_reported": 1790583963,
                 "name": "Blainville-sur-Orne M\u00e9diath\u00e8que",
                 "num_bikes_available": 3,
                 "num_docks_available": 5,
@@ -99,16 +99,16 @@
                 },
                 "vehicle_types_available": [
                     {
+                        "count": 0,
+                        "vehicle_type_id": "7"
+                    },
+                    {
                         "count": 3,
                         "vehicle_type_id": "4"
                     },
                     {
                         "count": 0,
                         "vehicle_type_id": "2"
-                    },
-                    {
-                        "count": 0,
-                        "vehicle_type_id": "7"
                     },
                     {
                         "count": 0,
@@ -134,7 +134,7 @@
                 "is_returning": true,
                 "is_valet_station": false,
                 "is_virtual_station": false,
-                "last_reported": 1790583232,
+                "last_reported": 1790583963,
                 "name": "Campus 1 - Esplanade",
                 "num_bikes_available": 12,
                 "num_docks_available": 8,
@@ -144,25 +144,17 @@
                 },
                 "station_id": "ctbhn6g1snvdkble5qh0",
                 "vehicle_type_capacity": {
-                    "1": 9,
+                    "1": 8,
                     "10": 0,
                     "14": 0,
                     "15": 0,
-                    "2": 9,
-                    "4": 9,
+                    "2": 8,
+                    "4": 8,
                     "5": 0,
                     "6": 0,
-                    "7": 9
+                    "7": 8
                 },
                 "vehicle_types_available": [
-                    {
-                        "count": 0,
-                        "vehicle_type_id": "1"
-                    },
-                    {
-                        "count": 0,
-                        "vehicle_type_id": "2"
-                    },
                     {
                         "count": 12,
                         "vehicle_type_id": "4"
@@ -170,6 +162,14 @@
                     {
                         "count": 0,
                         "vehicle_type_id": "7"
+                    },
+                    {
+                        "count": 0,
+                        "vehicle_type_id": "2"
+                    },
+                    {
+                        "count": 0,
+                        "vehicle_type_id": "1"
                     }
                 ]
             },
@@ -191,424 +191,25 @@
                 "is_returning": true,
                 "is_valet_station": false,
                 "is_virtual_station": false,
-                "last_reported": 1790583232,
+                "last_reported": 1790583963,
                 "name": "Campus 2 - ENSICAEN",
-                "num_bikes_available": 15,
-                "num_docks_available": 4,
+                "num_bikes_available": 18,
+                "num_docks_available": 1,
                 "rental_uris": {
                     "android": "-%!(EXTRA string=ctbhn6g1snvdkble5qig)",
                     "ios": "-%!(EXTRA string=ctbhn6g1snvdkble5qig)"
                 },
                 "station_id": "ctbhn6g1snvdkble5qig",
                 "vehicle_type_capacity": {
-                    "1": 4,
+                    "1": 1,
                     "10": 0,
                     "14": 0,
                     "15": 0,
-                    "2": 4,
-                    "4": 4,
+                    "2": 1,
+                    "4": 1,
                     "5": 0,
                     "6": 0,
-                    "7": 4
-                },
-                "vehicle_types_available": [
-                    {
-                        "count": 0,
-                        "vehicle_type_id": "1"
-                    },
-                    {
-                        "count": 0,
-                        "vehicle_type_id": "2"
-                    },
-                    {
-                        "count": 15,
-                        "vehicle_type_id": "4"
-                    },
-                    {
-                        "count": 0,
-                        "vehicle_type_id": "7"
-                    }
-                ]
-            },
-            "type": "Feature"
-        },
-        {
-            "geometry": {
-                "coordinates": [
-                    -0.44082,
-                    49.1836
-                ],
-                "type": "Point"
-            },
-            "properties": {
-                "capacity": 10,
-                "is_charging_station": false,
-                "is_installed": true,
-                "is_renting": true,
-                "is_returning": true,
-                "is_valet_station": false,
-                "is_virtual_station": false,
-                "last_reported": 1790583232,
-                "name": "Carpiquet Mairie",
-                "num_bikes_available": 0,
-                "num_docks_available": 7,
-                "rental_uris": {
-                    "android": "-%!(EXTRA string=ctbhn6g1snvdkble5qk0)",
-                    "ios": "-%!(EXTRA string=ctbhn6g1snvdkble5qk0)"
-                },
-                "station_id": "ctbhn6g1snvdkble5qk0",
-                "vehicle_type_capacity": {
-                    "1": 10,
-                    "10": 0,
-                    "14": 0,
-                    "15": 0,
-                    "2": 10,
-                    "4": 10,
-                    "5": 0,
-                    "6": 0,
-                    "7": 10
-                },
-                "vehicle_types_available": [
-                    {
-                        "count": 0,
-                        "vehicle_type_id": "2"
-                    },
-                    {
-                        "count": 0,
-                        "vehicle_type_id": "4"
-                    },
-                    {
-                        "count": 0,
-                        "vehicle_type_id": "7"
-                    },
-                    {
-                        "count": 0,
-                        "vehicle_type_id": "1"
-                    }
-                ]
-            },
-            "type": "Feature"
-        },
-        {
-            "geometry": {
-                "coordinates": [
-                    -0.39509,
-                    49.19217
-                ],
-                "type": "Point"
-            },
-            "properties": {
-                "capacity": 10,
-                "is_charging_station": false,
-                "is_installed": true,
-                "is_renting": true,
-                "is_returning": true,
-                "is_valet_station": false,
-                "is_virtual_station": false,
-                "last_reported": 1790583232,
-                "name": "Chemin Vert - Coty",
-                "num_bikes_available": 3,
-                "num_docks_available": 7,
-                "rental_uris": {
-                    "android": "-%!(EXTRA string=ctbhn6g1snvdkble5qlg)",
-                    "ios": "-%!(EXTRA string=ctbhn6g1snvdkble5qlg)"
-                },
-                "station_id": "ctbhn6g1snvdkble5qlg",
-                "vehicle_type_capacity": {
-                    "1": 7,
-                    "10": 0,
-                    "14": 0,
-                    "15": 0,
-                    "2": 7,
-                    "4": 7,
-                    "5": 0,
-                    "6": 0,
-                    "7": 7
-                },
-                "vehicle_types_available": [
-                    {
-                        "count": 0,
-                        "vehicle_type_id": "1"
-                    },
-                    {
-                        "count": 0,
-                        "vehicle_type_id": "7"
-                    },
-                    {
-                        "count": 3,
-                        "vehicle_type_id": "4"
-                    },
-                    {
-                        "count": 0,
-                        "vehicle_type_id": "2"
-                    }
-                ]
-            },
-            "type": "Feature"
-        },
-        {
-            "geometry": {
-                "coordinates": [
-                    -0.39078,
-                    49.19228
-                ],
-                "type": "Point"
-            },
-            "properties": {
-                "capacity": 10,
-                "is_charging_station": false,
-                "is_installed": true,
-                "is_renting": true,
-                "is_returning": true,
-                "is_valet_station": false,
-                "is_virtual_station": false,
-                "last_reported": 1790583232,
-                "name": "Chemin Vert - Schuman",
-                "num_bikes_available": 4,
-                "num_docks_available": 6,
-                "rental_uris": {
-                    "android": "-%!(EXTRA string=ctbhn6g1snvdkble5qn0)",
-                    "ios": "-%!(EXTRA string=ctbhn6g1snvdkble5qn0)"
-                },
-                "station_id": "ctbhn6g1snvdkble5qn0",
-                "vehicle_type_capacity": {
-                    "1": 6,
-                    "10": 0,
-                    "14": 0,
-                    "15": 0,
-                    "2": 6,
-                    "4": 6,
-                    "5": 0,
-                    "6": 0,
-                    "7": 6
-                },
-                "vehicle_types_available": [
-                    {
-                        "count": 4,
-                        "vehicle_type_id": "4"
-                    },
-                    {
-                        "count": 0,
-                        "vehicle_type_id": "2"
-                    },
-                    {
-                        "count": 0,
-                        "vehicle_type_id": "7"
-                    },
-                    {
-                        "count": 0,
-                        "vehicle_type_id": "1"
-                    }
-                ]
-            },
-            "type": "Feature"
-        },
-        {
-            "geometry": {
-                "coordinates": [
-                    -0.40061,
-                    49.1821
-                ],
-                "type": "Point"
-            },
-            "properties": {
-                "capacity": 20,
-                "is_charging_station": true,
-                "is_installed": true,
-                "is_renting": true,
-                "is_returning": true,
-                "is_valet_station": false,
-                "is_virtual_station": false,
-                "last_reported": 1790583232,
-                "name": "Beaulieu",
-                "num_bikes_available": 1,
-                "num_docks_available": 19,
-                "rental_uris": {
-                    "android": "-%!(EXTRA string=ctbhn6naok6uht7ctb8g)",
-                    "ios": "-%!(EXTRA string=ctbhn6naok6uht7ctb8g)"
-                },
-                "station_id": "ctbhn6naok6uht7ctb8g",
-                "vehicle_type_capacity": {
-                    "1": 19,
-                    "10": 0,
-                    "14": 0,
-                    "15": 0,
-                    "2": 19,
-                    "4": 19,
-                    "5": 0,
-                    "6": 0,
-                    "7": 19
-                },
-                "vehicle_types_available": [
-                    {
-                        "count": 0,
-                        "vehicle_type_id": "2"
-                    },
-                    {
-                        "count": 0,
-                        "vehicle_type_id": "7"
-                    },
-                    {
-                        "count": 0,
-                        "vehicle_type_id": "1"
-                    },
-                    {
-                        "count": 1,
-                        "vehicle_type_id": "4"
-                    }
-                ]
-            },
-            "type": "Feature"
-        },
-        {
-            "geometry": {
-                "coordinates": [
-                    -0.27755,
-                    49.24338
-                ],
-                "type": "Point"
-            },
-            "properties": {
-                "capacity": 10,
-                "is_charging_station": false,
-                "is_installed": true,
-                "is_renting": true,
-                "is_returning": true,
-                "is_valet_station": false,
-                "is_virtual_station": false,
-                "last_reported": 1790583232,
-                "name": "B\u00e9nouville Mairie",
-                "num_bikes_available": 0,
-                "num_docks_available": 9,
-                "rental_uris": {
-                    "android": "-%!(EXTRA string=ctbhn6naok6uht7ctba0)",
-                    "ios": "-%!(EXTRA string=ctbhn6naok6uht7ctba0)"
-                },
-                "station_id": "ctbhn6naok6uht7ctba0",
-                "vehicle_type_capacity": {
-                    "1": 9,
-                    "10": 0,
-                    "14": 0,
-                    "15": 0,
-                    "2": 9,
-                    "4": 9,
-                    "5": 0,
-                    "6": 0,
-                    "7": 9
-                },
-                "vehicle_types_available": [
-                    {
-                        "count": 0,
-                        "vehicle_type_id": "1"
-                    },
-                    {
-                        "count": 0,
-                        "vehicle_type_id": "4"
-                    },
-                    {
-                        "count": 0,
-                        "vehicle_type_id": "2"
-                    },
-                    {
-                        "count": 0,
-                        "vehicle_type_id": "7"
-                    }
-                ]
-            },
-            "type": "Feature"
-        },
-        {
-            "geometry": {
-                "coordinates": [
-                    -0.36429,
-                    49.19877
-                ],
-                "type": "Point"
-            },
-            "properties": {
-                "capacity": 10,
-                "is_charging_station": true,
-                "is_installed": true,
-                "is_renting": true,
-                "is_returning": true,
-                "is_valet_station": false,
-                "is_virtual_station": false,
-                "last_reported": 1790583232,
-                "name": "Calvaire St Pierre - D\u00e9fense passive",
-                "num_bikes_available": 1,
-                "num_docks_available": 8,
-                "rental_uris": {
-                    "android": "-%!(EXTRA string=ctbhn6naok6uht7ctbbg)",
-                    "ios": "-%!(EXTRA string=ctbhn6naok6uht7ctbbg)"
-                },
-                "station_id": "ctbhn6naok6uht7ctbbg",
-                "vehicle_type_capacity": {
-                    "1": 9,
-                    "10": 0,
-                    "14": 0,
-                    "15": 0,
-                    "2": 9,
-                    "4": 9,
-                    "5": 0,
-                    "6": 0,
-                    "7": 9
-                },
-                "vehicle_types_available": [
-                    {
-                        "count": 0,
-                        "vehicle_type_id": "7"
-                    },
-                    {
-                        "count": 0,
-                        "vehicle_type_id": "1"
-                    },
-                    {
-                        "count": 1,
-                        "vehicle_type_id": "4"
-                    },
-                    {
-                        "count": 0,
-                        "vehicle_type_id": "2"
-                    }
-                ]
-            },
-            "type": "Feature"
-        },
-        {
-            "geometry": {
-                "coordinates": [
-                    -0.35643,
-                    49.20995
-                ],
-                "type": "Point"
-            },
-            "properties": {
-                "capacity": 20,
-                "is_charging_station": false,
-                "is_installed": true,
-                "is_renting": true,
-                "is_returning": true,
-                "is_valet_station": false,
-                "is_virtual_station": false,
-                "last_reported": 1790583232,
-                "name": "Campus 4 et 5",
-                "num_bikes_available": 18,
-                "num_docks_available": 2,
-                "rental_uris": {
-                    "android": "-%!(EXTRA string=ctbhn6naok6uht7ctbd0)",
-                    "ios": "-%!(EXTRA string=ctbhn6naok6uht7ctbd0)"
-                },
-                "station_id": "ctbhn6naok6uht7ctbd0",
-                "vehicle_type_capacity": {
-                    "1": 16,
-                    "10": 0,
-                    "14": 0,
-                    "15": 0,
-                    "2": 16,
-                    "4": 16,
-                    "5": 0,
-                    "6": 0,
-                    "7": 16
+                    "7": 1
                 },
                 "vehicle_types_available": [
                     {
@@ -634,42 +235,99 @@
         {
             "geometry": {
                 "coordinates": [
-                    -0.3573,
-                    49.20588
+                    -0.44082,
+                    49.1836
                 ],
                 "type": "Point"
             },
             "properties": {
-                "capacity": 20,
+                "capacity": 10,
                 "is_charging_station": false,
                 "is_installed": true,
                 "is_renting": true,
                 "is_returning": true,
                 "is_valet_station": false,
                 "is_virtual_station": false,
-                "last_reported": 1790583232,
-                "name": "CHU - Entr\u00e9e nord",
+                "last_reported": 1790583963,
+                "name": "Carpiquet Mairie",
                 "num_bikes_available": 0,
-                "num_docks_available": 18,
+                "num_docks_available": 7,
                 "rental_uris": {
-                    "android": "-%!(EXTRA string=ctbhn6naok6uht7ctbeg)",
-                    "ios": "-%!(EXTRA string=ctbhn6naok6uht7ctbeg)"
+                    "android": "-%!(EXTRA string=ctbhn6g1snvdkble5qk0)",
+                    "ios": "-%!(EXTRA string=ctbhn6g1snvdkble5qk0)"
                 },
-                "station_id": "ctbhn6naok6uht7ctbeg",
+                "station_id": "ctbhn6g1snvdkble5qk0",
                 "vehicle_type_capacity": {
-                    "1": 19,
+                    "1": 10,
                     "10": 0,
                     "14": 0,
                     "15": 0,
-                    "2": 19,
-                    "4": 19,
+                    "2": 10,
+                    "4": 10,
                     "5": 0,
                     "6": 0,
-                    "7": 19
+                    "7": 10
                 },
                 "vehicle_types_available": [
                     {
                         "count": 0,
+                        "vehicle_type_id": "7"
+                    },
+                    {
+                        "count": 0,
+                        "vehicle_type_id": "1"
+                    },
+                    {
+                        "count": 0,
+                        "vehicle_type_id": "2"
+                    },
+                    {
+                        "count": 0,
+                        "vehicle_type_id": "4"
+                    }
+                ]
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -0.39509,
+                    49.19217
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "capacity": 10,
+                "is_charging_station": false,
+                "is_installed": true,
+                "is_renting": true,
+                "is_returning": true,
+                "is_valet_station": false,
+                "is_virtual_station": false,
+                "last_reported": 1790583963,
+                "name": "Chemin Vert - Coty",
+                "num_bikes_available": 6,
+                "num_docks_available": 3,
+                "rental_uris": {
+                    "android": "-%!(EXTRA string=ctbhn6g1snvdkble5qlg)",
+                    "ios": "-%!(EXTRA string=ctbhn6g1snvdkble5qlg)"
+                },
+                "station_id": "ctbhn6g1snvdkble5qlg",
+                "vehicle_type_capacity": {
+                    "1": 3,
+                    "10": 0,
+                    "14": 0,
+                    "15": 0,
+                    "2": 3,
+                    "4": 3,
+                    "5": 0,
+                    "6": 0,
+                    "7": 3
+                },
+                "vehicle_types_available": [
+                    {
+                        "count": 6,
                         "vehicle_type_id": "4"
                     },
                     {
@@ -691,6 +349,348 @@
         {
             "geometry": {
                 "coordinates": [
+                    -0.39078,
+                    49.19228
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "capacity": 10,
+                "is_charging_station": false,
+                "is_installed": true,
+                "is_renting": true,
+                "is_returning": true,
+                "is_valet_station": false,
+                "is_virtual_station": false,
+                "last_reported": 1790583963,
+                "name": "Chemin Vert - Schuman",
+                "num_bikes_available": 4,
+                "num_docks_available": 6,
+                "rental_uris": {
+                    "android": "-%!(EXTRA string=ctbhn6g1snvdkble5qn0)",
+                    "ios": "-%!(EXTRA string=ctbhn6g1snvdkble5qn0)"
+                },
+                "station_id": "ctbhn6g1snvdkble5qn0",
+                "vehicle_type_capacity": {
+                    "1": 6,
+                    "10": 0,
+                    "14": 0,
+                    "15": 0,
+                    "2": 6,
+                    "4": 6,
+                    "5": 0,
+                    "6": 0,
+                    "7": 6
+                },
+                "vehicle_types_available": [
+                    {
+                        "count": 0,
+                        "vehicle_type_id": "1"
+                    },
+                    {
+                        "count": 4,
+                        "vehicle_type_id": "4"
+                    },
+                    {
+                        "count": 0,
+                        "vehicle_type_id": "2"
+                    },
+                    {
+                        "count": 0,
+                        "vehicle_type_id": "7"
+                    }
+                ]
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -0.40061,
+                    49.1821
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "capacity": 20,
+                "is_charging_station": true,
+                "is_installed": true,
+                "is_renting": true,
+                "is_returning": true,
+                "is_valet_station": false,
+                "is_virtual_station": false,
+                "last_reported": 1790583963,
+                "name": "Beaulieu",
+                "num_bikes_available": 1,
+                "num_docks_available": 19,
+                "rental_uris": {
+                    "android": "-%!(EXTRA string=ctbhn6naok6uht7ctb8g)",
+                    "ios": "-%!(EXTRA string=ctbhn6naok6uht7ctb8g)"
+                },
+                "station_id": "ctbhn6naok6uht7ctb8g",
+                "vehicle_type_capacity": {
+                    "1": 19,
+                    "10": 0,
+                    "14": 0,
+                    "15": 0,
+                    "2": 19,
+                    "4": 19,
+                    "5": 0,
+                    "6": 0,
+                    "7": 19
+                },
+                "vehicle_types_available": [
+                    {
+                        "count": 1,
+                        "vehicle_type_id": "4"
+                    },
+                    {
+                        "count": 0,
+                        "vehicle_type_id": "2"
+                    },
+                    {
+                        "count": 0,
+                        "vehicle_type_id": "7"
+                    },
+                    {
+                        "count": 0,
+                        "vehicle_type_id": "1"
+                    }
+                ]
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -0.27755,
+                    49.24338
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "capacity": 10,
+                "is_charging_station": false,
+                "is_installed": true,
+                "is_renting": true,
+                "is_returning": true,
+                "is_valet_station": false,
+                "is_virtual_station": false,
+                "last_reported": 1790583963,
+                "name": "B\u00e9nouville Mairie",
+                "num_bikes_available": 0,
+                "num_docks_available": 9,
+                "rental_uris": {
+                    "android": "-%!(EXTRA string=ctbhn6naok6uht7ctba0)",
+                    "ios": "-%!(EXTRA string=ctbhn6naok6uht7ctba0)"
+                },
+                "station_id": "ctbhn6naok6uht7ctba0",
+                "vehicle_type_capacity": {
+                    "1": 9,
+                    "10": 0,
+                    "14": 0,
+                    "15": 0,
+                    "2": 9,
+                    "4": 9,
+                    "5": 0,
+                    "6": 0,
+                    "7": 9
+                },
+                "vehicle_types_available": [
+                    {
+                        "count": 0,
+                        "vehicle_type_id": "4"
+                    },
+                    {
+                        "count": 0,
+                        "vehicle_type_id": "2"
+                    },
+                    {
+                        "count": 0,
+                        "vehicle_type_id": "1"
+                    },
+                    {
+                        "count": 0,
+                        "vehicle_type_id": "7"
+                    }
+                ]
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -0.36429,
+                    49.19877
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "capacity": 10,
+                "is_charging_station": true,
+                "is_installed": true,
+                "is_renting": true,
+                "is_returning": true,
+                "is_valet_station": false,
+                "is_virtual_station": false,
+                "last_reported": 1790583963,
+                "name": "Calvaire St Pierre - D\u00e9fense passive",
+                "num_bikes_available": 1,
+                "num_docks_available": 8,
+                "rental_uris": {
+                    "android": "-%!(EXTRA string=ctbhn6naok6uht7ctbbg)",
+                    "ios": "-%!(EXTRA string=ctbhn6naok6uht7ctbbg)"
+                },
+                "station_id": "ctbhn6naok6uht7ctbbg",
+                "vehicle_type_capacity": {
+                    "1": 9,
+                    "10": 0,
+                    "14": 0,
+                    "15": 0,
+                    "2": 9,
+                    "4": 9,
+                    "5": 0,
+                    "6": 0,
+                    "7": 9
+                },
+                "vehicle_types_available": [
+                    {
+                        "count": 0,
+                        "vehicle_type_id": "2"
+                    },
+                    {
+                        "count": 0,
+                        "vehicle_type_id": "7"
+                    },
+                    {
+                        "count": 0,
+                        "vehicle_type_id": "1"
+                    },
+                    {
+                        "count": 1,
+                        "vehicle_type_id": "4"
+                    }
+                ]
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -0.35643,
+                    49.20995
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "capacity": 20,
+                "is_charging_station": false,
+                "is_installed": true,
+                "is_renting": true,
+                "is_returning": true,
+                "is_valet_station": false,
+                "is_virtual_station": false,
+                "last_reported": 1790583963,
+                "name": "Campus 4 et 5",
+                "num_bikes_available": 21,
+                "num_docks_available": 0,
+                "rental_uris": {
+                    "android": "-%!(EXTRA string=ctbhn6naok6uht7ctbd0)",
+                    "ios": "-%!(EXTRA string=ctbhn6naok6uht7ctbd0)"
+                },
+                "station_id": "ctbhn6naok6uht7ctbd0",
+                "vehicle_type_capacity": {
+                    "1": 15,
+                    "10": 0,
+                    "14": 0,
+                    "15": 0,
+                    "2": 15,
+                    "4": 15,
+                    "5": 0,
+                    "6": 0,
+                    "7": 15
+                },
+                "vehicle_types_available": [
+                    {
+                        "count": 21,
+                        "vehicle_type_id": "4"
+                    },
+                    {
+                        "count": 0,
+                        "vehicle_type_id": "2"
+                    },
+                    {
+                        "count": 0,
+                        "vehicle_type_id": "1"
+                    },
+                    {
+                        "count": 0,
+                        "vehicle_type_id": "7"
+                    }
+                ]
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -0.3573,
+                    49.20588
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "capacity": 20,
+                "is_charging_station": false,
+                "is_installed": true,
+                "is_renting": true,
+                "is_returning": true,
+                "is_valet_station": false,
+                "is_virtual_station": false,
+                "last_reported": 1790583963,
+                "name": "CHU - Entr\u00e9e nord",
+                "num_bikes_available": 0,
+                "num_docks_available": 17,
+                "rental_uris": {
+                    "android": "-%!(EXTRA string=ctbhn6naok6uht7ctbeg)",
+                    "ios": "-%!(EXTRA string=ctbhn6naok6uht7ctbeg)"
+                },
+                "station_id": "ctbhn6naok6uht7ctbeg",
+                "vehicle_type_capacity": {
+                    "1": 20,
+                    "10": 0,
+                    "14": 0,
+                    "15": 0,
+                    "2": 20,
+                    "4": 20,
+                    "5": 0,
+                    "6": 0,
+                    "7": 20
+                },
+                "vehicle_types_available": [
+                    {
+                        "count": 0,
+                        "vehicle_type_id": "1"
+                    },
+                    {
+                        "count": 0,
+                        "vehicle_type_id": "4"
+                    },
+                    {
+                        "count": 0,
+                        "vehicle_type_id": "7"
+                    },
+                    {
+                        "count": 0,
+                        "vehicle_type_id": "2"
+                    }
+                ]
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
                     -0.35903,
                     49.20396
                 ],
@@ -704,7 +704,7 @@
                 "is_returning": true,
                 "is_valet_station": false,
                 "is_virtual_station": false,
-                "last_reported": 1790583232,
+                "last_reported": 1790583963,
                 "name": "CHU - Entr\u00e9e sud",
                 "num_bikes_available": 3,
                 "num_docks_available": 16,
@@ -727,6 +727,10 @@
                 "vehicle_types_available": [
                     {
                         "count": 0,
+                        "vehicle_type_id": "7"
+                    },
+                    {
+                        "count": 0,
                         "vehicle_type_id": "1"
                     },
                     {
@@ -736,10 +740,6 @@
                     {
                         "count": 0,
                         "vehicle_type_id": "2"
-                    },
-                    {
-                        "count": 0,
-                        "vehicle_type_id": "7"
                     }
                 ]
             },
@@ -761,7 +761,7 @@
                 "is_returning": true,
                 "is_valet_station": false,
                 "is_virtual_station": false,
-                "last_reported": 1790583232,
+                "last_reported": 1790583963,
                 "name": "Claude Decaen",
                 "num_bikes_available": 0,
                 "num_docks_available": 10,
@@ -818,7 +818,7 @@
                 "is_returning": true,
                 "is_valet_station": false,
                 "is_virtual_station": false,
-                "last_reported": 1790583232,
+                "last_reported": 1790583963,
                 "name": "Colombelles Mairie",
                 "num_bikes_available": 1,
                 "num_docks_available": 6,
@@ -840,20 +840,20 @@
                 },
                 "vehicle_types_available": [
                     {
-                        "count": 0,
-                        "vehicle_type_id": "2"
-                    },
-                    {
-                        "count": 0,
-                        "vehicle_type_id": "1"
-                    },
-                    {
                         "count": 1,
                         "vehicle_type_id": "4"
                     },
                     {
                         "count": 0,
                         "vehicle_type_id": "7"
+                    },
+                    {
+                        "count": 0,
+                        "vehicle_type_id": "2"
+                    },
+                    {
+                        "count": 0,
+                        "vehicle_type_id": "1"
                     }
                 ]
             },
@@ -875,7 +875,7 @@
                 "is_returning": true,
                 "is_valet_station": false,
                 "is_virtual_station": false,
-                "last_reported": 1790583232,
+                "last_reported": 1790583963,
                 "name": "Cormelles-le-Royal Drakkars",
                 "num_bikes_available": 7,
                 "num_docks_available": 3,
@@ -897,20 +897,20 @@
                 },
                 "vehicle_types_available": [
                     {
-                        "count": 0,
-                        "vehicle_type_id": "7"
-                    },
-                    {
-                        "count": 0,
-                        "vehicle_type_id": "1"
-                    },
-                    {
                         "count": 7,
                         "vehicle_type_id": "4"
                     },
                     {
                         "count": 0,
                         "vehicle_type_id": "2"
+                    },
+                    {
+                        "count": 0,
+                        "vehicle_type_id": "7"
+                    },
+                    {
+                        "count": 0,
+                        "vehicle_type_id": "1"
                     }
                 ]
             },
@@ -932,7 +932,7 @@
                 "is_returning": true,
                 "is_valet_station": false,
                 "is_virtual_station": false,
-                "last_reported": 1790583232,
+                "last_reported": 1790583963,
                 "name": "Fleury-sur-Orne Bourg",
                 "num_bikes_available": 1,
                 "num_docks_available": 5,
@@ -941,6 +941,120 @@
                     "ios": "-%!(EXTRA string=ctbhn6o1snvdkble5qug)"
                 },
                 "station_id": "ctbhn6o1snvdkble5qug",
+                "vehicle_type_capacity": {
+                    "1": 8,
+                    "10": 0,
+                    "14": 0,
+                    "15": 0,
+                    "2": 8,
+                    "4": 8,
+                    "5": 0,
+                    "6": 0,
+                    "7": 8
+                },
+                "vehicle_types_available": [
+                    {
+                        "count": 0,
+                        "vehicle_type_id": "1"
+                    },
+                    {
+                        "count": 1,
+                        "vehicle_type_id": "4"
+                    },
+                    {
+                        "count": 0,
+                        "vehicle_type_id": "7"
+                    },
+                    {
+                        "count": 0,
+                        "vehicle_type_id": "2"
+                    }
+                ]
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -0.40084,
+                    49.17498
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "capacity": 10,
+                "is_charging_station": false,
+                "is_installed": true,
+                "is_renting": true,
+                "is_returning": true,
+                "is_valet_station": false,
+                "is_virtual_station": false,
+                "last_reported": 1790583963,
+                "name": "Fontaine Venoise ",
+                "num_bikes_available": 1,
+                "num_docks_available": 2,
+                "rental_uris": {
+                    "android": "-%!(EXTRA string=ctbhn6o1snvdkble5r00)",
+                    "ios": "-%!(EXTRA string=ctbhn6o1snvdkble5r00)"
+                },
+                "station_id": "ctbhn6o1snvdkble5r00",
+                "vehicle_type_capacity": {
+                    "1": 9,
+                    "10": 0,
+                    "14": 0,
+                    "15": 0,
+                    "2": 9,
+                    "4": 9,
+                    "5": 0,
+                    "6": 0,
+                    "7": 9
+                },
+                "vehicle_types_available": [
+                    {
+                        "count": 1,
+                        "vehicle_type_id": "4"
+                    },
+                    {
+                        "count": 0,
+                        "vehicle_type_id": "2"
+                    },
+                    {
+                        "count": 0,
+                        "vehicle_type_id": "7"
+                    },
+                    {
+                        "count": 0,
+                        "vehicle_type_id": "1"
+                    }
+                ]
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -0.28269,
+                    49.18216
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "capacity": 10,
+                "is_charging_station": false,
+                "is_installed": true,
+                "is_renting": true,
+                "is_returning": true,
+                "is_valet_station": false,
+                "is_virtual_station": false,
+                "last_reported": 1790583963,
+                "name": "Giberville Pierre de Coubertin ",
+                "num_bikes_available": 1,
+                "num_docks_available": 7,
+                "rental_uris": {
+                    "android": "-%!(EXTRA string=ctbhn6o1snvdkble5r1g)",
+                    "ios": "-%!(EXTRA string=ctbhn6o1snvdkble5r1g)"
+                },
+                "station_id": "ctbhn6o1snvdkble5r1g",
                 "vehicle_type_capacity": {
                     "1": 8,
                     "10": 0,
@@ -976,120 +1090,6 @@
         {
             "geometry": {
                 "coordinates": [
-                    -0.40084,
-                    49.17498
-                ],
-                "type": "Point"
-            },
-            "properties": {
-                "capacity": 10,
-                "is_charging_station": false,
-                "is_installed": true,
-                "is_renting": true,
-                "is_returning": true,
-                "is_valet_station": false,
-                "is_virtual_station": false,
-                "last_reported": 1790583232,
-                "name": "Fontaine Venoise ",
-                "num_bikes_available": 1,
-                "num_docks_available": 2,
-                "rental_uris": {
-                    "android": "-%!(EXTRA string=ctbhn6o1snvdkble5r00)",
-                    "ios": "-%!(EXTRA string=ctbhn6o1snvdkble5r00)"
-                },
-                "station_id": "ctbhn6o1snvdkble5r00",
-                "vehicle_type_capacity": {
-                    "1": 9,
-                    "10": 0,
-                    "14": 0,
-                    "15": 0,
-                    "2": 9,
-                    "4": 9,
-                    "5": 0,
-                    "6": 0,
-                    "7": 9
-                },
-                "vehicle_types_available": [
-                    {
-                        "count": 1,
-                        "vehicle_type_id": "4"
-                    },
-                    {
-                        "count": 0,
-                        "vehicle_type_id": "7"
-                    },
-                    {
-                        "count": 0,
-                        "vehicle_type_id": "2"
-                    },
-                    {
-                        "count": 0,
-                        "vehicle_type_id": "1"
-                    }
-                ]
-            },
-            "type": "Feature"
-        },
-        {
-            "geometry": {
-                "coordinates": [
-                    -0.28269,
-                    49.18216
-                ],
-                "type": "Point"
-            },
-            "properties": {
-                "capacity": 10,
-                "is_charging_station": false,
-                "is_installed": true,
-                "is_renting": true,
-                "is_returning": true,
-                "is_valet_station": false,
-                "is_virtual_station": false,
-                "last_reported": 1790583232,
-                "name": "Giberville Pierre de Coubertin ",
-                "num_bikes_available": 1,
-                "num_docks_available": 8,
-                "rental_uris": {
-                    "android": "-%!(EXTRA string=ctbhn6o1snvdkble5r1g)",
-                    "ios": "-%!(EXTRA string=ctbhn6o1snvdkble5r1g)"
-                },
-                "station_id": "ctbhn6o1snvdkble5r1g",
-                "vehicle_type_capacity": {
-                    "1": 9,
-                    "10": 0,
-                    "14": 0,
-                    "15": 0,
-                    "2": 9,
-                    "4": 9,
-                    "5": 0,
-                    "6": 0,
-                    "7": 9
-                },
-                "vehicle_types_available": [
-                    {
-                        "count": 1,
-                        "vehicle_type_id": "4"
-                    },
-                    {
-                        "count": 0,
-                        "vehicle_type_id": "2"
-                    },
-                    {
-                        "count": 0,
-                        "vehicle_type_id": "7"
-                    },
-                    {
-                        "count": 0,
-                        "vehicle_type_id": "1"
-                    }
-                ]
-            },
-            "type": "Feature"
-        },
-        {
-            "geometry": {
-                "coordinates": [
                     -0.30689,
                     49.18825
                 ],
@@ -1103,10 +1103,10 @@
                 "is_returning": true,
                 "is_valet_station": false,
                 "is_virtual_station": false,
-                "last_reported": 1790583232,
+                "last_reported": 1790583963,
                 "name": "Colombelles Effiscience",
                 "num_bikes_available": 5,
-                "num_docks_available": 1,
+                "num_docks_available": 2,
                 "rental_uris": {
                     "android": "-%!(EXTRA string=ctbhn6vaok6uht7ctbh0)",
                     "ios": "-%!(EXTRA string=ctbhn6vaok6uht7ctbh0)"
@@ -1125,8 +1125,8 @@
                 },
                 "vehicle_types_available": [
                     {
-                        "count": 0,
-                        "vehicle_type_id": "7"
+                        "count": 5,
+                        "vehicle_type_id": "4"
                     },
                     {
                         "count": 0,
@@ -1137,8 +1137,8 @@
                         "vehicle_type_id": "1"
                     },
                     {
-                        "count": 5,
-                        "vehicle_type_id": "4"
+                        "count": 0,
+                        "vehicle_type_id": "7"
                     }
                 ]
             },
@@ -1160,10 +1160,10 @@
                 "is_returning": true,
                 "is_valet_station": false,
                 "is_virtual_station": false,
-                "last_reported": 1790583232,
+                "last_reported": 1790583963,
                 "name": "C\u00f4te de Nacre",
-                "num_bikes_available": 8,
-                "num_docks_available": 12,
+                "num_bikes_available": 9,
+                "num_docks_available": 11,
                 "rental_uris": {
                     "android": "-%!(EXTRA string=ctbhn6vaok6uht7ctbjg)",
                     "ios": "-%!(EXTRA string=ctbhn6vaok6uht7ctbjg)"
@@ -1182,11 +1182,7 @@
                 },
                 "vehicle_types_available": [
                     {
-                        "count": 0,
-                        "vehicle_type_id": "1"
-                    },
-                    {
-                        "count": 8,
+                        "count": 9,
                         "vehicle_type_id": "4"
                     },
                     {
@@ -1196,6 +1192,10 @@
                     {
                         "count": 0,
                         "vehicle_type_id": "7"
+                    },
+                    {
+                        "count": 0,
+                        "vehicle_type_id": "1"
                     }
                 ]
             },
@@ -1217,7 +1217,7 @@
                 "is_returning": true,
                 "is_valet_station": false,
                 "is_virtual_station": false,
-                "last_reported": 1790583232,
+                "last_reported": 1790583963,
                 "name": "Detolle",
                 "num_bikes_available": 1,
                 "num_docks_available": 9,
@@ -1274,38 +1274,38 @@
                 "is_returning": true,
                 "is_valet_station": false,
                 "is_virtual_station": false,
-                "last_reported": 1790583232,
+                "last_reported": 1790583963,
                 "name": "Folie-Couvrechef - Sainte-Ursule",
-                "num_bikes_available": 2,
-                "num_docks_available": 3,
+                "num_bikes_available": 1,
+                "num_docks_available": 4,
                 "rental_uris": {
                     "android": "-%!(EXTRA string=ctbhn6vaok6uht7ctbmg)",
                     "ios": "-%!(EXTRA string=ctbhn6vaok6uht7ctbmg)"
                 },
                 "station_id": "ctbhn6vaok6uht7ctbmg",
                 "vehicle_type_capacity": {
-                    "1": 8,
+                    "1": 9,
                     "10": 0,
                     "14": 0,
                     "15": 0,
-                    "2": 8,
-                    "4": 8,
+                    "2": 9,
+                    "4": 9,
                     "5": 0,
                     "6": 0,
-                    "7": 8
+                    "7": 9
                 },
                 "vehicle_types_available": [
                     {
-                        "count": 0,
-                        "vehicle_type_id": "1"
-                    },
-                    {
-                        "count": 2,
+                        "count": 1,
                         "vehicle_type_id": "4"
                     },
                     {
                         "count": 0,
                         "vehicle_type_id": "7"
+                    },
+                    {
+                        "count": 0,
+                        "vehicle_type_id": "1"
                     },
                     {
                         "count": 0,
@@ -1331,7 +1331,7 @@
                 "is_returning": true,
                 "is_valet_station": false,
                 "is_virtual_station": false,
-                "last_reported": 1790583232,
+                "last_reported": 1790583963,
                 "name": "Gare nord ",
                 "num_bikes_available": 0,
                 "num_docks_available": 30,
@@ -1354,11 +1354,11 @@
                 "vehicle_types_available": [
                     {
                         "count": 0,
-                        "vehicle_type_id": "4"
+                        "vehicle_type_id": "1"
                     },
                     {
                         "count": 0,
-                        "vehicle_type_id": "2"
+                        "vehicle_type_id": "4"
                     },
                     {
                         "count": 0,
@@ -1366,7 +1366,7 @@
                     },
                     {
                         "count": 0,
-                        "vehicle_type_id": "1"
+                        "vehicle_type_id": "2"
                     }
                 ]
             },
@@ -1388,7 +1388,7 @@
                 "is_returning": true,
                 "is_valet_station": false,
                 "is_virtual_station": false,
-                "last_reported": 1790583232,
+                "last_reported": 1790583963,
                 "name": "Gr\u00e2ce de Dieu - Place du Commerce",
                 "num_bikes_available": 0,
                 "num_docks_available": 8,
@@ -1445,7 +1445,7 @@
                 "is_returning": true,
                 "is_valet_station": false,
                 "is_virtual_station": false,
-                "last_reported": 1790583232,
+                "last_reported": 1790583963,
                 "name": "H\u00e9rouville Caf\u00e9 des images",
                 "num_bikes_available": 0,
                 "num_docks_available": 19,
@@ -1502,7 +1502,7 @@
                 "is_returning": true,
                 "is_valet_station": false,
                 "is_virtual_station": false,
-                "last_reported": 1790583232,
+                "last_reported": 1790583963,
                 "name": "H\u00e9rouville Coll\u00e8ge-lyc\u00e9e exp\u00e9rimental",
                 "num_bikes_available": 1,
                 "num_docks_available": 8,
@@ -1525,19 +1525,19 @@
                 "vehicle_types_available": [
                     {
                         "count": 0,
-                        "vehicle_type_id": "2"
-                    },
-                    {
-                        "count": 0,
-                        "vehicle_type_id": "7"
-                    },
-                    {
-                        "count": 0,
                         "vehicle_type_id": "1"
                     },
                     {
                         "count": 1,
                         "vehicle_type_id": "4"
+                    },
+                    {
+                        "count": 0,
+                        "vehicle_type_id": "2"
+                    },
+                    {
+                        "count": 0,
+                        "vehicle_type_id": "7"
                     }
                 ]
             },
@@ -1559,7 +1559,7 @@
                 "is_returning": true,
                 "is_valet_station": false,
                 "is_virtual_station": false,
-                "last_reported": 1790583232,
+                "last_reported": 1790583963,
                 "name": "H\u00e9rouville Fonderie ",
                 "num_bikes_available": 1,
                 "num_docks_available": 8,
@@ -1616,7 +1616,7 @@
                 "is_returning": true,
                 "is_valet_station": false,
                 "is_virtual_station": false,
-                "last_reported": 1790583232,
+                "last_reported": 1790583963,
                 "name": "Ifs Jean Vilar",
                 "num_bikes_available": 0,
                 "num_docks_available": 7,
@@ -1639,6 +1639,10 @@
                 "vehicle_types_available": [
                     {
                         "count": 0,
+                        "vehicle_type_id": "2"
+                    },
+                    {
+                        "count": 0,
                         "vehicle_type_id": "7"
                     },
                     {
@@ -1648,10 +1652,6 @@
                     {
                         "count": 0,
                         "vehicle_type_id": "4"
-                    },
-                    {
-                        "count": 0,
-                        "vehicle_type_id": "2"
                     }
                 ]
             },
@@ -1673,7 +1673,7 @@
                 "is_returning": true,
                 "is_valet_station": false,
                 "is_virtual_station": false,
-                "last_reported": 1790583232,
+                "last_reported": 1790583963,
                 "name": "Lebisey",
                 "num_bikes_available": 0,
                 "num_docks_available": 9,
@@ -1730,7 +1730,7 @@
                 "is_returning": true,
                 "is_valet_station": false,
                 "is_virtual_station": false,
-                "last_reported": 1790583232,
+                "last_reported": 1790583963,
                 "name": "Gu\u00e9rini\u00e8re - Place de la Libert\u00e9",
                 "num_bikes_available": 0,
                 "num_docks_available": 10,
@@ -1753,6 +1753,10 @@
                 "vehicle_types_available": [
                     {
                         "count": 0,
+                        "vehicle_type_id": "7"
+                    },
+                    {
+                        "count": 0,
                         "vehicle_type_id": "4"
                     },
                     {
@@ -1762,10 +1766,6 @@
                     {
                         "count": 0,
                         "vehicle_type_id": "1"
-                    },
-                    {
-                        "count": 0,
-                        "vehicle_type_id": "7"
                     }
                 ]
             },
@@ -1787,27 +1787,31 @@
                 "is_returning": true,
                 "is_valet_station": false,
                 "is_virtual_station": false,
-                "last_reported": 1790583232,
+                "last_reported": 1790583963,
                 "name": "H\u00e9rouville Citis",
-                "num_bikes_available": 1,
-                "num_docks_available": 19,
+                "num_bikes_available": 0,
+                "num_docks_available": 20,
                 "rental_uris": {
                     "android": "-%!(EXTRA string=ctbhn77aok6uht7ctbt0)",
                     "ios": "-%!(EXTRA string=ctbhn77aok6uht7ctbt0)"
                 },
                 "station_id": "ctbhn77aok6uht7ctbt0",
                 "vehicle_type_capacity": {
-                    "1": 19,
+                    "1": 20,
                     "10": 0,
                     "14": 0,
                     "15": 0,
-                    "2": 19,
-                    "4": 19,
+                    "2": 20,
+                    "4": 20,
                     "5": 0,
                     "6": 0,
-                    "7": 19
+                    "7": 20
                 },
                 "vehicle_types_available": [
+                    {
+                        "count": 0,
+                        "vehicle_type_id": "10"
+                    },
                     {
                         "count": 0,
                         "vehicle_type_id": "2"
@@ -1818,15 +1822,11 @@
                     },
                     {
                         "count": 0,
-                        "vehicle_type_id": "7"
+                        "vehicle_type_id": "4"
                     },
                     {
                         "count": 0,
-                        "vehicle_type_id": "10"
-                    },
-                    {
-                        "count": 1,
-                        "vehicle_type_id": "4"
+                        "vehicle_type_id": "7"
                     }
                 ]
             },
@@ -1848,10 +1848,10 @@
                 "is_returning": true,
                 "is_valet_station": false,
                 "is_virtual_station": false,
-                "last_reported": 1790583232,
+                "last_reported": 1790583963,
                 "name": "H\u00e9rouville Montmorency",
-                "num_bikes_available": 2,
-                "num_docks_available": 8,
+                "num_bikes_available": 1,
+                "num_docks_available": 9,
                 "rental_uris": {
                     "android": "-%!(EXTRA string=ctbhn77aok6uht7ctbug)",
                     "ios": "-%!(EXTRA string=ctbhn77aok6uht7ctbug)"
@@ -1870,20 +1870,20 @@
                 },
                 "vehicle_types_available": [
                     {
-                        "count": 2,
-                        "vehicle_type_id": "4"
-                    },
-                    {
-                        "count": 0,
-                        "vehicle_type_id": "7"
-                    },
-                    {
                         "count": 0,
                         "vehicle_type_id": "2"
                     },
                     {
                         "count": 0,
                         "vehicle_type_id": "1"
+                    },
+                    {
+                        "count": 1,
+                        "vehicle_type_id": "4"
+                    },
+                    {
+                        "count": 0,
+                        "vehicle_type_id": "7"
                     }
                 ]
             },
@@ -1905,10 +1905,10 @@
                 "is_returning": true,
                 "is_valet_station": false,
                 "is_virtual_station": false,
-                "last_reported": 1790583232,
+                "last_reported": 1790583963,
                 "name": "Institut Lemonnier",
-                "num_bikes_available": 11,
-                "num_docks_available": 0,
+                "num_bikes_available": 9,
+                "num_docks_available": 2,
                 "rental_uris": {
                     "android": "-%!(EXTRA string=ctbhn77aok6uht7ctc00)",
                     "ios": "-%!(EXTRA string=ctbhn77aok6uht7ctc00)"
@@ -1927,7 +1927,7 @@
                 },
                 "vehicle_types_available": [
                     {
-                        "count": 11,
+                        "count": 9,
                         "vehicle_type_id": "4"
                     },
                     {
@@ -1962,7 +1962,7 @@
                 "is_returning": true,
                 "is_valet_station": false,
                 "is_virtual_station": false,
-                "last_reported": 1790583232,
+                "last_reported": 1790583963,
                 "name": "Lyautey",
                 "num_bikes_available": 0,
                 "num_docks_available": 7,
@@ -2019,7 +2019,7 @@
                 "is_returning": true,
                 "is_valet_station": false,
                 "is_virtual_station": false,
-                "last_reported": 1790583232,
+                "last_reported": 1790583963,
                 "name": "Mondeville centre",
                 "num_bikes_available": 0,
                 "num_docks_available": 9,
@@ -2042,10 +2042,6 @@
                 "vehicle_types_available": [
                     {
                         "count": 0,
-                        "vehicle_type_id": "1"
-                    },
-                    {
-                        "count": 0,
                         "vehicle_type_id": "7"
                     },
                     {
@@ -2055,6 +2051,10 @@
                     {
                         "count": 0,
                         "vehicle_type_id": "2"
+                    },
+                    {
+                        "count": 0,
+                        "vehicle_type_id": "1"
                     }
                 ]
             },
@@ -2076,25 +2076,25 @@
                 "is_returning": true,
                 "is_valet_station": false,
                 "is_virtual_station": false,
-                "last_reported": 1790583232,
+                "last_reported": 1790583963,
                 "name": "Mondeville Espace Letellier",
-                "num_bikes_available": 4,
-                "num_docks_available": 6,
+                "num_bikes_available": 5,
+                "num_docks_available": 5,
                 "rental_uris": {
                     "android": "-%!(EXTRA string=ctbhn781snvdkble5rc0)",
                     "ios": "-%!(EXTRA string=ctbhn781snvdkble5rc0)"
                 },
                 "station_id": "ctbhn781snvdkble5rc0",
                 "vehicle_type_capacity": {
-                    "1": 7,
+                    "1": 6,
                     "10": 0,
                     "14": 0,
                     "15": 0,
-                    "2": 7,
-                    "4": 7,
+                    "2": 6,
+                    "4": 6,
                     "5": 0,
                     "6": 0,
-                    "7": 7
+                    "7": 6
                 },
                 "vehicle_types_available": [
                     {
@@ -2102,16 +2102,16 @@
                         "vehicle_type_id": "1"
                     },
                     {
-                        "count": 4,
+                        "count": 0,
+                        "vehicle_type_id": "7"
+                    },
+                    {
+                        "count": 5,
                         "vehicle_type_id": "4"
                     },
                     {
                         "count": 0,
                         "vehicle_type_id": "2"
-                    },
-                    {
-                        "count": 0,
-                        "vehicle_type_id": "7"
                     }
                 ]
             },
@@ -2133,7 +2133,7 @@
                 "is_returning": true,
                 "is_valet_station": false,
                 "is_virtual_station": false,
-                "last_reported": 1790583232,
+                "last_reported": 1790583963,
                 "name": "Ouistreham Eglise",
                 "num_bikes_available": 1,
                 "num_docks_available": 5,
@@ -2155,20 +2155,20 @@
                 },
                 "vehicle_types_available": [
                     {
-                        "count": 1,
-                        "vehicle_type_id": "4"
-                    },
-                    {
                         "count": 0,
                         "vehicle_type_id": "7"
                     },
                     {
                         "count": 0,
-                        "vehicle_type_id": "2"
+                        "vehicle_type_id": "1"
+                    },
+                    {
+                        "count": 1,
+                        "vehicle_type_id": "4"
                     },
                     {
                         "count": 0,
-                        "vehicle_type_id": "1"
+                        "vehicle_type_id": "2"
                     }
                 ]
             },
@@ -2190,10 +2190,10 @@
                 "is_returning": true,
                 "is_valet_station": false,
                 "is_virtual_station": false,
-                "last_reported": 1790583232,
+                "last_reported": 1790583963,
                 "name": "Ouistreham Plage",
-                "num_bikes_available": 2,
-                "num_docks_available": 9,
+                "num_bikes_available": 1,
+                "num_docks_available": 11,
                 "rental_uris": {
                     "android": "-%!(EXTRA string=ctbhn781snvdkble5rf0)",
                     "ios": "-%!(EXTRA string=ctbhn781snvdkble5rf0)"
@@ -2213,10 +2213,10 @@
                 "vehicle_types_available": [
                     {
                         "count": 0,
-                        "vehicle_type_id": "1"
+                        "vehicle_type_id": "2"
                     },
                     {
-                        "count": 2,
+                        "count": 1,
                         "vehicle_type_id": "4"
                     },
                     {
@@ -2225,7 +2225,7 @@
                     },
                     {
                         "count": 0,
-                        "vehicle_type_id": "2"
+                        "vehicle_type_id": "1"
                     }
                 ]
             },
@@ -2247,7 +2247,7 @@
                 "is_returning": true,
                 "is_valet_station": false,
                 "is_virtual_station": false,
-                "last_reported": 1790583232,
+                "last_reported": 1790583963,
                 "name": "Parc expo-Z\u00e9nith",
                 "num_bikes_available": 0,
                 "num_docks_available": 17,
@@ -2270,6 +2270,10 @@
                 "vehicle_types_available": [
                     {
                         "count": 0,
+                        "vehicle_type_id": "2"
+                    },
+                    {
+                        "count": 0,
                         "vehicle_type_id": "1"
                     },
                     {
@@ -2279,10 +2283,6 @@
                     {
                         "count": 0,
                         "vehicle_type_id": "7"
-                    },
-                    {
-                        "count": 0,
-                        "vehicle_type_id": "2"
                     }
                 ]
             },
@@ -2304,7 +2304,7 @@
                 "is_returning": true,
                 "is_valet_station": false,
                 "is_virtual_station": false,
-                "last_reported": 1790583232,
+                "last_reported": 1790583963,
                 "name": "Pierre Heuz\u00e9 - Champlain",
                 "num_bikes_available": 0,
                 "num_docks_available": 7,
@@ -2361,7 +2361,7 @@
                 "is_returning": true,
                 "is_valet_station": false,
                 "is_virtual_station": false,
-                "last_reported": 1790583232,
+                "last_reported": 1790583963,
                 "name": "Presqu'ile - Biblioth\u00e8que",
                 "num_bikes_available": 3,
                 "num_docks_available": 7,
@@ -2384,6 +2384,10 @@
                 "vehicle_types_available": [
                     {
                         "count": 0,
+                        "vehicle_type_id": "7"
+                    },
+                    {
+                        "count": 0,
                         "vehicle_type_id": "1"
                     },
                     {
@@ -2393,10 +2397,6 @@
                     {
                         "count": 0,
                         "vehicle_type_id": "2"
-                    },
-                    {
-                        "count": 0,
-                        "vehicle_type_id": "7"
                     }
                 ]
             },
@@ -2418,7 +2418,7 @@
                 "is_returning": true,
                 "is_valet_station": false,
                 "is_virtual_station": false,
-                "last_reported": 1790583232,
+                "last_reported": 1790583963,
                 "name": "R\u00e9publique",
                 "num_bikes_available": 0,
                 "num_docks_available": 20,
@@ -2441,10 +2441,6 @@
                 "vehicle_types_available": [
                     {
                         "count": 0,
-                        "vehicle_type_id": "7"
-                    },
-                    {
-                        "count": 0,
                         "vehicle_type_id": "4"
                     },
                     {
@@ -2454,6 +2450,10 @@
                     {
                         "count": 0,
                         "vehicle_type_id": "1"
+                    },
+                    {
+                        "count": 0,
+                        "vehicle_type_id": "7"
                     }
                 ]
             },
@@ -2475,10 +2475,10 @@
                 "is_returning": true,
                 "is_valet_station": false,
                 "is_virtual_station": false,
-                "last_reported": 1790583232,
+                "last_reported": 1790583963,
                 "name": "R\u00e9sistance",
-                "num_bikes_available": 8,
-                "num_docks_available": 2,
+                "num_bikes_available": 7,
+                "num_docks_available": 3,
                 "rental_uris": {
                     "android": "-%!(EXTRA string=ctbhn781snvdkble5rng)",
                     "ios": "-%!(EXTRA string=ctbhn781snvdkble5rng)"
@@ -2497,20 +2497,20 @@
                 },
                 "vehicle_types_available": [
                     {
+                        "count": 8,
+                        "vehicle_type_id": "4"
+                    },
+                    {
+                        "count": 0,
+                        "vehicle_type_id": "7"
+                    },
+                    {
                         "count": 0,
                         "vehicle_type_id": "2"
                     },
                     {
                         "count": 0,
                         "vehicle_type_id": "1"
-                    },
-                    {
-                        "count": 9,
-                        "vehicle_type_id": "4"
-                    },
-                    {
-                        "count": 0,
-                        "vehicle_type_id": "7"
                     }
                 ]
             },
@@ -2532,25 +2532,25 @@
                 "is_returning": true,
                 "is_valet_station": false,
                 "is_virtual_station": false,
-                "last_reported": 1790583232,
+                "last_reported": 1790583963,
                 "name": "Rue de Vaucelles",
-                "num_bikes_available": 3,
-                "num_docks_available": 7,
+                "num_bikes_available": 4,
+                "num_docks_available": 6,
                 "rental_uris": {
                     "android": "-%!(EXTRA string=ctbhn781snvdkble5rp0)",
                     "ios": "-%!(EXTRA string=ctbhn781snvdkble5rp0)"
                 },
                 "station_id": "ctbhn781snvdkble5rp0",
                 "vehicle_type_capacity": {
-                    "1": 7,
+                    "1": 6,
                     "10": 0,
                     "14": 0,
                     "15": 0,
-                    "2": 7,
-                    "4": 7,
+                    "2": 6,
+                    "4": 6,
                     "5": 0,
                     "6": 0,
-                    "7": 7
+                    "7": 6
                 },
                 "vehicle_types_available": [
                     {
@@ -2570,7 +2570,7 @@
                         "vehicle_type_id": "10"
                     },
                     {
-                        "count": 3,
+                        "count": 4,
                         "vehicle_type_id": "4"
                     }
                 ]
@@ -2593,35 +2593,27 @@
                 "is_returning": true,
                 "is_valet_station": false,
                 "is_virtual_station": false,
-                "last_reported": 1790583232,
+                "last_reported": 1790583963,
                 "name": "Sainte-Th\u00e9r\u00e8se",
-                "num_bikes_available": 0,
-                "num_docks_available": 9,
+                "num_bikes_available": 1,
+                "num_docks_available": 8,
                 "rental_uris": {
                     "android": "-%!(EXTRA string=ctbhn781snvdkble5rqg)",
                     "ios": "-%!(EXTRA string=ctbhn781snvdkble5rqg)"
                 },
                 "station_id": "ctbhn781snvdkble5rqg",
                 "vehicle_type_capacity": {
-                    "1": 9,
+                    "1": 8,
                     "10": 0,
                     "14": 0,
                     "15": 0,
-                    "2": 9,
-                    "4": 9,
+                    "2": 8,
+                    "4": 8,
                     "5": 0,
                     "6": 0,
-                    "7": 9
+                    "7": 8
                 },
                 "vehicle_types_available": [
-                    {
-                        "count": 0,
-                        "vehicle_type_id": "4"
-                    },
-                    {
-                        "count": 0,
-                        "vehicle_type_id": "7"
-                    },
                     {
                         "count": 0,
                         "vehicle_type_id": "2"
@@ -2629,6 +2621,14 @@
                     {
                         "count": 0,
                         "vehicle_type_id": "1"
+                    },
+                    {
+                        "count": 0,
+                        "vehicle_type_id": "7"
+                    },
+                    {
+                        "count": 1,
+                        "vehicle_type_id": "4"
                     }
                 ]
             },
@@ -2650,7 +2650,7 @@
                 "is_returning": true,
                 "is_valet_station": false,
                 "is_virtual_station": false,
-                "last_reported": 1790583232,
+                "last_reported": 1790583963,
                 "name": "Mountbatten",
                 "num_bikes_available": 6,
                 "num_docks_available": 0,
@@ -2672,6 +2672,10 @@
                 },
                 "vehicle_types_available": [
                     {
+                        "count": 0,
+                        "vehicle_type_id": "1"
+                    },
+                    {
                         "count": 6,
                         "vehicle_type_id": "4"
                     },
@@ -2682,10 +2686,6 @@
                     {
                         "count": 0,
                         "vehicle_type_id": "7"
-                    },
-                    {
-                        "count": 0,
-                        "vehicle_type_id": "1"
                     }
                 ]
             },
@@ -2707,7 +2707,7 @@
                 "is_returning": true,
                 "is_valet_station": false,
                 "is_virtual_station": false,
-                "last_reported": 1790583232,
+                "last_reported": 1790583963,
                 "name": "Place Bouchard",
                 "num_bikes_available": 0,
                 "num_docks_available": 20,
@@ -2730,10 +2730,6 @@
                 "vehicle_types_available": [
                     {
                         "count": 0,
-                        "vehicle_type_id": "7"
-                    },
-                    {
-                        "count": 0,
                         "vehicle_type_id": "4"
                     },
                     {
@@ -2743,6 +2739,10 @@
                     {
                         "count": 0,
                         "vehicle_type_id": "1"
+                    },
+                    {
+                        "count": 0,
+                        "vehicle_type_id": "7"
                     }
                 ]
             },
@@ -2764,7 +2764,7 @@
                 "is_returning": true,
                 "is_valet_station": false,
                 "is_virtual_station": false,
-                "last_reported": 1790583232,
+                "last_reported": 1790583963,
                 "name": "Anciennes Boucheries",
                 "num_bikes_available": 0,
                 "num_docks_available": 10,
@@ -2787,7 +2787,11 @@
                 "vehicle_types_available": [
                     {
                         "count": 0,
-                        "vehicle_type_id": "1"
+                        "vehicle_type_id": "4"
+                    },
+                    {
+                        "count": 0,
+                        "vehicle_type_id": "2"
                     },
                     {
                         "count": 0,
@@ -2795,11 +2799,7 @@
                     },
                     {
                         "count": 0,
-                        "vehicle_type_id": "4"
-                    },
-                    {
-                        "count": 0,
-                        "vehicle_type_id": "2"
+                        "vehicle_type_id": "1"
                     }
                 ]
             },
@@ -2821,7 +2821,7 @@
                 "is_returning": true,
                 "is_valet_station": false,
                 "is_virtual_station": false,
-                "last_reported": 1790583232,
+                "last_reported": 1790583963,
                 "name": "Bretteville-sur-Odon Eglise",
                 "num_bikes_available": 2,
                 "num_docks_available": 6,
@@ -2878,42 +2878,42 @@
                 "is_returning": true,
                 "is_valet_station": false,
                 "is_virtual_station": false,
-                "last_reported": 1790583232,
+                "last_reported": 1790583963,
                 "name": "Foch",
-                "num_bikes_available": 0,
-                "num_docks_available": 9,
+                "num_bikes_available": 4,
+                "num_docks_available": 6,
                 "rental_uris": {
                     "android": "-%!(EXTRA string=ctq0fmdj5eo065fugim0)",
                     "ios": "-%!(EXTRA string=ctq0fmdj5eo065fugim0)"
                 },
                 "station_id": "ctq0fmdj5eo065fugim0",
                 "vehicle_type_capacity": {
-                    "1": 10,
+                    "1": 6,
                     "10": 0,
                     "14": 0,
                     "15": 0,
-                    "2": 10,
-                    "4": 10,
+                    "2": 6,
+                    "4": 6,
                     "5": 0,
                     "6": 0,
-                    "7": 10
+                    "7": 6
                 },
                 "vehicle_types_available": [
+                    {
+                        "count": 0,
+                        "vehicle_type_id": "2"
+                    },
                     {
                         "count": 0,
                         "vehicle_type_id": "1"
                     },
                     {
                         "count": 0,
-                        "vehicle_type_id": "4"
-                    },
-                    {
-                        "count": 0,
                         "vehicle_type_id": "7"
                     },
                     {
-                        "count": 0,
-                        "vehicle_type_id": "2"
+                        "count": 4,
+                        "vehicle_type_id": "4"
                     }
                 ]
             },
@@ -2935,27 +2935,35 @@
                 "is_returning": true,
                 "is_valet_station": false,
                 "is_virtual_station": false,
-                "last_reported": 1790583232,
+                "last_reported": 1790583963,
                 "name": "Ifs Debussy",
-                "num_bikes_available": 4,
-                "num_docks_available": 6,
+                "num_bikes_available": 3,
+                "num_docks_available": 7,
                 "rental_uris": {
                     "android": "-%!(EXTRA string=ctq0fmdj5eo065fuging)",
                     "ios": "-%!(EXTRA string=ctq0fmdj5eo065fuging)"
                 },
                 "station_id": "ctq0fmdj5eo065fuging",
                 "vehicle_type_capacity": {
-                    "1": 6,
+                    "1": 7,
                     "10": 0,
                     "14": 0,
                     "15": 0,
-                    "2": 6,
-                    "4": 6,
+                    "2": 7,
+                    "4": 7,
                     "5": 0,
                     "6": 0,
-                    "7": 6
+                    "7": 7
                 },
                 "vehicle_types_available": [
+                    {
+                        "count": 0,
+                        "vehicle_type_id": "2"
+                    },
+                    {
+                        "count": 3,
+                        "vehicle_type_id": "4"
+                    },
                     {
                         "count": 0,
                         "vehicle_type_id": "7"
@@ -2963,14 +2971,6 @@
                     {
                         "count": 0,
                         "vehicle_type_id": "1"
-                    },
-                    {
-                        "count": 4,
-                        "vehicle_type_id": "4"
-                    },
-                    {
-                        "count": 0,
-                        "vehicle_type_id": "2"
                     }
                 ]
             },
@@ -2992,7 +2992,7 @@
                 "is_returning": true,
                 "is_valet_station": false,
                 "is_virtual_station": false,
-                "last_reported": 1790583232,
+                "last_reported": 1790583963,
                 "name": "Planitre",
                 "num_bikes_available": 0,
                 "num_docks_available": 4,
@@ -3049,10 +3049,10 @@
                 "is_returning": true,
                 "is_valet_station": false,
                 "is_virtual_station": false,
-                "last_reported": 1790583232,
+                "last_reported": 1790583963,
                 "name": "Saint-Jean-Eudes",
                 "num_bikes_available": 0,
-                "num_docks_available": 8,
+                "num_docks_available": 7,
                 "rental_uris": {
                     "android": "-%!(EXTRA string=ctq0fmdj5eo065fugiqg)",
                     "ios": "-%!(EXTRA string=ctq0fmdj5eo065fugiqg)"
@@ -3076,7 +3076,7 @@
                     },
                     {
                         "count": 0,
-                        "vehicle_type_id": "4"
+                        "vehicle_type_id": "1"
                     },
                     {
                         "count": 0,
@@ -3084,7 +3084,7 @@
                     },
                     {
                         "count": 0,
-                        "vehicle_type_id": "1"
+                        "vehicle_type_id": "4"
                     }
                 ]
             },
@@ -3106,7 +3106,7 @@
                 "is_returning": true,
                 "is_valet_station": false,
                 "is_virtual_station": false,
-                "last_reported": 1790583232,
+                "last_reported": 1790583963,
                 "name": "Saint-Ouen",
                 "num_bikes_available": 2,
                 "num_docks_available": 5,
@@ -3129,19 +3129,19 @@
                 "vehicle_types_available": [
                     {
                         "count": 0,
-                        "vehicle_type_id": "2"
-                    },
-                    {
-                        "count": 0,
-                        "vehicle_type_id": "7"
-                    },
-                    {
-                        "count": 0,
                         "vehicle_type_id": "1"
                     },
                     {
                         "count": 2,
                         "vehicle_type_id": "4"
+                    },
+                    {
+                        "count": 0,
+                        "vehicle_type_id": "2"
+                    },
+                    {
+                        "count": 0,
+                        "vehicle_type_id": "7"
                     }
                 ]
             },
@@ -3163,34 +3163,30 @@
                 "is_returning": true,
                 "is_valet_station": false,
                 "is_virtual_station": false,
-                "last_reported": 1790583232,
+                "last_reported": 1790583963,
                 "name": "Saint-Pierre",
-                "num_bikes_available": 1,
-                "num_docks_available": 19,
+                "num_bikes_available": 0,
+                "num_docks_available": 20,
                 "rental_uris": {
                     "android": "-%!(EXTRA string=ctq0fmdj5eo065fugitg)",
                     "ios": "-%!(EXTRA string=ctq0fmdj5eo065fugitg)"
                 },
                 "station_id": "ctq0fmdj5eo065fugitg",
                 "vehicle_type_capacity": {
-                    "1": 19,
+                    "1": 20,
                     "10": 0,
                     "14": 0,
                     "15": 0,
-                    "2": 19,
-                    "4": 19,
+                    "2": 20,
+                    "4": 20,
                     "5": 0,
                     "6": 0,
-                    "7": 19
+                    "7": 20
                 },
                 "vehicle_types_available": [
                     {
-                        "count": 1,
-                        "vehicle_type_id": "4"
-                    },
-                    {
                         "count": 0,
-                        "vehicle_type_id": "2"
+                        "vehicle_type_id": "1"
                     },
                     {
                         "count": 0,
@@ -3198,7 +3194,11 @@
                     },
                     {
                         "count": 0,
-                        "vehicle_type_id": "1"
+                        "vehicle_type_id": "4"
+                    },
+                    {
+                        "count": 0,
+                        "vehicle_type_id": "2"
                     }
                 ]
             },
@@ -3220,7 +3220,7 @@
                 "is_returning": true,
                 "is_valet_station": false,
                 "is_virtual_station": false,
-                "last_reported": 1790583232,
+                "last_reported": 1790583963,
                 "name": "Clemenceau",
                 "num_bikes_available": 0,
                 "num_docks_available": 8,
@@ -3243,6 +3243,10 @@
                 "vehicle_types_available": [
                     {
                         "count": 0,
+                        "vehicle_type_id": "1"
+                    },
+                    {
+                        "count": 0,
                         "vehicle_type_id": "4"
                     },
                     {
@@ -3252,10 +3256,6 @@
                     {
                         "count": 0,
                         "vehicle_type_id": "7"
-                    },
-                    {
-                        "count": 0,
-                        "vehicle_type_id": "1"
                     }
                 ]
             },
@@ -3277,7 +3277,7 @@
                 "is_returning": true,
                 "is_valet_station": false,
                 "is_virtual_station": false,
-                "last_reported": 1790583232,
+                "last_reported": 1790583963,
                 "name": "Gare sud",
                 "num_bikes_available": 0,
                 "num_docks_available": 20,
@@ -3300,6 +3300,10 @@
                 "vehicle_types_available": [
                     {
                         "count": 0,
+                        "vehicle_type_id": "1"
+                    },
+                    {
+                        "count": 0,
                         "vehicle_type_id": "4"
                     },
                     {
@@ -3309,10 +3313,6 @@
                     {
                         "count": 0,
                         "vehicle_type_id": "7"
-                    },
-                    {
-                        "count": 0,
-                        "vehicle_type_id": "1"
                     }
                 ]
             },
@@ -3334,7 +3334,7 @@
                 "is_returning": true,
                 "is_valet_station": false,
                 "is_virtual_station": false,
-                "last_reported": 1790583232,
+                "last_reported": 1790583963,
                 "name": "Port - Place Courtonne",
                 "num_bikes_available": 0,
                 "num_docks_available": 20,
@@ -3357,19 +3357,19 @@
                 "vehicle_types_available": [
                     {
                         "count": 0,
-                        "vehicle_type_id": "7"
-                    },
-                    {
-                        "count": 0,
-                        "vehicle_type_id": "1"
-                    },
-                    {
-                        "count": 0,
                         "vehicle_type_id": "4"
                     },
                     {
                         "count": 0,
                         "vehicle_type_id": "2"
+                    },
+                    {
+                        "count": 0,
+                        "vehicle_type_id": "7"
+                    },
+                    {
+                        "count": 0,
+                        "vehicle_type_id": "1"
                     }
                 ]
             },
@@ -3391,33 +3391,33 @@
                 "is_returning": true,
                 "is_valet_station": false,
                 "is_virtual_station": false,
-                "last_reported": 1790583232,
+                "last_reported": 1790583963,
                 "name": "Stade Nautique",
-                "num_bikes_available": 1,
-                "num_docks_available": 18,
+                "num_bikes_available": 3,
+                "num_docks_available": 17,
                 "rental_uris": {
                     "android": "-%!(EXTRA string=ctrqn0rh0nj4spam44d0)",
                     "ios": "-%!(EXTRA string=ctrqn0rh0nj4spam44d0)"
                 },
                 "station_id": "ctrqn0rh0nj4spam44d0",
                 "vehicle_type_capacity": {
-                    "1": 18,
+                    "1": 17,
                     "10": 0,
                     "14": 0,
                     "15": 0,
-                    "2": 18,
-                    "4": 18,
+                    "2": 17,
+                    "4": 17,
                     "5": 0,
                     "6": 0,
-                    "7": 18
+                    "7": 17
                 },
                 "vehicle_types_available": [
                     {
                         "count": 0,
-                        "vehicle_type_id": "7"
+                        "vehicle_type_id": "1"
                     },
                     {
-                        "count": 1,
+                        "count": 3,
                         "vehicle_type_id": "4"
                     },
                     {
@@ -3426,7 +3426,7 @@
                     },
                     {
                         "count": 0,
-                        "vehicle_type_id": "1"
+                        "vehicle_type_id": "7"
                     }
                 ]
             },
@@ -3448,7 +3448,7 @@
                 "is_returning": true,
                 "is_valet_station": false,
                 "is_virtual_station": false,
-                "last_reported": 1790583232,
+                "last_reported": 1790583963,
                 "name": "Caen Place Villers",
                 "num_bikes_available": 1,
                 "num_docks_available": 4,
@@ -3471,19 +3471,19 @@
                 "vehicle_types_available": [
                     {
                         "count": 0,
-                        "vehicle_type_id": "2"
-                    },
-                    {
-                        "count": 1,
-                        "vehicle_type_id": "4"
-                    },
-                    {
-                        "count": 0,
                         "vehicle_type_id": "7"
                     },
                     {
                         "count": 0,
                         "vehicle_type_id": "1"
+                    },
+                    {
+                        "count": 0,
+                        "vehicle_type_id": "2"
+                    },
+                    {
+                        "count": 1,
+                        "vehicle_type_id": "4"
                     }
                 ]
             },
@@ -3505,30 +3505,30 @@
                 "is_returning": true,
                 "is_valet_station": false,
                 "is_virtual_station": false,
-                "last_reported": 1790583232,
+                "last_reported": 1790583963,
                 "name": "Saint-Germain Mairie",
-                "num_bikes_available": 0,
-                "num_docks_available": 7,
+                "num_bikes_available": 5,
+                "num_docks_available": 5,
                 "rental_uris": {
                     "android": "-%!(EXTRA string=st_d5n49dc36rpc73c22ol0)",
                     "ios": "-%!(EXTRA string=st_d5n49dc36rpc73c22ol0)"
                 },
                 "station_id": "st_d5n49dc36rpc73c22ol0",
                 "vehicle_type_capacity": {
-                    "1": 8,
+                    "1": 6,
                     "10": 0,
                     "14": 0,
                     "15": 0,
-                    "2": 8,
-                    "4": 8,
+                    "2": 6,
+                    "4": 6,
                     "5": 0,
                     "6": 0,
-                    "7": 8
+                    "7": 6
                 },
                 "vehicle_types_available": [
                     {
-                        "count": 0,
-                        "vehicle_type_id": "1"
+                        "count": 5,
+                        "vehicle_type_id": "4"
                     },
                     {
                         "count": 0,
@@ -3536,11 +3536,11 @@
                     },
                     {
                         "count": 0,
-                        "vehicle_type_id": "4"
+                        "vehicle_type_id": "2"
                     },
                     {
                         "count": 0,
-                        "vehicle_type_id": "2"
+                        "vehicle_type_id": "1"
                     }
                 ]
             },
@@ -3562,42 +3562,42 @@
                 "is_returning": true,
                 "is_valet_station": false,
                 "is_virtual_station": false,
-                "last_reported": 1790583232,
+                "last_reported": 1790583963,
                 "name": "Hermanville Plage",
-                "num_bikes_available": 0,
-                "num_docks_available": 9,
+                "num_bikes_available": 1,
+                "num_docks_available": 7,
                 "rental_uris": {
                     "android": "-%!(EXTRA string=st_d5n49dc36rpc73c22omg)",
                     "ios": "-%!(EXTRA string=st_d5n49dc36rpc73c22omg)"
                 },
                 "station_id": "st_d5n49dc36rpc73c22omg",
                 "vehicle_type_capacity": {
-                    "1": 10,
+                    "1": 9,
                     "10": 0,
                     "14": 0,
                     "15": 0,
-                    "2": 10,
-                    "4": 10,
+                    "2": 9,
+                    "4": 9,
                     "5": 0,
                     "6": 0,
-                    "7": 10
+                    "7": 9
                 },
                 "vehicle_types_available": [
-                    {
-                        "count": 0,
-                        "vehicle_type_id": "7"
-                    },
                     {
                         "count": 0,
                         "vehicle_type_id": "1"
                     },
                     {
-                        "count": 0,
+                        "count": 1,
                         "vehicle_type_id": "4"
                     },
                     {
                         "count": 0,
                         "vehicle_type_id": "2"
+                    },
+                    {
+                        "count": 0,
+                        "vehicle_type_id": "7"
                     }
                 ]
             },
@@ -3619,7 +3619,7 @@
                 "is_returning": true,
                 "is_valet_station": false,
                 "is_virtual_station": false,
-                "last_reported": 1790583232,
+                "last_reported": 1790583963,
                 "name": "Caen Place du Canada",
                 "num_bikes_available": 0,
                 "num_docks_available": 9,
@@ -3646,11 +3646,11 @@
                     },
                     {
                         "count": 0,
-                        "vehicle_type_id": "7"
+                        "vehicle_type_id": "1"
                     },
                     {
                         "count": 0,
-                        "vehicle_type_id": "1"
+                        "vehicle_type_id": "7"
                     },
                     {
                         "count": 0,
@@ -3676,7 +3676,7 @@
                 "is_returning": true,
                 "is_valet_station": false,
                 "is_virtual_station": false,
-                "last_reported": 1790583232,
+                "last_reported": 1790583963,
                 "name": "Caen Demi-Lune",
                 "num_bikes_available": 0,
                 "num_docks_available": 9,
@@ -3699,19 +3699,19 @@
                 "vehicle_types_available": [
                     {
                         "count": 0,
-                        "vehicle_type_id": "1"
-                    },
-                    {
-                        "count": 0,
-                        "vehicle_type_id": "2"
-                    },
-                    {
-                        "count": 0,
                         "vehicle_type_id": "4"
                     },
                     {
                         "count": 0,
                         "vehicle_type_id": "7"
+                    },
+                    {
+                        "count": 0,
+                        "vehicle_type_id": "1"
+                    },
+                    {
+                        "count": 0,
+                        "vehicle_type_id": "2"
                     }
                 ]
             },
@@ -3733,30 +3733,30 @@
                 "is_returning": true,
                 "is_valet_station": false,
                 "is_virtual_station": false,
-                "last_reported": 1790583232,
+                "last_reported": 1790583963,
                 "name": "Lion-sur-Mer Plage",
                 "num_bikes_available": 0,
-                "num_docks_available": 9,
+                "num_docks_available": 10,
                 "rental_uris": {
                     "android": "-%!(EXTRA string=st_d5n49dkm0t7c73ft4hig)",
                     "ios": "-%!(EXTRA string=st_d5n49dkm0t7c73ft4hig)"
                 },
                 "station_id": "st_d5n49dkm0t7c73ft4hig",
                 "vehicle_type_capacity": {
-                    "1": 8,
+                    "1": 10,
                     "10": 0,
                     "14": 0,
                     "15": 0,
-                    "2": 8,
-                    "4": 8,
+                    "2": 10,
+                    "4": 10,
                     "5": 0,
                     "6": 0,
-                    "7": 8
+                    "7": 10
                 },
                 "vehicle_types_available": [
                     {
                         "count": 0,
-                        "vehicle_type_id": "7"
+                        "vehicle_type_id": "2"
                     },
                     {
                         "count": 0,
@@ -3764,7 +3764,7 @@
                     },
                     {
                         "count": 0,
-                        "vehicle_type_id": "2"
+                        "vehicle_type_id": "7"
                     },
                     {
                         "count": 0,
@@ -3790,10 +3790,10 @@
                 "is_returning": true,
                 "is_valet_station": false,
                 "is_virtual_station": false,
-                "last_reported": 1790583232,
+                "last_reported": 1790583963,
                 "name": "Fleury-sur-Orne Hauts de l'Orne",
                 "num_bikes_available": 0,
-                "num_docks_available": 4,
+                "num_docks_available": 5,
                 "rental_uris": {
                     "android": "-%!(EXTRA string=st_d5n49dkm0t7c73ft4hk0)",
                     "ios": "-%!(EXTRA string=st_d5n49dkm0t7c73ft4hk0)"
@@ -3813,10 +3813,6 @@
                 "vehicle_types_available": [
                     {
                         "count": 0,
-                        "vehicle_type_id": "2"
-                    },
-                    {
-                        "count": 0,
                         "vehicle_type_id": "1"
                     },
                     {
@@ -3826,6 +3822,10 @@
                     {
                         "count": 0,
                         "vehicle_type_id": "7"
+                    },
+                    {
+                        "count": 0,
+                        "vehicle_type_id": "2"
                     }
                 ]
             },
@@ -3847,10 +3847,10 @@
                 "is_returning": true,
                 "is_valet_station": false,
                 "is_virtual_station": false,
-                "last_reported": 1790583232,
+                "last_reported": 1790583963,
                 "name": "Colleville Plage",
                 "num_bikes_available": 2,
-                "num_docks_available": 3,
+                "num_docks_available": 2,
                 "rental_uris": {
                     "android": "-%!(EXTRA string=st_d5n49dlt8lms738msltg)",
                     "ios": "-%!(EXTRA string=st_d5n49dlt8lms738msltg)"
@@ -3869,10 +3869,6 @@
                 },
                 "vehicle_types_available": [
                     {
-                        "count": 2,
-                        "vehicle_type_id": "4"
-                    },
-                    {
                         "count": 0,
                         "vehicle_type_id": "2"
                     },
@@ -3883,6 +3879,10 @@
                     {
                         "count": 0,
                         "vehicle_type_id": "1"
+                    },
+                    {
+                        "count": 2,
+                        "vehicle_type_id": "4"
                     }
                 ]
             },
@@ -3904,7 +3904,7 @@
                 "is_returning": true,
                 "is_valet_station": false,
                 "is_virtual_station": false,
-                "last_reported": 1790583232,
+                "last_reported": 1790583963,
                 "name": "Caen Saint-Jean \u00c9glise",
                 "num_bikes_available": 0,
                 "num_docks_available": 10,
@@ -3927,19 +3927,19 @@
                 "vehicle_types_available": [
                     {
                         "count": 0,
-                        "vehicle_type_id": "1"
-                    },
-                    {
-                        "count": 0,
-                        "vehicle_type_id": "7"
-                    },
-                    {
-                        "count": 0,
                         "vehicle_type_id": "4"
                     },
                     {
                         "count": 0,
                         "vehicle_type_id": "2"
+                    },
+                    {
+                        "count": 0,
+                        "vehicle_type_id": "1"
+                    },
+                    {
+                        "count": 0,
+                        "vehicle_type_id": "7"
                     }
                 ]
             },
@@ -3961,7 +3961,7 @@
                 "is_returning": true,
                 "is_valet_station": false,
                 "is_virtual_station": false,
-                "last_reported": 1790583232,
+                "last_reported": 1790583963,
                 "name": "\u00c9pron Or\u00e9e du Golf",
                 "num_bikes_available": 0,
                 "num_docks_available": 10,
@@ -3984,19 +3984,19 @@
                 "vehicle_types_available": [
                     {
                         "count": 0,
-                        "vehicle_type_id": "7"
-                    },
-                    {
-                        "count": 0,
-                        "vehicle_type_id": "1"
-                    },
-                    {
-                        "count": 0,
                         "vehicle_type_id": "4"
                     },
                     {
                         "count": 0,
                         "vehicle_type_id": "2"
+                    },
+                    {
+                        "count": 0,
+                        "vehicle_type_id": "7"
+                    },
+                    {
+                        "count": 0,
+                        "vehicle_type_id": "1"
                     }
                 ]
             },
@@ -4018,7 +4018,7 @@
                 "is_returning": true,
                 "is_valet_station": false,
                 "is_virtual_station": false,
-                "last_reported": 1790583232,
+                "last_reported": 1790583963,
                 "name": "Caen Saint-Gabriel",
                 "num_bikes_available": 0,
                 "num_docks_available": 10,
@@ -4041,19 +4041,19 @@
                 "vehicle_types_available": [
                     {
                         "count": 0,
-                        "vehicle_type_id": "4"
-                    },
-                    {
-                        "count": 0,
-                        "vehicle_type_id": "7"
-                    },
-                    {
-                        "count": 0,
                         "vehicle_type_id": "1"
                     },
                     {
                         "count": 0,
+                        "vehicle_type_id": "4"
+                    },
+                    {
+                        "count": 0,
                         "vehicle_type_id": "2"
+                    },
+                    {
+                        "count": 0,
+                        "vehicle_type_id": "7"
                     }
                 ]
             },
@@ -4075,7 +4075,7 @@
                 "is_returning": true,
                 "is_valet_station": false,
                 "is_virtual_station": false,
-                "last_reported": 1790583232,
+                "last_reported": 1790583963,
                 "name": "H\u00e9rouville Ch\u00e2teau d'Eau",
                 "num_bikes_available": 0,
                 "num_docks_available": 20,
@@ -4098,10 +4098,6 @@
                 "vehicle_types_available": [
                     {
                         "count": 0,
-                        "vehicle_type_id": "1"
-                    },
-                    {
-                        "count": 0,
                         "vehicle_type_id": "4"
                     },
                     {
@@ -4111,6 +4107,10 @@
                     {
                         "count": 0,
                         "vehicle_type_id": "7"
+                    },
+                    {
+                        "count": 0,
+                        "vehicle_type_id": "1"
                     }
                 ]
             },
@@ -4132,7 +4132,7 @@
                 "is_returning": true,
                 "is_valet_station": false,
                 "is_virtual_station": false,
-                "last_reported": 1790583232,
+                "last_reported": 1790583963,
                 "name": "Saint-Contest La Folie",
                 "num_bikes_available": 0,
                 "num_docks_available": 6,
@@ -4189,7 +4189,7 @@
                 "is_returning": true,
                 "is_valet_station": false,
                 "is_virtual_station": false,
-                "last_reported": 1790583232,
+                "last_reported": 1790583963,
                 "name": "Caen Aviation",
                 "num_bikes_available": 2,
                 "num_docks_available": 8,
@@ -4246,7 +4246,7 @@
                 "is_returning": true,
                 "is_valet_station": false,
                 "is_virtual_station": false,
-                "last_reported": 1790583232,
+                "last_reported": 1790583963,
                 "name": "Louvigny Long Cours",
                 "num_bikes_available": 1,
                 "num_docks_available": 9,
@@ -4268,6 +4268,10 @@
                 },
                 "vehicle_types_available": [
                     {
+                        "count": 0,
+                        "vehicle_type_id": "7"
+                    },
+                    {
                         "count": 1,
                         "vehicle_type_id": "4"
                     },
@@ -4278,10 +4282,6 @@
                     {
                         "count": 0,
                         "vehicle_type_id": "1"
-                    },
-                    {
-                        "count": 0,
-                        "vehicle_type_id": "7"
                     }
                 ]
             },
@@ -4303,25 +4303,25 @@
                 "is_returning": true,
                 "is_valet_station": false,
                 "is_virtual_station": false,
-                "last_reported": 1790583232,
+                "last_reported": 1790583963,
                 "name": "Caen Place du 36\u00e8me",
-                "num_bikes_available": 0,
-                "num_docks_available": 9,
+                "num_bikes_available": 2,
+                "num_docks_available": 7,
                 "rental_uris": {
                     "android": "-%!(EXTRA string=st_d5n49edt8lms738msm50)",
                     "ios": "-%!(EXTRA string=st_d5n49edt8lms738msm50)"
                 },
                 "station_id": "st_d5n49edt8lms738msm50",
                 "vehicle_type_capacity": {
-                    "1": 9,
+                    "1": 7,
                     "10": 0,
                     "14": 0,
                     "15": 0,
-                    "2": 9,
-                    "4": 9,
+                    "2": 7,
+                    "4": 7,
                     "5": 0,
                     "6": 0,
-                    "7": 9
+                    "7": 7
                 },
                 "vehicle_types_available": [
                     {
@@ -4330,15 +4330,15 @@
                     },
                     {
                         "count": 0,
+                        "vehicle_type_id": "2"
+                    },
+                    {
+                        "count": 0,
                         "vehicle_type_id": "1"
                     },
                     {
-                        "count": 0,
+                        "count": 2,
                         "vehicle_type_id": "4"
-                    },
-                    {
-                        "count": 0,
-                        "vehicle_type_id": "2"
                     }
                 ]
             },
@@ -4347,12 +4347,12 @@
     ],
     "gbfs": {
         "station_information": {
-            "last_updated": 1790583202,
+            "last_updated": 1790583933,
             "ttl": 60,
             "version": "2.2"
         },
         "station_status": {
-            "last_updated": 1790583232,
+            "last_updated": 1790583963,
             "ttl": 60,
             "version": "2.2"
         }
