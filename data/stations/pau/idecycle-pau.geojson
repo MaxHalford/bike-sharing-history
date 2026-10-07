@@ -10,23 +10,23 @@
             },
             "properties": {
                 "capacity": 10,
-                "is_charging_station": false,
+                "is_charging_station": true,
                 "is_installed": true,
-                "is_renting": false,
-                "is_returning": false,
+                "is_renting": true,
+                "is_returning": true,
                 "is_valet_station": false,
-                "is_virtual_station": true,
-                "last_reported": 1791375242,
+                "is_virtual_station": false,
+                "last_reported": 1791375998,
                 "name": "Parc des Expositions",
                 "num_bikes_available": 0,
-                "num_docks_available": 0,
+                "num_docks_available": 10,
                 "rental_uris": {
                     "android": "%!(EXTRA string=st_d3d596mmbtds73b4hmr0)",
                     "ios": "%!(EXTRA string=st_d3d596mmbtds73b4hmr0)"
                 },
                 "station_id": "st_d3d596mmbtds73b4hmr0",
                 "vehicle_type_capacity": {
-                    "1": 0
+                    "1": 10
                 },
                 "vehicle_types_available": [
                     {
@@ -53,7 +53,7 @@
                 "is_returning": false,
                 "is_valet_station": false,
                 "is_virtual_station": true,
-                "last_reported": 1791375242,
+                "last_reported": 1791375998,
                 "name": "Lacao\u00fc",
                 "num_bikes_available": 0,
                 "num_docks_available": 0,
@@ -90,7 +90,7 @@
                 "is_returning": false,
                 "is_valet_station": false,
                 "is_virtual_station": true,
-                "last_reported": 1791375242,
+                "last_reported": 1791375998,
                 "name": "Mairie de Bill\u00e8re",
                 "num_bikes_available": 0,
                 "num_docks_available": 0,
@@ -127,7 +127,7 @@
                 "is_returning": false,
                 "is_valet_station": false,
                 "is_virtual_station": true,
-                "last_reported": 1791375242,
+                "last_reported": 1791375998,
                 "name": "Montgolfier",
                 "num_bikes_available": 0,
                 "num_docks_available": 0,
@@ -164,7 +164,7 @@
                 "is_returning": false,
                 "is_valet_station": false,
                 "is_virtual_station": true,
-                "last_reported": 1791375242,
+                "last_reported": 1791375998,
                 "name": "Lescar Soleil",
                 "num_bikes_available": 0,
                 "num_docks_available": 0,
@@ -201,7 +201,7 @@
                 "is_returning": false,
                 "is_valet_station": false,
                 "is_virtual_station": true,
-                "last_reported": 1791375242,
+                "last_reported": 1791375998,
                 "name": "Mairie de Juran\u00e7on",
                 "num_bikes_available": 0,
                 "num_docks_available": 0,
@@ -238,7 +238,7 @@
                 "is_returning": false,
                 "is_valet_station": false,
                 "is_virtual_station": true,
-                "last_reported": 1791375242,
+                "last_reported": 1791375998,
                 "name": "Guynemer",
                 "num_bikes_available": 0,
                 "num_docks_available": 0,
@@ -258,16 +258,127 @@
                 ]
             },
             "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -0.37087,
+                    43.28487
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "capacity": 10,
+                "is_charging_station": true,
+                "is_installed": true,
+                "is_renting": true,
+                "is_returning": true,
+                "is_valet_station": false,
+                "is_virtual_station": false,
+                "last_reported": 1791375998,
+                "name": "Gelos - Mairie",
+                "num_bikes_available": 0,
+                "num_docks_available": 10,
+                "rental_uris": {
+                    "android": "%!(EXTRA string=st_d3d5986mbtds73b4hoe0)",
+                    "ios": "%!(EXTRA string=st_d3d5986mbtds73b4hoe0)"
+                },
+                "station_id": "st_d3d5986mbtds73b4hoe0",
+                "vehicle_type_capacity": {
+                    "1": 10
+                },
+                "vehicle_types_available": [
+                    {
+                        "count": 0,
+                        "vehicle_type_id": "1"
+                    }
+                ]
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -0.37483,
+                    43.28429
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "capacity": 10,
+                "is_charging_station": true,
+                "is_installed": true,
+                "is_renting": true,
+                "is_returning": true,
+                "is_valet_station": false,
+                "is_virtual_station": false,
+                "last_reported": 1791375998,
+                "name": "Val Riant",
+                "num_bikes_available": 0,
+                "num_docks_available": 10,
+                "rental_uris": {
+                    "android": "%!(EXTRA string=st_d3d5986mbtds73b4hogg)",
+                    "ios": "%!(EXTRA string=st_d3d5986mbtds73b4hogg)"
+                },
+                "station_id": "st_d3d5986mbtds73b4hogg",
+                "vehicle_type_capacity": {
+                    "1": 10
+                },
+                "vehicle_types_available": [
+                    {
+                        "count": 0,
+                        "vehicle_type_id": "1"
+                    }
+                ]
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -0.35594,
+                    43.2801
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "capacity": 10,
+                "is_charging_station": true,
+                "is_installed": true,
+                "is_renting": true,
+                "is_returning": true,
+                "is_valet_station": false,
+                "is_virtual_station": false,
+                "last_reported": 1791375998,
+                "name": "Lezons",
+                "num_bikes_available": 0,
+                "num_docks_available": 10,
+                "rental_uris": {
+                    "android": "%!(EXTRA string=st_d3d5986mbtds73b4hoi0)",
+                    "ios": "%!(EXTRA string=st_d3d5986mbtds73b4hoi0)"
+                },
+                "station_id": "st_d3d5986mbtds73b4hoi0",
+                "vehicle_type_capacity": {
+                    "1": 10
+                },
+                "vehicle_types_available": [
+                    {
+                        "count": 0,
+                        "vehicle_type_id": "1"
+                    }
+                ]
+            },
+            "type": "Feature"
         }
     ],
     "gbfs": {
         "station_information": {
-            "last_updated": 1791375220,
+            "last_updated": 1791375998,
             "ttl": 60,
             "version": "2.2"
         },
         "station_status": {
-            "last_updated": 1791375242,
+            "last_updated": 1791375998,
             "ttl": 60,
             "version": "2.2"
         }
