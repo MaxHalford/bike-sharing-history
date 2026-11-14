@@ -8,7 +8,7 @@ ROOT = pathlib.Path(__file__).parents[1]
 sys.path.insert(0, str(ROOT / "scrape"))
 
 import systems as systems_module
-from systems import gbfs_scrape, systems
+from systems import citybikes_scrape, gbfs_scrape, systems, youbike_scrape
 
 
 class Response:
@@ -23,6 +23,87 @@ class Response:
 
 
 class SystemsTest(unittest.TestCase):
+    def test_citybikes_scrape_converts_stations_to_geojson(self) -> None:
+        body = {
+            "network": {
+                "stations": [
+                    {
+                        "id": "2",
+                        "name": "Two",
+                        "latitude": 2.2,
+                        "longitude": 3.2,
+                        "free_bikes": 4,
+                        "empty_slots": 5,
+                    },
+                    {
+                        "id": "1",
+                        "name": "One",
+                        "latitude": 2.1,
+                        "longitude": 3.1,
+                        "free_bikes": 6,
+                        "empty_slots": 7,
+                    },
+                ]
+            }
+        }
+
+        with (
+            mock.patch.object(systems_module.utils, "env", {}),
+            mock.patch.object(
+                systems_module.requests, "get", return_value=Response(body)
+            ) as get,
+        ):
+            result = citybikes_scrape("example")
+
+        self.assertEqual(
+            [feature["properties"]["id"] for feature in result["features"]],
+            ["1", "2"],
+        )
+        self.assertEqual(result["features"][0]["geometry"]["coordinates"], [3.1, 2.1])
+        get.assert_called_once_with(
+            "https://api.citybik.es/v2/networks/example",
+            params={"fields": "stations"},
+            headers={},
+            timeout=20,
+        )
+
+    def test_youbike_scrape_splits_the_shared_feed_by_area(self) -> None:
+        stations = [
+            {
+                "area_code": "00",
+                "station_no": "2",
+                "name_en": "Two",
+                "lat": "25.2",
+                "lng": "121.2",
+            },
+            {
+                "area_code": "00",
+                "station_no": "1",
+                "name_en": "One",
+                "lat": "25.1",
+                "lng": "121.1",
+            },
+            {
+                "area_code": "01",
+                "station_no": "3",
+                "name_en": "Other city",
+                "lat": "24.1",
+                "lng": "120.1",
+            },
+        ]
+
+        with mock.patch.object(systems_module, "_youbike_stations", stations):
+            result = youbike_scrape("00")
+
+        self.assertEqual(len(result["features"]), 2)
+        self.assertEqual(
+            [feature["properties"]["station_no"] for feature in result["features"]],
+            ["1", "2"],
+        )
+        self.assertEqual(
+            result["features"][0]["geometry"]["coordinates"], [121.1, 25.1]
+        )
+
     def test_gbfs_scrape_keeps_information_without_a_matching_status(self) -> None:
         information = {
             "last_updated": 1,
@@ -47,21 +128,13 @@ class SystemsTest(unittest.TestCase):
 
         self.assertEqual(len(result["features"]), 2)
         self.assertEqual(result["features"][1]["properties"]["name"], "Two")
-        self.assertNotIn(
-            "num_bikes_available", result["features"][1]["properties"]
-        )
+        self.assertNotIn("num_bikes_available", result["features"][1]["properties"])
 
     def test_registry_contains_the_new_gbfs_systems(self) -> None:
-        self.assertEqual(len(systems), 269)
+        self.assertEqual(len(systems), 387)
         self.assertEqual(
-            len(
-                {
-                    system.gbfs_system_id
-                    for system in systems
-                    if system.gbfs_system_id
-                }
-            ),
-            269,
+            len({system.gbfs_system_id for system in systems if system.gbfs_system_id}),
+            331,
         )
         self.assertTrue(
             {
@@ -126,19 +199,30 @@ class SystemsTest(unittest.TestCase):
         active_ids = {system.gbfs_system_id for system in systems}
 
         self.assertTrue(
-            systems_module._EXCLUDED_GBFS_SYSTEM_IDS.keys().isdisjoint(
-                active_ids
-            )
+            systems_module._EXCLUDED_GBFS_SYSTEM_IDS.keys().isdisjoint(active_ids)
         )
         self.assertTrue(
-            systems_module._DEFERRED_NATIONAL_GBFS_SYSTEM_IDS.isdisjoint(
-                active_ids
-            )
+            systems_module._DEFERRED_NATIONAL_GBFS_SYSTEM_IDS.isdisjoint(active_ids)
+        )
+        self.assertFalse(
+            [
+                system
+                for system in systems
+                if system.provider.lower() in {"beryl", "lime"}
+            ]
         )
 
-    def test_only_non_gbfs_systems_have_no_catalog_id(self) -> None:
-        self.assertFalse(
-            [system for system in systems if system.gbfs_system_id is None]
+    def test_every_system_has_a_unique_source_id(self) -> None:
+        self.assertEqual(
+            len({system.source_id for system in systems}),
+            len(systems),
+        )
+        self.assertTrue(
+            all(
+                system.source_id.startswith(("citybikes:", "youbike:"))
+                for system in systems
+                if system.gbfs_system_id is None
+            )
         )
 
     def test_inactive_jcdecaux_systems_are_replaced_or_removed(self) -> None:

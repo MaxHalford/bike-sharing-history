@@ -75,11 +75,10 @@ def main(
             result, exc = future.result()
             result["provider"] = system.provider
             result["provider_slug"] = utils.slugify(system.provider)
+            result["source_id"] = system.source_id
             result["gbfs_system_id"] = system.gbfs_system_id
             results_by_city.setdefault(utils.slugify(system.city), []).append(result)
-            if exc is None:
-                logger.info(f"✅ {system.provider} @ {system.city}")
-            else:
+            if exc is not None:
                 logger.error(
                     f"❌ {system.provider} @ {system.city} {type(exc).__name__}"
                 )
@@ -104,6 +103,11 @@ def main(
                     sort_keys=True,
                     indent=4,
                 )
+        logger.info(
+            "Station scrape finished: %s succeeded, %s failed",
+            len(selected_systems) - n_exceptions,
+            n_exceptions,
+        )
         if n_exceptions > 5:
             logger.error(
                 f"🚨 {n_exceptions:,d} exceptions out of {len(selected_systems):,d}"

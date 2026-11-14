@@ -22,7 +22,6 @@ import scrape_weather
 import utils
 from systems import systems
 
-
 # Keep each push transaction comfortably below hosted-git ref limits. A
 # wildcard refspec fetches the complete city namespace in one operation.
 PUSH_BATCH_SIZE = 50
@@ -175,11 +174,7 @@ def prepare_city(
         ).returncode
         == 0
     )
-    base = (
-        remote_branch
-        if remote_branch_exists
-        else "HEAD"
-    )
+    base = remote_branch if remote_branch_exists else "HEAD"
     run(
         "git",
         "worktree",
@@ -255,9 +250,7 @@ def push_city_updates(
     ]
     failures = []
     for batch_number, batch in enumerate(batches, start=1):
-        refspecs = [
-            f"{commit}:refs/heads/city/{city}" for city, commit in batch
-        ]
+        refspecs = [f"{commit}:refs/heads/city/{city}" for city, commit in batch]
         for attempt in range(1, attempts + 1):
             result = run(
                 "git",
@@ -332,6 +325,7 @@ def main() -> int:
 
     failures = []
     updates = {}
+    unchanged = 0
     with tempfile.TemporaryDirectory(prefix="bike-sharing-scrape-") as temporary:
         temporary_root = pathlib.Path(temporary)
         scraped_root = temporary_root / "scraped"
@@ -350,20 +344,23 @@ def main() -> int:
                 )
                 if commit:
                     updates[city] = commit
-                    print(f"{city}: prepared")
                 else:
-                    print(f"{city}: unchanged")
+                    unchanged += 1
             except Exception as exc:  # noqa: BLE001 - continue publishing other cities
                 failures.append(city)
                 print(f"{city}: failed ({type(exc).__name__}: {exc})")
+
+    print(
+        f"City preparation finished: {len(updates)} updates, "
+        f"{unchanged} unchanged, {len(failures)} failed"
+    )
 
     if failures:
         print(f"Failed cities: {', '.join(failures)}")
         return 1
     if updates:
         push_city_updates(repo, args.remote, updates)
-        for city in updates:
-            print(f"{city}: pushed")
+        print(f"Pushed {len(updates)} city branches")
     return 0
 
 
