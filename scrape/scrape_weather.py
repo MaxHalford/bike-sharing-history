@@ -92,9 +92,7 @@ def main(
             result, exc = future.result()
             result_city_slug = utils.slugify(city)
             results_by_city[result_city_slug] = result
-            if exc is None:
-                logger.info(f"✅ {city}")
-            else:
+            if exc is not None:
                 logger.error(f"❌ {city} {type(exc).__name__}")
                 n_exceptions += 1
 
@@ -115,6 +113,11 @@ def main(
                     sort_keys=True,
                     indent=4,
                 )
+        logger.info(
+            "Weather scrape finished: %s succeeded, %s failed",
+            len(selected_cities) - n_exceptions,
+            n_exceptions,
+        )
         if n_exceptions > 5:
             logger.error(
                 f"🚨 {n_exceptions:,d} exceptions out of {len(selected_cities):,d}"
