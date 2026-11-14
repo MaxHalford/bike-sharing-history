@@ -3087,6 +3087,36 @@ _EXCLUDED_GBFS_SYSTEM_IDS = {
     "sobi_hamilton": "Allows returns away from hubs.",
 }
 
+# These discovery endpoints returned HTTP 404 on 2026-11-14. The current GBFS
+# catalog does not provide replacement feeds. Recheck seasonal systems before
+# their next operating season instead of producing an error every 12 minutes.
+_INACTIVE_GBFS_SYSTEM_IDS = {
+    "nextbike_ap",
+    "nextbike_bp",
+    "nextbike_cu",
+    "nextbike_kr",
+    "nextbike_oa",
+    "nextbike_oe",
+    "nextbike_or",
+    "nextbike_os",
+    "nextbike_pj",
+    "nextbike_tn",
+    "nextbike_ud",
+    "nextbike_uf",
+    "nextbike_uk",
+    "nextbike_uu",
+    "nextbike_vr",
+    "nextbike_wf",
+    "nextbike_xa",
+    "nextbike_zy",
+}
+_EXCLUDED_GBFS_SYSTEM_IDS.update(
+    {
+        system_id: "The GBFS discovery endpoint returns HTTP 404."
+        for system_id in _INACTIVE_GBFS_SYSTEM_IDS
+    }
+)
+
 # These country-wide feeds cannot be represented as one city in the current
 # archive layout. Tokyo's separate Docomo feed remains active in the registry.
 _DEFERRED_NATIONAL_GBFS_SYSTEM_IDS = {
@@ -3475,6 +3505,12 @@ systems.extend(
     )
     for provider, city, country, latitude, longitude, network_id in _CITYBIKES_SYSTEMS
 )
+
+systems[:] = [
+    system
+    for system in systems
+    if system.gbfs_system_id not in _EXCLUDED_GBFS_SYSTEM_IDS
+]
 
 for system in systems:
     if system.source_id is None:
