@@ -131,10 +131,10 @@ class SystemsTest(unittest.TestCase):
         self.assertNotIn("num_bikes_available", result["features"][1]["properties"])
 
     def test_registry_contains_the_new_gbfs_systems(self) -> None:
-        self.assertEqual(len(systems), 387)
+        self.assertEqual(len(systems), 369)
         self.assertEqual(
             len({system.gbfs_system_id for system in systems if system.gbfs_system_id}),
-            331,
+            313,
         )
         self.assertTrue(
             {
