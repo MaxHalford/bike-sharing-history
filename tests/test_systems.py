@@ -51,7 +51,7 @@ class SystemsTest(unittest.TestCase):
         )
 
     def test_registry_contains_the_new_gbfs_systems(self) -> None:
-        self.assertEqual(len(systems), 224)
+        self.assertEqual(len(systems), 222)
         self.assertEqual(
             len(
                 {
@@ -63,19 +63,30 @@ class SystemsTest(unittest.TestCase):
             222,
         )
         self.assertTrue(
-            {"biketobike", "citybikes_helsinki", "nextbike_zz"}
+            {
+                "biketobike",
+                "citybikes_helsinki",
+                "levelo_inurba_marseille",
+                "nextbike_af",
+                "nextbike_ek",
+                "nextbike_zz",
+            }
             <= {system.gbfs_system_id for system in systems}
         )
 
     def test_only_non_gbfs_systems_have_no_catalog_id(self) -> None:
-        self.assertEqual(
-            {
-                (system.provider, system.city)
-                for system in systems
-                if system.gbfs_system_id is None
-            },
-            {("JCDecaux", "Créteil"), ("JCDecaux", "Santander")},
+        self.assertFalse(
+            [system for system in systems if system.gbfs_system_id is None]
         )
+
+    def test_inactive_jcdecaux_systems_are_replaced_or_removed(self) -> None:
+        providers = {(system.city, system.provider) for system in systems}
+
+        self.assertIn(("Marseille", "levélo"), providers)
+        self.assertIn(("Mulhouse", "VéloCité Mulhouse"), providers)
+        self.assertIn(("Santander", "TUeBICI"), providers)
+        self.assertNotIn(("Cergy-Pontoise", "JCDecaux"), providers)
+        self.assertNotIn(("Créteil", "JCDecaux"), providers)
 
     def test_system_coordinates_are_valid(self) -> None:
         for system in systems:

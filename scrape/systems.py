@@ -78,25 +78,10 @@ systems.extend(
             city="Namur", country="🇧🇪", latitude=50.466667, longitude=4.866667
         ),
         jcdecaux_city(
-            city="Santander", country="🇪🇸", latitude=43.462306, longitude=-3.809980
-        ),
-        jcdecaux_city(
             city="Amiens", country="🇫🇷", latitude=49.894171, longitude=2.295695
         ),
         jcdecaux_city(
-            city="Cergy-Pontoise", country="🇫🇷", latitude=49.036890, longitude=2.075053
-        ),
-        jcdecaux_city(
-            city="Créteil", country="🇫🇷", latitude=48.783333, longitude=2.466667
-        ),
-        jcdecaux_city(
             city="Lyon", country="🇫🇷", latitude=45.764043, longitude=4.835659
-        ),
-        jcdecaux_city(
-            city="Marseille", country="🇫🇷", latitude=43.296482, longitude=5.369780
-        ),
-        jcdecaux_city(
-            city="Mulhouse", country="🇫🇷", latitude=47.750839, longitude=7.335888
         ),
         jcdecaux_city(
             city="Nancy", country="🇫🇷", latitude=48.692054, longitude=6.184417
@@ -809,13 +794,8 @@ systems.extend(
 _EXISTING_GBFS_SYSTEM_IDS = {
     ('JCDecaux', 'Brussels'): 'bruxelles',
     ('JCDecaux', 'Namur'): 'namur',
-    ('JCDecaux', 'Santander'): None,
     ('JCDecaux', 'Amiens'): 'amiens',
-    ('JCDecaux', 'Cergy-Pontoise'): 'cergy',
-    ('JCDecaux', 'Créteil'): None,
     ('JCDecaux', 'Lyon'): 'lyon',
-    ('JCDecaux', 'Marseille'): 'levelo_inurba_marseille',
-    ('JCDecaux', 'Mulhouse'): 'mulhouse',
     ('JCDecaux', 'Nancy'): 'nancy',
     ('JCDecaux', 'Nantes'): 'nantes',
     ('JCDecaux', 'Toulouse'): 'toulouse',
@@ -1400,6 +1380,12 @@ _ADDITIONAL_GBFS_SYSTEMS = [
         'https://gbfs.ganxeta.cat/v3/station_status.json',
     ),
     (
+        'TUeBICI', 'Santander', '🇪🇸',
+        43.462306, -3.809980, 'nextbike_ek',
+        'https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_ek/en/station_information.json',
+        'https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_ek/en/station_status.json',
+    ),
+    (
         'City Bikes Helsinki', 'Helsinki', '🇫🇮',
         60.166620, 24.943541, 'citybikes_helsinki',
         'https://gbfs.theta.fifteen.eu/gbfs/2.2/helsinki/en/station_information.json',
@@ -1500,6 +1486,18 @@ _ADDITIONAL_GBFS_SYSTEMS = [
         45.936125, 6.630255, 'montenvelo_mont_blanc',
         'https://gbfs.partners.fifteen.eu/gbfs/2.2/mont_blanc/en/station_information.json',
         'https://gbfs.partners.fifteen.eu/gbfs/2.2/mont_blanc/en/station_status.json',
+    ),
+    (
+        'levélo', 'Marseille', '🇫🇷',
+        43.296482, 5.369780, 'levelo_inurba_marseille',
+        'https://gbfs.omega.fifteen.eu/gbfs/2.2/marseille/en/station_information.json',
+        'https://gbfs.omega.fifteen.eu/gbfs/2.2/marseille/en/station_status.json',
+    ),
+    (
+        'VéloCité Mulhouse', 'Mulhouse', '🇫🇷',
+        47.750839, 7.335888, 'nextbike_af',
+        'https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_af/en/station_information.json',
+        'https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_af/en/station_status.json',
     ),
     (
         'IDEcycle (Pau)', 'PAU', '🇫🇷',
