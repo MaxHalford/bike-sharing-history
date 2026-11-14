@@ -1,3 +1,4 @@
+import math
 import pathlib
 import sys
 import unittest
@@ -51,7 +52,7 @@ class SystemsTest(unittest.TestCase):
         )
 
     def test_registry_contains_the_new_gbfs_systems(self) -> None:
-        self.assertEqual(len(systems), 222)
+        self.assertEqual(len(systems), 269)
         self.assertEqual(
             len(
                 {
@@ -60,18 +61,79 @@ class SystemsTest(unittest.TestCase):
                     if system.gbfs_system_id
                 }
             ),
-            222,
+            269,
         )
         self.assertTrue(
             {
+                "Optymo_FR_Belfort",
                 "biketobike",
+                "bcycle_aventura",
+                "bcycle_bentonville",
+                "bcycle_bikelnk",
+                "bcycle_cincyredbike",
+                "bcycle_desmoines",
+                "bcycle_elpaso",
+                "bcycle_greenbikeslc",
+                "bcycle_greenville",
+                "bcycle_heartland",
+                "bcycle_jacksoncounty",
+                "bcycle_lametro",
+                "bcycle_madison",
+                "bcycle_memphis",
+                "bcycle_nashville",
+                "bcycle_pacersbikeshare",
+                "bcycle_redding",
+                "bcycle_rtcbikeshare",
+                "bcycle_sanantonio",
+                "bcycle_santabarbara",
                 "citybikes_helsinki",
                 "levelo_inurba_marseille",
+                "mp_ARBRESLE",
+                "mp_COQUELICOT",
+                "mp_GEVAUDAN",
+                "mp_Opale",
+                "mp_TARARE",
+                "mugibike_vitoria",
                 "nextbike_af",
+                "nextbike_bj",
+                "nextbike_bs",
+                "nextbike_bv",
+                "nextbike_bz",
+                "nextbike_ce",
+                "nextbike_cf",
+                "nextbike_cn",
+                "nextbike_cx",
                 "nextbike_ek",
+                "nextbike_gu",
+                "nextbike_gv",
+                "nextbike_gy",
+                "nextbike_ls",
+                "nextbike_pn",
+                "nextbike_st",
+                "nextbike_tx",
+                "nextbike_um",
+                "nextbike_xc",
                 "nextbike_zz",
+                "trondheimbysykkel",
+                "velivert_saint_etienne",
+                "velo-tbm-bordeaux",
+                "vivelo",
             }
             <= {system.gbfs_system_id for system in systems}
+        )
+
+    def test_rejected_and_national_feeds_are_not_registered(self) -> None:
+        active_ids = {system.gbfs_system_id for system in systems}
+
+        self.assertTrue(
+            systems_module._EXCLUDED_GBFS_SYSTEM_IDS.keys().isdisjoint(
+                active_ids
+            )
+        )
+        self.assertTrue(
+            systems_module._DEFERRED_NATIONAL_GBFS_SYSTEM_IDS.isdisjoint(
+                active_ids
+            )
         )
 
     def test_only_non_gbfs_systems_have_no_catalog_id(self) -> None:
@@ -90,6 +152,8 @@ class SystemsTest(unittest.TestCase):
 
     def test_system_coordinates_are_valid(self) -> None:
         for system in systems:
+            self.assertTrue(math.isfinite(system.latitude), system)
+            self.assertTrue(math.isfinite(system.longitude), system)
             self.assertLessEqual(abs(system.latitude), 90, system)
             self.assertLessEqual(abs(system.longitude), 180, system)
 
