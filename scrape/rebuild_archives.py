@@ -33,6 +33,8 @@ def git_paths(repo: pathlib.Path, ref: str) -> list[str]:
             "git",
             "-C",
             str(repo),
+            "-c",
+            "core.quotePath=false",
             "log",
             ref,
             "--name-only",

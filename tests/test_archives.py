@@ -1,5 +1,7 @@
 import pathlib
+import subprocess
 import sys
+import tempfile
 import unittest
 from unittest import mock
 
@@ -11,6 +13,43 @@ import update_archive_summary
 
 
 class ArchivePathsTest(unittest.TestCase):
+    def test_git_paths_preserves_non_ascii_names(self) -> None:
+        with tempfile.TemporaryDirectory() as temporary:
+            repo = pathlib.Path(temporary) / "repo"
+            station = repo / "data/stations/mława/mławskie-rowery-miejskie.geojson"
+            weather = repo / "data/weather/mława.json"
+            station.parent.mkdir(parents=True)
+            weather.parent.mkdir(parents=True)
+            station.write_text("{}")
+            weather.write_text("{}")
+            subprocess.run(["git", "init", str(repo)], check=True, capture_output=True)
+            subprocess.run(["git", "add", "."], cwd=repo, check=True)
+            subprocess.run(
+                [
+                    "git",
+                    "-c",
+                    "user.name=Test",
+                    "-c",
+                    "user.email=test@example.com",
+                    "commit",
+                    "-m",
+                    "Add data",
+                ],
+                cwd=repo,
+                check=True,
+                capture_output=True,
+            )
+
+            paths = rebuild_archives.git_paths(repo, "HEAD")
+
+        self.assertEqual(
+            paths,
+            [
+                "data/stations/mława/mławskie-rowery-miejskie.geojson",
+                "data/weather/mława.json",
+            ],
+        )
+
     def test_station_and_weather_use_canonical_bucket_paths(self) -> None:
         self.assertEqual(
             rebuild_archives.object_name(

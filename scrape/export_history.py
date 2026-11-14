@@ -61,7 +61,7 @@ CANONICAL_WEATHER_COLUMNS = {
 def git(*args: str, repo: pathlib.Path) -> str:
     """Run Git in *repo* and return its standard output."""
     return subprocess.run(
-        ["git", "-C", str(repo), *args],
+        ["git", "-C", str(repo), "-c", "core.quotePath=false", *args],
         check=True,
         stdout=subprocess.PIPE,
         text=True,
