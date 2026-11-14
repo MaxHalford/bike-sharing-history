@@ -123,12 +123,35 @@ class SystemsTest(unittest.TestCase):
             systems_module.requests,
             "get",
             side_effect=[Response(information), Response(status)],
-        ):
+        ) as get:
             result = gbfs_scrape("information", "status")
 
         self.assertEqual(len(result["features"]), 2)
         self.assertEqual(result["features"][1]["properties"]["name"], "Two")
         self.assertNotIn("num_bikes_available", result["features"][1]["properties"])
+        self.assertEqual(get.call_args_list[0].kwargs["headers"], {})
+
+    def test_gbfs_scrape_identifies_requests_to_entur(self) -> None:
+        information = {"data": {"stations": []}}
+        status = {"data": {"stations": []}}
+
+        with mock.patch.object(
+            systems_module.requests,
+            "get",
+            side_effect=[Response(information), Response(status)],
+        ) as get:
+            gbfs_scrape(
+                "https://api.entur.io/information",
+                "https://api.entur.io/status",
+            )
+
+        self.assertTrue(
+            all(
+                call.kwargs["headers"]
+                == {"ET-Client-Name": "maxhalford-bike-sharing-history"}
+                for call in get.call_args_list
+            )
+        )
 
     def test_registry_contains_the_new_gbfs_systems(self) -> None:
         self.assertEqual(len(systems), 369)
