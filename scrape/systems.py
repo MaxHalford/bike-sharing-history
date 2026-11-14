@@ -1795,6 +1795,318 @@ _ADDITIONAL_GBFS_SYSTEMS = [
     ),
 ]
 
+# These docked systems were verified against their live GBFS feeds on
+# 2026-11-14. Coordinates are the median station positions from those feeds,
+# which gives the weather scraper a representative point for regional systems.
+_VERIFIED_DOCKED_GBFS_SYSTEMS = [
+    (
+        'BL bike', 'Banja Luka', '🇧🇦',
+        44.772429, 17.200019, 'nextbike_bj',
+        'https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_bj/sr/station_information.json',
+        'https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_bj/sr/station_status.json',
+    ),
+    (
+        'Zenica', 'Zenica', '🇧🇦',
+        44.201346, 17.911890, 'nextbike_bz',
+        'https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_bz/bs/station_information.json',
+        'https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_bz/bs/station_status.json',
+    ),
+    (
+        'nextbike Moravská Třebová', 'Moravská Třebová', '🇨🇿',
+        49.757700, 16.658900, 'nextbike_xc',
+        'https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_xc/cs/station_information.json',
+        'https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_xc/cs/station_status.json',
+    ),
+    (
+        'nextbike Rychnovsko', 'Rychnovsko', '🇨🇿',
+        50.165807, 16.280870, 'nextbike_tx',
+        'https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_tx/cs/station_information.json',
+        'https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_tx/cs/station_status.json',
+    ),
+    (
+        'MV-Rad', 'Mecklenburg-Vorpommern', '🇩🇪',
+        53.708900, 13.611745, 'nextbike_um',
+        'https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_um/de/station_information.json',
+        'https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_um/de/station_status.json',
+    ),
+    (
+        'StadtRad Neustrelitz', 'Neustrelitz', '🇩🇪',
+        53.365051, 13.070292, 'nextbike_st',
+        'https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_st/de/station_information.json',
+        'https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_st/de/station_status.json',
+    ),
+    (
+        'AMBici', 'Barcelona', '🇪🇸',
+        41.368416, 2.086174, 'nextbike_bs',
+        'https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_bs/ca/station_information.json',
+        'https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_bs/ca/station_status.json',
+    ),
+    (
+        'Lovesharing', 'Canary Islands', '🇪🇸',
+        27.940198, -14.948944, 'nextbike_ls',
+        'https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_ls/es/station_information.json',
+        'https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_ls/es/station_status.json',
+    ),
+    (
+        'MugiBIKE', 'Vitoria-Gasteiz', '🇪🇸',
+        42.845557, -2.682361, 'mugibike_vitoria',
+        'https://gbfs.partners.fifteen.eu/gbfs/2.2/vitoria/en/station_information.json',
+        'https://gbfs.partners.fifteen.eu/gbfs/2.2/vitoria/en/station_status.json',
+    ),
+    (
+        'PAYS DU COQUELICOT', 'Albert', '🇫🇷',
+        50.005120, 2.645500, 'mp_COQUELICOT',
+        'https://www.mobility-parc.net/gbfs/v3/COQUELICOT/station_information.json',
+        'https://www.mobility-parc.net/gbfs/v3/COQUELICOT/station_status.json',
+    ),
+    (
+        'Optymo Belfort', 'Belfort', '🇫🇷',
+        47.640345, 6.852925, 'Optymo_FR_Belfort',
+        'https://data.optymo.fr/vls/station_information.json',
+        'https://data.optymo.fr/vls/station_status.json',
+    ),
+    (
+        'Le Vélo par TBM', 'Bordeaux', '🇫🇷',
+        44.839382, -0.573567, 'velo-tbm-bordeaux',
+        'https://bdx.mecatran.com/utw/ws/gbfs/bordeaux/v3/station_information.json?apiKey=opendata-bordeaux-metropole-flux-gtfs-rt',
+        'https://bdx.mecatran.com/utw/ws/gbfs/bordeaux/v3/station_status.json?apiKey=opendata-bordeaux-metropole-flux-gtfs-rt',
+    ),
+    (
+        "VEL'PAR", "Pays de l'Arbresle", '🇫🇷',
+        45.783338, 4.626266, 'mp_ARBRESLE',
+        'https://www.mobility-parc.net/gbfs/v3/ARBRESLE/station_information.json',
+        'https://www.mobility-parc.net/gbfs/v3/ARBRESLE/station_status.json',
+    ),
+    (
+        'Gévaudan', 'Gévaudan', '🇫🇷',
+        44.519722, 3.260616, 'mp_GEVAUDAN',
+        'https://www.mobility-parc.net/gbfs/v3/GEVAUDAN/station_information.json',
+        'https://www.mobility-parc.net/gbfs/v3/GEVAUDAN/station_status.json',
+    ),
+    (
+        "PAYS D'OPALE", "Pays d'Opale", '🇫🇷',
+        50.829144, 1.903175, 'mp_Opale',
+        'https://www.mobility-parc.net/gbfs/v3/Opale/station_information.json',
+        'https://www.mobility-parc.net/gbfs/v3/Opale/station_status.json',
+    ),
+    (
+        'Vélivert', 'Saint-Étienne', '🇫🇷',
+        45.444540, 4.391851, 'velivert_saint_etienne',
+        'https://api.saint-etienne-metropole.fr/velivert/api/station_information.json',
+        'https://api.saint-etienne-metropole.fr/velivert/api/station_status.json',
+    ),
+    (
+        'BYCOR', 'Tarare', '🇫🇷',
+        45.930198, 4.383586, 'mp_TARARE',
+        'https://www.mobility-parc.net/gbfs/v3/TARARE/station_information.json',
+        'https://www.mobility-parc.net/gbfs/v3/TARARE/station_status.json',
+    ),
+    (
+        'Vivélo', 'Vichy', '🇫🇷',
+        46.125025, 3.425070, 'vivelo',
+        'https://gbfs.partners.fifteen.eu/gbfs/2.2/vichy/en/station_information.json',
+        'https://gbfs.partners.fifteen.eu/gbfs/2.2/vichy/en/station_status.json',
+    ),
+    (
+        'Bike Sharing Alimos', 'Alimos', '🇬🇷',
+        37.910494, 23.723570, 'nextbike_gv',
+        'https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_gv/gr/station_information.json',
+        'https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_gv/gr/station_status.json',
+    ),
+    (
+        'Bike Sharing Elliniko–Argyroupoli', 'Argyroupoli', '🇬🇷',
+        37.900948, 23.749562, 'nextbike_gu',
+        'https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_gu/gr/station_information.json',
+        'https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_gu/gr/station_status.json',
+    ),
+    (
+        'Bike Sharing Palaio Faliro', 'Palaio Faliro', '🇬🇷',
+        37.926190, 23.695960, 'nextbike_gy',
+        'https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_gy/gr/station_information.json',
+        'https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_gy/gr/station_status.json',
+    ),
+    (
+        'Trondheim Bysykkel', 'Trondheim', '🇳🇴',
+        63.430499, 10.403337, 'trondheimbysykkel',
+        'https://gbfs.urbansharing.com/trondheimbysykkel.no/station_information.json',
+        'https://gbfs.urbansharing.com/trondheimbysykkel.no/station_status.json',
+    ),
+    (
+        'Koniński Rower Miejski', 'Konin', '🇵🇱',
+        52.227753, 18.257048, 'nextbike_pn',
+        'https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_pn/pl/station_information.json',
+        'https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_pn/pl/station_status.json',
+    ),
+    (
+        'Buzău VeloCity', 'Buzău', '🇷🇴',
+        45.151628, 26.818367, 'nextbike_bv',
+        'https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_bv/ro/station_information.json',
+        'https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_bv/ro/station_status.json',
+    ),
+    (
+        'Nomago Bikes – GO2GO', 'Nova Gorica', '🇸🇮',
+        45.956833, 13.642847, 'nextbike_ce',
+        'https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_ce/sl/station_information.json',
+        'https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_ce/sl/station_status.json',
+    ),
+    (
+        'Nomago Bikes – SLOVENIA', 'Radlje ob Dravi', '🇸🇮',
+        46.544227, 14.957471, 'nextbike_cx',
+        'https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_cx/sl/station_information.json',
+        'https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_cx/sl/station_status.json',
+    ),
+    (
+        'Nomago Bikes – KOLESCE', 'Celje region', '🇸🇮',
+        46.240648, 15.266426, 'nextbike_cn',
+        'https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_cn/sl/station_information.json',
+        'https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_cn/sl/station_status.json',
+    ),
+    (
+        'Nomago Bikes – ZANAPREJ', 'Zagorje ob Savi', '🇸🇮',
+        46.138791, 14.990438, 'nextbike_cf',
+        'https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_cf/sl/station_information.json',
+        'https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_cf/sl/station_status.json',
+    ),
+    (
+        'Aventura BCycle', 'Aventura', '🇺🇸',
+        25.961245, -80.132085, 'bcycle_aventura',
+        'https://gbfs.bcycle.com/1/bcycle_aventura/station_information.json',
+        'https://gbfs.bcycle.com/1/bcycle_aventura/station_status.json',
+    ),
+    (
+        'Bentonville BCycle', 'Bentonville', '🇺🇸',
+        36.363330, -94.191280, 'bcycle_bentonville',
+        'https://gbfs.bcycle.com/1/bcycle_bentonville/station_information.json',
+        'https://gbfs.bcycle.com/1/bcycle_bentonville/station_status.json',
+    ),
+    (
+        'Cincy Red Bike', 'Cincinnati', '🇺🇸',
+        39.108550, -84.511230, 'bcycle_cincyredbike',
+        'https://gbfs.bcycle.com/1/bcycle_cincyredbike/station_information.json',
+        'https://gbfs.bcycle.com/1/bcycle_cincyredbike/station_status.json',
+    ),
+    (
+        'Des Moines B-cycle', 'Des Moines', '🇺🇸',
+        41.585880, -93.632600, 'bcycle_desmoines',
+        'https://gbfs.bcycle.com/1/bcycle_desmoines/station_information.json',
+        'https://gbfs.bcycle.com/1/bcycle_desmoines/station_status.json',
+    ),
+    (
+        'El Paso B-cycle', 'El Paso', '🇺🇸',
+        31.762700, -106.494360, 'bcycle_elpaso',
+        'https://gbfs.bcycle.com/1/bcycle_elpaso/station_information.json',
+        'https://gbfs.bcycle.com/1/bcycle_elpaso/station_status.json',
+    ),
+    (
+        'Greenville B-cycle', 'Greenville', '🇺🇸',
+        34.848750, -82.403735, 'bcycle_greenville',
+        'https://gbfs.bcycle.com/1/bcycle_greenville/station_information.json',
+        'https://gbfs.bcycle.com/1/bcycle_greenville/station_status.json',
+    ),
+    (
+        'Pacers Bikeshare', 'Indianapolis', '🇺🇸',
+        39.774205, -86.155645, 'bcycle_pacersbikeshare',
+        'https://gbfs.bcycle.com/1/bcycle_pacersbikeshare/station_information.json',
+        'https://gbfs.bcycle.com/1/bcycle_pacersbikeshare/station_status.json',
+    ),
+    (
+        'Jackson County BCycle', 'Jackson County', '🇺🇸',
+        42.208050, -84.439220, 'bcycle_jacksoncounty',
+        'https://gbfs.bcycle.com/1/bcycle_jacksoncounty/station_information.json',
+        'https://gbfs.bcycle.com/1/bcycle_jacksoncounty/station_status.json',
+    ),
+    (
+        'RTC Bike Share', 'Las Vegas', '🇺🇸',
+        36.163905, -115.148510, 'bcycle_rtcbikeshare',
+        'https://gbfs.bcycle.com/1/bcycle_rtcbikeshare/station_information.json',
+        'https://gbfs.bcycle.com/1/bcycle_rtcbikeshare/station_status.json',
+    ),
+    (
+        'BikeLNK', 'Lincoln', '🇺🇸',
+        40.814830, -96.701070, 'bcycle_bikelnk',
+        'https://gbfs.bcycle.com/1/bcycle_bikelnk/station_information.json',
+        'https://gbfs.bcycle.com/1/bcycle_bikelnk/station_status.json',
+    ),
+    (
+        'Metro Bike Share', 'Los Angeles', '🇺🇸',
+        34.046170, -118.291790, 'bcycle_lametro',
+        'https://gbfs.bcycle.com/1/bcycle_lametro/station_information.json',
+        'https://gbfs.bcycle.com/1/bcycle_lametro/station_status.json',
+    ),
+    (
+        'Madison B-cycle', 'Madison', '🇺🇸',
+        43.073690, -89.394180, 'bcycle_madison',
+        'https://gbfs.bcycle.com/1/bcycle_madison/station_information.json',
+        'https://gbfs.bcycle.com/1/bcycle_madison/station_status.json',
+    ),
+    (
+        'Explore Bike Share', 'Memphis', '🇺🇸',
+        35.143085, -90.050730, 'bcycle_memphis',
+        'https://gbfs.bcycle.com/1/bcycle_memphis/station_information.json',
+        'https://gbfs.bcycle.com/1/bcycle_memphis/station_status.json',
+    ),
+    (
+        'Nashville BCycle', 'Nashville', '🇺🇸',
+        36.161160, -86.785030, 'bcycle_nashville',
+        'https://gbfs.bcycle.com/1/bcycle_nashville/station_information.json',
+        'https://gbfs.bcycle.com/1/bcycle_nashville/station_status.json',
+    ),
+    (
+        'Heartland B-cycle', 'Omaha', '🇺🇸',
+        41.257620, -95.947820, 'bcycle_heartland',
+        'https://gbfs.bcycle.com/1/bcycle_heartland/station_information.json',
+        'https://gbfs.bcycle.com/1/bcycle_heartland/station_status.json',
+    ),
+    (
+        'Redding Bikeshare', 'Redding', '🇺🇸',
+        40.583570, -122.391030, 'bcycle_redding',
+        'https://gbfs.bcycle.com/1/bcycle_redding/station_information.json',
+        'https://gbfs.bcycle.com/1/bcycle_redding/station_status.json',
+    ),
+    (
+        'GREENbike', 'Salt Lake City', '🇺🇸',
+        40.765110, -111.897130, 'bcycle_greenbikeslc',
+        'https://gbfs.bcycle.com/1/bcycle_greenbikeslc/station_information.json',
+        'https://gbfs.bcycle.com/1/bcycle_greenbikeslc/station_status.json',
+    ),
+    (
+        'San Antonio B-cycle', 'San Antonio', '🇺🇸',
+        29.391570, -98.488705, 'bcycle_sanantonio',
+        'https://gbfs.bcycle.com/1/bcycle_sanantonio/station_information.json',
+        'https://gbfs.bcycle.com/1/bcycle_sanantonio/station_status.json',
+    ),
+    (
+        'Santa Barbara BCycle', 'Santa Barbara', '🇺🇸',
+        34.421735, -119.700850, 'bcycle_santabarbara',
+        'https://gbfs.bcycle.com/1/bcycle_santabarbara/station_information.json',
+        'https://gbfs.bcycle.com/1/bcycle_santabarbara/station_status.json',
+    ),
+]
+
+# Catalog entries intentionally kept out of the registry after manual review.
+_EXCLUDED_GBFS_SYSTEM_IDS = {
+    'CKL': 'Destination-based rental with smart locks, not a docked network.',
+    'bcycle_clemson': 'Access is restricted to Clemson students and staff.',
+    'callabike': 'Uses virtual stations.',
+    'cergy': 'Stale JCDecaux entry; nextbike_ah is the current feed.',
+    'long_beach_ca_bikeshare': 'Allows returns at public bicycle racks.',
+    'mulhouse': 'Stale JCDecaux entry; nextbike_af is the current feed.',
+    'nextbike_bk': 'Incomplete duplicate of the active nextbike_bw feed.',
+    'nextbike_ms': 'Uses flexible virtual stations.',
+    'ns_ov_fiets': 'Railway rental zones and lockers, not docking stations.',
+    'peacehealth_rides': 'Allows returns at public bicycle racks.',
+    'reddy_bikeshare': 'Allows returns at public bicycle racks.',
+    'regiorad_stuttgart': 'Uses virtual stations and closes in November 2026.',
+    'sobi_hamilton': 'Allows returns away from hubs.',
+}
+
+# These country-wide feeds cannot be represented as one city in the current
+# archive layout. Tokyo's separate Docomo feed remains active in the registry.
+_DEFERRED_NATIONAL_GBFS_SYSTEM_IDS = {
+    'docomo-cycle',
+    'hellocycling',
+}
+
 systems.extend(
     System(
         provider=provider,
@@ -1816,5 +2128,5 @@ systems.extend(
         gbfs_system_id,
         info_url,
         status_url,
-    ) in _ADDITIONAL_GBFS_SYSTEMS
+    ) in _ADDITIONAL_GBFS_SYSTEMS + _VERIFIED_DOCKED_GBFS_SYSTEMS
 )
