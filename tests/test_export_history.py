@@ -154,6 +154,42 @@ class CanonicalStationSchemaTest(unittest.TestCase):
             )
         self.assertIn("--diff-filter=AMR", git.call_args.args)
 
+    def test_changed_paths_preserve_non_ascii_names(self) -> None:
+        with tempfile.TemporaryDirectory() as temporary:
+            repo = pathlib.Path(temporary) / "repo"
+            source_path = "data/stations/mława/mławskie-rowery-miejskie.geojson"
+            metadata_path = "data/scrapes/stations/mława.json"
+            source = repo / source_path
+            metadata = repo / metadata_path
+            source.parent.mkdir(parents=True)
+            metadata.parent.mkdir(parents=True)
+            source.write_text("{}")
+            metadata.write_text("{}")
+            subprocess.run(["git", "init", str(repo)], check=True, capture_output=True)
+            subprocess.run(["git", "add", "."], cwd=repo, check=True)
+            subprocess.run(
+                [
+                    "git",
+                    "-c",
+                    "user.name=Test",
+                    "-c",
+                    "user.email=test@example.com",
+                    "commit",
+                    "-m",
+                    "Add data",
+                ],
+                cwd=repo,
+                check=True,
+                capture_output=True,
+            )
+
+            versions = list(
+                export_history.iter_versions(repo, "HEAD", source_path, None, None)
+            )
+
+        self.assertEqual(len(versions), 1)
+        self.assertEqual(versions[0][2], {source_path, metadata_path})
+
     def test_successful_unchanged_scrapes_are_observations_but_failures_are_not(
         self,
     ) -> None:
