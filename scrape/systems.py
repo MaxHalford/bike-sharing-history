@@ -136,12 +136,17 @@ systems.extend(
 
 
 def gbfs_scrape(info_url, status_url):
-    r = requests.get(info_url, timeout=10)
+    headers = (
+        {"ET-Client-Name": "maxhalford-bike-sharing-history"}
+        if "api.entur.io" in info_url
+        else {}
+    )
+    r = requests.get(info_url, headers=headers, timeout=10)
     r.raise_for_status()
     information_feed = r.json()
     information = {s["station_id"]: s for s in information_feed["data"]["stations"]}
 
-    r = requests.get(status_url, timeout=10)
+    r = requests.get(status_url, headers=headers, timeout=10)
     r.raise_for_status()
     status_feed = r.json()
     statuses = {s["station_id"]: s for s in status_feed["data"]["stations"]}
