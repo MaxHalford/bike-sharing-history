@@ -76,6 +76,31 @@ class ArchivePathsTest(unittest.TestCase):
 
 
 class ArchiveSummaryTest(unittest.TestCase):
+    def test_readme_stays_below_github_rendering_limit(self) -> None:
+        self.assertLess((ROOT / "README.md").stat().st_size, 500 * 1024)
+
+    def test_update_output_replaces_only_the_generated_summary(self) -> None:
+        with tempfile.TemporaryDirectory() as temporary:
+            output = pathlib.Path(temporary) / "ARCHIVES.md"
+            output.write_text(
+                "before\n"
+                f"{update_archive_summary.START_MARKER}\n\n"
+                "old summary\n\n"
+                f"{update_archive_summary.END_MARKER}\n"
+                "after\n"
+            )
+
+            update_archive_summary.update_output(output, "new summary")
+
+            self.assertEqual(
+                output.read_text(),
+                "before\n"
+                f"{update_archive_summary.START_MARKER}\n\n"
+                "new summary\n\n"
+                f"{update_archive_summary.END_MARKER}\n"
+                "after\n",
+            )
+
     def test_current_system_without_an_archive_is_still_listed(self) -> None:
         archive = update_archive_summary.Archive(
             city="old-city",
