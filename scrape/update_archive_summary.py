@@ -5,7 +5,7 @@
 #   "requests>=2.32",
 # ]
 # ///
-"""Update README archive row counts from public Parquet footers in GCS."""
+"""Update archive row counts from public Parquet footers in GCS."""
 
 import argparse
 import calendar
@@ -184,21 +184,21 @@ def render_table(archives: list[Archive]) -> str:
     )
 
 
-def update_readme(readme: pathlib.Path, table: str) -> None:
-    contents = readme.read_text()
+def update_output(output: pathlib.Path, table: str) -> None:
+    contents = output.read_text()
     start = contents.find(START_MARKER)
     end = contents.find(END_MARKER)
     if start < 0 or end < 0 or end < start:
-        raise ValueError("Archive summary markers are missing from the README")
+        raise ValueError(f"Archive summary markers are missing from {output}")
     replacement = f"{START_MARKER}\n\n{table}\n\n"
-    readme.write_text(contents[:start] + replacement + contents[end:])
+    output.write_text(contents[:start] + replacement + contents[end:])
 
 
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--prefix", default="")
     parser.add_argument(
-        "--readme", type=pathlib.Path, default=pathlib.Path("README.md")
+        "--output", type=pathlib.Path, default=pathlib.Path("ARCHIVES.md")
     )
     args = parser.parse_args()
 
@@ -206,9 +206,9 @@ def main() -> int:
     archives = read_archives(prefix)
     if not archives:
         raise ValueError(f"No archives found under prefix {prefix!r}")
-    update_readme(args.readme, render_table(archives))
+    update_output(args.output, render_table(archives))
     print(
-        f"Updated {args.readme} from {len(archives):,} station archives "
+        f"Updated {args.output} from {len(archives):,} station archives "
         f"under {prefix or 'canonical root'}"
     )
     return 0

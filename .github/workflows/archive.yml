@@ -150,7 +150,7 @@ jobs:
         run: |
           git config user.name "Automated"
           git config user.email "actions@users.noreply.github.com"
-          git add README.md
+          git add ARCHIVES.md
           git diff --cached --quiet && exit 0
           git commit -m "Update archive summary"
           git push
