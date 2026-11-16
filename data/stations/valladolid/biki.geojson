@@ -17,7 +17,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T05:46:41.552Z",
+                "last_reported": "2026-11-16T06:01:44.75Z",
                 "name": [
                     {
                         "language": "en",
@@ -129,7 +129,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T05:48:35.036Z",
+                "last_reported": "2026-11-16T06:00:37.045Z",
                 "name": [
                     {
                         "language": "en",
@@ -148,9 +148,9 @@
                         "text": "104 Michel\u00edn"
                     }
                 ],
-                "num_docks_available": 8,
+                "num_docks_available": 6,
                 "num_docks_disabled": 0,
-                "num_vehicles_available": 3,
+                "num_vehicles_available": 5,
                 "num_vehicles_disabled": 0,
                 "post_code": "47005",
                 "rental_methods": [
@@ -181,7 +181,118 @@
                 "station_id": "105",
                 "vehicle_docks_available": [
                     {
-                        "count": 8,
+                        "count": 6,
+                        "vehicle_type_ids": [
+                            "EFIT",
+                            "FIT",
+                            "BOOST"
+                        ]
+                    }
+                ],
+                "vehicle_docks_capacity": [
+                    {
+                        "count": 11,
+                        "vehicle_type_ids": [
+                            "ASTRO",
+                            "BOOST",
+                            "CHLOE",
+                            "COSMO",
+                            "EFIT",
+                            "FIT",
+                            "ICONIC",
+                            "METRO_BASE",
+                            "METRO_CONNECTED",
+                            "TRAILER"
+                        ]
+                    }
+                ],
+                "vehicle_types_available": [
+                    {
+                        "count": 2,
+                        "vehicle_type_id": "FIT"
+                    },
+                    {
+                        "count": 0,
+                        "vehicle_type_id": "BOOST"
+                    },
+                    {
+                        "count": 3,
+                        "vehicle_type_id": "EFIT"
+                    }
+                ],
+                "vehicle_types_capacity": []
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -4.688387,
+                    41.692504
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "address": "1005 Santovenia Centro C\u00edvico",
+                "capacity": 11,
+                "external_id": "d3ffabd7-c66d-11f0-accc-0a0271a24e77",
+                "is_charging_station": true,
+                "is_installed": true,
+                "is_renting": true,
+                "is_returning": true,
+                "is_virtual_station": false,
+                "last_reported": "2026-11-16T06:00:22.053Z",
+                "name": [
+                    {
+                        "language": "en",
+                        "text": "1005 Santovenia Centro Civico"
+                    },
+                    {
+                        "language": "fr",
+                        "text": "1005 Santovenia Centro Civico"
+                    },
+                    {
+                        "language": "nl",
+                        "text": "1005 Santovenia Centro Civico"
+                    },
+                    {
+                        "language": "es",
+                        "text": "1005 Santovenia Centro Civico"
+                    }
+                ],
+                "num_docks_available": 6,
+                "num_docks_disabled": 0,
+                "num_vehicles_available": 3,
+                "num_vehicles_disabled": 2,
+                "rental_methods": [
+                    "key",
+                    "transitcard",
+                    "creditcard",
+                    "phone"
+                ],
+                "rental_uris": {},
+                "short_name": [
+                    {
+                        "language": "en",
+                        "text": "1005 Santovenia Centro Civico"
+                    },
+                    {
+                        "language": "fr",
+                        "text": "1005 Santovenia Centro Civico"
+                    },
+                    {
+                        "language": "nl",
+                        "text": "1005 Santovenia Centro Civico"
+                    },
+                    {
+                        "language": "es",
+                        "text": "1005 Santovenia Centro Civico"
+                    }
+                ],
+                "station_id": "106",
+                "vehicle_docks_available": [
+                    {
+                        "count": 6,
                         "vehicle_type_ids": [
                             "EFIT",
                             "FIT",
@@ -227,117 +338,6 @@
         {
             "geometry": {
                 "coordinates": [
-                    -4.688387,
-                    41.692504
-                ],
-                "type": "Point"
-            },
-            "properties": {
-                "address": "1005 Santovenia Centro C\u00edvico",
-                "capacity": 11,
-                "external_id": "d3ffabd7-c66d-11f0-accc-0a0271a24e77",
-                "is_charging_station": true,
-                "is_installed": true,
-                "is_renting": true,
-                "is_returning": true,
-                "is_virtual_station": false,
-                "last_reported": "2026-11-16T05:48:20.111Z",
-                "name": [
-                    {
-                        "language": "en",
-                        "text": "1005 Santovenia Centro Civico"
-                    },
-                    {
-                        "language": "fr",
-                        "text": "1005 Santovenia Centro Civico"
-                    },
-                    {
-                        "language": "nl",
-                        "text": "1005 Santovenia Centro Civico"
-                    },
-                    {
-                        "language": "es",
-                        "text": "1005 Santovenia Centro Civico"
-                    }
-                ],
-                "num_docks_available": 5,
-                "num_docks_disabled": 0,
-                "num_vehicles_available": 4,
-                "num_vehicles_disabled": 2,
-                "rental_methods": [
-                    "key",
-                    "transitcard",
-                    "creditcard",
-                    "phone"
-                ],
-                "rental_uris": {},
-                "short_name": [
-                    {
-                        "language": "en",
-                        "text": "1005 Santovenia Centro Civico"
-                    },
-                    {
-                        "language": "fr",
-                        "text": "1005 Santovenia Centro Civico"
-                    },
-                    {
-                        "language": "nl",
-                        "text": "1005 Santovenia Centro Civico"
-                    },
-                    {
-                        "language": "es",
-                        "text": "1005 Santovenia Centro Civico"
-                    }
-                ],
-                "station_id": "106",
-                "vehicle_docks_available": [
-                    {
-                        "count": 5,
-                        "vehicle_type_ids": [
-                            "EFIT",
-                            "FIT",
-                            "BOOST"
-                        ]
-                    }
-                ],
-                "vehicle_docks_capacity": [
-                    {
-                        "count": 11,
-                        "vehicle_type_ids": [
-                            "ASTRO",
-                            "BOOST",
-                            "CHLOE",
-                            "COSMO",
-                            "EFIT",
-                            "FIT",
-                            "ICONIC",
-                            "METRO_BASE",
-                            "METRO_CONNECTED",
-                            "TRAILER"
-                        ]
-                    }
-                ],
-                "vehicle_types_available": [
-                    {
-                        "count": 2,
-                        "vehicle_type_id": "FIT"
-                    },
-                    {
-                        "count": 0,
-                        "vehicle_type_id": "BOOST"
-                    },
-                    {
-                        "count": 2,
-                        "vehicle_type_id": "EFIT"
-                    }
-                ],
-                "vehicle_types_capacity": []
-            },
-            "type": "Feature"
-        },
-        {
-            "geometry": {
-                "coordinates": [
                     -4.688221,
                     41.688927
                 ],
@@ -352,7 +352,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T05:48:56.008Z",
+                "last_reported": "2026-11-16T06:00:58.155Z",
                 "name": [
                     {
                         "language": "en",
@@ -463,7 +463,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T05:47:19.717Z",
+                "last_reported": "2026-11-16T06:02:22.351Z",
                 "name": [
                     {
                         "language": "en",
@@ -575,7 +575,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T05:46:47.64Z",
+                "last_reported": "2026-11-16T06:01:50.638Z",
                 "name": [
                     {
                         "language": "en",
@@ -594,9 +594,9 @@
                         "text": "010 Cadenas de San Gregorio"
                     }
                 ],
-                "num_docks_available": 7,
+                "num_docks_available": 8,
                 "num_docks_disabled": 0,
-                "num_vehicles_available": 8,
+                "num_vehicles_available": 7,
                 "num_vehicles_disabled": 0,
                 "rental_methods": [
                     "key",
@@ -626,7 +626,7 @@
                 "station_id": "11",
                 "vehicle_docks_available": [
                     {
-                        "count": 7,
+                        "count": 8,
                         "vehicle_type_ids": [
                             "EFIT",
                             "FIT",
@@ -661,7 +661,7 @@
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 4,
+                        "count": 3,
                         "vehicle_type_id": "EFIT"
                     }
                 ],
@@ -686,7 +686,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T05:48:44.721Z",
+                "last_reported": "2026-11-16T06:00:46.89Z",
                 "name": [
                     {
                         "language": "en",
@@ -797,7 +797,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T05:46:07.928Z",
+                "last_reported": "2026-11-16T06:01:10.524Z",
                 "name": [
                     {
                         "language": "en",
@@ -909,7 +909,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T05:47:56.049Z",
+                "last_reported": "2026-11-16T06:02:58.546Z",
                 "name": [
                     {
                         "language": "en",
@@ -1020,7 +1020,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T05:46:50.269Z",
+                "last_reported": "2026-11-16T06:01:52.953Z",
                 "name": [
                     {
                         "language": "en",
@@ -1132,7 +1132,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T05:47:55.14Z",
+                "last_reported": "2026-11-16T06:02:57.605Z",
                 "name": [
                     {
                         "language": "en",
@@ -1243,7 +1243,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T05:46:24.332Z",
+                "last_reported": "2026-11-16T06:01:27.242Z",
                 "name": [
                     {
                         "language": "en",
@@ -1262,9 +1262,9 @@
                         "text": "013 CASA DEL ESTUDIANTE- CL\u00cdNICO"
                     }
                 ],
-                "num_docks_available": 5,
+                "num_docks_available": 6,
                 "num_docks_disabled": 0,
-                "num_vehicles_available": 18,
+                "num_vehicles_available": 17,
                 "num_vehicles_disabled": 0,
                 "post_code": "47011",
                 "rental_methods": [
@@ -1295,7 +1295,7 @@
                 "station_id": "14",
                 "vehicle_docks_available": [
                     {
-                        "count": 5,
+                        "count": 6,
                         "vehicle_type_ids": [
                             "EFIT",
                             "FIT",
@@ -1330,7 +1330,7 @@
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 6,
+                        "count": 5,
                         "vehicle_type_id": "EFIT"
                     }
                 ],
@@ -1355,7 +1355,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T05:49:01.521Z",
+                "last_reported": "2026-11-16T06:01:03.901Z",
                 "name": [
                     {
                         "language": "en",
@@ -1467,7 +1467,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T05:47:02.537Z",
+                "last_reported": "2026-11-16T06:02:05.473Z",
                 "name": [
                     {
                         "language": "en",
@@ -1579,7 +1579,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T05:48:42.13Z",
+                "last_reported": "2026-11-16T06:00:45.341Z",
                 "name": [
                     {
                         "language": "en",
@@ -1598,9 +1598,9 @@
                         "text": "016 Plaza Ca\u00f1o Argales"
                     }
                 ],
-                "num_docks_available": 8,
+                "num_docks_available": 7,
                 "num_docks_disabled": 0,
-                "num_vehicles_available": 19,
+                "num_vehicles_available": 20,
                 "num_vehicles_disabled": 0,
                 "post_code": "47004",
                 "rental_methods": [
@@ -1631,7 +1631,7 @@
                 "station_id": "17",
                 "vehicle_docks_available": [
                     {
-                        "count": 8,
+                        "count": 7,
                         "vehicle_type_ids": [
                             "EFIT",
                             "FIT",
@@ -1666,7 +1666,7 @@
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 0,
+                        "count": 1,
                         "vehicle_type_id": "EFIT"
                     }
                 ],
@@ -1691,7 +1691,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T05:47:52.908Z",
+                "last_reported": "2026-11-16T06:02:55.614Z",
                 "name": [
                     {
                         "language": "en",
@@ -1710,9 +1710,9 @@
                         "text": "017 PLAZA DE SAN JUAN"
                     }
                 ],
-                "num_docks_available": 18,
+                "num_docks_available": 13,
                 "num_docks_disabled": 0,
-                "num_vehicles_available": 5,
+                "num_vehicles_available": 10,
                 "num_vehicles_disabled": 0,
                 "post_code": "47005",
                 "rental_methods": [
@@ -1743,7 +1743,7 @@
                 "station_id": "18",
                 "vehicle_docks_available": [
                     {
-                        "count": 18,
+                        "count": 13,
                         "vehicle_type_ids": [
                             "EFIT",
                             "FIT",
@@ -1770,7 +1770,7 @@
                 ],
                 "vehicle_types_available": [
                     {
-                        "count": 5,
+                        "count": 7,
                         "vehicle_type_id": "FIT"
                     },
                     {
@@ -1778,7 +1778,7 @@
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 0,
+                        "count": 3,
                         "vehicle_type_id": "EFIT"
                     }
                 ],
@@ -1803,7 +1803,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T05:46:25.298Z",
+                "last_reported": "2026-11-16T06:01:28.174Z",
                 "name": [
                     {
                         "language": "en",
@@ -1915,7 +1915,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T05:46:16.529Z",
+                "last_reported": "2026-11-16T06:01:19.452Z",
                 "name": [
                     {
                         "language": "en",
@@ -2027,7 +2027,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T05:46:10.212Z",
+                "last_reported": "2026-11-16T06:01:13.062Z",
                 "name": [
                     {
                         "language": "en",
@@ -2046,9 +2046,9 @@
                         "text": "019 Angustias"
                     }
                 ],
-                "num_docks_available": 9,
+                "num_docks_available": 10,
                 "num_docks_disabled": 0,
-                "num_vehicles_available": 6,
+                "num_vehicles_available": 5,
                 "num_vehicles_disabled": 0,
                 "post_code": "47003",
                 "rental_methods": [
@@ -2079,7 +2079,7 @@
                 "station_id": "20",
                 "vehicle_docks_available": [
                     {
-                        "count": 9,
+                        "count": 10,
                         "vehicle_type_ids": [
                             "EFIT",
                             "FIT",
@@ -2114,7 +2114,7 @@
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 1,
+                        "count": 0,
                         "vehicle_type_id": "EFIT"
                     }
                 ],
@@ -2139,7 +2139,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T05:46:25.465Z",
+                "last_reported": "2026-11-16T06:01:28.263Z",
                 "name": [
                     {
                         "language": "en",
@@ -2158,9 +2158,9 @@
                         "text": "020 MAR\u00cdA DE MOLINA"
                     }
                 ],
-                "num_docks_available": 15,
+                "num_docks_available": 16,
                 "num_docks_disabled": 0,
-                "num_vehicles_available": 7,
+                "num_vehicles_available": 6,
                 "num_vehicles_disabled": 1,
                 "post_code": "47001",
                 "rental_methods": [
@@ -2191,7 +2191,7 @@
                 "station_id": "21",
                 "vehicle_docks_available": [
                     {
-                        "count": 15,
+                        "count": 16,
                         "vehicle_type_ids": [
                             "EFIT",
                             "FIT",
@@ -2226,7 +2226,7 @@
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 3,
+                        "count": 2,
                         "vehicle_type_id": "EFIT"
                     }
                 ],
@@ -2251,7 +2251,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T05:47:22.856Z",
+                "last_reported": "2026-11-16T06:02:26.544Z",
                 "name": [
                     {
                         "language": "en",
@@ -2363,7 +2363,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T05:47:20.488Z",
+                "last_reported": "2026-11-16T06:02:23.248Z",
                 "name": [
                     {
                         "language": "en",
@@ -2475,7 +2475,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T05:46:13.335Z",
+                "last_reported": "2026-11-16T06:01:16.126Z",
                 "name": [
                     {
                         "language": "en",
@@ -2587,7 +2587,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T05:47:57.749Z",
+                "last_reported": "2026-11-16T06:03:00.502Z",
                 "name": [
                     {
                         "language": "en",
@@ -2606,10 +2606,10 @@
                         "text": "201 CENTRO C\u00cdVICO ESGUEVA"
                     }
                 ],
-                "num_docks_available": 16,
+                "num_docks_available": 14,
                 "num_docks_disabled": 0,
-                "num_vehicles_available": 4,
-                "num_vehicles_disabled": 2,
+                "num_vehicles_available": 5,
+                "num_vehicles_disabled": 3,
                 "post_code": "47011",
                 "rental_methods": [
                     "key",
@@ -2639,7 +2639,7 @@
                 "station_id": "25",
                 "vehicle_docks_available": [
                     {
-                        "count": 16,
+                        "count": 14,
                         "vehicle_type_ids": [
                             "EFIT",
                             "FIT",
@@ -2674,7 +2674,7 @@
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 0,
+                        "count": 1,
                         "vehicle_type_id": "EFIT"
                     }
                 ],
@@ -2699,7 +2699,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T05:46:45.548Z",
+                "last_reported": "2026-11-16T06:01:48.652Z",
                 "name": [
                     {
                         "language": "en",
@@ -2811,7 +2811,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T05:48:42.86Z",
+                "last_reported": "2026-11-16T06:00:45.854Z",
                 "name": [
                     {
                         "language": "en",
@@ -2830,9 +2830,9 @@
                         "text": "203 Plaza Ribera de Castilla"
                     }
                 ],
-                "num_docks_available": 10,
+                "num_docks_available": 9,
                 "num_docks_disabled": 0,
-                "num_vehicles_available": 9,
+                "num_vehicles_available": 10,
                 "num_vehicles_disabled": 0,
                 "post_code": "47010",
                 "rental_methods": [
@@ -2863,7 +2863,7 @@
                 "station_id": "27",
                 "vehicle_docks_available": [
                     {
-                        "count": 10,
+                        "count": 9,
                         "vehicle_type_ids": [
                             "EFIT",
                             "FIT",
@@ -2890,7 +2890,7 @@
                 ],
                 "vehicle_types_available": [
                     {
-                        "count": 5,
+                        "count": 6,
                         "vehicle_type_id": "FIT"
                     },
                     {
@@ -2923,7 +2923,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T05:46:53.26Z",
+                "last_reported": "2026-11-16T06:01:55.77Z",
                 "name": [
                     {
                         "language": "en",
@@ -3035,7 +3035,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T05:48:26.342Z",
+                "last_reported": "2026-11-16T06:00:28.354Z",
                 "name": [
                     {
                         "language": "en",
@@ -3054,9 +3054,9 @@
                         "text": "205 HOSPITAL RONDILLA"
                     }
                 ],
-                "num_docks_available": 15,
+                "num_docks_available": 11,
                 "num_docks_disabled": 0,
-                "num_vehicles_available": 1,
+                "num_vehicles_available": 5,
                 "num_vehicles_disabled": 3,
                 "post_code": "47010",
                 "rental_methods": [
@@ -3087,7 +3087,7 @@
                 "station_id": "29",
                 "vehicle_docks_available": [
                     {
-                        "count": 15,
+                        "count": 11,
                         "vehicle_type_ids": [
                             "EFIT",
                             "FIT",
@@ -3114,7 +3114,7 @@
                 ],
                 "vehicle_types_available": [
                     {
-                        "count": 0,
+                        "count": 2,
                         "vehicle_type_id": "FIT"
                     },
                     {
@@ -3122,7 +3122,7 @@
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 1,
+                        "count": 3,
                         "vehicle_type_id": "EFIT"
                     }
                 ],
@@ -3147,7 +3147,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T05:48:15.403Z",
+                "last_reported": "2026-11-16T06:03:18.043Z",
                 "name": [
                     {
                         "language": "en",
@@ -3259,7 +3259,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T05:48:09.862Z",
+                "last_reported": "2026-11-16T06:03:13.023Z",
                 "name": [
                     {
                         "language": "en",
@@ -3371,7 +3371,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T05:47:18.586Z",
+                "last_reported": "2026-11-16T06:02:21.059Z",
                 "name": [
                     {
                         "language": "en",
@@ -3483,7 +3483,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T05:46:50.21Z",
+                "last_reported": "2026-11-16T06:01:52.92Z",
                 "name": [
                     {
                         "language": "en",
@@ -3502,9 +3502,9 @@
                         "text": "208 Facultad Ciencias Econ\u00f3micas"
                     }
                 ],
-                "num_docks_available": 6,
+                "num_docks_available": 7,
                 "num_docks_disabled": 0,
-                "num_vehicles_available": 13,
+                "num_vehicles_available": 12,
                 "num_vehicles_disabled": 0,
                 "post_code": "47011",
                 "rental_methods": [
@@ -3535,7 +3535,7 @@
                 "station_id": "32",
                 "vehicle_docks_available": [
                     {
-                        "count": 6,
+                        "count": 7,
                         "vehicle_type_ids": [
                             "EFIT",
                             "FIT",
@@ -3570,7 +3570,7 @@
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 4,
+                        "count": 3,
                         "vehicle_type_id": "EFIT"
                     }
                 ],
@@ -3595,7 +3595,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T05:46:10.372Z",
+                "last_reported": "2026-11-16T06:01:13.085Z",
                 "name": [
                     {
                         "language": "en",
@@ -3614,9 +3614,9 @@
                         "text": "209 Paseo del Cauce"
                     }
                 ],
-                "num_docks_available": 3,
+                "num_docks_available": 4,
                 "num_docks_disabled": 0,
-                "num_vehicles_available": 15,
+                "num_vehicles_available": 14,
                 "num_vehicles_disabled": 1,
                 "post_code": "47005",
                 "rental_methods": [
@@ -3647,7 +3647,7 @@
                 "station_id": "33",
                 "vehicle_docks_available": [
                     {
-                        "count": 3,
+                        "count": 4,
                         "vehicle_type_ids": [
                             "EFIT",
                             "FIT",
@@ -3682,7 +3682,7 @@
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 6,
+                        "count": 5,
                         "vehicle_type_id": "EFIT"
                     }
                 ],
@@ -3707,7 +3707,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T05:48:49.47Z",
+                "last_reported": "2026-11-16T06:00:51.646Z",
                 "name": [
                     {
                         "language": "en",
@@ -3726,9 +3726,9 @@
                         "text": "210 Plaza de los Vadillos"
                     }
                 ],
-                "num_docks_available": 12,
+                "num_docks_available": 13,
                 "num_docks_disabled": 0,
-                "num_vehicles_available": 13,
+                "num_vehicles_available": 12,
                 "num_vehicles_disabled": 2,
                 "post_code": "47005",
                 "rental_methods": [
@@ -3759,7 +3759,7 @@
                 "station_id": "34",
                 "vehicle_docks_available": [
                     {
-                        "count": 12,
+                        "count": 13,
                         "vehicle_type_ids": [
                             "EFIT",
                             "FIT",
@@ -3794,7 +3794,7 @@
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 4,
+                        "count": 3,
                         "vehicle_type_id": "EFIT"
                     }
                 ],
@@ -3819,7 +3819,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T05:49:06.277Z",
+                "last_reported": "2026-11-16T06:01:08.5Z",
                 "name": [
                     {
                         "language": "en",
@@ -3931,7 +3931,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T05:48:56.402Z",
+                "last_reported": "2026-11-16T06:00:59.487Z",
                 "name": [
                     {
                         "language": "en",
@@ -4043,7 +4043,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T05:46:19.877Z",
+                "last_reported": "2026-11-16T06:01:22.686Z",
                 "name": [
                     {
                         "language": "en",
@@ -4155,7 +4155,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T05:46:34.633Z",
+                "last_reported": "2026-11-16T06:01:37.118Z",
                 "name": [
                     {
                         "language": "en",
@@ -4267,7 +4267,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T05:49:03.937Z",
+                "last_reported": "2026-11-16T06:01:06.273Z",
                 "name": [
                     {
                         "language": "en",
@@ -4286,9 +4286,9 @@
                         "text": "305 Calle del Cometa"
                     }
                 ],
-                "num_docks_available": 17,
+                "num_docks_available": 16,
                 "num_docks_disabled": 0,
-                "num_vehicles_available": 6,
+                "num_vehicles_available": 7,
                 "num_vehicles_disabled": 0,
                 "post_code": "47011",
                 "rental_methods": [
@@ -4319,7 +4319,7 @@
                 "station_id": "39",
                 "vehicle_docks_available": [
                     {
-                        "count": 17,
+                        "count": 16,
                         "vehicle_type_ids": [
                             "EFIT",
                             "FIT",
@@ -4354,7 +4354,7 @@
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 2,
+                        "count": 3,
                         "vehicle_type_id": "EFIT"
                     }
                 ],
@@ -4379,7 +4379,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T05:48:56.487Z",
+                "last_reported": "2026-11-16T06:00:58.604Z",
                 "name": [
                     {
                         "language": "en",
@@ -4398,9 +4398,9 @@
                         "text": "003 Estaci\u00f3n de Tren"
                     }
                 ],
-                "num_docks_available": 19,
+                "num_docks_available": 20,
                 "num_docks_disabled": 0,
-                "num_vehicles_available": 8,
+                "num_vehicles_available": 7,
                 "num_vehicles_disabled": 0,
                 "post_code": "47007",
                 "rental_methods": [
@@ -4431,7 +4431,7 @@
                 "station_id": "4",
                 "vehicle_docks_available": [
                     {
-                        "count": 19,
+                        "count": 20,
                         "vehicle_type_ids": [
                             "EFIT",
                             "FIT",
@@ -4466,7 +4466,7 @@
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 5,
+                        "count": 4,
                         "vehicle_type_id": "EFIT"
                     }
                 ],
@@ -4491,7 +4491,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T05:48:31.029Z",
+                "last_reported": "2026-11-16T06:00:41.643Z",
                 "name": [
                     {
                         "language": "en",
@@ -4603,7 +4603,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T05:47:57.544Z",
+                "last_reported": "2026-11-16T06:03:00.537Z",
                 "name": [
                     {
                         "language": "en",
@@ -4715,7 +4715,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T05:47:32.692Z",
+                "last_reported": "2026-11-16T06:02:35.657Z",
                 "name": [
                     {
                         "language": "en",
@@ -4827,7 +4827,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T05:46:12.723Z",
+                "last_reported": "2026-11-16T06:01:15.539Z",
                 "name": [
                     {
                         "language": "en",
@@ -4939,7 +4939,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T05:47:27.115Z",
+                "last_reported": "2026-11-16T06:02:30.735Z",
                 "name": [
                     {
                         "language": "en",
@@ -5051,7 +5051,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T05:49:05.4Z",
+                "last_reported": "2026-11-16T06:01:08.31Z",
                 "name": [
                     {
                         "language": "en",
@@ -5163,7 +5163,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T05:46:47.498Z",
+                "last_reported": "2026-11-16T06:01:50.209Z",
                 "name": [
                     {
                         "language": "en",
@@ -5182,9 +5182,9 @@
                         "text": "406 Paseo de Juan Carlos I"
                     }
                 ],
-                "num_docks_available": 17,
+                "num_docks_available": 18,
                 "num_docks_disabled": 0,
-                "num_vehicles_available": 5,
+                "num_vehicles_available": 4,
                 "num_vehicles_disabled": 1,
                 "post_code": "47013",
                 "rental_methods": [
@@ -5215,7 +5215,7 @@
                 "station_id": "46",
                 "vehicle_docks_available": [
                     {
-                        "count": 17,
+                        "count": 18,
                         "vehicle_type_ids": [
                             "EFIT",
                             "FIT",
@@ -5250,7 +5250,7 @@
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 2,
+                        "count": 1,
                         "vehicle_type_id": "EFIT"
                     }
                 ],
@@ -5275,7 +5275,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T05:48:58.162Z",
+                "last_reported": "2026-11-16T06:01:00.484Z",
                 "name": [
                     {
                         "language": "en",
@@ -5294,9 +5294,9 @@
                         "text": "407 Calle General Shelly"
                     }
                 ],
-                "num_docks_available": 15,
+                "num_docks_available": 13,
                 "num_docks_disabled": 0,
-                "num_vehicles_available": 6,
+                "num_vehicles_available": 8,
                 "num_vehicles_disabled": 2,
                 "post_code": "47013",
                 "rental_methods": [
@@ -5327,7 +5327,7 @@
                 "station_id": "47",
                 "vehicle_docks_available": [
                     {
-                        "count": 15,
+                        "count": 13,
                         "vehicle_type_ids": [
                             "EFIT",
                             "FIT",
@@ -5362,7 +5362,7 @@
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 4,
+                        "count": 6,
                         "vehicle_type_id": "EFIT"
                     }
                 ],
@@ -5387,7 +5387,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T05:48:30.173Z",
+                "last_reported": "2026-11-16T06:00:32.492Z",
                 "name": [
                     {
                         "language": "en",
@@ -5499,7 +5499,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T05:48:42.083Z",
+                "last_reported": "2026-11-16T06:00:44.452Z",
                 "name": [
                     {
                         "language": "en",
@@ -5611,7 +5611,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T05:48:23.273Z",
+                "last_reported": "2026-11-16T06:00:25.891Z",
                 "name": [
                     {
                         "language": "en",
@@ -5723,7 +5723,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T05:48:19.607Z",
+                "last_reported": "2026-11-16T06:00:21.822Z",
                 "name": [
                     {
                         "language": "en",
@@ -5835,7 +5835,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T05:46:22.399Z",
+                "last_reported": "2026-11-16T06:01:24.827Z",
                 "name": [
                     {
                         "language": "en",
@@ -5947,7 +5947,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T05:48:06.2Z",
+                "last_reported": "2026-11-16T06:03:08.951Z",
                 "name": [
                     {
                         "language": "en",
@@ -5966,9 +5966,9 @@
                         "text": "504 Calle Bronce"
                     }
                 ],
-                "num_docks_available": 3,
+                "num_docks_available": 2,
                 "num_docks_disabled": 0,
-                "num_vehicles_available": 8,
+                "num_vehicles_available": 9,
                 "num_vehicles_disabled": 0,
                 "post_code": "47008",
                 "rental_methods": [
@@ -5999,7 +5999,7 @@
                 "station_id": "52",
                 "vehicle_docks_available": [
                     {
-                        "count": 3,
+                        "count": 2,
                         "vehicle_type_ids": [
                             "EFIT",
                             "FIT",
@@ -6034,7 +6034,7 @@
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 6,
+                        "count": 7,
                         "vehicle_type_id": "EFIT"
                     }
                 ],
@@ -6059,7 +6059,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T05:48:56.376Z",
+                "last_reported": "2026-11-16T06:00:58.808Z",
                 "name": [
                     {
                         "language": "en",
@@ -6078,9 +6078,9 @@
                         "text": "505 Calle Plata"
                     }
                 ],
-                "num_docks_available": 5,
+                "num_docks_available": 4,
                 "num_docks_disabled": 0,
-                "num_vehicles_available": 6,
+                "num_vehicles_available": 7,
                 "num_vehicles_disabled": 0,
                 "post_code": "47012",
                 "rental_methods": [
@@ -6111,7 +6111,7 @@
                 "station_id": "53",
                 "vehicle_docks_available": [
                     {
-                        "count": 5,
+                        "count": 4,
                         "vehicle_type_ids": [
                             "EFIT",
                             "FIT",
@@ -6146,7 +6146,7 @@
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 4,
+                        "count": 5,
                         "vehicle_type_id": "EFIT"
                     }
                 ],
@@ -6171,7 +6171,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T05:48:00.533Z",
+                "last_reported": "2026-11-16T06:03:03.231Z",
                 "name": [
                     {
                         "language": "en",
@@ -6283,7 +6283,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T05:48:04.904Z",
+                "last_reported": "2026-11-16T06:03:08.342Z",
                 "name": [
                     {
                         "language": "en",
@@ -6395,7 +6395,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T05:47:53.414Z",
+                "last_reported": "2026-11-16T06:02:56.318Z",
                 "name": [
                     {
                         "language": "en",
@@ -6507,7 +6507,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T05:46:55.755Z",
+                "last_reported": "2026-11-16T06:01:58.67Z",
                 "name": [
                     {
                         "language": "en",
@@ -6619,7 +6619,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T05:46:53.228Z",
+                "last_reported": "2026-11-16T06:01:55.879Z",
                 "name": [
                     {
                         "language": "en",
@@ -6698,7 +6698,7 @@
                 ],
                 "vehicle_types_available": [
                     {
-                        "count": 9,
+                        "count": 10,
                         "vehicle_type_id": "FIT"
                     },
                     {
@@ -6706,7 +6706,7 @@
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 9,
+                        "count": 8,
                         "vehicle_type_id": "EFIT"
                     }
                 ],
@@ -6731,7 +6731,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T05:46:30.837Z",
+                "last_reported": "2026-11-16T06:01:33.36Z",
                 "name": [
                     {
                         "language": "en",
@@ -6750,9 +6750,9 @@
                         "text": "603 Paseo Zorrilla, 132"
                     }
                 ],
-                "num_docks_available": 7,
+                "num_docks_available": 5,
                 "num_docks_disabled": 0,
-                "num_vehicles_available": 9,
+                "num_vehicles_available": 11,
                 "num_vehicles_disabled": 3,
                 "post_code": "47006",
                 "rental_methods": [
@@ -6783,7 +6783,7 @@
                 "station_id": "59",
                 "vehicle_docks_available": [
                     {
-                        "count": 7,
+                        "count": 5,
                         "vehicle_type_ids": [
                             "EFIT",
                             "FIT",
@@ -6818,7 +6818,7 @@
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 3,
+                        "count": 5,
                         "vehicle_type_id": "EFIT"
                     }
                 ],
@@ -6843,7 +6843,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T05:46:44.226Z",
+                "last_reported": "2026-11-16T06:01:46.964Z",
                 "name": [
                     {
                         "language": "en",
@@ -6862,9 +6862,9 @@
                         "text": "005 Plaza Trinidad"
                     }
                 ],
-                "num_docks_available": 18,
+                "num_docks_available": 17,
                 "num_docks_disabled": 0,
-                "num_vehicles_available": 9,
+                "num_vehicles_available": 10,
                 "num_vehicles_disabled": 0,
                 "post_code": "47003",
                 "rental_methods": [
@@ -6895,7 +6895,7 @@
                 "station_id": "6",
                 "vehicle_docks_available": [
                     {
-                        "count": 18,
+                        "count": 17,
                         "vehicle_type_ids": [
                             "EFIT",
                             "FIT",
@@ -6930,7 +6930,7 @@
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 2,
+                        "count": 3,
                         "vehicle_type_id": "EFIT"
                     }
                 ],
@@ -6955,7 +6955,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T05:47:09.613Z",
+                "last_reported": "2026-11-16T06:02:12.788Z",
                 "name": [
                     {
                         "language": "en",
@@ -6974,9 +6974,9 @@
                         "text": "604 Espacio Joven Sur Valladolid"
                     }
                 ],
-                "num_docks_available": 4,
+                "num_docks_available": 5,
                 "num_docks_disabled": 0,
-                "num_vehicles_available": 15,
+                "num_vehicles_available": 14,
                 "num_vehicles_disabled": 0,
                 "post_code": "47007",
                 "rental_methods": [
@@ -7007,7 +7007,7 @@
                 "station_id": "60",
                 "vehicle_docks_available": [
                     {
-                        "count": 4,
+                        "count": 5,
                         "vehicle_type_ids": [
                             "EFIT",
                             "FIT",
@@ -7042,7 +7042,7 @@
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 4,
+                        "count": 3,
                         "vehicle_type_id": "EFIT"
                     }
                 ],
@@ -7067,7 +7067,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T05:46:20.296Z",
+                "last_reported": "2026-11-16T06:01:22.797Z",
                 "name": [
                     {
                         "language": "en",
@@ -7179,7 +7179,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T05:48:07.859Z",
+                "last_reported": "2026-11-16T06:03:10.62Z",
                 "name": [
                     {
                         "language": "en",
@@ -7198,9 +7198,9 @@
                         "text": "606 Calle Vives"
                     }
                 ],
-                "num_docks_available": 8,
+                "num_docks_available": 9,
                 "num_docks_disabled": 0,
-                "num_vehicles_available": 6,
+                "num_vehicles_available": 5,
                 "num_vehicles_disabled": 1,
                 "post_code": "47006",
                 "rental_methods": [
@@ -7231,7 +7231,7 @@
                 "station_id": "62",
                 "vehicle_docks_available": [
                     {
-                        "count": 8,
+                        "count": 9,
                         "vehicle_type_ids": [
                             "EFIT",
                             "FIT",
@@ -7266,7 +7266,7 @@
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 2,
+                        "count": 1,
                         "vehicle_type_id": "EFIT"
                     }
                 ],
@@ -7291,7 +7291,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T05:47:40.45Z",
+                "last_reported": "2026-11-16T06:02:43.627Z",
                 "name": [
                     {
                         "language": "en",
@@ -7403,7 +7403,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T05:46:43.963Z",
+                "last_reported": "2026-11-16T06:01:48.8Z",
                 "name": [
                     {
                         "language": "en",
@@ -7422,9 +7422,9 @@
                         "text": "608 Calle Doctor Moreno"
                     }
                 ],
-                "num_docks_available": 11,
+                "num_docks_available": 12,
                 "num_docks_disabled": 0,
-                "num_vehicles_available": 7,
+                "num_vehicles_available": 6,
                 "num_vehicles_disabled": 1,
                 "post_code": "47008",
                 "rental_methods": [
@@ -7455,7 +7455,7 @@
                 "station_id": "64",
                 "vehicle_docks_available": [
                     {
-                        "count": 11,
+                        "count": 12,
                         "vehicle_type_ids": [
                             "EFIT",
                             "FIT",
@@ -7490,7 +7490,7 @@
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 3,
+                        "count": 2,
                         "vehicle_type_id": "EFIT"
                     }
                 ],
@@ -7515,7 +7515,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T05:47:51.385Z",
+                "last_reported": "2026-11-16T06:02:54.316Z",
                 "name": [
                     {
                         "language": "en",
@@ -7534,9 +7534,9 @@
                         "text": "609 Plaza de Toros "
                     }
                 ],
-                "num_docks_available": 14,
+                "num_docks_available": 15,
                 "num_docks_disabled": 0,
-                "num_vehicles_available": 7,
+                "num_vehicles_available": 6,
                 "num_vehicles_disabled": 1,
                 "post_code": "47007",
                 "rental_methods": [
@@ -7567,7 +7567,7 @@
                 "station_id": "65",
                 "vehicle_docks_available": [
                     {
-                        "count": 14,
+                        "count": 15,
                         "vehicle_type_ids": [
                             "EFIT",
                             "FIT",
@@ -7602,7 +7602,7 @@
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 3,
+                        "count": 2,
                         "vehicle_type_id": "EFIT"
                     }
                 ],
@@ -7627,7 +7627,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T05:48:15.622Z",
+                "last_reported": "2026-11-16T06:03:18.212Z",
                 "name": [
                     {
                         "language": "en",
@@ -7739,7 +7739,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T05:46:24.548Z",
+                "last_reported": "2026-11-16T06:01:27.333Z",
                 "name": [
                     {
                         "language": "en",
@@ -7851,7 +7851,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T05:46:38.97Z",
+                "last_reported": "2026-11-16T06:01:42.224Z",
                 "name": [
                     {
                         "language": "en",
@@ -7963,7 +7963,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T05:46:10.784Z",
+                "last_reported": "2026-11-16T06:01:13.503Z",
                 "name": [
                     {
                         "language": "en",
@@ -8075,7 +8075,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T05:46:37.073Z",
+                "last_reported": "2026-11-16T06:01:39.612Z",
                 "name": [
                     {
                         "language": "en",
@@ -8187,7 +8187,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T05:46:31.288Z",
+                "last_reported": "2026-11-16T06:01:39.235Z",
                 "name": [
                     {
                         "language": "en",
@@ -8206,9 +8206,9 @@
                         "text": "705 Calle Ignacio Serrano"
                     }
                 ],
-                "num_docks_available": 15,
+                "num_docks_available": 14,
                 "num_docks_disabled": 0,
-                "num_vehicles_available": 4,
+                "num_vehicles_available": 5,
                 "num_vehicles_disabled": 0,
                 "post_code": "47008",
                 "rental_methods": [
@@ -8239,7 +8239,7 @@
                 "station_id": "70",
                 "vehicle_docks_available": [
                     {
-                        "count": 15,
+                        "count": 14,
                         "vehicle_type_ids": [
                             "EFIT",
                             "FIT",
@@ -8266,7 +8266,7 @@
                 ],
                 "vehicle_types_available": [
                     {
-                        "count": 2,
+                        "count": 3,
                         "vehicle_type_id": "FIT"
                     },
                     {
@@ -8299,7 +8299,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T05:48:52.156Z",
+                "last_reported": "2026-11-16T06:00:54.236Z",
                 "name": [
                     {
                         "language": "en",
@@ -8411,7 +8411,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T05:47:53.18Z",
+                "last_reported": "2026-11-16T06:02:55.933Z",
                 "name": [
                     {
                         "language": "en",
@@ -8523,7 +8523,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T05:48:32.525Z",
+                "last_reported": "2026-11-16T06:00:34.795Z",
                 "name": [
                     {
                         "language": "en",
@@ -8635,7 +8635,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T05:48:45.128Z",
+                "last_reported": "2026-11-16T06:00:47.268Z",
                 "name": [
                     {
                         "language": "en",
@@ -8747,7 +8747,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T05:47:21.985Z",
+                "last_reported": "2026-11-16T06:02:24.778Z",
                 "name": [
                     {
                         "language": "en",
@@ -8859,7 +8859,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T05:48:54.901Z",
+                "last_reported": "2026-11-16T06:00:57.047Z",
                 "name": [
                     {
                         "language": "en",
@@ -8971,7 +8971,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T05:48:45.914Z",
+                "last_reported": "2026-11-16T06:00:48.296Z",
                 "name": [
                     {
                         "language": "en",
@@ -9083,7 +9083,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T05:47:23.929Z",
+                "last_reported": "2026-11-16T06:02:27.208Z",
                 "name": [
                     {
                         "language": "en",
@@ -9195,7 +9195,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T05:48:06.621Z",
+                "last_reported": "2026-11-16T06:03:09.298Z",
                 "name": [
                     {
                         "language": "en",
@@ -9307,7 +9307,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T05:46:23.491Z",
+                "last_reported": "2026-11-16T06:01:26.351Z",
                 "name": [
                     {
                         "language": "en",
@@ -9419,7 +9419,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T05:47:05.085Z",
+                "last_reported": "2026-11-16T06:02:08.054Z",
                 "name": [
                     {
                         "language": "en",
@@ -9531,7 +9531,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T05:46:21.168Z",
+                "last_reported": "2026-11-16T06:01:24.051Z",
                 "name": [
                     {
                         "language": "en",
@@ -9550,10 +9550,10 @@
                         "text": "806 Calle Manuel Aza\u00f1a "
                     }
                 ],
-                "num_docks_available": 19,
+                "num_docks_available": 13,
                 "num_docks_disabled": 0,
-                "num_vehicles_available": 0,
-                "num_vehicles_disabled": 0,
+                "num_vehicles_available": 4,
+                "num_vehicles_disabled": 2,
                 "post_code": "47014",
                 "rental_methods": [
                     "key",
@@ -9583,7 +9583,7 @@
                 "station_id": "81",
                 "vehicle_docks_available": [
                     {
-                        "count": 19,
+                        "count": 13,
                         "vehicle_type_ids": [
                             "EFIT",
                             "FIT",
@@ -9618,7 +9618,7 @@
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 0,
+                        "count": 4,
                         "vehicle_type_id": "EFIT"
                     }
                 ],
@@ -9643,7 +9643,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T05:47:12.55Z",
+                "last_reported": "2026-11-16T06:02:15.136Z",
                 "name": [
                     {
                         "language": "en",
@@ -9662,9 +9662,9 @@
                         "text": "807 Calle de Hernando de Acu\u00f1a"
                     }
                 ],
-                "num_docks_available": 15,
+                "num_docks_available": 16,
                 "num_docks_disabled": 0,
-                "num_vehicles_available": 4,
+                "num_vehicles_available": 3,
                 "num_vehicles_disabled": 0,
                 "post_code": "47014",
                 "rental_methods": [
@@ -9695,7 +9695,7 @@
                 "station_id": "82",
                 "vehicle_docks_available": [
                     {
-                        "count": 15,
+                        "count": 16,
                         "vehicle_type_ids": [
                             "EFIT",
                             "FIT",
@@ -9730,7 +9730,7 @@
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 3,
+                        "count": 2,
                         "vehicle_type_id": "EFIT"
                     }
                 ],
@@ -9755,7 +9755,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T05:48:56.745Z",
+                "last_reported": "2026-11-16T06:00:58.966Z",
                 "name": [
                     {
                         "language": "en",
@@ -9867,7 +9867,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T05:48:50.412Z",
+                "last_reported": "2026-11-16T06:00:52.597Z",
                 "name": [
                     {
                         "language": "en",
@@ -9979,7 +9979,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T05:48:30.299Z",
+                "last_reported": "2026-11-16T06:00:32.285Z",
                 "name": [
                     {
                         "language": "en",
@@ -10091,7 +10091,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T05:47:51.48Z",
+                "last_reported": "2026-11-16T06:02:53.971Z",
                 "name": [
                     {
                         "language": "en",
@@ -10110,9 +10110,9 @@
                         "text": "901 Plaza del Milenio"
                     }
                 ],
-                "num_docks_available": 15,
+                "num_docks_available": 16,
                 "num_docks_disabled": 0,
-                "num_vehicles_available": 4,
+                "num_vehicles_available": 3,
                 "num_vehicles_disabled": 0,
                 "post_code": "47014",
                 "rental_methods": [
@@ -10143,7 +10143,7 @@
                 "station_id": "86",
                 "vehicle_docks_available": [
                     {
-                        "count": 15,
+                        "count": 16,
                         "vehicle_type_ids": [
                             "EFIT",
                             "FIT",
@@ -10178,7 +10178,7 @@
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 1,
+                        "count": 0,
                         "vehicle_type_id": "EFIT"
                     }
                 ],
@@ -10203,7 +10203,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T05:48:51.591Z",
+                "last_reported": "2026-11-16T06:00:54.195Z",
                 "name": [
                     {
                         "language": "en",
@@ -10315,7 +10315,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T05:48:30.903Z",
+                "last_reported": "2026-11-16T06:00:37.875Z",
                 "name": [
                     {
                         "language": "en",
@@ -10427,7 +10427,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T05:47:27.525Z",
+                "last_reported": "2026-11-16T06:02:30.378Z",
                 "name": [
                     {
                         "language": "en",
@@ -10540,7 +10540,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T05:47:32.205Z",
+                "last_reported": "2026-11-16T06:02:34.646Z",
                 "name": [
                     {
                         "language": "en",
@@ -10651,7 +10651,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T05:46:07.215Z",
+                "last_reported": "2026-11-16T06:01:09.889Z",
                 "name": [
                     {
                         "language": "en",
@@ -10763,7 +10763,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T05:48:17.972Z",
+                "last_reported": "2026-11-16T06:00:19.848Z",
                 "name": [
                     {
                         "language": "en",
@@ -10782,9 +10782,9 @@
                         "text": "906 Calle Arado"
                     }
                 ],
-                "num_docks_available": 13,
+                "num_docks_available": 14,
                 "num_docks_disabled": 0,
-                "num_vehicles_available": 6,
+                "num_vehicles_available": 5,
                 "num_vehicles_disabled": 0,
                 "post_code": "47014",
                 "rental_methods": [
@@ -10815,7 +10815,7 @@
                 "station_id": "91",
                 "vehicle_docks_available": [
                     {
-                        "count": 13,
+                        "count": 14,
                         "vehicle_type_ids": [
                             "EFIT",
                             "FIT",
@@ -10850,7 +10850,7 @@
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 4,
+                        "count": 3,
                         "vehicle_type_id": "EFIT"
                     }
                 ],
@@ -10875,7 +10875,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T05:46:57.361Z",
+                "last_reported": "2026-11-16T06:02:00.536Z",
                 "name": [
                     {
                         "language": "en",
@@ -10896,7 +10896,7 @@
                 ],
                 "num_docks_available": 12,
                 "num_docks_disabled": 0,
-                "num_vehicles_available": 7,
+                "num_vehicles_available": 6,
                 "num_vehicles_disabled": 0,
                 "post_code": "47014",
                 "rental_methods": [
@@ -10987,7 +10987,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T05:48:40.165Z",
+                "last_reported": "2026-11-16T06:00:42.841Z",
                 "name": [
                     {
                         "language": "en",
@@ -11099,7 +11099,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T05:48:03.364Z",
+                "last_reported": "2026-11-16T06:03:06.429Z",
                 "name": [
                     {
                         "language": "en",
@@ -11211,7 +11211,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T05:46:07.612Z",
+                "last_reported": "2026-11-16T06:01:10.96Z",
                 "name": [
                     {
                         "language": "en",
@@ -11323,7 +11323,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T05:47:26.974Z",
+                "last_reported": "2026-11-16T06:02:29.612Z",
                 "name": [
                     {
                         "language": "en",
@@ -11434,7 +11434,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T05:48:26.717Z",
+                "last_reported": "2026-11-16T06:00:29.901Z",
                 "name": [
                     {
                         "language": "en",
@@ -11546,7 +11546,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T05:46:52.299Z",
+                "last_reported": "2026-11-16T06:01:54.892Z",
                 "name": [
                     {
                         "language": "en",
@@ -11644,13 +11644,13 @@
     ],
     "gbfs": {
         "station_information": {
-            "last_updated": "2026-11-16T05:49:22Z",
-            "ttl": 27,
+            "last_updated": "2026-11-16T06:03:33Z",
+            "ttl": 21,
             "version": "3.0"
         },
         "station_status": {
-            "last_updated": "2026-11-16T05:49:22Z",
-            "ttl": 14,
+            "last_updated": "2026-11-16T06:03:33Z",
+            "ttl": 16,
             "version": "3.0"
         }
     },
