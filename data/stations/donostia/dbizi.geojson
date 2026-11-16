@@ -17,7 +17,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T19:47:56.183Z",
+                "last_reported": "2026-11-16T20:00:01.102Z",
                 "name": [
                     {
                         "language": "en",
@@ -41,9 +41,9 @@
                     }
                 ],
                 "num_bikes_overflow": 0,
-                "num_docks_available": 9,
+                "num_docks_available": 7,
                 "num_docks_disabled": 1,
-                "num_vehicles_available": 5,
+                "num_vehicles_available": 7,
                 "num_vehicles_disabled": 0,
                 "post_code": "20014",
                 "rental_methods": [
@@ -78,7 +78,128 @@
                 "station_id": "10",
                 "vehicle_docks_available": [
                     {
-                        "count": 9,
+                        "count": 7,
+                        "vehicle_type_ids": [
+                            "FIT",
+                            "EFIT",
+                            "BOOST"
+                        ]
+                    }
+                ],
+                "vehicle_docks_capacity": [
+                    {
+                        "count": 15,
+                        "vehicle_type_ids": [
+                            "ASTRO",
+                            "BOOST",
+                            "CHLOE",
+                            "COSMO",
+                            "EFIT",
+                            "FIT",
+                            "ICONIC",
+                            "METRO_BASE",
+                            "METRO_CONNECTED",
+                            "TRAILER"
+                        ]
+                    }
+                ],
+                "vehicle_types_available": [
+                    {
+                        "count": 5,
+                        "vehicle_type_id": "FIT"
+                    },
+                    {
+                        "count": 0,
+                        "vehicle_type_id": "BOOST"
+                    },
+                    {
+                        "count": 2,
+                        "vehicle_type_id": "EFIT"
+                    }
+                ],
+                "vehicle_types_capacity": []
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -1.9753223090705818,
+                    43.32285888680954
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "address": "San Francisco Kalea, 1",
+                "capacity": 15,
+                "external_id": "e2646e40-ddbb-11ef-a6c0-0af6ffe930c9",
+                "is_charging_station": false,
+                "is_installed": true,
+                "is_renting": true,
+                "is_returning": true,
+                "is_virtual_station": false,
+                "last_reported": "2026-11-16T19:59:46.798Z",
+                "name": [
+                    {
+                        "language": "en",
+                        "text": "11 - SAN FRANTZISKO-IPARRAGIRRE"
+                    },
+                    {
+                        "language": "fr",
+                        "text": "11 - SAN FRANTZISKO-IPARRAGIRRE"
+                    },
+                    {
+                        "language": "nl",
+                        "text": "11 - SAN FRANTZISKO-IPARRAGIRRE"
+                    },
+                    {
+                        "language": "es",
+                        "text": "11 - SAN FRANTZISKO-IPARRAGIRRE"
+                    },
+                    {
+                        "language": "eu",
+                        "text": "11 - SAN FRANTZISKO-IPARRAGIRRE"
+                    }
+                ],
+                "num_bikes_overflow": 0,
+                "num_docks_available": 10,
+                "num_docks_disabled": 0,
+                "num_vehicles_available": 5,
+                "num_vehicles_disabled": 0,
+                "post_code": "20001",
+                "rental_methods": [
+                    "key",
+                    "transitcard",
+                    "creditcard",
+                    "phone"
+                ],
+                "rental_uris": {},
+                "short_name": [
+                    {
+                        "language": "en",
+                        "text": "GR3"
+                    },
+                    {
+                        "language": "fr",
+                        "text": "GR3"
+                    },
+                    {
+                        "language": "nl",
+                        "text": "GR3"
+                    },
+                    {
+                        "language": "es",
+                        "text": "GR3"
+                    },
+                    {
+                        "language": "eu",
+                        "text": "GR3"
+                    }
+                ],
+                "station_id": "11",
+                "vehicle_docks_available": [
+                    {
+                        "count": 10,
                         "vehicle_type_ids": [
                             "FIT",
                             "EFIT",
@@ -124,127 +245,6 @@
         {
             "geometry": {
                 "coordinates": [
-                    -1.9753223090705818,
-                    43.32285888680954
-                ],
-                "type": "Point"
-            },
-            "properties": {
-                "address": "San Francisco Kalea, 1",
-                "capacity": 15,
-                "external_id": "e2646e40-ddbb-11ef-a6c0-0af6ffe930c9",
-                "is_charging_station": false,
-                "is_installed": true,
-                "is_renting": true,
-                "is_returning": true,
-                "is_virtual_station": false,
-                "last_reported": "2026-11-16T19:47:43.573Z",
-                "name": [
-                    {
-                        "language": "en",
-                        "text": "11 - SAN FRANTZISKO-IPARRAGIRRE"
-                    },
-                    {
-                        "language": "fr",
-                        "text": "11 - SAN FRANTZISKO-IPARRAGIRRE"
-                    },
-                    {
-                        "language": "nl",
-                        "text": "11 - SAN FRANTZISKO-IPARRAGIRRE"
-                    },
-                    {
-                        "language": "es",
-                        "text": "11 - SAN FRANTZISKO-IPARRAGIRRE"
-                    },
-                    {
-                        "language": "eu",
-                        "text": "11 - SAN FRANTZISKO-IPARRAGIRRE"
-                    }
-                ],
-                "num_bikes_overflow": 0,
-                "num_docks_available": 11,
-                "num_docks_disabled": 0,
-                "num_vehicles_available": 4,
-                "num_vehicles_disabled": 0,
-                "post_code": "20001",
-                "rental_methods": [
-                    "key",
-                    "transitcard",
-                    "creditcard",
-                    "phone"
-                ],
-                "rental_uris": {},
-                "short_name": [
-                    {
-                        "language": "en",
-                        "text": "GR3"
-                    },
-                    {
-                        "language": "fr",
-                        "text": "GR3"
-                    },
-                    {
-                        "language": "nl",
-                        "text": "GR3"
-                    },
-                    {
-                        "language": "es",
-                        "text": "GR3"
-                    },
-                    {
-                        "language": "eu",
-                        "text": "GR3"
-                    }
-                ],
-                "station_id": "11",
-                "vehicle_docks_available": [
-                    {
-                        "count": 11,
-                        "vehicle_type_ids": [
-                            "FIT",
-                            "EFIT",
-                            "BOOST"
-                        ]
-                    }
-                ],
-                "vehicle_docks_capacity": [
-                    {
-                        "count": 15,
-                        "vehicle_type_ids": [
-                            "ASTRO",
-                            "BOOST",
-                            "CHLOE",
-                            "COSMO",
-                            "EFIT",
-                            "FIT",
-                            "ICONIC",
-                            "METRO_BASE",
-                            "METRO_CONNECTED",
-                            "TRAILER"
-                        ]
-                    }
-                ],
-                "vehicle_types_available": [
-                    {
-                        "count": 4,
-                        "vehicle_type_id": "FIT"
-                    },
-                    {
-                        "count": 0,
-                        "vehicle_type_id": "BOOST"
-                    },
-                    {
-                        "count": 0,
-                        "vehicle_type_id": "EFIT"
-                    }
-                ],
-                "vehicle_types_capacity": []
-            },
-            "type": "Feature"
-        },
-        {
-            "geometry": {
-                "coordinates": [
                     -1.9734499999999997,
                     43.324109
                 ],
@@ -259,7 +259,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T19:48:00.55Z",
+                "last_reported": "2026-11-16T20:00:04.393Z",
                 "name": [
                     {
                         "language": "en",
@@ -380,7 +380,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T17:54:11.306Z",
+                "last_reported": "2026-11-16T20:01:03.763Z",
                 "name": [
                     {
                         "language": "en",
@@ -404,10 +404,10 @@
                     }
                 ],
                 "num_bikes_overflow": 0,
-                "num_docks_available": 4,
+                "num_docks_available": 0,
                 "num_docks_disabled": 1,
-                "num_vehicles_available": 13,
-                "num_vehicles_disabled": 1,
+                "num_vehicles_available": 16,
+                "num_vehicles_disabled": 2,
                 "post_code": "20002",
                 "rental_methods": [
                     "key",
@@ -441,7 +441,7 @@
                 "station_id": "13",
                 "vehicle_docks_available": [
                     {
-                        "count": 4,
+                        "count": 0,
                         "vehicle_type_ids": [
                             "FIT",
                             "EFIT",
@@ -468,7 +468,7 @@
                 ],
                 "vehicle_types_available": [
                     {
-                        "count": 9,
+                        "count": 10,
                         "vehicle_type_id": "FIT"
                     },
                     {
@@ -476,7 +476,7 @@
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 4,
+                        "count": 6,
                         "vehicle_type_id": "EFIT"
                     }
                 ],
@@ -501,7 +501,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T19:48:25.467Z",
+                "last_reported": "2026-11-16T20:00:34.249Z",
                 "name": [
                     {
                         "language": "en",
@@ -525,9 +525,9 @@
                     }
                 ],
                 "num_bikes_overflow": 0,
-                "num_docks_available": 6,
+                "num_docks_available": 5,
                 "num_docks_disabled": 1,
-                "num_vehicles_available": 8,
+                "num_vehicles_available": 9,
                 "num_vehicles_disabled": 0,
                 "post_code": "20001",
                 "rental_methods": [
@@ -562,7 +562,7 @@
                 "station_id": "14",
                 "vehicle_docks_available": [
                     {
-                        "count": 6,
+                        "count": 5,
                         "vehicle_type_ids": [
                             "FIT",
                             "EFIT",
@@ -589,7 +589,7 @@
                 ],
                 "vehicle_types_available": [
                     {
-                        "count": 5,
+                        "count": 6,
                         "vehicle_type_id": "FIT"
                     },
                     {
@@ -622,7 +622,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T19:48:07.78Z",
+                "last_reported": "2026-11-16T20:00:16.603Z",
                 "name": [
                     {
                         "language": "en",
@@ -646,9 +646,9 @@
                     }
                 ],
                 "num_bikes_overflow": 0,
-                "num_docks_available": 6,
+                "num_docks_available": 7,
                 "num_docks_disabled": 1,
-                "num_vehicles_available": 8,
+                "num_vehicles_available": 7,
                 "num_vehicles_disabled": 0,
                 "post_code": "20001",
                 "rental_methods": [
@@ -683,7 +683,7 @@
                 "station_id": "15",
                 "vehicle_docks_available": [
                     {
-                        "count": 6,
+                        "count": 7,
                         "vehicle_type_ids": [
                             "FIT",
                             "EFIT",
@@ -718,7 +718,7 @@
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 1,
+                        "count": 0,
                         "vehicle_type_id": "EFIT"
                     }
                 ],
@@ -743,7 +743,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T19:47:37.236Z",
+                "last_reported": "2026-11-16T19:59:46.504Z",
                 "name": [
                     {
                         "language": "en",
@@ -767,10 +767,10 @@
                     }
                 ],
                 "num_bikes_overflow": 0,
-                "num_docks_available": 8,
+                "num_docks_available": 10,
                 "num_docks_disabled": 0,
                 "num_vehicles_available": 5,
-                "num_vehicles_disabled": 2,
+                "num_vehicles_disabled": 0,
                 "post_code": "20013",
                 "rental_methods": [
                     "key",
@@ -833,7 +833,7 @@
                 "station_id": "16",
                 "vehicle_docks_available": [
                     {
-                        "count": 8,
+                        "count": 10,
                         "vehicle_type_ids": [
                             "FIT",
                             "EFIT",
@@ -909,7 +909,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T19:47:37.292Z",
+                "last_reported": "2026-11-16T19:59:40.614Z",
                 "name": [
                     {
                         "language": "en",
@@ -933,9 +933,9 @@
                     }
                 ],
                 "num_bikes_overflow": 0,
-                "num_docks_available": 18,
+                "num_docks_available": 19,
                 "num_docks_disabled": 0,
-                "num_vehicles_available": 1,
+                "num_vehicles_available": 0,
                 "num_vehicles_disabled": 1,
                 "post_code": "20015",
                 "rental_methods": [
@@ -970,7 +970,7 @@
                 "station_id": "17",
                 "vehicle_docks_available": [
                     {
-                        "count": 18,
+                        "count": 19,
                         "vehicle_type_ids": [
                             "FIT",
                             "EFIT",
@@ -1005,7 +1005,7 @@
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 1,
+                        "count": 0,
                         "vehicle_type_id": "EFIT"
                     }
                 ],
@@ -1030,7 +1030,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T19:48:22.148Z",
+                "last_reported": "2026-11-16T20:00:25.447Z",
                 "name": [
                     {
                         "language": "en",
@@ -1054,9 +1054,9 @@
                     }
                 ],
                 "num_bikes_overflow": 0,
-                "num_docks_available": 12,
+                "num_docks_available": 14,
                 "num_docks_disabled": 0,
-                "num_vehicles_available": 3,
+                "num_vehicles_available": 1,
                 "num_vehicles_disabled": 0,
                 "post_code": "20012",
                 "rental_methods": [
@@ -1091,7 +1091,7 @@
                 "station_id": "18",
                 "vehicle_docks_available": [
                     {
-                        "count": 12,
+                        "count": 14,
                         "vehicle_type_ids": [
                             "FIT",
                             "EFIT",
@@ -1118,7 +1118,7 @@
                 ],
                 "vehicle_types_available": [
                     {
-                        "count": 1,
+                        "count": 0,
                         "vehicle_type_id": "FIT"
                     },
                     {
@@ -1126,7 +1126,7 @@
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 2,
+                        "count": 1,
                         "vehicle_type_id": "EFIT"
                     }
                 ],
@@ -1151,7 +1151,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T19:47:24.488Z",
+                "last_reported": "2026-11-16T19:59:27.624Z",
                 "name": [
                     {
                         "language": "en",
@@ -1175,9 +1175,9 @@
                     }
                 ],
                 "num_bikes_overflow": 0,
-                "num_docks_available": 21,
+                "num_docks_available": 24,
                 "num_docks_disabled": 0,
-                "num_vehicles_available": 3,
+                "num_vehicles_available": 0,
                 "num_vehicles_disabled": 1,
                 "post_code": "20012",
                 "rental_methods": [
@@ -1212,7 +1212,7 @@
                 "station_id": "19",
                 "vehicle_docks_available": [
                     {
-                        "count": 21,
+                        "count": 24,
                         "vehicle_type_ids": [
                             "FIT",
                             "EFIT",
@@ -1239,7 +1239,7 @@
                 ],
                 "vehicle_types_available": [
                     {
-                        "count": 3,
+                        "count": 0,
                         "vehicle_type_id": "FIT"
                     },
                     {
@@ -1272,7 +1272,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T19:47:19.71Z",
+                "last_reported": "2026-11-16T19:59:26.9Z",
                 "name": [
                     {
                         "language": "en",
@@ -1296,9 +1296,9 @@
                     }
                 ],
                 "num_bikes_overflow": 0,
-                "num_docks_available": 9,
+                "num_docks_available": 10,
                 "num_docks_disabled": 0,
-                "num_vehicles_available": 6,
+                "num_vehicles_available": 5,
                 "num_vehicles_disabled": 0,
                 "post_code": "20003",
                 "rental_methods": [
@@ -1333,7 +1333,7 @@
                 "station_id": "2",
                 "vehicle_docks_available": [
                     {
-                        "count": 9,
+                        "count": 10,
                         "vehicle_type_ids": [
                             "FIT",
                             "EFIT",
@@ -1360,7 +1360,7 @@
                 ],
                 "vehicle_types_available": [
                     {
-                        "count": 2,
+                        "count": 1,
                         "vehicle_type_id": "FIT"
                     },
                     {
@@ -1393,7 +1393,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T19:49:17.079Z",
+                "last_reported": "2026-11-16T20:01:20.341Z",
                 "name": [
                     {
                         "language": "en",
@@ -1514,7 +1514,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T19:48:36.896Z",
+                "last_reported": "2026-11-16T20:00:39.636Z",
                 "name": [
                     {
                         "language": "en",
@@ -1538,9 +1538,9 @@
                     }
                 ],
                 "num_bikes_overflow": 0,
-                "num_docks_available": 11,
+                "num_docks_available": 10,
                 "num_docks_disabled": 0,
-                "num_vehicles_available": 6,
+                "num_vehicles_available": 7,
                 "num_vehicles_disabled": 3,
                 "post_code": "20012",
                 "rental_methods": [
@@ -1575,7 +1575,7 @@
                 "station_id": "21",
                 "vehicle_docks_available": [
                     {
-                        "count": 11,
+                        "count": 10,
                         "vehicle_type_ids": [
                             "FIT",
                             "EFIT",
@@ -1610,7 +1610,7 @@
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 4,
+                        "count": 5,
                         "vehicle_type_id": "EFIT"
                     }
                 ],
@@ -1635,7 +1635,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T19:47:50.939Z",
+                "last_reported": "2026-11-16T19:59:54.125Z",
                 "name": [
                     {
                         "language": "en",
@@ -1659,9 +1659,9 @@
                     }
                 ],
                 "num_bikes_overflow": 0,
-                "num_docks_available": 10,
+                "num_docks_available": 9,
                 "num_docks_disabled": 0,
-                "num_vehicles_available": 2,
+                "num_vehicles_available": 3,
                 "num_vehicles_disabled": 0,
                 "post_code": "20010",
                 "rental_methods": [
@@ -1696,7 +1696,7 @@
                 "station_id": "22",
                 "vehicle_docks_available": [
                     {
-                        "count": 10,
+                        "count": 9,
                         "vehicle_type_ids": [
                             "FIT",
                             "EFIT",
@@ -1723,7 +1723,7 @@
                 ],
                 "vehicle_types_available": [
                     {
-                        "count": 2,
+                        "count": 3,
                         "vehicle_type_id": "FIT"
                     },
                     {
@@ -1756,7 +1756,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T19:48:28.159Z",
+                "last_reported": "2026-11-16T20:00:30.765Z",
                 "name": [
                     {
                         "language": "en",
@@ -1780,9 +1780,9 @@
                     }
                 ],
                 "num_bikes_overflow": 0,
-                "num_docks_available": 3,
+                "num_docks_available": 1,
                 "num_docks_disabled": 1,
-                "num_vehicles_available": 10,
+                "num_vehicles_available": 12,
                 "num_vehicles_disabled": 1,
                 "post_code": "20009",
                 "rental_methods": [
@@ -1817,7 +1817,7 @@
                 "station_id": "24",
                 "vehicle_docks_available": [
                     {
-                        "count": 3,
+                        "count": 1,
                         "vehicle_type_ids": [
                             "FIT",
                             "EFIT",
@@ -1852,7 +1852,7 @@
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 1,
+                        "count": 3,
                         "vehicle_type_id": "EFIT"
                     }
                 ],
@@ -1877,7 +1877,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T19:46:44.299Z",
+                "last_reported": "2026-11-16T20:01:48.486Z",
                 "name": [
                     {
                         "language": "en",
@@ -1901,9 +1901,9 @@
                     }
                 ],
                 "num_bikes_overflow": 0,
-                "num_docks_available": 8,
+                "num_docks_available": 9,
                 "num_docks_disabled": 0,
-                "num_vehicles_available": 7,
+                "num_vehicles_available": 6,
                 "num_vehicles_disabled": 0,
                 "post_code": "20010",
                 "rental_methods": [
@@ -1938,7 +1938,7 @@
                 "station_id": "25",
                 "vehicle_docks_available": [
                     {
-                        "count": 8,
+                        "count": 9,
                         "vehicle_type_ids": [
                             "FIT",
                             "EFIT",
@@ -1973,7 +1973,7 @@
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 2,
+                        "count": 1,
                         "vehicle_type_id": "EFIT"
                     }
                 ],
@@ -1998,7 +1998,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T19:47:40.272Z",
+                "last_reported": "2026-11-16T19:59:43.805Z",
                 "name": [
                     {
                         "language": "en",
@@ -2022,9 +2022,9 @@
                     }
                 ],
                 "num_bikes_overflow": 0,
-                "num_docks_available": 4,
+                "num_docks_available": 2,
                 "num_docks_disabled": 0,
-                "num_vehicles_available": 15,
+                "num_vehicles_available": 17,
                 "num_vehicles_disabled": 0,
                 "post_code": "20010",
                 "rental_methods": [
@@ -2059,7 +2059,7 @@
                 "station_id": "26",
                 "vehicle_docks_available": [
                     {
-                        "count": 4,
+                        "count": 2,
                         "vehicle_type_ids": [
                             "FIT",
                             "EFIT",
@@ -2094,7 +2094,7 @@
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 1,
+                        "count": 3,
                         "vehicle_type_id": "EFIT"
                     }
                 ],
@@ -2119,7 +2119,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T19:48:52.33Z",
+                "last_reported": "2026-11-16T20:00:55.665Z",
                 "name": [
                     {
                         "language": "en",
@@ -2143,9 +2143,9 @@
                     }
                 ],
                 "num_bikes_overflow": 0,
-                "num_docks_available": 1,
+                "num_docks_available": 3,
                 "num_docks_disabled": 0,
-                "num_vehicles_available": 17,
+                "num_vehicles_available": 15,
                 "num_vehicles_disabled": 1,
                 "post_code": "20010",
                 "rental_methods": [
@@ -2180,7 +2180,7 @@
                 "station_id": "27",
                 "vehicle_docks_available": [
                     {
-                        "count": 1,
+                        "count": 3,
                         "vehicle_type_ids": [
                             "FIT",
                             "EFIT",
@@ -2215,7 +2215,7 @@
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 5,
+                        "count": 3,
                         "vehicle_type_id": "EFIT"
                     }
                 ],
@@ -2240,7 +2240,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T19:46:24.296Z",
+                "last_reported": "2026-11-16T20:01:28.142Z",
                 "name": [
                     {
                         "language": "en",
@@ -2264,9 +2264,9 @@
                     }
                 ],
                 "num_bikes_overflow": 0,
-                "num_docks_available": 4,
+                "num_docks_available": 5,
                 "num_docks_disabled": 0,
-                "num_vehicles_available": 15,
+                "num_vehicles_available": 14,
                 "num_vehicles_disabled": 1,
                 "post_code": "20011",
                 "rental_methods": [
@@ -2301,7 +2301,7 @@
                 "station_id": "28",
                 "vehicle_docks_available": [
                     {
-                        "count": 4,
+                        "count": 5,
                         "vehicle_type_ids": [
                             "FIT",
                             "EFIT",
@@ -2328,7 +2328,7 @@
                 ],
                 "vehicle_types_available": [
                     {
-                        "count": 15,
+                        "count": 14,
                         "vehicle_type_id": "FIT"
                     },
                     {
@@ -2361,7 +2361,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T19:48:35.618Z",
+                "last_reported": "2026-11-16T20:00:38.993Z",
                 "name": [
                     {
                         "language": "en",
@@ -2385,9 +2385,9 @@
                     }
                 ],
                 "num_bikes_overflow": 0,
-                "num_docks_available": 5,
+                "num_docks_available": 7,
                 "num_docks_disabled": 0,
-                "num_vehicles_available": 14,
+                "num_vehicles_available": 12,
                 "num_vehicles_disabled": 0,
                 "post_code": "20011",
                 "rental_methods": [
@@ -2422,7 +2422,7 @@
                 "station_id": "29",
                 "vehicle_docks_available": [
                     {
-                        "count": 5,
+                        "count": 7,
                         "vehicle_type_ids": [
                             "FIT",
                             "EFIT",
@@ -2457,7 +2457,7 @@
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 2,
+                        "count": 0,
                         "vehicle_type_id": "EFIT"
                     }
                 ],
@@ -2482,7 +2482,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T19:47:14.306Z",
+                "last_reported": "2026-11-16T19:59:17.104Z",
                 "name": [
                     {
                         "language": "en",
@@ -2603,7 +2603,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T19:48:27.986Z",
+                "last_reported": "2026-11-16T20:00:31.32Z",
                 "name": [
                     {
                         "language": "en",
@@ -2627,9 +2627,9 @@
                     }
                 ],
                 "num_bikes_overflow": 0,
-                "num_docks_available": 7,
+                "num_docks_available": 8,
                 "num_docks_disabled": 0,
-                "num_vehicles_available": 11,
+                "num_vehicles_available": 10,
                 "num_vehicles_disabled": 2,
                 "post_code": "20014",
                 "rental_methods": [
@@ -2664,7 +2664,7 @@
                 "station_id": "30",
                 "vehicle_docks_available": [
                     {
-                        "count": 7,
+                        "count": 8,
                         "vehicle_type_ids": [
                             "FIT",
                             "EFIT",
@@ -2691,7 +2691,7 @@
                 ],
                 "vehicle_types_available": [
                     {
-                        "count": 2,
+                        "count": 3,
                         "vehicle_type_id": "FIT"
                     },
                     {
@@ -2699,7 +2699,7 @@
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 9,
+                        "count": 7,
                         "vehicle_type_id": "EFIT"
                     }
                 ],
@@ -2724,7 +2724,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T19:48:25.407Z",
+                "last_reported": "2026-11-16T20:00:31.811Z",
                 "name": [
                     {
                         "language": "en",
@@ -2748,9 +2748,9 @@
                     }
                 ],
                 "num_bikes_overflow": 0,
-                "num_docks_available": 8,
+                "num_docks_available": 11,
                 "num_docks_disabled": 0,
-                "num_vehicles_available": 11,
+                "num_vehicles_available": 8,
                 "num_vehicles_disabled": 0,
                 "post_code": "20014",
                 "rental_methods": [
@@ -2814,7 +2814,7 @@
                 "station_id": "31",
                 "vehicle_docks_available": [
                     {
-                        "count": 8,
+                        "count": 11,
                         "vehicle_type_ids": [
                             "FIT",
                             "EFIT",
@@ -2841,7 +2841,7 @@
                 ],
                 "vehicle_types_available": [
                     {
-                        "count": 8,
+                        "count": 7,
                         "vehicle_type_id": "FIT"
                     },
                     {
@@ -2849,7 +2849,7 @@
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 3,
+                        "count": 1,
                         "vehicle_type_id": "EFIT"
                     }
                 ],
@@ -2890,7 +2890,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T19:48:01.739Z",
+                "last_reported": "2026-11-16T20:00:10.956Z",
                 "name": [
                     {
                         "language": "en",
@@ -2914,9 +2914,9 @@
                     }
                 ],
                 "num_bikes_overflow": 0,
-                "num_docks_available": 1,
+                "num_docks_available": 0,
                 "num_docks_disabled": 1,
-                "num_vehicles_available": 13,
+                "num_vehicles_available": 14,
                 "num_vehicles_disabled": 0,
                 "post_code": "20014",
                 "rental_methods": [
@@ -2988,7 +2988,7 @@
                 "station_id": "32",
                 "vehicle_docks_available": [
                     {
-                        "count": 1,
+                        "count": 0,
                         "vehicle_type_ids": [
                             "FIT",
                             "EFIT",
@@ -3023,7 +3023,7 @@
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 6,
+                        "count": 7,
                         "vehicle_type_id": "EFIT"
                     }
                 ],
@@ -3064,7 +3064,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T19:47:36.942Z",
+                "last_reported": "2026-11-16T19:59:39.09Z",
                 "name": [
                     {
                         "language": "en",
@@ -3088,9 +3088,9 @@
                     }
                 ],
                 "num_bikes_overflow": 0,
-                "num_docks_available": 4,
+                "num_docks_available": 2,
                 "num_docks_disabled": 0,
-                "num_vehicles_available": 19,
+                "num_vehicles_available": 21,
                 "num_vehicles_disabled": 0,
                 "post_code": "20014",
                 "rental_methods": [
@@ -3125,7 +3125,7 @@
                 "station_id": "33",
                 "vehicle_docks_available": [
                     {
-                        "count": 4,
+                        "count": 2,
                         "vehicle_type_ids": [
                             "FIT",
                             "EFIT",
@@ -3160,7 +3160,7 @@
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 9,
+                        "count": 11,
                         "vehicle_type_id": "EFIT"
                     }
                 ],
@@ -3185,7 +3185,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T19:46:45.411Z",
+                "last_reported": "2026-11-16T20:01:49.363Z",
                 "name": [
                     {
                         "language": "en",
@@ -3209,9 +3209,9 @@
                     }
                 ],
                 "num_bikes_overflow": 1,
-                "num_docks_available": 0,
+                "num_docks_available": 1,
                 "num_docks_disabled": 0,
-                "num_vehicles_available": 23,
+                "num_vehicles_available": 22,
                 "num_vehicles_disabled": 0,
                 "post_code": "20014",
                 "rental_methods": [
@@ -3275,7 +3275,7 @@
                 "station_id": "34",
                 "vehicle_docks_available": [
                     {
-                        "count": 0,
+                        "count": 1,
                         "vehicle_type_ids": [
                             "FIT",
                             "EFIT",
@@ -3310,7 +3310,7 @@
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 17,
+                        "count": 16,
                         "vehicle_type_id": "EFIT"
                     }
                 ],
@@ -3351,7 +3351,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T19:49:10.198Z",
+                "last_reported": "2026-11-16T20:01:13.115Z",
                 "name": [
                     {
                         "language": "en",
@@ -3375,9 +3375,9 @@
                     }
                 ],
                 "num_bikes_overflow": 0,
-                "num_docks_available": 17,
+                "num_docks_available": 16,
                 "num_docks_disabled": 0,
-                "num_vehicles_available": 2,
+                "num_vehicles_available": 3,
                 "num_vehicles_disabled": 0,
                 "post_code": "20009",
                 "rental_methods": [
@@ -3441,7 +3441,7 @@
                 "station_id": "35",
                 "vehicle_docks_available": [
                     {
-                        "count": 17,
+                        "count": 16,
                         "vehicle_type_ids": [
                             "FIT",
                             "EFIT",
@@ -3476,7 +3476,7 @@
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 2,
+                        "count": 3,
                         "vehicle_type_id": "EFIT"
                     }
                 ],
@@ -3517,7 +3517,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T19:49:18.183Z",
+                "last_reported": "2026-11-16T20:01:26.705Z",
                 "name": [
                     {
                         "language": "en",
@@ -3541,9 +3541,9 @@
                     }
                 ],
                 "num_bikes_overflow": 0,
-                "num_docks_available": 18,
+                "num_docks_available": 19,
                 "num_docks_disabled": 0,
-                "num_vehicles_available": 1,
+                "num_vehicles_available": 0,
                 "num_vehicles_disabled": 1,
                 "post_code": "20009",
                 "rental_methods": [
@@ -3578,7 +3578,7 @@
                 "station_id": "36",
                 "vehicle_docks_available": [
                     {
-                        "count": 18,
+                        "count": 19,
                         "vehicle_type_ids": [
                             "FIT",
                             "EFIT",
@@ -3613,7 +3613,7 @@
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 1,
+                        "count": 0,
                         "vehicle_type_id": "EFIT"
                     }
                 ],
@@ -3638,7 +3638,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T19:46:29.375Z",
+                "last_reported": "2026-11-16T20:01:32.284Z",
                 "name": [
                     {
                         "language": "en",
@@ -3816,7 +3816,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T19:46:23.662Z",
+                "last_reported": "2026-11-16T20:01:34.788Z",
                 "name": [
                     {
                         "language": "en",
@@ -3937,7 +3937,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T19:46:22.616Z",
+                "last_reported": "2026-11-16T20:01:31.989Z",
                 "name": [
                     {
                         "language": "en",
@@ -4058,7 +4058,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T19:47:04.43Z",
+                "last_reported": "2026-11-16T19:59:11.779Z",
                 "name": [
                     {
                         "language": "en",
@@ -4082,9 +4082,9 @@
                     }
                 ],
                 "num_bikes_overflow": 0,
-                "num_docks_available": 19,
+                "num_docks_available": 18,
                 "num_docks_disabled": 0,
-                "num_vehicles_available": 0,
+                "num_vehicles_available": 1,
                 "num_vehicles_disabled": 0,
                 "post_code": "20004",
                 "rental_methods": [
@@ -4119,7 +4119,7 @@
                 "station_id": "4",
                 "vehicle_docks_available": [
                     {
-                        "count": 19,
+                        "count": 18,
                         "vehicle_type_ids": [
                             "FIT",
                             "EFIT",
@@ -4146,7 +4146,7 @@
                 ],
                 "vehicle_types_available": [
                     {
-                        "count": 0,
+                        "count": 1,
                         "vehicle_type_id": "FIT"
                     },
                     {
@@ -4179,7 +4179,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T19:46:48.603Z",
+                "last_reported": "2026-11-16T20:01:51.916Z",
                 "name": [
                     {
                         "language": "en",
@@ -4205,8 +4205,8 @@
                 "num_bikes_overflow": 0,
                 "num_docks_available": 21,
                 "num_docks_disabled": 0,
-                "num_vehicles_available": 2,
-                "num_vehicles_disabled": 1,
+                "num_vehicles_available": 3,
+                "num_vehicles_disabled": 0,
                 "post_code": "20018",
                 "rental_methods": [
                     "key",
@@ -4275,7 +4275,7 @@
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 0,
+                        "count": 1,
                         "vehicle_type_id": "EFIT"
                     }
                 ],
@@ -4300,7 +4300,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T19:47:44.963Z",
+                "last_reported": "2026-11-16T19:59:48.564Z",
                 "name": [
                     {
                         "language": "en",
@@ -4324,9 +4324,9 @@
                     }
                 ],
                 "num_bikes_overflow": 0,
-                "num_docks_available": 21,
+                "num_docks_available": 22,
                 "num_docks_disabled": 0,
-                "num_vehicles_available": 1,
+                "num_vehicles_available": 0,
                 "num_vehicles_disabled": 3,
                 "post_code": "20018",
                 "rental_methods": [
@@ -4361,7 +4361,7 @@
                 "station_id": "41",
                 "vehicle_docks_available": [
                     {
-                        "count": 21,
+                        "count": 22,
                         "vehicle_type_ids": [
                             "FIT",
                             "EFIT",
@@ -4388,7 +4388,7 @@
                 ],
                 "vehicle_types_available": [
                     {
-                        "count": 1,
+                        "count": 0,
                         "vehicle_type_id": "FIT"
                     },
                     {
@@ -4421,7 +4421,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T19:47:57.955Z",
+                "last_reported": "2026-11-16T20:00:03.76Z",
                 "name": [
                     {
                         "language": "en",
@@ -4542,7 +4542,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T19:47:14.967Z",
+                "last_reported": "2026-11-16T19:59:17.304Z",
                 "name": [
                     {
                         "language": "en",
@@ -4566,9 +4566,9 @@
                     }
                 ],
                 "num_bikes_overflow": 0,
-                "num_docks_available": 16,
+                "num_docks_available": 15,
                 "num_docks_disabled": 0,
-                "num_vehicles_available": 1,
+                "num_vehicles_available": 2,
                 "num_vehicles_disabled": 0,
                 "post_code": "20018",
                 "rental_methods": [
@@ -4603,7 +4603,7 @@
                 "station_id": "43",
                 "vehicle_docks_available": [
                     {
-                        "count": 16,
+                        "count": 15,
                         "vehicle_type_ids": [
                             "FIT",
                             "EFIT",
@@ -4638,7 +4638,7 @@
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 0,
+                        "count": 1,
                         "vehicle_type_id": "EFIT"
                     }
                 ],
@@ -4663,7 +4663,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T19:47:52.124Z",
+                "last_reported": "2026-11-16T19:59:55.301Z",
                 "name": [
                     {
                         "language": "en",
@@ -4784,7 +4784,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T19:47:35.609Z",
+                "last_reported": "2026-11-16T19:59:38.372Z",
                 "name": [
                     {
                         "language": "en",
@@ -4905,7 +4905,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T19:48:52.751Z",
+                "last_reported": "2026-11-16T20:00:55.551Z",
                 "name": [
                     {
                         "language": "en",
@@ -4929,9 +4929,9 @@
                     }
                 ],
                 "num_bikes_overflow": 0,
-                "num_docks_available": 10,
+                "num_docks_available": 9,
                 "num_docks_disabled": 0,
-                "num_vehicles_available": 5,
+                "num_vehicles_available": 6,
                 "num_vehicles_disabled": 0,
                 "post_code": "20018",
                 "rental_methods": [
@@ -4966,7 +4966,7 @@
                 "station_id": "46",
                 "vehicle_docks_available": [
                     {
-                        "count": 10,
+                        "count": 9,
                         "vehicle_type_ids": [
                             "FIT",
                             "EFIT",
@@ -5001,7 +5001,7 @@
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 1,
+                        "count": 2,
                         "vehicle_type_id": "EFIT"
                     }
                 ],
@@ -5026,7 +5026,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T19:46:33.666Z",
+                "last_reported": "2026-11-16T20:01:36.404Z",
                 "name": [
                     {
                         "language": "en",
@@ -5147,7 +5147,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T19:49:11.353Z",
+                "last_reported": "2026-11-16T20:01:14.153Z",
                 "name": [
                     {
                         "language": "en",
@@ -5268,7 +5268,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T19:48:05.607Z",
+                "last_reported": "2026-11-16T20:00:08.717Z",
                 "name": [
                     {
                         "language": "en",
@@ -5292,9 +5292,9 @@
                     }
                 ],
                 "num_bikes_overflow": 0,
-                "num_docks_available": 10,
+                "num_docks_available": 11,
                 "num_docks_disabled": 1,
-                "num_vehicles_available": 4,
+                "num_vehicles_available": 3,
                 "num_vehicles_disabled": 0,
                 "post_code": "20015",
                 "rental_methods": [
@@ -5329,7 +5329,7 @@
                 "station_id": "52",
                 "vehicle_docks_available": [
                     {
-                        "count": 10,
+                        "count": 11,
                         "vehicle_type_ids": [
                             "FIT",
                             "EFIT",
@@ -5364,7 +5364,7 @@
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 4,
+                        "count": 3,
                         "vehicle_type_id": "EFIT"
                     }
                 ],
@@ -5389,7 +5389,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T19:47:54.83Z",
+                "last_reported": "2026-11-16T19:59:58.177Z",
                 "name": [
                     {
                         "language": "en",
@@ -5413,9 +5413,9 @@
                     }
                 ],
                 "num_bikes_overflow": 0,
-                "num_docks_available": 18,
+                "num_docks_available": 17,
                 "num_docks_disabled": 1,
-                "num_vehicles_available": 0,
+                "num_vehicles_available": 1,
                 "num_vehicles_disabled": 0,
                 "post_code": "20110",
                 "rental_methods": [
@@ -5479,7 +5479,7 @@
                 "station_id": "53",
                 "vehicle_docks_available": [
                     {
-                        "count": 18,
+                        "count": 17,
                         "vehicle_type_ids": [
                             "FIT",
                             "EFIT",
@@ -5514,7 +5514,7 @@
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 0,
+                        "count": 1,
                         "vehicle_type_id": "EFIT"
                     }
                 ],
@@ -5555,7 +5555,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T19:48:53.306Z",
+                "last_reported": "2026-11-16T20:00:55.611Z",
                 "name": [
                     {
                         "language": "en",
@@ -5579,9 +5579,9 @@
                     }
                 ],
                 "num_bikes_overflow": 0,
-                "num_docks_available": 5,
+                "num_docks_available": 4,
                 "num_docks_disabled": 0,
-                "num_vehicles_available": 9,
+                "num_vehicles_available": 10,
                 "num_vehicles_disabled": 1,
                 "post_code": "20017",
                 "rental_methods": [
@@ -5616,7 +5616,7 @@
                 "station_id": "56",
                 "vehicle_docks_available": [
                     {
-                        "count": 5,
+                        "count": 4,
                         "vehicle_type_ids": [
                             "FIT",
                             "EFIT",
@@ -5651,7 +5651,7 @@
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 8,
+                        "count": 9,
                         "vehicle_type_id": "EFIT"
                     }
                 ],
@@ -5676,7 +5676,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T19:49:08.878Z",
+                "last_reported": "2026-11-16T20:01:11.327Z",
                 "name": [
                     {
                         "language": "en",
@@ -5797,7 +5797,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T19:48:05.676Z",
+                "last_reported": "2026-11-16T20:00:08.223Z",
                 "name": [
                     {
                         "language": "en",
@@ -6039,7 +6039,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T19:47:49.727Z",
+                "last_reported": "2026-11-16T19:59:52.825Z",
                 "name": [
                     {
                         "language": "en",
@@ -6065,8 +6065,8 @@
                 "num_bikes_overflow": 0,
                 "num_docks_available": 14,
                 "num_docks_disabled": 0,
-                "num_vehicles_available": 0,
-                "num_vehicles_disabled": 2,
+                "num_vehicles_available": 1,
+                "num_vehicles_disabled": 1,
                 "post_code": "20005",
                 "rental_methods": [
                     "key",
@@ -6135,7 +6135,7 @@
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 0,
+                        "count": 1,
                         "vehicle_type_id": "EFIT"
                     }
                 ],
@@ -6160,7 +6160,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T19:46:22.315Z",
+                "last_reported": "2026-11-16T20:01:25.274Z",
                 "name": [
                     {
                         "language": "en",
@@ -6350,7 +6350,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T19:47:21.121Z",
+                "last_reported": "2026-11-16T19:59:23.56Z",
                 "name": [
                     {
                         "language": "en",
@@ -6374,9 +6374,9 @@
                     }
                 ],
                 "num_bikes_overflow": 0,
-                "num_docks_available": 13,
+                "num_docks_available": 12,
                 "num_docks_disabled": 1,
-                "num_vehicles_available": 4,
+                "num_vehicles_available": 5,
                 "num_vehicles_disabled": 1,
                 "post_code": "20016",
                 "rental_methods": [
@@ -6440,7 +6440,7 @@
                 "station_id": "61",
                 "vehicle_docks_available": [
                     {
-                        "count": 13,
+                        "count": 12,
                         "vehicle_type_ids": [
                             "FIT",
                             "EFIT",
@@ -6475,7 +6475,7 @@
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 3,
+                        "count": 4,
                         "vehicle_type_id": "EFIT"
                     }
                 ],
@@ -6516,7 +6516,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T19:46:48.684Z",
+                "last_reported": "2026-11-16T20:01:51.437Z",
                 "name": [
                     {
                         "language": "en",
@@ -6637,7 +6637,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T19:46:20.294Z",
+                "last_reported": "2026-11-16T20:01:23.123Z",
                 "name": [
                     {
                         "language": "en",
@@ -6661,10 +6661,10 @@
                     }
                 ],
                 "num_bikes_overflow": 0,
-                "num_docks_available": 13,
+                "num_docks_available": 12,
                 "num_docks_disabled": 0,
                 "num_vehicles_available": 2,
-                "num_vehicles_disabled": 0,
+                "num_vehicles_disabled": 1,
                 "post_code": "20009",
                 "rental_methods": [
                     "key",
@@ -6698,7 +6698,7 @@
                 "station_id": "63",
                 "vehicle_docks_available": [
                     {
-                        "count": 13,
+                        "count": 12,
                         "vehicle_type_ids": [
                             "FIT",
                             "EFIT",
@@ -6758,7 +6758,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T19:49:03.069Z",
+                "last_reported": "2026-11-16T20:01:05.518Z",
                 "name": [
                     {
                         "language": "en",
@@ -6879,7 +6879,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T19:49:08.947Z",
+                "last_reported": "2026-11-16T20:01:11.192Z",
                 "name": [
                     {
                         "language": "en",
@@ -7000,7 +7000,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T19:47:09.777Z",
+                "last_reported": "2026-11-16T19:59:13.099Z",
                 "name": [
                     {
                         "language": "en",
@@ -7024,8 +7024,8 @@
                     }
                 ],
                 "num_bikes_overflow": 0,
-                "num_docks_available": 1,
-                "num_docks_disabled": 0,
+                "num_docks_available": 0,
+                "num_docks_disabled": 1,
                 "num_vehicles_available": 17,
                 "num_vehicles_disabled": 1,
                 "post_code": "20016",
@@ -7098,7 +7098,7 @@
                 "station_id": "66",
                 "vehicle_docks_available": [
                     {
-                        "count": 1,
+                        "count": 0,
                         "vehicle_type_ids": [
                             "FIT",
                             "EFIT",
@@ -7174,7 +7174,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T19:47:04.853Z",
+                "last_reported": "2026-11-16T19:59:07.397Z",
                 "name": [
                     {
                         "language": "en",
@@ -7348,7 +7348,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T19:47:20.334Z",
+                "last_reported": "2026-11-16T19:59:22.692Z",
                 "name": [
                     {
                         "language": "en",
@@ -7372,9 +7372,9 @@
                     }
                 ],
                 "num_bikes_overflow": 0,
-                "num_docks_available": 12,
+                "num_docks_available": 10,
                 "num_docks_disabled": 1,
-                "num_vehicles_available": 2,
+                "num_vehicles_available": 4,
                 "num_vehicles_disabled": 0,
                 "post_code": "20008",
                 "rental_methods": [
@@ -7409,7 +7409,7 @@
                 "station_id": "68",
                 "vehicle_docks_available": [
                     {
-                        "count": 12,
+                        "count": 10,
                         "vehicle_type_ids": [
                             "FIT",
                             "EFIT",
@@ -7444,7 +7444,7 @@
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 2,
+                        "count": 4,
                         "vehicle_type_id": "EFIT"
                     }
                 ],
@@ -7469,7 +7469,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T19:47:55.338Z",
+                "last_reported": "2026-11-16T20:00:06.954Z",
                 "name": [
                     {
                         "language": "en",
@@ -7493,9 +7493,9 @@
                     }
                 ],
                 "num_bikes_overflow": 0,
-                "num_docks_available": 12,
+                "num_docks_available": 11,
                 "num_docks_disabled": 1,
-                "num_vehicles_available": 2,
+                "num_vehicles_available": 3,
                 "num_vehicles_disabled": 0,
                 "post_code": "20008",
                 "rental_methods": [
@@ -7530,7 +7530,7 @@
                 "station_id": "69",
                 "vehicle_docks_available": [
                     {
-                        "count": 12,
+                        "count": 11,
                         "vehicle_type_ids": [
                             "FIT",
                             "EFIT",
@@ -7557,7 +7557,7 @@
                 ],
                 "vehicle_types_available": [
                     {
-                        "count": 2,
+                        "count": 3,
                         "vehicle_type_id": "FIT"
                     },
                     {
@@ -7590,7 +7590,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T19:47:18.238Z",
+                "last_reported": "2026-11-16T19:59:20.441Z",
                 "name": [
                     {
                         "language": "en",
@@ -7614,9 +7614,9 @@
                     }
                 ],
                 "num_bikes_overflow": 0,
-                "num_docks_available": 16,
+                "num_docks_available": 18,
                 "num_docks_disabled": 1,
-                "num_vehicles_available": 5,
+                "num_vehicles_available": 3,
                 "num_vehicles_disabled": 1,
                 "post_code": "20007",
                 "rental_methods": [
@@ -7651,7 +7651,7 @@
                 "station_id": "7",
                 "vehicle_docks_available": [
                     {
-                        "count": 16,
+                        "count": 18,
                         "vehicle_type_ids": [
                             "FIT",
                             "EFIT",
@@ -7686,7 +7686,7 @@
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 2,
+                        "count": 0,
                         "vehicle_type_id": "EFIT"
                     }
                 ],
@@ -7711,7 +7711,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T19:48:32.183Z",
+                "last_reported": "2026-11-16T20:00:40.119Z",
                 "name": [
                     {
                         "language": "en",
@@ -7735,9 +7735,9 @@
                     }
                 ],
                 "num_bikes_overflow": 0,
-                "num_docks_available": 4,
+                "num_docks_available": 3,
                 "num_docks_disabled": 0,
-                "num_vehicles_available": 11,
+                "num_vehicles_available": 12,
                 "num_vehicles_disabled": 0,
                 "post_code": "20008",
                 "rental_methods": [
@@ -7772,7 +7772,7 @@
                 "station_id": "70",
                 "vehicle_docks_available": [
                     {
-                        "count": 4,
+                        "count": 3,
                         "vehicle_type_ids": [
                             "FIT",
                             "EFIT",
@@ -7799,7 +7799,7 @@
                 ],
                 "vehicle_types_available": [
                     {
-                        "count": 8,
+                        "count": 9,
                         "vehicle_type_id": "FIT"
                     },
                     {
@@ -7832,7 +7832,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T19:47:13.242Z",
+                "last_reported": "2026-11-16T19:59:15.872Z",
                 "name": [
                     {
                         "language": "en",
@@ -7856,9 +7856,9 @@
                     }
                 ],
                 "num_bikes_overflow": 0,
-                "num_docks_available": 8,
+                "num_docks_available": 11,
                 "num_docks_disabled": 0,
-                "num_vehicles_available": 7,
+                "num_vehicles_available": 4,
                 "num_vehicles_disabled": 0,
                 "post_code": "20018",
                 "rental_methods": [
@@ -7893,7 +7893,7 @@
                 "station_id": "71",
                 "vehicle_docks_available": [
                     {
-                        "count": 8,
+                        "count": 11,
                         "vehicle_type_ids": [
                             "FIT",
                             "EFIT",
@@ -7920,7 +7920,7 @@
                 ],
                 "vehicle_types_available": [
                     {
-                        "count": 6,
+                        "count": 4,
                         "vehicle_type_id": "FIT"
                     },
                     {
@@ -7928,7 +7928,7 @@
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 1,
+                        "count": 0,
                         "vehicle_type_id": "EFIT"
                     }
                 ],
@@ -7953,7 +7953,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T19:48:10.444Z",
+                "last_reported": "2026-11-16T20:00:12.722Z",
                 "name": [
                     {
                         "language": "en",
@@ -7977,9 +7977,9 @@
                     }
                 ],
                 "num_bikes_overflow": 0,
-                "num_docks_available": 12,
+                "num_docks_available": 13,
                 "num_docks_disabled": 0,
-                "num_vehicles_available": 6,
+                "num_vehicles_available": 5,
                 "num_vehicles_disabled": 1,
                 "post_code": "20012",
                 "rental_methods": [
@@ -8014,7 +8014,7 @@
                 "station_id": "72",
                 "vehicle_docks_available": [
                     {
-                        "count": 12,
+                        "count": 13,
                         "vehicle_type_ids": [
                             "FIT",
                             "EFIT",
@@ -8049,7 +8049,7 @@
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 6,
+                        "count": 5,
                         "vehicle_type_id": "EFIT"
                     }
                 ],
@@ -8074,7 +8074,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T19:47:32.063Z",
+                "last_reported": "2026-11-16T19:59:34.34Z",
                 "name": [
                     {
                         "language": "en",
@@ -8162,7 +8162,7 @@
                 ],
                 "vehicle_types_available": [
                     {
-                        "count": 10,
+                        "count": 9,
                         "vehicle_type_id": "FIT"
                     },
                     {
@@ -8170,7 +8170,7 @@
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 0,
+                        "count": 1,
                         "vehicle_type_id": "EFIT"
                     }
                 ],
@@ -8195,7 +8195,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T19:47:06.409Z",
+                "last_reported": "2026-11-16T19:59:08.83Z",
                 "name": [
                     {
                         "language": "en",
@@ -8219,9 +8219,9 @@
                     }
                 ],
                 "num_bikes_overflow": 0,
-                "num_docks_available": 13,
+                "num_docks_available": 14,
                 "num_docks_disabled": 0,
-                "num_vehicles_available": 5,
+                "num_vehicles_available": 4,
                 "num_vehicles_disabled": 1,
                 "post_code": "20012",
                 "rental_methods": [
@@ -8256,7 +8256,7 @@
                 "station_id": "74",
                 "vehicle_docks_available": [
                     {
-                        "count": 13,
+                        "count": 14,
                         "vehicle_type_ids": [
                             "FIT",
                             "EFIT",
@@ -8283,7 +8283,7 @@
                 ],
                 "vehicle_types_available": [
                     {
-                        "count": 5,
+                        "count": 4,
                         "vehicle_type_id": "FIT"
                     },
                     {
@@ -8316,7 +8316,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T19:48:41.07Z",
+                "last_reported": "2026-11-16T20:00:50.436Z",
                 "name": [
                     {
                         "language": "en",
@@ -8437,7 +8437,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T19:47:22.253Z",
+                "last_reported": "2026-11-16T19:59:25.285Z",
                 "name": [
                     {
                         "language": "en",
@@ -8461,9 +8461,9 @@
                     }
                 ],
                 "num_bikes_overflow": 0,
-                "num_docks_available": 16,
+                "num_docks_available": 15,
                 "num_docks_disabled": 0,
-                "num_vehicles_available": 3,
+                "num_vehicles_available": 4,
                 "num_vehicles_disabled": 0,
                 "post_code": "20002",
                 "rental_methods": [
@@ -8498,7 +8498,7 @@
                 "station_id": "76",
                 "vehicle_docks_available": [
                     {
-                        "count": 16,
+                        "count": 15,
                         "vehicle_type_ids": [
                             "FIT",
                             "EFIT",
@@ -8533,7 +8533,7 @@
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 2,
+                        "count": 3,
                         "vehicle_type_id": "EFIT"
                     }
                 ],
@@ -8558,7 +8558,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T19:47:31.683Z",
+                "last_reported": "2026-11-16T19:59:39.506Z",
                 "name": [
                     {
                         "language": "en",
@@ -8679,7 +8679,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T19:46:43.855Z",
+                "last_reported": "2026-11-16T20:01:47.475Z",
                 "name": [
                     {
                         "language": "en",
@@ -8703,9 +8703,9 @@
                     }
                 ],
                 "num_bikes_overflow": 0,
-                "num_docks_available": 12,
+                "num_docks_available": 13,
                 "num_docks_disabled": 1,
-                "num_vehicles_available": 1,
+                "num_vehicles_available": 0,
                 "num_vehicles_disabled": 1,
                 "post_code": "20009",
                 "rental_methods": [
@@ -8740,7 +8740,7 @@
                 "station_id": "78",
                 "vehicle_docks_available": [
                     {
-                        "count": 12,
+                        "count": 13,
                         "vehicle_type_ids": [
                             "FIT",
                             "EFIT",
@@ -8775,7 +8775,7 @@
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 1,
+                        "count": 0,
                         "vehicle_type_id": "EFIT"
                     }
                 ],
@@ -8800,7 +8800,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T19:49:10.425Z",
+                "last_reported": "2026-11-16T20:01:18.457Z",
                 "name": [
                     {
                         "language": "en",
@@ -8824,9 +8824,9 @@
                     }
                 ],
                 "num_bikes_overflow": 0,
-                "num_docks_available": 8,
+                "num_docks_available": 9,
                 "num_docks_disabled": 0,
-                "num_vehicles_available": 8,
+                "num_vehicles_available": 7,
                 "num_vehicles_disabled": 3,
                 "post_code": "20006",
                 "rental_methods": [
@@ -8861,7 +8861,7 @@
                 "station_id": "8",
                 "vehicle_docks_available": [
                     {
-                        "count": 8,
+                        "count": 9,
                         "vehicle_type_ids": [
                             "FIT",
                             "EFIT",
@@ -8896,7 +8896,7 @@
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 1,
+                        "count": 0,
                         "vehicle_type_id": "EFIT"
                     }
                 ],
@@ -8921,7 +8921,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T19:49:09.78Z",
+                "last_reported": "2026-11-16T20:01:12.245Z",
                 "name": [
                     {
                         "language": "en",
@@ -8945,9 +8945,9 @@
                     }
                 ],
                 "num_bikes_overflow": 0,
-                "num_docks_available": 12,
+                "num_docks_available": 10,
                 "num_docks_disabled": 0,
-                "num_vehicles_available": 9,
+                "num_vehicles_available": 11,
                 "num_vehicles_disabled": 3,
                 "post_code": "20006",
                 "rental_methods": [
@@ -8982,7 +8982,7 @@
                 "station_id": "9",
                 "vehicle_docks_available": [
                     {
-                        "count": 12,
+                        "count": 10,
                         "vehicle_type_ids": [
                             "FIT",
                             "EFIT",
@@ -9017,7 +9017,7 @@
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 0,
+                        "count": 2,
                         "vehicle_type_id": "EFIT"
                     }
                 ],
@@ -9028,13 +9028,13 @@
     ],
     "gbfs": {
         "station_information": {
-            "last_updated": "2026-11-16T19:49:28Z",
-            "ttl": 11,
+            "last_updated": "2026-11-16T20:02:07Z",
+            "ttl": 26,
             "version": "3.0"
         },
         "station_status": {
-            "last_updated": "2026-11-16T19:49:28Z",
-            "ttl": 22,
+            "last_updated": "2026-11-16T20:02:07Z",
+            "ttl": 26,
             "version": "3.0"
         }
     },
