@@ -17,7 +17,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T17:50:07.113Z",
+                "last_reported": "2026-11-16T18:00:25.233Z",
                 "name": [
                     {
                         "language": "en",
@@ -36,9 +36,9 @@
                         "text": "E 10th/Red River"
                     }
                 ],
-                "num_docks_available": 14,
+                "num_docks_available": 15,
                 "num_docks_disabled": 0,
-                "num_vehicles_available": 1,
+                "num_vehicles_available": 0,
                 "num_vehicles_disabled": 0,
                 "rental_methods": [
                     "key",
@@ -68,7 +68,7 @@
                 "station_id": "1",
                 "vehicle_docks_available": [
                     {
-                        "count": 14,
+                        "count": 15,
                         "vehicle_type_ids": [
                             "EFIT",
                             "BOOST",
@@ -79,6 +79,117 @@
                 "vehicle_docks_capacity": [
                     {
                         "count": 15,
+                        "vehicle_type_ids": [
+                            "ASTRO",
+                            "BOOST",
+                            "CHLOE",
+                            "COSMO",
+                            "EFIT",
+                            "FIT",
+                            "ICONIC",
+                            "METRO_BASE",
+                            "METRO_CONNECTED",
+                            "TRAILER"
+                        ]
+                    }
+                ],
+                "vehicle_types_available": [
+                    {
+                        "count": 0,
+                        "vehicle_type_id": "FIT"
+                    },
+                    {
+                        "count": 0,
+                        "vehicle_type_id": "BOOST"
+                    },
+                    {
+                        "count": 0,
+                        "vehicle_type_id": "EFIT"
+                    }
+                ],
+                "vehicle_types_capacity": []
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -97.745201,
+                    30.28617
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "address": "W 22.5/Rio Grande",
+                "capacity": 5,
+                "external_id": "ad4bf998-b824-11ef-86f9-0224060a328f",
+                "is_charging_station": false,
+                "is_installed": true,
+                "is_renting": true,
+                "is_returning": true,
+                "is_virtual_station": false,
+                "last_reported": "2026-11-16T18:01:56.196Z",
+                "name": [
+                    {
+                        "language": "en",
+                        "text": "W 22.5/Rio Grande"
+                    },
+                    {
+                        "language": "fr",
+                        "text": "W 22.5/Rio Grande"
+                    },
+                    {
+                        "language": "nl",
+                        "text": "W 22.5/Rio Grande"
+                    },
+                    {
+                        "language": "es",
+                        "text": "W 22.5/Rio Grande"
+                    }
+                ],
+                "num_docks_available": 4,
+                "num_docks_disabled": 0,
+                "num_vehicles_available": 1,
+                "num_vehicles_disabled": 0,
+                "rental_methods": [
+                    "key",
+                    "transitcard",
+                    "creditcard",
+                    "phone"
+                ],
+                "rental_uris": {},
+                "short_name": [
+                    {
+                        "language": "en",
+                        "text": "10"
+                    },
+                    {
+                        "language": "fr",
+                        "text": "10"
+                    },
+                    {
+                        "language": "nl",
+                        "text": "10"
+                    },
+                    {
+                        "language": "es",
+                        "text": "10"
+                    }
+                ],
+                "station_id": "10",
+                "vehicle_docks_available": [
+                    {
+                        "count": 4,
+                        "vehicle_type_ids": [
+                            "EFIT",
+                            "BOOST",
+                            "FIT"
+                        ]
+                    }
+                ],
+                "vehicle_docks_capacity": [
+                    {
+                        "count": 5,
                         "vehicle_type_ids": [
                             "ASTRO",
                             "BOOST",
@@ -114,117 +225,6 @@
         {
             "geometry": {
                 "coordinates": [
-                    -97.745201,
-                    30.28617
-                ],
-                "type": "Point"
-            },
-            "properties": {
-                "address": "W 22.5/Rio Grande",
-                "capacity": 5,
-                "external_id": "ad4bf998-b824-11ef-86f9-0224060a328f",
-                "is_charging_station": false,
-                "is_installed": true,
-                "is_renting": true,
-                "is_returning": true,
-                "is_virtual_station": false,
-                "last_reported": "2026-11-16T17:49:31.349Z",
-                "name": [
-                    {
-                        "language": "en",
-                        "text": "W 22.5/Rio Grande"
-                    },
-                    {
-                        "language": "fr",
-                        "text": "W 22.5/Rio Grande"
-                    },
-                    {
-                        "language": "nl",
-                        "text": "W 22.5/Rio Grande"
-                    },
-                    {
-                        "language": "es",
-                        "text": "W 22.5/Rio Grande"
-                    }
-                ],
-                "num_docks_available": 5,
-                "num_docks_disabled": 0,
-                "num_vehicles_available": 0,
-                "num_vehicles_disabled": 0,
-                "rental_methods": [
-                    "key",
-                    "transitcard",
-                    "creditcard",
-                    "phone"
-                ],
-                "rental_uris": {},
-                "short_name": [
-                    {
-                        "language": "en",
-                        "text": "10"
-                    },
-                    {
-                        "language": "fr",
-                        "text": "10"
-                    },
-                    {
-                        "language": "nl",
-                        "text": "10"
-                    },
-                    {
-                        "language": "es",
-                        "text": "10"
-                    }
-                ],
-                "station_id": "10",
-                "vehicle_docks_available": [
-                    {
-                        "count": 5,
-                        "vehicle_type_ids": [
-                            "EFIT",
-                            "BOOST",
-                            "FIT"
-                        ]
-                    }
-                ],
-                "vehicle_docks_capacity": [
-                    {
-                        "count": 5,
-                        "vehicle_type_ids": [
-                            "ASTRO",
-                            "BOOST",
-                            "CHLOE",
-                            "COSMO",
-                            "EFIT",
-                            "FIT",
-                            "ICONIC",
-                            "METRO_BASE",
-                            "METRO_CONNECTED",
-                            "TRAILER"
-                        ]
-                    }
-                ],
-                "vehicle_types_available": [
-                    {
-                        "count": 0,
-                        "vehicle_type_id": "FIT"
-                    },
-                    {
-                        "count": 0,
-                        "vehicle_type_id": "BOOST"
-                    },
-                    {
-                        "count": 0,
-                        "vehicle_type_id": "EFIT"
-                    }
-                ],
-                "vehicle_types_capacity": []
-            },
-            "type": "Feature"
-        },
-        {
-            "geometry": {
-                "coordinates": [
                     -97.74696,
                     30.285397000000003
                 ],
@@ -240,7 +240,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T17:50:01.737Z",
+                "last_reported": "2026-11-16T18:02:18.649Z",
                 "name": [
                     {
                         "language": "en",
@@ -259,9 +259,9 @@
                         "text": "W 22nd/Pearl"
                     }
                 ],
-                "num_docks_available": 25,
+                "num_docks_available": 24,
                 "num_docks_disabled": 0,
-                "num_vehicles_available": 0,
+                "num_vehicles_available": 1,
                 "num_vehicles_disabled": 0,
                 "post_code": "78705",
                 "rental_methods": [
@@ -292,7 +292,7 @@
                 "station_id": "100",
                 "vehicle_docks_available": [
                     {
-                        "count": 25,
+                        "count": 24,
                         "vehicle_type_ids": [
                             "EFIT",
                             "BOOST",
@@ -327,7 +327,7 @@
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 0,
+                        "count": 1,
                         "vehicle_type_id": "EFIT"
                     }
                 ],
@@ -352,7 +352,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T17:49:38.957Z",
+                "last_reported": "2026-11-16T18:02:03.548Z",
                 "name": [
                     {
                         "language": "en",
@@ -465,7 +465,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T17:49:19.001Z",
+                "last_reported": "2026-11-16T18:01:34.582Z",
                 "name": [
                     {
                         "language": "en",
@@ -576,7 +576,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T17:50:43.49Z",
+                "last_reported": "2026-11-16T18:00:58.757Z",
                 "name": [
                     {
                         "language": "en",
@@ -687,7 +687,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T17:49:47.224Z",
+                "last_reported": "2026-11-16T18:02:12.313Z",
                 "name": [
                     {
                         "language": "en",
@@ -798,7 +798,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T17:51:15.742Z",
+                "last_reported": "2026-11-16T18:01:36.063Z",
                 "name": [
                     {
                         "language": "en",
@@ -910,7 +910,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T17:50:11.676Z",
+                "last_reported": "2026-11-16T18:00:31.093Z",
                 "name": [
                     {
                         "language": "en",
@@ -929,9 +929,9 @@
                         "text": "W 23rd/San Gabriel"
                     }
                 ],
-                "num_docks_available": 11,
+                "num_docks_available": 10,
                 "num_docks_disabled": 0,
-                "num_vehicles_available": 0,
+                "num_vehicles_available": 1,
                 "num_vehicles_disabled": 0,
                 "rental_methods": [
                     "key",
@@ -961,7 +961,7 @@
                 "station_id": "12",
                 "vehicle_docks_available": [
                     {
-                        "count": 11,
+                        "count": 10,
                         "vehicle_type_ids": [
                             "EFIT",
                             "BOOST",
@@ -996,7 +996,7 @@
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 0,
+                        "count": 1,
                         "vehicle_type_id": "EFIT"
                     }
                 ],
@@ -1021,7 +1021,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T17:51:05.29Z",
+                "last_reported": "2026-11-16T18:01:27.699Z",
                 "name": [
                     {
                         "language": "en",
@@ -1040,9 +1040,9 @@
                         "text": "E 23rd/San Jacinto @ DKR Stadium"
                     }
                 ],
-                "num_docks_available": 16,
+                "num_docks_available": 15,
                 "num_docks_disabled": 0,
-                "num_vehicles_available": 7,
+                "num_vehicles_available": 8,
                 "num_vehicles_disabled": 0,
                 "rental_methods": [
                     "key",
@@ -1072,7 +1072,7 @@
                 "station_id": "13",
                 "vehicle_docks_available": [
                     {
-                        "count": 16,
+                        "count": 15,
                         "vehicle_type_ids": [
                             "EFIT",
                             "BOOST",
@@ -1107,7 +1107,7 @@
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 7,
+                        "count": 8,
                         "vehicle_type_id": "EFIT"
                     }
                 ],
@@ -1132,7 +1132,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T17:49:55.632Z",
+                "last_reported": "2026-11-16T18:02:21.464Z",
                 "name": [
                     {
                         "language": "en",
@@ -1243,7 +1243,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T17:50:56.309Z",
+                "last_reported": "2026-11-16T18:01:08.535Z",
                 "name": [
                     {
                         "language": "en",
@@ -1354,7 +1354,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T17:49:19.329Z",
+                "last_reported": "2026-11-16T18:01:45.295Z",
                 "name": [
                     {
                         "language": "en",
@@ -1465,7 +1465,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T17:49:30.371Z",
+                "last_reported": "2026-11-16T18:01:42.023Z",
                 "name": [
                     {
                         "language": "en",
@@ -1576,7 +1576,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T17:49:56.68Z",
+                "last_reported": "2026-11-16T18:02:20.825Z",
                 "name": [
                     {
                         "language": "en",
@@ -1687,7 +1687,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T17:50:11.306Z",
+                "last_reported": "2026-11-16T18:00:31.26Z",
                 "name": [
                     {
                         "language": "en",
@@ -1706,9 +1706,9 @@
                         "text": "W 11th/Congress @ The Texas Capitol"
                     }
                 ],
-                "num_docks_available": 10,
+                "num_docks_available": 9,
                 "num_docks_disabled": 0,
-                "num_vehicles_available": 1,
+                "num_vehicles_available": 2,
                 "num_vehicles_disabled": 0,
                 "rental_methods": [
                     "key",
@@ -1738,7 +1738,7 @@
                 "station_id": "2",
                 "vehicle_docks_available": [
                     {
-                        "count": 10,
+                        "count": 9,
                         "vehicle_type_ids": [
                             "EFIT",
                             "BOOST",
@@ -1773,7 +1773,7 @@
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 1,
+                        "count": 2,
                         "vehicle_type_id": "EFIT"
                     }
                 ],
@@ -1798,7 +1798,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T17:50:53.519Z",
+                "last_reported": "2026-11-16T18:01:14.612Z",
                 "name": [
                     {
                         "language": "en",
@@ -1909,7 +1909,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T17:50:20.91Z",
+                "last_reported": "2026-11-16T18:00:29.892Z",
                 "name": [
                     {
                         "language": "en",
@@ -2020,7 +2020,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T17:49:39.762Z",
+                "last_reported": "2026-11-16T18:02:02.778Z",
                 "name": [
                     {
                         "language": "en",
@@ -2131,7 +2131,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T17:42:26.976Z",
+                "last_reported": "2026-11-16T18:00:25.317Z",
                 "name": [
                     {
                         "language": "en",
@@ -2242,7 +2242,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T17:49:35.57Z",
+                "last_reported": "2026-11-16T18:01:59.964Z",
                 "name": [
                     {
                         "language": "en",
@@ -2353,7 +2353,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T17:50:29.208Z",
+                "last_reported": "2026-11-16T18:00:50.564Z",
                 "name": [
                     {
                         "language": "en",
@@ -2464,7 +2464,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T17:50:14.68Z",
+                "last_reported": "2026-11-16T18:00:36.327Z",
                 "name": [
                     {
                         "language": "en",
@@ -2575,7 +2575,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T17:49:33.579Z",
+                "last_reported": "2026-11-16T18:01:59.354Z",
                 "name": [
                     {
                         "language": "en",
@@ -2686,7 +2686,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T17:50:56.837Z",
+                "last_reported": "2026-11-16T18:01:16.953Z",
                 "name": [
                     {
                         "language": "en",
@@ -2797,7 +2797,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T17:50:26.772Z",
+                "last_reported": "2026-11-16T18:00:47.555Z",
                 "name": [
                     {
                         "language": "en",
@@ -2908,7 +2908,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T17:49:33.688Z",
+                "last_reported": "2026-11-16T18:01:59.268Z",
                 "name": [
                     {
                         "language": "en",
@@ -3019,7 +3019,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T17:49:20.517Z",
+                "last_reported": "2026-11-16T18:01:46.762Z",
                 "name": [
                     {
                         "language": "en",
@@ -3130,7 +3130,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T17:50:39.564Z",
+                "last_reported": "2026-11-16T18:01:00.355Z",
                 "name": [
                     {
                         "language": "en",
@@ -3241,7 +3241,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T17:50:47.475Z",
+                "last_reported": "2026-11-16T18:01:08.707Z",
                 "name": [
                     {
                         "language": "en",
@@ -3352,7 +3352,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T17:50:43.501Z",
+                "last_reported": "2026-11-16T18:01:04.78Z",
                 "name": [
                     {
                         "language": "en",
@@ -3463,7 +3463,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T17:50:03.115Z",
+                "last_reported": "2026-11-16T18:00:23.29Z",
                 "name": [
                     {
                         "language": "en",
@@ -3574,7 +3574,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T17:50:56.112Z",
+                "last_reported": "2026-11-16T18:01:14.858Z",
                 "name": [
                     {
                         "language": "en",
@@ -3685,7 +3685,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T17:49:39.258Z",
+                "last_reported": "2026-11-16T18:02:06.397Z",
                 "name": [
                     {
                         "language": "en",
@@ -3796,7 +3796,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T17:49:50.935Z",
+                "last_reported": "2026-11-16T18:02:17.108Z",
                 "name": [
                     {
                         "language": "en",
@@ -3907,7 +3907,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T17:51:08.955Z",
+                "last_reported": "2026-11-16T18:01:24.047Z",
                 "name": [
                     {
                         "language": "en",
@@ -4018,7 +4018,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T17:50:47.893Z",
+                "last_reported": "2026-11-16T18:01:11.482Z",
                 "name": [
                     {
                         "language": "en",
@@ -4129,7 +4129,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T17:49:29.027Z",
+                "last_reported": "2026-11-16T18:01:43.5Z",
                 "name": [
                     {
                         "language": "en",
@@ -4240,7 +4240,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T17:49:50.268Z",
+                "last_reported": "2026-11-16T18:02:15.54Z",
                 "name": [
                     {
                         "language": "en",
@@ -4351,7 +4351,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T17:51:06.29Z",
+                "last_reported": "2026-11-16T18:01:26.985Z",
                 "name": [
                     {
                         "language": "en",
@@ -4370,9 +4370,9 @@
                         "text": "Dean Keeton/Speedway"
                     }
                 ],
-                "num_docks_available": 13,
+                "num_docks_available": 18,
                 "num_docks_disabled": 0,
-                "num_vehicles_available": 10,
+                "num_vehicles_available": 5,
                 "num_vehicles_disabled": 0,
                 "rental_methods": [
                     "key",
@@ -4402,7 +4402,7 @@
                 "station_id": "43",
                 "vehicle_docks_available": [
                     {
-                        "count": 13,
+                        "count": 18,
                         "vehicle_type_ids": [
                             "EFIT",
                             "BOOST",
@@ -4437,7 +4437,7 @@
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 10,
+                        "count": 5,
                         "vehicle_type_id": "EFIT"
                     }
                 ],
@@ -4462,7 +4462,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T17:49:49.512Z",
+                "last_reported": "2026-11-16T18:02:13.561Z",
                 "name": [
                     {
                         "language": "en",
@@ -4481,9 +4481,9 @@
                         "text": "Dean Keeton/Whitis"
                     }
                 ],
-                "num_docks_available": 18,
+                "num_docks_available": 16,
                 "num_docks_disabled": 0,
-                "num_vehicles_available": 1,
+                "num_vehicles_available": 3,
                 "num_vehicles_disabled": 0,
                 "rental_methods": [
                     "key",
@@ -4513,7 +4513,7 @@
                 "station_id": "44",
                 "vehicle_docks_available": [
                     {
-                        "count": 18,
+                        "count": 16,
                         "vehicle_type_ids": [
                             "EFIT",
                             "BOOST",
@@ -4548,7 +4548,7 @@
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 1,
+                        "count": 3,
                         "vehicle_type_id": "EFIT"
                     }
                 ],
@@ -4573,7 +4573,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T17:50:33.1Z",
+                "last_reported": "2026-11-16T18:00:54.103Z",
                 "name": [
                     {
                         "language": "en",
@@ -4684,7 +4684,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T17:49:57.058Z",
+                "last_reported": "2026-11-16T18:02:22.329Z",
                 "name": [
                     {
                         "language": "en",
@@ -4795,7 +4795,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T17:49:35.993Z",
+                "last_reported": "2026-11-16T18:02:00.839Z",
                 "name": [
                     {
                         "language": "en",
@@ -4907,7 +4907,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T17:49:34.241Z",
+                "last_reported": "2026-11-16T18:01:59.021Z",
                 "name": [
                     {
                         "language": "en",
@@ -5019,7 +5019,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T17:50:51.324Z",
+                "last_reported": "2026-11-16T18:01:13.558Z",
                 "name": [
                     {
                         "language": "en",
@@ -5130,7 +5130,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T17:50:39.222Z",
+                "last_reported": "2026-11-16T18:00:52.01Z",
                 "name": [
                     {
                         "language": "en",
@@ -5242,7 +5242,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T17:50:49.592Z",
+                "last_reported": "2026-11-16T18:01:09.103Z",
                 "name": [
                     {
                         "language": "en",
@@ -5353,7 +5353,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T17:50:42.656Z",
+                "last_reported": "2026-11-16T18:01:03.578Z",
                 "name": [
                     {
                         "language": "en",
@@ -5464,7 +5464,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T17:50:19.839Z",
+                "last_reported": "2026-11-16T18:00:40.844Z",
                 "name": [
                     {
                         "language": "en",
@@ -5575,7 +5575,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T17:49:33.657Z",
+                "last_reported": "2026-11-16T18:01:56.896Z",
                 "name": [
                     {
                         "language": "en",
@@ -5686,7 +5686,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T17:50:50.89Z",
+                "last_reported": "2026-11-16T18:01:14.127Z",
                 "name": [
                     {
                         "language": "en",
@@ -5797,7 +5797,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T17:49:47.494Z",
+                "last_reported": "2026-11-16T18:02:12.508Z",
                 "name": [
                     {
                         "language": "en",
@@ -5908,7 +5908,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T17:49:16.41Z",
+                "last_reported": "2026-11-16T18:01:40.4Z",
                 "name": [
                     {
                         "language": "en",
@@ -6019,7 +6019,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T17:50:52.066Z",
+                "last_reported": "2026-11-16T18:01:12.636Z",
                 "name": [
                     {
                         "language": "en",
@@ -6130,7 +6130,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T17:51:01.28Z",
+                "last_reported": "2026-11-16T18:01:21.864Z",
                 "name": [
                     {
                         "language": "en",
@@ -6241,7 +6241,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T17:51:00.389Z",
+                "last_reported": "2026-11-16T18:01:22.238Z",
                 "name": [
                     {
                         "language": "en",
@@ -6352,7 +6352,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T17:49:48.194Z",
+                "last_reported": "2026-11-16T18:02:12.818Z",
                 "name": [
                     {
                         "language": "en",
@@ -6371,9 +6371,9 @@
                         "text": "Nash Hernandez/East @ RBJ South"
                     }
                 ],
-                "num_docks_available": 10,
+                "num_docks_available": 11,
                 "num_docks_disabled": 0,
-                "num_vehicles_available": 1,
+                "num_vehicles_available": 0,
                 "num_vehicles_disabled": 0,
                 "rental_methods": [
                     "key",
@@ -6403,7 +6403,7 @@
                 "station_id": "60",
                 "vehicle_docks_available": [
                     {
-                        "count": 10,
+                        "count": 11,
                         "vehicle_type_ids": [
                             "EFIT",
                             "BOOST",
@@ -6438,7 +6438,7 @@
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 1,
+                        "count": 0,
                         "vehicle_type_id": "EFIT"
                     }
                 ],
@@ -6463,7 +6463,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T17:49:55.915Z",
+                "last_reported": "2026-11-16T18:00:17.981Z",
                 "name": [
                     {
                         "language": "en",
@@ -6574,7 +6574,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T17:50:27.063Z",
+                "last_reported": "2026-11-16T18:00:47.149Z",
                 "name": [
                     {
                         "language": "en",
@@ -6685,7 +6685,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T17:50:14.86Z",
+                "last_reported": "2026-11-16T18:00:38.379Z",
                 "name": [
                     {
                         "language": "en",
@@ -6796,7 +6796,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T17:51:04.378Z",
+                "last_reported": "2026-11-16T18:01:25.459Z",
                 "name": [
                     {
                         "language": "en",
@@ -6907,7 +6907,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T17:50:56.383Z",
+                "last_reported": "2026-11-16T18:01:18.981Z",
                 "name": [
                     {
                         "language": "en",
@@ -7018,7 +7018,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T17:50:55.946Z",
+                "last_reported": "2026-11-16T18:01:17.755Z",
                 "name": [
                     {
                         "language": "en",
@@ -7129,7 +7129,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T17:49:46.801Z",
+                "last_reported": "2026-11-16T18:02:12.774Z",
                 "name": [
                     {
                         "language": "en",
@@ -7240,7 +7240,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T17:50:45.175Z",
+                "last_reported": "2026-11-16T18:01:05.755Z",
                 "name": [
                     {
                         "language": "en",
@@ -7351,7 +7351,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T17:50:49.903Z",
+                "last_reported": "2026-11-16T18:01:08.955Z",
                 "name": [
                     {
                         "language": "en",
@@ -7370,9 +7370,9 @@
                         "text": "W 21st/Guadalupe"
                     }
                 ],
-                "num_docks_available": 8,
+                "num_docks_available": 11,
                 "num_docks_disabled": 0,
-                "num_vehicles_available": 3,
+                "num_vehicles_available": 0,
                 "num_vehicles_disabled": 0,
                 "rental_methods": [
                     "key",
@@ -7402,7 +7402,7 @@
                 "station_id": "7",
                 "vehicle_docks_available": [
                     {
-                        "count": 8,
+                        "count": 11,
                         "vehicle_type_ids": [
                             "EFIT",
                             "BOOST",
@@ -7437,7 +7437,7 @@
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 3,
+                        "count": 0,
                         "vehicle_type_id": "EFIT"
                     }
                 ],
@@ -7462,7 +7462,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T17:50:39.765Z",
+                "last_reported": "2026-11-16T18:01:01.704Z",
                 "name": [
                     {
                         "language": "en",
@@ -7573,7 +7573,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T17:50:38.307Z",
+                "last_reported": "2026-11-16T18:00:58.156Z",
                 "name": [
                     {
                         "language": "en",
@@ -7684,7 +7684,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T17:49:45.369Z",
+                "last_reported": "2026-11-16T18:02:12.992Z",
                 "name": [
                     {
                         "language": "en",
@@ -7795,7 +7795,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T17:50:28.265Z",
+                "last_reported": "2026-11-16T18:00:49.605Z",
                 "name": [
                     {
                         "language": "en",
@@ -7906,7 +7906,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T17:50:12.824Z",
+                "last_reported": "2026-11-16T18:00:32.804Z",
                 "name": [
                     {
                         "language": "en",
@@ -8017,7 +8017,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T17:51:02.026Z",
+                "last_reported": "2026-11-16T18:01:23.056Z",
                 "name": [
                     {
                         "language": "en",
@@ -8128,7 +8128,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T17:51:07.881Z",
+                "last_reported": "2026-11-16T18:01:29.706Z",
                 "name": [
                     {
                         "language": "en",
@@ -8239,7 +8239,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T17:50:28.968Z",
+                "last_reported": "2026-11-16T18:00:48.709Z",
                 "name": [
                     {
                         "language": "en",
@@ -8350,7 +8350,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T17:50:49.234Z",
+                "last_reported": "2026-11-16T18:01:09.51Z",
                 "name": [
                     {
                         "language": "en",
@@ -8462,7 +8462,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T17:49:35.941Z",
+                "last_reported": "2026-11-16T18:02:01.187Z",
                 "name": [
                     {
                         "language": "en",
@@ -8574,7 +8574,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T17:50:24.788Z",
+                "last_reported": "2026-11-16T18:00:44.014Z",
                 "name": [
                     {
                         "language": "en",
@@ -8593,9 +8593,9 @@
                         "text": "W 21st/University"
                     }
                 ],
-                "num_docks_available": 0,
+                "num_docks_available": 5,
                 "num_docks_disabled": 0,
-                "num_vehicles_available": 18,
+                "num_vehicles_available": 13,
                 "num_vehicles_disabled": 1,
                 "rental_methods": [
                     "key",
@@ -8625,7 +8625,7 @@
                 "station_id": "9",
                 "vehicle_docks_available": [
                     {
-                        "count": 0,
+                        "count": 5,
                         "vehicle_type_ids": [
                             "EFIT",
                             "BOOST",
@@ -8660,7 +8660,7 @@
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 18,
+                        "count": 13,
                         "vehicle_type_id": "EFIT"
                     }
                 ],
@@ -8686,7 +8686,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T17:49:23.986Z",
+                "last_reported": "2026-11-16T18:01:40.799Z",
                 "name": [
                     {
                         "language": "en",
@@ -8799,7 +8799,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T17:49:20.35Z",
+                "last_reported": "2026-11-16T18:01:36.101Z",
                 "name": [
                     {
                         "language": "en",
@@ -8912,7 +8912,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T17:49:54.837Z",
+                "last_reported": "2026-11-16T18:02:11.039Z",
                 "name": [
                     {
                         "language": "en",
@@ -9025,7 +9025,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T17:51:11.483Z",
+                "last_reported": "2026-11-16T18:01:32.415Z",
                 "name": [
                     {
                         "language": "en",
@@ -9138,7 +9138,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T17:49:21.277Z",
+                "last_reported": "2026-11-16T18:01:35.892Z",
                 "name": [
                     {
                         "language": "en",
@@ -9251,7 +9251,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T17:49:28.291Z",
+                "last_reported": "2026-11-16T18:01:44.247Z",
                 "name": [
                     {
                         "language": "en",
@@ -9364,7 +9364,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T17:50:53.592Z",
+                "last_reported": "2026-11-16T18:01:07.317Z",
                 "name": [
                     {
                         "language": "en",
@@ -9477,7 +9477,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T17:50:05.899Z",
+                "last_reported": "2026-11-16T18:00:26.487Z",
                 "name": [
                     {
                         "language": "en",
@@ -9590,7 +9590,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T17:50:05.287Z",
+                "last_reported": "2026-11-16T18:02:22.33Z",
                 "name": [
                     {
                         "language": "en",
@@ -9702,7 +9702,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-16T17:50:22.802Z",
+                "last_reported": "2026-11-16T18:00:36.912Z",
                 "name": [
                     {
                         "language": "en",
@@ -9800,12 +9800,12 @@
     ],
     "gbfs": {
         "station_information": {
-            "last_updated": "2026-11-16T17:51:24Z",
-            "ttl": 28,
+            "last_updated": "2026-11-16T18:02:26Z",
+            "ttl": 26,
             "version": "3.0"
         },
         "station_status": {
-            "last_updated": "2026-11-16T17:51:24Z",
+            "last_updated": "2026-11-16T18:02:26Z",
             "ttl": 26,
             "version": "3.0"
         }
