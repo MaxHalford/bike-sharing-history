@@ -17,7 +17,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-17T20:11:44.126Z",
+                "last_reported": "2026-11-17T20:26:54.914Z",
                 "name": [
                     {
                         "language": "en",
@@ -136,7 +136,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-17T20:11:37.829Z",
+                "last_reported": "2026-11-17T20:26:47.925Z",
                 "name": [
                     {
                         "language": "en",
@@ -255,7 +255,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-17T20:11:24.033Z",
+                "last_reported": "2026-11-17T20:26:33.725Z",
                 "name": [
                     {
                         "language": "en",
@@ -374,7 +374,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-17T20:13:53.54Z",
+                "last_reported": "2026-11-17T20:26:00.866Z",
                 "name": [
                     {
                         "language": "en",
@@ -393,9 +393,9 @@
                         "text": "13 - Catedral Metropolitana"
                     }
                 ],
-                "num_docks_available": 7,
+                "num_docks_available": 8,
                 "num_docks_disabled": 0,
-                "num_vehicles_available": 4,
+                "num_vehicles_available": 3,
                 "num_vehicles_disabled": 0,
                 "post_code": "0000",
                 "rental_methods": [
@@ -426,7 +426,126 @@
                 "station_id": "13",
                 "vehicle_docks_available": [
                     {
-                        "count": 7,
+                        "count": 8,
+                        "vehicle_type_ids": [
+                            "FIT",
+                            "PEDALLA",
+                            "BATTLE",
+                            "EFIT"
+                        ]
+                    }
+                ],
+                "vehicle_docks_capacity": [
+                    {
+                        "count": 11,
+                        "vehicle_type_ids": [
+                            "ASTRO",
+                            "BATTLE",
+                            "BOOST",
+                            "CHLOE",
+                            "COSMO",
+                            "EFIT",
+                            "FIT",
+                            "ICONIC",
+                            "METRO_BASE",
+                            "METRO_CONNECTED",
+                            "PEDALLA",
+                            "TRAILER"
+                        ]
+                    }
+                ],
+                "vehicle_types_available": [
+                    {
+                        "count": 0,
+                        "vehicle_type_id": "FIT"
+                    },
+                    {
+                        "count": 0,
+                        "vehicle_type_id": "PEDALLA"
+                    },
+                    {
+                        "count": 0,
+                        "vehicle_type_id": "BATTLE"
+                    },
+                    {
+                        "count": 3,
+                        "vehicle_type_id": "EFIT"
+                    }
+                ],
+                "vehicle_types_capacity": []
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -47.87454,
+                    -15.79521
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "address": "Eixo Monumental, Via N1, em frente ao Minist\u00e9rio da Economia Bloco J, na base do sistema antigo, pr\u00f3x. ao sem\u00e1foro.",
+                "capacity": 11,
+                "external_id": "733fd9cc-d9ff-11ef-bc79-06b542801869",
+                "is_charging_station": false,
+                "is_installed": true,
+                "is_renting": true,
+                "is_returning": true,
+                "is_virtual_station": false,
+                "last_reported": "2026-11-17T20:25:59.753Z",
+                "name": [
+                    {
+                        "language": "en",
+                        "text": "14 - Minist\u00e9rio da Economia Bloco J"
+                    },
+                    {
+                        "language": "fr",
+                        "text": "14 - Minist\u00e9rio da Economia Bloco J"
+                    },
+                    {
+                        "language": "nl",
+                        "text": "14 - Minist\u00e9rio da Economia Bloco J"
+                    },
+                    {
+                        "language": "es",
+                        "text": "14 - Minist\u00e9rio da Economia Bloco J"
+                    }
+                ],
+                "num_docks_available": 6,
+                "num_docks_disabled": 0,
+                "num_vehicles_available": 5,
+                "num_vehicles_disabled": 0,
+                "post_code": "0000",
+                "rental_methods": [
+                    "key",
+                    "transitcard",
+                    "creditcard",
+                    "phone"
+                ],
+                "rental_uris": {},
+                "short_name": [
+                    {
+                        "language": "en",
+                        "text": "014"
+                    },
+                    {
+                        "language": "fr",
+                        "text": "014"
+                    },
+                    {
+                        "language": "nl",
+                        "text": "014"
+                    },
+                    {
+                        "language": "es",
+                        "text": "014"
+                    }
+                ],
+                "station_id": "14",
+                "vehicle_docks_available": [
+                    {
+                        "count": 6,
                         "vehicle_type_ids": [
                             "FIT",
                             "PEDALLA",
@@ -468,125 +587,6 @@
                         "vehicle_type_id": "BATTLE"
                     },
                     {
-                        "count": 3,
-                        "vehicle_type_id": "EFIT"
-                    }
-                ],
-                "vehicle_types_capacity": []
-            },
-            "type": "Feature"
-        },
-        {
-            "geometry": {
-                "coordinates": [
-                    -47.87454,
-                    -15.79521
-                ],
-                "type": "Point"
-            },
-            "properties": {
-                "address": "Eixo Monumental, Via N1, em frente ao Minist\u00e9rio da Economia Bloco J, na base do sistema antigo, pr\u00f3x. ao sem\u00e1foro.",
-                "capacity": 11,
-                "external_id": "733fd9cc-d9ff-11ef-bc79-06b542801869",
-                "is_charging_station": false,
-                "is_installed": true,
-                "is_renting": true,
-                "is_returning": true,
-                "is_virtual_station": false,
-                "last_reported": "2026-11-17T20:13:54.145Z",
-                "name": [
-                    {
-                        "language": "en",
-                        "text": "14 - Minist\u00e9rio da Economia Bloco J"
-                    },
-                    {
-                        "language": "fr",
-                        "text": "14 - Minist\u00e9rio da Economia Bloco J"
-                    },
-                    {
-                        "language": "nl",
-                        "text": "14 - Minist\u00e9rio da Economia Bloco J"
-                    },
-                    {
-                        "language": "es",
-                        "text": "14 - Minist\u00e9rio da Economia Bloco J"
-                    }
-                ],
-                "num_docks_available": 5,
-                "num_docks_disabled": 0,
-                "num_vehicles_available": 6,
-                "num_vehicles_disabled": 0,
-                "post_code": "0000",
-                "rental_methods": [
-                    "key",
-                    "transitcard",
-                    "creditcard",
-                    "phone"
-                ],
-                "rental_uris": {},
-                "short_name": [
-                    {
-                        "language": "en",
-                        "text": "014"
-                    },
-                    {
-                        "language": "fr",
-                        "text": "014"
-                    },
-                    {
-                        "language": "nl",
-                        "text": "014"
-                    },
-                    {
-                        "language": "es",
-                        "text": "014"
-                    }
-                ],
-                "station_id": "14",
-                "vehicle_docks_available": [
-                    {
-                        "count": 5,
-                        "vehicle_type_ids": [
-                            "FIT",
-                            "PEDALLA",
-                            "BATTLE",
-                            "EFIT"
-                        ]
-                    }
-                ],
-                "vehicle_docks_capacity": [
-                    {
-                        "count": 11,
-                        "vehicle_type_ids": [
-                            "ASTRO",
-                            "BATTLE",
-                            "BOOST",
-                            "CHLOE",
-                            "COSMO",
-                            "EFIT",
-                            "FIT",
-                            "ICONIC",
-                            "METRO_BASE",
-                            "METRO_CONNECTED",
-                            "PEDALLA",
-                            "TRAILER"
-                        ]
-                    }
-                ],
-                "vehicle_types_available": [
-                    {
-                        "count": 2,
-                        "vehicle_type_id": "FIT"
-                    },
-                    {
-                        "count": 0,
-                        "vehicle_type_id": "PEDALLA"
-                    },
-                    {
-                        "count": 0,
-                        "vehicle_type_id": "BATTLE"
-                    },
-                    {
                         "count": 4,
                         "vehicle_type_id": "EFIT"
                     }
@@ -612,7 +612,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-17T20:13:26.207Z",
+                "last_reported": "2026-11-17T20:25:32.978Z",
                 "name": [
                     {
                         "language": "en",
@@ -631,9 +631,9 @@
                         "text": "15 - Minist\u00e9rio da Defesa Bloco O"
                     }
                 ],
-                "num_docks_available": 2,
+                "num_docks_available": 3,
                 "num_docks_disabled": 0,
-                "num_vehicles_available": 9,
+                "num_vehicles_available": 8,
                 "num_vehicles_disabled": 0,
                 "post_code": "0000",
                 "rental_methods": [
@@ -664,7 +664,7 @@
                 "station_id": "15",
                 "vehicle_docks_available": [
                     {
-                        "count": 2,
+                        "count": 3,
                         "vehicle_type_ids": [
                             "FIT",
                             "PEDALLA",
@@ -694,7 +694,7 @@
                 ],
                 "vehicle_types_available": [
                     {
-                        "count": 9,
+                        "count": 8,
                         "vehicle_type_id": "FIT"
                     },
                     {
@@ -731,7 +731,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-17T20:13:57.965Z",
+                "last_reported": "2026-11-17T20:26:04.41Z",
                 "name": [
                     {
                         "language": "en",
@@ -850,7 +850,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-17T20:11:17.993Z",
+                "last_reported": "2026-11-17T20:26:28.732Z",
                 "name": [
                     {
                         "language": "en",
@@ -969,7 +969,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-17T20:14:01.906Z",
+                "last_reported": "2026-11-17T20:26:10.716Z",
                 "name": [
                     {
                         "language": "en",
@@ -1088,7 +1088,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-17T20:13:00.982Z",
+                "last_reported": "2026-11-17T20:25:07.164Z",
                 "name": [
                     {
                         "language": "en",
@@ -1207,7 +1207,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-17T20:11:57.847Z",
+                "last_reported": "2026-11-17T20:27:08.907Z",
                 "name": [
                     {
                         "language": "en",
@@ -1326,7 +1326,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-17T20:12:35.869Z",
+                "last_reported": "2026-11-17T20:24:43.424Z",
                 "name": [
                     {
                         "language": "en",
@@ -1445,7 +1445,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-17T20:13:37.127Z",
+                "last_reported": "2026-11-17T20:25:44.437Z",
                 "name": [
                     {
                         "language": "en",
@@ -1564,7 +1564,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-17T20:14:08.525Z",
+                "last_reported": "2026-11-17T20:26:16.611Z",
                 "name": [
                     {
                         "language": "en",
@@ -1683,7 +1683,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-17T20:12:37.371Z",
+                "last_reported": "2026-11-17T20:24:43.517Z",
                 "name": [
                     {
                         "language": "en",
@@ -1921,7 +1921,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-17T20:12:03.202Z",
+                "last_reported": "2026-11-17T20:27:16.183Z",
                 "name": [
                     {
                         "language": "en",
@@ -2040,7 +2040,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-17T20:12:40.284Z",
+                "last_reported": "2026-11-17T20:24:46.675Z",
                 "name": [
                     {
                         "language": "en",
@@ -2159,7 +2159,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-17T20:13:40.546Z",
+                "last_reported": "2026-11-17T20:25:44.518Z",
                 "name": [
                     {
                         "language": "en",
@@ -2278,7 +2278,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-17T20:11:23.727Z",
+                "last_reported": "2026-11-17T20:26:32.571Z",
                 "name": [
                     {
                         "language": "en",
@@ -2297,10 +2297,10 @@
                         "text": "29 - SQS 402 L2 Sul"
                     }
                 ],
-                "num_docks_available": 3,
+                "num_docks_available": 5,
                 "num_docks_disabled": 0,
-                "num_vehicles_available": 5,
-                "num_vehicles_disabled": 1,
+                "num_vehicles_available": 4,
+                "num_vehicles_disabled": 0,
                 "post_code": "0000",
                 "rental_methods": [
                     "key",
@@ -2330,7 +2330,7 @@
                 "station_id": "29",
                 "vehicle_docks_available": [
                     {
-                        "count": 3,
+                        "count": 5,
                         "vehicle_type_ids": [
                             "FIT",
                             "PEDALLA",
@@ -2360,7 +2360,7 @@
                 ],
                 "vehicle_types_available": [
                     {
-                        "count": 5,
+                        "count": 4,
                         "vehicle_type_id": "FIT"
                     },
                     {
@@ -2397,7 +2397,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-17T20:13:12.35Z",
+                "last_reported": "2026-11-17T20:25:18.499Z",
                 "name": [
                     {
                         "language": "en",
@@ -2516,7 +2516,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-17T20:11:25.374Z",
+                "last_reported": "2026-11-17T20:26:35.725Z",
                 "name": [
                     {
                         "language": "en",
@@ -2635,7 +2635,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-17T20:12:21.818Z",
+                "last_reported": "2026-11-17T20:27:28.643Z",
                 "name": [
                     {
                         "language": "en",
@@ -2754,7 +2754,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-17T20:14:05.726Z",
+                "last_reported": "2026-11-17T20:26:11.568Z",
                 "name": [
                     {
                         "language": "en",
@@ -2873,7 +2873,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-17T20:14:06.819Z",
+                "last_reported": "2026-11-17T20:26:15.184Z",
                 "name": [
                     {
                         "language": "en",
@@ -2992,7 +2992,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-17T20:13:20.605Z",
+                "last_reported": "2026-11-17T20:25:28.269Z",
                 "name": [
                     {
                         "language": "en",
@@ -3111,7 +3111,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-17T20:11:24.21Z",
+                "last_reported": "2026-11-17T20:26:31.328Z",
                 "name": [
                     {
                         "language": "en",
@@ -3230,7 +3230,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-17T20:12:27.801Z",
+                "last_reported": "2026-11-17T20:24:33.672Z",
                 "name": [
                     {
                         "language": "en",
@@ -3349,7 +3349,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-17T20:12:39.976Z",
+                "last_reported": "2026-11-17T20:24:51.602Z",
                 "name": [
                     {
                         "language": "en",
@@ -3468,7 +3468,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-17T20:11:57.778Z",
+                "last_reported": "2026-11-17T20:27:05.833Z",
                 "name": [
                     {
                         "language": "en",
@@ -3487,10 +3487,10 @@
                         "text": "39 - OAB"
                     }
                 ],
-                "num_docks_available": 1,
+                "num_docks_available": 4,
                 "num_docks_disabled": 0,
-                "num_vehicles_available": 4,
-                "num_vehicles_disabled": 1,
+                "num_vehicles_available": 2,
+                "num_vehicles_disabled": 0,
                 "post_code": "0000",
                 "rental_methods": [
                     "key",
@@ -3520,7 +3520,7 @@
                 "station_id": "39",
                 "vehicle_docks_available": [
                     {
-                        "count": 1,
+                        "count": 4,
                         "vehicle_type_ids": [
                             "FIT",
                             "PEDALLA",
@@ -3550,7 +3550,7 @@
                 ],
                 "vehicle_types_available": [
                     {
-                        "count": 3,
+                        "count": 2,
                         "vehicle_type_id": "FIT"
                     },
                     {
@@ -3562,7 +3562,7 @@
                         "vehicle_type_id": "BATTLE"
                     },
                     {
-                        "count": 1,
+                        "count": 0,
                         "vehicle_type_id": "EFIT"
                     }
                 ],
@@ -3587,7 +3587,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-17T20:13:17.425Z",
+                "last_reported": "2026-11-17T20:25:24.603Z",
                 "name": [
                     {
                         "language": "en",
@@ -3706,7 +3706,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-17T20:12:00.604Z",
+                "last_reported": "2026-11-17T20:27:11.9Z",
                 "name": [
                     {
                         "language": "en",
@@ -3825,7 +3825,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-17T20:13:33.368Z",
+                "last_reported": "2026-11-17T20:25:39.405Z",
                 "name": [
                     {
                         "language": "en",
@@ -3944,7 +3944,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-17T20:12:36.703Z",
+                "last_reported": "2026-11-17T20:24:43.427Z",
                 "name": [
                     {
                         "language": "en",
@@ -4063,7 +4063,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-17T20:11:44.92Z",
+                "last_reported": "2026-11-17T20:26:51.122Z",
                 "name": [
                     {
                         "language": "en",
@@ -4082,9 +4082,9 @@
                         "text": "43 - SQN 405 L2 Norte"
                     }
                 ],
-                "num_docks_available": 4,
+                "num_docks_available": 5,
                 "num_docks_disabled": 0,
-                "num_vehicles_available": 10,
+                "num_vehicles_available": 9,
                 "num_vehicles_disabled": 0,
                 "post_code": "0000",
                 "rental_methods": [
@@ -4115,7 +4115,7 @@
                 "station_id": "43",
                 "vehicle_docks_available": [
                     {
-                        "count": 4,
+                        "count": 5,
                         "vehicle_type_ids": [
                             "FIT",
                             "PEDALLA",
@@ -4157,7 +4157,7 @@
                         "vehicle_type_id": "BATTLE"
                     },
                     {
-                        "count": 3,
+                        "count": 2,
                         "vehicle_type_id": "EFIT"
                     }
                 ],
@@ -4182,7 +4182,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-17T20:12:37.161Z",
+                "last_reported": "2026-11-17T20:24:48.106Z",
                 "name": [
                     {
                         "language": "en",
@@ -4201,9 +4201,9 @@
                         "text": "44 - CLN 206 L1 Norte"
                     }
                 ],
-                "num_docks_available": 2,
+                "num_docks_available": 1,
                 "num_docks_disabled": 0,
-                "num_vehicles_available": 9,
+                "num_vehicles_available": 10,
                 "num_vehicles_disabled": 0,
                 "post_code": "0000",
                 "rental_methods": [
@@ -4234,7 +4234,7 @@
                 "station_id": "44",
                 "vehicle_docks_available": [
                     {
-                        "count": 2,
+                        "count": 1,
                         "vehicle_type_ids": [
                             "FIT",
                             "PEDALLA",
@@ -4264,7 +4264,7 @@
                 ],
                 "vehicle_types_available": [
                     {
-                        "count": 6,
+                        "count": 7,
                         "vehicle_type_id": "FIT"
                     },
                     {
@@ -4301,7 +4301,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-17T20:12:37.91Z",
+                "last_reported": "2026-11-17T20:24:44.511Z",
                 "name": [
                     {
                         "language": "en",
@@ -4420,7 +4420,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-17T20:13:40.652Z",
+                "last_reported": "2026-11-17T20:25:48.647Z",
                 "name": [
                     {
                         "language": "en",
@@ -4539,7 +4539,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-17T20:14:08.979Z",
+                "last_reported": "2026-11-17T20:26:16.117Z",
                 "name": [
                     {
                         "language": "en",
@@ -4658,7 +4658,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-17T20:13:56.809Z",
+                "last_reported": "2026-11-17T20:26:05.569Z",
                 "name": [
                     {
                         "language": "en",
@@ -4777,7 +4777,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-17T20:11:35.183Z",
+                "last_reported": "2026-11-17T20:26:41.44Z",
                 "name": [
                     {
                         "language": "en",
@@ -4896,7 +4896,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-17T20:13:47.052Z",
+                "last_reported": "2026-11-17T20:25:53.803Z",
                 "name": [
                     {
                         "language": "en",
@@ -5015,7 +5015,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-17T20:12:08.455Z",
+                "last_reported": "2026-11-17T20:27:17.761Z",
                 "name": [
                     {
                         "language": "en",
@@ -5134,7 +5134,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-17T20:11:39.585Z",
+                "last_reported": "2026-11-17T20:26:51.143Z",
                 "name": [
                     {
                         "language": "en",
@@ -5253,7 +5253,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-17T20:13:57.653Z",
+                "last_reported": "2026-11-17T20:26:04.532Z",
                 "name": [
                     {
                         "language": "en",
@@ -5372,7 +5372,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-17T20:11:24.078Z",
+                "last_reported": "2026-11-17T20:26:31.742Z",
                 "name": [
                     {
                         "language": "en",
@@ -5391,9 +5391,9 @@
                         "text": "53 - Pra\u00e7a da 705/706"
                     }
                 ],
-                "num_docks_available": 6,
+                "num_docks_available": 7,
                 "num_docks_disabled": 0,
-                "num_vehicles_available": 5,
+                "num_vehicles_available": 4,
                 "num_vehicles_disabled": 0,
                 "post_code": "0000",
                 "rental_methods": [
@@ -5424,7 +5424,7 @@
                 "station_id": "53",
                 "vehicle_docks_available": [
                     {
-                        "count": 6,
+                        "count": 7,
                         "vehicle_type_ids": [
                             "FIT",
                             "PEDALLA",
@@ -5454,7 +5454,7 @@
                 ],
                 "vehicle_types_available": [
                     {
-                        "count": 3,
+                        "count": 2,
                         "vehicle_type_id": "FIT"
                     },
                     {
@@ -5491,7 +5491,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-17T20:13:02.437Z",
+                "last_reported": "2026-11-17T20:25:07.857Z",
                 "name": [
                     {
                         "language": "en",
@@ -5610,7 +5610,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-17T20:12:38.675Z",
+                "last_reported": "2026-11-17T20:24:43.323Z",
                 "name": [
                     {
                         "language": "en",
@@ -5729,7 +5729,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-17T20:14:04.275Z",
+                "last_reported": "2026-11-17T20:26:12.407Z",
                 "name": [
                     {
                         "language": "en",
@@ -5748,9 +5748,9 @@
                         "text": "57 - 709/710 W3 Norte"
                     }
                 ],
-                "num_docks_available": 2,
+                "num_docks_available": 1,
                 "num_docks_disabled": 0,
-                "num_vehicles_available": 8,
+                "num_vehicles_available": 9,
                 "num_vehicles_disabled": 0,
                 "post_code": "70750-534",
                 "rental_methods": [
@@ -5781,7 +5781,7 @@
                 "station_id": "57",
                 "vehicle_docks_available": [
                     {
-                        "count": 2,
+                        "count": 1,
                         "vehicle_type_ids": [
                             "FIT",
                             "PEDALLA",
@@ -5811,7 +5811,7 @@
                 ],
                 "vehicle_types_available": [
                     {
-                        "count": 6,
+                        "count": 7,
                         "vehicle_type_id": "FIT"
                     },
                     {
@@ -5848,7 +5848,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-17T20:11:40.876Z",
+                "last_reported": "2026-11-17T20:26:46.992Z",
                 "name": [
                     {
                         "language": "en",
@@ -5967,7 +5967,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-17T20:13:59.894Z",
+                "last_reported": "2026-11-17T20:26:06.98Z",
                 "name": [
                     {
                         "language": "en",
@@ -6086,7 +6086,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-17T20:14:06.57Z",
+                "last_reported": "2026-11-17T20:26:14.264Z",
                 "name": [
                     {
                         "language": "en",
@@ -6205,7 +6205,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-17T20:12:40.376Z",
+                "last_reported": "2026-11-17T20:24:47.602Z",
                 "name": [
                     {
                         "language": "en",
@@ -6224,9 +6224,9 @@
                         "text": "60 - Parque Olhos d'\u00c1gua"
                     }
                 ],
-                "num_docks_available": 4,
+                "num_docks_available": 3,
                 "num_docks_disabled": 0,
-                "num_vehicles_available": 7,
+                "num_vehicles_available": 8,
                 "num_vehicles_disabled": 0,
                 "post_code": "0000",
                 "rental_methods": [
@@ -6257,7 +6257,7 @@
                 "station_id": "60",
                 "vehicle_docks_available": [
                     {
-                        "count": 4,
+                        "count": 3,
                         "vehicle_type_ids": [
                             "FIT",
                             "PEDALLA",
@@ -6287,7 +6287,7 @@
                 ],
                 "vehicle_types_available": [
                     {
-                        "count": 6,
+                        "count": 7,
                         "vehicle_type_id": "FIT"
                     },
                     {
@@ -6324,7 +6324,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-17T20:12:53.083Z",
+                "last_reported": "2026-11-17T20:25:01.576Z",
                 "name": [
                     {
                         "language": "en",
@@ -6443,7 +6443,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-17T20:12:11.686Z",
+                "last_reported": "2026-11-17T20:27:19.092Z",
                 "name": [
                     {
                         "language": "en",
@@ -6562,7 +6562,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-17T20:13:06.196Z",
+                "last_reported": "2026-11-17T20:25:13.251Z",
                 "name": [
                     {
                         "language": "en",
@@ -6681,7 +6681,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-17T20:11:55.09Z",
+                "last_reported": "2026-11-17T20:27:04.247Z",
                 "name": [
                     {
                         "language": "en",
@@ -6700,9 +6700,9 @@
                         "text": "64 - CLSW 103"
                     }
                 ],
-                "num_docks_available": 7,
+                "num_docks_available": 6,
                 "num_docks_disabled": 0,
-                "num_vehicles_available": 4,
+                "num_vehicles_available": 5,
                 "num_vehicles_disabled": 0,
                 "post_code": "0000",
                 "rental_methods": [
@@ -6733,7 +6733,7 @@
                 "station_id": "64",
                 "vehicle_docks_available": [
                     {
-                        "count": 7,
+                        "count": 6,
                         "vehicle_type_ids": [
                             "FIT",
                             "PEDALLA",
@@ -6763,7 +6763,7 @@
                 ],
                 "vehicle_types_available": [
                     {
-                        "count": 4,
+                        "count": 5,
                         "vehicle_type_id": "FIT"
                     },
                     {
@@ -6800,7 +6800,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-17T20:13:54.085Z",
+                "last_reported": "2026-11-17T20:26:01.785Z",
                 "name": [
                     {
                         "language": "en",
@@ -6919,7 +6919,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-17T20:12:50.971Z",
+                "last_reported": "2026-11-17T20:25:00.316Z",
                 "name": [
                     {
                         "language": "en",
@@ -7038,7 +7038,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-17T20:14:06.795Z",
+                "last_reported": "2026-11-17T20:26:12.473Z",
                 "name": [
                     {
                         "language": "en",
@@ -7057,9 +7057,9 @@
                         "text": "67 UNB Instituto de Artes"
                     }
                 ],
-                "num_docks_available": 2,
+                "num_docks_available": 1,
                 "num_docks_disabled": 0,
-                "num_vehicles_available": 21,
+                "num_vehicles_available": 22,
                 "num_vehicles_disabled": 0,
                 "post_code": "000",
                 "rental_methods": [
@@ -7090,7 +7090,7 @@
                 "station_id": "67",
                 "vehicle_docks_available": [
                     {
-                        "count": 2,
+                        "count": 1,
                         "vehicle_type_ids": [
                             "FIT",
                             "PEDALLA",
@@ -7120,7 +7120,7 @@
                 ],
                 "vehicle_types_available": [
                     {
-                        "count": 21,
+                        "count": 22,
                         "vehicle_type_id": "FIT"
                     },
                     {
@@ -7157,7 +7157,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-17T20:11:46.75Z",
+                "last_reported": "2026-11-17T20:26:54.785Z",
                 "name": [
                     {
                         "language": "en",
@@ -7276,7 +7276,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-17T20:12:05.429Z",
+                "last_reported": "2026-11-17T20:27:14.608Z",
                 "name": [
                     {
                         "language": "en",
@@ -7514,7 +7514,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-17T20:11:29.204Z",
+                "last_reported": "2026-11-17T20:26:38.366Z",
                 "name": [
                     {
                         "language": "en",
@@ -7633,7 +7633,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-17T20:13:06.646Z",
+                "last_reported": "2026-11-17T20:25:15.72Z",
                 "name": [
                     {
                         "language": "en",
@@ -7652,9 +7652,9 @@
                         "text": "1 - Memorial JK"
                     }
                 ],
-                "num_docks_available": 12,
+                "num_docks_available": 13,
                 "num_docks_disabled": 0,
-                "num_vehicles_available": 1,
+                "num_vehicles_available": 0,
                 "num_vehicles_disabled": 0,
                 "post_code": "0000",
                 "rental_methods": [
@@ -7685,7 +7685,7 @@
                 "station_id": "71",
                 "vehicle_docks_available": [
                     {
-                        "count": 12,
+                        "count": 13,
                         "vehicle_type_ids": [
                             "FIT",
                             "PEDALLA",
@@ -7727,7 +7727,7 @@
                         "vehicle_type_id": "BATTLE"
                     },
                     {
-                        "count": 1,
+                        "count": 0,
                         "vehicle_type_id": "EFIT"
                     }
                 ],
@@ -7752,7 +7752,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-17T20:12:11.242Z",
+                "last_reported": "2026-11-17T20:27:17.418Z",
                 "name": [
                     {
                         "language": "en",
@@ -7871,7 +7871,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-17T20:12:23.195Z",
+                "last_reported": "2026-11-17T20:24:31.035Z",
                 "name": [
                     {
                         "language": "en",
@@ -7990,7 +7990,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-17T20:12:13.047Z",
+                "last_reported": "2026-11-17T20:27:23.265Z",
                 "name": [
                     {
                         "language": "en",
@@ -8109,7 +8109,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-17T20:12:50.928Z",
+                "last_reported": "2026-11-17T20:24:57.468Z",
                 "name": [
                     {
                         "language": "en",
@@ -8228,7 +8228,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-17T20:14:09.657Z",
+                "last_reported": "2026-11-17T20:26:15.817Z",
                 "name": [
                     {
                         "language": "en",
@@ -8333,13 +8333,13 @@
     ],
     "gbfs": {
         "station_information": {
-            "last_updated": "2026-11-17T20:14:43Z",
-            "ttl": 21,
+            "last_updated": "2026-11-17T20:27:46Z",
+            "ttl": 14,
             "version": "3.0"
         },
         "station_status": {
-            "last_updated": "2026-11-17T20:14:44Z",
-            "ttl": 1,
+            "last_updated": "2026-11-17T20:27:46Z",
+            "ttl": 14,
             "version": "3.0"
         }
     },
