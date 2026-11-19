@@ -17,7 +17,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-19T18:01:24.565Z",
+                "last_reported": "2026-11-19T18:13:38.29Z",
                 "name": [
                     {
                         "language": "en",
@@ -134,7 +134,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-19T18:01:18.6Z",
+                "last_reported": "2026-11-19T18:13:49.305Z",
                 "name": [
                     {
                         "language": "en",
@@ -153,9 +153,9 @@
                         "text": "Pasteur"
                     }
                 ],
-                "num_docks_available": 1,
+                "num_docks_available": 0,
                 "num_docks_disabled": 0,
-                "num_vehicles_available": 11,
+                "num_vehicles_available": 12,
                 "num_vehicles_disabled": 0,
                 "rental_methods": [
                     "key",
@@ -184,7 +184,7 @@
                 "station_id": "10",
                 "vehicle_docks_available": [
                     {
-                        "count": 1,
+                        "count": 0,
                         "vehicle_type_ids": [
                             "BOOST",
                             "ICONIC",
@@ -216,7 +216,7 @@
                         "vehicle_type_id": "FIT"
                     },
                     {
-                        "count": 8,
+                        "count": 9,
                         "vehicle_type_id": "ICONIC"
                     },
                     {
@@ -249,7 +249,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-19T18:00:02.832Z",
+                "last_reported": "2026-11-19T18:14:35.592Z",
                 "name": [
                     {
                         "language": "en",
@@ -268,9 +268,9 @@
                         "text": "Danton"
                     }
                 ],
-                "num_docks_available": 15,
+                "num_docks_available": 13,
                 "num_docks_disabled": 0,
-                "num_vehicles_available": 2,
+                "num_vehicles_available": 4,
                 "num_vehicles_disabled": 0,
                 "post_code": "26000",
                 "rental_methods": [
@@ -301,7 +301,7 @@
                 "station_id": "11",
                 "vehicle_docks_available": [
                     {
-                        "count": 15,
+                        "count": 13,
                         "vehicle_type_ids": [
                             "BOOST",
                             "ICONIC",
@@ -313,6 +313,122 @@
                 "vehicle_docks_capacity": [
                     {
                         "count": 17,
+                        "vehicle_type_ids": [
+                            "ASTRO",
+                            "BOOST",
+                            "CHLOE",
+                            "COSMO",
+                            "EFIT",
+                            "FIT",
+                            "ICONIC",
+                            "METRO_BASE",
+                            "METRO_CONNECTED",
+                            "TRAILER"
+                        ]
+                    }
+                ],
+                "vehicle_types_available": [
+                    {
+                        "count": 0,
+                        "vehicle_type_id": "FIT"
+                    },
+                    {
+                        "count": 4,
+                        "vehicle_type_id": "ICONIC"
+                    },
+                    {
+                        "count": 0,
+                        "vehicle_type_id": "BOOST"
+                    },
+                    {
+                        "count": 0,
+                        "vehicle_type_id": "EFIT"
+                    }
+                ],
+                "vehicle_types_capacity": []
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    4.8982,
+                    44.9294
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "address": "Faventines",
+                "capacity": 9,
+                "external_id": "cd57f2f7-ddcb-11ef-b1e2-0693171294bb",
+                "is_charging_station": false,
+                "is_installed": true,
+                "is_renting": true,
+                "is_returning": true,
+                "is_virtual_station": false,
+                "last_reported": "2026-11-19T18:13:18.181Z",
+                "name": [
+                    {
+                        "language": "en",
+                        "text": "Faventines"
+                    },
+                    {
+                        "language": "fr",
+                        "text": "Faventines"
+                    },
+                    {
+                        "language": "nl",
+                        "text": "Faventines"
+                    },
+                    {
+                        "language": "es",
+                        "text": "Faventines"
+                    }
+                ],
+                "num_docks_available": 7,
+                "num_docks_disabled": 0,
+                "num_vehicles_available": 2,
+                "num_vehicles_disabled": 0,
+                "post_code": "26000",
+                "rental_methods": [
+                    "key",
+                    "transitcard",
+                    "phone"
+                ],
+                "rental_uris": {},
+                "short_name": [
+                    {
+                        "language": "en",
+                        "text": "13"
+                    },
+                    {
+                        "language": "fr",
+                        "text": "13"
+                    },
+                    {
+                        "language": "nl",
+                        "text": "13"
+                    },
+                    {
+                        "language": "es",
+                        "text": "13"
+                    }
+                ],
+                "station_id": "13",
+                "vehicle_docks_available": [
+                    {
+                        "count": 7,
+                        "vehicle_type_ids": [
+                            "BOOST",
+                            "ICONIC",
+                            "EFIT",
+                            "FIT"
+                        ]
+                    }
+                ],
+                "vehicle_docks_capacity": [
+                    {
+                        "count": 9,
                         "vehicle_type_ids": [
                             "ASTRO",
                             "BOOST",
@@ -352,122 +468,6 @@
         {
             "geometry": {
                 "coordinates": [
-                    4.8982,
-                    44.9294
-                ],
-                "type": "Point"
-            },
-            "properties": {
-                "address": "Faventines",
-                "capacity": 9,
-                "external_id": "cd57f2f7-ddcb-11ef-b1e2-0693171294bb",
-                "is_charging_station": false,
-                "is_installed": true,
-                "is_renting": true,
-                "is_returning": true,
-                "is_virtual_station": false,
-                "last_reported": "2026-11-19T18:00:49.595Z",
-                "name": [
-                    {
-                        "language": "en",
-                        "text": "Faventines"
-                    },
-                    {
-                        "language": "fr",
-                        "text": "Faventines"
-                    },
-                    {
-                        "language": "nl",
-                        "text": "Faventines"
-                    },
-                    {
-                        "language": "es",
-                        "text": "Faventines"
-                    }
-                ],
-                "num_docks_available": 8,
-                "num_docks_disabled": 0,
-                "num_vehicles_available": 1,
-                "num_vehicles_disabled": 0,
-                "post_code": "26000",
-                "rental_methods": [
-                    "key",
-                    "transitcard",
-                    "phone"
-                ],
-                "rental_uris": {},
-                "short_name": [
-                    {
-                        "language": "en",
-                        "text": "13"
-                    },
-                    {
-                        "language": "fr",
-                        "text": "13"
-                    },
-                    {
-                        "language": "nl",
-                        "text": "13"
-                    },
-                    {
-                        "language": "es",
-                        "text": "13"
-                    }
-                ],
-                "station_id": "13",
-                "vehicle_docks_available": [
-                    {
-                        "count": 8,
-                        "vehicle_type_ids": [
-                            "BOOST",
-                            "ICONIC",
-                            "EFIT",
-                            "FIT"
-                        ]
-                    }
-                ],
-                "vehicle_docks_capacity": [
-                    {
-                        "count": 9,
-                        "vehicle_type_ids": [
-                            "ASTRO",
-                            "BOOST",
-                            "CHLOE",
-                            "COSMO",
-                            "EFIT",
-                            "FIT",
-                            "ICONIC",
-                            "METRO_BASE",
-                            "METRO_CONNECTED",
-                            "TRAILER"
-                        ]
-                    }
-                ],
-                "vehicle_types_available": [
-                    {
-                        "count": 0,
-                        "vehicle_type_id": "FIT"
-                    },
-                    {
-                        "count": 1,
-                        "vehicle_type_id": "ICONIC"
-                    },
-                    {
-                        "count": 0,
-                        "vehicle_type_id": "BOOST"
-                    },
-                    {
-                        "count": 0,
-                        "vehicle_type_id": "EFIT"
-                    }
-                ],
-                "vehicle_types_capacity": []
-            },
-            "type": "Feature"
-        },
-        {
-            "geometry": {
-                "coordinates": [
                     4.902,
                     44.9259
                 ],
@@ -482,7 +482,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-19T18:00:11.252Z",
+                "last_reported": "2026-11-19T18:12:44.376Z",
                 "name": [
                     {
                         "language": "en",
@@ -501,9 +501,9 @@
                         "text": "Alpes"
                     }
                 ],
-                "num_docks_available": 10,
+                "num_docks_available": 9,
                 "num_docks_disabled": 0,
-                "num_vehicles_available": 2,
+                "num_vehicles_available": 3,
                 "num_vehicles_disabled": 0,
                 "post_code": "26000",
                 "rental_methods": [
@@ -534,7 +534,7 @@
                 "station_id": "14",
                 "vehicle_docks_available": [
                     {
-                        "count": 10,
+                        "count": 9,
                         "vehicle_type_ids": [
                             "BOOST",
                             "ICONIC",
@@ -574,7 +574,7 @@
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 0,
+                        "count": 1,
                         "vehicle_type_id": "EFIT"
                     }
                 ],
@@ -599,7 +599,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-19T18:01:25.812Z",
+                "last_reported": "2026-11-19T18:13:27.102Z",
                 "name": [
                     {
                         "language": "en",
@@ -618,9 +618,9 @@
                         "text": "Montplaisir"
                     }
                 ],
-                "num_docks_available": 10,
+                "num_docks_available": 11,
                 "num_docks_disabled": 0,
-                "num_vehicles_available": 3,
+                "num_vehicles_available": 2,
                 "num_vehicles_disabled": 1,
                 "rental_methods": [
                     "key",
@@ -650,7 +650,7 @@
                 "station_id": "15",
                 "vehicle_docks_available": [
                     {
-                        "count": 10,
+                        "count": 11,
                         "vehicle_type_ids": [
                             "BOOST",
                             "ICONIC",
@@ -686,7 +686,7 @@
                         "vehicle_type_id": "ICONIC"
                     },
                     {
-                        "count": 1,
+                        "count": 0,
                         "vehicle_type_id": "BOOST"
                     },
                     {
@@ -715,7 +715,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-19T18:01:24.221Z",
+                "last_reported": "2026-11-19T18:14:02.113Z",
                 "name": [
                     {
                         "language": "en",
@@ -831,7 +831,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-19T18:00:02.635Z",
+                "last_reported": "2026-11-19T18:12:39.764Z",
                 "name": [
                     {
                         "language": "en",
@@ -850,9 +850,9 @@
                         "text": "Ch\u00e2teauvert"
                     }
                 ],
-                "num_docks_available": 0,
+                "num_docks_available": 1,
                 "num_docks_disabled": 0,
-                "num_vehicles_available": 6,
+                "num_vehicles_available": 5,
                 "num_vehicles_disabled": 1,
                 "post_code": "26000",
                 "rental_methods": [
@@ -882,7 +882,7 @@
                 "station_id": "17",
                 "vehicle_docks_available": [
                     {
-                        "count": 0,
+                        "count": 1,
                         "vehicle_type_ids": [
                             "BOOST",
                             "ICONIC",
@@ -914,7 +914,7 @@
                         "vehicle_type_id": "FIT"
                     },
                     {
-                        "count": 6,
+                        "count": 5,
                         "vehicle_type_id": "ICONIC"
                     },
                     {
@@ -947,7 +947,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-19T18:00:27.713Z",
+                "last_reported": "2026-11-19T18:13:04.906Z",
                 "name": [
                     {
                         "language": "en",
@@ -1063,7 +1063,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-19T18:00:34.136Z",
+                "last_reported": "2026-11-19T18:13:07.149Z",
                 "name": [
                     {
                         "language": "en",
@@ -1082,9 +1082,9 @@
                         "text": "H\u00f4pital"
                     }
                 ],
-                "num_docks_available": 9,
+                "num_docks_available": 8,
                 "num_docks_disabled": 0,
-                "num_vehicles_available": 1,
+                "num_vehicles_available": 2,
                 "num_vehicles_disabled": 0,
                 "post_code": "26000",
                 "rental_methods": [
@@ -1115,7 +1115,7 @@
                 "station_id": "19",
                 "vehicle_docks_available": [
                     {
-                        "count": 9,
+                        "count": 8,
                         "vehicle_type_ids": [
                             "BOOST",
                             "ICONIC",
@@ -1155,7 +1155,7 @@
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 1,
+                        "count": 2,
                         "vehicle_type_id": "EFIT"
                     }
                 ],
@@ -1180,7 +1180,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-19T18:00:23.369Z",
+                "last_reported": "2026-11-19T18:12:54.383Z",
                 "name": [
                     {
                         "language": "en",
@@ -1199,9 +1199,9 @@
                         "text": "P\u00f4le Bus"
                     }
                 ],
-                "num_docks_available": 20,
+                "num_docks_available": 17,
                 "num_docks_disabled": 0,
-                "num_vehicles_available": 1,
+                "num_vehicles_available": 4,
                 "num_vehicles_disabled": 3,
                 "post_code": "26000",
                 "rental_methods": [
@@ -1232,7 +1232,7 @@
                 "station_id": "2",
                 "vehicle_docks_available": [
                     {
-                        "count": 20,
+                        "count": 17,
                         "vehicle_type_ids": [
                             "BOOST",
                             "ICONIC",
@@ -1264,15 +1264,15 @@
                         "vehicle_type_id": "FIT"
                     },
                     {
-                        "count": 0,
+                        "count": 1,
                         "vehicle_type_id": "ICONIC"
                     },
                     {
-                        "count": 0,
+                        "count": 1,
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 0,
+                        "count": 1,
                         "vehicle_type_id": "EFIT"
                     }
                 ],
@@ -1297,7 +1297,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-19T18:01:39.486Z",
+                "last_reported": "2026-11-19T18:14:21.108Z",
                 "name": [
                     {
                         "language": "en",
@@ -1413,7 +1413,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-19T18:00:23.219Z",
+                "last_reported": "2026-11-19T18:12:56.001Z",
                 "name": [
                     {
                         "language": "en",
@@ -1530,7 +1530,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-19T18:01:14.031Z",
+                "last_reported": "2026-11-19T18:13:55.346Z",
                 "name": [
                     {
                         "language": "en",
@@ -1613,7 +1613,7 @@
                         "vehicle_type_id": "FIT"
                     },
                     {
-                        "count": 4,
+                        "count": 5,
                         "vehicle_type_id": "ICONIC"
                     },
                     {
@@ -1621,7 +1621,7 @@
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 1,
+                        "count": 0,
                         "vehicle_type_id": "EFIT"
                     }
                 ],
@@ -1646,7 +1646,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-19T18:00:26.501Z",
+                "last_reported": "2026-11-19T18:13:31.176Z",
                 "name": [
                     {
                         "language": "en",
@@ -1665,9 +1665,9 @@
                         "text": "Bourg Mairie"
                     }
                 ],
-                "num_docks_available": 2,
+                "num_docks_available": 3,
                 "num_docks_disabled": 0,
-                "num_vehicles_available": 7,
+                "num_vehicles_available": 6,
                 "num_vehicles_disabled": 0,
                 "post_code": "26000",
                 "rental_methods": [
@@ -1697,7 +1697,7 @@
                 "station_id": "23",
                 "vehicle_docks_available": [
                     {
-                        "count": 2,
+                        "count": 3,
                         "vehicle_type_ids": [
                             "BOOST",
                             "ICONIC",
@@ -1729,7 +1729,7 @@
                         "vehicle_type_id": "FIT"
                     },
                     {
-                        "count": 7,
+                        "count": 6,
                         "vehicle_type_id": "ICONIC"
                     },
                     {
@@ -1762,7 +1762,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-19T18:00:30.509Z",
+                "last_reported": "2026-11-19T18:13:03.033Z",
                 "name": [
                     {
                         "language": "en",
@@ -1879,7 +1879,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-19T18:01:10.445Z",
+                "last_reported": "2026-11-19T18:13:53.231Z",
                 "name": [
                     {
                         "language": "en",
@@ -1995,7 +1995,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-19T18:01:27.577Z",
+                "last_reported": "2026-11-19T18:13:56.351Z",
                 "name": [
                     {
                         "language": "en",
@@ -2112,7 +2112,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-19T18:00:30.914Z",
+                "last_reported": "2026-11-19T18:13:07.49Z",
                 "name": [
                     {
                         "language": "en",
@@ -2228,7 +2228,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-19T18:01:01.543Z",
+                "last_reported": "2026-11-19T18:13:31.707Z",
                 "name": [
                     {
                         "language": "en",
@@ -2345,7 +2345,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-19T18:00:30.647Z",
+                "last_reported": "2026-11-19T18:13:00.468Z",
                 "name": [
                     {
                         "language": "en",
@@ -2462,7 +2462,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-19T17:59:57.287Z",
+                "last_reported": "2026-11-19T18:14:32.822Z",
                 "name": [
                     {
                         "language": "en",
@@ -2579,7 +2579,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-19T18:00:09.7Z",
+                "last_reported": "2026-11-19T18:12:49.865Z",
                 "name": [
                     {
                         "language": "en",
@@ -2695,7 +2695,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-19T18:00:50.753Z",
+                "last_reported": "2026-11-19T18:13:18.709Z",
                 "name": [
                     {
                         "language": "en",
@@ -2812,7 +2812,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-19T18:01:20.176Z",
+                "last_reported": "2026-11-19T18:13:56.86Z",
                 "name": [
                     {
                         "language": "en",
@@ -2929,7 +2929,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-19T18:01:02.743Z",
+                "last_reported": "2026-11-19T18:13:33.525Z",
                 "name": [
                     {
                         "language": "en",
@@ -3046,7 +3046,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-19T18:00:08.597Z",
+                "last_reported": "2026-11-19T18:12:38.43Z",
                 "name": [
                     {
                         "language": "en",
@@ -3163,7 +3163,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-19T17:59:37.719Z",
+                "last_reported": "2026-11-19T18:14:11.421Z",
                 "name": [
                     {
                         "language": "en",
@@ -3280,7 +3280,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-19T18:00:24.573Z",
+                "last_reported": "2026-11-19T18:12:58.884Z",
                 "name": [
                     {
                         "language": "en",
@@ -3397,7 +3397,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-19T18:01:00.658Z",
+                "last_reported": "2026-11-19T18:13:33.51Z",
                 "name": [
                     {
                         "language": "en",
@@ -3514,7 +3514,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-19T18:01:36.485Z",
+                "last_reported": "2026-11-19T18:14:12.283Z",
                 "name": [
                     {
                         "language": "en",
@@ -3630,7 +3630,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-19T18:00:07.874Z",
+                "last_reported": "2026-11-19T18:12:49.997Z",
                 "name": [
                     {
                         "language": "en",
@@ -3746,7 +3746,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-19T18:00:47.913Z",
+                "last_reported": "2026-11-19T18:13:25.769Z",
                 "name": [
                     {
                         "language": "en",
@@ -3862,7 +3862,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-19T18:00:11.093Z",
+                "last_reported": "2026-11-19T18:12:51.57Z",
                 "name": [
                     {
                         "language": "en",
@@ -3978,7 +3978,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-19T18:00:19.582Z",
+                "last_reported": "2026-11-19T18:13:02.567Z",
                 "name": [
                     {
                         "language": "en",
@@ -4094,7 +4094,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-19T18:01:24.99Z",
+                "last_reported": "2026-11-19T18:14:04.33Z",
                 "name": [
                     {
                         "language": "en",
@@ -4113,9 +4113,9 @@
                         "text": "Place de la Paix"
                     }
                 ],
-                "num_docks_available": 3,
+                "num_docks_available": 4,
                 "num_docks_disabled": 0,
-                "num_vehicles_available": 5,
+                "num_vehicles_available": 4,
                 "num_vehicles_disabled": 0,
                 "post_code": "26000",
                 "rental_methods": [
@@ -4143,122 +4143,6 @@
                     }
                 ],
                 "station_id": "44",
-                "vehicle_docks_available": [
-                    {
-                        "count": 3,
-                        "vehicle_type_ids": [
-                            "BOOST",
-                            "ICONIC",
-                            "EFIT",
-                            "FIT"
-                        ]
-                    }
-                ],
-                "vehicle_docks_capacity": [
-                    {
-                        "count": 8,
-                        "vehicle_type_ids": [
-                            "ASTRO",
-                            "BOOST",
-                            "CHLOE",
-                            "COSMO",
-                            "EFIT",
-                            "FIT",
-                            "ICONIC",
-                            "METRO_BASE",
-                            "METRO_CONNECTED",
-                            "TRAILER"
-                        ]
-                    }
-                ],
-                "vehicle_types_available": [
-                    {
-                        "count": 0,
-                        "vehicle_type_id": "FIT"
-                    },
-                    {
-                        "count": 5,
-                        "vehicle_type_id": "ICONIC"
-                    },
-                    {
-                        "count": 0,
-                        "vehicle_type_id": "BOOST"
-                    },
-                    {
-                        "count": 0,
-                        "vehicle_type_id": "EFIT"
-                    }
-                ],
-                "vehicle_types_capacity": []
-            },
-            "type": "Feature"
-        },
-        {
-            "geometry": {
-                "coordinates": [
-                    4.893573,
-                    44.933458
-                ],
-                "type": "Point"
-            },
-            "properties": {
-                "address": "Manouchian",
-                "capacity": 8,
-                "external_id": "cd58642d-ddcb-11ef-b1e2-0693171294bb",
-                "is_charging_station": false,
-                "is_installed": true,
-                "is_renting": true,
-                "is_returning": true,
-                "is_virtual_station": false,
-                "last_reported": "2026-11-19T18:00:41.782Z",
-                "name": [
-                    {
-                        "language": "en",
-                        "text": "Manouchian"
-                    },
-                    {
-                        "language": "fr",
-                        "text": "Manouchian"
-                    },
-                    {
-                        "language": "nl",
-                        "text": "Manouchian"
-                    },
-                    {
-                        "language": "es",
-                        "text": "Manouchian"
-                    }
-                ],
-                "num_docks_available": 4,
-                "num_docks_disabled": 0,
-                "num_vehicles_available": 3,
-                "num_vehicles_disabled": 1,
-                "post_code": "26000",
-                "rental_methods": [
-                    "key",
-                    "transitcard",
-                    "phone"
-                ],
-                "rental_uris": {},
-                "short_name": [
-                    {
-                        "language": "en",
-                        "text": "45"
-                    },
-                    {
-                        "language": "fr",
-                        "text": "45"
-                    },
-                    {
-                        "language": "nl",
-                        "text": "45"
-                    },
-                    {
-                        "language": "es",
-                        "text": "45"
-                    }
-                ],
-                "station_id": "45",
                 "vehicle_docks_available": [
                     {
                         "count": 4,
@@ -4293,7 +4177,123 @@
                         "vehicle_type_id": "FIT"
                     },
                     {
-                        "count": 3,
+                        "count": 4,
+                        "vehicle_type_id": "ICONIC"
+                    },
+                    {
+                        "count": 0,
+                        "vehicle_type_id": "BOOST"
+                    },
+                    {
+                        "count": 0,
+                        "vehicle_type_id": "EFIT"
+                    }
+                ],
+                "vehicle_types_capacity": []
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    4.893573,
+                    44.933458
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "address": "Manouchian",
+                "capacity": 8,
+                "external_id": "cd58642d-ddcb-11ef-b1e2-0693171294bb",
+                "is_charging_station": false,
+                "is_installed": true,
+                "is_renting": true,
+                "is_returning": true,
+                "is_virtual_station": false,
+                "last_reported": "2026-11-19T18:13:17.674Z",
+                "name": [
+                    {
+                        "language": "en",
+                        "text": "Manouchian"
+                    },
+                    {
+                        "language": "fr",
+                        "text": "Manouchian"
+                    },
+                    {
+                        "language": "nl",
+                        "text": "Manouchian"
+                    },
+                    {
+                        "language": "es",
+                        "text": "Manouchian"
+                    }
+                ],
+                "num_docks_available": 5,
+                "num_docks_disabled": 0,
+                "num_vehicles_available": 2,
+                "num_vehicles_disabled": 1,
+                "post_code": "26000",
+                "rental_methods": [
+                    "key",
+                    "transitcard",
+                    "phone"
+                ],
+                "rental_uris": {},
+                "short_name": [
+                    {
+                        "language": "en",
+                        "text": "45"
+                    },
+                    {
+                        "language": "fr",
+                        "text": "45"
+                    },
+                    {
+                        "language": "nl",
+                        "text": "45"
+                    },
+                    {
+                        "language": "es",
+                        "text": "45"
+                    }
+                ],
+                "station_id": "45",
+                "vehicle_docks_available": [
+                    {
+                        "count": 5,
+                        "vehicle_type_ids": [
+                            "BOOST",
+                            "ICONIC",
+                            "EFIT",
+                            "FIT"
+                        ]
+                    }
+                ],
+                "vehicle_docks_capacity": [
+                    {
+                        "count": 8,
+                        "vehicle_type_ids": [
+                            "ASTRO",
+                            "BOOST",
+                            "CHLOE",
+                            "COSMO",
+                            "EFIT",
+                            "FIT",
+                            "ICONIC",
+                            "METRO_BASE",
+                            "METRO_CONNECTED",
+                            "TRAILER"
+                        ]
+                    }
+                ],
+                "vehicle_types_available": [
+                    {
+                        "count": 0,
+                        "vehicle_type_id": "FIT"
+                    },
+                    {
+                        "count": 2,
                         "vehicle_type_id": "ICONIC"
                     },
                     {
@@ -4326,7 +4326,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-19T18:00:02.111Z",
+                "last_reported": "2026-11-19T18:14:40.017Z",
                 "name": [
                     {
                         "language": "en",
@@ -4443,7 +4443,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-19T18:00:06.055Z",
+                "last_reported": "2026-11-19T18:14:39.291Z",
                 "name": [
                     {
                         "language": "en",
@@ -4560,7 +4560,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-19T18:00:21.448Z",
+                "last_reported": "2026-11-19T18:12:54.727Z",
                 "name": [
                     {
                         "language": "en",
@@ -4677,7 +4677,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-19T18:00:08.577Z",
+                "last_reported": "2026-11-19T18:12:48.996Z",
                 "name": [
                     {
                         "language": "en",
@@ -4793,7 +4793,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-19T18:01:09.699Z",
+                "last_reported": "2026-11-19T18:13:44.068Z",
                 "name": [
                     {
                         "language": "en",
@@ -4910,7 +4910,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-19T18:00:24.96Z",
+                "last_reported": "2026-11-19T18:12:57.914Z",
                 "name": [
                     {
                         "language": "en",
@@ -5027,7 +5027,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-19T18:00:32.755Z",
+                "last_reported": "2026-11-19T18:13:10.883Z",
                 "name": [
                     {
                         "language": "en",
@@ -5144,7 +5144,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-19T18:00:11.34Z",
+                "last_reported": "2026-11-19T18:12:51.237Z",
                 "name": [
                     {
                         "language": "en",
@@ -5260,7 +5260,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-19T17:59:41.221Z",
+                "last_reported": "2026-11-19T18:14:27.482Z",
                 "name": [
                     {
                         "language": "en",
@@ -5279,9 +5279,9 @@
                         "text": "Guilherand Mairie"
                     }
                 ],
-                "num_docks_available": 7,
+                "num_docks_available": 5,
                 "num_docks_disabled": 0,
-                "num_vehicles_available": 5,
+                "num_vehicles_available": 7,
                 "num_vehicles_disabled": 0,
                 "post_code": "07500",
                 "rental_methods": [
@@ -5311,7 +5311,7 @@
                 "station_id": "54",
                 "vehicle_docks_available": [
                     {
-                        "count": 7,
+                        "count": 5,
                         "vehicle_type_ids": [
                             "BOOST",
                             "ICONIC",
@@ -5343,7 +5343,7 @@
                         "vehicle_type_id": "FIT"
                     },
                     {
-                        "count": 4,
+                        "count": 6,
                         "vehicle_type_id": "ICONIC"
                     },
                     {
@@ -5376,7 +5376,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-19T18:00:34.034Z",
+                "last_reported": "2026-11-19T18:13:10.968Z",
                 "name": [
                     {
                         "language": "en",
@@ -5492,7 +5492,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-19T17:59:52.954Z",
+                "last_reported": "2026-11-19T18:14:39.853Z",
                 "name": [
                     {
                         "language": "en",
@@ -5608,7 +5608,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-19T18:00:24.147Z",
+                "last_reported": "2026-11-19T18:13:04.532Z",
                 "name": [
                     {
                         "language": "en",
@@ -5723,7 +5723,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-19T18:01:05.006Z",
+                "last_reported": "2026-11-19T18:13:36.556Z",
                 "name": [
                     {
                         "language": "en",
@@ -5839,7 +5839,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-19T18:01:22.637Z",
+                "last_reported": "2026-11-19T18:14:02.638Z",
                 "name": [
                     {
                         "language": "en",
@@ -5858,9 +5858,9 @@
                         "text": "Basse Ville"
                     }
                 ],
-                "num_docks_available": 4,
+                "num_docks_available": 3,
                 "num_docks_disabled": 0,
-                "num_vehicles_available": 8,
+                "num_vehicles_available": 9,
                 "num_vehicles_disabled": 0,
                 "post_code": "26000",
                 "rental_methods": [
@@ -5891,7 +5891,7 @@
                 "station_id": "6",
                 "vehicle_docks_available": [
                     {
-                        "count": 4,
+                        "count": 3,
                         "vehicle_type_ids": [
                             "BOOST",
                             "ICONIC",
@@ -5927,7 +5927,7 @@
                         "vehicle_type_id": "ICONIC"
                     },
                     {
-                        "count": 0,
+                        "count": 1,
                         "vehicle_type_id": "BOOST"
                     },
                     {
@@ -5956,7 +5956,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-19T18:00:57.613Z",
+                "last_reported": "2026-11-19T18:13:30.021Z",
                 "name": [
                     {
                         "language": "en",
@@ -6071,7 +6071,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-19T18:00:35.194Z",
+                "last_reported": "2026-11-19T18:13:14.415Z",
                 "name": [
                     {
                         "language": "en",
@@ -6185,7 +6185,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-19T18:00:07.251Z",
+                "last_reported": "2026-11-19T18:12:38.982Z",
                 "name": [
                     {
                         "language": "en",
@@ -6300,7 +6300,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-19T17:59:37.201Z",
+                "last_reported": "2026-11-19T18:14:25.698Z",
                 "name": [
                     {
                         "language": "en",
@@ -6414,7 +6414,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-19T18:01:34.468Z",
+                "last_reported": "2026-11-19T18:14:06.795Z",
                 "name": [
                     {
                         "language": "en",
@@ -6529,7 +6529,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-19T18:00:43.59Z",
+                "last_reported": "2026-11-19T18:13:16.169Z",
                 "name": [
                     {
                         "language": "en",
@@ -6644,7 +6644,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-19T18:00:17.292Z",
+                "last_reported": "2026-11-19T18:12:51.501Z",
                 "name": [
                     {
                         "language": "en",
@@ -6663,9 +6663,9 @@
                         "text": "St-Marcel Mairie"
                     }
                 ],
-                "num_docks_available": 2,
+                "num_docks_available": 1,
                 "num_docks_disabled": 0,
-                "num_vehicles_available": 5,
+                "num_vehicles_available": 6,
                 "num_vehicles_disabled": 0,
                 "rental_methods": [
                     "key",
@@ -6695,7 +6695,7 @@
                 "station_id": "66",
                 "vehicle_docks_available": [
                     {
-                        "count": 2,
+                        "count": 1,
                         "vehicle_type_ids": [
                             "BOOST",
                             "ICONIC",
@@ -6735,7 +6735,7 @@
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 0,
+                        "count": 1,
                         "vehicle_type_id": "EFIT"
                     }
                 ],
@@ -6759,7 +6759,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-19T18:01:35.372Z",
+                "last_reported": "2026-11-19T18:14:15.509Z",
                 "name": [
                     {
                         "language": "en",
@@ -6778,9 +6778,9 @@
                         "text": "Poids des farines"
                     }
                 ],
-                "num_docks_available": 5,
+                "num_docks_available": 6,
                 "num_docks_disabled": 0,
-                "num_vehicles_available": 2,
+                "num_vehicles_available": 1,
                 "num_vehicles_disabled": 3,
                 "rental_methods": [
                     "key",
@@ -6809,7 +6809,7 @@
                 "station_id": "67",
                 "vehicle_docks_available": [
                     {
-                        "count": 5,
+                        "count": 6,
                         "vehicle_type_ids": [
                             "BOOST",
                             "ICONIC",
@@ -6849,7 +6849,7 @@
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 1,
+                        "count": 0,
                         "vehicle_type_id": "EFIT"
                     }
                 ],
@@ -6873,7 +6873,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-19T18:00:08.663Z",
+                "last_reported": "2026-11-19T18:12:38.738Z",
                 "name": [
                     {
                         "language": "en",
@@ -6892,9 +6892,9 @@
                         "text": "St-Peray Mairie"
                     }
                 ],
-                "num_docks_available": 7,
+                "num_docks_available": 6,
                 "num_docks_disabled": 0,
-                "num_vehicles_available": 1,
+                "num_vehicles_available": 2,
                 "num_vehicles_disabled": 0,
                 "rental_methods": [
                     "key",
@@ -6924,7 +6924,7 @@
                 "station_id": "68",
                 "vehicle_docks_available": [
                     {
-                        "count": 7,
+                        "count": 6,
                         "vehicle_type_ids": [
                             "BOOST",
                             "ICONIC",
@@ -6964,7 +6964,7 @@
                         "vehicle_type_id": "BOOST"
                     },
                     {
-                        "count": 0,
+                        "count": 1,
                         "vehicle_type_id": "EFIT"
                     }
                 ],
@@ -6989,7 +6989,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-19T18:00:17.07Z",
+                "last_reported": "2026-11-19T18:12:56.743Z",
                 "name": [
                     {
                         "language": "en",
@@ -7105,7 +7105,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-19T18:00:39Z",
+                "last_reported": "2026-11-19T18:13:22.117Z",
                 "name": [
                     {
                         "language": "en",
@@ -7220,7 +7220,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-19T18:01:01.689Z",
+                "last_reported": "2026-11-19T18:13:33.929Z",
                 "name": [
                     {
                         "language": "en",
@@ -7335,7 +7335,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-19T18:01:33.358Z",
+                "last_reported": "2026-11-19T18:14:05.184Z",
                 "name": [
                     {
                         "language": "en",
@@ -7450,7 +7450,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-19T18:01:38.533Z",
+                "last_reported": "2026-11-19T18:14:18.321Z",
                 "name": [
                     {
                         "language": "en",
@@ -7564,7 +7564,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-19T18:00:49.193Z",
+                "last_reported": "2026-11-19T18:13:21.658Z",
                 "name": [
                     {
                         "language": "en",
@@ -7680,7 +7680,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-19T18:00:45.453Z",
+                "last_reported": "2026-11-19T18:13:23.87Z",
                 "name": [
                     {
                         "language": "en",
@@ -7796,7 +7796,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-19T18:00:04.337Z",
+                "last_reported": "2026-11-19T18:14:38.053Z",
                 "name": [
                     {
                         "language": "en",
@@ -7815,9 +7815,9 @@
                         "text": "Latour Maubourg"
                     }
                 ],
-                "num_docks_available": 16,
+                "num_docks_available": 15,
                 "num_docks_disabled": 0,
-                "num_vehicles_available": 1,
+                "num_vehicles_available": 2,
                 "num_vehicles_disabled": 1,
                 "post_code": "26000",
                 "rental_methods": [
@@ -7848,7 +7848,7 @@
                 "station_id": "9",
                 "vehicle_docks_available": [
                     {
-                        "count": 16,
+                        "count": 15,
                         "vehicle_type_ids": [
                             "BOOST",
                             "ICONIC",
@@ -7880,7 +7880,7 @@
                         "vehicle_type_id": "FIT"
                     },
                     {
-                        "count": 1,
+                        "count": 2,
                         "vehicle_type_id": "ICONIC"
                     },
                     {
@@ -7899,13 +7899,13 @@
     ],
     "gbfs": {
         "station_information": {
-            "last_updated": "2026-11-19T18:01:44Z",
-            "ttl": 26,
+            "last_updated": "2026-11-19T18:15:08Z",
+            "ttl": 2,
             "version": "3.0"
         },
         "station_status": {
-            "last_updated": "2026-11-19T18:01:47Z",
-            "ttl": 23,
+            "last_updated": "2026-11-19T18:15:08Z",
+            "ttl": 2,
             "version": "3.0"
         }
     },
