@@ -17,7 +17,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-24T18:01:26.616Z",
+                "last_reported": "2026-11-24T18:13:45.14Z",
                 "name": [
                     {
                         "language": "en",
@@ -36,9 +36,9 @@
                         "text": "Pierce St & Summerlea St"
                     }
                 ],
-                "num_docks_available": 12,
+                "num_docks_available": 11,
                 "num_docks_disabled": 0,
-                "num_vehicles_available": 7,
+                "num_vehicles_available": 8,
                 "num_vehicles_disabled": 0,
                 "post_code": "15201",
                 "rental_methods": [
@@ -67,6 +67,123 @@
                     }
                 ],
                 "station_id": "1",
+                "vehicle_docks_available": [
+                    {
+                        "count": 11,
+                        "vehicle_type_ids": [
+                            "FIT",
+                            "EFIT",
+                            "ICONIC",
+                            "CHLOE"
+                        ]
+                    }
+                ],
+                "vehicle_docks_capacity": [
+                    {
+                        "count": 19,
+                        "vehicle_type_ids": [
+                            "ASTRO",
+                            "BOOST",
+                            "CHLOE",
+                            "COSMO",
+                            "EFIT",
+                            "FIT",
+                            "ICONIC",
+                            "METRO_BASE",
+                            "METRO_CONNECTED",
+                            "TRAILER"
+                        ]
+                    }
+                ],
+                "vehicle_types_available": [
+                    {
+                        "count": 6,
+                        "vehicle_type_id": "FIT"
+                    },
+                    {
+                        "count": 0,
+                        "vehicle_type_id": "ICONIC"
+                    },
+                    {
+                        "count": 2,
+                        "vehicle_type_id": "EFIT"
+                    },
+                    {
+                        "count": 0,
+                        "vehicle_type_id": "CHLOE"
+                    }
+                ],
+                "vehicle_types_capacity": []
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -79.95696,
+                    40.436055
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "address": "Zulema St & Coltart Ave",
+                "capacity": 19,
+                "external_id": "ff6606ed-df87-11ef-9b36-022bb08559cf",
+                "is_charging_station": false,
+                "is_installed": true,
+                "is_renting": true,
+                "is_returning": true,
+                "is_virtual_station": false,
+                "last_reported": "2026-11-24T18:12:38.697Z",
+                "name": [
+                    {
+                        "language": "en",
+                        "text": "Zulema St & Coltart Ave"
+                    },
+                    {
+                        "language": "fr",
+                        "text": "Zulema St & Coltart Ave"
+                    },
+                    {
+                        "language": "nl",
+                        "text": "Zulema St & Coltart Ave"
+                    },
+                    {
+                        "language": "es",
+                        "text": "Zulema St & Coltart Ave"
+                    }
+                ],
+                "num_docks_available": 12,
+                "num_docks_disabled": 0,
+                "num_vehicles_available": 7,
+                "num_vehicles_disabled": 0,
+                "post_code": "121212",
+                "rental_methods": [
+                    "key",
+                    "transitcard",
+                    "creditcard",
+                    "phone"
+                ],
+                "rental_uris": {},
+                "short_name": [
+                    {
+                        "language": "en",
+                        "text": ""
+                    },
+                    {
+                        "language": "fr",
+                        "text": ""
+                    },
+                    {
+                        "language": "nl",
+                        "text": ""
+                    },
+                    {
+                        "language": "es",
+                        "text": ""
+                    }
+                ],
+                "station_id": "10",
                 "vehicle_docks_available": [
                     {
                         "count": 12,
@@ -120,123 +237,6 @@
         {
             "geometry": {
                 "coordinates": [
-                    -79.95696,
-                    40.436055
-                ],
-                "type": "Point"
-            },
-            "properties": {
-                "address": "Zulema St & Coltart Ave",
-                "capacity": 19,
-                "external_id": "ff6606ed-df87-11ef-9b36-022bb08559cf",
-                "is_charging_station": false,
-                "is_installed": true,
-                "is_renting": true,
-                "is_returning": true,
-                "is_virtual_station": false,
-                "last_reported": "2026-11-24T17:59:55.549Z",
-                "name": [
-                    {
-                        "language": "en",
-                        "text": "Zulema St & Coltart Ave"
-                    },
-                    {
-                        "language": "fr",
-                        "text": "Zulema St & Coltart Ave"
-                    },
-                    {
-                        "language": "nl",
-                        "text": "Zulema St & Coltart Ave"
-                    },
-                    {
-                        "language": "es",
-                        "text": "Zulema St & Coltart Ave"
-                    }
-                ],
-                "num_docks_available": 13,
-                "num_docks_disabled": 0,
-                "num_vehicles_available": 6,
-                "num_vehicles_disabled": 0,
-                "post_code": "121212",
-                "rental_methods": [
-                    "key",
-                    "transitcard",
-                    "creditcard",
-                    "phone"
-                ],
-                "rental_uris": {},
-                "short_name": [
-                    {
-                        "language": "en",
-                        "text": ""
-                    },
-                    {
-                        "language": "fr",
-                        "text": ""
-                    },
-                    {
-                        "language": "nl",
-                        "text": ""
-                    },
-                    {
-                        "language": "es",
-                        "text": ""
-                    }
-                ],
-                "station_id": "10",
-                "vehicle_docks_available": [
-                    {
-                        "count": 13,
-                        "vehicle_type_ids": [
-                            "FIT",
-                            "EFIT",
-                            "ICONIC",
-                            "CHLOE"
-                        ]
-                    }
-                ],
-                "vehicle_docks_capacity": [
-                    {
-                        "count": 19,
-                        "vehicle_type_ids": [
-                            "ASTRO",
-                            "BOOST",
-                            "CHLOE",
-                            "COSMO",
-                            "EFIT",
-                            "FIT",
-                            "ICONIC",
-                            "METRO_BASE",
-                            "METRO_CONNECTED",
-                            "TRAILER"
-                        ]
-                    }
-                ],
-                "vehicle_types_available": [
-                    {
-                        "count": 6,
-                        "vehicle_type_id": "FIT"
-                    },
-                    {
-                        "count": 0,
-                        "vehicle_type_id": "ICONIC"
-                    },
-                    {
-                        "count": 0,
-                        "vehicle_type_id": "EFIT"
-                    },
-                    {
-                        "count": 0,
-                        "vehicle_type_id": "CHLOE"
-                    }
-                ],
-                "vehicle_types_capacity": []
-            },
-            "type": "Feature"
-        },
-        {
-            "geometry": {
-                "coordinates": [
                     -79.947507,
                     40.448203
                 ],
@@ -251,7 +251,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-24T18:00:39.971Z",
+                "last_reported": "2026-11-24T18:13:21.474Z",
                 "name": [
                     {
                         "language": "en",
@@ -270,9 +270,9 @@
                         "text": "Ellsworth Ave & N Neville St"
                     }
                 ],
-                "num_docks_available": 12,
+                "num_docks_available": 10,
                 "num_docks_disabled": 0,
-                "num_vehicles_available": 3,
+                "num_vehicles_available": 5,
                 "num_vehicles_disabled": 0,
                 "post_code": "1212",
                 "rental_methods": [
@@ -303,7 +303,7 @@
                 "station_id": "11",
                 "vehicle_docks_available": [
                     {
-                        "count": 12,
+                        "count": 10,
                         "vehicle_type_ids": [
                             "FIT",
                             "EFIT",
@@ -339,7 +339,7 @@
                         "vehicle_type_id": "ICONIC"
                     },
                     {
-                        "count": 0,
+                        "count": 2,
                         "vehicle_type_id": "EFIT"
                     },
                     {
@@ -368,7 +368,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-24T18:00:39.88Z",
+                "last_reported": "2026-11-24T18:13:20.634Z",
                 "name": [
                     {
                         "language": "en",
@@ -387,9 +387,9 @@
                         "text": "O'Hara St & University Place"
                     }
                 ],
-                "num_docks_available": 17,
+                "num_docks_available": 16,
                 "num_docks_disabled": 0,
-                "num_vehicles_available": 6,
+                "num_vehicles_available": 7,
                 "num_vehicles_disabled": 0,
                 "post_code": "1212",
                 "rental_methods": [
@@ -420,7 +420,7 @@
                 "station_id": "12",
                 "vehicle_docks_available": [
                     {
-                        "count": 17,
+                        "count": 16,
                         "vehicle_type_ids": [
                             "FIT",
                             "EFIT",
@@ -456,7 +456,7 @@
                         "vehicle_type_id": "ICONIC"
                     },
                     {
-                        "count": 3,
+                        "count": 4,
                         "vehicle_type_id": "EFIT"
                     },
                     {
@@ -485,7 +485,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-24T18:01:21.538Z",
+                "last_reported": "2026-11-24T18:13:54.836Z",
                 "name": [
                     {
                         "language": "en",
@@ -504,9 +504,9 @@
                         "text": "S Bouquet Ave & Sennott St"
                     }
                 ],
-                "num_docks_available": 14,
+                "num_docks_available": 15,
                 "num_docks_disabled": 0,
-                "num_vehicles_available": 9,
+                "num_vehicles_available": 8,
                 "num_vehicles_disabled": 0,
                 "post_code": "1212",
                 "rental_methods": [
@@ -537,7 +537,7 @@
                 "station_id": "13",
                 "vehicle_docks_available": [
                     {
-                        "count": 14,
+                        "count": 15,
                         "vehicle_type_ids": [
                             "FIT",
                             "EFIT",
@@ -573,7 +573,7 @@
                         "vehicle_type_id": "ICONIC"
                     },
                     {
-                        "count": 8,
+                        "count": 7,
                         "vehicle_type_id": "EFIT"
                     },
                     {
@@ -602,7 +602,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-24T18:01:04.375Z",
+                "last_reported": "2026-11-24T18:13:46.032Z",
                 "name": [
                     {
                         "language": "en",
@@ -719,7 +719,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-24T17:59:50.599Z",
+                "last_reported": "2026-11-24T18:12:32.808Z",
                 "name": [
                     {
                         "language": "en",
@@ -738,9 +738,9 @@
                         "text": "Ivy St & Walnut St"
                     }
                 ],
-                "num_docks_available": 12,
+                "num_docks_available": 13,
                 "num_docks_disabled": 0,
-                "num_vehicles_available": 7,
+                "num_vehicles_available": 6,
                 "num_vehicles_disabled": 0,
                 "post_code": "121212",
                 "rental_methods": [
@@ -771,7 +771,7 @@
                 "station_id": "15",
                 "vehicle_docks_available": [
                     {
-                        "count": 12,
+                        "count": 13,
                         "vehicle_type_ids": [
                             "FIT",
                             "EFIT",
@@ -807,7 +807,7 @@
                         "vehicle_type_id": "ICONIC"
                     },
                     {
-                        "count": 1,
+                        "count": 0,
                         "vehicle_type_id": "EFIT"
                     },
                     {
@@ -836,7 +836,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-24T18:00:20.566Z",
+                "last_reported": "2026-11-24T18:13:03.175Z",
                 "name": [
                     {
                         "language": "en",
@@ -1070,7 +1070,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-24T18:01:25.852Z",
+                "last_reported": "2026-11-24T18:14:06.819Z",
                 "name": [
                     {
                         "language": "en",
@@ -1089,9 +1089,9 @@
                         "text": "21st St & Penn Ave"
                     }
                 ],
-                "num_docks_available": 8,
+                "num_docks_available": 7,
                 "num_docks_disabled": 0,
-                "num_vehicles_available": 11,
+                "num_vehicles_available": 12,
                 "num_vehicles_disabled": 0,
                 "post_code": "121212",
                 "rental_methods": [
@@ -1122,7 +1122,7 @@
                 "station_id": "18",
                 "vehicle_docks_available": [
                     {
-                        "count": 8,
+                        "count": 7,
                         "vehicle_type_ids": [
                             "FIT",
                             "EFIT",
@@ -1158,7 +1158,7 @@
                         "vehicle_type_id": "ICONIC"
                     },
                     {
-                        "count": 3,
+                        "count": 4,
                         "vehicle_type_id": "EFIT"
                     },
                     {
@@ -1187,7 +1187,7 @@
                 "is_renting": false,
                 "is_returning": false,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-24T18:00:31.879Z",
+                "last_reported": "2026-11-24T18:13:14.501Z",
                 "name": [
                     {
                         "language": "en",
@@ -1304,7 +1304,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-24T18:01:27.772Z",
+                "last_reported": "2026-11-24T18:14:09.028Z",
                 "name": [
                     {
                         "language": "en",
@@ -1421,7 +1421,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-24T17:59:26.222Z",
+                "last_reported": "2026-11-24T18:14:15.457Z",
                 "name": [
                     {
                         "language": "en",
@@ -1440,9 +1440,9 @@
                         "text": "Boulevard of the Allies & Parkview Ave"
                     }
                 ],
-                "num_docks_available": 22,
+                "num_docks_available": 23,
                 "num_docks_disabled": 0,
-                "num_vehicles_available": 1,
+                "num_vehicles_available": 0,
                 "num_vehicles_disabled": 0,
                 "post_code": "15213",
                 "rental_methods": [
@@ -1473,7 +1473,7 @@
                 "station_id": "20",
                 "vehicle_docks_available": [
                     {
-                        "count": 22,
+                        "count": 23,
                         "vehicle_type_ids": [
                             "FIT",
                             "EFIT",
@@ -1509,7 +1509,7 @@
                         "vehicle_type_id": "ICONIC"
                     },
                     {
-                        "count": 1,
+                        "count": 0,
                         "vehicle_type_id": "EFIT"
                     },
                     {
@@ -1538,7 +1538,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-24T18:00:24.683Z",
+                "last_reported": "2026-11-24T18:12:58.541Z",
                 "name": [
                     {
                         "language": "en",
@@ -1655,7 +1655,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-24T17:59:35.866Z",
+                "last_reported": "2026-11-24T18:14:14.415Z",
                 "name": [
                     {
                         "language": "en",
@@ -1772,7 +1772,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-24T18:01:09.465Z",
+                "last_reported": "2026-11-24T18:13:43.757Z",
                 "name": [
                     {
                         "language": "en",
@@ -1889,7 +1889,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-24T18:00:47.554Z",
+                "last_reported": "2026-11-24T18:13:20.884Z",
                 "name": [
                     {
                         "language": "en",
@@ -2006,7 +2006,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-24T18:00:18.465Z",
+                "last_reported": "2026-11-24T18:12:52.961Z",
                 "name": [
                     {
                         "language": "en",
@@ -2123,7 +2123,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-24T18:00:12.049Z",
+                "last_reported": "2026-11-24T18:12:46.6Z",
                 "name": [
                     {
                         "language": "en",
@@ -2240,7 +2240,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-24T18:00:23.857Z",
+                "last_reported": "2026-11-24T18:12:58.723Z",
                 "name": [
                     {
                         "language": "en",
@@ -2357,7 +2357,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-24T18:00:15.19Z",
+                "last_reported": "2026-11-24T18:12:48.58Z",
                 "name": [
                     {
                         "language": "en",
@@ -2474,7 +2474,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-24T18:00:46.988Z",
+                "last_reported": "2026-11-24T18:13:21.524Z",
                 "name": [
                     {
                         "language": "en",
@@ -2591,7 +2591,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-24T18:00:07.3Z",
+                "last_reported": "2026-11-24T18:12:53.773Z",
                 "name": [
                     {
                         "language": "en",
@@ -2708,7 +2708,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-24T18:01:20.6Z",
+                "last_reported": "2026-11-24T18:13:54.626Z",
                 "name": [
                     {
                         "language": "en",
@@ -2825,7 +2825,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-24T17:59:54.258Z",
+                "last_reported": "2026-11-24T18:12:28.086Z",
                 "name": [
                     {
                         "language": "en",
@@ -2844,9 +2844,9 @@
                         "text": "First Ave & B St"
                     }
                 ],
-                "num_docks_available": 6,
+                "num_docks_available": 4,
                 "num_docks_disabled": 0,
-                "num_vehicles_available": 9,
+                "num_vehicles_available": 11,
                 "num_vehicles_disabled": 0,
                 "post_code": "15219",
                 "rental_methods": [
@@ -2877,7 +2877,7 @@
                 "station_id": "31",
                 "vehicle_docks_available": [
                     {
-                        "count": 6,
+                        "count": 4,
                         "vehicle_type_ids": [
                             "FIT",
                             "EFIT",
@@ -2913,7 +2913,7 @@
                         "vehicle_type_id": "ICONIC"
                     },
                     {
-                        "count": 4,
+                        "count": 6,
                         "vehicle_type_id": "EFIT"
                     },
                     {
@@ -2942,7 +2942,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-24T18:00:42.726Z",
+                "last_reported": "2026-11-24T18:13:16.972Z",
                 "name": [
                     {
                         "language": "en",
@@ -3059,7 +3059,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-24T18:00:18.075Z",
+                "last_reported": "2026-11-24T18:12:51.803Z",
                 "name": [
                     {
                         "language": "en",
@@ -3176,7 +3176,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-24T18:00:30.643Z",
+                "last_reported": "2026-11-24T18:13:06.039Z",
                 "name": [
                     {
                         "language": "en",
@@ -3195,9 +3195,9 @@
                         "text": "N Dithridge St & Centre Ave"
                     }
                 ],
-                "num_docks_available": 17,
+                "num_docks_available": 16,
                 "num_docks_disabled": 0,
-                "num_vehicles_available": 2,
+                "num_vehicles_available": 3,
                 "num_vehicles_disabled": 0,
                 "post_code": "15213",
                 "rental_methods": [
@@ -3228,7 +3228,7 @@
                 "station_id": "34",
                 "vehicle_docks_available": [
                     {
-                        "count": 17,
+                        "count": 16,
                         "vehicle_type_ids": [
                             "FIT",
                             "EFIT",
@@ -3264,7 +3264,7 @@
                         "vehicle_type_id": "ICONIC"
                     },
                     {
-                        "count": 1,
+                        "count": 2,
                         "vehicle_type_id": "EFIT"
                     },
                     {
@@ -3293,7 +3293,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-24T18:00:18.051Z",
+                "last_reported": "2026-11-24T18:12:51.106Z",
                 "name": [
                     {
                         "language": "en",
@@ -3410,7 +3410,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-24T17:59:45.164Z",
+                "last_reported": "2026-11-24T18:14:25.156Z",
                 "name": [
                     {
                         "language": "en",
@@ -3527,7 +3527,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-24T17:59:24.96Z",
+                "last_reported": "2026-11-24T18:14:03.851Z",
                 "name": [
                     {
                         "language": "en",
@@ -3644,7 +3644,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-24T18:00:03.016Z",
+                "last_reported": "2026-11-24T18:12:36.286Z",
                 "name": [
                     {
                         "language": "en",
@@ -3762,7 +3762,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-24T18:01:19.933Z",
+                "last_reported": "2026-11-24T18:14:00.851Z",
                 "name": [
                     {
                         "language": "en",
@@ -3879,7 +3879,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-24T18:00:40.829Z",
+                "last_reported": "2026-11-24T18:13:21.876Z",
                 "name": [
                     {
                         "language": "en",
@@ -3898,9 +3898,9 @@
                         "text": "Burns White Center at 3 Crossings"
                     }
                 ],
-                "num_docks_available": 10,
+                "num_docks_available": 9,
                 "num_docks_disabled": 0,
-                "num_vehicles_available": 4,
+                "num_vehicles_available": 5,
                 "num_vehicles_disabled": 1,
                 "post_code": "121212",
                 "rental_methods": [
@@ -3931,7 +3931,7 @@
                 "station_id": "4",
                 "vehicle_docks_available": [
                     {
-                        "count": 10,
+                        "count": 9,
                         "vehicle_type_ids": [
                             "FIT",
                             "EFIT",
@@ -3967,7 +3967,7 @@
                         "vehicle_type_id": "ICONIC"
                     },
                     {
-                        "count": 2,
+                        "count": 3,
                         "vehicle_type_id": "EFIT"
                     },
                     {
@@ -3996,7 +3996,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-24T18:01:27.543Z",
+                "last_reported": "2026-11-24T18:14:08.844Z",
                 "name": [
                     {
                         "language": "en",
@@ -4015,9 +4015,9 @@
                         "text": "Penn Ave & 7th St"
                     }
                 ],
-                "num_docks_available": 12,
+                "num_docks_available": 13,
                 "num_docks_disabled": 0,
-                "num_vehicles_available": 7,
+                "num_vehicles_available": 6,
                 "num_vehicles_disabled": 0,
                 "post_code": "121212",
                 "rental_methods": [
@@ -4048,7 +4048,7 @@
                 "station_id": "40",
                 "vehicle_docks_available": [
                     {
-                        "count": 12,
+                        "count": 13,
                         "vehicle_type_ids": [
                             "FIT",
                             "EFIT",
@@ -4084,7 +4084,7 @@
                         "vehicle_type_id": "ICONIC"
                     },
                     {
-                        "count": 6,
+                        "count": 5,
                         "vehicle_type_id": "EFIT"
                     },
                     {
@@ -4113,7 +4113,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-24T18:00:30.079Z",
+                "last_reported": "2026-11-24T18:13:12.427Z",
                 "name": [
                     {
                         "language": "en",
@@ -4230,7 +4230,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-24T18:00:26.971Z",
+                "last_reported": "2026-11-24T18:13:09.291Z",
                 "name": [
                     {
                         "language": "en",
@@ -4249,9 +4249,9 @@
                         "text": "Frew St & Schenley Dr"
                     }
                 ],
-                "num_docks_available": 5,
+                "num_docks_available": 8,
                 "num_docks_disabled": 0,
-                "num_vehicles_available": 14,
+                "num_vehicles_available": 11,
                 "num_vehicles_disabled": 0,
                 "post_code": "121212",
                 "rental_methods": [
@@ -4282,7 +4282,7 @@
                 "station_id": "42",
                 "vehicle_docks_available": [
                     {
-                        "count": 5,
+                        "count": 8,
                         "vehicle_type_ids": [
                             "FIT",
                             "EFIT",
@@ -4318,7 +4318,7 @@
                         "vehicle_type_id": "ICONIC"
                     },
                     {
-                        "count": 5,
+                        "count": 2,
                         "vehicle_type_id": "EFIT"
                     },
                     {
@@ -4347,7 +4347,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-24T17:59:32.795Z",
+                "last_reported": "2026-11-24T18:14:20.994Z",
                 "name": [
                     {
                         "language": "en",
@@ -4464,7 +4464,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-24T18:01:07.144Z",
+                "last_reported": "2026-11-24T18:13:33.224Z",
                 "name": [
                     {
                         "language": "en",
@@ -4581,7 +4581,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-24T17:59:22.977Z",
+                "last_reported": "2026-11-24T18:14:14.007Z",
                 "name": [
                     {
                         "language": "en",
@@ -4698,7 +4698,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-24T17:59:29.869Z",
+                "last_reported": "2026-11-24T18:14:21.448Z",
                 "name": [
                     {
                         "language": "en",
@@ -4815,7 +4815,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-24T17:59:47.341Z",
+                "last_reported": "2026-11-24T18:12:30.112Z",
                 "name": [
                     {
                         "language": "en",
@@ -4932,7 +4932,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-24T18:01:25.3Z",
+                "last_reported": "2026-11-24T18:14:07.585Z",
                 "name": [
                     {
                         "language": "en",
@@ -4951,9 +4951,9 @@
                         "text": "Centre Ave & S Millvale Ave"
                     }
                 ],
-                "num_docks_available": 18,
+                "num_docks_available": 19,
                 "num_docks_disabled": 0,
-                "num_vehicles_available": 1,
+                "num_vehicles_available": 0,
                 "num_vehicles_disabled": 0,
                 "post_code": "121212",
                 "rental_methods": [
@@ -4984,7 +4984,7 @@
                 "station_id": "48",
                 "vehicle_docks_available": [
                     {
-                        "count": 18,
+                        "count": 19,
                         "vehicle_type_ids": [
                             "FIT",
                             "EFIT",
@@ -5020,7 +5020,7 @@
                         "vehicle_type_id": "ICONIC"
                     },
                     {
-                        "count": 1,
+                        "count": 0,
                         "vehicle_type_id": "EFIT"
                     },
                     {
@@ -5049,7 +5049,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-24T17:59:39.666Z",
+                "last_reported": "2026-11-24T18:12:21.998Z",
                 "name": [
                     {
                         "language": "en",
@@ -5166,7 +5166,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-24T18:01:16.299Z",
+                "last_reported": "2026-11-24T18:13:58.283Z",
                 "name": [
                     {
                         "language": "en",
@@ -5283,7 +5283,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-24T18:00:23.911Z",
+                "last_reported": "2026-11-24T18:13:07.222Z",
                 "name": [
                     {
                         "language": "en",
@@ -5400,7 +5400,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-24T17:59:25.127Z",
+                "last_reported": "2026-11-24T18:14:13.68Z",
                 "name": [
                     {
                         "language": "en",
@@ -5517,7 +5517,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-24T18:00:33.448Z",
+                "last_reported": "2026-11-24T18:13:15.232Z",
                 "name": [
                     {
                         "language": "en",
@@ -5634,7 +5634,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-24T18:01:25.973Z",
+                "last_reported": "2026-11-24T18:14:08.352Z",
                 "name": [
                     {
                         "language": "en",
@@ -5751,7 +5751,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-24T17:59:43.754Z",
+                "last_reported": "2026-11-24T18:12:25.544Z",
                 "name": [
                     {
                         "language": "en",
@@ -5868,7 +5868,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-24T18:00:55.819Z",
+                "last_reported": "2026-11-24T18:13:38.21Z",
                 "name": [
                     {
                         "language": "en",
@@ -5985,7 +5985,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-24T18:00:45.173Z",
+                "last_reported": "2026-11-24T18:13:28.047Z",
                 "name": [
                     {
                         "language": "en",
@@ -6102,7 +6102,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-24T17:59:32.081Z",
+                "last_reported": "2026-11-24T18:14:20.355Z",
                 "name": [
                     {
                         "language": "en",
@@ -6219,7 +6219,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-24T17:59:47.676Z",
+                "last_reported": "2026-11-24T18:12:29.783Z",
                 "name": [
                     {
                         "language": "en",
@@ -6335,7 +6335,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-24T17:59:54.231Z",
+                "last_reported": "2026-11-24T18:12:36.083Z",
                 "name": [
                     {
                         "language": "en",
@@ -6452,7 +6452,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-24T17:59:57.182Z",
+                "last_reported": "2026-11-24T18:12:39.151Z",
                 "name": [
                     {
                         "language": "en",
@@ -6471,9 +6471,9 @@
                         "text": "10th St & Penn Ave"
                     }
                 ],
-                "num_docks_available": 7,
+                "num_docks_available": 8,
                 "num_docks_disabled": 0,
-                "num_vehicles_available": 8,
+                "num_vehicles_available": 7,
                 "num_vehicles_disabled": 0,
                 "post_code": "15222",
                 "rental_methods": [
@@ -6504,7 +6504,7 @@
                 "station_id": "6",
                 "vehicle_docks_available": [
                     {
-                        "count": 7,
+                        "count": 8,
                         "vehicle_type_ids": [
                             "FIT",
                             "EFIT",
@@ -6540,7 +6540,7 @@
                         "vehicle_type_id": "ICONIC"
                     },
                     {
-                        "count": 4,
+                        "count": 3,
                         "vehicle_type_id": "EFIT"
                     },
                     {
@@ -6569,7 +6569,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-24T18:00:17.535Z",
+                "last_reported": "2026-11-24T18:12:59.307Z",
                 "name": [
                     {
                         "language": "en",
@@ -6686,7 +6686,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-24T17:59:46.982Z",
+                "last_reported": "2026-11-24T18:14:24.607Z",
                 "name": [
                     {
                         "language": "en",
@@ -6803,7 +6803,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-24T18:01:10.835Z",
+                "last_reported": "2026-11-24T18:13:53.07Z",
                 "name": [
                     {
                         "language": "en",
@@ -6920,7 +6920,7 @@
                 "is_renting": true,
                 "is_returning": true,
                 "is_virtual_station": false,
-                "last_reported": "2026-11-24T17:59:38.403Z",
+                "last_reported": "2026-11-24T18:12:20.493Z",
                 "name": [
                     {
                         "language": "en",
@@ -7023,13 +7023,13 @@
     ],
     "gbfs": {
         "station_information": {
-            "last_updated": "2026-11-24T18:01:49Z",
-            "ttl": 10,
+            "last_updated": "2026-11-24T18:14:37Z",
+            "ttl": 22,
             "version": "3.0"
         },
         "station_status": {
-            "last_updated": "2026-11-24T18:01:49Z",
-            "ttl": 10,
+            "last_updated": "2026-11-24T18:14:38Z",
+            "ttl": 18,
             "version": "3.0"
         }
     },
